@@ -224,6 +224,19 @@ table {
 }
 
 
+.map-button-bar{
+    text-align: center;
+    padding: 0px 10px;
+}
+
+.map-button{
+    padding: 10px 20px;
+    margin: 0px 10px;
+    background: rgba(100, 100, 100, 0.4);
+    border: 2px solid;
+    border-radius: 7px;
+    outline: none;
+}
 
 
 @media screen and (min-width:768px) {
@@ -272,7 +285,7 @@ table {
         background: #fff;
         background: rgba(255, 255, 255, 0.9);
     }
-    .navbar-nav>li>button {
+    .nav-button {
         line-height: normal;
         padding: 25px;
         padding-right: 30px;

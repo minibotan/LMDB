@@ -5,8 +5,8 @@ $(document).ready(function () {
   //nav-panel buttons
   $('#nav-bar').html(function () {
     var newHtml = '';
-    for (var x in names) {
-      newHtml += '<button class="nav-button" id="' + names[x].id + '" >' + names[x].nm + '</button>';
+    for (var x in mainButtons) {
+      newHtml += '<button class="nav-button" id="' + mainButtons[x].id + '" >' + mainButtons[x].nm + '</button>';
     }
     return newHtml;
   });
@@ -19,21 +19,22 @@ $(document).ready(function () {
   $('.nav-button').click(function () {
     $('.itembox').html('');
     $('.eventbox').html('');
+    $('.mapbox').html('');
     switch ($(this).attr("id")) {
       case 'home':
-        alert("НАЖАЛОСЬ " + $(this).attr("id"));
         break;
       case 'items':
          $('.itembox').html(makeItemHTML());
         break;
       case 'mobs':
-        alert("НАЖАЛОСЬ " + $(this).attr("id"));
         break;
       case 'events':
         $('.eventbox').html(makeEventHTML());
         break;
+      case 'maps':
+        $('.mapbox').html(makeMapHTML());
+        break;
       case 'quests':
-        alert("НАЖАЛОСЬ " + $(this).attr("id"));
         break;
     }
 

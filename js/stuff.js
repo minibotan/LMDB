@@ -1,4 +1,5 @@
-var names;
+var mainButtons;
+var maps;
 var events;
 var items;
 
@@ -11,7 +12,7 @@ common stuff
 
 */
 
-names = [{
+mainButtons = [{
         nm: 'Home',
         id: 'home'
       },
@@ -28,10 +29,44 @@ names = [{
         id: 'events'
       },
       {
+        nm: 'Maps',
+        id: 'maps'
+      },
+      {
         nm: 'Quests',
         id: 'quests'
       }
     ];
+
+
+/*
+
+maps
+
+*/
+maps =[{
+      nm:"Город",
+      id:"beginning"
+    },{
+      nm:"Болота",
+      id:"vertolet"
+    },{
+      nm:"Северные Горы",
+      id:"mountains"
+    },{
+      nm:"Пустыня",
+      id:"zone"
+    },{
+      nm:"Сумеречный Город",
+      id:"bad_city"
+    },{
+      nm:"Древние Земли",
+      id:"amazonia"
+    },{
+      nm:"Пираты",
+      id:"bitch"
+    }
+];
 
 
 
