@@ -11,7 +11,6 @@ function makeMapHTML(){
 
 function showMap(but) {
     var p = 'img/karta_' + $(but).attr("id") + '.png';
-    alert($(but).attr("id") + '         ' + p);
     $(".pic-holder").attr('src', p);
     return true;
 }
