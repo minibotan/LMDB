@@ -1,0 +1,299 @@
+/*!
+ * Start Bootstrap - Business Casual (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: url('http://www.lostmagic.ru/useruploads/images/desk5_1920x1200.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
+    font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+hr {
+    max-width: 400px;
+    border-color: #999999;
+}
+
+.brand,
+.address-bar {
+    display: none;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.img-full {
+    min-width: 100%;
+}
+
+.brand-before,
+.brand-name {
+    text-transform: capitalize;
+}
+
+.brand-before {
+    margin: 15px 0;
+}
+
+.brand-name {
+    margin: 0;
+    font-size: 4em;
+}
+
+.tagline-divider {
+    margin: 15px auto 3px;
+    max-width: 250px;
+    border-color: #999999;
+}
+
+.box {
+    margin-bottom: 20px;
+    padding: 30px 15px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.intro-text {
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.img-border {
+    float: none;
+    margin: 0 auto 0;
+    border: #999999 solid 1px;
+}
+
+.img-left {
+    float: none;
+    margin: 0 auto 0;
+}
+
+footer {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+footer p {
+    margin: 0;
+    padding: 30px 0;
+}
+
+
+/**Стили блока оборачивающего каждый блок**/
+
+.spoiler {
+    margin-top: 10px;
+}
+
+.sp-content {
+    display: none;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    background: #F0F0F0;
+}
+
+
+.sp-title {
+    border: 1px solid #B9B9B9;
+    background: #ccc;
+    background: linear-gradient(#CACACA, #E8E8E8);
+    padding: 8px;
+    text-decoration: none;
+    color: #000;
+    display: block; 
+}
+
+tr {
+    border: 5px;
+}
+
+table {
+    width: 100%;
+    margin: 10px;
+    padding: 3px;
+    border-collapse: separate;
+}
+
+.itemstat {
+    text-align: right;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1;
+    padding-right: 5px;
+    display: table-cell;
+    width: 50%;
+}
+
+.itemstat2 {
+    text-align: left;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    padding-left: 5px;
+    display: table-cell;
+    width: 50%;
+}
+
+
+
+.item {
+    text-align: center;
+    border-radius: 5px;
+    background: #333;
+    padding: 0px;
+    margin: 1%;
+    color: #ccc;
+    display: inline-block;
+    width: 22%;
+    vertical-align: top;
+}
+
+.itemname {
+    margin: 0px;
+    margin-bottom: 10px; 
+    padding: 5px;
+    background: #444;
+    display: block;
+    border-radius: 5px;
+}
+
+.small{
+    font-size: 0.8em;
+}
+
+.itemtype{
+    color: #666
+}
+.goldentext{
+    color: gold;
+    line-height: 1;
+}
+.reqs{
+    color: #55d;
+}
+
+.borderedpic{
+    border: 2px solid;
+    border-radius: 2px;
+}
+
+.epic{
+    border-color: blueviolet;
+}
+
+.rare{
+     border-color: blue;
+}
+
+.uncommon{
+     border-color: green;
+}
+
+.common{
+    border-color: grey;
+}
+
+
+
+
+@media screen and (min-width:768px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+    .top-divider {
+        margin-top: 0;
+    }
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+    .navbar {
+        border-radius: 0;
+    }
+    .navbar-header {
+        display: none;
+    }
+    .navbar {
+        min-height: 0;
+    }
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255, 255, 255, 0.9);
+    }
+    .navbar-nav>li>button {
+        line-height: normal;
+        padding: 25px;
+        padding-right: 30px;
+        padding-left: 30px;
+        background: rgba(255, 255, 255, 0);
+        border: none;
+        outline: none;
+    }
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .box:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
