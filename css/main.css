@@ -240,8 +240,9 @@ table {
 
 
 .pic-holder{
-    margin: 15px;
     text-align: center;
+    width: 100%;
+    padding: 20px;
 }
 
 @media screen and (min-width:768px) {

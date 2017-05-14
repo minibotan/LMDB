@@ -17,9 +17,7 @@ $(document).ready(function () {
   });
 
   $('.mapbox').on('click', "button", function (){
-    alert('1');
     showMap(this);
-    alert('4');
     return false;
   });
 
