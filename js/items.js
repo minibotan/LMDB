@@ -88,22 +88,22 @@ function Reqs(item) {
     }
     if (item.reqparagon) {
          r+= (bool)?(s):('');
-         r+= '<td class="itemstat2">Ступень ' + item.reqlevel + '</td></tr>';
+         r+= '<td class="itemstat2">Ступень ' + item.reqparagon + '</td></tr>';
          bool = true;
     }
     if(item.reqstrength) {
         r+= (bool)?(s):('');
-        r+= '<td class="itemstat2">Сила ' + item.reqlevel + '</td></tr>';
+        r+= '<td class="itemstat2">Сила ' + item.reqstrength + '</td></tr>';
         bool = true;
     }
     if (item.reqagility){
         r+= (bool)?(s):('');
-         r+= '<td class="itemstat2">Ловкость ' + item.reqlevel + '</td></tr>';
+         r+= '<td class="itemstat2">Ловкость ' + item.reqagility + '</td></tr>';
          bool = true;
     }
     if(item.reqstamina) {
         r+= (bool)?(s):('');
-         r+= '<td class="itemstat2">Выносливость ' + item.reqlevel + '</td></tr>';
+         r+= '<td class="itemstat2">Выносливость ' + item.reqstamina + '</td></tr>';
          bool = true;
     }
     return (bool)?(t+r):('');
