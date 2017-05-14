@@ -107,8 +107,6 @@ footer p {
 }
 
 
-/**Стили блока оборачивающего каждый блок**/
-
 .spoiler {
     margin-top: 10px;
 }
@@ -189,6 +187,7 @@ table {
 
 .small{
     font-size: 0.8em;
+    margin: 0px;
 }
 
 .itemtype{
@@ -197,6 +196,7 @@ table {
 .goldentext{
     color: gold;
     line-height: 1;
+    margin: 0px 10px;
 }
 .reqs{
     color: #55d;
