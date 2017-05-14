@@ -108,25 +108,29 @@ footer p {
 
 
 .spoiler {
-    margin-top: 10px;
+    margin: 2px;
+    text-decoration: none;
 }
 
 .sp-content {
     display: none;
-    padding: 15px 20px;
-    border: 1px solid #ccc;
-    margin-top: 5px;
-    background: #F0F0F0;
+    padding: 10px 20px 15px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    margin-top: 0px;
+    background: #666;
+    color: #ccc;
 }
 
 
 .sp-title {
-    border: 1px solid #B9B9B9;
-    background: #ccc;
-    background: linear-gradient(#CACACA, #E8E8E8);
+    border: 1px solid #444;
+    border-radius: 3px;
+    background: #555;
+    background: linear-gradient(#555, #666);
     padding: 8px;
-    text-decoration: none;
-    color: #000;
+    margin: 0px;
+    color: #ccc;
     display: block; 
 }
 

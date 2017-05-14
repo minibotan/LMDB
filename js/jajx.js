@@ -11,7 +11,7 @@ $(document).ready(function () {
     return newHtml;
   });
 
-  $('.eventbox').on('click', "a", function () {
+  $('.eventbox').on('click', "p", function () {
     $(this).parent().children('div').toggle('normal');
     return false;
   });
