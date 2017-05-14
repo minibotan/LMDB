@@ -1,0 +1,2 @@
+# LMDB
+Lost Magic DataBase
