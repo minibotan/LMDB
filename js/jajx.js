@@ -16,6 +16,13 @@ $(document).ready(function () {
     return false;
   });
 
+  $('.mapbox').on('click', "button", function (){
+    alert('1');
+    showMap(this);
+    alert('4');
+    return false;
+  });
+
   $('.nav-button').click(function () {
     $('.itembox').html('');
     $('.eventbox').html('');

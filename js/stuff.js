@@ -49,7 +49,7 @@ maps =[{
       id:"beginning"
     },{
       nm:"Болота",
-      id:"vertolet"
+      id:"bolota"
     },{
       nm:"Северные Горы",
       id:"mountains"

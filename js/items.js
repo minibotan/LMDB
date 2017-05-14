@@ -29,7 +29,7 @@ function makeItemHTML() {
         newHTML += '</table>'
         newHTML += (items[i].descr)?('<p class="goldentext">' + items[i].descr+'</p>'):('');
         newHTML += '<table class = "bot">'
-        newHTML += (items[i].price)?(is1 + ' itemtype">Цена:' + is2  + items[i].price+'</td></tr>'):('');
+        newHTML += (items[i].price)?(is1 + ' itemtype">Цена:' + is2  + getPrice(items[i].price) + '</td></tr>'):('');
         newHTML += '</table>'
 
         newHTML += '</p></td>';
@@ -44,32 +44,70 @@ function makeItemHTML() {
 }
 
 
+function getPrice(price){
+    var r = '';
+    r += (price>9999)?((Math.floor(price/10000)) + 'з '):('');
+    r += ((Math.floor(price/100))%100>0)?((Math.floor(price/100))%100 + 'с '):('');
+    r += (price%100>0)?(price%100 + 'б'):('');
+    return r;
+}
+
+
+
+
 function getType(type) {
     var r = 'что-то еще';
     switch(type) {
         case 'other':
             r = 'другое';
             break;
-        case 'shield':
-            r = 'Щит';
-            break;
-        case 'boots':
-            r = 'Боты';
-            break;
-        case 'twohandedweapon':
-            r = 'Двуручное оружие';
-            break;
         case 'weapon':
-            r = 'оружие';
+            r = 'Оружие в любую руку';
             break;
         case 'rweapon':
             r = 'Оружие в основную руку';
             break;
+        case 'lweapon':
+            r = 'Оружие в левую руку';
+            break;
+        case 'twohandedweapon':
+            r = 'Двуручное оружие';
+            break;
+         case 'shield':
+            r = 'Щит';
+            break;
         case 'head':
             r = 'Шлем';
             break;
+        case 'chest':
+            r = 'Нагрудник';
+            break;
+        case 'gloves':
+            r = 'Перчатки';
+            break;
         case 'legs':
             r = 'Поножи';
+            break;
+        case 'boots':
+            r = 'Боты';
+            break;
+        case 'neck':
+            r = 'Ожерелье';
+            break;
+        case 'ring':
+            r = 'Кольцо';
+            break;
+        case 'trinket':
+            r = 'Безделушка';
+            break;
+        case 'bottle':
+            r = 'Бутылка';
+            break;
+        case 'sunduk':
+            r = 'Коробка';
+            break;
+        case 'present':
+            r = 'Подарок';
             break;
     }
     return r;
