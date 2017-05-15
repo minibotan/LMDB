@@ -25,6 +25,7 @@ $(document).ready(function () {
     $('.itembox').html('');
     $('.eventbox').html('');
     $('.mapbox').html('');
+    $('.mobbox').html('');
     switch ($(this).attr("id")) {
       case 'home':
         break;
@@ -32,6 +33,7 @@ $(document).ready(function () {
          $('.itembox').html(makeItemHTML());
         break;
       case 'mobs':
+        $('.mobbox').html(makeMobHTML());
         break;
       case 'events':
         $('.eventbox').html(makeEventHTML());

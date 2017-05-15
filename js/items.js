@@ -48,7 +48,7 @@ function getPrice(price){
     var r = '';
     r += (price>9999)?((Math.floor(price/10000)) + 'з '):('');
     r += ((Math.floor(price/100))%100>0)?((Math.floor(price/100))%100 + 'с '):('');
-    r += (price%100>0)?(price%100 + 'б'):('');
+    r += (price%100>0)?(price%100 + 'м'):('');
     return r;
 }
 

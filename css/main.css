@@ -207,16 +207,16 @@ table {
 }
 
 .borderedpic{
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 2px;
 }
 
 .epic{
-    border-color: blueviolet;
+    border-color: RebeccaPurple;
 }
 
 .rare{
-     border-color: blue;
+     border-color: #014682;
 }
 
 .uncommon{
@@ -247,6 +247,16 @@ table {
     text-align: center;
     width: 100%;
     padding: 20px;
+}
+
+
+.mobbox {
+    padding: 15 px;
+}
+
+.moboblock {
+    border: 1px solid grey;
+    border-radius: 10px;
 }
 
 @media screen and (min-width:768px) {
