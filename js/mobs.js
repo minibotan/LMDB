@@ -17,6 +17,8 @@ function makeMobBlock(mob){
     p+= '<p>' + mob.name + '</p>';
 
     /* флеш объект отображается не так, как должен =( */
+    /* на гитхабе вообще не грузит, так как не https */
+    
     p+= '<object type="application/x-shockwave-flash">'
     p+= '<param name="movie" value="http://static.lostmagic.ru/play/lib/dolls/'+mob.doll+'.swf">'
     p+= '<embeded src="http://static.lostmagic.ru/play/lib/dolls/'+mob.doll+'.swf"></embeded>'
@@ -25,7 +27,7 @@ function makeMobBlock(mob){
     p+= '<param name="loop" value="true" />';
     p+= '</object>';
     
-    
+
     p+= '</div>';
     return p;
 }
