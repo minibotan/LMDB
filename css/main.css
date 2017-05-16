@@ -316,11 +316,6 @@ table {
     vertical-align: bottom;
     width: 146px;
 }
-.avatar{
-    display: inherit;
-    border: 5px solid #222;
-    border-radius: 38px;
-}
 
 .mobname{
     text-align: right;
@@ -332,6 +327,31 @@ table {
     border-radius: 10px;
     background: green;
     width: 95%;
+}
+
+.avatar-level{
+    position: relative;
+    display: inline-block;
+}
+
+.mob-level{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    background: #444;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 5px ;
+    width: 36%;
+    height: 36%;
+    text-align: center;
+    vertical-align: center;
+}
+
+.avatar{
+    display: inline;
+    border: 5px solid #222;
+    border-radius: 38px;
 }
 
 .mobpic{

@@ -33,7 +33,6 @@ function showMobs(){
         if(check(mobs[i]))
         newHTML += makeMobBlock(mobs[i]);
     }
-    
     return newHTML;
 }
 
@@ -46,7 +45,10 @@ function makeMobBlock(mob){
     p+= '<p class="mobname">' + mob.name + '</p>';
     p+= '<p class="mobhp">' + mob.maxhp +'/'+mob.maxhp+ '</p>';
     p+= '</div>';
-    p+= '<img class="avatar" src="http://static.lostmagic.ru/play/lib/avatar/'+mob.avatar+'.png">'
+    p+= '<div class="avatar-level">';
+    p+= '<img class="avatar" src="http://static.lostmagic.ru/play/lib/avatar/'+mob.avatar+'.png">';
+    p+= '<h4 class="mob-level">' + mob.level + '</h4>';
+    p+= '</div>';
     p+= '<img class="mobpic"src="img/mobs/'+mob.doll+'.png">';
     p+= '</div>';
     return p;
