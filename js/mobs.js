@@ -1,21 +1,39 @@
-var mobProperty;
-var mobValue;
 
-
-function makeMobHTML(){
-    var newHTML = '';
-    
+function makeSelectHTML(t){
+    var newHTML = '<div class="selector-parent">';
+    newHTML += '<div class="div-prop selector">';
+    newHTML += '<select class="prop-selector">';
+    newHTML += '<option selected hidden>Параметр Выбора</option>';
+    for (var i in searchProps[t]) {
+        newHTML += '<option class="prop-option" value="' + i + '">' + searchProps[t][i] + '</option>';
+    }
+    newHTML += '<select>';
+    newHTML += '</div>';
+    newHTML += '<div class="div-val selector"></div>';
+    newHTML += '</div>';
+    newHTML += '<div class="stuff-holder"></div>';
     return newHTML;
 }
 
 
-function swowMobs(){
+function addSelect(t) {
+    var newHTML = '<select class="val-selector">';
+    newHTML += '<option selected hidden>Выберите '+searchProps[t][Property]+'</option>';
+    for (var i in searchValues[t][Property]) {
+        newHTML += '<option value="' + i + '">' + searchValues[t][Property][i] + '</option>';
+    }
+    newHTML += '<select>';
+    return newHTML;
+}
+
+
+function showMobs(){
     var newHTML = '';
     for(var i in mobs) {
-        if(mobs[i].level === 3) {
-            newHTML += makeMobBlock(mobs[i]);
-        }
+        if(check(mobs[i]))
+        newHTML += makeMobBlock(mobs[i]);
     }
+    
     return newHTML;
 }
 

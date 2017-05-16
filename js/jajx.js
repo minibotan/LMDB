@@ -23,14 +23,14 @@
 
    $('.contentbox').on('change', ".val-selector", function () {
      Value = $(this).val();
-     showItems();
+     $('.stuff-holder').html((curPage == 'items')?showItems():showMobs());
      return false;
    });
 
 
    $('.contentbox').on('change', ".prop-selector", function () {
      Property = $(this).val();
-     $(this).parent().parent().children('.div-val').html(addItemSelect());
+     $(this).parent().parent().children('.div-val').html(addSelect(curPage));
      return false;
    });
 
@@ -45,14 +45,14 @@
 
    $('.nav-button').click(function () {
      $('.contentbox').html('');
-     switch ($(this).attr("id")) {
+     id = $(this).attr("id");
+     switch (id) {
        case 'home':
          break;
        case 'items':
-         $('.contentbox').html(makeItemHTML());
-         break;
        case 'mobs':
-         $('.contentbox').html(makeMobHTML());
+         curPage =  id;
+         $('.contentbox').html(makeSelectHTML(curPage));
          break;
        case 'events':
          $('.contentbox').html(makeEventHTML());

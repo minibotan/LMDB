@@ -1,33 +1,3 @@
-function makeItemHTML() {
-    var newHTML = '<div class="selector-parent">';
-    newHTML += '<div class="div-prop selector">';
-    newHTML += '<select class="prop-selector">';
-    newHTML += '<option selected hidden>Параметр Выбора</option>';
-    for (var i in searchProps) {
-        newHTML += '<option class="prop-option" value="' + i + '">' + searchProps[i] + '</option>';
-    }
-    newHTML += '<select>';
-    newHTML += '</div>';
-    newHTML += '<div class="div-val selector"></div>';
-    newHTML += '</div>';
-    newHTML += '<div class="items-holder"></div>';
-    return newHTML;
-}
-
-
-
-function addItemSelect(sel) {
-    var newHTML = '<select class="val-selector">';
-    newHTML += '<option selected hidden>Выберите '+searchProps[Property]+'</option>';
-    for (var i in searchValues[Property]) {
-        newHTML += '<option value="' + i + '">' + searchValues[Property][i] + '</option>';
-    }
-    newHTML += '<select>';
-    return newHTML;
-}
-
-
-
 function showItems() {
     var newHTML = '';
     for (var i in items) {
@@ -35,8 +5,7 @@ function showItems() {
             newHTML += makeItemBox(items[i]);
         }
     }
-    $('.items-holder').html(newHTML);
-    return true;
+    return newHTML;
 }
 
 function makeItemBox(item) {
@@ -47,7 +16,7 @@ function makeItemBox(item) {
     newHTML += '<h6 class = "itemname">' + item.adminname + '</h6>';
     newHTML += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
     newHTML += '<p>';
-    newHTML += '<p class ="itemtype small">' + searchValues["type"][item.type] + '</p>';
+    newHTML += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     newHTML += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
     newHTML += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
     newHTML += '<table>'
@@ -113,9 +82,9 @@ function Reqs(item) {
     return (bool) ? (t + r) : ('');
 }
 
-function check(item) {
-    console.log(item[Property] + ' ---- ' + Value);
-    if (item[Property] == Value)
+function check(a) {
+    console.log(a[Property] + ' ---- ' + Value);
+    if (a[Property] == Value)
         return true;
     return false;
 }
