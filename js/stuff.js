@@ -14,27 +14,27 @@ var searchValues;
 
 //nav-buttons
 mainButtons = [{
-    nm: 'Home',
+    nm: 'Главная',
     id: 'home'
   },
   {
-    nm: 'Items',
+    nm: 'Вещи',
     id: 'items'
   },
   {
-    nm: 'Mobs',
+    nm: 'Мобы',
     id: 'mobs'
   },
   {
-    nm: 'Events',
+    nm: 'События',
     id: 'events'
   },
   {
-    nm: 'Maps',
+    nm: 'Карты',
     id: 'maps'
   },
   {
-    nm: 'Quests',
+    nm: 'Квесты',
     id: 'quests'
   }
 ];
