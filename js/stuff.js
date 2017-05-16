@@ -1,3 +1,6 @@
+var Value;
+var Property;
+
 var mainButtons;
 var maps;
 var events;

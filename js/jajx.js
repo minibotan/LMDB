@@ -11,26 +11,26 @@
      return newHtml;
    });
 
-   $('.eventbox').on('click', "p", function () {
+   $('.contentbox').on('click', "p", function () {
      $(this).parent().children('div').toggle('normal');
      return false;
    });
 
-   $('.mapbox').on('click', "button", function () {
+   $('.contentbox').on('click', "button", function () {
      showMap(this);
      return false;
    });
-   
-   $('.itembox').on('change', ".item-val-selector", function () {
-     itemValue = $(this).val();
+
+   $('.contentbox').on('change', ".val-selector", function () {
+     Value = $(this).val();
      showItems();
      return false;
    });
 
 
-   $('.itembox').on('change', ".item-prop-selector", function () {
-     itemProperty = $(this).val();
-     $(this).parent().parent().children('.item-val').html(addItemSelect());
+   $('.contentbox').on('change', ".prop-selector", function () {
+     Property = $(this).val();
+     $(this).parent().parent().children('.div-val').html(addItemSelect());
      return false;
    });
 
@@ -44,24 +44,21 @@
 
 
    $('.nav-button').click(function () {
-     $('.itembox').html('');
-     $('.eventbox').html('');
-     $('.mapbox').html('');
-     $('.mobbox').html('');
+     $('.contentbox').html('');
      switch ($(this).attr("id")) {
        case 'home':
          break;
        case 'items':
-         $('.itembox').html(makeItemHTML());
+         $('.contentbox').html(makeItemHTML());
          break;
        case 'mobs':
-         $('.mobbox').html(makeMobHTML());
+         $('.contentbox').html(makeMobHTML());
          break;
        case 'events':
-         $('.eventbox').html(makeEventHTML());
+         $('.contentbox').html(makeEventHTML());
          break;
        case 'maps':
-         $('.mapbox').html(makeMapHTML());
+         $('.contentbox').html(makeMapHTML());
          break;
        case 'quests':
          break;

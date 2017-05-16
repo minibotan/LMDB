@@ -1,17 +1,14 @@
-var itemProperty;
-var itemValue;
-
 function makeItemHTML() {
-    var newHTML = '<div class="item-selector-parent">'
-    newHTML += '<div class="item-prop item-selector">'
-    newHTML += '<select class="item-prop-selector">';
-    newHTML += '<option selected disabled>Параметр Выбора</option>';
+    var newHTML = '<div class="selector-parent">';
+    newHTML += '<div class="div-prop selector">';
+    newHTML += '<select class="prop-selector">';
+    newHTML += '<option selected hidden>Параметр Выбора</option>';
     for (var i in searchProps) {
-        newHTML += '<option class="item-prop-option" value="' + i + '">' + searchProps[i] + '</option>';
+        newHTML += '<option class="prop-option" value="' + i + '">' + searchProps[i] + '</option>';
     }
     newHTML += '<select>';
     newHTML += '</div>';
-    newHTML += '<div class="item-val item-selector"></div>';
+    newHTML += '<div class="div-val selector"></div>';
     newHTML += '</div>';
     newHTML += '<div class="items-holder"></div>';
     return newHTML;
@@ -20,10 +17,10 @@ function makeItemHTML() {
 
 
 function addItemSelect(sel) {
-    var newHTML = '<select class="item-val-selector">';
-    newHTML += '<option selected disabled>Выберите '+searchProps[itemProperty]+'</option>';
-    for (var i in searchValues[itemProperty]) {
-        newHTML += '<option value="' + i + '">' + searchValues[itemProperty][i] + '</option>';
+    var newHTML = '<select class="val-selector">';
+    newHTML += '<option selected hidden>Выберите '+searchProps[Property]+'</option>';
+    for (var i in searchValues[Property]) {
+        newHTML += '<option value="' + i + '">' + searchValues[Property][i] + '</option>';
     }
     newHTML += '<select>';
     return newHTML;
@@ -32,19 +29,12 @@ function addItemSelect(sel) {
 
 
 function showItems() {
-    var newHTML = '<table>';
-    var j = 0;
-    var k = 4; // k = columns
+    var newHTML = '';
     for (var i in items) {
         if (check(items[i])) {
-            if (j % k === 0) newHTML += '<tr>';
             newHTML += makeItemBox(items[i]);
-            if (j % k === (k - 1)) newHTML += '</tr>';
-            j++;
         }
     }
-    if (j % 2 === 1) newHTML += '</tr>';
-    newHTML += '</table>';
     $('.items-holder').html(newHTML);
     return true;
 }
@@ -53,7 +43,7 @@ function makeItemBox(item) {
     var is1 = '<tr><td class="itemstat';
     var is2 = '</td><td class="itemstat2">';
     var newHTML ='';
-    newHTML += '<td class = "item">';
+    newHTML += '<div class = "item">';
     newHTML += '<h6 class = "itemname">' + item.adminname + '</h6>';
     newHTML += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
     newHTML += '<p>';
@@ -79,15 +69,15 @@ function makeItemBox(item) {
     newHTML += '<table class = "bot">'
     newHTML += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
     newHTML += '</table>'
-    newHTML += '</p></td>';
+    newHTML += '</p></div>';
     return newHTML;
 }
 
 function getPrice(price) {
     var r = '';
-    r += (price > 9999) ? ((Math.floor(price / 10000)) + 'з ') : ('');
-    r += ((Math.floor(price / 100)) % 100 > 0) ? ((Math.floor(price / 100)) % 100 + 'с ') : ('');
-    r += (price % 100 > 0) ? (price % 100 + 'м') : ('');
+    r += (price > 9999) ? ((Math.floor(price / 10000)) + ' <div class="golden coin"></div> ') : ('');
+    r += ((Math.floor(price / 100)) % 100 > 0) ? ((Math.floor(price / 100)) % 100 + ' <div class="silver coin"></div> ') : ('');
+    r += (price % 100 > 0) ? (price % 100 + ' <div class="bronze coin"></div>') : ('');
     return r;
 }
 
@@ -124,8 +114,8 @@ function Reqs(item) {
 }
 
 function check(item) {
-    console.log(item[itemProperty] == itemValue);
-    if (item[itemProperty] == itemValue)
+    console.log(item[Property] + ' ---- ' + Value);
+    if (item[Property] == Value)
         return true;
     return false;
 }

@@ -1,7 +1,18 @@
+var mobProperty;
+var mobValue;
+
+
 function makeMobHTML(){
     var newHTML = '';
+    
+    return newHTML;
+}
+
+
+function swowMobs(){
+    var newHTML = '';
     for(var i in mobs) {
-        if(mobs[i].level === 1) {
+        if(mobs[i].level === 3) {
             newHTML += makeMobBlock(mobs[i]);
         }
     }
@@ -12,22 +23,13 @@ function makeMobHTML(){
 
 function makeMobBlock(mob){
     var p='<div class="moboblock">';
-    p+= '<img src="http://static.lostmagic.ru/play/lib/jpg/'+mob.doll+'.jpg">'
-    p+= '<img src="http://static.lostmagic.ru/play/lib/avatar/'+mob.avatar+'.png">'
-    p+= '<p>' + mob.name + '</p>';
-
-    /* флеш объект отображается не так, как должен =( */
-    /* на гитхабе вообще не грузит, так как не https */
-    
-    p+= '<object type="application/x-shockwave-flash">'
-    p+= '<param name="movie" value="http://static.lostmagic.ru/play/lib/dolls/'+mob.doll+'.swf">'
-    p+= '<embeded src="http://static.lostmagic.ru/play/lib/dolls/'+mob.doll+'.swf"></embeded>'
-    p+= '<param name="wmode" value="transparent" />';
-    p+= '<param name="play" value="true" />';
-    p+= '<param name="loop" value="true" />';
-    p+= '</object>';
-    
-
+    //p+= '<img src="http://static.lostmagic.ru/play/lib/jpg/'+mob.doll+'.jpg">'
+    p+= '<div class="mobinfo">'
+    p+= '<p class="mobname">' + mob.name + '</p>';
+    p+= '<p class="mobhp">' + mob.maxhp +'/'+mob.maxhp+ '</p>';
+    p+= '</div>';
+    p+= '<img class="avatar" src="http://static.lostmagic.ru/play/lib/avatar/'+mob.avatar+'.png">'
+    p+= '<img class="mobpic"src="img/mobs/'+mob.doll+'.png">';
     p+= '</div>';
     return p;
 }
@@ -41,5 +43,21 @@ function addLMLoginer(){
     return r;
 }
 
+function addFlash(mob){
+    /* флеш объект отображается не так, как должен =( */
+    /* на гитхабе вообще не грузит, так как не https */
+    var swfsrc = 'http://static.lostmagic.ru/play/lib/dolls/'+mob.doll+'.swf'
+    var p = '';
+    p+= '<object type="application/x-shockwave-flash">'
+    p+= '<param name="movie" value="'+swfsrc+'">'
+    p+= '<embeded src="'+swfsrc+'"></embeded>'
+    p+= '<param name="wmode" value="transparent" />';
+    p+= '<param name="allowScriptAccess" value="always" />';
+    p+= '<param name="flashvars" value="stage=1"/>';
+    p+= '<param name="play" value="true" />';
+    p+= '<param name="loop" value="true" />';
+    p+= '</object>';
+    return p;
+}
 
 
