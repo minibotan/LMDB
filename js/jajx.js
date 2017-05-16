@@ -1,49 +1,71 @@
  $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
- 
-$(document).ready(function () {
 
-  //nav-panel buttons
-  $('#nav-bar').html(function () {
-    var newHtml = '';
-    for (var x in mainButtons) {
-      newHtml += '<button class="nav-button" id="' + mainButtons[x].id + '" >' + mainButtons[x].nm + '</button>';
-    }
-    return newHtml;
-  });
+ $(document).ready(function () {
 
-  $('.eventbox').on('click', "p", function () {
-    $(this).parent().children('div').toggle('normal');
-    return false;
-  });
+   //nav-panel buttons
+   $('#nav-bar').html(function () {
+     var newHtml = '';
+     for (var x in mainButtons) {
+       newHtml += '<button class="nav-button" id="' + mainButtons[x].id + '" >' + mainButtons[x].nm + '</button>';
+     }
+     return newHtml;
+   });
 
-  $('.mapbox').on('click', "button", function (){
-    showMap(this);
-    return false;
-  });
+   $('.eventbox').on('click', "p", function () {
+     $(this).parent().children('div').toggle('normal');
+     return false;
+   });
 
-  $('.nav-button').click(function () {
-    $('.itembox').html('');
-    $('.eventbox').html('');
-    $('.mapbox').html('');
-    $('.mobbox').html('');
-    switch ($(this).attr("id")) {
-      case 'home':
-        break;
-      case 'items':
+   $('.mapbox').on('click', "button", function () {
+     showMap(this);
+     return false;
+   });
+   
+   $('.itembox').on('change', ".item-val-selector", function () {
+     itemValue = $(this).val();
+     showItems();
+     return false;
+   });
+
+
+   $('.itembox').on('change', ".item-prop-selector", function () {
+     itemProperty = $(this).val();
+     $(this).parent().parent().children('.item-val').html(addItemSelect());
+     return false;
+   });
+
+
+
+
+
+
+
+   /* NAVIGATOR */
+
+
+   $('.nav-button').click(function () {
+     $('.itembox').html('');
+     $('.eventbox').html('');
+     $('.mapbox').html('');
+     $('.mobbox').html('');
+     switch ($(this).attr("id")) {
+       case 'home':
+         break;
+       case 'items':
          $('.itembox').html(makeItemHTML());
-        break;
-      case 'mobs':
-        $('.mobbox').html(makeMobHTML());
-        break;
-      case 'events':
-        $('.eventbox').html(makeEventHTML());
-        break;
-      case 'maps':
-        $('.mapbox').html(makeMapHTML());
-        break;
-      case 'quests':
-        break;
-    }
+         break;
+       case 'mobs':
+         $('.mobbox').html(makeMobHTML());
+         break;
+       case 'events':
+         $('.eventbox').html(makeEventHTML());
+         break;
+       case 'maps':
+         $('.mapbox').html(makeMapHTML());
+         break;
+       case 'quests':
+         break;
+     }
 
-  });
-});
+   });
+ });

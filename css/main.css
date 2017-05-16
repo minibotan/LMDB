@@ -134,15 +134,37 @@ footer p {
     display: block; 
 }
 
-tr {
-    border: 5px;
+.item-selector-parent{
+    text-align: center;
+    padding: 15px;
 }
+
+.item-selector {
+    display: inline;
+    border: 1px #999;
+    border-radius: 5px;
+}
+
+select, option {
+    border: 3px #999;
+    border-radius: 5px;
+    margin: 15px;
+    font-size: 24;
+    outline: none;
+}
+
+
+
 
 table {
     width: 100%;
     margin: 10px;
     padding: 3px;
     border-collapse: separate;
+}
+
+tr {
+    border: 5px;
 }
 
 .itemstat {

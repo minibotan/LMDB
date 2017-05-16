@@ -1,148 +1,131 @@
+var itemProperty;
+var itemValue;
+
 function makeItemHTML() {
-    var newHTML = '<table >';
-    var j = 0; var k = 4; // k = columns
-    var is1 = '<tr><td class="itemstat';
-    var is2 = '</td><td class="itemstat2">';
-    for (var i in items) {
-        if(j%k === 0) newHTML += '<tr>';
-        newHTML += '<td class = "item">';
-        newHTML += '<h6 class = "itemname">' + items[i].adminname + '</h6>';
-        newHTML += '<img class="'+items[i].rarity+' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + items[i].image + '.jpg">';
-        newHTML += '<p>';
-        newHTML += '<p class ="itemtype small">' + getType(items[i].type) + '</p>';
-        newHTML += (items[i].personal)?('<p class="small">Персональный предмет</p>'):('');
-        newHTML += (items[i].becomepersonal)?('<p class="small">Становится персональным при надевании</p>'):('');
-        newHTML += '<table>'
-        newHTML += Reqs(items[i]);
-        newHTML += '</table>'
-        newHTML += '<table>'
-        newHTML += (items[i].minhit || items[i].maxhit)?(is1 + '">Урон:' + is2  + items[i].minhit +' - '+items[i].maxhit+'</td></tr>'):('');
-        newHTML += (items[i].defence)?(is1 + '">Защита:' + is2  + items[i].defence+'</td></tr>'):('');
-        newHTML += (items[i].strength)?(is1 + '">Сила:' + is2  + items[i].strength+'</td></tr>'):('');
-        newHTML += (items[i].agility)?(is1 + '">Ловкость:' + is2  + items[i].agility+'</td></tr>'):('');
-        newHTML += (items[i].stamina)?(is1 + '">Выносливость:' + is2  + items[i].stamina+'</td></tr>'):('');
-        newHTML += (items[i].crit)?(is1 + '">Крит:' + is2  + items[i].crit+'%</td></tr>'):('');
-        newHTML += (items[i].dodge)?(is1 + '">Уворот:' + is2  + items[i].dodge+'%</td></tr>'):('');
-        newHTML += (items[i].mastery)?(is1 + '">Мастерство:' + is2  + items[i].mastery+'</td></tr>'):('');
-        newHTML += (items[i].resilience)?(is1 + '">Устойчивость:' + is2  + items[i].resilience+'</td></tr>'):('');
-        newHTML += (items[i].maxdur)?(is1 + '">Прочность:' + is2  + items[i].maxdur+'</td></tr>'):('');
-        newHTML += '</table>'
-        newHTML += (items[i].descr)?('<p class="goldentext">' + items[i].descr+'</p>'):('');
-        newHTML += '<table class = "bot">'
-        newHTML += (items[i].price)?(is1 + ' itemtype">Цена:' + is2  + getPrice(items[i].price) + '</td></tr>'):('');
-        newHTML += '</table>'
-
-        newHTML += '</p></td>';
-
-        if(j%k===(k-1)) newHTML += '</tr>';
-        j++;
+    var newHTML = '<div class="item-selector-parent">'
+    newHTML += '<div class="item-prop item-selector">'
+    newHTML += '<select class="item-prop-selector">';
+    newHTML += '<option selected disabled>Параметр Выбора</option>';
+    for (var i in searchProps) {
+        newHTML += '<option class="item-prop-option" value="' + i + '">' + searchProps[i] + '</option>';
     }
-    if(j%2===1) newHTML += '</tr>';
-    newHTML += '</table>';
-
+    newHTML += '<select>';
+    newHTML += '</div>';
+    newHTML += '<div class="item-val item-selector"></div>';
+    newHTML += '</div>';
+    newHTML += '<div class="items-holder"></div>';
     return newHTML;
 }
 
 
-function getPrice(price){
-    var r = '';
-    r += (price>9999)?((Math.floor(price/10000)) + 'з '):('');
-    r += ((Math.floor(price/100))%100>0)?((Math.floor(price/100))%100 + 'с '):('');
-    r += (price%100>0)?(price%100 + 'м'):('');
-    return r;
-}
 
-
-
-
-function getType(type) {
-    var r = 'что-то еще';
-    switch(type) {
-        case 'other':
-            r = 'другое';
-            break;
-        case 'weapon':
-            r = 'Оружие в любую руку';
-            break;
-        case 'rweapon':
-            r = 'Оружие в основную руку';
-            break;
-        case 'lweapon':
-            r = 'Оружие в левую руку';
-            break;
-        case 'twohandedweapon':
-            r = 'Двуручное оружие';
-            break;
-         case 'shield':
-            r = 'Щит';
-            break;
-        case 'head':
-            r = 'Шлем';
-            break;
-        case 'chest':
-            r = 'Нагрудник';
-            break;
-        case 'gloves':
-            r = 'Перчатки';
-            break;
-        case 'legs':
-            r = 'Поножи';
-            break;
-        case 'boots':
-            r = 'Боты';
-            break;
-        case 'neck':
-            r = 'Ожерелье';
-            break;
-        case 'ring':
-            r = 'Кольцо';
-            break;
-        case 'trinket':
-            r = 'Безделушка';
-            break;
-        case 'bottle':
-            r = 'Бутылка';
-            break;
-        case 'sunduk':
-            r = 'Коробка';
-            break;
-        case 'present':
-            r = 'Подарок';
-            break;
+function addItemSelect(sel) {
+    var newHTML = '<select class="item-val-selector">';
+    newHTML += '<option selected disabled>Выберите '+searchProps[itemProperty]+'</option>';
+    for (var i in searchValues[itemProperty]) {
+        newHTML += '<option value="' + i + '">' + searchValues[itemProperty][i] + '</option>';
     }
-    return r;
+    newHTML += '<select>';
+    return newHTML;
 }
 
 
+
+function showItems() {
+    var newHTML = '<table>';
+    var j = 0;
+    var k = 4; // k = columns
+    for (var i in items) {
+        if (check(items[i])) {
+            if (j % k === 0) newHTML += '<tr>';
+            newHTML += makeItemBox(items[i]);
+            if (j % k === (k - 1)) newHTML += '</tr>';
+            j++;
+        }
+    }
+    if (j % 2 === 1) newHTML += '</tr>';
+    newHTML += '</table>';
+    $('.items-holder').html(newHTML);
+    return true;
+}
+
+function makeItemBox(item) {
+    var is1 = '<tr><td class="itemstat';
+    var is2 = '</td><td class="itemstat2">';
+    var newHTML ='';
+    newHTML += '<td class = "item">';
+    newHTML += '<h6 class = "itemname">' + item.adminname + '</h6>';
+    newHTML += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
+    newHTML += '<p>';
+    newHTML += '<p class ="itemtype small">' + searchValues["type"][item.type] + '</p>';
+    newHTML += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
+    newHTML += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
+    newHTML += '<table>'
+    newHTML += Reqs(item);
+    newHTML += '</table>'
+    newHTML += '<table>'
+    newHTML += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + item.minhit + ' - ' + item.maxhit + '</td></tr>') : ('');
+    newHTML += (item.defence) ? (is1 + '">Защита:' + is2 + item.defence + '</td></tr>') : ('');
+    newHTML += (item.strength) ? (is1 + '">Сила:' + is2 + item.strength + '</td></tr>') : ('');
+    newHTML += (item.agility) ? (is1 + '">Ловкость:' + is2 + item.agility + '</td></tr>') : ('');
+    newHTML += (item.stamina) ? (is1 + '">Выносливость:' + is2 + item.stamina + '</td></tr>') : ('');
+    newHTML += (item.crit) ? (is1 + '">Крит:' + is2 + item.crit + '%</td></tr>') : ('');
+    newHTML += (item.dodge) ? (is1 + '">Уворот:' + is2 + item.dodge + '%</td></tr>') : ('');
+    newHTML += (item.mastery) ? (is1 + '">Мастерство:' + is2 + item.mastery + '</td></tr>') : ('');
+    newHTML += (item.resilience) ? (is1 + '">Устойчивость:' + is2 + item.resilience + '</td></tr>') : ('');
+    newHTML += (item.maxdur) ? (is1 + '">Прочность:' + is2 + item.maxdur + '</td></tr>') : ('');
+    newHTML += '</table>'
+    newHTML += (item.descr) ? ('<p class="goldentext">' + item.descr + '</p>') : ('');
+    newHTML += '<table class = "bot">'
+    newHTML += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
+    newHTML += '</table>'
+    newHTML += '</p></td>';
+    return newHTML;
+}
+
+function getPrice(price) {
+    var r = '';
+    r += (price > 9999) ? ((Math.floor(price / 10000)) + 'з ') : ('');
+    r += ((Math.floor(price / 100)) % 100 > 0) ? ((Math.floor(price / 100)) % 100 + 'с ') : ('');
+    r += (price % 100 > 0) ? (price % 100 + 'м') : ('');
+    return r;
+}
 
 function Reqs(item) {
     var bool = false;
     var t = '<tr class="reqs"><td class="itemstat">Требования:</td>'
-    var r ='';
-    var s ='<tr class="reqs"><td></td>';
-    if(item.reqlevel){
-        r+= '<td class="itemstat2">Уровень ' + item.reqlevel + '</td></tr>';
+    var r = '';
+    var s = '<tr class="reqs"><td></td>';
+    if (item.reqlevel) {
+        r += '<td class="itemstat2">Уровень ' + item.reqlevel + '</td></tr>';
         bool = true;
     }
     if (item.reqparagon) {
-         r+= (bool)?(s):('');
-         r+= '<td class="itemstat2">Ступень ' + item.reqparagon + '</td></tr>';
-         bool = true;
-    }
-    if(item.reqstrength) {
-        r+= (bool)?(s):('');
-        r+= '<td class="itemstat2">Сила ' + item.reqstrength + '</td></tr>';
+        r += (bool) ? (s) : ('');
+        r += '<td class="itemstat2">Ступень ' + item.reqparagon + '</td></tr>';
         bool = true;
     }
-    if (item.reqagility){
-        r+= (bool)?(s):('');
-         r+= '<td class="itemstat2">Ловкость ' + item.reqagility + '</td></tr>';
-         bool = true;
+    if (item.reqstrength) {
+        r += (bool) ? (s) : ('');
+        r += '<td class="itemstat2">Сила ' + item.reqstrength + '</td></tr>';
+        bool = true;
     }
-    if(item.reqstamina) {
-        r+= (bool)?(s):('');
-         r+= '<td class="itemstat2">Выносливость ' + item.reqstamina + '</td></tr>';
-         bool = true;
+    if (item.reqagility) {
+        r += (bool) ? (s) : ('');
+        r += '<td class="itemstat2">Ловкость ' + item.reqagility + '</td></tr>';
+        bool = true;
     }
-    return (bool)?(t+r):('');
+    if (item.reqstamina) {
+        r += (bool) ? (s) : ('');
+        r += '<td class="itemstat2">Выносливость ' + item.reqstamina + '</td></tr>';
+        bool = true;
+    }
+    return (bool) ? (t + r) : ('');
+}
+
+function check(item) {
+    console.log(item[itemProperty] == itemValue);
+    if (item[itemProperty] == itemValue)
+        return true;
+    return false;
 }
