@@ -1,7 +1,7 @@
 function makeMapHTML(){
     var newHTML = '<div class="map-button-bar">';
     for(var i in maps) {
-        newHTML += '<button class="map-button" id="' + maps[i].id + '" >' + maps[i].nm + '</button>';
+        newHTML += '<button class="map-button" id="' + maps[i] + '" >' + i + '</button>';
     }
     newHTML += '</div><img class="pic-holder"></img>';
     return newHTML;

@@ -6,7 +6,7 @@
    $('#nav-bar').html(function () {
      var newHtml = '';
      for (var x in mainButtons) {
-       newHtml += '<button class="nav-button" id="' + mainButtons[x].id + '" >' + mainButtons[x].nm + '</button>';
+       newHtml += '<button class="nav-button" id="' + mainButtons[x] + '" >' + x + '</button>';
      }
      return newHtml;
    });

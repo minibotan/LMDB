@@ -14,56 +14,15 @@ var searchValues;
 
 
 //nav-buttons
-mainButtons = [{
-    nm: 'Главная',
-    id: 'home'
-  },
-  {
-    nm: 'Вещи',
-    id: 'items'
-  },
-  {
-    nm: 'Мобы',
-    id: 'mobs'
-  },
-  {
-    nm: 'События',
-    id: 'events'
-  },
-  {
-    nm: 'Карты',
-    id: 'maps'
-  },
-  {
-    nm: 'Квесты',
-    id: 'quests'
-  }
-];
+mainButtons = {
+    'Главная':'home', 'Вещи':'items', 'Мобы':'mobs', 'События':'events', 'Карты':'maps', 'Квесты':'quests'
+  };
 
 
 //maps
-maps = [{
-  nm: "Город",
-  id: "beginning"
-}, {
-  nm: "Болота",
-  id: "bolota"
-}, {
-  nm: "Северные Горы",
-  id: "mountains"
-}, {
-  nm: "Пустыня",
-  id: "zone"
-}, {
-  nm: "Сумеречный Город",
-  id: "bad_city"
-}, {
-  nm: "Древние Земли",
-  id: "amazonia"
-}, {
-  nm: "Пираты",
-  id: "bitch"
-}];
+maps = {
+  "Город":"beginning", "Болота":"bolota", "Северные Горы":"mountains", "Пустыня":"zone", "Сумеречный Город":"bad_city", "Древние Земли":"amazonia", "Пираты":"bitch"
+};
 //events
 events = [{
     "name": "Благословение Совы",
@@ -3525,10 +3484,10 @@ searchValues = {
     }
   },
   'mobs': {
-    'type':{
+    'type': {
 
     },
-    'level':{
+    'level': {
       "0": "0 Уровень",
       "1": "1 Уровень",
       "2": "2 Уровень",
@@ -3551,7 +3510,7 @@ searchValues = {
       "19": "19 Уровень",
       "20": "20 Уровень"
     },
-    'location':{
+    'location': {
 
     }
   }
