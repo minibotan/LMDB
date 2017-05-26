@@ -7,11 +7,12 @@ function makeEventHTML(){
     newHTML += '</select></div>';
     newHTML += '<div class ="events-content">';
     newHTML += '<div class="event-descr">Выберите Событие</div>';
-    newHTML += '<div class="event-loc"></div>';
+    newHTML += '<div class="event-img">Картиночка</div>';
+    newHTML += '<div class="event-loc">Локация</div>';
     newHTML += '<div>'
-    newHTML += '<div class="event-cd"></div>';
-    newHTML += '<div class="event-start"></div>';
-    newHTML += '<div class="event-end"></div>';
+    newHTML += '<div class="event-cd">КД</div>';
+    newHTML += '<div class="event-start">уровень</div>';
+    newHTML += '<div class="event-end">уровень</div>';
     newHTML += '</div>';
     newHTML += '</div>';
     return newHTML;
@@ -21,6 +22,7 @@ function makeEventHTML(){
 
 function showEvent(event){
     $('.event-descr').html(event.description);
+    $('.event-img').html('<img class="borderedpic" src="img/events/'+event.img+'.png"/>');
     $('.event-loc').html("Локация: "+event.location);
     $('.event-cd').html('КД: '+event.cd);
     $('.event-start').html("С "+event.start+" уровня");

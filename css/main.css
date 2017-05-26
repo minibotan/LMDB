@@ -108,10 +108,8 @@ footer p {
 }
 
 .events-block{
-    display: block;
+    display: flex;
 }
-
-
 
 .events-title{
     display: inline-table;
@@ -127,7 +125,7 @@ footer p {
 
 .events-content{
     margin: 0px 20px;
-    width: 50%;
+    width: 58%;
     height: 100%;
     display: inline-table;
     border: 3px solid #555;
@@ -138,14 +136,22 @@ footer p {
 
 .event-descr {
     display: block;
-    width: 100%;
     padding: 10px 20px 15px;
-    margin-top: 0px;
+    margin: 10px;
+    border: 3px solid #555;
+    background: #777;
+    border-radius: 8px;
 
+}
+.event-img{
+    display: block;
+    text-align: center;
+    margin: 15px;
 }
 .event-loc{
     display: block;
     text-align: center;
+    margin: 10px;
 }
 .event-cd{
     display: inline-table;
@@ -192,7 +198,6 @@ footer p {
 select, option {
     border: 3px #999;
     border-radius: 5px;
-    margin: 15px;
     font-size: 24;
     outline: none;
 }
@@ -223,7 +228,6 @@ table {
     font-size: 1em;
     font-weight: 500;
     line-height: 1;
-    text-align: left;
     padding-left: 5px;
     display: table-cell;
     width: 58%;
