@@ -11,32 +11,41 @@
      return newHtml;
    });
 
-   $('.contentbox').on('click', "p", function () {
-     $(this).parent().children('div').toggle('normal');
+   $('.contentbox').on('change', ".event-selector", function () {
+     showEvent(events[$(this).val()]);
      return false;
    });
 
-   $('.contentbox').on('click', "button", function () {
+   $('.contentbox').on('click', ".map-button", function () {
      showMap(this);
      return false;
    });
 
+  $('.contentbox').on('click', "#odevalka-change", function () {
+    if(bull){
+     $(this).parent().parent().append(secondChar());
+    } else {
+      $('.reversed').remove();
+    }
+     bull = !bull;
+     $('#odevalka-change').html(odevalkastate[bull]);
+     //$('table').html($('tr.widget_view_row_even').get().reverse());
+     return false;
+   });
+
+
    $('.contentbox').on('change', ".val-selector", function () {
      Value = $(this).val();
-     $('.stuff-holder').html((curPage == 'items')?showItems():showMobs());
+     $('.stuff-holder').html(($(curPage).attr('id') == 'items')?showItems():showMobs());
      return false;
    });
 
 
    $('.contentbox').on('change', ".prop-selector", function () {
      Property = $(this).val();
-     $(this).parent().parent().children('.div-val').html(addSelect(curPage));
+     $(this).parent().parent().children('.div-val').html(addSelect($(curPage).attr('id')));
      return false;
    });
-
-
-
-
 
 
 
@@ -45,14 +54,16 @@
 
    $('.nav-button').click(function () {
      $('.contentbox').html('');
+     $(curPage).css('background', 'none');
+     $(this).css('background', '#888');
      id = $(this).attr("id");
+     curPage =  this;
      switch (id) {
        case 'home':
          break;
        case 'items':
        case 'mobs':
-         curPage =  id;
-         $('.contentbox').html(makeSelectHTML(curPage));
+         $('.contentbox').html(makeSelectHTML(id));
          break;
        case 'events':
          $('.contentbox').html(makeEventHTML());
@@ -60,7 +71,8 @@
        case 'maps':
          $('.contentbox').html(makeMapHTML());
          break;
-       case 'quests':
+       case 'odevalka':
+         $('.contentbox').html(makeOdevalka());
          break;
      }
 

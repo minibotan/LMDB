@@ -7,7 +7,7 @@ function makeSelectHTML(t){
     for (var i in searchProps[t]) {
         newHTML += '<option class="prop-option" value="' + i + '">' + searchProps[t][i] + '</option>';
     }
-    newHTML += '<select>';
+    newHTML += '</select>';
     newHTML += '</div>';
     newHTML += '<div class="div-val selector"></div>';
     newHTML += '</div>';

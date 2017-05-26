@@ -75,7 +75,7 @@ hr {
     margin-bottom: 20px;
     padding: 30px 15px;
     background: #fff;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(60, 60, 60, 0.9);
 }
 
 .intro-text {
@@ -98,29 +98,74 @@ hr {
 
 footer {
     background: #fff;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(60, 60, 60, 0.9);
 }
 
 footer p {
     margin: 0;
     padding: 30px 0;
-}
-
-
-.spoiler {
-    margin: 2px;
-    text-decoration: none;
-}
-
-.sp-content {
-    display: none;
-    padding: 10px 20px 15px;
-    border: 1px solid #555;
-    border-radius: 3px;
-    margin-top: 0px;
-    background: #666;
     color: #ccc;
 }
+
+.events-block{
+    display: block;
+}
+
+
+
+.events-title{
+    display: inline-table;
+    width: 40%;
+}
+
+.event-selector {
+    text-decoration: none;
+    width: 100%;
+    display: block; 
+    border: 3px solid #555;
+}
+
+.events-content{
+    margin: 0px 20px;
+    width: 50%;
+    height: 100%;
+    display: inline-table;
+    border: 3px solid #555;
+    border-radius: 5px;
+    background: #666;
+    color: #ddd;
+}
+
+.event-descr {
+    display: block;
+    width: 100%;
+    padding: 10px 20px 15px;
+    margin-top: 0px;
+
+}
+.event-loc{
+    display: block;
+    text-align: center;
+}
+.event-cd{
+    display: inline-table;
+    width: 40%;
+    border: 1px solid #555;
+    padding: 2px 5px;
+}
+.event-start{
+    display: inline-table;
+    width: 30%;
+    border: 1px solid #555;
+    padding: 2px 5px;
+}
+.event-end{
+    display: inline-table;
+    width: 30%;
+    border: 1px solid #555;
+    padding: 2px 5px;
+}
+
 
 
 .sp-title {
@@ -131,7 +176,6 @@ footer p {
     padding: 8px;
     margin: 0px;
     color: #ccc;
-    display: block; 
 }
 
 .selector-parent{
@@ -188,9 +232,10 @@ table {
 
 
 .item {
+    border: 3px solid #222;
     text-align: center;
     border-radius: 5px;
-    background: #333;
+    background: #222;
     padding: 0px;
     margin: 1%;
     color: #ccc;
@@ -282,9 +327,10 @@ table {
     padding: 10px 20px;
     margin: 0px 10px;
     background: rgba(100, 100, 100, 0.4);
-    border: 2px solid;
+    border: 2px solid #222;
     border-radius: 7px;
     outline: none;
+    color: #ccc;
 }
 
 
@@ -361,6 +407,35 @@ table {
     width: 100%;
 }
 
+.char{
+    display: inline-table;
+}
+
+.char>tbody{
+    padding: 5px;
+}
+
+
+
+.doll {
+    
+}
+
+.borderedpic{
+    color: #222;
+    width: 64px;
+    height: 64px;
+}
+
+.reversed{
+    align-self: right;
+}
+
+
+
+
+
+
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -405,9 +480,10 @@ table {
     .navbar-default {
         border: none;
         background: #fff;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(60, 60, 60, 0.9);
     }
     .nav-button {
+        color: #ccc;
         line-height: normal;
         padding: 25px;
         padding-right: 30px;

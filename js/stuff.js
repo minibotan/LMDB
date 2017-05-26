@@ -2,6 +2,8 @@ var curPage;
 var Value;
 var Property;
 
+
+var odevalkastate;
 var mainButtons;
 var maps;
 var events;
@@ -11,6 +13,14 @@ var searchProps;
 var searchValues;
 
 
+
+
+
+
+odevalkastate = {
+    true:'Одевалка двойная',
+    false:'Одевалка на одного'
+};
 
 
 //nav-buttons
@@ -23,6 +33,8 @@ mainButtons = {
 maps = {
   "Город":"beginning", "Болота":"bolota", "Северные Горы":"mountains", "Пустыня":"zone", "Сумеречный Город":"bad_city", "Древние Земли":"amazonia", "Пираты":"bitch"
 };
+
+
 //events
 events = [{
     "name": "Благословение Совы",
