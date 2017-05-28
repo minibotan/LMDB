@@ -60,6 +60,7 @@
      curPage =  this;
      switch (id) {
        case 'home':
+        $('.contentbox').html(tmp());
          break;
        case 'items':
        case 'mobs':
@@ -78,3 +79,19 @@
 
    });
  });
+
+
+
+ function tmp(){
+   var p = '<h2> Это список из гильдийных значков. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+   p += '<ol>';
+   var i = 1;
+   while (i < 400) {
+   p+= '<li>';
+   p+='<img src="http://static.lostmagic.ru/play/lib/clan/'+i+'.png"'
+   p+='</li>';
+   i++;
+   }
+   p+= '</ol>';
+   return p;
+ }
