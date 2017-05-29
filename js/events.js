@@ -9,7 +9,7 @@ function makeEventHTML(){
     newHTML += '<div class="event-descr">Выберите Событие</div>';
     newHTML += '<div class="event-img">Картиночка</div>';
     newHTML += '<div class="event-loc">Локация</div>';
-    newHTML += '<div>'
+    newHTML += '<div class="event-misc">'
     newHTML += '<div class="event-cd">КД</div>';
     newHTML += '<div class="event-start">уровень</div>';
     newHTML += '<div class="event-end">уровень</div>';

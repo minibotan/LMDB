@@ -34,3 +34,25 @@ function secondChar(){
     return r;
 
 }
+
+
+function chooseItem(itemtype){
+    var p = '<select size="5" class="itemselect">';
+        for (var i in items) {
+            if(items[i].type == itemtype){
+                p += itemOption(i);
+            }
+        }
+    p+= '</p>';
+    return p;
+
+}
+
+function itemOption(itemid){
+    var item = items[itemid];
+    var p ='<option value="' + itemid + '">';
+    p += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
+    p += item.name;
+    p+= '</option>';
+    return p;
+}

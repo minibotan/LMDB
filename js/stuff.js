@@ -25,7 +25,7 @@ odevalkastate = {
 
 //nav-buttons
 mainButtons = {
-    'Главная':'home', 'Вещи':'items', 'Мобы':'mobs', 'События':'events', 'Карты':'maps', 'Квесты':'quests'
+    'Главная':'home', 'Вещи':'items', 'Мобы':'mobs', 'События':'events', 'Карты':'maps', 'Квесты':'quests', 'Ачивки':'achievements', 'Одевалка':'odevalka' 
   };
 
 
