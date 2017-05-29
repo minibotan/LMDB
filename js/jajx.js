@@ -3,7 +3,7 @@
  $(document).ready(function () {
 
    //nav-panel buttons
-   $('#nav-bar').html(function () {
+   $('.nav-bar').html(function () {
      var newHtml = '';
      for (var x in mainButtons) {
        newHtml += '<button class="nav-button" id="' + mainButtons[x] + '" >' + x + '</button>';
@@ -47,6 +47,12 @@
      return false;
    });
 
+   $('.contentbox').on('click', ".char td", function () {
+     alert($(this).attr("class"));
+     $(this).html(chooseItem($(this).attr("class").split(' ')[1]));
+     return false;
+   });
+
 
 
    /* NAVIGATOR */
@@ -75,6 +81,8 @@
        case 'odevalka':
          $('.contentbox').html(makeOdevalka());
          break;
+      default: 
+         $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
      }
 
    });
