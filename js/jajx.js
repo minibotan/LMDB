@@ -11,7 +11,7 @@
      return newHtml;
    });
 
-   $('.contentbox').on('change', ".event-selector", function () {
+   $('.contentbox').on('click', ".event-title", function () {
      showEvent(events[$(this).val()]);
      return false;
    });
@@ -47,7 +47,7 @@
      return false;
    });
 
-   $('.contentbox').on('click', ".char td", function () {
+   $('.contentbox').on('click', ".char td", function (event) {
      alert($(this).attr("class"));
      $(this).html(chooseItem($(this).attr("class").split(' ')[1]));
      return false;

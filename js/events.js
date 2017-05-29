@@ -1,10 +1,10 @@
 function makeEventHTML(){
     var newHTML = '<div class="events-block">';
-    newHTML += '<div class="events-title"><select size="10" class ="event-selector">';
+    newHTML += '<div class ="event-selector">';
     for(var i in events) {
-        newHTML += '<option class="sp-title" value="'+i+'">' + events[i].name + '</p>';
+        newHTML += '<option class="event-title" value="'+i+'">' + events[i].name + '</option>';
     }
-    newHTML += '</select></div>';
+    newHTML += '</div>';
     newHTML += '<div class ="events-content">';
     newHTML += '<div class="event-descr">Выберите Событие</div>';
     newHTML += '<div class="event-img">Картиночка</div>';
