@@ -12,24 +12,24 @@ function makeOdevalka(){
 
 function firstChar(){
     var r = '<div class="char"><table>';
-    r += '<tr><td class="borderedpic head" /><td class="doll" colspan="5" rowspan="5" /><td class="borderedpic neck" /></tr>';
-    r += '<tr><td class="borderedpic chest" /><td class="borderedpic ring" /></tr>';
-    r += '<tr><td class="borderedpic cloak" /><td class="borderedpic ring" /></tr>';
-    r += '<tr><td class="borderedpic belt" /><td class="borderedpic trinket" /></tr>';
-    r += '<tr><td class="borderedpic legs" /><td class="borderedpic trinket" /></tr>';
-    r += '<tr><td class="borderedpic boots" /><td class="borderedpic gloves" /><td class="borderedpic weapon" /><td class="sep"/><td class="borderedpic weapon" /><td class="borderedpic rune" /><td class="borderedpic totem" /></tr>';
+    r += '<tr><td class="itemslot head" /><td class="doll" colspan="5" rowspan="5" /><td class="itemslot neck" /></tr>';
+    r += '<tr><td class="itemslot chest" /><td class="itemslot ring" /></tr>';
+    r += '<tr><td class="itemslot cloak" /><td class="itemslot ring" /></tr>';
+    r += '<tr><td class="itemslot belt" /><td class="itemslot trinket" /></tr>';
+    r += '<tr><td class="itemslot legs" /><td class="itemslot trinket" /></tr>';
+    r += '<tr><td class="itemslot boots" /><td class="itemslot gloves" /><td class="itemslot weapon rweapon twohandedweapon" /><td class="sep"/><td class="itemslot weapon lweapon shield" /><td class="itemslot rune" /><td class="itemslot totem" /></tr>';
     r += '</table></div>';
     return r;
 }
 
 function secondChar(){
     var r = '<div class="char reversed"><table>';
-    r += '<tr><td class="borderedpic neck" /><td class="doll" colspan="5" rowspan="5" /><td class="borderedpic head" /></tr>';
-    r += '<tr><td class="borderedpic ring" /><td class="borderedpic chest" /></tr>';
-    r += '<tr><td class="borderedpic ring" /><td class="borderedpic cloak" /></tr>';
-    r += '<tr><td class="borderedpic trinket" /><td class="borderedpic belt" /></tr>';
-    r += '<tr><td class="borderedpic trinket" /><td class="borderedpic legs" /></tr>';
-    r += '<tr><td class="borderedpic totem" /><td class="borderedpic rune" /><td class="borderedpic weapon" /><td class="sep"/><td class="borderedpic weapon" /><td class="borderedpic gloves" /><td class="borderedpic boots" /></tr>';
+    r += '<tr><td class="itemslot neck" /><td class="doll" colspan="5" rowspan="5" /><td class="itemslot head" /></tr>';
+    r += '<tr><td class="itemslot ring" /><td class="itemslot chest" /></tr>';
+    r += '<tr><td class="itemslot ring" /><td class="itemslot cloak" /></tr>';
+    r += '<tr><td class="itemslot trinket" /><td class="itemslot belt" /></tr>';
+    r += '<tr><td class="itemslot trinket" /><td class="itemslot legs" /></tr>';
+    r += '<tr><td class="itemslot totem" /><td class="itemslot rune" /><td class="itemslot weapon lweapon shield" /><td class="sep"/><td class="itemslot weapon rweapon twohandedweapon" /><td class="itemslot gloves" /><td class="itemslot boots" /></tr>';
     r += '</table></div>';
     return r;
 
@@ -37,22 +37,36 @@ function secondChar(){
 
 
 function chooseItem(itemtype){
-    var p = '<select size="5" class="itemselect">';
+    var p = '<div size="5" class="itemselect">';
         for (var i in items) {
-            if(items[i].type == itemtype){
-                p += itemOption(i);
+            for(var j in itemtype) {
+                if(items[i].type == itemtype[j]){
+                    p += itemOption(i);
+                }
             }
         }
-    p+= '</p>';
+    p+= '</div>';
     return p;
 
 }
 
 function itemOption(itemid){
     var item = items[itemid];
-    var p ='<option value="' + itemid + '">';
+    var p ='<div class="option" value="' + itemid + '">';
     p += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
-    p += item.name;
-    p+= '</option>';
+    p += '<span>'+item.name+'</span>';
+    p+= '</div>';
     return p;
+}
+
+function equipItem(slot, itemid){
+    var item = items[itemid];
+    $(slot).html('<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">');
+
+}
+
+function equipItem2(slot, itemid){
+    var item = items[itemid];
+    $(slot).toggleClass("borderedpic " + item.rarity);
+    $(slot).css("background", "url('http://static.lostmagic.ru/play/lib/jpg/" + item.image + ".jpg') no-repeat center center");
 }

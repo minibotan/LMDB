@@ -47,9 +47,15 @@
      return false;
    });
 
-   $('.contentbox').on('click', ".char td", function (event) {
-     alert($(this).attr("class"));
-     $(this).html(chooseItem($(this).attr("class").split(' ')[1]));
+   $('.contentbox').on('click', ".char td", function () {
+     $(this).html(chooseItem($(this).attr("class").split(' ')));
+     return false;
+   });
+
+   $('.contentbox').on('click', ".char .option", function () {
+     var selected = $(this);
+     equipItem2($(this).parent().parent().empty(), selected.attr("value"));
+     
      return false;
    });
 
