@@ -4,14 +4,18 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+html{
+    min-height: 100%; 
+    position: relative;  
+}
+
 body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: url('http://www.lostmagic.ru/useruploads/images/desk5_1920x1200.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    color: #ccc;    
+    color: #ccc; 
 }
 
 h1,
@@ -92,17 +96,25 @@ hr {
 footer {
     background: #fff;
     background: rgba(60, 60, 60, 0.9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 footer p {
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0;
     color: #ccc;
 }
 
 .contentbox {
     margin-bottom: 20px;
     margin-top: 80px;
+    margin-bottom: 80px;
     padding: 30px 15px;
     background: rgba(60, 60, 60, 0.9);
 }
@@ -201,6 +213,7 @@ select, option {
     border-radius: 5px;
     font-size: 24;
     outline: none;
+    background: #555
 }
 
 
