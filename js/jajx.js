@@ -49,6 +49,7 @@
 
    $('.contentbox').on('click', ".char td", function () {
      $(this).html(chooseItem($(this).attr("class").split(' ')));
+     $(this).removeClass("rare epic legendary common uncommon borderedpic");
      return false;
    });
 

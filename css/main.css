@@ -411,6 +411,27 @@ table {
     z-index: 2;
 }
 
+.option{
+    border: 2px solid #333;
+    border-radius: 4px;
+    background: #666;
+    padding: 0px;
+    
+}
+
+
+
+.option-item-img{
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0px;
+}
+.option-item-name{
+    display: inline-flex;
+    vertical-align: middle;
+    margin: 0px;
+}
+
 
 .doll {
     

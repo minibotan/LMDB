@@ -37,7 +37,11 @@ function secondChar(){
 
 
 function chooseItem(itemtype){
-    var p = '<div size="5" class="itemselect">';
+    var p = '<div size="5" class="itemselect">'; 
+    p +='<div class="option" value="-1">';
+    p += '<img class="common borderedpic option-item-img" src="http://static.lostmagic.ru/play/lib/jpg/0.jpg">';
+    p += '<div class="option-item-name">Снять</div>';
+    p += '</div>';
         for (var i in items) {
             for(var j in itemtype) {
                 if(items[i].type == itemtype[j]){
@@ -53,20 +57,18 @@ function chooseItem(itemtype){
 function itemOption(itemid){
     var item = items[itemid];
     var p ='<div class="option" value="' + itemid + '">';
-    p += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
-    p += '<span>'+item.name+'</span>';
+    p += '<img class="' + item.rarity + ' borderedpic option-item-img" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
+    p += '<div class="option-item-name">'+item.name+'</div>';
     p+= '</div>';
     return p;
 }
 
-function equipItem(slot, itemid){
-    var item = items[itemid];
-    $(slot).html('<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">');
-
-}
-
 function equipItem2(slot, itemid){
+    if(itemid == -1) {
+        $(slot).css("background", "none");        
+        return;
+    }
     var item = items[itemid];
-    $(slot).toggleClass("borderedpic " + item.rarity);
     $(slot).css("background", "url('http://static.lostmagic.ru/play/lib/jpg/" + item.image + ".jpg') no-repeat center center");
+    $(slot).addClass("borderedpic " + item.rarity);
 }
