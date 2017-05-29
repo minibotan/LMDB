@@ -434,10 +434,11 @@ table {
 
 
 .doll {
-    
+    background: url('../img/char.jpg') no-repeat;
 }
 
 
-.reversed{
+.reversed .doll{
+    transform: scaleX(-1);
     align-self: right;
 }
