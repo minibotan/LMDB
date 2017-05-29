@@ -1,23 +1,23 @@
 
 function makeSelectHTML(t){
-    var newHTML = '<div class="selector-parent">';
-    newHTML += '<div class="div-prop selector">';
-    newHTML += '<select class="prop-selector">';
+    var newHTML = '<div class="selector_parent">';
+    newHTML += '<div class="div_prop selector">';
+    newHTML += '<select class="prop_selector">';
     newHTML += '<option selected hidden>Параметр Выбора</option>';
     for (var i in searchProps[t]) {
-        newHTML += '<option class="prop-option" value="' + i + '">' + searchProps[t][i] + '</option>';
+        newHTML += '<option class="prop_option" value="' + i + '">' + searchProps[t][i] + '</option>';
     }
     newHTML += '</select>';
     newHTML += '</div>';
-    newHTML += '<div class="div-val selector"></div>';
+    newHTML += '<div class="div_val selector"></div>';
     newHTML += '</div>';
-    newHTML += '<div class="stuff-holder"></div>';
+    newHTML += '<div class="stuff_holder"></div>';
     return newHTML;
 }
 
 
 function addSelect(t) {
-    var newHTML = '<select class="val-selector">';
+    var newHTML = '<select class="val_selector">';
     newHTML += '<option selected hidden>Выберите '+searchProps[t][Property]+'</option>';
     for (var i in searchValues[t][Property]) {
         newHTML += '<option value="' + i + '">' + searchValues[t][Property][i] + '</option>';
@@ -45,9 +45,9 @@ function makeMobBlock(mob){
     p+= '<p class="mobname">' + mob.name + '</p>';
     p+= '<p class="mobhp">' + mob.maxhp +'/'+mob.maxhp+ '</p>';
     p+= '</div>';
-    p+= '<div class="avatar-level">';
+    p+= '<div class="avatar_level">';
     p+= '<img class="avatar" src="http://static.lostmagic.ru/play/lib/avatar/'+mob.avatar+'.png">';
-    p+= '<h4 class="mob-level">' + mob.level + '</h4>';
+    p+= '<h4 class="mob_level">' + mob.level + '</h4>';
     p+= '</div>';
     p+= '<img class="mobpic"src="img/mobs/'+mob.doll+'.png">';
     p+= '</div>';

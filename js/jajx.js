@@ -2,55 +2,57 @@
 
  $(document).ready(function () {
 
-   //nav-panel buttons
-   $('.nav-bar').html(function () {
+   //nav_panel buttons
+   $('.nav_bar').html(function () {
      var newHtml = '';
      for (var x in mainButtons) {
-       newHtml += '<button class="nav-button" id="' + mainButtons[x] + '" >' + x + '</button>';
+       newHtml += '<button class="nav_button" id="' + mainButtons[x] + '" >' + x + '</button>';
      }
      return newHtml;
    });
 
-   $('.contentbox').on('click', ".event-title", function () {
+   $('.contentbox').on('click', ".event_title", function () {
      showEvent(events[$(this).val()]);
      return false;
    });
 
-   $('.contentbox').on('click', ".map-button", function () {
+   $('.contentbox').on('click', ".map_button", function () {
      showMap(this);
      return false;
    });
 
-  $('.contentbox').on('click', "#odevalka-change", function () {
+   $('.contentbox').on('change', ".val_selector", function () {
+     Value = $(this).val();
+     $('.stuff_holder').html(($(curPage).attr('id') == 'items')?showItems():showMobs());
+     return false;
+   });
+
+
+   $('.contentbox').on('change', ".prop_selector", function () {
+     Property = $(this).val();
+     $(this).parent().parent().children('.div_val').html(addSelect($(curPage).attr('id')));
+     return false;
+   });
+
+     $('.contentbox').on('click', "#odevalka_change", function () {
     if(bull){
      $(this).parent().parent().append(secondChar());
     } else {
       $('.reversed').remove();
     }
      bull = !bull;
-     $('#odevalka-change').html(odevalkastate[bull]);
-     //$('table').html($('tr.widget_view_row_even').get().reverse());
+     $('#odevalka_change').html(odevalkastate[bull]);
      return false;
    });
 
-
-   $('.contentbox').on('change', ".val-selector", function () {
-     Value = $(this).val();
-     $('.stuff-holder').html(($(curPage).attr('id') == 'items')?showItems():showMobs());
-     return false;
-   });
-
-
-   $('.contentbox').on('change', ".prop-selector", function () {
-     Property = $(this).val();
-     $(this).parent().parent().children('.div-val').html(addSelect($(curPage).attr('id')));
-     return false;
-   });
-
-   $('.contentbox').on('click', ".char td", function () {
+   $('.contentbox').on('click', ".char .itemslot", function () {
      $(this).html(chooseItem($(this).attr("class").split(' ')));
      $(this).removeClass("rare epic legendary common uncommon borderedpic");
      return false;
+   });
+
+   $('.contentbox').on('mouseleave', '.char .itemselect', function() {
+      $(this).remove();
    });
 
    $('.contentbox').on('click', ".char .option", function () {
@@ -65,7 +67,7 @@
    /* NAVIGATOR */
 
 
-   $('.nav-button').click(function () {
+   $('.nav_button').click(function () {
      $('.contentbox').html('');
      $(curPage).css('background', 'none');
      $(this).css('background', '#888');
