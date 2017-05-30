@@ -25,7 +25,7 @@ function makeOdevalka(){
 
 
 function firstChar(){
-    var r = '<div class="char"><div><table>';
+    var r = '<div class="char norm"><div><table>';
     r += '<tr><td class="itemslot head" /><td class="doll" colspan="5" rowspan="5" /><td class="itemslot neck" /></tr>';
     r += '<tr><td class="itemslot chest" /><td class="itemslot ring" /></tr>';
     r += '<tr><td class="itemslot cloak" /><td class="itemslot ring" /></tr>';
@@ -56,17 +56,17 @@ function secondChar(){
 function stats(){
     var r='';
     r += '<div class ="char_stats">';
-    r += '<div class="maxhit" value="0">Мин. урон: </div>';
-    r += '<div class="minhit" value="0">Макс. урон:</div>';
-    r += '<div class="defence" value="0">Защита: </div>';
-    r += '<div class="strength" value="0">Сила: </div>';
-    r += '<div class="agility" value="0">Ловкость: </div>';
-    r += '<div class="stamina" value="0">Выносливость: </div>';
-    r += '<div class="crit" value="0">Крит: </div>';
-    r += '<div class="dodge" value="0">Уворот: </div>';
-    r += '<div class="mastery" value="0">Мастерство: </div>';
-    r += '<div class="resilience" value="0">Устойчивость: </div>';
-    r += '<div class="effects">Эффекты:</div>'
+    r += '<div class="maxhit">Макс. урон: <span></span></div>';
+    r += '<div class="minhit">Мин. урон: <span></span></div>';
+    r += '<div class="defence">Защита: <span></span></div>';
+    r += '<div class="strength">Сила: <span></span></div>';
+    r += '<div class="agility">Ловкость: <span></span></div>';
+    r += '<div class="stamina">Выносливость: <span></span></div>';
+    r += '<div class="crit">Крит: <span></span>%</div>';
+    r += '<div class="dodge">Уворот: <span></span>%</div>';
+    r += '<div class="mastery">Мастерство: <span></span></div>';
+    r += '<div class="resilience">Устойчивость: <span></span></div>';
+    r += '<div class="effects">Эффекты: <span></span></div>'
     r += '</div>';
     return r;
 }
@@ -101,7 +101,8 @@ function itemOption(itemid){
 
 function equipItem2(slot, itemid){
     if(itemid == -1) {
-        $(slot).css("background", "none");        
+        $(slot).css("background", "none");    
+        recalculate($(slot).parents(".char"));    
         return;
     }
     var item = items[itemid];
@@ -114,7 +115,32 @@ function equipItem2(slot, itemid){
 
 
 function recalculate(char){
-    var tmpstat = nulldstats;
+    var nulldstats = {
+        "minhit": 0,
+        "maxhit": 0,
+        "defence": 0,
+        "strength": 0,
+        "agility": 0,
+        "stamina": 0,
+        "crit": 0,
+        "dodge": 0,
+        "mastery": 0,
+        "resilience": 0
+    }
+    console.log(char.attr('class').split(' ')[1] + ' .itemslot');
+    $('.'+char.attr('class').split(' ')[1] + ' .itemslot').each(function(index, element){
+        console.log($(element).attr("value"));
+        if ($(element).attr('value')){
+            for(var i in nulldstats) {
+                nulldstats[i] += (items[$(element).attr("value")][i])?(items[$(element).attr("value")][i]):(0);
+                console.log(i + ' ' + nulldstats[i] + ' ' + $(element).attr("value") + ' ' + items[$(element).attr("value")][i]);
+            }
+        }
+    });
+    console.log(nulldstats);
 
+    for(var i in nulldstats) {
+        $('.'+char.attr('class').split(' ')[1] + ' .' + i + ' span').html(nulldstats[i]);
+    }
 
 }
