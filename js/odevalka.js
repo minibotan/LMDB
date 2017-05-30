@@ -102,6 +102,7 @@ function itemOption(itemid){
 function equipItem2(slot, itemid){
     if(itemid == -1) {
         $(slot).css("background", "none");    
+        $(slot).removeAttr("value");
         recalculate($(slot).parents(".char"));    
         return;
     }
