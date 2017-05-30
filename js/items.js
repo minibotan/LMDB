@@ -13,7 +13,7 @@ function makeItemBox(item) {
     var is2 = '</td><td class="itemstat2">';
     var newHTML ='';
     newHTML += '<div class = "item">';
-    newHTML += '<h6 class = "itemname">' + item.adminname + '</h6>';
+    newHTML += '<h6 class = "itemname">' + item.name + '</h6>';
     newHTML += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
     newHTML += '<p>';
     newHTML += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
@@ -83,7 +83,6 @@ function Reqs(item) {
 }
 
 function check(a) {
-    console.log(a[Property] + ' ---- ' + Value);
     if (a[Property] == Value)
         return true;
     return false;
