@@ -11,7 +11,9 @@ body{
 }
 
 
-
+h6 {
+    font-size: 12px;
+}
 
 
 .nav_bar {
@@ -127,9 +129,9 @@ footer p {
     padding: 2px 5px;
 }
 .event_start{
-    display: inline_block;
+    display: inline-block;
     width: 30%;
-    border_right: 1px solid #555;
+    border-right: 1px solid #555;
     padding: 2px 5px;
 }
 .event_end{
@@ -171,7 +173,7 @@ table {
 
 .itemstat {
     text-align: right;
-    font-size: 1em;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1;
     padding-right: 5px;
@@ -181,7 +183,7 @@ table {
 
 .itemstat2 {
     text-align: left;
-    font-size: 1em;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1;
     padding-left: 5px;
@@ -198,7 +200,6 @@ table {
     background: #222;
     padding: 0px;
     margin: 1%;
-     
     display: inline-block;
     width: 22%;
     vertical-align: top;
@@ -211,10 +212,11 @@ table {
     background: #444;
     display: block;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 .small{
-    font-size: 0.8em;
+    font-size: 11px;
     margin: 0px;
 }
 
@@ -225,6 +227,7 @@ table {
     color: gold;
     line-height: 1;
     margin: 0px 10px;
+    font-size: 14px;
 }
 .reqs{
     color: #55d;
@@ -305,7 +308,8 @@ table {
 .mobname{
     text-align: right;
     font-weight: 500;
-    max-height: 
+    margin: 0px;
+    vertical-align: middle;
 }
 
 .mobhp{
@@ -313,6 +317,7 @@ table {
     border-radius: 10px;
     background: green;
     width: 95%;
+    margin: 0px;
 }
 
 .avatar_level{
@@ -400,6 +405,10 @@ ODEVALKA
     border-radius: 3px;
     padding: 0px;
     margin: 0px;
+}
+
+.legend{
+    border-color: orangered;
 }
 
 .epic{
