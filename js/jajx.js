@@ -121,7 +121,10 @@
  function tmp(){
    var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
    p += '<ol>';
-   for(var i = 0; i < 300; i++) {
+   for(var i = 0; i < 10; i++) {
+      p+=  '<li><img src="http://static.lostmagic.ru/play/lib/location/0'+i+'.jpg"></li>';
+   }
+   for(var i = 10; i < 300; i++) {
       p+=  '<li><img src="http://static.lostmagic.ru/play/lib/location/'+i+'.jpg"></li>';
    }
    p+= '</ol>';
