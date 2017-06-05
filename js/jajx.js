@@ -24,6 +24,8 @@
    $('.contentbox').on('change', ".val_selector", function () {
      Value = $(this).val();
      $('.stuff_holder').html(($(curPage).attr('id') == 'items')?showItems():showMobs());
+     okcheck();
+     gcheck();
      return false;
    });
 
@@ -47,7 +49,6 @@
 
    $('.contentbox').on('click', ".char .itemslot", function () {
      $(this).html(chooseItem($(this).attr("class").split(' ')));
-     $(this).removeClass("rare epic legendary common uncommon borderedpic");
      return false;
    });
 
@@ -90,6 +91,25 @@
        case 'odevalka':
          $('.contentbox').html(makeOdevalka());
          break;
+       case 'achievements':
+         $('.contentbox').html(function(){
+           var r = '';
+           for(var i in achieves) {
+             r+= achieves[i].descr + '<br>';
+           }
+           return r;
+         });
+         gcheck();
+         break;
+      case 'locations':
+         $('.contentbox').html(function(){
+           var r = '<ol>';
+           for(var i = 0; i < 300; i++) {
+             r+=  '<li><img src="http://static.lostmagic.ru/play/lib/location/'+i+'.jpg"></li>';
+           }
+           return r + '</ol>';
+         });
+         break;
       default: 
          $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
      }
@@ -98,16 +118,11 @@
  });
 
 
-
  function tmp(){
-   var p = '<h2> Это список из гильдийных значков. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+   var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
    p += '<ol>';
-   var i = 1;
-   while (i < 400) {
-   p+= '<li>';
-   p+='<img src="http://static.lostmagic.ru/play/lib/clan/'+i+'.png"'
-   p+='</li>';
-   i++;
+   for(var i = 0; i < 300; i++) {
+      r+=  '<li><img src="http://static.lostmagic.ru/play/lib/location/'+i+'.jpg"></li>';
    }
    p+= '</ol>';
    return p;

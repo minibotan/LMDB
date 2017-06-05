@@ -434,6 +434,9 @@ ODEVALKA
     z-index: 2;
     border: 3px solid #222;
     border-radius: 5px;
+    max-height: 220px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .option{

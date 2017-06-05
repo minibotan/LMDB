@@ -74,10 +74,12 @@ function stats(){
 
 function chooseItem(itemtype){
     var p = '<div size="5" class="itemselect">'; 
+    if("borderedpic" == itemtype[2]){
     p +='<div class="option" value="-1">';
     p += '<img class="common borderedpic option_item_img" src="http://static.lostmagic.ru/play/lib/jpg/0.jpg">';
     p += '<div class="option_item_name">Снять</div>';
     p += '</div>';
+    }
         for (var i in items) {
             for(var j in itemtype) {
                 if(items[i].type == itemtype[j]){
@@ -100,6 +102,7 @@ function itemOption(itemid){
 }
 
 function equipItem2(slot, itemid){
+    $(slot).removeClass("rare epic legendary common uncommon borderedpic");
     if(itemid == -1) {
         $(slot).css("background", "none");    
         $(slot).removeAttr("value");
@@ -128,17 +131,16 @@ function recalculate(char){
         "mastery": 0,
         "resilience": 0
     }
-    console.log(char.attr('class').split(' ')[1] + ' .itemslot');
+    //console.log(char.attr('class').split(' ')[1] + ' .itemslot');
     $('.'+char.attr('class').split(' ')[1] + ' .itemslot').each(function(index, element){
-        console.log($(element).attr("value"));
+        //console.log($(element).attr("value"));
         if ($(element).attr('value')){
             for(var i in nulldstats) {
                 nulldstats[i] += (items[$(element).attr("value")][i])?(items[$(element).attr("value")][i]):(0);
-                console.log(i + ' ' + nulldstats[i] + ' ' + $(element).attr("value") + ' ' + items[$(element).attr("value")][i]);
+                //console.log(i + ' ' + nulldstats[i] + ' ' + $(element).attr("value") + ' ' + items[$(element).attr("value")][i]);
             }
         }
     });
-    console.log(nulldstats);
 
     for(var i in nulldstats) {
         $('.'+char.attr('class').split(' ')[1] + ' .' + i + ' span').html(nulldstats[i]);
