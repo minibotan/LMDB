@@ -130,3 +130,33 @@
    p+= '</ol>';
    return p;
  }
+
+
+var last = 1;
+
+  function locationObjects(k){
+    if(k !== undefined) {
+      last = k*100 +1;
+    }
+   var p = '<h2> Это список из объектов в локациях. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+   p += '<ol>';
+   for(var i = last; i < last+100; i++) {
+     p+='<li>';
+    var swfsrc = 'http://static.lostmagic.ru/play/lib/locationObjects/general/'+i+'.swf';
+    p+= '<object type="application/x-shockwave-flash" width="970" height="330">';
+    p+= '<param name="movie" value="'+swfsrc+'">';
+    p+= '<embeded src="'+swfsrc+'"></embeded>'; 
+    p+= '<param name="wmode" value="transparent" />';
+    p+= '<param name="allowScriptAccess" value="always" />';
+    p+= '<param name="flashvars" value="stage=1"/>';
+    p+= '<param name="play" value="true" />';
+    p+= '<param name="loop" value="true" />';
+    p+= '<param name="scale" value="noScale" />';
+    p+= '</object>';
+    p+= '<a href="'+swfsrc+'" a> ссылочка </a>'; 
+    p+= '</li>';
+   }
+   p+= '</ol>';
+   last+=100;
+   $('.contentbox').html(p);
+ }
