@@ -122,7 +122,7 @@
    var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
    p += '<ol>';
    for(var i = 0; i < 300; i++) {
-      r+=  '<li><img src="http://static.lostmagic.ru/play/lib/location/'+i+'.jpg"></li>';
+      p+=  '<li><img src="http://static.lostmagic.ru/play/lib/location/'+i+'.jpg"></li>';
    }
    p+= '</ol>';
    return p;
