@@ -56,17 +56,17 @@ function secondChar(){
 function stats(){
     var r='';
     r += '<div class ="char_stats">';
-    r += '<div class="maxhit">Макс. урон: <span></span></div>';
-    r += '<div class="minhit">Мин. урон: <span></span></div>';
-    r += '<div class="defence">Защита: <span></span></div>';
-    r += '<div class="strength">Сила: <span></span></div>';
-    r += '<div class="agility">Ловкость: <span></span></div>';
-    r += '<div class="stamina">Выносливость: <span></span></div>';
-    r += '<div class="crit">Крит: <span></span>%</div>';
-    r += '<div class="dodge">Уворот: <span></span>%</div>';
-    r += '<div class="mastery">Мастерство: <span></span></div>';
-    r += '<div class="resilience">Устойчивость: <span></span></div>';
-    r += '<div class="effects">Эффекты: <span></span></div>'
+    r += '<div class="level"><div class="statname">Уровень: </div><input type="number" min="1" max="20" value="20" class="whitestat"></input></div>'
+    r += '<div class="maxhit"><div class="statname">Макс. урон: </div><span class="greenstat"></span></div>';
+    r += '<div class="minhit"><div class="statname">Мин. урон: </div><span class="greenstat"></span></div>';
+    r += '<div class="defence"><div class="statname">Защита: </div><span class="greenstat"></span></div>';
+    r += '<div class="strength"><div class="statname">Сила: </div><input type="number" value="3" size="" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="agility"><div class="statname">Ловкость: </div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="stamina"><div class="statname">Выносливость: </div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="crit"><div class="statname">Крит: </div><span class="greenstat"></span>%</div>';
+    r += '<div class="dodge"><div class="statname">Уворот: </div><span class="greenstat"></span>%</div>';
+    r += '<div class="mastery"><div class="statname">Мастерство: </div><span class="greenstat"></span></div>';
+    r += '<div class="resilience"><div class="statname">Устойчивость: </div><span class="greenstat"></span></div>';
     r += '</div>';
     return r;
 }
@@ -119,6 +119,11 @@ function equipItem2(slot, itemid){
 
 
 function recalculate(char){
+
+
+
+
+
     var nulldstats = {
         "minhit": 0,
         "maxhit": 0,

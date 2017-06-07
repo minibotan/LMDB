@@ -378,7 +378,8 @@ ODEVALKA
     display: inline-table;
     border: 5px solid #222;
     border-radius: 7px;
-    margin: 20px;
+    margin: 10px 10px;
+    min-width: 530px;
 }
 
 .char>div>table{
@@ -475,4 +476,36 @@ ODEVALKA
     vertical-align: middle;
     height: 100%;
     margin: 0px 10px;
+    min-width: 250px;
+}
+
+.char_stats>div{
+    width: 100%;
+    display: block;
+    text-align: left;
+    color: #ccad00;
+}
+.statname {
+    display: inline-block;
+    width: 70%;
+    color: #ccc;
+}
+
+.whitestat {
+    color: #ccc;
+}
+
+
+input.whitestat{
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    width: 30px;
+    font-size: 15px;
+    color: #ccc;
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }

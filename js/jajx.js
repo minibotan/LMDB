@@ -36,9 +36,10 @@
      return false;
    });
 
-     $('.contentbox').on('click', "#odevalka_change", function () {
+  $('.contentbox').on('click', "#odevalka_change", function () {
     if(bull){
      $(this).parent().parent().append(secondChar());
+     recalculate($('.reversed'));
     } else {
       $('.reversed').remove();
     }
@@ -90,6 +91,7 @@
          break;
        case 'odevalka':
          $('.contentbox').html(makeOdevalka());
+         recalculate($('.char'));
          break;
        case 'achievements':
          $('.contentbox').html(function(){
