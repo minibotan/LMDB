@@ -16,7 +16,7 @@ var nulldstats = {
 
 function makeOdevalka(){
     var newHTML = '';
-    newHTML += '<div><button id="odevalka_change">'+ odevalkastate[bull] + '</button></div>';
+    newHTML += '<div class="buttonholder"><button id="odevalka_change">'+ odevalkastate[bull] + '</button></div>';
     newHTML += firstChar();
     return newHTML;
 }
@@ -56,17 +56,17 @@ function secondChar(){
 function stats(){
     var r='';
     r += '<div class ="char_stats">';
-    r += '<div class="level"><div class="statname">Уровень: </div><input type="number" min="1" max="20" value="20" class="whitestat"></input></div>'
-    r += '<div class="maxhit"><div class="statname">Макс. урон: </div><span class="greenstat"></span></div>';
-    r += '<div class="minhit"><div class="statname">Мин. урон: </div><span class="greenstat"></span></div>';
-    r += '<div class="defence"><div class="statname">Защита: </div><span class="greenstat"></span></div>';
-    r += '<div class="strength"><div class="statname">Сила: </div><input type="number" value="3" size="" class="whitestat"/>+<span class="greenstat"></span></div>';
-    r += '<div class="agility"><div class="statname">Ловкость: </div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
-    r += '<div class="stamina"><div class="statname">Выносливость: </div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
-    r += '<div class="crit"><div class="statname">Крит: </div><span class="greenstat"></span>%</div>';
-    r += '<div class="dodge"><div class="statname">Уворот: </div><span class="greenstat"></span>%</div>';
-    r += '<div class="mastery"><div class="statname">Мастерство: </div><span class="greenstat"></span></div>';
-    r += '<div class="resilience"><div class="statname">Устойчивость: </div><span class="greenstat"></span></div>';
+    r += '<div class="level"><div class="statname">Уровень:</div><input type="number" min="1" max="20" value="20" class="whitestat"></input></div>'
+    r += '<div class="maxhit"><div class="statname">Макс. урон:</div><span class="greenstat"></span></div>';
+    r += '<div class="minhit"><div class="statname">Мин. урон:</div><span class="greenstat"></span></div>';
+    r += '<div class="defence"><div class="statname">Защита:</div><span class="greenstat"></span></div>';
+    r += '<div class="strength"><div class="statname">Сила:</div><input type="number" value="3" size="" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="agility"><div class="statname">Ловкость:</div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="stamina"><div class="statname">Выносливость:</div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="crit"><div class="statname">Крит:</div><span class="greenstat"></span>%</div>';
+    r += '<div class="dodge"><div class="statname">Уворот:</div><span class="greenstat"></span>%</div>';
+    r += '<div class="mastery"><div class="statname">Мастерство:</div><span class="greenstat"></span></div>';
+    r += '<div class="resilience"><div class="statname">Устойчивость:</div><span class="greenstat"></span></div>';
     r += '</div>';
     return r;
 }

@@ -83,7 +83,7 @@ function Reqs(item) {
 }
 
 function check(a) {
-    if (a[Property] == Value)
+    if (a[Property] == Value  || (typeof a[Property] == Value))
         return true;
     return false;
 }
