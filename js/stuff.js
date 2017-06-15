@@ -1,6 +1,7 @@
 var curPage;
 var Value;
 var Property;
+var counter = 0;
 
 
 var odevalkastate;
@@ -18,8 +19,8 @@ var searchValues;
 
 
 odevalkastate = {
-    true:'Одевалка двойная',
-    false:'Одевалка на одного'
+    false:'Одевалка двойная',
+    true:'Одевалка на одного'
 };
 
 
@@ -3491,7 +3492,7 @@ searchValues = {
       "20": "20 Уровень"
     },
     "quest": {
-      '0': "Нет",
+      'undefined': "Нет",
       "1": "Да"
     }
   },

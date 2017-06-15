@@ -2,6 +2,17 @@
 
  $(document).ready(function () {
 
+   /*               NAVIGATOR  & SETTINGS                   */
+
+
+   //settings
+   $('.settings_bar').on('click', 'li', function(){
+     var id = $(this).attr('id');
+     settings[id].val = !settings[id].val;
+     $(this).html(settings[id][settings[id].val]);
+     change(id);
+   });
+
    //nav_panel buttons
    $('.nav_bar').html(function () {
      var newHtml = '';
@@ -11,64 +22,8 @@
      return newHtml;
    });
 
-   $('.contentbox').on('click', ".event_title", function () {
-     showEvent(events[$(this).val()]);
-     return false;
-   });
 
-   $('.contentbox').on('click', ".map_button", function () {
-     showMap(this);
-     return false;
-   });
-
-   $('.contentbox').on('change', ".val_selector", function () {
-     Value = $(this).val();
-     $('.stuff_holder').html(($(curPage).attr('id') == 'items')?showItems():showMobs());
-     okcheck();
-     gcheck();
-     return false;
-   });
-
-
-   $('.contentbox').on('change', ".prop_selector", function () {
-     Property = $(this).val();
-     $(this).parent().parent().children('.div_val').html(addSelect($(curPage).attr('id')));
-     return false;
-   });
-
-  $('.contentbox').on('click', "#odevalka_change", function () {
-    if(bull){
-     $(this).parent().parent().append(secondChar());
-     recalculate($('.reversed'));
-    } else {
-      $('.reversed').remove();
-    }
-     bull = !bull;
-     $('#odevalka_change').html(odevalkastate[bull]);
-     return false;
-   });
-
-   $('.contentbox').on('click', ".char .itemslot", function () {
-     $(this).html(chooseItem($(this).attr("class").split(' ')));
-     return false;
-   });
-
-   $('.contentbox').on('mouseleave', '.char .itemselect', function() {
-      $(this).remove();
-   });
-
-   $('.contentbox').on('click', ".char .option", function () {
-     var selected = $(this);
-     equipItem2($(this).parent().parent().empty(), selected.attr("value"));
-     
-     return false;
-   });
-
-
-
-   /* NAVIGATOR */
-
-
+   //navigation events
    $('.nav_button').click(function () {
      $('.contentbox').html('');
      $(curPage).css('background', 'none');
@@ -93,30 +48,84 @@
          $('.contentbox').html(makeOdevalka());
          recalculate($('.char'));
          break;
-       case 'achievements':
-         $('.contentbox').html(function(){
-           var r = '';
-           for(var i in achieves) {
-             r+= achieves[i].descr + '<br>';
-           }
-           return r;
-         });
-         gcheck();
-         break;
-      case 'locations':
-         $('.contentbox').html(function(){
-           var r = '<ol>';
-           for(var i = 0; i < 300; i++) {
-             r+=  '<li><img src="http://static.lostmagic.ru/play/lib/location/'+i+'.jpg"></li>';
-           }
-           return r + '</ol>';
-         });
-         break;
       default: 
          $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
      }
 
    });
+
+
+   /*                    CONTENT                       */
+
+   //events
+   $('.contentbox').on('click', ".event_title", function () {
+     showEvent(events[$(this).val()]);
+     return false;
+   });
+
+
+   //maps
+   $('.contentbox').on('click', ".map_button", function () {
+     showMap(this);
+     return false;
+   });
+
+
+   //items & mobs
+   $('.contentbox').on('change', ".prop_selector", function () {
+     Property = $(this).val();
+     $(this).parent().parent().children('.div_val').html(addSelect($(curPage).attr('id')));
+     return false;
+   });
+
+   $('.contentbox').on('change', ".val_selector", function () {
+     counter = 0;
+     $('.stuff_holder').empty();
+     Value = $(this).val();
+     $('.stuff_holder').html('<button class ="moar_button">ЕЩЕ!</button>');
+     showContent();
+     return false;
+   });
+
+   $('.contentbox').on('click', ".moar_button", function () {
+      showContent();
+      console.log(counter);
+      return false;
+   }); 
+
+
+   // odevalka
+   $('.contentbox').on('click', "#odevalka_change", function () {
+      if(bull){
+      $(this).parent().parent().append(secondChar());
+      recalculate($('.reversed'));
+    } else {
+      $('.reversed').remove();
+    }
+      bull = !bull;
+      $('#odevalka_change').html(odevalkastate[bull]);
+      return false;
+   });
+
+   $('.contentbox').on('click', ".char .itemslot", function () {
+     $(this).html(chooseItem($(this).attr("class").split(' ')));
+     return false;
+   });
+
+   $('.contentbox').on('mouseleave', '.char .itemselect', function() {
+      $(this).remove();
+   });
+
+   $('.contentbox').on('click', ".char .option", function () {
+     var selected = $(this);
+     equipItem2($(this).parent().parent().empty(), selected.attr("value"));
+     
+     return false;
+   });
+
+
+
+   
  });
 
 

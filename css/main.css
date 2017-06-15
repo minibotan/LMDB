@@ -16,10 +16,42 @@ h6 {
 }
 
 
+.settings_bar{
+    text-align: left;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.settings_bar img{
+    margin: 4px;
+}
+
+.settings_bar:hover ul{
+    display: block;
+}
+
+.settings_bar ul{
+    display: none;
+    background: rgba(60, 60, 60, 0.95);
+    border: 3px solid #111;
+    margin: 0px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.settings_bar ul li {
+    display: block;
+    border: 1px solid #222;
+    padding: 3px;
+}
+
 .nav_bar {
     text-align: center;
     background: rgba(60, 60, 60, 0.9);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -34,6 +66,7 @@ h6 {
     border: none;
     outline: none;
     color: #ccc;
+    cursor: pointer;
 }
 
 

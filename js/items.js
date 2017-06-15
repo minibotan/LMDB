@@ -1,10 +1,19 @@
 function showItems() {
+    var k = counter*40;
     var newHTML = '';
-    for (var i in items) {
-        if (check(items[i])) {
-            newHTML += makeItemBox(items[i]);
+    for(var i in items) {
+        if(check(items[i])){
+            if(k < 1 && k >-40){
+                newHTML += makeItemBox(items[i]);
+            }
+            k--;
+            console.log(k);
         }
     }
+    if(k > -40) {
+        $('.moar_button').css("display", "none");
+    }
+    counter++;
     return newHTML;
 }
 

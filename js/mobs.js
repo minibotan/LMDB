@@ -11,7 +11,7 @@ function makeSelectHTML(t){
     newHTML += '</div>';
     newHTML += '<div class="div_val selector"></div>';
     newHTML += '</div>';
-    newHTML += '<div class="stuff_holder"></div>';
+    newHTML += '<div class="stuff_holder content"></div>';
     return newHTML;
 }
 
@@ -27,12 +27,30 @@ function addSelect(t) {
 }
 
 
+function showContent(){
+    console.log('show');
+    $('.moar_button').before(($(curPage).attr('id') == 'items')?showItems():showMobs());
+    change(ok);
+    change(gender);
+}
+
+
 function showMobs(){
+    var k = counter*40;
     var newHTML = '';
     for(var i in mobs) {
-        if(check(mobs[i]))
-        newHTML += makeMobBlock(mobs[i]);
+        if(check(mobs[i])){
+            if(k < 1){
+                newHTML += makeMobBlock(mobs[i]);
+            }
+            if(k < -39) break;
+            console.log(k--);
+        }
     }
+    if(k > -40) {
+        $('.moar_button').css("display", "none");
+    }
+    counter++;
     return newHTML;
 }
 
