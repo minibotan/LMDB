@@ -188,7 +188,9 @@ footer p {
 select, option {
     border: 3px #999;
     border-radius: 5px;
-    font-size: 24;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 2px;
     outline: none;
     background: #555;
     color: #ccc;
@@ -313,7 +315,7 @@ table {
 .pic_holder{
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 

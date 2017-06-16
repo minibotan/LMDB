@@ -1,3 +1,6 @@
+ var text = '';
+ 
+ 
  $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
 
  $(document).ready(function () {
@@ -123,8 +126,31 @@
      return false;
    });
 
-
-
+   //naked Trisha
+   $('body').keyup(function(eventObject){
+    if(eventObject.which > 64 && eventObject.which < 91) {
+        var a = 'a';
+        var st = 65;
+        text += String.fromCharCode(eventObject.which);
+    } else {
+      text = '';
+    }
+    if (text == 'TITSORGTFO') {
+        var swfsrc = 'http://static.lostmagic.ru/play/lib/locationObjects/general/812.swf';
+        var p= '<h2>Хорошо, вот тебе голая Триша</h2>'; 
+        p+= '<object type="application/x-shockwave-flash" width="400" height="550">';
+        p+= '<param name="movie" value="'+swfsrc+'">';
+        p+= '<embeded src="'+swfsrc+'"></embeded>'; 
+        p+= '<param name="wmode" value="transparent" />';
+        p+= '<param name="allowScriptAccess" value="always" />';
+        p+= '<param name="flashvars" value="stage=1"/>';
+        p+= '<param name="play" value="true" />';
+        p+= '<param name="loop" value="true" />';
+        p+= '</object>';
+        $('.contentbox').html(p);
+    }
+    console.log(text);
+   });
    
  });
 
@@ -152,7 +178,7 @@ var last = 1;
    var p = '<h2> Это список из объектов в локациях. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
    p += '<ol>';
    for(var i = last; i < last+100; i++) {
-     p+='<li>';
+    p+='<li>';
     var swfsrc = 'http://static.lostmagic.ru/play/lib/locationObjects/general/'+i+'.swf';
     p+= '<object type="application/x-shockwave-flash" width="970" height="330">';
     p+= '<param name="movie" value="'+swfsrc+'">';
