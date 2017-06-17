@@ -1,9 +1,17 @@
 var text = '';
 
-
 $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
 
 $(document).ready(function () {
+  readCookie();
+  if (!navigator.cookieEnabled) {
+    console.log(navigator.cookieEnabled);
+    alert('Включите cookie для комфортной работы с этим сайтом');
+  }
+
+
+
+
 
   /*               NAVIGATOR  & SETTINGS                   */
 
@@ -13,6 +21,7 @@ $(document).ready(function () {
     var id = $(this).attr('id');
     settings[id].val = !settings[id].val;
     $(this).html(settings[id][settings[id].val]);
+    updateCookie(id);
     change(id);
   });
 
@@ -155,8 +164,9 @@ $(document).ready(function () {
       p += '</object>';
       $('.contentbox').html(p);
     }
-    if(text.substr(text.length - 'ISEEDEADPEOPLE'.length) == 'ISEEDEADPEOPLE'){
-      showmeall = true;
+    if (text.substr(text.length - 'ISEEDEADPEOPLE'.length) == 'ISEEDEADPEOPLE') {
+      settings.showmeall.val = !settings.showmeall.val;
+      updateCookie('showmeall');
       $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
       counter--;
       showContent();

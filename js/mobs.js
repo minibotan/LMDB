@@ -72,43 +72,83 @@ function makeMobBlock(mob) {
 
     p += '<img class="mobpic"src="img/mobs/' + mob.doll + '.png">';
 
+    p += lootblock(mob);
+
+    p += '</div>';
+    return p;
+}
 
 
-    p += '<div class="loot_block">';
+function lootblock(mob) {
+    var p = '<div class="loot_block">';
     for (var loottype in mob.loot) {
         console.log(loottype);
         p += '<div class="' + loottype + '">';
         p += '<div class="loot_block_title">' + loottype + '</div>';
         p += '<div class="loot_block_content">';
         var loot = mob.loot[loottype];
-        if (loottype == 'randloot' || loottype == 'loot'){
-            for (var i in loot) {
-                p += '<div>';
-                p += '<div class="loot_block_title">' + i + '</div>';
-                p += '<div class="loot_block_content">';
-                for (var j in loot[i]) {
-                    var l = j.split('x');
-
-                    p += '<div class="drop" title="' + items[l[0]].name + ((showmeall)?('\nШанс: ' + loot[i][j] + '%'):('')) + '">';
-                    p += '<img class="' + items[l[0]].rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
-                    p += '</div>'
-                }
-                p += '</div>';
-                p += '</div>';
-            }
-        } else  {
-            p += 'скоро будет инфа';
-            console.log(loot);
+        switch (loottype) {
+            case 'randloot':
+            case 'loot':
+                p += getLoot(loot);
+                break;
+            case 'questloot':
+                p += getQuestLoot(loot);
+                break;
+            case 'money':
+            case 'money':
+            case 'factionmoney':
+            default:
+                p += 'скоро будет инфа';
         }
         p += '</div>';
-        p += '</div>';   
+        p += '</div>';
     }
-    p += '</div>'; 
-
     p += '</div>';
     return p;
 }
 
+function getQuestLoot(loot) {
+    var p = '';
+    for (var questnum in loot) {
+        p += '<div>';
+        p += '<div class="loot_block_title" title="инфы о самих квестах у меня пока нет">id квеста ' + questnum + '</div>';
+        p += '<div class="loot_block_content">';
+        console.log(loot[questnum]);
+        p += getLoot(loot[questnum]);
+        p += '</div>';
+        p += '</div>';
+    }
+    return p;
+}
+
+
+function getLoot(loot) {
+    var p ='';
+    for (var i in loot) {
+        p += '<div>';
+        p += '<div class="loot_block_title">' + i + '</div>';
+        p += '<div class="loot_block_content">';
+        p += makeDropBlock(loot[i]);
+        p += '</div>';
+        p += '</div>';
+    }
+    return p;
+}
+
+
+
+function makeDropBlock(loot) {
+    var p = '';
+    for (var j in loot) {
+        var l = j.split('x');
+        p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j] + '%') : ('')) + '">';
+        p += '<img class="' + items[l[0]].rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
+        p += '</div>'
+    }
+    return p;
+
+}
 
 
 

@@ -335,6 +335,7 @@ searchValues = {
       'city':'Город',
       'bolota':'Болота',
       'gory':'Горы',
+      'zona':'Зона 50',
       'sumerki':'Сумерки',
       'land':'Древние земли',
       'pirates': 'Пираты'
