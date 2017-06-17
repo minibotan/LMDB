@@ -157,6 +157,10 @@ $(document).ready(function () {
     }
     if(text.substr(text.length - 'ISEEDEADPEOPLE'.length) == 'ISEEDEADPEOPLE'){
       showmeall = true;
+      $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
+      counter--;
+      showContent();
+      console.log('код ISEEDEADPEOPLE сработал');
     }
     console.log(text);
   });
