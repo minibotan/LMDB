@@ -44,6 +44,7 @@ function readCookie() {
             case 'gender':
             case 'showmeall':
                 settings[name].val = val;
+                console.log(settings[name].val + ' -- ' + val);
         }
     }
 }
