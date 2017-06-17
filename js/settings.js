@@ -1,5 +1,6 @@
 var ok = true;
 var gender = true;
+var showmeall = false;
 
 var settings = {
     gender : {
@@ -17,7 +18,7 @@ var settings = {
 }
 function change(id){
     console.log(id);
-    regexp = settings[id].regexp;
+    var regexp = settings[id].regexp;
     regexp.compile(regexp);
     html = $('.content').html();
     $('.content').html(html.replace(regexp, (settings[id].val)?('$1'):('$2')));

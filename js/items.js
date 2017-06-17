@@ -3,14 +3,14 @@ function showItems() {
     var newHTML = '';
     for(var i in items) {
         if(check(items[i])){
-            if(k < 1 && k >-40){
+            if(k < 1){
                 newHTML += makeItemBox(items[i]);
             }
+            if (k < -38) break;
             k--;
-            console.log(k);
         }
     }
-    if(k > -40) {
+    if(k > -39) {
         $('.moar_button').css("display", "none");
     }
     counter++;

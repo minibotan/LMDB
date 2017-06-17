@@ -97,6 +97,10 @@ footer p {
     text-align: center;
 }
 
+.moar_button{
+    display: block;
+}
+
 
 .events_block{
     display: flex;
@@ -386,6 +390,40 @@ table {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 100%;
+}
+
+.loot_block{
+    max-width: 220px;
+}
+
+.loot_block_title{
+    border: 1px solid #222;
+    border-bottom: none;
+    background: rgba(20, 20, 20, 0.2);
+}
+
+.loot_block_content{
+    display: none;
+    border: 1px solid #222;
+    border-top: none;
+    background: rgba(20, 20, 20, 0.4);
+}
+
+.loot_block{
+    border: 1px solid #222;
+    padding: 1px;
+}
+
+.drop {
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.drop img{
+    vertical-align: middle;
+    height: 22px;
+    width: 22px;
+    margin: 1px;
 }
 
 
