@@ -35,19 +35,15 @@ function change(id) {
 
 
 function readCookie() {
-    console.log('куки Ж ' + document.cookie);
     lmdbCookie = document.cookie.split(';');
     for (let i of lmdbCookie) {
-        switch (i.split('=')[0]) {
+        var name = i.split('=')[0];
+        var val = i.split('=')[1];
+        switch (name) {
             case 'ok':
-                ok = i.split('=')[1];
-                break;
             case 'gender':
-                gender = i.split('=')[1];
-                break;
             case 'showmeall':
-                showmeall = i.split('=')[1];
-                break;
+                settings[name].val = val;
         }
     }
 }
