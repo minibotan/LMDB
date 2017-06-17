@@ -35,7 +35,7 @@ function change(id) {
 
 
 function readCookie() {
-    lmdbCookie = document.cookie.split(';');
+    lmdbCookie = document.cookie.split('; ');
     for (let i of lmdbCookie) {
         var name = i.split('=')[0];
         var val = i.split('=')[1];
@@ -44,7 +44,6 @@ function readCookie() {
             case 'gender':
             case 'showmeall':
                 settings[name].val = val;
-                console.log(settings[name].val + ' -- ' + val);
         }
     }
 }
