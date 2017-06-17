@@ -141,7 +141,7 @@ $(document).ready(function () {
     } else {
       text = '';
     }
-    if (text == 'TITSORGTFO') {
+    if (text.substr(text.length - 'TITSORGTFO'.length) == 'TITSORGTFO') {
       var swfsrc = 'http://static.lostmagic.ru/play/lib/locationObjects/general/812.swf';
       var p = '<h2>Хорошо, вот тебе голая Триша</h2>';
       p += '<object type="application/x-shockwave-flash" width="400" height="550">';
@@ -155,7 +155,7 @@ $(document).ready(function () {
       p += '</object>';
       $('.contentbox').html(p);
     }
-    if(text == 'ISEEDEADPEOPLE'){
+    if(text.substr(text.length - 'ISEEDEADPEOPLE'.length) == 'ISEEDEADPEOPLE'){
       showmeall = true;
     }
     console.log(text);
