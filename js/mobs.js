@@ -114,7 +114,6 @@ function getQuestLoot(loot) {
         p += '<div>';
         p += '<div class="loot_block_title" title="инфы о самих квестах у меня пока нет">id квеста ' + questnum + '</div>';
         p += '<div class="loot_block_content">';
-        console.log(loot[questnum]);
         p += getLoot(loot[questnum]);
         p += '</div>';
         p += '</div>';
@@ -126,6 +125,10 @@ function getQuestLoot(loot) {
 function getLoot(loot) {
     var p ='';
     for (var i in loot) {
+        if(typeof loot[i] !== 'object') {
+            p += makeDropBlock(loot);
+            break;
+        }
         p += '<div>';
         p += '<div class="loot_block_title">' + i + '</div>';
         p += '<div class="loot_block_content">';
@@ -142,7 +145,7 @@ function makeDropBlock(loot) {
     var p = '';
     for (var j in loot) {
         var l = j.split('x');
-        p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j] + '%') : ('')) + '">';
+        p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="'+ l[0] +'">';
         p += '<img class="' + items[l[0]].rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
         p += '</div>'
     }

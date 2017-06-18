@@ -50,8 +50,5 @@ function readCookie() {
 
 function updateCookie(name) {
     document.cookie = name + '=;' + expiredTime;
-    console.log(name + '=;' + expiredTime);
     document.cookie = name + '=' + settings[name].val + ';' + expireTime;
-    console.log(name + '=' + settings[name].val + ';' + expireTime);
-    console.log('куки : ' + document.cookie);
 }

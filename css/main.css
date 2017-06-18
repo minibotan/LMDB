@@ -55,6 +55,7 @@ h6 {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 4;
 }
 
 .nav_button {
@@ -383,6 +384,7 @@ table {
     display: inline;
     border: 5px solid #222;
     border-radius: 38px;
+    z-index: 1;
 }
 
 .mobpic{

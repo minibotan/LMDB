@@ -113,6 +113,23 @@ $(document).ready(function () {
     return false;
   });
 
+  $('.contentbox').on('click', ".drop", function(){
+    var id = $(this).attr('value');
+    $(this).append('<div><div>')
+           .children('div')
+           .css('position', 'relative')
+           .html(makeItemBox(items[id]))
+           .children('.item')
+           .css('position', 'absolute')
+           .css('width', '260px')
+           .css('z-index', '3');
+  });
+
+  $('.contentbox').on('mouseleave', ".drop div", function(){
+    $(this).remove();
+  });
+
+
 
   // odevalka
   $('.contentbox').on('click', "#odevalka_change", function () {
