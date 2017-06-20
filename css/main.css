@@ -518,6 +518,7 @@ ODEVALKA
     max-height: 220px;
     overflow: scroll;
     overflow-x: hidden;
+    text-align: left;
 }
 
 .option{

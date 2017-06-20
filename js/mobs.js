@@ -90,14 +90,15 @@ function lootblock(mob) {
         switch (loottype) {
             case 'randloot':
             case 'loot':
-                p += getLoot(loot);
+                p += getLootBylvl(loot);
                 break;
             case 'questloot':
                 p += getQuestLoot(loot);
                 break;
             case 'money':
-            case 'money':
+            case 'crystals':
             case 'factionmoney':
+            case 'twilights':
             default:
                 p += 'скоро будет инфа';
         }
@@ -108,13 +109,17 @@ function lootblock(mob) {
     return p;
 }
 
+
+
+// высота 2
+// создает блоки под каждый квест
 function getQuestLoot(loot) {
     var p = '';
     for (var questnum in loot) {
         p += '<div>';
         p += '<div class="loot_block_title" title="инфы о самих квестах у меня пока нет">id квеста ' + questnum + '</div>';
         p += '<div class="loot_block_content">';
-        p += getLoot(loot[questnum]);
+        p += getLootBylvl(loot[questnum]);
         p += '</div>';
         p += '</div>';
     }
@@ -122,7 +127,9 @@ function getQuestLoot(loot) {
 }
 
 
-function getLoot(loot) {
+// высота 1
+//функция создает блоки под каждый уровень
+function getLootBylvl(loot) {
     var p ='';
     for (var i in loot) {
         if(typeof loot[i] !== 'object') {
@@ -140,7 +147,8 @@ function getLoot(loot) {
 }
 
 
-
+// высота 0
+// функция создает самый последний уровень, с самими вещами          
 function makeDropBlock(loot) {
     var p = '';
     for (var j in loot) {

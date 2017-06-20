@@ -10,8 +10,9 @@ $(document).ready(function () {
   }
 
 
-
-
+  $('.contentbox').on('error', 'img', function(){
+    $(this).remove();
+  });
 
   /*               NAVIGATOR  & SETTINGS                   */
 
@@ -195,7 +196,15 @@ $(document).ready(function () {
 });
 
 
+
 function tmp() {
+    var p = 'Добро пожаловать на сайтик <span title="(не путать с другой аббревиатурой, которая достаточно похожа)">ЛМДБ</span><br>';
+    p += 'На этом сайте будет опубликовано очень много полезной информации, которая вам наверняка пригодится вовремя игры в <a href="http://lostmagic.ru">LostMagic</a>.';
+    return p;
+}
+
+
+function tmpLocs() {
   var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
   p += '<ol>';
   for (var i = 1; i < 10; i++) {
@@ -236,4 +245,22 @@ function locationObjects(k) {
   p += '</ol>';
   last += 100;
   $('.contentbox').html(p);
+}
+
+
+
+function showWeeks() {
+  var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+  p += '<ol>';
+  for(var y = 2010; y < 2018; y++) {
+    for(var m = 1; m < 13; m++) {
+      for(var d = 1; d < 32; d++) {
+        p+= '<li>' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + y + '<img src="http://www.lostmagic.ru/useruploads/images/news/' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + y + '.png"></li>';
+        p+= '<li>' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + (''+y).substr(2) + '<img src="http://www.lostmagic.ru/useruploads/images/news/' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + (''+y).substr(2) + '.png"></li>';
+      }
+    }
+  }
+  p += '</ol>';
+  $('.contentbox').html(p);
+  clearImgs();
 }
