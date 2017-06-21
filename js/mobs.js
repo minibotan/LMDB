@@ -71,7 +71,7 @@ function makeMobBlock(mob) {
 
 
     p += '<img class="mobpic"src="img/mobs/' + mob.doll + '.png">';
-
+    console.log(mob.name);
     p += lootblock(mob);
 
     p += '</div>';
@@ -84,21 +84,21 @@ function lootblock(mob) {
     for (var loottype in mob.loot) {
         console.log(loottype);
         p += '<div class="' + loottype + '">';
-        p += '<div class="loot_block_title">' + loottype + '</div>';
+        p += '<div class="loot_block_title">' + lootLoc[loottype] + '</div>';
         p += '<div class="loot_block_content">';
         var loot = mob.loot[loottype];
         switch (loottype) {
-            case 'randloot':
-            case 'loot':
-                p += getLootBylvl(loot);
-                break;
             case 'questloot':
                 p += getQuestLoot(loot);
                 break;
+            case 'randloot':
+            case 'loot':
             case 'money':
-            case 'crystals':
             case 'factionmoney':
             case 'twilights':
+            case 'crystals':
+                p += getLootBylvl(loot, loottype);
+                break;
             default:
                 p += 'скоро будет инфа';
         }
@@ -117,9 +117,9 @@ function getQuestLoot(loot) {
     var p = '';
     for (var questnum in loot) {
         p += '<div>';
-        p += '<div class="loot_block_title" title="инфы о самих квестах у меня пока нет">id квеста ' + questnum + '</div>';
+        p += '<div class="loot_block_title" title="инфы о самих квестах у меня пока нет">id квеста: ' + questnum + '</div>';
         p += '<div class="loot_block_content">';
-        p += getLootBylvl(loot[questnum]);
+        p += getLootBylvl(loot[questnum], 'questloot');
         p += '</div>';
         p += '</div>';
     }
@@ -129,17 +129,37 @@ function getQuestLoot(loot) {
 
 // высота 1
 //функция создает блоки под каждый уровень
-function getLootBylvl(loot) {
-    var p ='';
+function getLootBylvl(loot, loottype) {
+    var p = '';
     for (var i in loot) {
-        if(typeof loot[i] !== 'object') {
+        if (typeof loot[i] !== 'object') {
+            console.log(loot);
             p += makeDropBlock(loot);
             break;
         }
         p += '<div>';
-        p += '<div class="loot_block_title">' + i + '</div>';
+        p += '<div class="loot_block_title">Для ' + lootLoc[i] + ' уровней</div>';
         p += '<div class="loot_block_content">';
-        p += makeDropBlock(loot[i]);
+        switch (loottype) {
+            case 'questloot':
+            case 'randloot':
+            case 'loot':
+                p += makeDropBlock(loot[i]);
+                break;
+            case 'money':
+                p += 'От ' + getPrice(loot[i].min) + ' До ' + getPrice(loot[i].max);
+                break;
+            case 'factionmoney':
+            case 'twilights':
+                p += 'От ' + loot[i].min + ' До ' + loot[i].max + ' ' + lootLoc[loottype];
+                break;
+            case 'crystals':
+                for (var k in loot[i]) {
+                    if (loot[i][k] == 0) break;
+                    p += '<span title="' + loot[i][k] + '">' + k + '</span>  ';
+                }
+                break;
+        }
         p += '</div>';
         p += '</div>';
     }
@@ -153,12 +173,11 @@ function makeDropBlock(loot) {
     var p = '';
     for (var j in loot) {
         var l = j.split('x');
-        p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="'+ l[0] +'">';
+        p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="' + l[0] + '">';
         p += '<img class="' + items[l[0]].rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
         p += '</div>'
     }
     return p;
-
 }
 
 

@@ -168,7 +168,7 @@ $(document).ready(function () {
     } else {
       text = '';
     }
-    if (text.substr(text.length - 'TITSORGTFO'.length) == 'TITSORGTFO') {
+    if (text.substr(text.length - 10) == 'TITSORGTFO') {
       var swfsrc = 'http://static.lostmagic.ru/play/lib/locationObjects/general/812.swf';
       var p = '<h2>Хорошо, вот тебе голая Триша</h2>';
       p += '<object type="application/x-shockwave-flash" width="400" height="550">';
@@ -182,13 +182,12 @@ $(document).ready(function () {
       p += '</object>';
       $('.contentbox').html(p);
     }
-    if (text.substr(text.length - 'ISEEDEADPEOPLE'.length) == 'ISEEDEADPEOPLE') {
+    if (window.btoa(text.substr(text.length - 14)) == 'SVNFRURFQURQRU9QTEU=') {
       settings.showmeall.val = !settings.showmeall.val;
       updateCookie('showmeall');
       $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
       counter--;
       showContent();
-      console.log('код ISEEDEADPEOPLE сработал');
     }
     console.log(text);
   });
