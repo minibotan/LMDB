@@ -5325,29 +5325,6 @@ mobs = {
         },
         "location": "city"
     },
-    "78": {
-        "id": 78,
-        "adminname": "Адская Няшка",
-        "name": "Адская Няшка",
-        "isboss": "",
-        "maxhp": 50000,
-        "startrage": 10,
-        "level": 15,
-        "avatar": 39,
-        "doll": "miery",
-        "picture": "miery",
-        "gender": 1,
-        "race": "beast",
-        "isevent": 1,
-        "loot": {
-            "randloot": {
-                "default": {
-                    "11x2": 100
-                }
-            }
-        },
-        "location": ""
-    },
     "79": {
         "id": 79,
         "adminname": "Коварная Сестра",
@@ -5736,32 +5713,6 @@ mobs = {
             }
         },
         "location": "gory"
-    },
-    "88": {
-        "id": 88,
-        "adminname": "Тестмоб",
-        "name": "Тестмоб",
-        "isboss": "",
-        "maxhp": 10,
-        "startrage": "",
-        "level": 1,
-        "avatar": 1,
-        "doll": "darkshroom",
-        "picture": "darkshroom",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 50]
-            },
-            "randloot": {
-                "10": {
-                    "405": 100
-                }
-            }
-        },
-        "location": "city"
     },
     "89": {
         "id": 89,
