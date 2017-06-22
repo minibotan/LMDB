@@ -161,6 +161,23 @@ $(document).ready(function () {
     return false;
   });
 
+  $('.contentbox').on('mouseenter', ".char tr>[value]", function(){
+    var id = $(this).attr('value');
+    $(this).append('<div><div>')
+           .children('div')
+           .css('position', 'relative')
+           .html(makeItemBox(items[id]))
+           .children('.item')
+           .css('position', 'absolute')
+           .css('width', '260px')
+           .css('z-index', '3');
+  });
+
+  $('.contentbox').on('mouseleave', ".char tr>[value]", function(){
+    $(this).empty();
+  });
+
+
   //naked Trisha
   $('body').keyup(function (eventObject) {
     if (eventObject.which > 64 && eventObject.which < 91) {
