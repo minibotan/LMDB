@@ -23,7 +23,8 @@ function makeItemBox(item) {
     var newHTML ='';
     newHTML += '<div class = "item">';
     newHTML += '<h6 class = "itemname">' + item.name + '</h6>';
-    newHTML += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
+    if($(curPage).attr('id') == 'items')
+        newHTML += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
     newHTML += '<p>';
     newHTML += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     newHTML += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
@@ -47,15 +48,15 @@ function makeItemBox(item) {
     newHTML += '<table class = "bot">'
     newHTML += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
     newHTML += '</table>'
-    newHTML += '</p></div>';
+    newHTML += '</div>';
     return newHTML;
 }
 
 function getPrice(price) {
     var r = '';
-    r += (price > 9999) ? ((Math.floor(price / 10000)) + ' <div class="golden coin"></div> ') : ('');
-    r += ((Math.floor(price / 100)) % 100 > 0) ? ((Math.floor(price / 100)) % 100 + ' <div class="silver coin"></div> ') : ('');
-    r += (price % 100 > 0) ? (price % 100 + ' <div class="bronze coin"></div>') : ('');
+    r += (price > 9999) ? ((Math.floor(price / 10000)) + ' <img src="img/gold.jpg"> ') : ('');
+    r += ((Math.floor(price / 100)) % 100 > 0) ? ((Math.floor(price / 100)) % 100 + ' <img src="img/silver.jpg"> ') : ('');
+    r += (price % 100 > 0) ? (price % 100 + ' <img src="img/bronze.jpg">') : ('');
     return r;
 }
 
