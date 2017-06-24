@@ -242,7 +242,7 @@ table {
     padding: 0px;
     margin: 1%;
     display: inline-block;
-    width: 22%;
+    width: 235px;
     vertical-align: top;
 }
 
@@ -274,30 +274,13 @@ table {
     color: #55d;
 }
 
-
-.golden{
-    border: solid gold;
+.bot{
+    margin-bottom: 5px;
 }
 
-.silver{
-    border: solid silver;
-}
 
-.bronze{
-    border:solid chocolate; 
-}
 
-.coin{
-    border-left-width: 4px;
-    border-right-width: 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 8px;
-    display: inline-block;
-}
+
 
 
 .map_button_bar{
@@ -581,13 +564,23 @@ ODEVALKA
 input.whitestat{
     border: none;
     background: rgba(255, 255, 255, 0);
-    width: 30px;
+    width: 26px;
     font-size: 15px;
     color: #ccc;
     outline: none;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+
+input.whitestat:focus{
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    outline: none;
+    border-radius: 6px;
 }
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0px;
+}
+
