@@ -131,32 +131,34 @@ function getQuestLoot(loot) {
 //функция создает блоки под каждый уровень
 function getLootBylvl(loot, loottype) {
     var p = '';
-    for (var i in loot) {
-        if (typeof loot[i] !== 'object') {
+    for (var lvl in loot) {
+        /*
+        if (typeof loot[lvl] !== 'object') {
             console.log(loot);
             p += makeDropBlock(loot);
             break;
         }
+        */
         p += '<div>';
-        p += '<div class="loot_block_title">Для ' + lootLoc[i] + ' уровней</div>';
+        p += '<div class="loot_block_title">Для ' + lootLoc[lvl] + ' уровней</div>';
         p += '<div class="loot_block_content">';
         switch (loottype) {
             case 'questloot':
             case 'randloot':
             case 'loot':
-                p += makeDropBlock(loot[i]);
+                p += makeDropBlock(loot[lvl]);
                 break;
             case 'money':
-                p += 'От ' + getPrice(loot[i].min) + ' До ' + getPrice(loot[i].max);
+                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
                 break;
             case 'factionmoney':
             case 'twilights':
-                p += 'От ' + loot[i].min + ' До ' + loot[i].max + ' ' + lootLoc[loottype];
+                p += 'От ' + loot[lvl].min + ' До ' + loot[lvl].max + ' ' + lootLoc[loottype];
                 break;
             case 'crystals':
-                for (var k in loot[i]) {
-                    if (loot[i][k] == 0) break;
-                    p += '<span title="' + loot[i][k] + '">' + k + '</span>  ';
+                for (var k in loot[lvl]) {
+                    if (loot[lvl][k] == 0) break;
+                    p += '<span title="' + loot[lvl][k] + '">' + k + '</span>  ';
                 }
                 break;
         }
@@ -179,6 +181,38 @@ function makeDropBlock(loot) {
     }
     return p;
 }
+
+
+/*
+// высота 1
+//функция создает блок где все отображается уникально.
+function getLootUnique(loot, loottype) {
+    var p = '';
+    for (var lvl in loot) {
+        p += '<div>';
+        switch (loottype) {
+            case 'questloot':
+            case 'randloot':
+            case 'loot':
+                p += makeDropBlock(loot[lvl]);
+                break;
+            case 'money':
+                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
+                break;
+            case 'factionmoney':
+            case 'twilights':
+                p += 'От ' + loot[lvl].min + ' До ' + loot[lvl].max + ' ' + lootLoc[loottype];
+                break;
+            case 'crystals':
+                
+                break;
+        }
+        p += '</div>';
+    }
+    return p;
+}
+*/
+
 
 
 

@@ -146,7 +146,7 @@ $(document).ready(function () {
   });
 
   $('.contentbox').on('click', ".char .itemslot", function () {
-    $(this).html(chooseItem($(this).attr("class").split(' ')));
+    $(this).html(chooseItem($(this)));
     return false;
   });
 

@@ -103,7 +103,8 @@ function stats() {
 }
 
 
-function chooseItem(itemtype) {
+function chooseItem(cell) {
+    var itemtype = cell.attr("class").split(' ')
     var p = '<div size="5" class="itemselect">';
     if ("borderedpic" == itemtype[2]) {
         p += '<div class="option" value="-1">';
@@ -113,7 +114,8 @@ function chooseItem(itemtype) {
     }
     for (var i in items) {
         for (var j in itemtype) {
-            if (items[i].type == itemtype[j]) {
+            if (items[i].type == itemtype[j] &&
+                (items[i].reqlevel <= cell.parents('.char').find('.level input').val())) {
                 p += itemOption(i);
             }
         }
@@ -206,7 +208,7 @@ $('.contentbox').on('change', '.level input', function () {
         $(this).parent().parent().children('.paragon').remove();
     }
     var stats = {
-        "strength":$(this).parent().parent().children('.strength').children('input'),
+        "strength": $(this).parent().parent().children('.strength').children('input'),
         "agility": $(this).parent().parent().children('.agility').children('input'),
         "stamina": $(this).parent().parent().children('.stamina').children('input')
     };
