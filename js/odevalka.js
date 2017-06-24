@@ -206,9 +206,9 @@ $('.contentbox').on('change', '.level input', function () {
         $(this).parent().parent().children('.paragon').remove();
     }
     var stats = {
-        "strength": $('.strength input'),
-        "agility": $('.agility input'),
-        "stamina": $('.stamina input')
+        "strength":$(this).parent().parent().children('.strength').children('input'),
+        "agility": $(this).parent().parent().children('.agility').children('input'),
+        "stamina": $(this).parent().parent().children('.stamina').children('input')
     };
     var bS = {
         'strength': 3,
@@ -238,9 +238,9 @@ $('.contentbox').on('change', '.paragon input', function () {
     }
 
     var stats = {
-        "strength": $('.strength input'),
-        "agility": $('.agility input'),
-        "stamina": $('.stamina input')
+        "strength": $(this).parent().parent().children('.strength').children('input'),
+        "agility": $(this).parent().parent().children('.agility').children('input'),
+        "stamina": $(this).parent().parent().children('.stamina').children('input')
     };
     for (var st in stats) {
         stats[st].val(Number(baseStats[st]) + Number($(this).val()));
