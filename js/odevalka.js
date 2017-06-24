@@ -1,5 +1,36 @@
 var bull = true;
 
+var baseStats = {
+    'strength': 3,
+    'agility': 3,
+    'stamina': 3,
+}
+
+var statbonus = {
+    '2': 'stamina',
+    '3': 'strength',
+    '4': 'agility',
+    '5': 'stamina',
+    '6': 'strength',
+    '7': 'agility',
+    '8': 'stamina',
+    '9': 'strength',
+    '10': 'agility',
+    '11': 'stamina',
+    '12': 'strength',
+    '13': 'agility',
+    '14': 'stamina',
+    '15': 'strength',
+    '16': 'agility',
+    '17': 'stamina',
+    '18': 'strength',
+    '19': 'agility',
+    '20': 'stamina',
+    '21': 'strength',
+    '22': 'agility',
+    '23': 'stamina'
+}
+
 var nulldstats = {
     "minhit": 0,
     "maxhit": 0,
@@ -14,9 +45,9 @@ var nulldstats = {
 }
 
 
-function makeOdevalka(){
+function makeOdevalka() {
     var newHTML = '';
-    newHTML += '<div class="buttonholder"><button id="odevalka_change">'+ odevalkastate[bull] + '</button></div>';
+    newHTML += '<div class="buttonholder"><button id="odevalka_change">' + odevalkastate[bull] + '</button></div>';
     newHTML += firstChar();
     return newHTML;
 }
@@ -24,7 +55,7 @@ function makeOdevalka(){
 
 
 
-function firstChar(){
+function firstChar() {
     var r = '<div class="char norm"><div><table>';
     r += '<tr><td class="itemslot head" /><td class="doll" colspan="5" rowspan="5" /><td class="itemslot neck" /></tr>';
     r += '<tr><td class="itemslot chest" /><td class="itemslot ring" /></tr>';
@@ -34,11 +65,11 @@ function firstChar(){
     r += '<tr><td class="itemslot boots" /><td class="itemslot gloves" /><td class="itemslot weapon rweapon twohandedweapon" /><td class="sep"/><td class="itemslot weapon lweapon shield" /><td class="itemslot rune" /><td class="itemslot totem" /></tr>';
     r += '</table></div>';
     r += stats();
-    r+= '</div>';
+    r += '</div>';
     return r;
 }
 
-function secondChar(){
+function secondChar() {
     var r = '<div class="char reversed">';
     r += stats();
     r += '<div><table>';
@@ -53,10 +84,10 @@ function secondChar(){
 
 }
 
-function stats(){
-    var r='';
+function stats() {
+    var r = '';
     r += '<div class ="char_stats">';
-    r += '<div class="level"><div class="statname">Уровень:</div><input type="number" min="1" max="20" value="20" class="whitestat"></input></div>'
+    r += '<div class="level"><div class="statname">Уровень:</div><input type="number" value="1" class="whitestat"></input></div>'
     r += '<div class="maxhit"><div class="statname">Макс. урон:</div><span class="greenstat"></span></div>';
     r += '<div class="minhit"><div class="statname">Мин. урон:</div><span class="greenstat"></span></div>';
     r += '<div class="defence"><div class="statname">Защита:</div><span class="greenstat"></span></div>';
@@ -72,41 +103,41 @@ function stats(){
 }
 
 
-function chooseItem(itemtype){
-    var p = '<div size="5" class="itemselect">'; 
-    if("borderedpic" == itemtype[2]){
-    p +='<div class="option" value="-1">';
-    p += '<img class="common borderedpic option_item_img" src="http://static.lostmagic.ru/play/lib/jpg/0.jpg">';
-    p += '<div class="option_item_name">Снять</div>';
-    p += '</div>';
+function chooseItem(itemtype) {
+    var p = '<div size="5" class="itemselect">';
+    if ("borderedpic" == itemtype[2]) {
+        p += '<div class="option" value="-1">';
+        p += '<img class="common borderedpic option_item_img" src="http://static.lostmagic.ru/play/lib/jpg/0.jpg">';
+        p += '<div class="option_item_name">Снять</div>';
+        p += '</div>';
     }
-        for (var i in items) {
-            for(var j in itemtype) {
-                if(items[i].type == itemtype[j]){
-                    p += itemOption(i);
-                }
+    for (var i in items) {
+        for (var j in itemtype) {
+            if (items[i].type == itemtype[j]) {
+                p += itemOption(i);
             }
         }
-    p+= '</div>';
+    }
+    p += '</div>';
     return p;
 
 }
 
-function itemOption(itemid){
+function itemOption(itemid) {
     var item = items[itemid];
-    var p ='<div class="option" value="' + itemid + '">';
+    var p = '<div class="option" value="' + itemid + '">';
     p += '<img class="' + item.rarity + ' borderedpic option_item_img" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
-    p += '<div class="option_item_name">'+item.name+'</div>';
-    p+= '</div>';
+    p += '<div class="option_item_name">' + item.name + '</div>';
+    p += '</div>';
     return p;
 }
 
-function equipItem2(slot, itemid){
+function equipItem2(slot, itemid) {
     $(slot).removeClass("rare epic legendary common uncommon borderedpic");
-    if(itemid == -1) {
-        $(slot).css("background", "none");    
+    if (itemid == -1) {
+        $(slot).css("background", "none");
         $(slot).removeAttr("value");
-        recalculate($(slot).parents(".char"));    
+        recalculate($(slot).parents(".char"));
         return;
     }
     var item = items[itemid];
@@ -118,8 +149,8 @@ function equipItem2(slot, itemid){
 
 
 
-function recalculate(char){
-
+function recalculate(char) {
+    var chrClass = char.attr('class').split(' ')[1];
 
 
 
@@ -136,19 +167,93 @@ function recalculate(char){
         "mastery": 0,
         "resilience": 0
     }
-    //console.log(char.attr('class').split(' ')[1] + ' .itemslot');
-    $('.'+char.attr('class').split(' ')[1] + ' .itemslot').each(function(index, element){
+    //console.log(chrClass + ' .itemslot');
+    $('.' + chrClass + ' .itemslot').each(function (index, element) {
         //console.log($(element).attr("value"));
-        if ($(element).attr('value')){
-            for(var i in nulldstats) {
-                nulldstats[i] += (items[$(element).attr("value")][i])?(items[$(element).attr("value")][i]):(0);
+        if ($(element).attr('value')) {
+            for (var i in nulldstats) {
+                nulldstats[i] += (items[$(element).attr("value")][i]) ? (items[$(element).attr("value")][i]) : (0);
                 //console.log(i + ' ' + nulldstats[i] + ' ' + $(element).attr("value") + ' ' + items[$(element).attr("value")][i]);
             }
         }
     });
 
-    for(var i in nulldstats) {
-        $('.'+char.attr('class').split(' ')[1] + ' .' + i + ' span').html(nulldstats[i]);
+    for (var st in nulldstats) {
+        $('.' + chrClass + ' .' + st + ' span').html(nulldstats[st]);
+    }
+}
+
+
+
+
+
+$('.contentbox').on('change', '.level input', function () {
+    var input = $(this);
+    lvl = input.val();
+    if (lvl < 1) {
+        lvl = 1;
+        input.val("1");
+    }
+    if (lvl == 20) {
+        lvl = 23;
+        $(this).parent().after('<div class="paragon"><div class="statname">Ступень:</div><input type="number" value="0" class="whitestat"></input></div>');
+    }
+    if (lvl > 20) {
+        lvl = 23;
+        input.val("20");
+    }
+    if (lvl < 20) {
+        $(this).parent().parent().children('.paragon').remove();
+    }
+    var stats = {
+        "strength": $('.strength input'),
+        "agility": $('.agility input'),
+        "stamina": $('.stamina input')
+    };
+    var bS = {
+        'strength': 3,
+        'agility': 3,
+        'stamina': 3,
+    }
+    baseStats = bS;
+    stats.strength.val(baseStats.strength);
+    stats.agility.val(baseStats.agility);
+    stats.stamina.val(baseStats.stamina);
+
+    for (var i = 2; i <= lvl; i++) {
+        baseStats[statbonus[i]]++;
+        stats[statbonus[i]].val(baseStats[statbonus[i]]);
+    }
+    console.log(lvl);
+});
+
+
+$('.contentbox').on('change', '.paragon input', function () {
+    paragon = $(this).val();
+    if (paragon < 0) {
+        $(this).val("0");
+    }
+    if (paragon > 75) {
+        $(this).val("75");
     }
 
-}
+    var stats = {
+        "strength": $('.strength input'),
+        "agility": $('.agility input'),
+        "stamina": $('.stamina input')
+    };
+    for (var st in stats) {
+        stats[st].val(Number(baseStats[st]) + Number($(this).val()));
+    }
+});
+
+
+$('.contentbox').on('change', '.stamina input, .agility input, .strength input', function () {
+    var lvl = $('.level input').val();
+    var par = $('.paragon input').val();
+    var stats = {
+        "strength": $('.strength input'),
+        "agility": $('.agility input'),
+        "stamina": $('.stamina input')
+    };
+});
