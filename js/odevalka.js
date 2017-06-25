@@ -1,9 +1,12 @@
 var bull = true;
 
-var baseStats = {
-    'strength': 3,
-    'agility': 3,
-    'stamina': 3,
+var baseStats;
+
+var bonusStats = {
+    'strength': 0,
+    'agility': 0,
+    'stamina': 0,
+    'max':0
 }
 
 var statbonus = {
@@ -25,10 +28,7 @@ var statbonus = {
     '17': 'stamina',
     '18': 'strength',
     '19': 'agility',
-    '20': 'stamina',
-    '21': 'strength',
-    '22': 'agility',
-    '23': 'stamina'
+    '20': 'stamina'
 }
 
 var nulldstats = {
@@ -87,13 +87,13 @@ function secondChar() {
 function stats() {
     var r = '';
     r += '<div class ="char_stats">';
-    r += '<div class="level"><div class="statname">Уровень:</div><input type="number" value="1" class="whitestat"></input></div>'
+    r += '<div class="level"><div class="statname">Уровень:</div><input type="number" value="1" class="whitestat"></input> <span class="leftbonus" title="Свободных очков характеристик"></span></div>'
     r += '<div class="maxhit"><div class="statname">Макс. урон:</div><span class="greenstat"></span></div>';
     r += '<div class="minhit"><div class="statname">Мин. урон:</div><span class="greenstat"></span></div>';
     r += '<div class="defence"><div class="statname">Защита:</div><span class="greenstat"></span></div>';
-    r += '<div class="strength"><div class="statname">Сила:</div><input type="number" value="3" size="" class="whitestat"/>+<span class="greenstat"></span></div>';
-    r += '<div class="agility"><div class="statname">Ловкость:</div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
-    r += '<div class="stamina"><div class="statname">Выносливость:</div><input type="number" value="3" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="strength"><div class="statname">Сила:</div><input type="number" value="4" size="" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="agility"><div class="statname">Ловкость:</div><input type="number" value="4" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
+    r += '<div class="stamina"><div class="statname">Выносливость:</div><input type="number" value="4" size="3" class="whitestat"/>+<span class="greenstat"></span></div>';
     r += '<div class="crit"><div class="statname">Крит:</div><span class="greenstat"></span>%</div>';
     r += '<div class="dodge"><div class="statname">Уворот:</div><span class="greenstat"></span>%</div>';
     r += '<div class="mastery"><div class="statname">Мастерство:</div><span class="greenstat"></span></div>';
@@ -154,9 +154,6 @@ function equipItem2(slot, itemid) {
 function recalculate(char) {
     var chrClass = char.attr('class').split(' ')[1];
 
-
-
-
     var nulldstats = {
         "minhit": 0,
         "maxhit": 0,
@@ -187,7 +184,7 @@ function recalculate(char) {
 
 
 
-
+/**Input changes */
 
 $('.contentbox').on('change', '.level input', function () {
     var input = $(this);
@@ -197,25 +194,28 @@ $('.contentbox').on('change', '.level input', function () {
         input.val("1");
     }
     if (lvl == 20) {
-        lvl = 23;
         $(this).parent().after('<div class="paragon"><div class="statname">Ступень:</div><input type="number" value="0" class="whitestat"></input></div>');
     }
     if (lvl > 20) {
-        lvl = 23;
+        lvl = 20;
         input.val("20");
     }
     if (lvl < 20) {
         $(this).parent().parent().children('.paragon').remove();
     }
+
+    bonusStats.max = (input.val()-1)*3;
+    $(this).parent().children('span').html(bonusStats.max - (bonusStats.strength + bonusStats.agility + bonusStats.stamina));
+
     var stats = {
         "strength": $(this).parent().parent().children('.strength').children('input'),
         "agility": $(this).parent().parent().children('.agility').children('input'),
         "stamina": $(this).parent().parent().children('.stamina').children('input')
     };
     var bS = {
-        'strength': 3,
-        'agility': 3,
-        'stamina': 3,
+        'strength': 4,
+        'agility': 4,
+        'stamina': 4,
     }
     baseStats = bS;
     stats.strength.val(baseStats.strength);
@@ -226,7 +226,6 @@ $('.contentbox').on('change', '.level input', function () {
         baseStats[statbonus[i]]++;
         stats[statbonus[i]].val(baseStats[statbonus[i]]);
     }
-    console.log(lvl);
 });
 
 
@@ -251,11 +250,32 @@ $('.contentbox').on('change', '.paragon input', function () {
 
 
 $('.contentbox').on('change', '.stamina input, .agility input, .strength input', function () {
-    var lvl = $('.level input').val();
-    var par = $('.paragon input').val();
+    var par = Number($('.paragon input').val());
+    if(isNaN(par)) par = 0;
     var stats = {
         "strength": $('.strength input'),
         "agility": $('.agility input'),
         "stamina": $('.stamina input')
     };
+    var input = $(this);
+    var statclass = input.parent().attr('class');
+    console.log(statclass);
+    var lav = Number(input.val());
+
+    bonusStats[statclass] = lav - par - baseStats[statclass];
+
+    if(lav < baseStats[statclass] + par) {
+        input.val(baseStats[statclass] + par);
+        bonusStats[statclass] = 0;
+        console.log('<');
+    }
+
+
+    if(bonusStats.max < (bonusStats.strength + bonusStats.agility + bonusStats.stamina)) {
+        console.log('>');
+        bonusStats[statclass] = bonusStats[statclass] + (bonusStats.max - (bonusStats.strength + bonusStats.agility + bonusStats.stamina));
+        input.val(baseStats[statclass] + par + bonusStats[statclass]);
+    }
+    $(this).parent().parent().children('.level').children('span').html(bonusStats.max - (bonusStats.strength + bonusStats.agility + bonusStats.stamina));
+
 });

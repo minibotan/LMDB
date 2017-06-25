@@ -212,6 +212,8 @@ table {
 }
 
 
+/** ITEMS */
+
 .itemstat {
     text-align: right;
     font-size: 14px;
@@ -557,6 +559,9 @@ ODEVALKA
 
 .whitestat {
     color: #ccc;
+}
+.leftbonus{
+    color: #888;
 }
 
 
