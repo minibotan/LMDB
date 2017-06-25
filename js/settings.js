@@ -10,13 +10,11 @@ var settings = {
     gender: {
         true: "Мой перс - Мужчина",
         false: "Мой перс - Женщина",
-        val: true,
         regexp: /\{g:([а-яё a-z]*):([а-яё a-z]*)\}/ig
     },
     ok: {
         true: "Я играю через ОК",
         false: "Я адекватный",
-        val: true,
         regexp: /\{ok:([а-яё a-z0-9\-]*):([а-яё a-z0-9\-]*)\}/ig
     },
     showmeall:{
