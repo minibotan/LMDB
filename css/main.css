@@ -16,6 +16,12 @@ h6 {
 }
 
 
+a {
+    outline: none;
+    color: #ccc;
+    text-decoration: none;
+}
+
 .settings_bar{
     text-align: left;
     z-index: 10;
@@ -88,6 +94,18 @@ footer p {
     margin: 0;
     padding: 20px 0;
 }
+
+
+
+
+
+
+
+
+
+/** CONTENT */
+
+
 
 .contentbox {
     margin: 0px 60px;
