@@ -2,7 +2,7 @@ function showItems() {
     var k = counter*40;
     var newHTML = '';
     for(var i in items) {
-        if(check(items[i])){
+        if(check(items[i]) && !items[i].hidden){
             if(k < 1){
                 newHTML += makeItemBox(items[i]);
             }

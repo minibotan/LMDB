@@ -24,6 +24,7 @@ items = {
     "image" : 3,
     "price" : 3,
     "descr" : "Некоторые маги лучше всего творят в одиночестве. Другие же лучше всего творят само одиночество.",
+    "hidden" : true
   },
   "4" : {
     "id" : 4,
@@ -37,6 +38,7 @@ items = {
     "image" : 2,
     "price" : 4,
     "descr" : "«Он не вернулся в Облачный лес, но я все еще чувствую его успокаивающее присутствие».\r\n— Залики, леонинка из Найи",
+    "hidden" : true
   },
   "6" : {
     "id" : 6,
@@ -49,6 +51,7 @@ items = {
     "price" : 2,
     "personal" : 1,
     "descr" : "Траляля.",
+    "hidden" : true
   },
   "7" : {
     "id" : 7,
@@ -105,6 +108,7 @@ items = {
     "image" : "wpn_1hand_norm_5",
     "price" : 10,
     "descr" : "Для разделки животных и не только",
+    "hidden" : true
   },
   "11" : {
     "id" : 11,
@@ -209,6 +213,7 @@ items = {
     "image" : "wpn_1hand_norm_9",
     "price" : 16,
     "descr" : "Ключ к любому сердцу",
+    "hidden" : true
   },
   "17" : {
     "id" : 17,
@@ -308,6 +313,7 @@ items = {
     "level" : 1,
     "image" : "shld_2",
     "price" : 22,
+    "hidden" : true
   },
   "23" : {
     "id" : 23,
@@ -319,6 +325,7 @@ items = {
     "level" : 3,
     "image" : "shld_1",
     "price" : 23,
+    "hidden" : true
   },
   "24" : {
     "id" : 24,
@@ -363,6 +370,7 @@ items = {
     "level" : 2,
     "image" : "hand_norm_2",
     "price" : 26,
+    "hidden" : true
   },
   "27" : {
     "id" : 27,
@@ -374,6 +382,7 @@ items = {
     "level" : 3,
     "image" : "hand_norm_3",
     "price" : 27,
+    "hidden" : true
   },
   "28" : {
     "id" : 28,
@@ -385,6 +394,7 @@ items = {
     "level" : 4,
     "image" : "hand_norm_4",
     "price" : 28,
+    "hidden" : true
   },
   "29" : {
     "id" : 29,
@@ -412,6 +422,7 @@ items = {
     "level" : 2,
     "image" : "foot_norm_1",
     "price" : 30,
+    "hidden" : true
   },
   "31" : {
     "id" : 31,
@@ -423,6 +434,7 @@ items = {
     "level" : 3,
     "image" : "foot_norm_3",
     "price" : 31,
+    "hidden" : true
   },
   "32" : {
     "id" : 32,
@@ -434,6 +446,7 @@ items = {
     "level" : 4,
     "image" : "foot_norm_4",
     "price" : 32,
+    "hidden" : true
   },
   "33" : {
     "id" : 33,
@@ -461,6 +474,7 @@ items = {
     "level" : 2,
     "image" : "head_norm_2",
     "price" : 34,
+    "hidden" : true
   },
   "35" : {
     "id" : 35,
@@ -472,6 +486,7 @@ items = {
     "level" : 3,
     "image" : "head_norm_3",
     "price" : 35,
+    "hidden" : true
   },
   "36" : {
     "id" : 36,
@@ -483,6 +498,7 @@ items = {
     "level" : 4,
     "image" : "head_norm_4",
     "price" : 36,
+    "hidden" : true
   },
   "37" : {
     "id" : 37,
@@ -511,6 +527,7 @@ items = {
     "level" : 2,
     "image" : "leg_norm_2",
     "price" : 38,
+    "hidden" : true
   },
   "39" : {
     "id" : 39,
@@ -522,6 +539,7 @@ items = {
     "level" : 3,
     "image" : "leg_norm_3",
     "price" : 39,
+    "hidden" : true
   },
   "40" : {
     "id" : 40,
@@ -533,6 +551,7 @@ items = {
     "level" : 4,
     "image" : "leg_norm_4",
     "price" : 40,
+    "hidden" : true
   },
   "41" : {
     "id" : 41,
@@ -561,6 +580,7 @@ items = {
     "level" : 2,
     "image" : "torso_norm_2",
     "price" : 42,
+    "hidden" : true
   },
   "43" : {
     "id" : 43,
@@ -573,6 +593,7 @@ items = {
     "image" : "10rats_pants",
     "price" : 43,
     "descr" : "torso_norm_4",
+    "hidden" : true
   },
   "44" : {
     "id" : 44,
@@ -585,6 +606,7 @@ items = {
     "image" : "10rats_chest",
     "price" : 44,
     "descr" : "torso_norm_3",
+    "hidden" : true
   },
   "45" : {
     "id" : 45,
@@ -875,6 +897,7 @@ items = {
     "level" : 3,
     "image" : "jewel_nec_3",
     "price" : 61,
+    "hidden" : true
   },
   "62" : {
     "id" : 62,
@@ -886,6 +909,7 @@ items = {
     "level" : 3,
     "image" : "jewel_nec_4",
     "price" : 62,
+    "hidden" : true
   },
   "63" : {
     "id" : 63,
