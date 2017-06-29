@@ -33456,5 +33456,21 @@ items = {
     "personal" : 1,
     "descr" : "Содержит какие-нибудь чары, иногда очень классные!",
     "instruction" : "Двойной клик: вскрыть шкатулку."
-  }
+  },
+  "2287" : {
+    "id" : 2287,
+    "name" : "Гемма Нового Железа",
+    "maxcnt" : 1,
+    "type" : "socket",
+    "premium_type" : "none",
+    "rarity" : "epic",
+    "level" : 99,
+    "reqlevel" : 8,
+    "strength" : 7,
+    "agility" : 7,
+    "stamina" : 7,
+    "image" : "adenit",
+    "price" : 10900,
+    "personal" : 1
+  },
 }
