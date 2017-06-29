@@ -14,6 +14,9 @@ var searchProps;
 var searchValues;
 
 
+var path = "http://lostmagic.ru/";
+
+
 
 
 

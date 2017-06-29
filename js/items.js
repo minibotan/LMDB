@@ -24,7 +24,7 @@ function makeItemBox(item) {
     newHTML += '<div class = "item">';
     newHTML += '<h6 class = "itemname">' + item.name + '</h6>';
     if($(curPage).attr('id') == 'items')
-        newHTML += '<img class="' + item.rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + item.image + '.jpg">';
+        newHTML += '<img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
     newHTML += '<p>';
     newHTML += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     newHTML += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');

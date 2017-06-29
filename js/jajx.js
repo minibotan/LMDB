@@ -186,7 +186,7 @@ $(document).ready(function () {
       text = '';
     }
     if (text.substr(text.length - 10) == 'TITSORGTFO') {
-      var swfsrc = 'http://static.lostmagic.ru/play/lib/locationObjects/general/812.swf';
+      var swfsrc = '' + path + '/play/lib/locationObjects/general/812.swf';
       var p = '<h2>Хорошо, вот тебе голая Триша</h2>';
       p += '<object type="application/x-shockwave-flash" width="400" height="550">';
       p += '<param name="movie" value="' + swfsrc + '">';
@@ -224,10 +224,10 @@ function tmpLocs() {
   var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
   p += '<ol>';
   for (var i = 1; i < 10; i++) {
-    p += '<li><img src="http://static.lostmagic.ru/play/lib/location/0' + i + '.jpg"></li>';
+    p += '<li><img src="' + path + '/play/lib/location/0' + i + '.jpg"></li>';
   }
   for (var i = 10; i < 300; i++) {
-    p += '<li><img src="http://static.lostmagic.ru/play/lib/location/' + i + '.jpg"></li>';
+    p += '<li><img src="' + path + '/play/lib/location/' + i + '.jpg"></li>';
   }
   p += '</ol>';
   return p;
@@ -244,7 +244,7 @@ function locationObjects(k) {
   p += '<ol>';
   for (var i = last; i < last + 100; i++) {
     p += '<li>';
-    var swfsrc = 'http://static.lostmagic.ru/play/lib/locationObjects/general/' + i + '.swf';
+    var swfsrc = '' + path + '/play/lib/locationObjects/general/' + i + '.swf';
     p += '<object type="application/x-shockwave-flash" width="970" height="330">';
     p += '<param name="movie" value="' + swfsrc + '">';
     p += '<embeded src="' + swfsrc + '"></embeded>';

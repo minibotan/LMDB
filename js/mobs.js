@@ -57,7 +57,7 @@ function showMobs() {
 
 function makeMobBlock(mob) {
     var p = '<div class="moboblock">';
-    //p+= '<img src="http://static.lostmagic.ru/play/lib/jpg/'+mob.doll+'.jpg">'
+    //p+= '<img src="' + path + '/play/lib/jpg/'+mob.doll+'.jpg">'
     p += '<div class="mobinfo">'
     p += '<p class="mobname">' + mob.name + '</p>';
     p += '<p class="mobhp">' + mob.maxhp + '/' + mob.maxhp + '</p>';
@@ -65,7 +65,7 @@ function makeMobBlock(mob) {
 
 
     p += '<div class="avatar_level">';
-    p += '<img class="avatar" src="http://static.lostmagic.ru/play/lib/avatar/' + mob.avatar + '.png">';
+    p += '<img class="avatar" src="' + path + '/play/lib/avatar/' + mob.avatar + '.png">';
     p += '<h4 class="mob_level">' + mob.level + '</h4>';
     p += '</div>';
 
@@ -176,7 +176,7 @@ function makeDropBlock(loot) {
     for (var j in loot) {
         var l = j.split('x');
         p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="' + l[0] + '">';
-        p += '<img class="' + items[l[0]].rarity + ' borderedpic" src="http://static.lostmagic.ru/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
+        p += '<img class="' + items[l[0]].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
         p += '</div>'
     }
     return p;
@@ -218,14 +218,14 @@ function getLootUnique(loot, loottype) {
 
 function addLMLoginer() {
     var r = '';
-    r += '<div id="login" class="logined"><object data="http://static.lostmagic.ru/flash/logined.swf" type="application/x-shockwave-flash" id="flash_428931508" width="217" height="163"><param name="params" value="menu=false&amp;wmode=opaque"><param name="allowScriptAccess" value="always"><param name="flashvars" value="name=Just%20Bot&amp;race=1&amp;level=20&amp;avatar=186&amp;hp=3388&amp;maxhp=3388&amp;inner=0&amp;isgamexp=0&amp;lang=ru&amp;cdn=http://static.lostmagic.ru"><param name="movie" value="http://static.lostmagic.ru/flash/logined.swf"><param name="wmode" value="opaque"></object></div>';
+    r += '<div id="login" class="logined"><object data="' + path + '/flash/logined.swf" type="application/x-shockwave-flash" id="flash_428931508" width="217" height="163"><param name="params" value="menu=false&amp;wmode=opaque"><param name="allowScriptAccess" value="always"><param name="flashvars" value="name=Just%20Bot&amp;race=1&amp;level=20&amp;avatar=186&amp;hp=3388&amp;maxhp=3388&amp;inner=0&amp;isgamexp=0&amp;lang=ru&amp;cdn=' + path + '"><param name="movie" value="' + path + '/flash/logined.swf"><param name="wmode" value="opaque"></object></div>';
     return r;
 }
 
 function addFlash(mob) {
     /* флеш объект отображается не так, как должен =( */
     /* на гитхабе вообще не грузит, так как не https */
-    var swfsrc = 'http://static.lostmagic.ru/play/lib/dolls/' + mob.doll + '.swf'
+    var swfsrc = '' + path + '/play/lib/dolls/' + mob.doll + '.swf'
     var p = '';
     p += '<object type="application/x-shockwave-flash">'
     p += '<param name="movie" value="' + swfsrc + '">'
