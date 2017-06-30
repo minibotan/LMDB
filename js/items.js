@@ -29,6 +29,7 @@ function makeItemBox(item) {
     newHTML += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     newHTML += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
     newHTML += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
+    newHTML += (item.instruction) ? ('<p class="small">' + item.instruction + '</p>') : ('');
     newHTML += '<table>'
     newHTML += Reqs(item);
     newHTML += '</table>'
