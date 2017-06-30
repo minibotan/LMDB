@@ -29,9 +29,7 @@ function makeItemBox(item) {
     p += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
     p += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
     p += (item.instruction) ? ('<p class="small">' + item.instruction + '</p>') : ('');
-    p += '<table>'
     p += Reqs(item);
-    p += '</table>'
     p += '<table>'
     p += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + ((item.minhit)?(item.minhit):(0)) + ' - ' + ((item.maxhit)?(item.maxhit):(0)) + '</td></tr>') : ('');
     p += (item.defence) ? (is1 + '">Защита:' + is2 + item.defence + '</td></tr>') : ('');
@@ -96,7 +94,7 @@ function Reqs(item) {
         r += '<td class="itemstat2">Выносливость ' + item.reqstamina + '</td></tr>';
         bool = true;
     }
-    return (bool) ? (t + r) : ('');
+    return (bool) ? ('<table>' + t + r + '</table>') : ('');
 }
 
 function check(a) {
