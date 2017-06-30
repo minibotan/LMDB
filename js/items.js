@@ -46,7 +46,7 @@ function makeItemBox(item) {
     p += '<table class = "bot">'
     p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
     p += '</table>';
-    if(item.type == 'sunduk' && settings.showmeall) {
+    if(item.type == 'sunduk') {
         p += '<div>';
         p += '<div class="loot_block_title">Содержимое</div>';
         p += '<div class="loot_block_content">';
