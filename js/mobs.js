@@ -215,6 +215,26 @@ function getLootUnique(loot, loottype) {
 
 
 
+/*
+
+
+ffffffff    ll                  aaaa          ssssss        hh      hh
+ffffffff    ll                  aaaa        sss    sss      hh      hh
+ff          ll                 aaaaaa       ss      ss      hh      hh
+ff          ll                 aa  aa       sss             hh      hh
+ffffffff    ll                aa    aa       sssss          hhhhhhhhhh
+ffffffff    ll                aa    aa          ssss        hhhhhhhhhh
+ff          ll               aaaaaaaaaa            sss      hh      hh 
+ff          ll               aaaaaaaaaa     ss      ss      hh      hh
+ff          llllllllll      aa        aa    sss    sss      hh      hh
+ff          llllllllll      aa        aa      ssssss        hh      hh
+
+
+
+
+
+ */
+
 
 function addLMLoginer() {
     var r = '';
