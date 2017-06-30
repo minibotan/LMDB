@@ -1,10 +1,10 @@
 function showItems() {
     var k = counter*40;
-    var newHTML = '';
+    var p = '';
     for(var i in items) {
         if(check(items[i]) && !items[i].hidden){
             if(k < 1){
-                newHTML += makeItemBox(items[i]);
+                p += makeItemBox(items[i]);
             }
             if (k < -38) break;
             k--;
@@ -14,42 +14,49 @@ function showItems() {
         $('.moar_button').css("display", "none");
     }
     counter++;
-    return newHTML;
+    return p;
 }
 
 function makeItemBox(item) {
     var is1 = '<tr><td class="itemstat';
     var is2 = '</td><td class="itemstat2">';
-    var newHTML ='';
-    newHTML += '<div class = "item">';
-    newHTML += '<h6 class = "itemname ' + item.rarity + '_text">' + item.name + '</h6>';
+    var p ='';
+    p += '<div class = "item">';
+    p += '<h6 class = "itemname ' + item.rarity + '_text">' + item.name + '</h6>';
     if($(curPage).attr('id') == 'items')
-        newHTML += '<img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
-    newHTML += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
-    newHTML += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
-    newHTML += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
-    newHTML += (item.instruction) ? ('<p class="small">' + item.instruction + '</p>') : ('');
-    newHTML += '<table>'
-    newHTML += Reqs(item);
-    newHTML += '</table>'
-    newHTML += '<table>'
-    newHTML += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + ((item.minhit)?(item.minhit):(0)) + ' - ' + ((item.maxhit)?(item.maxhit):(0)) + '</td></tr>') : ('');
-    newHTML += (item.defence) ? (is1 + '">Защита:' + is2 + item.defence + '</td></tr>') : ('');
-    newHTML += (item.strength) ? (is1 + '">Сила:' + is2 + item.strength + '</td></tr>') : ('');
-    newHTML += (item.agility) ? (is1 + '">Ловкость:' + is2 + item.agility + '</td></tr>') : ('');
-    newHTML += (item.stamina) ? (is1 + '">Выносливость:' + is2 + item.stamina + '</td></tr>') : ('');
-    newHTML += (item.crit) ? (is1 + '">Крит:' + is2 + item.crit + '%</td></tr>') : ('');
-    newHTML += (item.dodge) ? (is1 + '">Уворот:' + is2 + item.dodge + '%</td></tr>') : ('');
-    newHTML += (item.mastery) ? (is1 + '">Мастерство:' + is2 + item.mastery + '</td></tr>') : ('');
-    newHTML += (item.resilience) ? (is1 + '">Устойчивость:' + is2 + item.resilience + '</td></tr>') : ('');
-    newHTML += (item.maxdur) ? (is1 + '">Прочность:' + is2 + item.maxdur + '</td></tr>') : ('');
-    newHTML += '</table>'
-    newHTML += (item.descr) ? ('<p class="goldentext">' + item.descr + '</p>') : ('');
-    newHTML += '<table class = "bot">'
-    newHTML += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
-    newHTML += '</table>'
-    newHTML += '</div>';
-    return newHTML;
+        p += '<img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
+    p += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
+    p += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
+    p += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
+    p += (item.instruction) ? ('<p class="small">' + item.instruction + '</p>') : ('');
+    p += '<table>'
+    p += Reqs(item);
+    p += '</table>'
+    p += '<table>'
+    p += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + ((item.minhit)?(item.minhit):(0)) + ' - ' + ((item.maxhit)?(item.maxhit):(0)) + '</td></tr>') : ('');
+    p += (item.defence) ? (is1 + '">Защита:' + is2 + item.defence + '</td></tr>') : ('');
+    p += (item.strength) ? (is1 + '">Сила:' + is2 + item.strength + '</td></tr>') : ('');
+    p += (item.agility) ? (is1 + '">Ловкость:' + is2 + item.agility + '</td></tr>') : ('');
+    p += (item.stamina) ? (is1 + '">Выносливость:' + is2 + item.stamina + '</td></tr>') : ('');
+    p += (item.crit) ? (is1 + '">Крит:' + is2 + item.crit + '%</td></tr>') : ('');
+    p += (item.dodge) ? (is1 + '">Уворот:' + is2 + item.dodge + '%</td></tr>') : ('');
+    p += (item.mastery) ? (is1 + '">Мастерство:' + is2 + item.mastery + '</td></tr>') : ('');
+    p += (item.resilience) ? (is1 + '">Устойчивость:' + is2 + item.resilience + '</td></tr>') : ('');
+    p += (item.maxdur) ? (is1 + '">Прочность:' + is2 + item.maxdur + '</td></tr>') : ('');
+    p += '</table>'
+    p += (item.descr) ? ('<p class="goldentext">' + item.descr + '</p>') : ('');
+    p += '<table class = "bot">'
+    p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
+    p += '</table>';
+    if(item.type == 'sunduk' && settings.showmeall) {
+        p += '<div>';
+        p += '<div class="loot_block_title">Содержимое</div>';
+        p += '<div class="loot_block_content">';
+        p += makeDropBlock(item.bottleparams.loot);
+        p += '</div></div>';
+    }
+    p += '</div>';
+    return p;
 }
 
 function getPrice(price) {
