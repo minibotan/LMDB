@@ -16575,6 +16575,7 @@ items = {
     "price" : 210000,
     "becomepersonal" : 1,
     "descr" : "Вжжж! Вжжжжж!",
+    "hidden" : true
   },
   "1141" : {
     "id" : 1141,
