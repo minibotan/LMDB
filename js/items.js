@@ -50,7 +50,7 @@ function makeItemBox(item) {
         p += '<div>';
         p += '<div class="loot_block_title">Содержимое</div>';
         p += '<div class="loot_block_content">';
-        p += makeDropBlock(item.bottleparams.loot);
+        p += lootblock(item.bottleparams, );
         p += '</div></div>';
     }
     p += '</div>';

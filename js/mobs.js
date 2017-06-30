@@ -72,24 +72,24 @@ function makeMobBlock(mob) {
 
     p += '<img class="mobpic"src="img/mobs/' + mob.doll + '.png">';
     console.log(mob.name);
-    p += lootblock(mob);
+    p += lootblock(mob.loot);
 
     p += '</div>';
     return p;
 }
 
 
-function lootblock(mob) {
+function lootblock(loot) {
+    console.log(loot);
     var p = '<div class="loot_block">';
-    for (var loottype in mob.loot) {
+    for (var loottype in loot) {
         console.log(loottype);
         p += '<div class="' + loottype + '">';
         p += '<div class="loot_block_title">' + lootLoc[loottype] + '</div>';
         p += '<div class="loot_block_content">';
-        var loot = mob.loot[loottype];
         switch (loottype) {
             case 'questloot':
-                p += getQuestLoot(loot);
+                p += getQuestLoot(loot[loottype]);
                 break;
             case 'randloot':
             case 'loot':
@@ -97,7 +97,7 @@ function lootblock(mob) {
             case 'factionmoney':
             case 'twilights':
             case 'crystals':
-                p += getLootBylvl(loot, loottype);
+                p += getLootBylvl(loot[loottype], loottype);
                 break;
             default:
                 p += 'скоро будет инфа';
@@ -172,12 +172,20 @@ function getLootBylvl(loot, loottype) {
 // высота 0
 // функция создает самый последний уровень, с самими вещами          
 function makeDropBlock(loot) {
+    console.log(loot);
     var p = '';
     for (var j in loot) {
         var l = j.split('x');
-        p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="' + l[0] + '">';
-        p += '<img class="' + items[l[0]].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
-        p += '</div>'
+        if (l[0].indexOf(':') !== -1) {
+            var k = l[0].split(':');
+            p += '<div class="drop" title="' + mobs[k[1]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '">';
+            p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
+            p += '</div>';
+        } else {
+            p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="' + l[0] + '">';
+            p += '<img class="miniimg ' + items[l[0]].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
+            p += '</div>';
+        }
     }
     return p;
 }
