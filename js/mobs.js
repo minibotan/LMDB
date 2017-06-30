@@ -179,7 +179,7 @@ function makeDropBlock(loot) {
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
             p += '<div class="drop" title="' + mobs[k[1]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '">';
-            p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
+            p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
             p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="' + l[0] + '">';
