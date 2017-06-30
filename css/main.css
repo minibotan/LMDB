@@ -512,6 +512,27 @@ ODEVALKA
 }
 
 
+.legend_text{
+    color: orangered;
+}
+
+.epic_text{
+    color: #d647ff;
+}
+
+.rare_text{
+     color: #0190ff;
+}
+
+.uncommon_text{
+     color: #15e300;
+}
+
+.common_text{
+    color: #ede7d3;
+}
+
+
 
 .itemselect{
     position: absolute;

@@ -22,10 +22,9 @@ function makeItemBox(item) {
     var is2 = '</td><td class="itemstat2">';
     var newHTML ='';
     newHTML += '<div class = "item">';
-    newHTML += '<h6 class = "itemname">' + item.name + '</h6>';
+    newHTML += '<h6 class = "itemname ' + item.rarity + '_text">' + item.name + '</h6>';
     if($(curPage).attr('id') == 'items')
         newHTML += '<img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
-    newHTML += '<p>';
     newHTML += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     newHTML += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
     newHTML += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
@@ -34,7 +33,7 @@ function makeItemBox(item) {
     newHTML += Reqs(item);
     newHTML += '</table>'
     newHTML += '<table>'
-    newHTML += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + item.minhit + ' - ' + item.maxhit + '</td></tr>') : ('');
+    newHTML += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + ((item.minhit)?(item.minhit):(0)) + ' - ' + ((item.maxhit)?(item.maxhit):(0)) + '</td></tr>') : ('');
     newHTML += (item.defence) ? (is1 + '">Защита:' + is2 + item.defence + '</td></tr>') : ('');
     newHTML += (item.strength) ? (is1 + '">Сила:' + is2 + item.strength + '</td></tr>') : ('');
     newHTML += (item.agility) ? (is1 + '">Ловкость:' + is2 + item.agility + '</td></tr>') : ('');
