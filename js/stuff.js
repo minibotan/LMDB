@@ -341,20 +341,22 @@ searchValues = {
       'zona':'Зона 50',
       'sumerki':'Сумерки',
       'land':'Древние земли',
-      'pirates': 'Пираты'
+      'pirates': 'Пираты',
+      'pant': 'Пантеон'
     }
   }
 };
 
 
 lootLoc = {
-    loot:'одно из:',
-    randloot:'рандом лут',
+    loot:'одно из',
+    randloot:'возможное содержимое',
     questloot:'квестовый лут',
     factionmoney:'стигмы',
     money:'голда',
     twilights:'анимы',
     crystals:'осколки магии',
+    sockets: 'количество дыр',
     1:'первых',
     2:'вторых',
     3:'третьих',
