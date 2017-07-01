@@ -6339,7 +6339,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "101": {
         "id": 101,
@@ -6385,7 +6385,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "102": {
         "id": 102,
@@ -6431,7 +6431,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "103": {
         "id": 103,
@@ -6477,7 +6477,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "104": {
         "id": 104,
@@ -6519,7 +6519,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "105": {
         "id": 105,
@@ -6557,7 +6557,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "106": {
         "id": 106,
@@ -6599,7 +6599,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "107": {
         "id": 107,
@@ -6637,7 +6637,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "108": {
         "id": 108,
@@ -6679,7 +6679,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "109": {
         "id": 109,
@@ -6717,7 +6717,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "110": {
         "id": 110,
@@ -6765,7 +6765,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "111": {
         "id": 111,
@@ -6814,7 +6814,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "112": {
         "id": 112,
@@ -6862,7 +6862,7 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "pant"
     },
     "113": {
         "id": 113,
@@ -13124,7 +13124,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "289": {
         "id": 289,
@@ -13160,7 +13160,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "290": {
         "id": 290,
@@ -13196,7 +13196,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "291": {
         "id": 291,
@@ -13213,7 +13213,7 @@ mobs = {
         "race": "human",
         "isevent": "",
         "loot": "",
-        "location": ""
+        "location": "pant"
     },
     "292": {
         "id": 292,
@@ -13253,7 +13253,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "293": {
         "id": 293,
@@ -13293,7 +13293,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "294": {
         "id": 294,
@@ -13333,7 +13333,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "295": {
         "id": 295,
@@ -13373,7 +13373,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "296": {
         "id": 296,
@@ -13413,7 +13413,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "297": {
         "id": 297,
@@ -13453,7 +13453,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "298": {
         "id": 298,
@@ -13493,7 +13493,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "299": {
         "id": 299,
@@ -13533,7 +13533,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "pant"
     },
     "300": {
         "id": 300,
