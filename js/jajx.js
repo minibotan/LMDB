@@ -205,6 +205,9 @@ $(document).ready(function () {
       counter--;
       showContent();
     }
+    if(text.substr(text.length - 6) == 'PIKCHI') {
+      $('.contentbox').html(pikchi());
+    }
     console.log(text);
   });
 
