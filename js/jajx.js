@@ -9,10 +9,9 @@ $(document).ready(function () {
     alert('Включите cookie для комфортной работы с этим сайтом');
   }
 
-
-  $('.contentbox').on('error', 'img', function(){
-    $(this).remove();
-  });
+  if(!settings.showmeall) {
+      anal();
+  }
 
   /*               NAVIGATOR  & SETTINGS                   */
 
