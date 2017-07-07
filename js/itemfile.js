@@ -42519,5 +42519,45 @@ var items = {
       "chance": 100,
       "reagent": 873
     }
-  }
+  },
+  "2288": {
+    "id": 2288,
+    "name": "Знамя Претендента",
+    "maxcnt": 10,
+    "type": "other",
+    "premium_type": "none",
+    "rarity": "uncommon",
+    "image": "abil_teambuff",
+    "price": 10000,
+    "descr": "Отнесите Салли на Центральную Площадь. Или продайте торговцу. В банке точно нет смысла хранить. Честно.",
+    "personal": 1
+  },
+  "2289": {
+    "id": 2289,
+    "name": "Меч хозяйственный «Акула» 2.0",
+    "maxcnt": 1,
+    "type": "weapon",
+    "premium_type": "none",
+    "rarity": "uncommon",
+    "level": 2,
+    "reqlevel": 14,
+    "maxdur": 150,
+    "minhit": 18,
+    "maxhit": 111,
+    "defence": -1,
+    "agility": 2,
+    "reqagility": 7,
+    "image": "spiked_sword",
+    "price": 4500,
+    "personal": 1,
+    "descr": "Справка о соответствии ГОСТ 51215-98 в комплекте не идет.",
+    "bottleparams": {
+      "socket": {
+        "0": 80,
+        "1": 19,
+        "2": 1,
+        "3": 0
+      }
+    }
+  },
 };
