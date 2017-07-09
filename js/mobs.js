@@ -71,6 +71,7 @@ function makeMobBlock(mob) {
 
 
     p += '<img class="mobpic"src="img/mobs/' + mob.doll + '.png">';
+    if(settings.showmeall) p += '<a href="' + path + '/play/lib/dolls/' + mob.doll + '" download> скачать </a>';
     console.log(mob.name);
     p += lootblock(mob.loot);
 
@@ -131,6 +132,7 @@ function getQuestLoot(loot) {
 //функция создает блоки под каждый уровень
 function getLootBylvl(loot, loottype) {
     var p = '';
+    console.log(loot);
     for (var lvl in loot) {
         /*
         if (typeof loot[lvl] !== 'object') {
@@ -142,23 +144,24 @@ function getLootBylvl(loot, loottype) {
         p += '<div>';
         p += '<div class="loot_block_title">Для ' + lootLoc[lvl] + ' уровней</div>';
         p += '<div class="loot_block_content">';
+        var chance = 1;
         switch (loottype) {
+            case 'loot':
+                console.log(loot[lvl]);
+                chance = getChance(loot[lvl]);
             case 'questloot':
             case 'randloot':
-            case 'loot':
-                p += makeDropBlock(loot[lvl]);
+                p += makeDropBlock(loot[lvl], chance);
                 break;
             case 'money':
-                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
-                break;
             case 'factionmoney':
             case 'twilights':
-                p += 'От ' + loot[lvl].min + ' До ' + loot[lvl].max + ' ' + lootLoc[loottype];
+                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
                 break;
             case 'crystals':
                 for (var k in loot[lvl]) {
                     if (loot[lvl][k] == 0) break;
-                    p += '<span title="' + loot[lvl][k] + '">' + k + '</span>  ';
+                    p += '<img src="img/crystal.png" title="' + loot[lvl][k] + '">';
                 }
                 break;
         }
@@ -168,21 +171,31 @@ function getLootBylvl(loot, loottype) {
     return p;
 }
 
+function getChance(loot) {
+    var c = 0;
+    console.log(loot);
+    for(var i in loot) {
+        c += loot[i];
+    }
+    return c/100;
+}
+
 
 // высота 0
 // функция создает самый последний уровень, с самими вещами          
-function makeDropBlock(loot) {
+function makeDropBlock(loot, chance) {
     console.log(loot);
     var p = '';
     for (var j in loot) {
         var l = j.split('x');
+        var c = Math.round(((chance)?(loot[j]/chance):(loot[j])) * 100)/100;
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
-            p += '<div class="drop" title="' + mobs[k[1]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '">';
+            p += '<div class="drop" title="' + mobs[k[1]].name + '\nШанс: ' + c + '%">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
-            p += '<div class="drop" title="' + items[l[0]].name + ((settings.showmeall.val) ? ('\nШанс: ' + loot[j]) : ('')) + '" value="' + l[0] + '">';
+            p += '<div class="drop" title="' + items[l[0]].name + '\nШанс: ' + c + '%" value="' + l[0] + '">';
             p += '<img class="miniimg ' + items[l[0]].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         }
