@@ -462,7 +462,7 @@ ODEVALKA
     border: 5px solid #222;
     border-radius: 7px;
     margin: 1%;
-    width: 558px;
+    
 }
 
 .char>div>table{
@@ -482,6 +482,7 @@ ODEVALKA
     height: 42px;
     border: 1px solid;
     padding: 0px;
+    position: relative;
 }
 
 .borderedpic{
@@ -573,6 +574,9 @@ ODEVALKA
     transform: scaleX(-1);
     align-self: right;
 }
+.reversed .itemselect{
+    margin-left: -100%;
+}
 
 
 .char_stats{
@@ -581,7 +585,7 @@ ODEVALKA
     vertical-align: middle;
     height: 100%;
     margin: 0px 10px;
-    min-width: 250px;
+    min-width: 210px;
     text-align: left;
 }
 
@@ -592,7 +596,7 @@ ODEVALKA
 }
 .statname {
     display: inline-block;
-    width: 70%;
+    width: 130px;
     color: #ccc;
 }
 
