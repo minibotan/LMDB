@@ -187,6 +187,7 @@ $(document).ready(function () {
     if (text.substr(text.length - 10) == 'TITSORGTFO') {
       var swfsrc = '' + path + '/play/lib/locationObjects/general/812.swf';
       var p = '<h2>Хорошо, вот тебе голая Триша</h2>';
+      p += '<a href="' + swfsrc + '" download>Скачать</a>';
       p += '<object type="application/x-shockwave-flash" width="400" height="550">';
       p += '<param name="movie" value="' + swfsrc + '">';
       p += '<embeded src="' + swfsrc + '"></embeded>';
