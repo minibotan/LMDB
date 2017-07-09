@@ -71,7 +71,7 @@ function makeMobBlock(mob) {
 
 
     p += '<img class="mobpic"src="img/mobs/' + mob.doll + '.png">';
-    if(settings.showmeall) p += '<a href="' + path + '/play/lib/dolls/' + mob.doll + '" download> скачать </a>';
+    if(settings.showmeall.val) { p += '<a href="' + path + '/play/lib/dolls/' + mob.doll + '.swf" download> скачать </a>'; }
     console.log(mob.name);
     p += lootblock(mob.loot);
 
