@@ -114,8 +114,11 @@ function chooseItem(cell) {
     }
     for (var i in items) {
         for (var j in itemtype) {
+            console.log(cell.parents('.char').find('.level input').val())
             if (items[i].type == itemtype[j] &&
-                (items[i].reqlevel <= cell.parents('.char').find('.level input').val())) {
+                ((!items[i].reqlevel) || items[i].reqlevel <= cell.parents('.char').find('.level input').val()) &&
+                ((!items[i].reqparagon) || (items[i].reqparagon <= cell.parents('.char').find('.paragon input').val())) &&
+                !items[i].hidden) {
                 p += itemOption(i);
             }
         }
@@ -143,7 +146,7 @@ function equipItem2(slot, itemid) {
         return;
     }
     var item = items[itemid];
-    $(slot).css("background", "url('' + path + '/play/lib/jpg/" + item.image + ".jpg') center center");
+    $(slot).css("background", "url('" + path + "/play/lib/jpg/" + item.image + ".jpg') center center");
     $(slot).addClass("borderedpic " + item.rarity);
     $(slot).attr("value", itemid);
     recalculate($(slot).parents(".char"));
@@ -185,7 +188,7 @@ function recalculate(char) {
 
 
 /**Input changes */
-
+/** Level change */
 $('.contentbox').on('change', '.level input', function () {
     var input = $(this);
     lvl = input.val();
@@ -193,15 +196,11 @@ $('.contentbox').on('change', '.level input', function () {
         lvl = 1;
         input.val("1");
     }
-    if (lvl == 20) {
-        $(this).parent().after('<div class="paragon"><div class="statname">Ступень:</div><input type="number" value="0" class="whitestat"></input></div>');
-    }
-    if (lvl > 20) {
+    $(this).parent().parent().children('.paragon').remove();
+    if (lvl >= 20) {
         lvl = 20;
         input.val("20");
-    }
-    if (lvl < 20) {
-        $(this).parent().parent().children('.paragon').remove();
+        $(this).parent().after('<div class="paragon"><div class="statname">Ступень:</div><input type="number" value="0" class="whitestat"></input></div>');
     }
 
     bonusStats.max = (input.val()-1)*3;
@@ -228,7 +227,7 @@ $('.contentbox').on('change', '.level input', function () {
     }
 });
 
-
+/** Paragon change */
 $('.contentbox').on('change', '.paragon input', function () {
     paragon = $(this).val();
     if (paragon < 0) {
