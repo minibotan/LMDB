@@ -154,9 +154,11 @@ function getLootBylvl(loot, loottype) {
                 p += makeDropBlock(loot[lvl], chance);
                 break;
             case 'money':
+                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
+                break;
             case 'factionmoney':
             case 'twilights':
-                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
+                p += 'От ' + loot[lvl].min + '<img src=""> До ' + loot[lvl].max + '<img src"">';
                 break;
             case 'crystals':
                 for (var k in loot[lvl]) {
