@@ -1,19 +1,20 @@
-//mobs
 mobs = {
     "1": {
         "id": 1,
-        "adminname": "Фантазма",
         "name": "Фантазма",
-        "isboss": "",
         "maxhp": 100,
-        "startrage": "",
         "level": 3,
         "avatar": 45,
         "doll": "ghostgirl",
         "picture": "ghostgirl",
+        "minhit": 13,
+        "maxhit": 23,
+        "dodge": 10,
+        "crit": 15,
+        "defence": 6,
+        "hitsound": "cotton",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -80,22 +81,23 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "2": {
         "id": 2,
-        "adminname": "Скелет",
         "name": "Скелет",
-        "isboss": "",
         "maxhp": 35,
-        "startrage": "",
         "level": 1,
         "avatar": 16,
         "doll": "skeleton",
         "picture": "skeleton",
+        "minhit": 6,
+        "maxhit": 10,
+        "crit": 20,
+        "defence": 1,
+        "hitsound": "bones",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "1": {
@@ -163,22 +165,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city, sklep",
     },
     "3": {
         "id": 3,
-        "adminname": "Злобный Скелет",
         "name": "Злобный Скелет",
-        "isboss": "",
         "maxhp": 45,
-        "startrage": "",
         "level": 2,
         "avatar": 17,
         "doll": "strong_skeleton",
         "picture": "strong_skeleton",
+        "minhit": 8,
+        "maxhit": 11,
+        "dodge": 15,
+        "crit": 20,
+        "defence": 2,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "1": {
@@ -263,22 +267,21 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city, sklep",
     },
     "4": {
         "id": 4,
-        "adminname": "Десять Крыс",
         "name": "Десять Крыс",
-        "isboss": "",
         "maxhp": 500,
-        "startrage": "",
         "level": 1,
         "avatar": 341,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 5,
+        "maxhit": 9,
+        "hitsound": "glass",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "money": {
                 "1": {
@@ -308,22 +311,23 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "5": {
         "id": 5,
-        "adminname": "Лукэтлог",
         "name": "Лукэтлог",
-        "isboss": "",
         "maxhp": 40,
-        "startrage": "",
         "level": 2,
         "avatar": 14,
         "doll": "lookatlog",
         "picture": "lookatlog",
+        "minhit": 13,
+        "maxhit": 27,
+        "dodge": 15,
+        "crit": 15,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "1": {
@@ -403,22 +407,23 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "6": {
         "id": 6,
-        "adminname": "Крупный Лукэтлог",
         "name": "Крупный Лукэтлог",
-        "isboss": "",
         "maxhp": 65,
-        "startrage": "",
         "level": 3,
         "avatar": 38,
         "doll": "lal",
         "picture": "lal",
+        "minhit": 22,
+        "maxhit": 42,
+        "dodge": 20,
+        "crit": 25,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "2": {
@@ -506,22 +511,25 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "7": {
         "id": 7,
-        "adminname": "ОЗС",
         "name": "Очень Злобный Скелет",
-        "isboss": "",
         "maxhp": 65,
-        "startrage": "",
         "level": 3,
         "avatar": 41,
         "doll": "ozs",
         "picture": "ozs",
+        "minhit": 11,
+        "maxhit": 16,
+        "dodge": 5,
+        "crit": 10,
+        "resilience": 23,
+        "defence": 1,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "2": {
@@ -617,22 +625,57 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city, sklep",
+    },
+    "8": {
+        "id": 8,
+        "name": "Подопытная крыса",
+        "maxhp": 1000,
+        "level": 1,
+        "avatar": 15,
+        "doll": "zombiegirl",
+        "picture": "zombiegirl",
+        "minhit": 1,
+        "maxhit": 5,
+        "dodge": 10,
+        "crit": 10,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "loot": {
+                "64": 100,
+                "68": 100
+            },
+            "money": {
+                "min": 10,
+                "max": 10
+            },
+            "crystals": [100, 10, 0, 0, 0],
+            "randloot": {
+                "11": 100,
+                "2": 100,
+                "73": 100
+            }
+        },
+        "location": "city",
+        "hidden": 1
     },
     "9": {
         "id": 9,
-        "adminname": "Гектор",
         "name": "Гектор",
-        "isboss": "",
         "maxhp": 100,
-        "startrage": "",
         "level": 10,
         "avatar": 22,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 7,
+        "maxhit": 12,
+        "dodge": 10,
+        "crit": 15,
+        "defence": 3,
+        "hitsound": "wood",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "money": {
                 "1": {
@@ -664,22 +707,20 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "10": {
         "id": 10,
-        "adminname": "StormMob(debug)",
         "name": "StormMob(debug)",
-        "isboss": "",
         "maxhp": 700,
-        "startrage": "",
         "level": 12,
         "avatar": 1,
         "doll": "centaur2",
         "picture": "centaur2",
+        "minhit": 1,
+        "maxhit": 1,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "1": {
@@ -711,22 +752,24 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "hidden": 1
     },
     "11": {
         "id": 11,
-        "adminname": "Голодная N 3лвл",
         "name": "Голодная N",
-        "isboss": "",
         "maxhp": 66,
-        "startrage": "",
         "level": 3,
         "avatar": 18,
         "doll": "zombiegirl",
         "picture": "zombiegirl",
+        "minhit": 12,
+        "maxhit": 22,
+        "dodge": 10,
+        "crit": 47,
+        "defence": 4,
+        "hitsound": "wood",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "2": {
@@ -800,308 +843,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
-    },
-    "12": {
-        "id": 12,
-        "adminname": "Сэр Найджел",
-        "name": "Сэр Найджел",
-        "isboss": 1,
-        "maxhp": 400,
-        "startrage": "",
-        "level": 4,
-        "avatar": 40,
-        "doll": "skeletonboss",
-        "picture": "skeletonboss",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "4": {
-                    "min": 1500,
-                    "max": 2500
-                },
-                "5": {
-                    "min": 1000,
-                    "max": 2000
-                },
-                "default": {
-                    "min": 1,
-                    "max": 1
-                }
-            },
-            "crystals": {
-                "4": [150, 10, 0, 0, 0],
-                "5": [200, 10, 0, 0, 0]
-            },
-            "loot": {
-                "3": {
-                    "105": 10,
-                    "104": 10,
-                    "103": 10,
-                    "100": 10,
-                    "95": 10,
-                    "90": 40,
-                    "93": 20,
-                    "85": 15,
-                    "97": 10,
-                    "98": 15,
-                    "1523": 0.4
-                },
-                "4": {
-                    "105": 10,
-                    "104": 10,
-                    "103": 10,
-                    "100": 10,
-                    "95": 10,
-                    "90": 40,
-                    "93": 20,
-                    "85": 15,
-                    "97": 10,
-                    "98": 15,
-                    "1523": 0.4
-                },
-                "5": {
-                    "105": 10,
-                    "104": 10,
-                    "103": 10,
-                    "100": 10,
-                    "95": 10,
-                    "90": 40,
-                    "93": 20,
-                    "85": 15,
-                    "97": 10,
-                    "98": 15,
-                    "1523": 0.4
-                },
-                "default": {
-                    "105": 10,
-                    "104": 10,
-                    "103": 10,
-                    "100": 1,
-                    "95": 10,
-                    "90": 20,
-                    "93": 20,
-                    "85": 1,
-                    "97": 10,
-                    "98": 15
-                }
-            },
-            "randloot": {
-                "4": {
-                    "256": 20,
-                    "257": 20
-                }
-            }
-        },
-        "location": "city"
-    },
-    "13": {
-        "id": 13,
-        "adminname": "Миёри",
-        "name": "Миёри",
-        "isboss": 1,
-        "maxhp": 666,
-        "startrage": "",
-        "level": 3,
-        "avatar": 39,
-        "doll": "miery",
-        "picture": "miery",
-        "gender": 2,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "3": {
-                    "min": 1000,
-                    "max": 2000
-                },
-                "4": {
-                    "min": 1000,
-                    "max": 1500
-                },
-                "5": {
-                    "min": 500,
-                    "max": 1000
-                },
-                "default": {
-                    "min": 1,
-                    "max": 1
-                }
-            },
-            "crystals": {
-                "3": [100, 10, 0, 0, 0],
-                "4": [150, 10, 0, 0, 0],
-                "5": [200, 10, 0, 0, 0]
-            },
-            "loot": {
-                "3": {
-                    "105": 10,
-                    "104": 10,
-                    "103": 10,
-                    "100": 10,
-                    "95": 10,
-                    "91": 20,
-                    "92": 20,
-                    "1522": 0.3
-                },
-                "4": {
-                    "105": 10,
-                    "104": 10,
-                    "103": 10,
-                    "100": 10,
-                    "95": 10,
-                    "91": 20,
-                    "92": 20,
-                    "1522": 0.3
-                },
-                "5": {
-                    "105": 10,
-                    "104": 10,
-                    "103": 10,
-                    "100": 10,
-                    "95": 10,
-                    "91": 20,
-                    "92": 20
-                },
-                "default": {
-                    "105": 1,
-                    "104": 10,
-                    "103": 10,
-                    "100": 1,
-                    "95": 10,
-                    "91": 20,
-                    "92": 20
-                }
-            },
-            "randloot": {
-                "3": {
-                    "151": 1,
-                    "256": 20,
-                    "257": 20,
-                    "548": 3
-                },
-                "4": {
-                    "151": 1,
-                    "548": 2.5
-                },
-                "15": {
-                    "151": 1,
-                    "548": 8
-                },
-                "16": {
-                    "151": 1,
-                    "548": 9
-                },
-                "17": {
-                    "151": 1,
-                    "548": 10
-                },
-                "18": {
-                    "151": 1,
-                    "548": 11
-                },
-                "19": {
-                    "151": 1,
-                    "548": 12
-                },
-                "20": {
-                    "151": 1,
-                    "548": 15
-                },
-                "default": {
-                    "151": 1,
-                    "548": 2
-                }
-            }
-        },
-        "location": "city"
-    },
-    "14": {
-        "id": 14,
-        "adminname": "Тишина",
-        "name": "Тишина",
-        "isboss": 1,
-        "maxhp": 550,
-        "startrage": "",
-        "level": 5,
-        "avatar": 30,
-        "doll": "ghost",
-        "picture": "ghost",
-        "gender": 2,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "5": {
-                    "min": 2000,
-                    "max": 3000
-                },
-                "default": {
-                    "min": 1,
-                    "max": 1
-                }
-            },
-            "crystals": {
-                "5": [150, 10, 0, 0, 0]
-            },
-            "loot": {
-                "5": {
-                    "90": 10,
-                    "91": 10,
-                    "94": 10,
-                    "96": 10,
-                    "97": 10,
-                    "98": 10,
-                    "101": 10
-                },
-                "default": {
-                    "90": 10,
-                    "91": 10,
-                    "94": 10,
-                    "96": 10,
-                    "97": 10,
-                    "98": 10,
-                    "101": 3
-                }
-            },
-            "randloot": {
-                "5": {
-                    "256": 20,
-                    "257": 20,
-                    "1524": 0.4
-                },
-                "6": {
-                    "256": 15,
-                    "257": 15,
-                    "1524": 0.4
-                }
-            },
-            "questloot": {
-                "340": {
-                    "default": {
-                        "2230": 100
-                    }
-                }
-            }
-        },
-        "location": "city"
+        "location": "city, sklep",
     },
     "15": {
         "id": 15,
-        "adminname": "Хранитель Склепа",
         "name": "Хранитель Склепа",
-        "isboss": "",
         "maxhp": 50,
-        "startrage": "",
         "level": 4,
         "avatar": 99,
         "doll": "keeper",
         "picture": "keeper",
+        "minhit": 15,
+        "maxhit": 26,
+        "dodge": 25,
+        "crit": 10,
+        "defence": 11,
+        "hitsound": "bones",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -1152,22 +911,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "sklep",
     },
     "16": {
         "id": 16,
-        "adminname": "Бурый Пупмат",
         "name": "Бурый Пупмат",
-        "isboss": "",
         "maxhp": 250,
-        "startrage": "",
         "level": 6,
         "avatar": 42,
         "doll": "pupred",
         "picture": "pupred",
+        "minhit": 22,
+        "maxhit": 48,
+        "dodge": 15,
+        "crit": 20,
+        "defence": 14,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -1245,22 +1006,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "17": {
         "id": 17,
-        "adminname": "Джонатан Jr",
         "name": "Джонатан Jr",
-        "isboss": "",
         "maxhp": 250,
-        "startrage": "",
         "level": 6,
         "avatar": 31,
         "doll": "jonathan",
         "picture": "jonathan",
+        "minhit": 25,
+        "maxhit": 37,
+        "dodge": 10,
+        "crit": 30,
+        "defence": 12,
+        "hitsound": "organic",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -1338,22 +1101,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "18": {
         "id": 18,
-        "adminname": "Пупмат",
         "name": "Пупмат",
-        "isboss": "",
         "maxhp": 200,
-        "startrage": "",
         "level": 5,
         "avatar": 15,
         "doll": "pupmat",
         "picture": "pupmat",
+        "minhit": 17,
+        "maxhit": 32,
+        "dodge": 15,
+        "crit": 20,
+        "defence": 11,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -1418,22 +1183,25 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "19": {
         "id": 19,
-        "adminname": "Джонатан Sr",
         "name": "Джонатан Sr",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 7,
         "avatar": 46,
         "doll": "srjohn",
         "picture": "srjohn",
+        "minhit": 32,
+        "maxhit": 52,
+        "dodge": 10,
+        "crit": 30,
+        "mastery": 40,
+        "defence": 15,
+        "hitsound": "organic",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -1529,22 +1297,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "20": {
         "id": 20,
-        "adminname": "Девичья Радость",
         "name": "Девичья Радость",
-        "isboss": "",
         "maxhp": 250,
-        "startrage": "",
         "level": 6,
         "avatar": 43,
         "doll": "drhard",
         "picture": "drhard",
+        "minhit": 29,
+        "maxhit": 36,
+        "dodge": 10,
+        "crit": 10,
+        "defence": 13,
+        "hitsound": "organic",
         "gender": 2,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -1617,22 +1387,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "21": {
         "id": 21,
-        "adminname": "Особая ДР",
         "name": "Особая ДР",
-        "isboss": "",
         "maxhp": 350,
-        "startrage": "",
         "level": 7,
         "avatar": 44,
         "doll": "drspecial",
         "picture": "drspecial",
+        "minhit": 30,
+        "maxhit": 40,
+        "dodge": 10,
+        "crit": 10,
+        "defence": 22,
+        "hitsound": "organic",
         "gender": 2,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -1742,22 +1514,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "22": {
         "id": 22,
-        "adminname": "Молодая Радость",
         "name": "Молодая Радость",
-        "isboss": "",
         "maxhp": 150,
-        "startrage": "",
         "level": 5,
         "avatar": 32,
         "doll": "girlsjoy",
         "picture": "girlsjoy",
+        "minhit": 21,
+        "maxhit": 29,
+        "dodge": 10,
+        "crit": 10,
+        "defence": 12,
+        "hitsound": "organic",
         "gender": 2,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -1818,22 +1592,23 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "23": {
         "id": 23,
-        "adminname": "Юный Лукэтлог",
         "name": "Юный Лукэтлог",
-        "isboss": "",
         "maxhp": 30,
-        "startrage": "",
         "level": 2,
         "avatar": 14,
         "doll": "lookatlog",
         "picture": "lookatlog",
+        "minhit": 7,
+        "maxhit": 11,
+        "crit": 5,
+        "defence": 1,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "1": {
@@ -1903,73 +1678,78 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "24": {
         "id": 24,
-        "adminname": "Альфа Лукэтлог",
         "name": "Альфа Лукэтлог",
-        "isboss": "",
         "maxhp": 100,
-        "startrage": "",
         "level": 2,
         "avatar": 38,
         "doll": "lal",
         "picture": "lal",
+        "minhit": 11,
+        "maxhit": 16,
+        "dodge": 20,
+        "crit": 20,
+        "defence": 6,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "25": {
         "id": 25,
-        "adminname": "Призванная",
         "name": "Призванная",
-        "isboss": "",
         "maxhp": 130,
-        "startrage": "",
         "level": 4,
         "avatar": 45,
         "doll": "ghostgirl",
         "picture": "ghostgirl",
+        "minhit": 12,
+        "maxhit": 16,
+        "dodge": 15,
+        "crit": 20,
+        "defence": 7,
+        "hitsound": "cotton",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "26": {
         "id": 26,
-        "adminname": "Странник Глубин",
         "name": "Странник Глубин",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 6,
         "avatar": 50,
         "doll": "diver",
         "picture": "diver",
+        "minhit": 36,
+        "maxhit": 47,
+        "crit": 15,
+        "defence": 13,
+        "hitsound": "metal",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "pg",
     },
     "27": {
         "id": 27,
-        "adminname": "Сотрудник Охраны",
         "name": "Сотрудник Охраны",
-        "isboss": "",
         "maxhp": 500,
-        "startrage": "",
         "level": 15,
         "avatar": 8,
         "doll": "mob_elv_male",
         "picture": "mob_elv_male",
+        "minhit": 100,
+        "maxhit": 150,
+        "dodge": 50,
+        "crit": 50,
+        "mastery": 50,
+        "defence": 50,
+        "hitsound": "wood",
         "gender": 1,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "money": {
                 "default": {
@@ -1978,22 +1758,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "28": {
         "id": 28,
-        "adminname": "Голодная N 2лвл",
         "name": "Голодная N",
-        "isboss": "",
         "maxhp": 66,
-        "startrage": "",
         "level": 2,
         "avatar": 18,
         "doll": "zombiegirl",
         "picture": "zombiegirl",
+        "minhit": 6,
+        "maxhit": 11,
+        "dodge": 7,
+        "crit": 47,
+        "defence": 2,
+        "hitsound": "wood",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "2": {
@@ -2052,39 +1834,41 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "29": {
         "id": 29,
-        "adminname": "Мухтар",
         "name": "Мухтар",
-        "isboss": "",
         "maxhp": 70,
-        "startrage": "",
         "level": 3,
         "avatar": 15,
         "doll": "pupmat",
         "picture": "pupmat",
+        "minhit": 8,
+        "maxhit": 10,
+        "dodge": 20,
+        "defence": 3000,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "30": {
         "id": 30,
-        "adminname": "Бревень",
         "name": "Бревень",
-        "isboss": "",
         "maxhp": 150,
-        "startrage": "",
         "level": 4,
         "avatar": 52,
         "doll": "breven",
         "picture": "breven",
+        "minhit": 16,
+        "maxhit": 20,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 10,
+        "hitsound": "metal",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -2151,22 +1935,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "31": {
         "id": 31,
-        "adminname": "Замшелый Бревень",
         "name": "Замшелый Бревень",
-        "isboss": "",
         "maxhp": 200,
-        "startrage": "",
         "level": 5,
         "avatar": 53,
         "doll": "evilbreven",
         "picture": "evilbreven",
+        "minhit": 21,
+        "maxhit": 27,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 10,
+        "hitsound": "metal",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "money": {
                 "4": {
@@ -2245,22 +2031,25 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "32": {
         "id": 32,
-        "adminname": "Стюардесса",
         "name": "Стюардесса",
-        "isboss": "",
         "maxhp": 666,
-        "startrage": "",
         "level": 6,
         "avatar": 140,
         "doll": "stewardess",
         "picture": "stewardess",
+        "minhit": 20,
+        "maxhit": 28,
+        "dodge": 10,
+        "crit": 15,
+        "mastery": 25,
+        "defence": 13,
+        "hitsound": "wood",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -2320,22 +2109,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "33": {
         "id": 33,
-        "adminname": "Капитан",
         "name": "Капитан",
-        "isboss": "",
         "maxhp": 400,
-        "startrage": "",
         "level": 7,
         "avatar": 142,
         "doll": "captain_heli",
         "picture": "captain_heli",
+        "minhit": 23,
+        "maxhit": 32,
+        "crit": 5,
+        "mastery": 25,
+        "defence": 20,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -2395,22 +2186,25 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "34": {
         "id": 34,
-        "adminname": "Тихая Пассажирка",
         "name": "Тихая Пассажирка",
-        "isboss": "",
         "maxhp": 550,
-        "startrage": "",
         "level": 8,
         "avatar": 143,
         "doll": "quietgirl",
         "picture": "quietgirl",
+        "minhit": 25,
+        "maxhit": 32,
+        "dodge": 15,
+        "crit": 15,
+        "mastery": 25,
+        "defence": 22,
+        "hitsound": "cotton",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -2477,22 +2271,23 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "35": {
         "id": 35,
-        "adminname": "Жертва Глубин",
         "name": "Жертва Глубин",
-        "isboss": "",
         "maxhp": 400,
-        "startrage": "",
         "level": 8,
         "avatar": 50,
         "doll": "diver",
         "picture": "diver",
+        "minhit": 68,
+        "maxhit": 94,
+        "crit": 15,
+        "mastery": 20,
+        "defence": 25,
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -2550,22 +2345,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "pg",
     },
     "36": {
         "id": 36,
-        "adminname": "Матроскин",
         "name": "Матроскин",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 7,
         "avatar": 63,
         "doll": "pirate",
         "picture": "pirate",
+        "minhit": 50,
+        "maxhit": 79,
+        "dodge": 25,
+        "crit": 15,
+        "mastery": 40,
+        "defence": 21,
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -2617,346 +2414,23 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
-    },
-    "37": {
-        "id": 37,
-        "adminname": "Тихоходка старая",
-        "name": "Тихоходка",
-        "isboss": 1,
-        "maxhp": 2500,
-        "startrage": "",
-        "level": 8,
-        "avatar": 62,
-        "doll": "tihohodka",
-        "picture": "tihohodka",
-        "gender": 2,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "default": {
-                    "min": 2000,
-                    "max": 2500
-                }
-            },
-            "crystals": {
-                "default": [150, 10, 0, 0, 0]
-            }
-        },
-        "location": ""
-    },
-    "38": {
-        "id": 38,
-        "adminname": "Кейси",
-        "name": "Кейси",
-        "isboss": 1,
-        "maxhp": 999,
-        "startrage": "",
-        "level": 7,
-        "avatar": 64,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male_cock",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "default": {
-                    "min": 10000,
-                    "max": 20000
-                }
-            },
-            "loot": {
-                "6": {
-                    "162": 15,
-                    "163": 20,
-                    "164": 20,
-                    "159": 15,
-                    "156": 10,
-                    "168": 10,
-                    "137": 10
-                },
-                "7": {
-                    "162": 15,
-                    "163": 20,
-                    "164": 20,
-                    "159": 15,
-                    "156": 10,
-                    "168": 10,
-                    "137": 10
-                },
-                "8": {
-                    "162": 15,
-                    "163": 20,
-                    "164": 20,
-                    "159": 15,
-                    "156": 10,
-                    "168": 10,
-                    "137": 10
-                },
-                "9": {
-                    "162": 15,
-                    "163": 20,
-                    "164": 20,
-                    "159": 15,
-                    "156": 10,
-                    "168": 10,
-                    "137": 10
-                },
-                "10": {
-                    "162": 15,
-                    "163": 20,
-                    "164": 20,
-                    "159": 15,
-                    "156": 10,
-                    "168": 10,
-                    "137": 10
-                },
-                "default": {
-                    "162": 15,
-                    "163": 20,
-                    "164": 20,
-                    "159": 15,
-                    "156": 10,
-                    "168": 2,
-                    "137": 10
-                }
-            },
-            "randloot": {
-                "7": {
-                    "167": 100,
-                    "256": 20,
-                    "257": 20,
-                    "557": 3,
-                    "1525": 0.4
-                },
-                "8": {
-                    "167": 100,
-                    "557": 2.5,
-                    "1525": 0.4
-                },
-                "15": {
-                    "167": 100,
-                    "557": 9
-                },
-                "16": {
-                    "167": 100,
-                    "557": 10
-                },
-                "17": {
-                    "167": 100,
-                    "557": 11
-                },
-                "18": {
-                    "167": 100,
-                    "557": 12
-                },
-                "19": {
-                    "167": 100,
-                    "557": 13
-                },
-                "20": {
-                    "167": 100,
-                    "557": 15
-                },
-                "default": {
-                    "167": 100,
-                    "557": 0.7
-                }
-            }
-        },
-        "location": "bolota"
-    },
-    "39": {
-        "id": 39,
-        "adminname": "Жак",
-        "name": "Жак",
-        "isboss": 1,
-        "maxhp": 800,
-        "startrage": "",
-        "level": 8,
-        "avatar": 66,
-        "doll": "jacques",
-        "picture": "jacques",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "default": {
-                    "min": 20000,
-                    "max": 40000
-                }
-            },
-            "loot": {
-                "6": {
-                    "177": 15,
-                    "163": 10,
-                    "156": 15,
-                    "169": 15,
-                    "168": 15,
-                    "137": 15,
-                    "158": 15
-                },
-                "7": {
-                    "177": 15,
-                    "163": 10,
-                    "156": 15,
-                    "169": 15,
-                    "168": 15,
-                    "137": 15,
-                    "158": 15
-                },
-                "8": {
-                    "177": 15,
-                    "163": 10,
-                    "156": 15,
-                    "169": 15,
-                    "168": 15,
-                    "137": 15,
-                    "158": 15
-                },
-                "9": {
-                    "177": 15,
-                    "163": 10,
-                    "156": 15,
-                    "169": 15,
-                    "168": 15,
-                    "137": 15,
-                    "158": 15
-                },
-                "10": {
-                    "177": 15,
-                    "163": 10,
-                    "156": 15,
-                    "169": 15,
-                    "168": 15,
-                    "137": 15,
-                    "158": 15
-                },
-                "default": {
-                    "177": 15,
-                    "163": 10,
-                    "156": 15,
-                    "169": 15,
-                    "168": 3,
-                    "137": 15,
-                    "158": 15
-                }
-            },
-            "questloot": {
-                "42": {
-                    "default": {
-                        "176": 100
-                    }
-                }
-            },
-            "randloot": {
-                "7": {
-                    "256": 20,
-                    "257": 20,
-                    "1526": 0.4
-                },
-                "8": {
-                    "256": 20,
-                    "257": 20,
-                    "1526": 0.4
-                }
-            }
-        },
-        "location": "bolota"
-    },
-    "40": {
-        "id": 40,
-        "adminname": "Спящий",
-        "name": "Спящий",
-        "isboss": 1,
-        "maxhp": 2000,
-        "startrage": 100,
-        "level": 10,
-        "avatar": 70,
-        "doll": "oko_twohit",
-        "picture": "oko_twohit",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "default": {
-                    "min": 30000,
-                    "max": 50000
-                }
-            },
-            "loot": {
-                "default": {
-                    "177": 10,
-                    "169": 10,
-                    "126": 10,
-                    "154": 25,
-                    "157": 25,
-                    "155": 10,
-                    "158": 10,
-                    "750": 11
-                }
-            },
-            "randloot": {
-                "7": {
-                    "254": 3,
-                    "256": 20,
-                    "257": 20,
-                    "2283": 1
-                },
-                "8": {
-                    "254": 2,
-                    "256": 20,
-                    "257": 20,
-                    "2283": 1
-                },
-                "9": {
-                    "254": 2,
-                    "256": 20,
-                    "257": 20,
-                    "2283": 1
-                },
-                "10": {
-                    "254": 1,
-                    "256": 20,
-                    "257": 20,
-                    "2283": 1
-                },
-                "11": {
-                    "254": 0.7,
-                    "2283": 1
-                }
-            },
-            "psevdorandloot": {
-                "254": {
-                    "max": 4,
-                    "min": 0.7
-                },
-                "2283": {
-                    "max": 4,
-                    "min": 0.7
-                }
-            }
-        },
-        "location": "bolota"
+        "location": "pg",
     },
     "41": {
         "id": 41,
-        "adminname": "Жабоид Вася|Жабоид Петя|Жабоид Игорь|Жабоид Ваня|Жабоид Егор|Жабоид Гриша|Жабоид Антон|Жабоид Тимур|Жабоид Дима|Жабоид Маша|Жабоид Александр",
         "name": "Жабоид Вася|Жабоид Петя|Жабоид Игорь|Жабоид Ваня|Жабоид Егор|Жабоид Гриша|Жабоид Антон|Жабоид Тимур|Жабоид Дима|Жабоид Маша|Жабоид Александр",
-        "isboss": "",
         "maxhp": 450,
-        "startrage": "",
         "level": 9,
         "avatar": 65,
         "doll": "bolotnik",
         "picture": "bolotnik",
+        "minhit": 46,
+        "maxhit": 80,
+        "mastery": 25,
+        "resilience": 10,
+        "defence": 29,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -3026,22 +2500,25 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "pg",
     },
     "42": {
         "id": 42,
-        "adminname": "Жрица Спящего",
         "name": "Жрица Спящего",
-        "isboss": "",
         "maxhp": 380,
         "startrage": 20,
         "level": 9,
         "avatar": 68,
         "doll": "drowned",
         "picture": "drowned",
+        "minhit": 62,
+        "maxhit": 89,
+        "dodge": 30,
+        "crit": 20,
+        "mastery": 20,
+        "defence": 38,
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -3097,22 +2574,25 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "pg",
     },
     "43": {
         "id": 43,
-        "adminname": "Смоляной Пупмат",
         "name": "Смоляной Пупмат",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 8,
         "avatar": 67,
         "doll": "pupblack",
         "picture": "pupblack",
+        "minhit": 32,
+        "maxhit": 59,
+        "dodge": 17,
+        "crit": 22,
+        "mastery": 50,
+        "defence": 19,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -3203,73 +2683,71 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "44": {
         "id": 44,
-        "adminname": "Тентакль",
         "name": "Тентакль",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 9,
         "avatar": 69,
         "doll": "eye",
         "picture": "eye",
+        "minhit": 52,
+        "maxhit": 75,
+        "dodge": 40,
+        "crit": 15,
+        "defence": 24,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "bolota"
+        "location": "pg",
     },
     "45": {
         "id": 45,
-        "adminname": "Щупальце",
         "name": "Щупальце",
-        "isboss": "",
         "maxhp": 400,
-        "startrage": "",
         "level": 9,
         "avatar": 73,
         "doll": "thorn",
         "picture": "thorn",
+        "minhit": 57,
+        "maxhit": 88,
+        "crit": 30,
+        "defence": 29,
         "gender": 2,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "bolota"
+        "location": "pg",
     },
     "46": {
         "id": 46,
-        "adminname": "Псевдопода",
         "name": "Псевдопода",
-        "isboss": "",
         "maxhp": 500,
-        "startrage": "",
         "level": 9,
         "avatar": 71,
         "doll": "tentacle",
         "picture": "tentacle",
+        "minhit": 47,
+        "maxhit": 68,
+        "defence": 35,
         "gender": 2,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "bolota"
+        "location": "pg",
     },
     "47": {
         "id": 47,
-        "adminname": "Бархатун",
         "name": "Бархатун",
-        "isboss": "",
         "maxhp": 130,
-        "startrage": "",
         "level": 4,
         "avatar": 74,
         "doll": "chair",
         "picture": "chair",
+        "minhit": 10,
+        "maxhit": 18,
+        "dodge": 10,
+        "crit": 10,
+        "defence": 5,
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -3327,22 +2805,23 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "48": {
         "id": 48,
-        "adminname": "Когсворт",
         "name": "Когсворт",
-        "isboss": "",
         "maxhp": 200,
-        "startrage": "",
         "level": 5,
         "avatar": 79,
         "doll": "clock",
         "picture": "clock",
+        "minhit": 16,
+        "maxhit": 29,
+        "dodge": 5,
+        "crit": 5,
+        "defence": 9,
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "money": {
                 "4": {
@@ -3423,22 +2902,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "49": {
         "id": 49,
-        "adminname": "Голем Хранитель 3-5",
         "name": "Голем Хранитель",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 5,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 40,
+        "maxhit": 60,
+        "dodge": 10,
+        "crit": 10,
+        "resilience": 30,
+        "defence": 7,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -3458,22 +2939,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "50": {
         "id": 50,
-        "adminname": "Голем Страж 6-8",
         "name": "Голем Страж",
-        "isboss": "",
         "maxhp": 1300,
-        "startrage": "",
         "level": 7,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 57,
+        "maxhit": 93,
+        "dodge": 15,
+        "crit": 15,
+        "resilience": 30,
+        "defence": 13,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -3498,22 +2981,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "51": {
         "id": 51,
-        "adminname": "Голем Хранитель 6-8",
         "name": "Голем Хранитель",
-        "isboss": "",
         "maxhp": 1500,
-        "startrage": "",
         "level": 8,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 75,
+        "maxhit": 110,
+        "dodge": 15,
+        "crit": 15,
+        "resilience": 60,
+        "defence": 17,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -3533,22 +3018,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "52": {
         "id": 52,
-        "adminname": "Голем Страж 9-11",
         "name": "Голем Страж",
-        "isboss": "",
         "maxhp": 2500,
-        "startrage": "",
         "level": 10,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 87,
+        "maxhit": 118,
+        "dodge": 15,
+        "crit": 20,
+        "resilience": 50,
+        "defence": 30,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -3573,22 +3060,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "53": {
         "id": 53,
-        "adminname": "Голем Страж 3-5",
         "name": "Голем Страж",
-        "isboss": "",
         "maxhp": 800,
-        "startrage": "",
         "level": 4,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 32,
+        "maxhit": 48,
+        "dodge": 10,
+        "crit": 10,
+        "resilience": 5,
+        "defence": 5,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -3613,22 +3102,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "54": {
         "id": 54,
-        "adminname": "Голем Хранитель 9-11",
         "name": "Голем Хранитель",
-        "isboss": "",
         "maxhp": 3000,
-        "startrage": "",
         "level": 11,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 107,
+        "maxhit": 140,
+        "dodge": 15,
+        "crit": 20,
+        "resilience": 100,
+        "defence": 37,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -3648,73 +3139,71 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "55": {
         "id": 55,
-        "adminname": "Раб Руны 3-5",
         "name": "Раб Руны",
-        "isboss": "",
         "maxhp": 500,
-        "startrage": "",
         "level": 4,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 40,
+        "maxhit": 65,
+        "crit": 20,
+        "defence": 6,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "56": {
         "id": 56,
-        "adminname": "Раб Руны 6-8",
         "name": "Раб Руны",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 7,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 75,
+        "maxhit": 110,
+        "crit": 20,
+        "defence": 13,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "57": {
         "id": 57,
-        "adminname": "Раб Руны 9-11",
         "name": "Раб Руны",
-        "isboss": "",
         "maxhp": 1700,
-        "startrage": "",
         "level": 10,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 110,
+        "maxhit": 140,
+        "crit": 25,
+        "defence": 27,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "58": {
         "id": 58,
-        "adminname": "Лжемороз НГ11",
         "name": "Лжемороз",
-        "isboss": "",
         "maxhp": 200,
-        "startrage": "",
         "level": 5,
         "avatar": 81,
         "doll": "santa",
         "picture": "santa",
+        "minhit": 19,
+        "maxhit": 23,
+        "dodge": 5,
+        "crit": 5,
+        "defence": 14,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "4": {
@@ -3750,22 +3239,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
+        "hidden": 1
     },
     "59": {
         "id": 59,
-        "adminname": "Лжемороз НГ11",
         "name": "Лжемороз",
-        "isboss": "",
         "maxhp": 275,
-        "startrage": "",
         "level": 7,
         "avatar": 81,
         "doll": "santa",
         "picture": "santa",
+        "minhit": 20,
+        "maxhit": 45,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 21,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -3809,22 +3300,24 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "60": {
         "id": 60,
-        "adminname": "Лжемороз НГ11",
         "name": "Лжемороз",
-        "isboss": "",
         "maxhp": 350,
-        "startrage": "",
         "level": 9,
         "avatar": 81,
         "doll": "santa",
         "picture": "santa",
+        "minhit": 30,
+        "maxhit": 60,
+        "dodge": 15,
+        "crit": 20,
+        "defence": 27,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -3868,22 +3361,24 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "61": {
         "id": 61,
-        "adminname": "Гоблин НГ11",
         "name": "Гоблин",
-        "isboss": "",
         "maxhp": 50,
-        "startrage": "",
         "level": 4,
         "avatar": 82,
         "doll": "gremlin",
         "picture": "gremlin",
+        "minhit": 8,
+        "maxhit": 11,
+        "dodge": 20,
+        "crit": 5,
+        "defence": 6,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -3915,22 +3410,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
+        "hidden": 1
     },
     "62": {
         "id": 62,
-        "adminname": "Гоблин НГ11",
         "name": "Гоблин",
-        "isboss": "",
         "maxhp": 125,
-        "startrage": "",
         "level": 6,
         "avatar": 82,
         "doll": "gremlin",
         "picture": "gremlin",
+        "minhit": 20,
+        "maxhit": 40,
+        "dodge": 20,
+        "crit": 10,
+        "defence": 18,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -3966,22 +3463,24 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "63": {
         "id": 63,
-        "adminname": "Гоблин НГ11",
         "name": "Гоблин",
-        "isboss": "",
         "maxhp": 175,
-        "startrage": "",
         "level": 8,
         "avatar": 82,
         "doll": "gremlin",
         "picture": "gremlin",
+        "minhit": 25,
+        "maxhit": 50,
+        "dodge": 20,
+        "crit": 15,
+        "defence": 24,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -4017,22 +3516,24 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "64": {
         "id": 64,
-        "adminname": "Иоган Палыч",
         "name": "Иоган Палыч",
-        "isboss": "",
         "maxhp": 250,
-        "startrage": "",
         "level": 6,
         "avatar": 1,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 42,
+        "maxhit": 53,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 15,
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "money": {
                 "default": {
@@ -4048,22 +3549,23 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "65": {
         "id": 65,
-        "adminname": "Пэри Моппинс",
         "name": "Пэри Моппинс",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 7,
         "avatar": 141,
         "doll": "perry_moppins",
         "picture": "perry_moppins",
+        "minhit": 42,
+        "maxhit": 53,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 24,
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "default": {
@@ -4079,22 +3581,25 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "66": {
         "id": 66,
-        "adminname": "Снежный Лукэтлог",
         "name": "Снежный Лукэтлог",
-        "isboss": "",
         "maxhp": 400,
         "startrage": 35,
         "level": 9,
         "avatar": 91,
         "doll": "lal_polar",
         "picture": "lal_polar",
+        "minhit": 50,
+        "maxhit": 90,
+        "dodge": 20,
+        "crit": 20,
+        "mastery": 55,
+        "defence": 29,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -4183,22 +3688,23 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "67": {
         "id": 67,
-        "adminname": "Дух Гор",
         "name": "Дух Гор",
-        "isboss": "",
         "maxhp": 450,
-        "startrage": "",
         "level": 10,
         "avatar": 88,
         "doll": "icy_spirit",
         "picture": "icy_spirit",
+        "minhit": 66,
+        "maxhit": 90,
+        "crit": 20,
+        "mastery": 100,
+        "defence": 38,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -4307,22 +3813,23 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "68": {
         "id": 68,
-        "adminname": "Древний Дух Гор",
         "name": "Древний Дух Гор",
-        "isboss": "",
         "maxhp": 550,
-        "startrage": "",
         "level": 11,
         "avatar": 90,
         "doll": "icy_spirit_elite",
         "picture": "icy_spirit_elite",
+        "minhit": 88,
+        "maxhit": 108,
+        "crit": 20,
+        "mastery": 150,
+        "defence": 51,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -4465,22 +3972,24 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "69": {
         "id": 69,
-        "adminname": "Могучая Сестра",
         "name": "Могучая Сестра",
-        "isboss": "",
         "maxhp": 180,
-        "startrage": "",
         "level": 7,
         "avatar": 57,
         "doll": "mob_elv_female",
         "picture": "mob_elv_female",
+        "minhit": 50,
+        "maxhit": 75,
+        "dodge": 20,
+        "crit": 45,
+        "mastery": 45,
+        "defence": 10,
         "gender": 2,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "money": {
                 "default": {
@@ -4507,22 +4016,25 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "70": {
         "id": 70,
-        "adminname": "Соловей-разбойник",
         "name": "Соловей-разбойник",
-        "isboss": "",
         "maxhp": 500,
-        "startrage": "",
         "level": 11,
         "avatar": 92,
         "doll": "birdie",
         "picture": "birdie",
+        "minhit": 89,
+        "maxhit": 112,
+        "dodge": 5,
+        "crit": 25,
+        "mastery": 10,
+        "defence": 36,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "7": {
@@ -4656,22 +4168,24 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "71": {
         "id": 71,
-        "adminname": "Соловей-налетчик",
         "name": "Соловей-налетчик",
-        "isboss": "",
         "maxhp": 600,
-        "startrage": "",
         "level": 12,
         "avatar": 93,
         "doll": "birdiered",
         "picture": "birdiered",
+        "minhit": 95,
+        "maxhit": 130,
+        "dodge": 5,
+        "crit": 30,
+        "mastery": 15,
+        "defence": 39,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "8": {
@@ -4809,22 +4323,24 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "72": {
         "id": 72,
-        "adminname": "Горный Тролль",
         "name": "Горный Тролль",
-        "isboss": "",
         "maxhp": 750,
-        "startrage": "",
         "level": 13,
         "avatar": 97,
         "doll": "stonetroll",
         "picture": "stonetroll",
+        "minhit": 112,
+        "maxhit": 132,
+        "dodge": 5,
+        "crit": 40,
+        "mastery": 85,
+        "defence": 59,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "8": {
@@ -4959,22 +4475,24 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "73": {
         "id": 73,
-        "adminname": "Ено-бой",
         "name": "Ено-бой",
-        "isboss": "",
         "maxhp": 90,
-        "startrage": "",
         "level": 3,
         "avatar": 104,
         "doll": "raccoon_pink",
         "picture": "raccoon_pink",
+        "minhit": 25,
+        "maxhit": 36,
+        "dodge": 18,
+        "crit": 18,
+        "defence": 3,
+        "hitsound": "organic",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -5028,39 +4546,42 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "74": {
         "id": 74,
-        "adminname": "Разносчик Заразы",
         "name": "Разносчик Заразы",
-        "isboss": "",
         "maxhp": 500,
-        "startrage": "",
         "level": 10,
         "avatar": 98,
         "doll": "plaguekeeper",
         "picture": "plaguekeeper",
+        "minhit": 56,
+        "maxhit": 103,
+        "dodge": 10,
+        "crit": 20,
+        "mastery": 20,
+        "defence": 35,
         "gender": 1,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "gory"
+        "location": "gory",
     },
     "75": {
         "id": 75,
-        "adminname": "Ледяная Фея",
         "name": "Ледяная Фея",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 11,
         "avatar": 102,
         "doll": "icegolem",
         "picture": "icegolem",
+        "minhit": 77,
+        "maxhit": 92,
+        "crit": 15,
+        "mastery": 60,
+        "defence": 31,
+        "hitsound": "glass",
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "money": {
                 "10": {
@@ -5138,22 +4659,24 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "76": {
         "id": 76,
-        "adminname": "Тоннельный Скакун",
         "name": "Тоннельный Скакун",
-        "isboss": "",
         "maxhp": 700,
-        "startrage": "",
         "level": 12,
         "avatar": 101,
         "doll": "centaur",
         "picture": "centaur",
+        "minhit": 88,
+        "maxhit": 115,
+        "dodge": 20,
+        "crit": 15,
+        "defence": 41,
+        "hitsound": "organic",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "8": {
@@ -5256,22 +4779,23 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "77": {
         "id": 77,
-        "adminname": "Тру Ено",
         "name": "Тру Ено",
-        "isboss": "",
         "maxhp": 99,
-        "startrage": "",
         "level": 4,
         "avatar": 103,
         "doll": "raccoon_green",
         "picture": "raccoon_green",
+        "minhit": 44,
+        "maxhit": 60,
+        "dodge": 20,
+        "crit": 30,
+        "defence": 5,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -5323,22 +4847,49 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
+    },
+    "78": {
+        "id": 78,
+        "name": "Адская Няшка",
+        "maxhp": 50000,
+        "startrage": 10,
+        "level": 15,
+        "avatar": 39,
+        "doll": "miery",
+        "picture": "miery",
+        "minhit": 20,
+        "maxhit": 20,
+        "gender": 1,
+        "race": "beast",
+        "isevent": 1,
+        "pet": 7,
+        "loot": {
+            "randloot": {
+                "default": {
+                    "11x2": 100
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
     },
     "79": {
         "id": 79,
-        "adminname": "Коварная Сестра",
         "name": "Коварная Сестра",
-        "isboss": "",
         "maxhp": 210,
-        "startrage": "",
         "level": 7,
         "avatar": 60,
         "doll": "mob_human_female",
         "picture": "mob_human_female",
+        "minhit": 30,
+        "maxhit": 48,
+        "dodge": 50,
+        "crit": 38,
+        "mastery": 33,
+        "defence": 11,
         "gender": 2,
         "race": "human",
-        "isevent": "",
         "loot": {
             "money": {
                 "default": {
@@ -5365,22 +4916,24 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "80": {
         "id": 80,
-        "adminname": "Крепкая Сестра",
         "name": "Крепкая Сестра",
-        "isboss": "",
         "maxhp": 344,
-        "startrage": "",
         "level": 7,
         "avatar": 56,
         "doll": "mob_demon_female",
         "picture": "mob_demon_female",
+        "minhit": 34,
+        "maxhit": 50,
+        "dodge": 15,
+        "crit": 46,
+        "mastery": 10,
+        "defence": 23,
         "gender": 2,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "money": {
                 "default": {
@@ -5407,39 +4960,40 @@ mobs = {
                 }
             }
         },
-        "location": "bolota"
+        "location": "bolota",
     },
     "81": {
         "id": 81,
-        "adminname": "Раб Руны 12-14",
         "name": "Раб Руны",
-        "isboss": "",
         "maxhp": 2400,
-        "startrage": "",
         "level": 13,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 165,
+        "maxhit": 205,
+        "crit": 30,
+        "defence": 57,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "82": {
         "id": 82,
-        "adminname": "Голем Страж 12-14",
         "name": "Голем Страж",
-        "isboss": "",
         "maxhp": 3700,
-        "startrage": "",
         "level": 13,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 112,
+        "maxhit": 150,
+        "dodge": 20,
+        "crit": 20,
+        "resilience": 70,
+        "defence": 65,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -5464,22 +5018,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "83": {
         "id": 83,
-        "adminname": "Голем Хранитель 12-14",
         "name": "Голем Хранитель",
-        "isboss": "",
         "maxhp": 5000,
-        "startrage": "",
         "level": 14,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 160,
+        "maxhit": 200,
+        "dodge": 20,
+        "crit": 20,
+        "resilience": 130,
+        "defence": 80,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -5499,22 +5055,26 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "84": {
         "id": 84,
-        "adminname": "Умный орк",
         "name": "Умный орк",
-        "isboss": "",
         "maxhp": 750,
-        "startrage": "",
         "level": 12,
         "avatar": 108,
         "doll": "trash_orc",
         "picture": "trash_orc",
+        "minhit": 100,
+        "maxhit": 140,
+        "dodge": 10,
+        "crit": 25,
+        "mastery": 80,
+        "resilience": 10,
+        "defence": 49,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "money": {
                 "12": {
@@ -5560,22 +5120,25 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "nedra, logovo",
     },
     "85": {
         "id": 85,
-        "adminname": "Мудрый орк",
         "name": "Мудрый орк",
-        "isboss": "",
         "maxhp": 850,
-        "startrage": "",
         "level": 12,
         "avatar": 109,
         "doll": "armored_orc",
         "picture": "armored_orc",
+        "minhit": 115,
+        "maxhit": 150,
+        "dodge": 15,
+        "crit": 28,
+        "mastery": 100,
+        "resilience": 15,
+        "defence": 53,
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "money": {
                 "12": {
@@ -5622,112 +5185,48 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "nedra, logovo",
     },
-    "86": {
-        "id": 86,
-        "adminname": "Шаман Матында",
-        "name": "Шаман Матында",
-        "isboss": 1,
-        "maxhp": 1000,
-        "startrage": 40,
-        "level": 11,
-        "avatar": 110,
-        "doll": "shaman_orc",
-        "picture": "shaman_orc",
+    "88": {
+        "id": 88,
+        "name": "Тестмоб",
+        "maxhp": 10,
+        "level": 1,
+        "avatar": 1,
+        "doll": "darkshroom",
+        "picture": "darkshroom",
+        "minhit": 99,
+        "maxhit": 99,
         "gender": 1,
-        "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": "gory"
-    },
-    "87": {
-        "id": 87,
-        "adminname": "В.В.В. Вурун",
-        "name": "В.В.В. Вурун",
-        "isboss": 1,
-        "maxhp": 1500,
-        "startrage": "",
-        "level": 12,
-        "avatar": 111,
-        "doll": "bigboss_orc",
-        "picture": "bigboss_orc",
-        "gender": 1,
-        "race": "intelligent",
-        "isevent": "",
+        "race": "beast",
         "loot": {
-            "money": {
-                "default": {
-                    "min": 50000,
-                    "max": 70000
-                }
-            },
-            "loot": {
-                "default": {
-                    "330": 10,
-                    "316": 25,
-                    "314": 15,
-                    "315": 20,
-                    "319": 5,
-                    "320": 5
-                }
+            "crystals": {
+                "default": [100, 100, 50]
             },
             "randloot": {
-                "11": {
-                    "256": 20,
-                    "257": 20,
-                    "558": 2
-                },
-                "12": {
-                    "256": 20,
-                    "257": 20,
-                    "558": 2
-                },
-                "13": {
-                    "558": 2
-                },
-                "14": {
-                    "558": 3
-                },
-                "15": {
-                    "558": 5
-                },
-                "16": {
-                    "558": 6
-                },
-                "17": {
-                    "558": 7
-                },
-                "18": {
-                    "558": 8
-                },
-                "19": {
-                    "558": 9
-                },
-                "20": {
-                    "558": 10
-                },
-                "default": {
-                    "558": 0.9
+                "10": {
+                    "405": 100
                 }
             }
         },
-        "location": "gory"
+        "location": "bolota",
+        "hidden": 1
     },
     "89": {
         "id": 89,
-        "adminname": "Талая Фея",
         "name": "Талая Фея",
-        "isboss": "",
         "maxhp": 1001,
-        "startrage": "",
         "level": 12,
         "avatar": 113,
         "doll": "halficegolem",
         "picture": "halficegolem",
+        "minhit": 88,
+        "maxhit": 106,
+        "crit": 15,
+        "mastery": 75,
+        "defence": 34,
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "money": {
                 "10": {
@@ -5812,22 +5311,23 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gory",
     },
     "90": {
         "id": 90,
-        "adminname": "Зомборыбка",
         "name": "Зомборыбка",
-        "isboss": "",
         "maxhp": 150,
-        "startrage": "",
         "level": 4,
         "avatar": 146,
         "doll": "zombiefish",
         "picture": "zombiefish",
+        "minhit": 15,
+        "maxhit": 20,
+        "dodge": 5,
+        "crit": 30,
+        "defence": 10,
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "4": [100, 20, 0, 0, 0]
@@ -5854,22 +5354,24 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
     },
     "91": {
         "id": 91,
-        "adminname": "Страстная Фея",
         "name": "Страстная Фея",
-        "isboss": "",
         "maxhp": 700,
         "startrage": 99,
         "level": 13,
         "avatar": 144,
         "doll": "lavagolem",
         "picture": "lavagolem",
+        "minhit": 94,
+        "maxhit": 126,
+        "mastery": 100,
+        "resilience": 10,
+        "defence": 41,
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "8": [100, 500, 0, 0, 0],
@@ -5923,59 +5425,25 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
-    },
-    "92": {
-        "id": 92,
-        "adminname": "Сердце гор",
-        "name": "Сердце гор",
-        "isboss": 1,
-        "maxhp": 5000,
-        "startrage": "",
-        "level": 13,
-        "avatar": 145,
-        "doll": "magmatroll_twohit",
-        "picture": "magmatroll_twohit",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "318": 10,
-                    "321": 15,
-                    "317": 15,
-                    "320": 30,
-                    "319": 30
-                }
-            },
-            "randloot": {
-                "12": {
-                    "256": 20,
-                    "257": 20
-                },
-                "13": {
-                    "256": 20,
-                    "257": 20
-                }
-            }
-        },
-        "location": "gory"
+        "location": "nedra",
     },
     "93": {
         "id": 93,
-        "adminname": "Сторожевой Шрум",
         "name": "Сторожевой Шрум",
-        "isboss": "",
         "maxhp": 1500,
-        "startrage": "",
         "level": 12,
         "avatar": 118,
         "doll": "darkshroom",
         "picture": "darkshroom",
+        "minhit": 125,
+        "maxhit": 150,
+        "dodge": 10,
+        "crit": 18,
+        "mastery": 120,
+        "defence": 42,
+        "hitsound": "organic",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "11": [100, 10, 0, 0, 0]
@@ -6017,22 +5485,25 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gribnaya",
     },
     "94": {
         "id": 94,
-        "adminname": "Охотничий Шрум",
         "name": "Охотничий Шрум",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 11,
         "avatar": 117,
         "doll": "shroomy",
         "picture": "shroomy",
+        "minhit": 85,
+        "maxhit": 105,
+        "dodge": 10,
+        "crit": 15,
+        "mastery": 100,
+        "defence": 32,
+        "hitsound": "organic",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "11": [100, 10, 0, 0, 0]
@@ -6064,125 +5535,62 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
+        "location": "gribnaya",
     },
     "95": {
         "id": 95,
-        "adminname": "Верный Орк",
         "name": "Верный Орк",
-        "isboss": "",
         "maxhp": 650,
-        "startrage": "",
         "level": 12,
         "avatar": 108,
         "doll": "trash_orc",
         "picture": "trash_orc",
+        "minhit": 90,
+        "maxhit": 125,
+        "dodge": 5,
+        "crit": 10,
+        "mastery": 80,
+        "defence": 39,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": "gory"
+        "location": "nedra, logovo",
     },
     "96": {
         "id": 96,
-        "adminname": "Альфа Лукэтлог",
         "name": "Альфа Лукэтлог",
-        "isboss": "",
         "maxhp": 50,
-        "startrage": "",
         "level": 2,
         "avatar": 38,
         "doll": "lal",
         "picture": "lal",
+        "minhit": 10,
+        "maxhit": 15,
+        "dodge": 20,
+        "crit": 20,
+        "defence": 6,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
-    },
-    "97": {
-        "id": 97,
-        "adminname": "Шрумман",
-        "name": "Шрумман",
-        "isboss": 1,
-        "maxhp": 2500,
-        "startrage": 20,
-        "level": 12,
-        "avatar": 120,
-        "doll": "shroomman_morphing",
-        "picture": "shroomman_morphing",
-        "gender": 1,
-        "race": "intelligent",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "default": {
-                    "min": 50000,
-                    "max": 70000
-                }
-            },
-            "loot": {
-                "default": {
-                    "364": 20,
-                    "357": 20,
-                    "358": 20,
-                    "359": 20,
-                    "360": 20
-                }
-            },
-            "randloot": {
-                "11": {
-                    "256": 20,
-                    "257": 20,
-                    "364": 20,
-                    "357": 20,
-                    "358": 20,
-                    "359": 20,
-                    "360": 20,
-                    "349": 40
-                },
-                "12": {
-                    "364": 17,
-                    "357": 17,
-                    "358": 17,
-                    "359": 17,
-                    "360": 17,
-                    "349": 33
-                },
-                "13": {
-                    "364": 15,
-                    "357": 15,
-                    "358": 15,
-                    "359": 15,
-                    "360": 15,
-                    "349": 25
-                },
-                "default": {
-                    "364": 5,
-                    "357": 5,
-                    "358": 5,
-                    "359": 5,
-                    "360": 5,
-                    "349": 20
-                }
-            }
-        },
-        "location": "gory"
+        "location": "city",
     },
     "98": {
         "id": 98,
-        "adminname": "Властный скакун",
         "name": "Властный скакун",
-        "isboss": "",
         "maxhp": 800,
-        "startrage": "",
         "level": 13,
         "avatar": 122,
         "doll": "centaur_black",
         "picture": "centaur_black",
+        "minhit": 99,
+        "maxhit": 127,
+        "dodge": 25,
+        "crit": 15,
+        "mastery": 50,
+        "defence": 51,
+        "hitsound": "organic",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "9": [100, 500, 0, 0, 0],
@@ -6236,77 +5644,26 @@ mobs = {
                 }
             }
         },
-        "location": "gory"
-    },
-    "99": {
-        "id": 99,
-        "adminname": "Неродрукар",
-        "name": "Неродрукар",
-        "isboss": 1,
-        "maxhp": 3000,
-        "startrage": 30,
-        "level": 13,
-        "avatar": 123,
-        "doll": "dragon_twohit",
-        "picture": "dragon_twohit",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "money": {
-                "5": {
-                    "min": 2000,
-                    "max": 3000
-                },
-                "default": {
-                    "min": 1,
-                    "max": 1
-                }
-            },
-            "crystals": {
-                "5": [150, 10, 0, 0, 0]
-            },
-            "loot": {
-                "default": {
-                    "356": 20,
-                    "351": 20,
-                    "266": 20,
-                    "350": 20,
-                    "352": 5,
-                    "354": 5,
-                    "355": 5,
-                    "353": 5
-                }
-            },
-            "randloot": {
-                "12": {
-                    "256": 20,
-                    "257": 20,
-                    "1531": 0.4
-                },
-                "13": {
-                    "256": 20,
-                    "257": 20,
-                    "1531": 0.4
-                }
-            }
-        },
-        "location": "gory"
+        "location": "nedra, logovo",
     },
     "100": {
         "id": 100,
-        "adminname": "Маньяк",
         "name": "Маньяк",
-        "isboss": "",
         "maxhp": 2000,
         "startrage": 50,
         "level": 16,
         "avatar": 1017,
         "doll": "mob_elv_male",
         "picture": "mob_elv_male",
+        "minhit": 150,
+        "maxhit": 190,
+        "dodge": 75,
+        "crit": 80,
+        "mastery": 200,
+        "defence": 72,
+        "hitsound": "organic",
         "gender": 1,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -6339,22 +5696,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "101": {
         "id": 101,
-        "adminname": "Генгнир|Атвейг|Хейдаль",
         "name": "Генгнир|Атвейг|Хейдаль",
-        "isboss": "",
         "maxhp": 800,
-        "startrage": "",
         "level": 14,
         "avatar": 55,
         "doll": "mob_demon_male",
         "picture": "mob_demon_male",
+        "minhit": 70,
+        "maxhit": 130,
+        "dodge": 80,
+        "crit": 50,
+        "mastery": 150,
+        "defence": 63,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6385,22 +5745,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "102": {
         "id": 102,
-        "adminname": "Бриннинг|Дидерик|Хрисаор",
         "name": "Бриннинг|Дидерик|Хрисаор",
-        "isboss": "",
         "maxhp": 900,
-        "startrage": "",
         "level": 14,
         "avatar": 5,
         "doll": "mob_elv_male",
         "picture": "mob_elv_male",
+        "minhit": 90,
+        "maxhit": 110,
+        "dodge": 25,
+        "crit": 70,
+        "mastery": 150,
+        "defence": 85,
+        "hitsound": "organic",
         "gender": 1,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6431,22 +5794,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "103": {
         "id": 103,
-        "adminname": "Коленбад|Витто|Ликорн",
         "name": "Коленбад|Витто|Ликорн",
-        "isboss": "",
         "maxhp": 650,
-        "startrage": "",
         "level": 14,
         "avatar": 139,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 110,
+        "maxhit": 150,
+        "dodge": 15,
+        "crit": 90,
+        "mastery": 150,
+        "defence": 74,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6477,22 +5843,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "104": {
         "id": 104,
-        "adminname": "Огма|Бегаллта|Орна",
         "name": "Огма|Бегаллта|Орна",
-        "isboss": "",
         "maxhp": 550,
-        "startrage": "",
         "level": 13,
         "avatar": 136,
         "doll": "mob_human_female",
         "picture": "mob_human_female",
+        "minhit": 100,
+        "maxhit": 130,
+        "dodge": 15,
+        "crit": 85,
+        "mastery": 125,
+        "defence": 63,
+        "hitsound": "organic",
         "gender": 2,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6519,22 +5888,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "105": {
         "id": 105,
-        "adminname": "Хрубинг|Моргли|Альмас",
         "name": "Хрубинг|Моргли|Альмас",
-        "isboss": "",
         "maxhp": 450,
-        "startrage": "",
         "level": 12,
         "avatar": 138,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 90,
+        "maxhit": 120,
+        "dodge": 15,
+        "crit": 75,
+        "mastery": 100,
+        "defence": 46,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6557,22 +5929,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "106": {
         "id": 106,
-        "adminname": "Куртуаз|Нарилл|Укко",
         "name": "Куртуаз|Нарилл|Укко",
-        "isboss": "",
         "maxhp": 700,
-        "startrage": "",
         "level": 13,
         "avatar": 134,
         "doll": "mob_elv_male",
         "picture": "mob_elv_male",
+        "minhit": 60,
+        "maxhit": 110,
+        "dodge": 70,
+        "crit": 45,
+        "mastery": 125,
+        "defence": 57,
+        "hitsound": "organic",
         "gender": 1,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6599,22 +5974,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "107": {
         "id": 107,
-        "adminname": "Аскалла|Мистель|Аранди",
         "name": "Аскалла|Мистель|Аранди",
-        "isboss": "",
         "maxhp": 600,
-        "startrage": "",
         "level": 12,
         "avatar": 124,
         "doll": "mob_demon_female",
         "picture": "mob_demon_female",
+        "minhit": 50,
+        "maxhit": 100,
+        "dodge": 70,
+        "crit": 35,
+        "mastery": 100,
+        "defence": 54,
+        "hitsound": "organic",
         "gender": 2,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6637,22 +6015,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "108": {
         "id": 108,
-        "adminname": "Тизон|Отклер|Арашурт",
         "name": "Тизон|Отклер|Арашурт",
-        "isboss": "",
         "maxhp": 800,
-        "startrage": "",
         "level": 13,
         "avatar": 127,
         "doll": "mob_demon_male",
         "picture": "mob_demon_male",
+        "minhit": 70,
+        "maxhit": 100,
+        "dodge": 25,
+        "crit": 65,
+        "mastery": 125,
+        "defence": 78,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6679,22 +6060,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "109": {
         "id": 109,
-        "adminname": "Крокс|Гайтли|Фардаш",
         "name": "Крокс|Гайтли|Фардаш",
-        "isboss": "",
         "maxhp": 700,
-        "startrage": "",
         "level": 12,
         "avatar": 58,
         "doll": "mob_elv_male",
         "picture": "mob_elv_male",
+        "minhit": 60,
+        "maxhit": 90,
+        "dodge": 20,
+        "crit": 65,
+        "mastery": 100,
+        "defence": 69,
+        "hitsound": "organic",
         "gender": 1,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 100, 50]
@@ -6717,22 +6101,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "110": {
         "id": 110,
-        "adminname": "Три Тысячи Крыс",
         "name": "Три Тысячи Крыс",
-        "isboss": "",
         "maxhp": 5000,
-        "startrage": "",
         "level": 15,
         "avatar": 9,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 150,
+        "maxhit": 200,
+        "dodge": 50,
+        "crit": 50,
+        "mastery": 300,
+        "defence": 80,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -6765,22 +6152,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "111": {
         "id": 111,
-        "adminname": "Легенда Трои",
         "name": "Легенда Трои",
-        "isboss": "",
         "maxhp": 1600,
-        "startrage": "",
         "level": 15,
         "avatar": 137,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 100,
+        "maxhit": 120,
+        "dodge": 30,
+        "crit": 80,
+        "mastery": 175,
+        "defence": 80,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "10": {
@@ -6814,22 +6204,25 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
     },
     "112": {
         "id": 112,
-        "adminname": "МБТ",
         "name": "МБТ",
-        "isboss": "",
         "maxhp": 1400,
-        "startrage": "",
         "level": 14,
         "avatar": 3,
         "doll": "mob_demon_male",
         "picture": "mob_demon_male",
+        "minhit": 120,
+        "maxhit": 155,
+        "dodge": 20,
+        "crit": 90,
+        "mastery": 175,
+        "defence": 75,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "10": {
@@ -6862,22 +6255,26 @@ mobs = {
                 }
             }
         },
-        "location": "pant"
+        "location": "pant",
+        "hidden": 1
     },
     "113": {
         "id": 113,
-        "adminname": "Юный Скорпио",
         "name": "Юный Скорпио",
-        "isboss": "",
         "maxhp": 700,
-        "startrage": "",
         "level": 13,
         "avatar": 162,
         "doll": "scorp_black",
         "picture": "scorp_black",
+        "minhit": 86,
+        "maxhit": 118,
+        "dodge": 22,
+        "crit": 22,
+        "mastery": 120,
+        "defence": 52,
+        "hitsound": "bones",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 10, 0, 0, 0]
@@ -6896,22 +6293,25 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "114": {
         "id": 114,
-        "adminname": "Юный Скорпио",
         "name": "Юный Скорпио",
-        "isboss": "",
         "maxhp": 700,
-        "startrage": "",
         "level": 13,
         "avatar": 162,
         "doll": "scorp_black",
         "picture": "scorp_black",
+        "minhit": 86,
+        "maxhit": 118,
+        "dodge": 22,
+        "crit": 22,
+        "mastery": 120,
+        "defence": 52,
+        "hitsound": "bones",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 10, 0, 0, 0]
@@ -6930,22 +6330,25 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "115": {
         "id": 115,
-        "adminname": "Золотой Скорпио",
         "name": "Золотой Скорпио",
-        "isboss": "",
         "maxhp": 1200,
-        "startrage": "",
         "level": 14,
         "avatar": 163,
         "doll": "scorp_golden",
         "picture": "scorp_golden",
+        "minhit": 105,
+        "maxhit": 130,
+        "dodge": 23,
+        "crit": 28,
+        "mastery": 110,
+        "defence": 56,
+        "hitsound": "bones",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0, 0, 0]
@@ -6991,22 +6394,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona, nora",
     },
     "116": {
         "id": 116,
-        "adminname": "Джинн",
         "name": "Джинн",
-        "isboss": "",
         "maxhp": 1500,
         "startrage": 40,
         "level": 14,
         "avatar": 164,
         "doll": "djin",
         "picture": "djin",
+        "minhit": 126,
+        "maxhit": 157,
+        "dodge": 17,
+        "crit": 32,
+        "mastery": 220,
+        "defence": 66,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "13": [100, 500, 0, 0, 0],
@@ -7102,22 +6509,25 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "117": {
         "id": 117,
-        "adminname": "Кадабра",
         "name": "Кадабра",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 6,
         "avatar": 165,
         "doll": "chupagreen",
         "picture": "chupagreen",
+        "minhit": 40,
+        "maxhit": 52,
+        "dodge": 15,
+        "crit": 30,
+        "mastery": 50,
+        "defence": 14,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "6": [100, 10, 0, 0, 0],
@@ -7153,162 +6563,46 @@ mobs = {
                 }
             }
         },
-        "location": "city"
-    },
-    "118": {
-        "id": 118,
-        "adminname": "Чупакабра",
-        "name": "Чупакабра",
-        "isboss": 1,
-        "maxhp": 600,
-        "startrage": 35,
-        "level": 6,
-        "avatar": 166,
-        "doll": "chupakabra",
-        "picture": "chupakabra",
-        "gender": 1,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "6": [50, 10, 0, 0, 0],
-                "7": [100, 10, 0, 0, 0]
-            },
-            "loot": {
-                "default": {
-                    "430x3": 45,
-                    "431x3": 45,
-                    "484": 10
-                }
-            },
-            "randloot": {
-                "6": {
-                    "429x3": 100,
-                    "553": 2,
-                    "239": 10
-                },
-                "7": {
-                    "429x3": 80,
-                    "553": 2,
-                    "239": 10
-                },
-                "default": {
-                    "553": 1
-                }
-            },
-            "questloot": {
-                "104": {
-                    "default": {
-                        "239": 100
-                    }
-                },
-                "182": {
-                    "default": {
-                        "1072": 100
-                    }
-                }
-            }
-        },
-        "location": "city"
-    },
-    "119": {
-        "id": 119,
-        "adminname": "Тихоходка ивент",
-        "name": "Тихоходка",
-        "isboss": 1,
-        "maxhp": 3000,
-        "startrage": "",
-        "level": 8,
-        "avatar": 62,
-        "doll": "tihohodka",
-        "picture": "tihohodka",
-        "gender": 2,
-        "race": "beast",
-        "isevent": 1,
-        "loot": {
-            "crystals": {
-                "default": [150, 10, 0, 0, 0]
-            },
-            "randloot": {
-                "8": {
-                    "64": 100,
-                    "68": 50,
-                    "107": 50,
-                    "108": 50,
-                    "492": 100
-                },
-                "9": {
-                    "64": 70,
-                    "68": 30,
-                    "107": 30,
-                    "108": 30,
-                    "492": 70
-                },
-                "10": {
-                    "64": 20,
-                    "68": 10,
-                    "107": 10,
-                    "108": 10,
-                    "492": 50
-                },
-                "default": {
-                    "64": 5,
-                    "68": 3,
-                    "107": 3,
-                    "108": 10
-                }
-            }
-        },
-        "location": ""
+        "location": "melnica",
     },
     "120": {
         "id": 120,
-        "adminname": "Источник энергии Ордена",
         "name": "Источник энергии",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 1,
         "avatar": 171,
         "doll": "nasosoil",
         "picture": "nasosoil",
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "zona"
+        "location": "zona",
     },
     "121": {
         "id": 121,
-        "adminname": "Источник энергии Братства",
         "name": "Источник энергии",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 1,
         "avatar": 170,
         "doll": "nasoscannon",
         "picture": "nasoscannon",
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "zona"
+        "location": "zona",
     },
     "122": {
         "id": 122,
-        "adminname": "Волхв",
         "name": "Волхв",
-        "isboss": "",
         "maxhp": 1300,
-        "startrage": "",
         "level": 14,
         "avatar": 174,
         "doll": "beastmaster",
         "picture": "beastmaster",
+        "minhit": 105,
+        "maxhit": 137,
+        "defence": 36,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "13": [100, 100, 0, 0, 0],
@@ -7376,76 +6670,25 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
-    },
-    "123": {
-        "id": 123,
-        "adminname": "Азазель",
-        "name": "Азазель",
-        "isboss": 1,
-        "maxhp": 1331,
-        "startrage": "",
-        "level": 14,
-        "avatar": 175,
-        "doll": "straj",
-        "picture": "straj",
-        "gender": 1,
-        "race": "intelligent",
-        "isevent": 1,
-        "loot": {
-            "loot": {
-                "default": {
-                    "378": 7,
-                    "379": 7,
-                    "381": 7,
-                    "383": 18,
-                    "384": 18,
-                    "385": 18,
-                    "494": 18,
-                    "751": 8
-                }
-            },
-            "randloot": {
-                "14": {
-                    "256": 20,
-                    "257": 20,
-                    "498": 35,
-                    "728": 0.3
-                },
-                "15": {
-                    "498": 40,
-                    "728": 0.2
-                },
-                "16": {
-                    "498": 55,
-                    "728": 0.2
-                },
-                "17": {
-                    "498": 50,
-                    "728": 0.2
-                },
-                "default": {
-                    "498": 60,
-                    "728": 0.2
-                }
-            }
-        },
-        "location": "zona"
+        "location": "zona, nora",
     },
     "124": {
         "id": 124,
-        "adminname": "Голем Хранитель 15-17",
         "name": "Голем Хранитель",
-        "isboss": "",
         "maxhp": 7000,
-        "startrage": "",
         "level": 17,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 220,
+        "maxhit": 275,
+        "dodge": 25,
+        "crit": 25,
+        "mastery": 350,
+        "resilience": 160,
+        "defence": 160,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -7465,22 +6708,25 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
     },
     "125": {
         "id": 125,
-        "adminname": "Голем Страж  15-17",
         "name": "Голем Страж",
-        "isboss": "",
         "maxhp": 5000,
-        "startrage": "",
         "level": 16,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 162,
+        "maxhit": 200,
+        "dodge": 30,
+        "crit": 30,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 100,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -7505,73 +6751,75 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
     },
     "126": {
         "id": 126,
-        "adminname": "Раб Руны  15-17",
         "name": "Раб Руны",
-        "isboss": "",
         "maxhp": 3500,
-        "startrage": "",
         "level": 16,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 230,
+        "maxhit": 268,
+        "crit": 40,
+        "mastery": 100,
+        "defence": 96,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "city",
     },
     "127": {
         "id": 127,
-        "adminname": "Все Живое",
         "name": "Все Живое",
-        "isboss": "",
         "maxhp": 5000,
-        "startrage": "",
         "level": 20,
         "avatar": 193,
         "doll": "evalive",
         "picture": "evalive",
+        "minhit": 211,
+        "maxhit": 479,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "city",
     },
     "128": {
         "id": 128,
-        "adminname": "Альфа Лукэтлог",
         "name": "Альфа Лукэтлог",
-        "isboss": "",
         "maxhp": 50,
-        "startrage": "",
         "level": 2,
         "avatar": 38,
         "doll": "lal",
         "picture": "lal",
+        "minhit": 10,
+        "maxhit": 15,
+        "dodge": 20,
+        "crit": 20,
+        "defence": 3,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "129": {
         "id": 129,
-        "adminname": "Палач",
         "name": "Палач",
-        "isboss": "",
         "maxhp": 1500,
-        "startrage": "",
         "level": 15,
         "avatar": 194,
         "doll": "master",
         "picture": "master",
+        "minhit": 109,
+        "maxhit": 144,
+        "dodge": 27,
+        "crit": 18,
+        "mastery": 220,
+        "defence": 55,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "15": [100, 30, 0, 0, 0],
@@ -7606,22 +6854,25 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "nora",
     },
     "130": {
         "id": 130,
-        "adminname": "Старейший Скорпио",
         "name": "Старейший Скорпио",
-        "isboss": "",
         "maxhp": 1700,
-        "startrage": "",
         "level": 15,
         "avatar": 163,
         "doll": "scorp_golden",
         "picture": "scorp_golden",
+        "minhit": 105,
+        "maxhit": 140,
+        "dodge": 30,
+        "crit": 30,
+        "mastery": 150,
+        "defence": 60,
+        "hitsound": "bones",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0, 0, 0]
@@ -7640,22 +6891,22 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "nora",
     },
     "131": {
         "id": 131,
-        "adminname": "Блаженный Волхв",
         "name": "Блаженный Волхв",
-        "isboss": "",
         "maxhp": 1600,
-        "startrage": "",
         "level": 15,
         "avatar": 174,
         "doll": "beastmaster",
         "picture": "beastmaster",
+        "minhit": 105,
+        "maxhit": 141,
+        "defence": 62,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "15": [100, 30, 0, 0, 0],
@@ -7684,22 +6935,25 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "nora",
     },
     "132": {
         "id": 132,
-        "adminname": "Верховный палач",
         "name": "Верховный палач",
-        "isboss": "",
         "maxhp": 2000,
-        "startrage": "",
         "level": 15,
         "avatar": 194,
         "doll": "master",
         "picture": "master",
+        "minhit": 125,
+        "maxhit": 150,
+        "dodge": 12,
+        "crit": 15,
+        "mastery": 200,
+        "defence": 55,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "15": [100, 30, 0, 0, 0],
@@ -7725,58 +6979,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
-    },
-    "133": {
-        "id": 133,
-        "adminname": "Надзиратель Пинг",
-        "name": "Надзиратель Пинг",
-        "isboss": 1,
-        "maxhp": 4000,
-        "startrage": "",
-        "level": 15,
-        "avatar": 195,
-        "doll": "penkin",
-        "picture": "penkin",
-        "gender": 1,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "596": 100
-                }
-            },
-            "randloot": {
-                "15": {
-                    "256": 20,
-                    "257": 20
-                }
-            },
-            "questloot": {
-                "209": {
-                    "default": {
-                        "1161": 100
-                    }
-                }
-            }
-        },
-        "location": "zona"
+        "location": "nora",
     },
     "134": {
         "id": 134,
-        "adminname": "Кратер",
         "name": "Кратер",
-        "isboss": "",
         "maxhp": 1400,
-        "startrage": "",
         "level": 16,
         "avatar": 197,
         "doll": "moonkin",
         "picture": "moonkin",
+        "minhit": 135,
+        "maxhit": 160,
+        "dodge": 25,
+        "crit": 55,
+        "mastery": 250,
+        "resilience": 50,
+        "defence": 66,
+        "hitsound": "organic",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "16": [120, 40, 0, 0, 0],
@@ -7826,22 +7048,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "zona, sumerki",
     },
     "135": {
         "id": 135,
-        "adminname": "Туманный Кратер",
         "name": "Туманный Кратер",
-        "isboss": "",
         "maxhp": 1600,
         "startrage": 50,
         "level": 16,
         "avatar": 198,
         "doll": "moonblue",
         "picture": "moonblue",
+        "minhit": 140,
+        "maxhit": 170,
+        "dodge": 30,
+        "crit": 60,
+        "mastery": 300,
+        "resilience": 60,
+        "defence": 78,
+        "hitsound": "organic",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "16": [120, 50, 0, 0, 0],
@@ -7886,22 +7113,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "136": {
         "id": 136,
-        "adminname": "Чам",
         "name": "Чам",
-        "isboss": "",
         "maxhp": 1500,
         "startrage": 35,
         "level": 16,
         "avatar": 199,
         "doll": "cham",
         "picture": "cham",
+        "minhit": 110,
+        "maxhit": 145,
+        "dodge": 25,
+        "crit": 30,
+        "mastery": 250,
+        "resilience": 40,
+        "defence": 58,
+        "hitsound": "organic",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "16": [130, 10, 0, 0, 0],
@@ -7932,22 +7164,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "morfonora",
     },
     "137": {
         "id": 137,
-        "adminname": "Чам-бригадир",
         "name": "Чам-бригадир",
-        "isboss": "",
         "maxhp": 1700,
         "startrage": 50,
         "level": 16,
         "avatar": 200,
         "doll": "cham_angry",
         "picture": "cham_angry",
+        "minhit": 125,
+        "maxhit": 160,
+        "dodge": 30,
+        "crit": 35,
+        "mastery": 280,
+        "resilience": 50,
+        "defence": 69,
+        "hitsound": "organic",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "16": [120, 20, 0, 0, 0],
@@ -7982,58 +7219,24 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "138": {
-        "id": 138,
-        "adminname": "Монтесума",
-        "name": "Монтесума",
-        "isboss": 1,
-        "maxhp": 5000,
-        "startrage": "",
-        "level": 16,
-        "avatar": 204,
-        "doll": "montesuma",
-        "picture": "montesuma",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "619": 60,
-                    "620": 90,
-                    "621": 90,
-                    "622": 60,
-                    "623": 90,
-                    "635": 35,
-                    "638": 35
-                }
-            },
-            "randloot": {
-                "16": {
-                    "256": 20,
-                    "257": 20,
-                    "1535": 0.4
-                }
-            }
-        },
-        "location": ""
+        "location": "morfonora",
     },
     "139": {
         "id": 139,
-        "adminname": "Дед Вован|Дед Медвед",
         "name": "Дед Вован|Дед Медвед",
-        "isboss": "",
         "maxhp": 2012,
-        "startrage": "",
         "level": 3,
         "avatar": 81,
         "doll": "santa",
         "picture": "santa",
+        "minhit": 1,
+        "maxhit": 250,
+        "dodge": 30,
+        "mastery": 300,
+        "hitsound": "metal",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
+        "pet": 17,
         "loot": {
             "crystals": {
                 "default": [150, 10, 0, 0, 0]
@@ -8047,22 +7250,27 @@ mobs = {
                 }
             }
         },
-        "location": "city"
+        "location": "city",
+        "hidden": 1
     },
     "140": {
         "id": 140,
-        "adminname": "Беглец",
         "name": "Беглец",
-        "isboss": "",
         "maxhp": 900,
-        "startrage": "",
         "level": 15,
         "avatar": 55,
         "doll": "mob_demon_male",
         "picture": "mob_demon_male",
+        "minhit": 100,
+        "maxhit": 160,
+        "dodge": 65,
+        "crit": 40,
+        "mastery": 400,
+        "resilience": 100,
+        "defence": 80,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8074,22 +7282,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "141": {
         "id": 141,
-        "adminname": "Беглец",
         "name": "Беглец",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 15,
         "avatar": 5,
         "doll": "mob_elv_male",
         "picture": "mob_elv_male",
+        "minhit": 120,
+        "maxhit": 160,
+        "dodge": 15,
+        "crit": 40,
+        "mastery": 400,
+        "resilience": 100,
+        "defence": 120,
+        "hitsound": "organic",
         "gender": 1,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8101,22 +7313,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "142": {
         "id": 142,
-        "adminname": "Беглец",
         "name": "Беглец",
-        "isboss": "",
         "maxhp": 750,
-        "startrage": "",
         "level": 15,
         "avatar": 139,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 130,
+        "maxhit": 170,
+        "dodge": 35,
+        "crit": 65,
+        "mastery": 300,
+        "resilience": 100,
+        "defence": 90,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8128,22 +7344,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "143": {
         "id": 143,
-        "adminname": "Беглец",
         "name": "Беглец",
-        "isboss": "",
         "maxhp": 900,
-        "startrage": "",
         "level": 15,
         "avatar": 137,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 100,
+        "maxhit": 160,
+        "dodge": 65,
+        "crit": 40,
+        "mastery": 400,
+        "resilience": 100,
+        "defence": 80,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8155,22 +7375,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "144": {
         "id": 144,
-        "adminname": "Беглец",
         "name": "Беглец",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 15,
         "avatar": 54,
         "doll": "mob_demon_male",
         "picture": "mob_demon_male",
+        "minhit": 120,
+        "maxhit": 160,
+        "dodge": 15,
+        "crit": 40,
+        "mastery": 400,
+        "resilience": 100,
+        "defence": 120,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8182,22 +7406,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "145": {
         "id": 145,
-        "adminname": "Беглец",
         "name": "Беглец",
-        "isboss": "",
         "maxhp": 750,
-        "startrage": "",
         "level": 15,
         "avatar": 58,
         "doll": "mob_elv_male",
         "picture": "mob_elv_male",
+        "minhit": 130,
+        "maxhit": 170,
+        "dodge": 35,
+        "crit": 65,
+        "mastery": 300,
+        "resilience": 100,
+        "defence": 90,
+        "hitsound": "organic",
         "gender": 1,
         "race": "elv",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8209,22 +7437,26 @@ mobs = {
                 }
             }
         },
-        "location": "zona"
+        "location": "zona",
     },
     "146": {
         "id": 146,
-        "adminname": "Анджело",
         "name": "Анджело",
-        "isboss": "",
         "maxhp": 2000,
-        "startrage": "",
         "level": 16,
         "avatar": 137,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 180,
+        "maxhit": 230,
+        "dodge": 45,
+        "crit": 95,
+        "mastery": 600,
+        "resilience": 300,
+        "defence": 140,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8236,22 +7468,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "zona",
     },
     "147": {
         "id": 147,
-        "adminname": "Блондинчик",
         "name": "Блондинчик",
-        "isboss": "",
         "maxhp": 2000,
-        "startrage": "",
         "level": 16,
         "avatar": 137,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 170,
+        "maxhit": 230,
+        "dodge": 45,
+        "crit": 95,
+        "mastery": 600,
+        "resilience": 300,
+        "defence": 140,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8263,22 +7499,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "zona",
     },
     "148": {
         "id": 148,
-        "adminname": "Туко",
         "name": "Туко",
-        "isboss": "",
         "maxhp": 2000,
-        "startrage": "",
         "level": 16,
         "avatar": 137,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 170,
+        "maxhit": 230,
+        "dodge": 45,
+        "crit": 95,
+        "mastery": 600,
+        "resilience": 300,
+        "defence": 140,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 50, 10]
@@ -8290,22 +7530,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "zona",
     },
     "149": {
         "id": 149,
-        "adminname": "Пусомоб",
         "name": "Пусомоб",
-        "isboss": "",
         "maxhp": 5000,
-        "startrage": "",
         "level": 16,
         "avatar": 204,
         "doll": "montesuma",
         "picture": "montesuma",
+        "minhit": 189,
+        "maxhit": 230,
+        "dodge": 75,
+        "crit": 73,
+        "mastery": 750,
+        "resilience": 110,
+        "defence": 125,
+        "hitsound": "organic",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -8325,127 +7569,182 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "150": {
-        "id": 150,
-        "adminname": "Морфей",
-        "name": "Морфей",
-        "isboss": 1,
-        "maxhp": 3300,
-        "startrage": 20,
-        "level": 17,
-        "avatar": 202,
-        "doll": "hodzy",
-        "picture": "hodzy",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "739": 80,
-                    "740": 80,
-                    "741": 80,
-                    "742": 80,
-                    "634": 65,
-                    "636": 65,
-                    "637": 50,
-                    "635": 100,
-                    "638": 100
-                }
-            },
-            "randloot": {
-                "17": {
-                    "256": 20,
-                    "257": 20
-                }
-            }
-        },
-        "location": ""
+        "location": "morfonora",
+        "hidden": 1
     },
     "151": {
         "id": 151,
-        "adminname": "Мираж",
         "name": "Мираж",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 17,
         "avatar": 201,
         "doll": "hattori",
         "picture": "hattori",
+        "minhit": 110,
+        "maxhit": 200,
+        "dodge": 40,
+        "mastery": 880,
+        "resilience": 180,
+        "defence": 67,
+        "hitsound": "organic",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "morfonora",
     },
     "152": {
         "id": 152,
-        "adminname": "Морок",
         "name": "Морок",
-        "isboss": "",
         "maxhp": 35,
         "startrage": 50,
         "level": 99,
         "avatar": 212,
         "doll": "amparar",
         "picture": "amparar",
+        "minhit": 5,
+        "maxhit": 25,
+        "dodge": 18,
+        "crit": 12,
+        "mastery": 50,
+        "resilience": 50,
+        "defence": 13,
+        "hitsound": "cotton",
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "city",
     },
     "153": {
         "id": 153,
-        "adminname": "Архивариус",
         "name": "Архивариус",
-        "isboss": "",
         "maxhp": 65,
         "startrage": 100,
         "level": 99,
         "avatar": 213,
         "doll": "mage",
         "picture": "mage",
+        "minhit": 30,
+        "maxhit": 50,
+        "dodge": 20,
+        "crit": 20,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 24,
+        "hitsound": "cotton",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "city",
+    },
+    "154": {
+        "id": 154,
+        "name": "Тестомобина",
+        "maxhp": 10000,
+        "level": 20,
+        "avatar": 212,
+        "doll": "portal_cave",
+        "picture": "portal_cave",
+        "minhit": 40,
+        "maxhit": 75,
+        "dodge": 300,
+        "crit": 15,
+        "resilience": 600,
+        "defence": 600,
+        "hitsound": "cotton",
+        "gender": 2,
+        "race": "ghost",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "1049": 50,
+                    "1048": 70,
+                    "984": 1,
+                    "1073": 2
+                }
+            },
+            "loot": {
+                "default": {
+                    "1096": 65,
+                    "1098": 65,
+                    "1099": 50,
+                    "1097": 130,
+                    "1100": 130,
+                    "999": 70,
+                    "1074": 70
+                }
+            },
+            "questloot": {
+                "207": {
+                    "19": {
+                        "390": 10
+                    }
+                },
+                "211": {
+                    "default": {
+                        "1184": 100
+                    }
+                },
+                "220": {
+                    "default": {
+                        "1264": 25
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1264": 20
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1264": 15
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1264": 15
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1264": 15
+                    }
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
     },
     "155": {
         "id": 155,
-        "adminname": "Бревень саммон в Аркане",
         "name": "Бревень",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 8,
         "avatar": 52,
         "doll": "breven",
         "picture": "breven",
+        "minhit": 23,
+        "maxhit": 65,
+        "dodge": 20,
+        "crit": 20,
+        "defence": 22,
+        "hitsound": "metal",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "city",
     },
     "156": {
         "id": 156,
-        "adminname": "Портал замогильники 5-9",
         "name": "Портал",
-        "isboss": "",
         "maxhp": 500,
-        "startrage": "",
         "level": 5,
         "avatar": 216,
         "doll": "portal_cemetry",
         "picture": "portal_cemetry",
+        "minhit": 30,
+        "maxhit": 50,
+        "dodge": 20,
+        "crit": 15,
+        "defence": 25,
+        "hitsound": "cotton",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -8476,22 +7775,24 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "limb",
     },
     "157": {
         "id": 157,
-        "adminname": "Портал лесной 5-9",
         "name": "Портал",
-        "isboss": "",
         "maxhp": 700,
-        "startrage": "",
         "level": 7,
         "avatar": 217,
         "doll": "portal_forest",
         "picture": "portal_forest",
+        "minhit": 50,
+        "maxhit": 70,
+        "dodge": 20,
+        "crit": 25,
+        "defence": 40,
+        "hitsound": "cotton",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -8522,441 +7823,390 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "limb",
     },
     "158": {
         "id": 158,
-        "adminname": "Портал пещерный 5-9",
         "name": "Портал",
-        "isboss": "",
         "maxhp": 900,
-        "startrage": "",
         "level": 9,
         "avatar": 218,
         "doll": "portal_cave",
         "picture": "portal_cave",
+        "minhit": 65,
+        "maxhit": 95,
+        "dodge": 20,
+        "crit": 30,
+        "defence": 65,
+        "hitsound": "cotton",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "843": 130,
-                    "854": 130,
-                    "855": 130,
-                    "856": 130,
-                    "857": 130,
-                    "844": 15,
-                    "850": 15,
-                    "851": 15,
-                    "852": 15,
-                    "853": 15,
-                    "845": 1,
-                    "846": 1,
-                    "847": 1,
-                    "848": 1,
-                    "849": 1
-                }
-            },
-            "randloot": {
-                "default": {
-                    "877": 2
-                }
-            }
-        },
-        "location": ""
+        "loot": "{\"loot\":{\"default\":{\"843\":130,\"854\":130,\"855\":130,\"856\":130,\"857\":130,\"844\":15,\"850\":15,\"851\":15,\"852\":15,\"853\":15,\"845\":1,\"846\":1,\"847\":1,\"848\":1,\"849\":1}},\"randloot\":{\"default\":{\"877\":2}}} ",
+        "location": "limb",
     },
     "159": {
         "id": 159,
-        "adminname": "ОЗС Портал",
         "name": "ОЗС",
-        "isboss": "",
         "maxhp": 65,
-        "startrage": "",
         "level": 3,
         "avatar": 41,
         "doll": "ozs",
         "picture": "ozs",
+        "minhit": 11,
+        "maxhit": 15,
+        "dodge": 5,
+        "crit": 10,
+        "defence": 2,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "160": {
         "id": 160,
-        "adminname": "Голодная N Портал",
         "name": "Голодная N",
-        "isboss": "",
         "maxhp": 99,
-        "startrage": "",
         "level": 3,
         "avatar": 18,
         "doll": "zombiegirl",
         "picture": "zombiegirl",
+        "minhit": 12,
+        "maxhit": 22,
+        "dodge": 20,
+        "crit": 47,
+        "defence": 4,
+        "hitsound": "wood",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "161": {
         "id": 161,
-        "adminname": "Фантазма Портал",
         "name": "Фантазма",
-        "isboss": "",
         "maxhp": 100,
-        "startrage": "",
         "level": 3,
         "avatar": 45,
         "doll": "ghostgirl",
         "picture": "ghostgirl",
+        "minhit": 13,
+        "maxhit": 23,
+        "dodge": 10,
+        "crit": 15,
+        "defence": 6,
+        "hitsound": "cotton",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "162": {
         "id": 162,
-        "adminname": "Хранитель Склепа Портал",
         "name": "Хранитель Склепа",
-        "isboss": "",
         "maxhp": 50,
-        "startrage": "",
         "level": 4,
         "avatar": 99,
         "doll": "keeper",
         "picture": "keeper",
+        "minhit": 15,
+        "maxhit": 24,
+        "dodge": 30,
+        "crit": 10,
+        "defence": 11,
+        "hitsound": "bones",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "163": {
         "id": 163,
-        "adminname": "Крупный Лукэтлог Портал",
         "name": "Крупный Лукэтлог",
-        "isboss": "",
         "maxhp": 85,
-        "startrage": "",
         "level": 3,
         "avatar": 38,
         "doll": "lal",
         "picture": "lal",
+        "minhit": 22,
+        "maxhit": 32,
+        "dodge": 20,
+        "crit": 25,
+        "defence": 2,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "164": {
         "id": 164,
-        "adminname": "Замшелый Бревень",
         "name": "Замшелый Бревень",
-        "isboss": "",
         "maxhp": 200,
-        "startrage": "",
         "level": 5,
         "avatar": 53,
         "doll": "evilbreven",
         "picture": "evilbreven",
+        "minhit": 21,
+        "maxhit": 27,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 9,
+        "hitsound": "metal",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "city",
     },
     "165": {
         "id": 165,
-        "adminname": "Девичья Радость - портал",
         "name": "Девичья Радость",
-        "isboss": "",
         "maxhp": 250,
-        "startrage": "",
         "level": 6,
         "avatar": 43,
         "doll": "drhard",
         "picture": "drhard",
+        "minhit": 29,
+        "maxhit": 36,
+        "dodge": 10,
+        "crit": 10,
+        "defence": 12,
+        "hitsound": "organic",
         "gender": 2,
         "race": "plant",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "limb",
     },
     "166": {
         "id": 166,
-        "adminname": "Джонатан Sr - портал.",
         "name": "Джонатан Sr",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 7,
         "avatar": 46,
         "doll": "srjohn",
         "picture": "srjohn",
+        "minhit": 29,
+        "maxhit": 52,
+        "dodge": 10,
+        "crit": 30,
+        "mastery": 40,
+        "defence": 13,
+        "hitsound": "organic",
         "gender": 1,
         "race": "plant",
-        "isevent": "",
-        "loot": "",
-        "location": "bolota"
+        "location": "limb",
     },
     "167": {
         "id": 167,
-        "adminname": "Бархатун Портал",
         "name": "Бархатун",
-        "isboss": "",
         "maxhp": 130,
-        "startrage": "",
         "level": 4,
         "avatar": 74,
         "doll": "chair",
         "picture": "chair",
+        "minhit": 10,
+        "maxhit": 18,
+        "dodge": 10,
+        "crit": 10,
+        "mastery": 10,
+        "defence": 5,
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "168": {
         "id": 168,
-        "adminname": "Когсворт Портал",
         "name": "Когсворт",
-        "isboss": "",
         "maxhp": 200,
-        "startrage": "",
         "level": 5,
         "avatar": 79,
         "doll": "clock",
         "picture": "clock",
+        "minhit": 16,
+        "maxhit": 29,
+        "dodge": 5,
+        "crit": 5,
+        "mastery": 20,
+        "defence": 9,
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "169": {
         "id": 169,
-        "adminname": "Смоляной Пупмат Портал",
         "name": "Смоляной Пупмат",
-        "isboss": "",
         "maxhp": 300,
-        "startrage": "",
         "level": 8,
         "avatar": 67,
         "doll": "pupblack",
         "picture": "pupblack",
+        "minhit": 22,
+        "maxhit": 59,
+        "dodge": 17,
+        "crit": 22,
+        "mastery": 50,
+        "defence": 17,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "bolota"
+        "location": "limb",
     },
     "170": {
         "id": 170,
-        "adminname": "Жабоид Портал",
         "name": "Жабоид Вася|Жабоид Петя|Жабоид Игорь|Жабоид Ваня|Жабоид Егор|Жабоид Гриша|Жабоид Антон|Жабоид Тимур|Жабоид Дима|Жабоид Маша|Жабоид Александр",
-        "isboss": "",
         "maxhp": 450,
-        "startrage": "",
         "level": 9,
         "avatar": 65,
         "doll": "bolotnik",
         "picture": "bolotnik",
+        "minhit": 42,
+        "maxhit": 70,
+        "mastery": 25,
+        "defence": 27,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "bolota"
-    },
-    "171": {
-        "id": 171,
-        "adminname": "Радагаст",
-        "name": "Радагаст",
-        "isboss": 1,
-        "maxhp": 2600,
-        "startrage": 40,
-        "level": 10,
-        "avatar": 220,
-        "doll": "medved",
-        "picture": "medved",
-        "gender": 1,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "843": 90,
-                    "854": 90,
-                    "855": 90,
-                    "856": 90,
-                    "857": 90,
-                    "844": 15,
-                    "850": 15,
-                    "851": 15,
-                    "852": 15,
-                    "853": 15,
-                    "845": 1,
-                    "846": 1,
-                    "847": 1,
-                    "848": 1,
-                    "849": 1
-                }
-            },
-            "randloot": {
-                "default": {
-                    "878": 10,
-                    "875": 5,
-                    "876": 15,
-                    "877": 100,
-                    "1019": 0.1,
-                    "1527": 0.4
-                }
-            },
-            "questloot": {
-                "219": {
-                    "default": {
-                        "1249": 100
-                    }
-                }
-            }
-        },
-        "location": ""
+        "location": "limb",
     },
     "172": {
         "id": 172,
-        "adminname": "Миёри-Призывная",
         "name": "Миёри",
-        "isboss": "",
         "maxhp": 666,
-        "startrage": "",
         "level": 3,
         "avatar": 39,
         "doll": "miery",
         "picture": "miery",
+        "minhit": 36,
+        "maxhit": 55,
+        "dodge": 10,
+        "crit": 15,
+        "mastery": 25,
+        "defence": 40,
+        "hitsound": "wood",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "pet": 2,
+        "location": "limb",
     },
     "173": {
         "id": 173,
-        "adminname": "Жак-Призывной",
         "name": "Жак",
-        "isboss": "",
         "maxhp": 800,
-        "startrage": "",
         "level": 8,
         "avatar": 66,
         "doll": "jacques",
         "picture": "jacques",
+        "minhit": 62,
+        "maxhit": 84,
+        "crit": 20,
+        "mastery": 30,
+        "defence": 33,
         "gender": 1,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "bolota"
+        "location": "limb",
     },
     "174": {
         "id": 174,
-        "adminname": "Чупакабра-Призывной",
         "name": "Чупакабра",
-        "isboss": "",
         "maxhp": 600,
         "startrage": 35,
         "level": 6,
         "avatar": 166,
         "doll": "chupakabra",
         "picture": "chupakabra",
+        "minhit": 42,
+        "maxhit": 60,
+        "dodge": 20,
+        "crit": 30,
+        "mastery": 65,
+        "defence": 25,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "limb",
     },
     "175": {
         "id": 175,
-        "adminname": "Сэр Найджел - Призывной",
         "name": "Сэр Найджел ",
-        "isboss": "",
         "maxhp": 400,
-        "startrage": "",
         "level": 4,
         "avatar": 40,
         "doll": "skeletonboss",
         "picture": "skeletonboss",
+        "minhit": 31,
+        "maxhit": 43,
+        "dodge": 12,
+        "crit": 5,
+        "mastery": 20,
+        "defence": 30,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "limb",
     },
     "176": {
         "id": 176,
-        "adminname": "Древний Дух Гор - Портал.",
         "name": "Древний Дух Гор",
-        "isboss": "",
         "maxhp": 550,
-        "startrage": "",
         "level": 11,
         "avatar": 90,
         "doll": "icy_spirit_elite",
         "picture": "icy_spirit_elite",
+        "minhit": 77,
+        "maxhit": 108,
+        "crit": 15,
+        "mastery": 150,
+        "defence": 43,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "gory"
+        "location": "limb",
     },
     "177": {
         "id": 177,
-        "adminname": "Дух Гор - Портал",
         "name": "Дух Гор",
-        "isboss": "",
         "maxhp": 450,
-        "startrage": "",
         "level": 10,
         "avatar": 88,
         "doll": "icy_spirit",
         "picture": "icy_spirit",
+        "minhit": 62,
+        "maxhit": 90,
+        "crit": 15,
+        "mastery": 100,
+        "defence": 30,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "gory"
+        "location": "limb",
     },
     "178": {
         "id": 178,
-        "adminname": "Снежный Лукэтлог - Портал",
         "name": "Снежный Лукэтлог",
-        "isboss": "",
         "maxhp": 400,
         "startrage": 35,
         "level": 9,
         "avatar": 91,
         "doll": "lal_polar",
         "picture": "lal_polar",
+        "minhit": 45,
+        "maxhit": 90,
+        "dodge": 20,
+        "crit": 20,
+        "mastery": 50,
+        "defence": 23,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "limb",
     },
     "179": {
         "id": 179,
-        "adminname": "Портал горный 10-15",
         "name": "Портал",
-        "isboss": "",
         "maxhp": 1300,
-        "startrage": "",
         "level": 11,
         "avatar": 216,
         "doll": "portal_mt",
         "picture": "portal_mt",
+        "minhit": 65,
+        "maxhit": 95,
+        "dodge": 20,
+        "crit": 30,
+        "mastery": 100,
+        "resilience": 25,
+        "defence": 70,
+        "hitsound": "cotton",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -8989,90 +8239,96 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "limb",
     },
     "180": {
         "id": 180,
-        "adminname": "Горный Тролль - портал",
         "name": "Горный Тролль",
-        "isboss": "",
         "maxhp": 750,
-        "startrage": "",
         "level": 13,
         "avatar": 97,
         "doll": "stonetroll",
         "picture": "stonetroll",
+        "minhit": 112,
+        "maxhit": 123,
+        "dodge": 5,
+        "crit": 40,
+        "mastery": 85,
+        "defence": 50,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "limb",
     },
     "181": {
         "id": 181,
-        "adminname": "Талая Фея - портал",
         "name": "Талая Фея",
-        "isboss": "",
         "maxhp": 1001,
-        "startrage": "",
         "level": 12,
         "avatar": 113,
         "doll": "halficegolem",
         "picture": "halficegolem",
+        "minhit": 88,
+        "maxhit": 100,
+        "crit": 10,
+        "mastery": 75,
+        "defence": 29,
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": "gory"
+        "location": "limb",
     },
     "182": {
         "id": 182,
-        "adminname": "Ледяная Фея - портал",
         "name": "Ледяная Фея",
-        "isboss": "",
         "maxhp": 1000,
-        "startrage": "",
         "level": 11,
         "avatar": 102,
         "doll": "icegolem",
         "picture": "icegolem",
+        "minhit": 77,
+        "maxhit": 88,
+        "crit": 10,
+        "mastery": 60,
+        "defence": 25,
+        "hitsound": "glass",
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": "gory"
+        "location": "limb",
     },
     "183": {
         "id": 183,
-        "adminname": "Страстная Фея - портал.",
         "name": "Страстная Фея",
-        "isboss": "",
         "maxhp": 700,
         "startrage": 99,
         "level": 13,
         "avatar": 144,
         "doll": "lavagolem",
         "picture": "lavagolem",
+        "minhit": 90,
+        "maxhit": 120,
+        "mastery": 100,
+        "defence": 34,
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "limb",
     },
     "184": {
         "id": 184,
-        "adminname": "Портал фей 10-15",
         "name": "Портал",
-        "isboss": "",
         "maxhp": 1800,
-        "startrage": "",
         "level": 13,
         "avatar": 217,
         "doll": "portal_fae",
         "picture": "portal_fae",
+        "minhit": 75,
+        "maxhit": 115,
+        "dodge": 20,
+        "crit": 30,
+        "mastery": 150,
+        "resilience": 45,
+        "defence": 75,
+        "hitsound": "cotton",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -9101,73 +8357,81 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "limb",
     },
     "185": {
         "id": 185,
-        "adminname": "Джинн - портал",
         "name": "Джинн",
-        "isboss": "",
         "maxhp": 1500,
         "startrage": 40,
         "level": 14,
         "avatar": 164,
         "doll": "djin",
         "picture": "djin",
+        "minhit": 100,
+        "maxhit": 137,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 200,
+        "defence": 54,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": "zona"
+        "location": "limb",
     },
     "186": {
         "id": 186,
-        "adminname": "Золотой Скорпио - портал",
         "name": "Золотой Скорпио",
-        "isboss": "",
         "maxhp": 1200,
-        "startrage": "",
         "level": 14,
         "avatar": 163,
         "doll": "scorp_golden",
         "picture": "scorp_golden",
+        "minhit": 100,
+        "maxhit": 130,
+        "dodge": 20,
+        "crit": 25,
+        "mastery": 110,
+        "defence": 45,
+        "hitsound": "bones",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "zona"
+        "location": "limb",
     },
     "187": {
         "id": 187,
-        "adminname": "Волхв - портал",
         "name": "Волхв",
-        "isboss": "",
         "maxhp": 1300,
-        "startrage": "",
         "level": 14,
         "avatar": 174,
         "doll": "beastmaster",
         "picture": "beastmaster",
+        "minhit": 100,
+        "maxhit": 137,
+        "defence": 28,
+        "hitsound": "organic",
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": "zona"
+        "location": "limb",
     },
     "188": {
         "id": 188,
-        "adminname": "Портал пустынный 10-15",
         "name": "Портал",
-        "isboss": "",
         "maxhp": 2100,
-        "startrage": "",
         "level": 15,
         "avatar": 218,
         "doll": "portal_desert",
         "picture": "portal_desert",
+        "minhit": 85,
+        "maxhit": 125,
+        "dodge": 20,
+        "crit": 30,
+        "mastery": 200,
+        "resilience": 75,
+        "defence": 80,
+        "hitsound": "cotton",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -9196,78 +8460,25 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "189": {
-        "id": 189,
-        "adminname": "Дагод",
-        "name": "Дагод",
-        "isboss": 1,
-        "maxhp": 2800,
-        "startrage": "",
-        "level": 15,
-        "avatar": 221,
-        "doll": "crabster",
-        "picture": "crabster",
-        "gender": 1,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "884": 170,
-                    "892": 170,
-                    "895": 170,
-                    "898": 170,
-                    "901": 170,
-                    "885": 15,
-                    "893": 15,
-                    "896": 15,
-                    "899": 15,
-                    "902": 15,
-                    "886": 1,
-                    "894": 1,
-                    "897": 1,
-                    "900": 1,
-                    "903": 1
-                }
-            },
-            "randloot": {
-                "default": {
-                    "1009": 20,
-                    "875": 15,
-                    "876": 50,
-                    "877x2": 100,
-                    "1019": 2,
-                    "1196x1": 100,
-                    "1196x2": 30,
-                    "1528": 0.4
-                }
-            },
-            "questloot": {
-                "219": {
-                    "default": {
-                        "1248": 100
-                    }
-                }
-            }
-        },
-        "location": ""
+        "location": "limb",
     },
     "190": {
         "id": 190,
-        "adminname": "Голем Хранитель 18-20",
         "name": "Голем Хранитель",
-        "isboss": "",
         "maxhp": 18000,
-        "startrage": "",
         "level": 20,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 420,
+        "maxhit": 450,
+        "dodge": 35,
+        "crit": 35,
+        "mastery": 750,
+        "resilience": 500,
+        "defence": 300,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -9287,22 +8498,25 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
     },
     "191": {
         "id": 191,
-        "adminname": "Голем Страж  18-20",
         "name": "Голем Страж",
-        "isboss": "",
         "maxhp": 12000,
-        "startrage": "",
         "level": 19,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 242,
+        "maxhit": 285,
+        "dodge": 30,
+        "crit": 30,
+        "mastery": 300,
+        "resilience": 200,
+        "defence": 155,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -9327,39 +8541,43 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
     },
     "192": {
         "id": 192,
-        "adminname": "Раб Руны  18-20",
         "name": "Раб Руны",
-        "isboss": "",
         "maxhp": 4700,
-        "startrage": "",
         "level": 19,
         "avatar": 78,
         "doll": "golem_twohit",
         "picture": "golem_twohit",
+        "minhit": 330,
+        "maxhit": 385,
+        "crit": 50,
+        "mastery": 200,
+        "defence": 170,
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "city",
     },
     "193": {
         "id": 193,
-        "adminname": "Могильный Пупмат",
         "name": "Могильный Пупмат",
-        "isboss": "",
         "maxhp": 1600,
-        "startrage": "",
         "level": 17,
         "avatar": 222,
         "doll": "grimmpup",
         "picture": "grimmpup",
+        "minhit": 150,
+        "maxhit": 180,
+        "dodge": 15,
+        "crit": 40,
+        "mastery": 250,
+        "resilience": 50,
+        "defence": 55,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0, 0, 0]
@@ -9409,22 +8627,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "194": {
         "id": 194,
-        "adminname": "Кровавый Пупмат",
         "name": "Кровавый Пупмат",
-        "isboss": "",
         "maxhp": 1900,
-        "startrage": "",
         "level": 18,
         "avatar": 223,
         "doll": "grimmpup_bloody",
         "picture": "grimmpup_bloody",
+        "minhit": 185,
+        "maxhit": 245,
+        "dodge": 40,
+        "crit": 40,
+        "mastery": 400,
+        "resilience": 200,
+        "defence": 125,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0, 0, 0]
@@ -9477,22 +8699,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "195": {
         "id": 195,
-        "adminname": "Гриммер",
         "name": "Гриммер",
-        "isboss": "",
         "maxhp": 1900,
-        "startrage": "",
         "level": 17,
         "avatar": 224,
         "doll": "grimmer",
         "picture": "grimmer",
+        "minhit": 165,
+        "maxhit": 180,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 200,
+        "resilience": 50,
+        "defence": 85,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0, 0, 0]
@@ -9544,22 +8770,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "196": {
         "id": 196,
-        "adminname": "Гриммер-воин",
         "name": "Гриммер-воин",
-        "isboss": "",
         "maxhp": 2100,
-        "startrage": "",
         "level": 18,
         "avatar": 225,
         "doll": "grimmer_warrior",
         "picture": "grimmer_warrior",
+        "minhit": 185,
+        "maxhit": 225,
+        "dodge": 35,
+        "crit": 45,
+        "mastery": 350,
+        "resilience": 200,
+        "defence": 120,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0, 0, 0]
@@ -9626,22 +8856,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "197": {
         "id": 197,
-        "adminname": "Углер",
         "name": "Углер",
-        "isboss": "",
         "maxhp": 2300,
-        "startrage": "",
         "level": 18,
         "avatar": 226,
         "doll": "ugler",
         "picture": "ugler",
+        "minhit": 180,
+        "maxhit": 199,
+        "dodge": 20,
+        "crit": 25,
+        "mastery": 290,
+        "resilience": 100,
+        "defence": 100,
+        "hitsound": "wood",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 40, 5, 0, 0]
@@ -9710,45 +8944,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "198": {
-        "id": 198,
-        "adminname": "Фредди",
-        "name": "Фредди",
-        "isboss": 1,
-        "maxhp": 5120,
-        "startrage": 30,
-        "level": 17,
-        "avatar": 229,
-        "doll": "plunder",
-        "picture": "plunder",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "1005": 20
-                }
-            }
-        },
-        "location": ""
+        "location": "sumerki",
     },
     "199": {
         "id": 199,
-        "adminname": "Прототип-Р2",
         "name": "Прототип-Р2",
-        "isboss": "",
         "maxhp": 2100,
-        "startrage": "",
         "level": 18,
         "avatar": 227,
         "doll": "cyber_skeleton",
         "picture": "cyber_skeleton",
+        "minhit": 175,
+        "maxhit": 220,
+        "dodge": 20,
+        "crit": 40,
+        "mastery": 350,
+        "resilience": 110,
+        "defence": 85,
+        "hitsound": "metal",
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 50, 10, 0, 0]
@@ -9807,22 +9022,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "200": {
         "id": 200,
-        "adminname": "Прототип-D2",
         "name": "Прототип-D2",
-        "isboss": "",
         "maxhp": 3000,
-        "startrage": "",
         "level": 18,
         "avatar": 233,
         "doll": "cyber_skeleton_blue",
         "picture": "cyber_skeleton_blue",
+        "minhit": 200,
+        "maxhit": 240,
+        "dodge": 30,
+        "crit": 45,
+        "mastery": 400,
+        "resilience": 200,
+        "defence": 115,
+        "hitsound": "metal",
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 20, 0, 0, 0]
@@ -9873,62 +9092,45 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "201": {
         "id": 201,
-        "adminname": "Темный Лукэтлог",
         "name": "Темный Лукэтлог",
-        "isboss": "",
         "maxhp": 1,
-        "startrage": "",
         "level": 1,
         "avatar": 38,
         "doll": "lal",
         "picture": "lal",
+        "minhit": 500,
+        "maxhit": 5000,
+        "mastery": 100,
+        "resilience": 300,
+        "defence": 1,
+        "hitsound": "wood",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
-    },
-    "202": {
-        "id": 202,
-        "adminname": "Михаил",
-        "name": "Михаил",
-        "isboss": 1,
-        "maxhp": 7531,
-        "startrage": 30,
-        "level": 18,
-        "avatar": 234,
-        "doll": "mihail",
-        "picture": "mihail",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "1004": 20
-                }
-            }
-        },
-        "location": ""
+        "location": "city",
     },
     "203": {
         "id": 203,
-        "adminname": "Горожанин",
         "name": "Горожанин",
-        "isboss": "",
         "maxhp": 2200,
         "startrage": 20,
         "level": 18,
         "avatar": 232,
         "doll": "citizen",
         "picture": "citizen",
+        "minhit": 200,
+        "maxhit": 240,
+        "dodge": 15,
+        "crit": 45,
+        "mastery": 450,
+        "resilience": 140,
+        "defence": 185,
+        "hitsound": "wood",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -9964,39 +9166,47 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "204": {
         "id": 204,
-        "adminname": "Прототип-Е2",
         "name": "Прототип-Е2",
-        "isboss": "",
         "maxhp": 10000,
         "startrage": 50,
         "level": 18,
         "avatar": 227,
         "doll": "cyber_skeleton",
         "picture": "cyber_skeleton",
+        "minhit": 220,
+        "maxhit": 290,
+        "dodge": 30,
+        "crit": 80,
+        "mastery": 400,
+        "resilience": 250,
+        "defence": 110,
+        "hitsound": "metal",
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "sumerki",
     },
     "205": {
         "id": 205,
-        "adminname": "Горожанка",
         "name": "Горожанка",
-        "isboss": "",
         "maxhp": 3400,
-        "startrage": "",
         "level": 18,
         "avatar": 236,
         "doll": "frau_mob",
         "picture": "frau_mob",
+        "minhit": 330,
+        "maxhit": 350,
+        "dodge": 25,
+        "crit": 40,
+        "mastery": 250,
+        "resilience": 225,
+        "defence": 170,
+        "hitsound": "wood",
         "gender": 2,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "questloot": {
                 "89": {
@@ -10011,22 +9221,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "206": {
         "id": 206,
-        "adminname": "Член Братства",
         "name": "Дэниэл|Роберт|Лайнус|Бэшер|Фрэнк|Тёрк|Вёрджил|Ливингстон|Сол|Рубен|Йен",
-        "isboss": "",
         "maxhp": 1450,
         "startrage": 50,
         "level": 19,
         "avatar": 179,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 230,
+        "maxhit": 270,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 600,
+        "resilience": 500,
+        "defence": 100,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 20, 5]
@@ -10038,22 +9253,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "207": {
         "id": 207,
-        "adminname": "Член Ордена",
         "name": "Крис|Вин|Бернардо|Ли|Чико|Гарри|Бритт",
-        "isboss": "",
         "maxhp": 1450,
         "startrage": 50,
         "level": 19,
         "avatar": 179,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 230,
+        "maxhit": 270,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 600,
+        "resilience": 500,
+        "defence": 100,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 20, 5]
@@ -10065,22 +9285,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "sumerki",
     },
     "208": {
         "id": 208,
-        "adminname": "Клоун",
         "name": "Клоун",
-        "isboss": "",
         "maxhp": 2000,
-        "startrage": "",
         "level": 19,
         "avatar": 238,
         "doll": "clown",
         "picture": "clown",
+        "minhit": 200,
+        "maxhit": 220,
+        "dodge": 55,
+        "crit": 25,
+        "mastery": 600,
+        "resilience": 200,
+        "defence": 200,
+        "hitsound": "organic",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -10130,22 +9354,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "cirk",
     },
     "209": {
         "id": 209,
-        "adminname": "Джокер",
         "name": "Джокер",
-        "isboss": "",
         "maxhp": 3000,
-        "startrage": "",
         "level": 19,
         "avatar": 239,
         "doll": "joker",
         "picture": "joker",
+        "minhit": 265,
+        "maxhit": 350,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 650,
+        "resilience": 350,
+        "defence": 300,
+        "hitsound": "organic",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -10170,22 +9398,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "cirk",
     },
     "210": {
         "id": 210,
-        "adminname": "Клоун(второй)",
         "name": "Клоун",
-        "isboss": "",
         "maxhp": 3000,
-        "startrage": "",
         "level": 19,
         "avatar": 241,
         "doll": "clownwhite",
         "picture": "clownwhite",
+        "minhit": 190,
+        "maxhit": 210,
+        "dodge": 60,
+        "crit": 15,
+        "mastery": 650,
+        "resilience": 150,
+        "defence": 220,
+        "hitsound": "organic",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -10235,22 +9467,5373 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "cirk",
+    },
+    "213": {
+        "id": 213,
+        "name": "Красный",
+        "maxhp": 2000,
+        "level": 19,
+        "avatar": 238,
+        "doll": "clown",
+        "picture": "clown",
+        "minhit": 200,
+        "maxhit": 220,
+        "dodge": 55,
+        "crit": 25,
+        "mastery": 600,
+        "resilience": 200,
+        "defence": 200,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "undead",
+        "location": "cirk",
+    },
+    "214": {
+        "id": 214,
+        "name": "Белый",
+        "maxhp": 2000,
+        "level": 19,
+        "avatar": 241,
+        "doll": "clownwhite",
+        "picture": "clownwhite",
+        "minhit": 190,
+        "maxhit": 210,
+        "dodge": 40,
+        "crit": 15,
+        "mastery": 650,
+        "resilience": 150,
+        "defence": 220,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "undead",
+        "location": "cirk",
+    },
+    "215": {
+        "id": 215,
+        "name": "Боец Арены",
+        "maxhp": 1500,
+        "startrage": 50,
+        "level": 19,
+        "avatar": 137,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 200,
+        "maxhit": 230,
+        "dodge": 40,
+        "crit": 55,
+        "mastery": 700,
+        "resilience": 400,
+        "defence": 215,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 30]
+            },
+            "randloot": {
+                "default": {
+                    "1112": 20
+                }
+            },
+            "questloot": {
+                "207": {
+                    "19": {
+                        "390": 10
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "216": {
+        "id": 216,
+        "name": "Диана",
+        "maxhp": 1500,
+        "startrage": 50,
+        "level": 19,
+        "avatar": 135,
+        "doll": "mob_human_female",
+        "picture": "mob_human_female",
+        "minhit": 330,
+        "maxhit": 390,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 700,
+        "resilience": 450,
+        "defence": 300,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 50, 20]
+            },
+            "randloot": {
+                "default": {
+                    "1112": 100
+                }
+            },
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 35
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "217": {
+        "id": 217,
+        "name": "Сойер",
+        "maxhp": 1500,
+        "startrage": 50,
+        "level": 19,
+        "avatar": 138,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 330,
+        "maxhit": 380,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 700,
+        "resilience": 450,
+        "defence": 400,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 50, 20]
+            },
+            "randloot": {
+                "default": {
+                    "1112": 100
+                }
+            },
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 35
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "218": {
+        "id": 218,
+        "name": "Воин Арены",
+        "maxhp": 1600,
+        "startrage": 50,
+        "level": 19,
+        "avatar": 179,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 270,
+        "maxhit": 290,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 700,
+        "resilience": 550,
+        "defence": 275,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 20, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1112": 40
+                }
+            },
+            "questloot": {
+                "207": {
+                    "19": {
+                        "390": 10
+                    }
+                },
+                "220": {
+                    "default": {
+                        "1262": 40
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 35
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 35
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "219": {
+        "id": 219,
+        "name": "Алиса",
+        "maxhp": 1600,
+        "startrage": 50,
+        "level": 19,
+        "avatar": 181,
+        "doll": "mob_elv_female",
+        "picture": "mob_elv_female",
+        "minhit": 370,
+        "maxhit": 400,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 700,
+        "resilience": 550,
+        "defence": 450,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 20, 20]
+            },
+            "randloot": {
+                "default": {
+                    "1112": 100
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "220": {
+        "id": 220,
+        "name": "Чемпион Арены",
+        "maxhp": 1750,
+        "startrage": 50,
+        "level": 20,
+        "avatar": 1,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 290,
+        "maxhit": 320,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 800,
+        "resilience": 700,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 60, 40]
+            },
+            "randloot": {
+                "default": {
+                    "1112": 90
+                }
+            },
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 55
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "221": {
+        "id": 221,
+        "name": "Голем Арены",
+        "maxhp": 2000,
+        "startrage": 50,
+        "level": 19,
+        "avatar": 78,
+        "doll": "golem_twohit_twi",
+        "picture": "golem_twohit_twi",
+        "minhit": 330,
+        "maxhit": 380,
+        "dodge": 45,
+        "crit": 60,
+        "mastery": 600,
+        "resilience": 650,
+        "defence": 350,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "loot": {
+            "loot": {
+                "default": {
+                    "1115": 25,
+                    "1116": 25,
+                    "1117": 25,
+                    "1118": 25
+                }
+            },
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 75
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "222": {
+        "id": 222,
+        "name": "Хранитель Арены",
+        "maxhp": 3000,
+        "startrage": 50,
+        "level": 20,
+        "avatar": 78,
+        "doll": "golem_twohit_twi",
+        "picture": "golem_twohit_twi",
+        "minhit": 390,
+        "maxhit": 420,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 650,
+        "resilience": 700,
+        "defence": 400,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "loot": {
+            "loot": {
+                "default": {
+                    "1115": 25,
+                    "1116": 25,
+                    "1117": 25,
+                    "1118": 25
+                }
+            },
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 75
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 75
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "223": {
+        "id": 223,
+        "name": "Хендерсон",
+        "maxhp": 1850,
+        "startrage": 50,
+        "level": 20,
+        "avatar": 84,
+        "doll": "mob_elv_male",
+        "picture": "mob_elv_male",
+        "minhit": 295,
+        "maxhit": 330,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 800,
+        "resilience": 700,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 50, 30, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1112": 100
+                }
+            },
+            "questloot": {
+                "208": {
+                    "default": {
+                        "1153": 100
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "224": {
+        "id": 224,
+        "name": "Портал",
+        "maxhp": 3300,
+        "level": 16,
+        "avatar": 218,
+        "doll": "portal_darkforest",
+        "picture": "portal_darkforest",
+        "minhit": 163,
+        "maxhit": 176,
+        "dodge": 25,
+        "crit": 30,
+        "mastery": 220,
+        "resilience": 95,
+        "defence": 150,
+        "hitsound": "cotton",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "loot": {
+                "default": {
+                    "921": 200,
+                    "910": 200,
+                    "912": 200,
+                    "915": 200,
+                    "918": 200,
+                    "922": 15,
+                    "911": 15,
+                    "896": 15,
+                    "913": 15,
+                    "919": 15,
+                    "923": 1,
+                    "924": 1,
+                    "914": 1,
+                    "917": 1,
+                    "920": 1
+                }
+            },
+            "randloot": {
+                "default": {
+                    "877": 3,
+                    "1196x1": 100,
+                    "1196x2": 30
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "225": {
+        "id": 225,
+        "name": "Портал",
+        "maxhp": 3700,
+        "level": 18,
+        "avatar": 218,
+        "doll": "portal_town",
+        "picture": "portal_town",
+        "minhit": 176,
+        "maxhit": 195,
+        "dodge": 30,
+        "crit": 30,
+        "mastery": 200,
+        "resilience": 105,
+        "defence": 170,
+        "hitsound": "cotton",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "loot": {
+                "default": {
+                    "921": 200,
+                    "910": 200,
+                    "912": 200,
+                    "915": 200,
+                    "918": 200,
+                    "922": 15,
+                    "911": 15,
+                    "896": 15,
+                    "913": 15,
+                    "919": 15,
+                    "923": 1,
+                    "924": 1,
+                    "914": 1,
+                    "917": 1,
+                    "920": 1
+                }
+            },
+            "randloot": {
+                "default": {
+                    "877": 3,
+                    "1196x1": 100,
+                    "1196x2": 50,
+                    "1196x3": 10
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "226": {
+        "id": 226,
+        "name": "Портал",
+        "maxhp": 3900,
+        "level": 15,
+        "avatar": 218,
+        "doll": "portal_circus",
+        "picture": "portal_circus",
+        "minhit": 245,
+        "maxhit": 287,
+        "dodge": 30,
+        "crit": 35,
+        "mastery": 200,
+        "resilience": 125,
+        "defence": 190,
+        "hitsound": "cotton",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "loot": {
+                "default": {
+                    "921": 200,
+                    "910": 200,
+                    "912": 200,
+                    "915": 200,
+                    "918": 200,
+                    "922": 15,
+                    "911": 15,
+                    "896": 15,
+                    "913": 15,
+                    "919": 15,
+                    "923": 1,
+                    "924": 1,
+                    "914": 1,
+                    "917": 1,
+                    "920": 1
+                }
+            },
+            "randloot": {
+                "default": {
+                    "877": 3,
+                    "1196x1": 100,
+                    "1196x2": 70,
+                    "1196x3": 20
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "227": {
+        "id": 227,
+        "name": "Туманный Кратер",
+        "maxhp": 1600,
+        "startrage": 50,
+        "level": 16,
+        "avatar": 198,
+        "doll": "moonblue",
+        "picture": "moonblue",
+        "minhit": 140,
+        "maxhit": 170,
+        "dodge": 30,
+        "crit": 60,
+        "mastery": 300,
+        "resilience": 60,
+        "defence": 78,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 25
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 25
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 25
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 25
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 25
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "228": {
+        "id": 228,
+        "name": "Чам",
+        "maxhp": 1500,
+        "startrage": 35,
+        "level": 16,
+        "avatar": 199,
+        "doll": "cham",
+        "picture": "cham",
+        "minhit": 110,
+        "maxhit": 145,
+        "dodge": 25,
+        "crit": 30,
+        "mastery": 250,
+        "resilience": 40,
+        "defence": 58,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "beast",
+        "location": "limb",
+    },
+    "229": {
+        "id": 229,
+        "name": "Чам-бригадир",
+        "maxhp": 1700,
+        "startrage": 50,
+        "level": 16,
+        "avatar": 200,
+        "doll": "cham_angry",
+        "picture": "cham_angry",
+        "minhit": 125,
+        "maxhit": 160,
+        "dodge": 30,
+        "crit": 35,
+        "mastery": 280,
+        "resilience": 50,
+        "defence": 69,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "beast",
+        "location": "limb",
+    },
+    "230": {
+        "id": 230,
+        "name": "Кратер",
+        "maxhp": 1400,
+        "level": 16,
+        "avatar": 197,
+        "doll": "moonkin",
+        "picture": "moonkin",
+        "minhit": 135,
+        "maxhit": 160,
+        "dodge": 25,
+        "crit": 55,
+        "mastery": 250,
+        "resilience": 50,
+        "defence": 66,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "location": "limb",
+    },
+    "231": {
+        "id": 231,
+        "name": "Могильный Пупмат",
+        "maxhp": 1600,
+        "level": 17,
+        "avatar": 222,
+        "doll": "grimmpup",
+        "picture": "grimmpup",
+        "minhit": 150,
+        "maxhit": 180,
+        "dodge": 15,
+        "crit": 40,
+        "mastery": 250,
+        "resilience": 50,
+        "defence": 55,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "beast",
+        "location": "limb",
+    },
+    "232": {
+        "id": 232,
+        "name": "Кровавый Пупмат",
+        "maxhp": 1900,
+        "level": 18,
+        "avatar": 223,
+        "doll": "grimmpup_bloody",
+        "picture": "grimmpup_bloody",
+        "minhit": 185,
+        "maxhit": 245,
+        "dodge": 40,
+        "crit": 40,
+        "mastery": 400,
+        "resilience": 200,
+        "defence": 125,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 15
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "233": {
+        "id": 233,
+        "name": "Гриммер",
+        "maxhp": 1900,
+        "level": 17,
+        "avatar": 224,
+        "doll": "grimmer",
+        "picture": "grimmer",
+        "minhit": 165,
+        "maxhit": 180,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 200,
+        "resilience": 50,
+        "defence": 85,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "undead",
+        "location": "limb",
+    },
+    "234": {
+        "id": 234,
+        "name": "Гриммер-воин",
+        "maxhp": 2100,
+        "level": 18,
+        "avatar": 225,
+        "doll": "grimmer_warrior",
+        "picture": "grimmer_warrior",
+        "minhit": 185,
+        "maxhit": 225,
+        "dodge": 35,
+        "crit": 45,
+        "mastery": 350,
+        "resilience": 200,
+        "defence": 120,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 15
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "235": {
+        "id": 235,
+        "name": "Прототип-D2",
+        "maxhp": 3000,
+        "level": 18,
+        "avatar": 233,
+        "doll": "cyber_skeleton_blue",
+        "picture": "cyber_skeleton_blue",
+        "minhit": 200,
+        "maxhit": 240,
+        "dodge": 30,
+        "crit": 45,
+        "mastery": 400,
+        "resilience": 200,
+        "defence": 115,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "loot": {
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 15
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "236": {
+        "id": 236,
+        "name": "Клоун",
+        "maxhp": 2000,
+        "level": 19,
+        "avatar": 238,
+        "doll": "clown",
+        "picture": "clown",
+        "minhit": 180,
+        "maxhit": 200,
+        "dodge": 45,
+        "crit": 25,
+        "mastery": 600,
+        "resilience": 200,
+        "defence": 170,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 15
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "238": {
+        "id": 238,
+        "name": "Клоун",
+        "maxhp": 3000,
+        "level": 19,
+        "avatar": 241,
+        "doll": "clownwhite",
+        "picture": "clownwhite",
+        "minhit": 190,
+        "maxhit": 210,
+        "dodge": 60,
+        "crit": 15,
+        "mastery": 650,
+        "resilience": 150,
+        "defence": 220,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "questloot": {
+                "220": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 15
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 15
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "239": {
+        "id": 239,
+        "name": "Огненная Погибель",
+        "maxhp": 3600,
+        "startrage": 30,
+        "level": 20,
+        "avatar": 123,
+        "doll": "dragon_twohit",
+        "picture": "dragon_twohit",
+        "minhit": 150,
+        "maxhit": 180,
+        "dodge": 30,
+        "crit": 60,
+        "mastery": 550,
+        "resilience": 300,
+        "defence": 150,
+        "hitsound": "bones",
+        "gender": 1,
+        "race": "beast",
+        "location": "limb",
+    },
+    "240": {
+        "id": 240,
+        "name": "Штурмовик",
+        "maxhp": 210,
+        "level": 5,
+        "avatar": 254,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 30,
+        "maxhit": 48,
+        "dodge": 30,
+        "crit": 38,
+        "mastery": 33,
+        "defence": 11,
+        "gender": 1,
+        "race": "human",
+        "pet": 6,
+        "loot": {
+            "questloot": {
+                "213": {
+                    "default": {
+                        "1207": 100
+                    }
+                }
+            }
+        },
+        "hidden": 1
+    },
+    "241": {
+        "id": 241,
+        "name": "Штурмовик",
+        "maxhp": 510,
+        "level": 12,
+        "avatar": 254,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 40,
+        "maxhit": 68,
+        "dodge": 30,
+        "crit": 38,
+        "mastery": 33,
+        "defence": 21,
+        "gender": 1,
+        "race": "human",
+        "pet": 6,
+        "loot": {
+            "questloot": {
+                "214": {
+                    "default": {
+                        "1207": 100
+                    }
+                }
+            }
+        },
+        "hidden": 1
+    },
+    "242": {
+        "id": 242,
+        "name": "Штурмовик",
+        "maxhp": 810,
+        "level": 16,
+        "avatar": 254,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 70,
+        "maxhit": 98,
+        "dodge": 40,
+        "crit": 38,
+        "mastery": 33,
+        "defence": 41,
+        "gender": 1,
+        "race": "human",
+        "pet": 6,
+        "loot": {
+            "questloot": {
+                "215": {
+                    "default": {
+                        "1207": 100
+                    }
+                }
+            }
+        },
+        "hidden": 1
+    },
+    "243": {
+        "id": 243,
+        "name": "Сумеречный Охотник",
+        "maxhp": 2600,
+        "level": 20,
+        "avatar": 257,
+        "doll": "citizen_black",
+        "picture": "citizen_black",
+        "minhit": 225,
+        "maxhit": 255,
+        "dodge": 45,
+        "crit": 55,
+        "mastery": 450,
+        "resilience": 250,
+        "defence": 150,
+        "hitsound": "cotton",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "1237": 100,
+                    "1259": 3
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "245": {
+        "id": 245,
+        "name": "Кратер",
+        "maxhp": 630,
+        "level": 11,
+        "avatar": 197,
+        "doll": "moonkinsmall",
+        "picture": "moonkinsmall",
+        "minhit": 78,
+        "maxhit": 112,
+        "dodge": 25,
+        "crit": 35,
+        "mastery": 160,
+        "resilience": 50,
+        "defence": 50,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "location": "zona, sumerki",
+    },
+    "246": {
+        "id": 246,
+        "name": "Придворный призрак",
+        "maxhp": 3200,
+        "level": 20,
+        "avatar": 236,
+        "doll": "frau_mob",
+        "picture": "frau_mob",
+        "minhit": 490,
+        "maxhit": 550,
+        "dodge": 65,
+        "crit": 35,
+        "mastery": 650,
+        "resilience": 325,
+        "defence": 425,
+        "hitsound": "wood",
+        "gender": 2,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [150, 40]
+            },
+            "randloot": {
+                "default": {
+                    "1294": 30,
+                    "1379": 24
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                },
+                "220": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "229": {
+                    "default": {
+                        "1297": 15
+                    }
+                }
+            }
+        },
+        "location": "zamok",
+    },
+    "248": {
+        "id": 248,
+        "name": "Страж Замка",
+        "maxhp": 4800,
+        "level": 20,
+        "avatar": 268,
+        "doll": "guardian",
+        "picture": "guardian",
+        "minhit": 470,
+        "maxhit": 690,
+        "dodge": 15,
+        "crit": 55,
+        "mastery": 850,
+        "resilience": 300,
+        "defence": 375,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "ghost",
+        "location": "zamok",
+    },
+    "249": {
+        "id": 249,
+        "name": "Страж Замка",
+        "maxhp": 4800,
+        "level": 20,
+        "avatar": 268,
+        "doll": "guardian",
+        "picture": "guardian",
+        "minhit": 490,
+        "maxhit": 670,
+        "dodge": 15,
+        "crit": 55,
+        "mastery": 850,
+        "resilience": 300,
+        "defence": 275,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "ghost",
+        "location": "zamok",
+    },
+    "250": {
+        "id": 250,
+        "name": "Страж Замка",
+        "maxhp": 4800,
+        "level": 20,
+        "avatar": 268,
+        "doll": "guardian",
+        "picture": "guardian",
+        "minhit": 590,
+        "maxhit": 670,
+        "dodge": 15,
+        "crit": 55,
+        "mastery": 850,
+        "resilience": 300,
+        "defence": 275,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "ghost",
+        "location": "zamok",
+    },
+    "251": {
+        "id": 251,
+        "name": "Мимик",
+        "maxhp": 3150,
+        "level": 20,
+        "avatar": 269,
+        "doll": "mimic",
+        "picture": "mimic",
+        "minhit": 450,
+        "maxhit": 550,
+        "dodge": 50,
+        "crit": 40,
+        "mastery": 650,
+        "resilience": 625,
+        "defence": 225,
+        "hitsound": "wood",
+        "gender": 2,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [90, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1294": 16,
+                    "1297": 70,
+                    "1327": 0.3,
+                    "1380": 5
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                },
+                "220": {
+                    "default": {
+                        "1262": 25
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 25
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 25
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 20
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 20
+                    }
+                },
+                "229": {
+                    "default": {
+                        "1297": 15
+                    }
+                }
+            }
+        },
+        "location": "zamok",
+    },
+    "252": {
+        "id": 252,
+        "name": "Старейшина Джейкоб",
+        "maxhp": 15000,
+        "startrage": 50,
+        "level": 20,
+        "avatar": 169,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 170,
+        "maxhit": 210,
+        "dodge": 10,
+        "crit": 15,
+        "mastery": 600,
+        "resilience": 600,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "factionmoney": {
+                "default": {
+                    "min": 200,
+                    "max": 200
+                }
+            }
+        },
+        "location": "zona ",
+        "hidden": 1
+    },
+    "253": {
+        "id": 253,
+        "name": "Магистр Адамс",
+        "maxhp": 15000,
+        "startrage": 50,
+        "level": 20,
+        "avatar": 168,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 170,
+        "maxhit": 210,
+        "dodge": 10,
+        "crit": 15,
+        "mastery": 600,
+        "resilience": 600,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "factionmoney": {
+                "default": {
+                    "min": 200,
+                    "max": 200
+                }
+            }
+        },
+        "location": "zona",
+        "hidden": 1
+    },
+    "255": {
+        "id": 255,
+        "name": "Лукэтлог",
+        "maxhp": 600,
+        "level": 2,
+        "avatar": 14,
+        "doll": "lookatlog",
+        "picture": "lookatlog",
+        "minhit": 13,
+        "maxhit": 17,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 3,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "factionmoney": {
+                "default": {
+                    "min": 2,
+                    "max": 2
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "256": {
+        "id": 256,
+        "name": "Лукэтлог",
+        "maxhp": 50,
+        "level": 2,
+        "avatar": 38,
+        "doll": "lal",
+        "picture": "lal",
+        "minhit": 10,
+        "maxhit": 15,
+        "dodge": 20,
+        "crit": 20,
+        "defence": 3,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "factionmoney": {
+                "default": {
+                    "min": 7,
+                    "max": 7
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "257": {
+        "id": 257,
+        "name": "Злой Клоун",
+        "maxhp": 2000,
+        "level": 20,
+        "avatar": 238,
+        "doll": "clown",
+        "picture": "clown",
+        "minhit": 240,
+        "maxhit": 270,
+        "dodge": 50,
+        "crit": 35,
+        "mastery": 1100,
+        "resilience": 150,
+        "defence": 250,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "undead",
+        "location": "zamok",
+    },
+    "258": {
+        "id": 258,
+        "name": "Полтергейст",
+        "maxhp": 2330,
+        "startrage": 20,
+        "level": 20,
+        "avatar": 274,
+        "doll": "armor_mob",
+        "picture": "armor_mob",
+        "minhit": 490,
+        "maxhit": 620,
+        "dodge": 35,
+        "crit": 65,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 520,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [150, 50, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1294": 32
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                },
+                "220": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "229": {
+                    "default": {
+                        "1297": 25
+                    }
+                },
+                "232": {
+                    "default": {
+                        "1371": 100
+                    }
+                }
+            }
+        },
+        "location": "zamok",
+    },
+    "259": {
+        "id": 259,
+        "name": "Золотой Мимик",
+        "maxhp": 3550,
+        "level": 20,
+        "avatar": 270,
+        "doll": "mimic_gold",
+        "picture": "mimic_gold",
+        "minhit": 470,
+        "maxhit": 580,
+        "dodge": 50,
+        "crit": 40,
+        "mastery": 650,
+        "resilience": 625,
+        "defence": 225,
+        "hitsound": "wood",
+        "gender": 2,
+        "race": "ghost",
+        "pet": 49,
+        "loot": {
+            "crystals": {
+                "default": [100, 50, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1294": 16,
+                    "1297": 80,
+                    "1327": 0.5,
+                    "1380": 10
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                },
+                "220": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "229": {
+                    "default": {
+                        "1297": 15
+                    }
+                }
+            }
+        },
+        "location": "zamok",
+    },
+    "260": {
+        "id": 260,
+        "name": "Беглый Голем",
+        "maxhp": 800,
+        "level": 4,
+        "avatar": 78,
+        "doll": "golem_twohit",
+        "picture": "golem_twohit",
+        "minhit": 32,
+        "maxhit": 48,
+        "dodge": 10,
+        "crit": 10,
+        "defence": 5,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "location": "city",
+    },
+    "262": {
+        "id": 262,
+        "name": "Белый",
+        "maxhp": 2000,
+        "level": 20,
+        "avatar": 241,
+        "doll": "clownwhite",
+        "picture": "clownwhite",
+        "minhit": 240,
+        "maxhit": 270,
+        "dodge": 50,
+        "crit": 35,
+        "mastery": 1100,
+        "resilience": 100,
+        "defence": 150,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "undead",
+        "location": "cirk",
+    },
+    "263": {
+        "id": 263,
+        "name": "Дух Гвоздей",
+        "maxhp": 3630,
+        "startrage": 70,
+        "level": 20,
+        "avatar": 275,
+        "doll": "metal1",
+        "picture": "metal1",
+        "minhit": 490,
+        "maxhit": 620,
+        "dodge": 45,
+        "crit": 70,
+        "mastery": 1000,
+        "resilience": 100,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1375": 45,
+                    "1401": 40
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                },
+                "220": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "221": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "222": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "223": {
+                    "default": {
+                        "1262": 55
+                    }
+                },
+                "224": {
+                    "default": {
+                        "1262": 55
+                    }
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "266": {
+        "id": 266,
+        "name": "Охотник",
+        "maxhp": 3600,
+        "startrage": 50,
+        "level": 20,
+        "avatar": 257,
+        "doll": "citizen_black",
+        "picture": "citizen_black",
+        "minhit": 825,
+        "maxhit": 980,
+        "dodge": 5,
+        "crit": 65,
+        "mastery": 1050,
+        "resilience": 250,
+        "defence": 150,
+        "hitsound": "cotton",
+        "gender": 1,
+        "race": "ghost",
+        "location": "sumerki",
+        "hidden": 1
+    },
+    "267": {
+        "id": 267,
+        "name": "Пожиратель",
+        "maxhp": 3600,
+        "startrage": 50,
+        "level": 20,
+        "avatar": 270,
+        "doll": "mimic_gold",
+        "picture": "mimic_gold",
+        "minhit": 740,
+        "maxhit": 940,
+        "dodge": 5,
+        "crit": 55,
+        "mastery": 950,
+        "resilience": 250,
+        "defence": 150,
+        "hitsound": "cotton",
+        "gender": 1,
+        "race": "ghost",
+        "location": "sumerki",
+        "hidden": 1
+    },
+    "268": {
+        "id": 268,
+        "name": "Летучая змея",
+        "maxhp": 3600,
+        "startrage": 70,
+        "level": 20,
+        "avatar": 283,
+        "doll": "serpentfly",
+        "picture": "serpentfly",
+        "minhit": 490,
+        "maxhit": 520,
+        "dodge": 45,
+        "crit": 50,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [70, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1410": 60
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                }
+            },
+            "reqloot": {
+                "reqs": [{
+                    "type": "charparam",
+                    "key": "canineknown",
+                    "sign": "=",
+                    "value": "1"
+                }],
+                "items": {
+                    "1412": 10
+                }
+            }
+        },
+        "location": "land",
+    },
+    "269": {
+        "id": 269,
+        "name": "Виверна",
+        "maxhp": 4300,
+        "startrage": 70,
+        "level": 20,
+        "avatar": 284,
+        "doll": "serpentfly_blue",
+        "picture": "serpentfly_blue",
+        "minhit": 550,
+        "maxhit": 720,
+        "dodge": 45,
+        "crit": 60,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1410": 60
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                }
+            },
+            "reqloot": {
+                "reqs": [{
+                    "type": "charparam",
+                    "key": "canineknown",
+                    "sign": "=",
+                    "value": "1"
+                }],
+                "items": {
+                    "1412": 50
+                }
+            }
+        },
+        "location": "land",
+    },
+    "270": {
+        "id": 270,
+        "name": "Летучая змея",
+        "maxhp": 3300,
+        "startrage": 70,
+        "level": 20,
+        "avatar": 283,
+        "doll": "serpentfly",
+        "picture": "serpentfly",
+        "minhit": 490,
+        "maxhit": 620,
+        "dodge": 45,
+        "crit": 70,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "beast",
+        "location": "land",
+    },
+    "271": {
+        "id": 271,
+        "name": "Несуществующий моб",
+        "maxhp": 3300,
+        "startrage": 70,
+        "level": 20,
+        "avatar": 285,
+        "doll": "hydra",
+        "picture": "hydra",
+        "minhit": 490,
+        "maxhit": 620,
+        "dodge": 45,
+        "crit": 70,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "location": "land",
+        "hidden": 1
+    },
+    "273": {
+        "id": 273,
+        "name": "Рив",
+        "maxhp": 5900,
+        "level": 20,
+        "avatar": 286,
+        "doll": "hydra1",
+        "picture": "hydra1",
+        "minhit": 690,
+        "maxhit": 820,
+        "dodge": 35,
+        "crit": 55,
+        "mastery": 1000,
+        "resilience": 168,
+        "defence": 380,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1456": 30,
+                    "1495": 14
+                }
+            },
+            "questloot": {
+                "250": {
+                    "default": {
+                        "1469": 30
+                    }
+                }
+            }
+        },
+        "location": "land",
+    },
+    "274": {
+        "id": 274,
+        "name": "Муирт",
+        "maxhp": 5600,
+        "level": 20,
+        "avatar": 287,
+        "doll": "hydra2",
+        "picture": "hydra2",
+        "minhit": 790,
+        "maxhit": 820,
+        "dodge": 35,
+        "crit": 50,
+        "mastery": 800,
+        "resilience": 150,
+        "defence": 420,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1457": 30,
+                    "1495": 18
+                }
+            },
+            "questloot": {
+                "250": {
+                    "default": {
+                        "1470": 30
+                    }
+                }
+            }
+        },
+        "location": "land",
+    },
+    "275": {
+        "id": 275,
+        "name": "Королевская Виверна",
+        "maxhp": 4600,
+        "startrage": 70,
+        "level": 20,
+        "avatar": 284,
+        "doll": "serpentfly_blue",
+        "picture": "serpentfly_blue",
+        "minhit": 550,
+        "maxhit": 720,
+        "dodge": 45,
+        "crit": 60,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 320,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1410": 60,
+                    "1413": 100
+                }
+            },
+            "questloot": {
+                "207": {
+                    "20": {
+                        "390": 10
+                    }
+                }
+            },
+            "reqloot": {
+                "reqs": [{
+                    "type": "charparam",
+                    "key": "canineknown",
+                    "sign": "=",
+                    "value": "1"
+                }],
+                "items": {
+                    "1412": 50
+                }
+            }
+        },
+        "location": "land",
+    },
+    "276": {
+        "id": 276,
+        "name": "С.Т.М.в.В.",
+        "maxhp": 1000,
+        "level": 15,
+        "avatar": 14,
+        "doll": "lookatlog",
+        "picture": "lookatlog",
+        "minhit": 100,
+        "maxhit": 100,
+        "defence": 30,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "beast",
+        "location": "city",
+        "hidden": 1
+    },
+    "277": {
+        "id": 277,
+        "name": "Рачий Воитель",
+        "maxhp": 650,
+        "level": 9,
+        "avatar": 109,
+        "doll": "armored_orc",
+        "picture": "armored_orc",
+        "minhit": 75,
+        "maxhit": 110,
+        "dodge": 15,
+        "crit": 28,
+        "mastery": 70,
+        "resilience": 20,
+        "defence": 33,
+        "gender": 1,
+        "race": "intelligent",
+        "location": "gory",
+        "hidden": 1
+    },
+    "278": {
+        "id": 278,
+        "name": "Черепаха",
+        "maxhp": 4250,
+        "level": 20,
+        "avatar": 292,
+        "doll": "turtle_green",
+        "picture": "turtle_green",
+        "minhit": 775,
+        "maxhit": 980,
+        "dodge": 10,
+        "crit": 35,
+        "mastery": 775,
+        "resilience": 35,
+        "defence": 545,
+        "gender": 1,
+        "race": "beast",
+        "loot": "{\"crystals\":{\"default\":[100,30,10,1]},\"randloot\":{\"default\":{\"1505\":50,\"1506\":50}},\"questloot\":{\"266\":{\"default\":{\"1547\":30}},\"296\":{\"default\":{\"1793\":2}}}}\r\n",
+        "location": "les",
+    },
+    "279": {
+        "id": 279,
+        "name": "Черепаха",
+        "maxhp": 4500,
+        "level": 20,
+        "avatar": 293,
+        "doll": "turtle_black",
+        "picture": "turtle_black",
+        "minhit": 750,
+        "maxhit": 990,
+        "dodge": 30,
+        "crit": 55,
+        "mastery": 1250,
+        "resilience": 175,
+        "defence": 375,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10, 1]
+            },
+            "randloot": {
+                "default": {
+                    "1505": 50,
+                    "1506": 50
+                }
+            },
+            "questloot": {
+                "266": {
+                    "default": {
+                        "1548": 30
+                    }
+                },
+                "296": {
+                    "default": {
+                        "1793": 2
+                    }
+                }
+            }
+        },
+        "location": "les",
+    },
+    "280": {
+        "id": 280,
+        "name": "Черепаха",
+        "maxhp": 5500,
+        "level": 20,
+        "avatar": 294,
+        "doll": "turtle_red",
+        "picture": "turtle_red",
+        "minhit": 1150,
+        "maxhit": 1270,
+        "dodge": 30,
+        "crit": 45,
+        "mastery": 1150,
+        "resilience": 120,
+        "defence": 650,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 15, 5]
+            },
+            "randloot": {
+                "default": {
+                    "1505": 100,
+                    "1506": 100,
+                    "1509": 100
+                }
+            },
+            "questloot": {
+                "260": {
+                    "default": {
+                        "1509": 100
+                    }
+                },
+                "296": {
+                    "default": {
+                        "1793": 2
+                    }
+                }
+            }
+        },
+        "location": "les",
+    },
+    "281": {
+        "id": 281,
+        "name": "Скелет-Охранник",
+        "maxhp": 365,
+        "level": 3,
+        "avatar": 41,
+        "doll": "ozs",
+        "picture": "ozs",
+        "minhit": 15,
+        "maxhit": 30,
+        "dodge": 5,
+        "crit": 10,
+        "defence": 2,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "questloot": {
+                "264": {
+                    "default": {
+                        "1520": 100
+                    }
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "282": {
+        "id": 282,
+        "name": "Слуга Руа",
+        "maxhp": 4000,
+        "level": 20,
+        "avatar": 294,
+        "doll": "turtle_red",
+        "picture": "turtle_red",
+        "minhit": 750,
+        "maxhit": 800,
+        "crit": 30,
+        "mastery": 1500,
+        "resilience": 100,
+        "defence": 400,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 15, 5, 1]
+            },
+            "randloot": {
+                "default": {
+                    "1505": 100,
+                    "1506": 100,
+                    "1509": 10
+                }
+            }
+        },
+        "location": "les",
+    },
+    "284": {
+        "id": 284,
+        "name": "В.В.В. Вурун",
+        "maxhp": 7500,
+        "level": 20,
+        "avatar": 111,
+        "doll": "bigboss_orc",
+        "picture": "bigboss_orc",
+        "minhit": 1130,
+        "maxhit": 1375,
+        "crit": 25,
+        "mastery": 150,
+        "resilience": 50,
+        "defence": 450,
+        "gender": 1,
+        "race": "intelligent",
+        "location": "cirk",
+    },
+    "286": {
+        "id": 286,
+        "name": "Следующий моб",
+        "maxhp": 11,
+        "level": 20,
+        "avatar": 294,
+        "doll": "turtle_red",
+        "picture": "turtle_red",
+        "minhit": 1250,
+        "maxhit": 1370,
+        "dodge": 30,
+        "crit": 45,
+        "mastery": 1150,
+        "resilience": 120,
+        "defence": 700,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 15, 5]
+            },
+            "randloot": {
+                "default": {
+                    "1505": 100,
+                    "1506": 100
+                }
+            },
+            "questloot": {
+                "259": {
+                    "default": {
+                        "1509": 100
+                    }
+                }
+            }
+        },
+        "location": "les",
+    },
+    "287": {
+        "id": 287,
+        "name": "Ифрит",
+        "maxhp": 3500,
+        "startrage": 1,
+        "level": 19,
+        "avatar": 164,
+        "doll": "djin",
+        "picture": "djin",
+        "minhit": 400,
+        "maxhit": 557,
+        "dodge": 35,
+        "crit": 66,
+        "mastery": 700,
+        "defence": 198,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "intelligent",
+        "location": "zona",
+        "hidden": 1
+    },
+    "288": {
+        "id": 288,
+        "name": "Бреган|Лакки|Бруччо ",
+        "maxhp": 2000,
+        "level": 19,
+        "avatar": 55,
+        "doll": "mob_demon_male",
+        "picture": "mob_demon_male",
+        "minhit": 300,
+        "maxhit": 325,
+        "dodge": 75,
+        "crit": 55,
+        "mastery": 600,
+        "resilience": 200,
+        "defence": 500,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "demon",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.2,
+                    "1042": 0.2,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1181": 0.2
+                },
+                "default": {
+                    "405": 100,
+                    "404": 0.2
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "289": {
+        "id": 289,
+        "name": "Элиза|Алекси|Акрома",
+        "maxhp": 1900,
+        "startrage": 50,
+        "level": 19,
+        "avatar": 181,
+        "doll": "mob_demon_female",
+        "picture": "mob_demon_female",
+        "minhit": 375,
+        "maxhit": 410,
+        "dodge": 45,
+        "crit": 75,
+        "mastery": 700,
+        "resilience": 350,
+        "defence": 660,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "demon",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.2,
+                    "1042": 0.2,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1180": 0.2
+                },
+                "default": {
+                    "405": 100,
+                    "404": 0.2
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "290": {
+        "id": 290,
+        "name": "Рон|Катбарр|Венерант",
+        "maxhp": 1650,
+        "level": 19,
+        "avatar": 139,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 460,
+        "maxhit": 480,
+        "dodge": 15,
+        "crit": 80,
+        "mastery": 650,
+        "resilience": 200,
+        "defence": 350,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.2,
+                    "1042": 0.2,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1179": 0.2
+                },
+                "default": {
+                    "405": 100,
+                    "404": 0.2
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "292": {
+        "id": 292,
+        "name": "Крималл|Ронго|Нихо",
+        "maxhp": 2050,
+        "level": 20,
+        "avatar": 134,
+        "doll": "mob_elv_male",
+        "picture": "mob_elv_male",
+        "minhit": 460,
+        "maxhit": 550,
+        "dodge": 15,
+        "crit": 80,
+        "mastery": 650,
+        "resilience": 200,
+        "defence": 350,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "elv",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.5
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.2,
+                    "1042": 0.2,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1179": 0.2
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "293": {
+        "id": 293,
+        "name": "Арибет|Вай|Нами",
+        "maxhp": 2350,
+        "level": 20,
+        "avatar": 131,
+        "doll": "mob_elv_female",
+        "picture": "mob_elv_female",
+        "minhit": 560,
+        "maxhit": 580,
+        "dodge": 70,
+        "crit": 45,
+        "mastery": 650,
+        "resilience": 250,
+        "defence": 350,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "elv",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.5
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.2,
+                    "1042": 0.2,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1180": 0.2
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "294": {
+        "id": 294,
+        "name": "Бальмур|Лонгин|Пелей",
+        "maxhp": 2350,
+        "level": 20,
+        "avatar": 61,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 560,
+        "maxhit": 580,
+        "dodge": 70,
+        "crit": 45,
+        "mastery": 650,
+        "resilience": 250,
+        "defence": 350,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.5
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.2,
+                    "1042": 0.2,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1180": 0.2
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "295": {
+        "id": 295,
+        "name": "Тирфинг|Вел|Крода ",
+        "maxhp": 3250,
+        "level": 20,
+        "avatar": 134,
+        "doll": "mob_elv_male",
+        "picture": "mob_elv_male",
+        "minhit": 760,
+        "maxhit": 970,
+        "dodge": 15,
+        "crit": 80,
+        "mastery": 1150,
+        "resilience": 200,
+        "defence": 450,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "elv",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.7
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1179": 0.3
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "296": {
+        "id": 296,
+        "name": "Ассайл|Ареа|Тришула",
+        "maxhp": 2350,
+        "level": 20,
+        "avatar": 125,
+        "doll": "mob_demon_female",
+        "picture": "mob_demon_female",
+        "minhit": 860,
+        "maxhit": 920,
+        "dodge": 80,
+        "crit": 55,
+        "mastery": 1050,
+        "resilience": 250,
+        "defence": 450,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "demon",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.5
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1181": 0.3
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "297": {
+        "id": 297,
+        "name": "Огмия|Шакти|Охайн",
+        "maxhp": 4350,
+        "level": 20,
+        "avatar": 131,
+        "doll": "mob_elv_female",
+        "picture": "mob_elv_female",
+        "minhit": 660,
+        "maxhit": 980,
+        "dodge": 70,
+        "crit": 45,
+        "mastery": 1250,
+        "resilience": 250,
+        "defence": 650,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "elv",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 50, 10, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.5
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.7,
+                    "1180": 0.3
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "298": {
+        "id": 298,
+        "name": "Фиокл",
+        "maxhp": 2650,
+        "level": 20,
+        "avatar": 128,
+        "doll": "mob_demon_male",
+        "picture": "mob_demon_male",
+        "minhit": 570,
+        "maxhit": 730,
+        "dodge": 70,
+        "crit": 70,
+        "mastery": 750,
+        "resilience": 250,
+        "defence": 360,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "demon",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 100, 50, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.5
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.3,
+                    "641": 5,
+                    "1560": 10
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "299": {
+        "id": 299,
+        "name": "Сигурдр",
+        "maxhp": 2650,
+        "level": 20,
+        "avatar": 128,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male",
+        "minhit": 560,
+        "maxhit": 720,
+        "dodge": 65,
+        "crit": 65,
+        "mastery": 650,
+        "resilience": 250,
+        "defence": 350,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "crystals": {
+                "default": [100, 100, 100, 100, 50, 5]
+            },
+            "randloot": {
+                "19": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.1,
+                    "641": 0.5
+                },
+                "default": {
+                    "405": 100,
+                    "1559": 50,
+                    "404": 0.3,
+                    "1042": 0.3,
+                    "1041": 0.3,
+                    "641": 5,
+                    "1560": 10
+                }
+            }
+        },
+        "location": "pant",
+    },
+    "300": {
+        "id": 300,
+        "name": "Дедуля",
+        "maxhp": 2014,
+        "startrage": 1,
+        "level": 14,
+        "avatar": 81,
+        "doll": "santa",
+        "picture": "santa",
+        "minhit": 25,
+        "maxhit": 50,
+        "mastery": 99999,
+        "defence": 99999,
+        "hitsound": "cotton",
+        "gender": 1,
+        "race": "intelligent",
+        "location": "city",
+        "hidden": 1
+    },
+    "301": {
+        "id": 301,
+        "name": "Тень",
+        "maxhp": 3000,
+        "level": 20,
+        "avatar": 303,
+        "doll": "mob_darkshade",
+        "picture": "mob_darkshade",
+        "minhit": 900,
+        "maxhit": 1000,
+        "dodge": 60,
+        "crit": 50,
+        "mastery": 900,
+        "defence": 650,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [100, 10, 0]
+            },
+            "randloot": {
+                "default": {
+                    "1646": 60
+                }
+            }
+        },
+        "location": "les",
+    },
+    "304": {
+        "id": 304,
+        "name": "Баг",
+        "maxhp": 120,
+        "startrage": 66,
+        "level": 99,
+        "avatar": 315,
+        "doll": "toy1",
+        "picture": "toy1",
+        "minhit": 55,
+        "maxhit": 75,
+        "dodge": 50,
+        "crit": 50,
+        "mastery": 50,
+        "resilience": 50,
+        "defence": 70,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "loot": {
+            "randloot": {
+                "5": {
+                    "882": 10
+                },
+                "6": {
+                    "882": 10
+                },
+                "7": {
+                    "882": 10
+                },
+                "8": {
+                    "882": 10
+                },
+                "9": {
+                    "882": 10,
+                    "926": 10
+                },
+                "10": {
+                    "926": 10
+                },
+                "11": {
+                    "926": 10
+                },
+                "12": {
+                    "926": 10
+                },
+                "13": {
+                    "926": 15
+                },
+                "14": {
+                    "926": 10
+                },
+                "15": {
+                    "926": 10
+                },
+                "16": {
+                    "926": 10,
+                    "968": 10
+                },
+                "17": {
+                    "926": 10,
+                    "968": 10
+                },
+                "18": {
+                    "926": 10,
+                    "968": 10
+                },
+                "19": {
+                    "926": 10,
+                    "968": 10
+                },
+                "20": {
+                    "968": 10
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "305": {
+        "id": 305,
+        "name": "Лаг",
+        "maxhp": 450,
+        "level": 99,
+        "avatar": 316,
+        "doll": "toy3",
+        "picture": "toy3",
+        "minhit": 60,
+        "maxhit": 70,
+        "dodge": 50,
+        "crit": 50,
+        "mastery": 50,
+        "resilience": 50,
+        "defence": 50,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "loot": {
+            "randloot": {
+                "5": {
+                    "882": 10
+                },
+                "6": {
+                    "882": 10
+                },
+                "7": {
+                    "882": 10
+                },
+                "8": {
+                    "882": 10
+                },
+                "9": {
+                    "882": 10,
+                    "926": 10
+                },
+                "10": {
+                    "926": 10
+                },
+                "11": {
+                    "926": 10
+                },
+                "12": {
+                    "926": 10
+                },
+                "13": {
+                    "926": 15
+                },
+                "14": {
+                    "926": 10
+                },
+                "15": {
+                    "926": 10
+                },
+                "16": {
+                    "926": 10,
+                    "968": 10
+                },
+                "17": {
+                    "926": 10,
+                    "968": 10
+                },
+                "18": {
+                    "926": 10,
+                    "968": 10
+                },
+                "19": {
+                    "926": 10,
+                    "968": 10
+                },
+                "20": {
+                    "968": 10
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "309": {
+        "id": 309,
+        "name": "Баг TEST",
+        "maxhp": 100,
+        "startrage": 66,
+        "level": 99,
+        "avatar": 315,
+        "doll": "toy1",
+        "picture": "toy1",
+        "minhit": 50,
+        "maxhit": 50,
+        "dodge": 50,
+        "crit": 50,
+        "mastery": 50,
+        "resilience": 50,
+        "defence": 50,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "loot": {
+            "randloot": {
+                "5": {
+                    "882": 10
+                },
+                "6": {
+                    "882": 10
+                },
+                "7": {
+                    "882": 10
+                },
+                "8": {
+                    "882": 10
+                },
+                "9": {
+                    "882": 10,
+                    "926": 10
+                },
+                "10": {
+                    "926": 10
+                },
+                "11": {
+                    "926": 10
+                },
+                "12": {
+                    "926": 10
+                },
+                "13": {
+                    "926": 15
+                },
+                "14": {
+                    "926": 10
+                },
+                "15": {
+                    "926": 10
+                },
+                "16": {
+                    "926": 10,
+                    "968": 10
+                },
+                "17": {
+                    "926": 10,
+                    "968": 10
+                },
+                "18": {
+                    "926": 10,
+                    "968": 10
+                },
+                "19": {
+                    "926": 10,
+                    "968": 10
+                },
+                "20": {
+                    "968": 10
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "310": {
+        "id": 310,
+        "name": "Пират",
+        "maxhp": 6000,
+        "level": 20,
+        "avatar": 321,
+        "doll": "pirrate_01",
+        "picture": "pirrate_01",
+        "minhit": 750,
+        "maxhit": 950,
+        "dodge": 10,
+        "crit": 35,
+        "mastery": 775,
+        "resilience": 50,
+        "defence": 545,
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10, 1]
+            },
+            "randloot": {
+                "default": {
+                    "1808": 50,
+                    "1809": 50
+                }
+            },
+            "questloot": {
+                "302": {
+                    "default": {
+                        "1801": 3
+                    }
+                },
+                "323": {
+                    "default": {
+                        "1985": 10,
+                        "1991": 10
+                    }
+                },
+                "327": {
+                    "default": {
+                        "1985": 10,
+                        "1991": 10
+                    }
+                }
+            }
+        },
+        "location": "pirates, sharknora",
+    },
+    "311": {
+        "id": 311,
+        "name": "Навигатор",
+        "maxhp": 6500,
+        "startrage": 20,
+        "level": 20,
+        "avatar": 323,
+        "doll": "pirrate_03",
+        "picture": "pirrate_03",
+        "minhit": 850,
+        "maxhit": 1100,
+        "dodge": 20,
+        "crit": 35,
+        "mastery": 800,
+        "resilience": 100,
+        "defence": 600,
+        "gender": 1,
+        "race": "beast",
+        "loot": "{\"crystals\":{\"default\":[100,30,10,1]},\"randloot\":{\"default\":{\"1808\":50,\"1811\":50}},\"questloot\":{\"302\":{\"default\":{\"1804\":3,\"1805\":3}},\"323\":{\"default\":{\"1985\":10,\"1991\":10}},\"327\":{\"default\":{\"1985\":10,\"1991\":10}}}}\r\n\r\n",
+        "location": "pirates, sharknora",
+    },
+    "312": {
+        "id": 312,
+        "name": "Первый помощник Эдвард",
+        "maxhp": 10000,
+        "startrage": 20,
+        "level": 20,
+        "avatar": 323,
+        "doll": "pirrate_03",
+        "picture": "pirrate_03",
+        "minhit": 900,
+        "maxhit": 1200,
+        "dodge": 20,
+        "crit": 35,
+        "mastery": 800,
+        "resilience": 200,
+        "defence": 600,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10, 1]
+            },
+            "randloot": {
+                "default": {
+                    "1808": 100,
+                    "1811x5": 100
+                }
+            },
+            "questloot": {
+                "302": {
+                    "default": {
+                        "1806": 100
+                    }
+                },
+                "323": {
+                    "default": {
+                        "1990": 100
+                    }
+                },
+                "327": {
+                    "default": {
+                        "1990": 100
+                    }
+                },
+                "320": {
+                    "default": {
+                        "1983": 50
+                    }
+                }
+            }
+        },
+        "location": "pirates, sharknora",
+    },
+    "313": {
+        "id": 313,
+        "name": "Канонир",
+        "maxhp": 5000,
+        "level": 20,
+        "avatar": 322,
+        "doll": "pirrate_02",
+        "picture": "pirrate_02",
+        "minhit": 850,
+        "maxhit": 1100,
+        "dodge": 30,
+        "crit": 55,
+        "mastery": 1250,
+        "resilience": 195,
+        "defence": 375,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10, 1]
+            },
+            "randloot": {
+                "default": {
+                    "1808": 50,
+                    "1810": 50
+                }
+            },
+            "questloot": {
+                "302": {
+                    "default": {
+                        "1802": 3
+                    }
+                },
+                "323": {
+                    "default": {
+                        "1985": 10,
+                        "1991": 10
+                    }
+                },
+                "327": {
+                    "default": {
+                        "1985": 10,
+                        "1991": 10
+                    }
+                }
+            }
+        },
+        "location": "pirates, sharknora",
+    },
+    "314": {
+        "id": 314,
+        "name": "Квартмейстер Билл",
+        "maxhp": 8000,
+        "level": 20,
+        "avatar": 322,
+        "doll": "pirrate_02",
+        "picture": "pirrate_02",
+        "minhit": 900,
+        "maxhit": 1200,
+        "dodge": 30,
+        "crit": 55,
+        "mastery": 1250,
+        "resilience": 195,
+        "defence": 375,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "crystals": {
+                "default": [100, 30, 10, 1]
+            },
+            "randloot": {
+                "default": {
+                    "1808": 100,
+                    "1810x5": 100
+                }
+            },
+            "questloot": {
+                "302": {
+                    "default": {
+                        "1803": 100
+                    }
+                },
+                "323": {
+                    "default": {
+                        "1989": 80
+                    }
+                },
+                "327": {
+                    "default": {
+                        "1989": 80
+                    }
+                }
+            }
+        },
+        "location": "pirates, sharknora",
+    },
+    "315": {
+        "id": 315,
+        "name": "Призванный пират",
+        "maxhp": 1000,
+        "startrage": 100,
+        "level": 20,
+        "avatar": 100,
+        "doll": "pirrate_01",
+        "picture": "pirrate_01",
+        "minhit": 100,
+        "maxhit": 200,
+        "crit": 50,
+        "mastery": 100,
+        "defence": 100,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "location": "pirates, sharknora",
+    },
+    "316": {
+        "id": 316,
+        "name": "Клешнерыб",
+        "maxhp": 3000,
+        "level": 20,
+        "avatar": 335,
+        "doll": "ppirate01",
+        "picture": "ppirate01",
+        "minhit": 1200,
+        "maxhit": 1300,
+        "dodge": 20,
+        "crit": 30,
+        "mastery": 1000,
+        "resilience": 400,
+        "defence": 1000,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "location": "sharknora",
+    },
+    "317": {
+        "id": 317,
+        "name": "Тюремщик",
+        "maxhp": 6000,
+        "startrage": 40,
+        "level": 20,
+        "avatar": 333,
+        "doll": "jailer",
+        "picture": "jailer",
+        "minhit": 1200,
+        "maxhit": 1300,
+        "dodge": 30,
+        "crit": 40,
+        "mastery": 2000,
+        "resilience": 400,
+        "defence": 600,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "crystals": {
+                "default": [100, 10, 0]
+            },
+            "loot": {
+                "default": {
+                    "1999": 100
+                }
+            }
+        },
+        "location": "sharknora",
+    },
+    "318": {
+        "id": 318,
+        "name": "Пилозуб",
+        "maxhp": 2500,
+        "level": 20,
+        "avatar": 334,
+        "doll": "ppirate02",
+        "picture": "ppirate02",
+        "minhit": 1400,
+        "maxhit": 1600,
+        "dodge": 40,
+        "crit": 60,
+        "mastery": 1000,
+        "resilience": 400,
+        "defence": 800,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "location": "sharknora",
+    },
+    "319": {
+        "id": 319,
+        "name": "Капитан Шаркспир",
+        "maxhp": 13000,
+        "startrage": 30,
+        "level": 20,
+        "avatar": 332,
+        "doll": "shark1",
+        "picture": "shark1",
+        "minhit": 1500,
+        "maxhit": 1600,
+        "dodge": 30,
+        "crit": 30,
+        "mastery": 3000,
+        "resilience": 1000,
+        "defence": 1000,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "human",
+        "pet": 74,
+        "loot": {
+            "crystals": {
+                "default": [100, 10, 0]
+            },
+            "loot": {
+                "default": {
+                    "1987": 3,
+                    "1988": 3,
+                    "2002": 3,
+                    "2008": 1,
+                    "2284": 1,
+                    "1949": 20,
+                    "1950": 20,
+                    "1951": 20,
+                    "1952": 20,
+                    "1953": 20,
+                    "1962": 20,
+                    "1964": 20,
+                    "1966": 20,
+                    "1968": 20,
+                    "1970": 20,
+                    "1963": 20,
+                    "1965": 20,
+                    "1967": 20,
+                    "1969": 20,
+                    "1971": 20
+                }
+            },
+            "randloot": {
+                "default": {
+                    "1995": 5,
+                    "2011": 100
+                }
+            }
+        },
+        "location": "sharknora",
+    },
+    "320": {
+        "id": 320,
+        "name": "Даги Два Пальца",
+        "maxhp": 7000,
+        "level": 20,
+        "avatar": 335,
+        "doll": "ppirate01",
+        "picture": "ppirate01",
+        "minhit": 1400,
+        "maxhit": 2400,
+        "dodge": 30,
+        "crit": 50,
+        "mastery": 2000,
+        "resilience": 1000,
+        "defence": 800,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "crystals": {
+                "default": [100, 10, 0]
+            },
+            "loot": {
+                "default": {
+                    "1176": 20,
+                    "1177": 10,
+                    "1178": 5,
+                    "1164": 20,
+                    "1165": 10,
+                    "1166": 5,
+                    "2002": 1,
+                    "1167": 20,
+                    "1168": 10,
+                    "1169": 5,
+                    "1170": 20,
+                    "1171": 10,
+                    "1172": 5,
+                    "1987": 1,
+                    "1988": 1,
+                    "1173": 20,
+                    "1174": 10,
+                    "1175": 5
+                }
+            }
+        },
+        "location": "pirates, sharknora",
+    },
+    "321": {
+        "id": 321,
+        "name": "Красавчик Бью",
+        "maxhp": 6000,
+        "startrage": 20,
+        "level": 20,
+        "avatar": 334,
+        "doll": "ppirate02",
+        "picture": "ppirate02",
+        "minhit": 1300,
+        "maxhit": 1500,
+        "dodge": 60,
+        "crit": 50,
+        "mastery": 2000,
+        "resilience": 400,
+        "defence": 700,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "crystals": {
+                "default": [100, 10, 0]
+            },
+            "loot": {
+                "default": {
+                    "1176": 20,
+                    "1177": 10,
+                    "1178": 5,
+                    "1164": 20,
+                    "1165": 10,
+                    "1166": 5,
+                    "2002": 1,
+                    "1167": 20,
+                    "1168": 10,
+                    "1169": 5,
+                    "1170": 20,
+                    "1171": 10,
+                    "1172": 5,
+                    "1987": 1,
+                    "1988": 1,
+                    "1173": 20,
+                    "1174": 10,
+                    "1175": 5
+                }
+            }
+        },
+        "location": "pirates, sharknora",
+    },
+    "323": {
+        "id": 323,
+        "name": "Нечто",
+        "maxhp": 300,
+        "level": 3,
+        "avatar": 193,
+        "doll": "evalive_twohit",
+        "picture": "evalive_twohit",
+        "minhit": 13,
+        "maxhit": 25,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "demon",
+        "location": "city",
+        "hidden": 1
+    },
+    "324": {
+        "id": 324,
+        "name": "Полтергейст",
+        "maxhp": 2330,
+        "startrage": 20,
+        "level": 20,
+        "avatar": 274,
+        "doll": "armor_mob",
+        "picture": "armor_mob",
+        "minhit": 490,
+        "maxhit": 620,
+        "dodge": 35,
+        "crit": 65,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 520,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "crystals": {
+                "default": [150, 50, 10]
+            },
+            "randloot": {
+                "default": {
+                    "1294": 7
+                }
+            }
+        },
+        "location": "city",
+    },
+    "325": {
+        "id": 325,
+        "name": "Пушистый Страж",
+        "maxhp": 100,
+        "startrage": 35,
+        "level": 99,
+        "avatar": 91,
+        "doll": "lal_polar",
+        "picture": "lal_polar",
+        "minhit": 100,
+        "maxhit": 100,
+        "dodge": 100,
+        "crit": 100,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 100,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "535": "0.15",
+                    "536": "0.15",
+                    "537": "0.15",
+                    "538": "0.15",
+                    "2090": 30,
+                    "2091": 15,
+                    "534": "0.15"
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "326": {
+        "id": 326,
+        "name": "НЕНУЖНЫЙ МОБ",
+        "maxhp": 100,
+        "startrage": 35,
+        "level": 99,
+        "avatar": 91,
+        "doll": "lal_polar",
+        "picture": "lal_polar",
+        "minhit": 100,
+        "maxhit": 100,
+        "dodge": 100,
+        "crit": 100,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 100,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "2091": 15,
+                    "2090": 40,
+                    "536": 0.15,
+                    "538": 0.15,
+                    "534": 0.15,
+                    "536": 0.15,
+                    "537": 0.15,
+                    "536": 0.15,
+                    "535": 0.15
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "327": {
+        "id": 327,
+        "name": "Древнее Зло",
+        "maxhp": 100000,
+        "startrage": 100,
+        "level": 22,
+        "avatar": 359,
+        "doll": "iotuns_leg_twohit",
+        "picture": "iotuns_leg_twohit",
+        "minhit": 1,
+        "maxhit": 2,
+        "defence": 100000,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "human",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "2203": 100
+                }
+            }
+        },
+        "location": "city",
+    },
+    "328": {
+        "id": 328,
+        "name": "Ледяной Страж",
+        "maxhp": 100,
+        "level": 99,
+        "avatar": 102,
+        "doll": "icegolem",
+        "picture": "icegolem",
+        "minhit": 100,
+        "maxhit": 100,
+        "dodge": 100,
+        "crit": 100,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 100,
+        "hitsound": "glass",
+        "gender": 2,
+        "race": "ghost",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "2099": 3,
+                    "2103": 3,
+                    "2104": 3,
+                    "2107": 15,
+                    "2100": 3
+                }
+            }
+        },
+        "location": "gory",
+    },
+    "329": {
+        "id": 329,
+        "name": "Бракованная игрушка",
+        "maxhp": 70,
+        "startrage": 70,
+        "level": 99,
+        "avatar": 315,
+        "doll": "toy1",
+        "picture": "toy1",
+        "minhit": 180,
+        "maxhit": 180,
+        "dodge": 60,
+        "crit": 100,
+        "mastery": 50,
+        "resilience": 50,
+        "defence": 100,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "pet": 66,
+        "loot": {
+            "randloot": {
+                "default": {
+                    "2091": 5,
+                    "2107": 15,
+                    "2099": 7,
+                    "2103": 7,
+                    "2104": 5,
+                    "2105": 1
+                }
+            }
+        },
+        "location": "city",
+    },
+    "331": {
+        "id": 331,
+        "name": "Гигантская ОДР",
+        "maxhp": 39209,
+        "level": 19,
+        "avatar": 44,
+        "doll": "drspecial",
+        "picture": "drspecial",
+        "minhit": 1000,
+        "maxhit": 3000,
+        "dodge": 10,
+        "crit": 10,
+        "mastery": 5000,
+        "defence": 24000,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "plant",
+        "pet": 40,
+        "loot": {
+            "randloot": {
+                "default": {
+                    "2231": 100
+                }
+            },
+            "questloot": {
+                "344": {
+                    "default": {
+                        "2277": 100
+                    }
+                }
+            }
+        },
+        "location": "bolota",
+    },
+    "335": {
+        "id": 335,
+        "name": "Дух Снежного Лукэтлога",
+        "maxhp": 1,
+        "level": 9,
+        "avatar": 91,
+        "doll": "lal_polar",
+        "picture": "lal_polar",
+        "minhit": 1,
+        "maxhit": 1,
+        "dodge": 20,
+        "mastery": 10000,
+        "gender": 1,
+        "race": "beast",
+        "loot": {},
+        "location": "city",
+    },
+    "336": {
+        "id": 336,
+        "name": "Бракованный голем",
+        "maxhp": 200,
+        "level": 1,
+        "avatar": 78,
+        "doll": "golem_twohit",
+        "picture": "golem_twohit",
+        "minhit": 1,
+        "maxhit": 2,
+        "defence": 1,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "mechanics",
+        "location": "city",
+    },
+    "337": {
+        "id": 337,
+        "name": "ТПЛ",
+        "maxhp": 26,
+        "level": 2,
+        "avatar": 14,
+        "doll": "lookatlog",
+        "picture": "lookatlog",
+        "minhit": 1,
+        "maxhit": 5,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "2204": 10
+                }
+            }
+        },
+        "location": "city",
+    },
+    "338": {
+        "id": 338,
+        "name": "Одержимый зайчик",
+        "maxhp": 20000,
+        "level": 3,
+        "avatar": 91,
+        "doll": "lal_polar",
+        "picture": "lal_polar",
+        "minhit": 90,
+        "maxhit": 600,
+        "mastery": 5000,
+        "gender": 1,
+        "race": "beast",
+        "loot": {},
+        "location": "city",
+    },
+    "339": {
+        "id": 339,
+        "name": "Освободившееся Зло",
+        "maxhp": 1400,
+        "level": 16,
+        "avatar": 197,
+        "doll": "moonkin",
+        "picture": "moonkin",
+        "minhit": 1350,
+        "maxhit": 1600,
+        "dodge": 25,
+        "crit": 55,
+        "mastery": 2500,
+        "resilience": 50,
+        "defence": 66,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {},
+        "location": "city",
+        "hidden": 1
+    },
+    "340": {
+        "id": 340,
+        "name": "Ослабленное зло",
+        "maxhp": 700,
+        "level": 3,
+        "avatar": 198,
+        "doll": "moonblue",
+        "picture": "moonblue",
+        "minhit": 1,
+        "maxhit": 100,
+        "mastery": 300,
+        "resilience": 60,
+        "defence": 5,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "2246": 30,
+                    "2247": 30,
+                    "2248": 30,
+                    "2249": 30
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "341": {
+        "id": 341,
+        "name": "Вьетнамский Бревень",
+        "maxhp": 150,
+        "level": 4,
+        "avatar": 52,
+        "doll": "breven",
+        "picture": "breven",
+        "minhit": 16,
+        "maxhit": 20,
+        "dodge": 15,
+        "crit": 15,
+        "defence": 10,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "plant",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "247x9": 100
+                }
+            }
+        },
+        "location": "city",
+    },
+    "12": {
+        "id": 12,
+        "name": "Сэр Найджел",
+        "isboss": 1,
+        "maxhp": 400,
+        "level": 4,
+        "avatar": 40,
+        "doll": "skeletonboss",
+        "picture": "skeletonboss",
+        "minhit": 31,
+        "maxhit": 43,
+        "crit": 5,
+        "defence": 11,
+        "hitsound": "wood",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "money": {
+                "4": {
+                    "min": 1500,
+                    "max": 2500
+                },
+                "5": {
+                    "min": 1000,
+                    "max": 2000
+                },
+                "default": {
+                    "min": 1,
+                    "max": 1
+                }
+            },
+            "crystals": {
+                "4": [150, 10, 0, 0, 0],
+                "5": [200, 10, 0, 0, 0]
+            },
+            "loot": {
+                "3": {
+                    "105": 10,
+                    "104": 10,
+                    "103": 10,
+                    "100": 10,
+                    "95": 10,
+                    "90": 40,
+                    "93": 20,
+                    "85": 15,
+                    "97": 10,
+                    "98": 15,
+                    "1523": 0.4
+                },
+                "4": {
+                    "105": 10,
+                    "104": 10,
+                    "103": 10,
+                    "100": 10,
+                    "95": 10,
+                    "90": 40,
+                    "93": 20,
+                    "85": 15,
+                    "97": 10,
+                    "98": 15,
+                    "1523": 0.4
+                },
+                "5": {
+                    "105": 10,
+                    "104": 10,
+                    "103": 10,
+                    "100": 10,
+                    "95": 10,
+                    "90": 40,
+                    "93": 20,
+                    "85": 15,
+                    "97": 10,
+                    "98": 15,
+                    "1523": 0.4
+                },
+                "default": {
+                    "105": 10,
+                    "104": 10,
+                    "103": 10,
+                    "100": 1,
+                    "95": 10,
+                    "90": 20,
+                    "93": 20,
+                    "85": 1,
+                    "97": 10,
+                    "98": 15
+                }
+            },
+            "randloot": {
+                "4": {
+                    "256": 20,
+                    "257": 20
+                }
+            }
+        },
+        "location": "sklep",
+    },
+    "13": {
+        "id": 13,
+        "name": "Миёри",
+        "isboss": 1,
+        "maxhp": 666,
+        "level": 3,
+        "avatar": 39,
+        "doll": "miery",
+        "picture": "miery",
+        "minhit": 26,
+        "maxhit": 35,
+        "dodge": 10,
+        "crit": 15,
+        "defence": 6,
+        "hitsound": "wood",
+        "gender": 2,
+        "race": "undead",
+        "pet": 2,
+        "loot": {
+            "money": {
+                "3": {
+                    "min": 1000,
+                    "max": 2000
+                },
+                "4": {
+                    "min": 1000,
+                    "max": 1500
+                },
+                "5": {
+                    "min": 500,
+                    "max": 1000
+                },
+                "default": {
+                    "min": 1,
+                    "max": 1
+                }
+            },
+            "crystals": {
+                "3": [100, 10, 0, 0, 0],
+                "4": [150, 10, 0, 0, 0],
+                "5": [200, 10, 0, 0, 0]
+            },
+            "loot": {
+                "3": {
+                    "105": 10,
+                    "104": 10,
+                    "103": 10,
+                    "100": 10,
+                    "95": 10,
+                    "91": 20,
+                    "92": 20,
+                    "1522": 0.3
+                },
+                "4": {
+                    "105": 10,
+                    "104": 10,
+                    "103": 10,
+                    "100": 10,
+                    "95": 10,
+                    "91": 20,
+                    "92": 20,
+                    "1522": 0.3
+                },
+                "5": {
+                    "105": 10,
+                    "104": 10,
+                    "103": 10,
+                    "100": 10,
+                    "95": 10,
+                    "91": 20,
+                    "92": 20
+                },
+                "default": {
+                    "105": 1,
+                    "104": 10,
+                    "103": 10,
+                    "100": 1,
+                    "95": 10,
+                    "91": 20,
+                    "92": 20
+                }
+            },
+            "randloot": {
+                "3": {
+                    "151": 1,
+                    "256": 20,
+                    "257": 20,
+                    "548": 3
+                },
+                "4": {
+                    "151": 1,
+                    "548": 2.5
+                },
+                "15": {
+                    "151": 1,
+                    "548": 8
+                },
+                "16": {
+                    "151": 1,
+                    "548": 9
+                },
+                "17": {
+                    "151": 1,
+                    "548": 10
+                },
+                "18": {
+                    "151": 1,
+                    "548": 11
+                },
+                "19": {
+                    "151": 1,
+                    "548": 12
+                },
+                "20": {
+                    "151": 1,
+                    "548": 15
+                },
+                "default": {
+                    "151": 1,
+                    "548": 2
+                }
+            }
+        },
+        "location": "sklep",
+    },
+    "14": {
+        "id": 14,
+        "name": "Тишина",
+        "isboss": 1,
+        "maxhp": 550,
+        "level": 5,
+        "avatar": 30,
+        "doll": "ghost",
+        "picture": "ghost",
+        "minhit": 27,
+        "maxhit": 39,
+        "dodge": 12,
+        "crit": 12,
+        "defence": 13,
+        "hitsound": "wood",
+        "gender": 2,
+        "race": "undead",
+        "loot": {
+            "money": {
+                "5": {
+                    "min": 2000,
+                    "max": 3000
+                },
+                "default": {
+                    "min": 1,
+                    "max": 1
+                }
+            },
+            "crystals": {
+                "5": [150, 10, 0, 0, 0]
+            },
+            "loot": {
+                "5": {
+                    "90": 10,
+                    "91": 10,
+                    "94": 10,
+                    "96": 10,
+                    "97": 10,
+                    "98": 10,
+                    "101": 10
+                },
+                "default": {
+                    "90": 10,
+                    "91": 10,
+                    "94": 10,
+                    "96": 10,
+                    "97": 10,
+                    "98": 10,
+                    "101": 3
+                }
+            },
+            "randloot": {
+                "5": {
+                    "256": 20,
+                    "257": 20,
+                    "1524": 0.4
+                },
+                "6": {
+                    "256": 15,
+                    "257": 15,
+                    "1524": 0.4
+                }
+            },
+            "questloot": {
+                "340": {
+                    "default": {
+                        "2230": 100
+                    }
+                }
+            }
+        },
+        "location": "sklep",
+    },
+    "37": {
+        "id": 37,
+        "name": "Тихоходка",
+        "isboss": 1,
+        "maxhp": 2500,
+        "level": 8,
+        "avatar": 62,
+        "doll": "tihohodka",
+        "picture": "tihohodka",
+        "minhit": 50,
+        "maxhit": 80,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 50,
+        "defence": 35,
+        "gender": 2,
+        "race": "beast",
+        "loot": {
+            "money": {
+                "default": {
+                    "min": 2000,
+                    "max": 2500
+                }
+            },
+            "crystals": {
+                "default": [150, 10, 0, 0, 0]
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "38": {
+        "id": 38,
+        "name": "Кейси",
+        "isboss": 1,
+        "maxhp": 999,
+        "level": 7,
+        "avatar": 64,
+        "doll": "mob_human_male",
+        "picture": "mob_human_male_cock",
+        "minhit": 52,
+        "maxhit": 72,
+        "crit": 20,
+        "mastery": 40,
+        "resilience": 5,
+        "defence": 17,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "undead",
+        "pet": 11,
+        "loot": {
+            "money": {
+                "default": {
+                    "min": 10000,
+                    "max": 20000
+                }
+            },
+            "loot": {
+                "6": {
+                    "162": 15,
+                    "163": 20,
+                    "164": 20,
+                    "159": 15,
+                    "156": 10,
+                    "168": 10,
+                    "137": 10
+                },
+                "7": {
+                    "162": 15,
+                    "163": 20,
+                    "164": 20,
+                    "159": 15,
+                    "156": 10,
+                    "168": 10,
+                    "137": 10
+                },
+                "8": {
+                    "162": 15,
+                    "163": 20,
+                    "164": 20,
+                    "159": 15,
+                    "156": 10,
+                    "168": 10,
+                    "137": 10
+                },
+                "9": {
+                    "162": 15,
+                    "163": 20,
+                    "164": 20,
+                    "159": 15,
+                    "156": 10,
+                    "168": 10,
+                    "137": 10
+                },
+                "10": {
+                    "162": 15,
+                    "163": 20,
+                    "164": 20,
+                    "159": 15,
+                    "156": 10,
+                    "168": 10,
+                    "137": 10
+                },
+                "default": {
+                    "162": 15,
+                    "163": 20,
+                    "164": 20,
+                    "159": 15,
+                    "156": 10,
+                    "168": 2,
+                    "137": 10
+                }
+            },
+            "randloot": {
+                "7": {
+                    "167": 100,
+                    "256": 20,
+                    "257": 20,
+                    "557": 3,
+                    "1525": 0.4
+                },
+                "8": {
+                    "167": 100,
+                    "557": 2.5,
+                    "1525": 0.4
+                },
+                "15": {
+                    "167": 100,
+                    "557": 9
+                },
+                "16": {
+                    "167": 100,
+                    "557": 10
+                },
+                "17": {
+                    "167": 100,
+                    "557": 11
+                },
+                "18": {
+                    "167": 100,
+                    "557": 12
+                },
+                "19": {
+                    "167": 100,
+                    "557": 13
+                },
+                "20": {
+                    "167": 100,
+                    "557": 15
+                },
+                "default": {
+                    "167": 100,
+                    "557": 0.7
+                }
+            }
+        },
+        "location": "pg",
+    },
+    "39": {
+        "id": 39,
+        "name": "Жак",
+        "isboss": 1,
+        "maxhp": 800,
+        "level": 8,
+        "avatar": 66,
+        "doll": "jacques",
+        "picture": "jacques",
+        "minhit": 65,
+        "maxhit": 86,
+        "crit": 20,
+        "mastery": 40,
+        "resilience": 10,
+        "defence": 35,
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "money": {
+                "default": {
+                    "min": 20000,
+                    "max": 40000
+                }
+            },
+            "loot": {
+                "6": {
+                    "177": 15,
+                    "163": 10,
+                    "156": 15,
+                    "169": 15,
+                    "168": 15,
+                    "137": 15,
+                    "158": 15
+                },
+                "7": {
+                    "177": 15,
+                    "163": 10,
+                    "156": 15,
+                    "169": 15,
+                    "168": 15,
+                    "137": 15,
+                    "158": 15
+                },
+                "8": {
+                    "177": 15,
+                    "163": 10,
+                    "156": 15,
+                    "169": 15,
+                    "168": 15,
+                    "137": 15,
+                    "158": 15
+                },
+                "9": {
+                    "177": 15,
+                    "163": 10,
+                    "156": 15,
+                    "169": 15,
+                    "168": 15,
+                    "137": 15,
+                    "158": 15
+                },
+                "10": {
+                    "177": 15,
+                    "163": 10,
+                    "156": 15,
+                    "169": 15,
+                    "168": 15,
+                    "137": 15,
+                    "158": 15
+                },
+                "default": {
+                    "177": 15,
+                    "163": 10,
+                    "156": 15,
+                    "169": 15,
+                    "168": 3,
+                    "137": 15,
+                    "158": 15
+                }
+            },
+            "questloot": {
+                "42": {
+                    "default": {
+                        "176": 100
+                    }
+                }
+            },
+            "randloot": {
+                "7": {
+                    "256": 20,
+                    "257": 20,
+                    "1526": 0.4
+                },
+                "8": {
+                    "256": 20,
+                    "257": 20,
+                    "1526": 0.4
+                }
+            }
+        },
+        "location": "pg",
+    },
+    "40": {
+        "id": 40,
+        "name": "Спящий",
+        "isboss": 1,
+        "maxhp": 2000,
+        "startrage": 100,
+        "level": 10,
+        "avatar": 70,
+        "doll": "oko_twohit",
+        "picture": "oko_twohit",
+        "minhit": 55,
+        "maxhit": 120,
+        "crit": 22,
+        "mastery": 60,
+        "resilience": 10,
+        "defence": 28,
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "money": {
+                "default": {
+                    "min": 30000,
+                    "max": 50000
+                }
+            },
+            "loot": {
+                "default": {
+                    "177": 10,
+                    "169": 10,
+                    "126": 10,
+                    "154": 25,
+                    "157": 25,
+                    "155": 10,
+                    "158": 10,
+                    "750": 11
+                }
+            },
+            "randloot": {
+                "7": {
+                    "254": 3,
+                    "256": 20,
+                    "257": 20,
+                    "2283": 1
+                },
+                "8": {
+                    "254": 2,
+                    "256": 20,
+                    "257": 20,
+                    "2283": 1
+                },
+                "9": {
+                    "254": 2,
+                    "256": 20,
+                    "257": 20,
+                    "2283": 1
+                },
+                "10": {
+                    "254": 1,
+                    "256": 20,
+                    "257": 20,
+                    "2283": 1
+                },
+                "11": {
+                    "254": 0.7,
+                    "2283": 1
+                }
+            },
+            "psevdorandloot": {
+                "254": {
+                    "max": 4,
+                    "min": 0.7
+                },
+                "2283": {
+                    "max": 4,
+                    "min": 0.7
+                }
+            }
+        },
+        "location": "pg",
+    },
+    "86": {
+        "id": 86,
+        "name": "Шаман Матында",
+        "isboss": 1,
+        "maxhp": 1000,
+        "startrage": 40,
+        "level": 11,
+        "avatar": 110,
+        "doll": "shaman_orc",
+        "picture": "shaman_orc",
+        "minhit": 120,
+        "maxhit": 140,
+        "dodge": 40,
+        "mastery": 100,
+        "defence": 45,
+        "gender": 1,
+        "race": "intelligent",
+        "location": "nedra",
+    },
+    "87": {
+        "id": 87,
+        "name": "В.В.В. Вурун",
+        "isboss": 1,
+        "maxhp": 1500,
+        "level": 12,
+        "avatar": 111,
+        "doll": "bigboss_orc",
+        "picture": "bigboss_orc",
+        "minhit": 130,
+        "maxhit": 175,
+        "crit": 15,
+        "mastery": 150,
+        "resilience": 5,
+        "defence": 55,
+        "gender": 1,
+        "race": "intelligent",
+        "loot": {
+            "money": {
+                "default": {
+                    "min": 50000,
+                    "max": 70000
+                }
+            },
+            "loot": {
+                "default": {
+                    "330": 10,
+                    "316": 25,
+                    "314": 15,
+                    "315": 20,
+                    "319": 5,
+                    "320": 5
+                }
+            },
+            "randloot": {
+                "11": {
+                    "256": 20,
+                    "257": 20,
+                    "558": 2
+                },
+                "12": {
+                    "256": 20,
+                    "257": 20,
+                    "558": 2
+                },
+                "13": {
+                    "558": 2
+                },
+                "14": {
+                    "558": 3
+                },
+                "15": {
+                    "558": 5
+                },
+                "16": {
+                    "558": 6
+                },
+                "17": {
+                    "558": 7
+                },
+                "18": {
+                    "558": 8
+                },
+                "19": {
+                    "558": 9
+                },
+                "20": {
+                    "558": 10
+                },
+                "default": {
+                    "558": 0.9
+                }
+            }
+        },
+        "location": "nedra",
+    },
+    "92": {
+        "id": 92,
+        "name": "Сердце гор",
+        "isboss": 1,
+        "maxhp": 5000,
+        "level": 13,
+        "avatar": 145,
+        "doll": "magmatroll_twohit",
+        "picture": "magmatroll_twohit",
+        "minhit": 120,
+        "maxhit": 200,
+        "crit": 20,
+        "mastery": 150,
+        "resilience": 10,
+        "defence": 72,
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "loot": {
+                "default": {
+                    "318": 10,
+                    "321": 15,
+                    "317": 15,
+                    "320": 30,
+                    "319": 30
+                }
+            },
+            "randloot": {
+                "12": {
+                    "256": 20,
+                    "257": 20
+                },
+                "13": {
+                    "256": 20,
+                    "257": 20
+                }
+            }
+        },
+        "location": "nedra",
+    },
+    "97": {
+        "id": 97,
+        "name": "Шрумман",
+        "isboss": 1,
+        "maxhp": 2500,
+        "startrage": 20,
+        "level": 12,
+        "avatar": 120,
+        "doll": "shroomman_morphing",
+        "picture": "shroomman_morphing",
+        "minhit": 110,
+        "maxhit": 140,
+        "crit": 24,
+        "mastery": 200,
+        "resilience": 15,
+        "defence": 49,
+        "gender": 1,
+        "race": "intelligent",
+        "loot": {
+            "money": {
+                "default": {
+                    "min": 50000,
+                    "max": 70000
+                }
+            },
+            "loot": {
+                "default": {
+                    "364": 20,
+                    "357": 20,
+                    "358": 20,
+                    "359": 20,
+                    "360": 20
+                }
+            },
+            "randloot": {
+                "11": {
+                    "256": 20,
+                    "257": 20,
+                    "364": 20,
+                    "357": 20,
+                    "358": 20,
+                    "359": 20,
+                    "360": 20,
+                    "349": 40
+                },
+                "12": {
+                    "364": 17,
+                    "357": 17,
+                    "358": 17,
+                    "359": 17,
+                    "360": 17,
+                    "349": 33
+                },
+                "13": {
+                    "364": 15,
+                    "357": 15,
+                    "358": 15,
+                    "359": 15,
+                    "360": 15,
+                    "349": 25
+                },
+                "default": {
+                    "364": 5,
+                    "357": 5,
+                    "358": 5,
+                    "359": 5,
+                    "360": 5,
+                    "349": 20
+                }
+            }
+        },
+        "location": "gribnaya",
+    },
+    "99": {
+        "id": 99,
+        "name": "Неродрукар",
+        "isboss": 1,
+        "maxhp": 3000,
+        "startrage": 30,
+        "level": 13,
+        "avatar": 123,
+        "doll": "dragon_twohit",
+        "picture": "dragon_twohit",
+        "minhit": 130,
+        "maxhit": 160,
+        "crit": 40,
+        "mastery": 150,
+        "defence": 60,
+        "hitsound": "bones",
+        "gender": 1,
+        "race": "beast",
+        "loot": {
+            "money": {
+                "5": {
+                    "min": 2000,
+                    "max": 3000
+                },
+                "default": {
+                    "min": 1,
+                    "max": 1
+                }
+            },
+            "crystals": {
+                "5": [150, 10, 0, 0, 0]
+            },
+            "loot": {
+                "default": {
+                    "356": 20,
+                    "351": 20,
+                    "266": 20,
+                    "350": 20,
+                    "352": 5,
+                    "354": 5,
+                    "355": 5,
+                    "353": 5
+                }
+            },
+            "randloot": {
+                "12": {
+                    "256": 20,
+                    "257": 20,
+                    "1531": 0.4
+                },
+                "13": {
+                    "256": 20,
+                    "257": 20,
+                    "1531": 0.4
+                }
+            }
+        },
+        "location": "logovo",
+    },
+    "118": {
+        "id": 118,
+        "name": "Чупакабра",
+        "isboss": 1,
+        "maxhp": 600,
+        "startrage": 35,
+        "level": 6,
+        "avatar": 166,
+        "doll": "chupakabra",
+        "picture": "chupakabra",
+        "minhit": 42,
+        "maxhit": 60,
+        "dodge": 20,
+        "crit": 30,
+        "mastery": 65,
+        "defence": 19,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "demon",
+        "loot": {
+            "crystals": {
+                "6": [50, 10, 0, 0, 0],
+                "7": [100, 10, 0, 0, 0]
+            },
+            "loot": {
+                "default": {
+                    "430x3": 45,
+                    "431x3": 45,
+                    "484": 10
+                }
+            },
+            "randloot": {
+                "6": {
+                    "429x3": 100,
+                    "553": 2,
+                    "239": 10
+                },
+                "7": {
+                    "429x3": 80,
+                    "553": 2,
+                    "239": 10
+                },
+                "default": {
+                    "553": 1
+                }
+            },
+            "questloot": {
+                "104": {
+                    "default": {
+                        "239": 100
+                    }
+                },
+                "182": {
+                    "default": {
+                        "1072": 100
+                    }
+                }
+            }
+        },
+        "location": "city",
+    },
+    "119": {
+        "id": 119,
+        "name": "Тихоходка",
+        "isboss": 1,
+        "maxhp": 3000,
+        "level": 8,
+        "avatar": 62,
+        "doll": "tihohodka",
+        "picture": "tihohodka",
+        "minhit": 50,
+        "maxhit": 80,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 50,
+        "defence": 38,
+        "hitsound": "organic",
+        "gender": 2,
+        "race": "beast",
+        "isevent": 1,
+        "loot": {
+            "crystals": {
+                "default": [150, 10, 0, 0, 0]
+            },
+            "randloot": {
+                "8": {
+                    "64": 100,
+                    "68": 50,
+                    "107": 50,
+                    "108": 50,
+                    "492": 100
+                },
+                "9": {
+                    "64": 70,
+                    "68": 30,
+                    "107": 30,
+                    "108": 30,
+                    "492": 70
+                },
+                "10": {
+                    "64": 20,
+                    "68": 10,
+                    "107": 10,
+                    "108": 10,
+                    "492": 50
+                },
+                "default": {
+                    "64": 5,
+                    "68": 3,
+                    "107": 3,
+                    "108": 10
+                }
+            }
+        },
+        "location": "city",
+        "hidden": 1
+    },
+    "123": {
+        "id": 123,
+        "name": "Азазель",
+        "isboss": 1,
+        "maxhp": 1331,
+        "level": 14,
+        "avatar": 175,
+        "doll": "straj",
+        "picture": "straj",
+        "minhit": 149,
+        "maxhit": 198,
+        "dodge": 41,
+        "crit": 46,
+        "mastery": 370,
+        "resilience": 80,
+        "defence": 60,
+        "hitsound": "ring",
+        "gender": 1,
+        "race": "intelligent",
+        "isevent": 1,
+        "loot": {
+            "loot": {
+                "default": {
+                    "378": 7,
+                    "379": 7,
+                    "381": 7,
+                    "383": 18,
+                    "384": 18,
+                    "385": 18,
+                    "494": 18,
+                    "751": 8
+                }
+            },
+            "randloot": {
+                "14": {
+                    "256": 20,
+                    "257": 20,
+                    "498": 35,
+                    "728": 0.3
+                },
+                "15": {
+                    "498": 40,
+                    "728": 0.2
+                },
+                "16": {
+                    "498": 55,
+                    "728": 0.2
+                },
+                "17": {
+                    "498": 50,
+                    "728": 0.2
+                },
+                "default": {
+                    "498": 60,
+                    "728": 0.2
+                }
+            }
+        },
+        "location": "zona",
+    },
+    "133": {
+        "id": 133,
+        "name": "Надзиратель Пинг",
+        "isboss": 1,
+        "maxhp": 4000,
+        "level": 15,
+        "avatar": 195,
+        "doll": "penkin",
+        "picture": "penkin",
+        "minhit": 175,
+        "maxhit": 210,
+        "dodge": 45,
+        "crit": 55,
+        "mastery": 450,
+        "resilience": 50,
+        "defence": 84,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "demon",
+        "loot": {
+            "loot": {
+                "default": {
+                    "596": 100
+                }
+            },
+            "randloot": {
+                "15": {
+                    "256": 20,
+                    "257": 20
+                }
+            },
+            "questloot": {
+                "209": {
+                    "default": {
+                        "1161": 100
+                    }
+                }
+            }
+        },
+        "location": "nora",
+    },
+    "138": {
+        "id": 138,
+        "name": "Монтесума",
+        "isboss": 1,
+        "maxhp": 5000,
+        "level": 16,
+        "avatar": 204,
+        "doll": "montesuma",
+        "picture": "montesuma",
+        "minhit": 199,
+        "maxhit": 229,
+        "dodge": 75,
+        "crit": 75,
+        "mastery": 750,
+        "resilience": 50,
+        "defence": 137,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "loot": {
+                "default": {
+                    "619": 60,
+                    "620": 90,
+                    "621": 90,
+                    "622": 60,
+                    "623": 90,
+                    "635": 35,
+                    "638": 35
+                }
+            },
+            "randloot": {
+                "16": {
+                    "256": 20,
+                    "257": 20,
+                    "1535": 0.4
+                }
+            }
+        },
+        "location": "morfonora",
+    },
+    "150": {
+        "id": 150,
+        "name": "Морфей",
+        "isboss": 1,
+        "maxhp": 3300,
+        "startrage": 20,
+        "level": 17,
+        "avatar": 202,
+        "doll": "hodzy",
+        "picture": "hodzy",
+        "minhit": 265,
+        "maxhit": 303,
+        "dodge": 85,
+        "crit": 65,
+        "mastery": 650,
+        "resilience": 410,
+        "defence": 183,
+        "hitsound": "organic",
+        "gender": 1,
+        "race": "ghost",
+        "loot": {
+            "loot": {
+                "default": {
+                    "739": 80,
+                    "740": 80,
+                    "741": 80,
+                    "742": 80,
+                    "634": 65,
+                    "636": 65,
+                    "637": 50,
+                    "635": 100,
+                    "638": 100
+                }
+            },
+            "randloot": {
+                "17": {
+                    "256": 20,
+                    "257": 20
+                }
+            }
+        },
+        "location": "morfonora",
+    },
+    "171": {
+        "id": 171,
+        "name": "Радагаст",
+        "isboss": 1,
+        "maxhp": 2600,
+        "startrage": 40,
+        "level": 10,
+        "avatar": 220,
+        "doll": "medved",
+        "picture": "medved",
+        "minhit": 65,
+        "maxhit": 100,
+        "dodge": 10,
+        "crit": 10,
+        "mastery": 60,
+        "defence": 45,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "demon",
+        "loot": {
+            "loot": {
+                "default": {
+                    "843": 90,
+                    "854": 90,
+                    "855": 90,
+                    "856": 90,
+                    "857": 90,
+                    "844": 15,
+                    "850": 15,
+                    "851": 15,
+                    "852": 15,
+                    "853": 15,
+                    "845": 1,
+                    "846": 1,
+                    "847": 1,
+                    "848": 1,
+                    "849": 1
+                }
+            },
+            "randloot": {
+                "default": {
+                    "878": 10,
+                    "875": 5,
+                    "876": 15,
+                    "877": 100,
+                    "1019": 0.1,
+                    "1527": 0.4
+                }
+            },
+            "questloot": {
+                "219": {
+                    "default": {
+                        "1249": 100
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "189": {
+        "id": 189,
+        "name": "Дагод",
+        "isboss": 1,
+        "maxhp": 2800,
+        "level": 15,
+        "avatar": 221,
+        "doll": "crabster",
+        "picture": "crabster",
+        "minhit": 140,
+        "maxhit": 180,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 60,
+        "resilience": 100,
+        "defence": 95,
+        "hitsound": "metal",
+        "gender": 1,
+        "race": "demon",
+        "loot": {
+            "loot": {
+                "default": {
+                    "884": 170,
+                    "892": 170,
+                    "895": 170,
+                    "898": 170,
+                    "901": 170,
+                    "885": 15,
+                    "893": 15,
+                    "896": 15,
+                    "899": 15,
+                    "902": 15,
+                    "886": 1,
+                    "894": 1,
+                    "897": 1,
+                    "900": 1,
+                    "903": 1
+                }
+            },
+            "randloot": {
+                "default": {
+                    "1009": 20,
+                    "875": 15,
+                    "876": 50,
+                    "877x2": 100,
+                    "1019": 2,
+                    "1196x1": 100,
+                    "1196x2": 30,
+                    "1528": 0.4
+                }
+            },
+            "questloot": {
+                "219": {
+                    "default": {
+                        "1248": 100
+                    }
+                }
+            }
+        },
+        "location": "limb",
+    },
+    "198": {
+        "id": 198,
+        "name": "Фредди",
+        "isboss": 1,
+        "maxhp": 5120,
+        "startrage": 30,
+        "level": 17,
+        "avatar": 229,
+        "doll": "plunder",
+        "picture": "plunder",
+        "minhit": 240,
+        "maxhit": 330,
+        "dodge": 95,
+        "crit": 95,
+        "mastery": 350,
+        "resilience": 450,
+        "defence": 100,
+        "hitsound": "bones",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "1005": 20
+                }
+            }
+        },
+        "location": "sumerki",
+    },
+    "202": {
+        "id": 202,
+        "name": "Михаил",
+        "isboss": 1,
+        "maxhp": 7531,
+        "startrage": 30,
+        "level": 18,
+        "avatar": 234,
+        "doll": "mihail",
+        "picture": "mihail",
+        "minhit": 295,
+        "maxhit": 385,
+        "dodge": 80,
+        "crit": 95,
+        "mastery": 450,
+        "resilience": 300,
+        "defence": 250,
+        "hitsound": "bones",
+        "gender": 1,
+        "race": "undead",
+        "loot": {
+            "randloot": {
+                "default": {
+                    "1004": 20
+                }
+            }
+        },
+        "location": "sumerki",
     },
     "211": {
         "id": 211,
-        "adminname": "Эльвира",
         "name": "Эльвира",
         "isboss": 1,
         "maxhp": 5000,
-        "startrage": "",
         "level": 19,
         "avatar": 242,
         "doll": "succubi",
         "picture": "succubi",
+        "minhit": 220,
+        "maxhit": 280,
+        "dodge": 40,
+        "crit": 35,
+        "mastery": 830,
+        "resilience": 50,
+        "defence": 500,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -10317,22 +14900,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "cirk",
     },
     "212": {
         "id": 212,
-        "adminname": "Джокер(c камнем и дневником)",
         "name": "Джокер",
         "isboss": 1,
         "maxhp": 3000,
-        "startrage": "",
         "level": 19,
         "avatar": 239,
         "doll": "joker",
         "picture": "joker",
+        "minhit": 285,
+        "maxhit": 350,
+        "dodge": 45,
+        "crit": 65,
+        "mastery": 700,
+        "resilience": 350,
+        "defence": 300,
+        "hitsound": "organic",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -10389,915 +14977,26 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "213": {
-        "id": 213,
-        "adminname": "Клоун-Красный",
-        "name": "Красный",
-        "isboss": "",
-        "maxhp": 2000,
-        "startrage": "",
-        "level": 19,
-        "avatar": 238,
-        "doll": "clown",
-        "picture": "clown",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "214": {
-        "id": 214,
-        "adminname": "Клоун-Белый",
-        "name": "Белый",
-        "isboss": "",
-        "maxhp": 2000,
-        "startrage": "",
-        "level": 19,
-        "avatar": 241,
-        "doll": "clownwhite",
-        "picture": "clownwhite",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "215": {
-        "id": 215,
-        "adminname": "Боец Арены",
-        "name": "Боец Арены",
-        "isboss": "",
-        "maxhp": 1500,
-        "startrage": 50,
-        "level": 19,
-        "avatar": 137,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30]
-            },
-            "randloot": {
-                "default": {
-                    "1112": 20
-                }
-            },
-            "questloot": {
-                "207": {
-                    "19": {
-                        "390": 10
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "216": {
-        "id": 216,
-        "adminname": "Диана - СА",
-        "name": "Диана",
-        "isboss": "",
-        "maxhp": 1500,
-        "startrage": 50,
-        "level": 19,
-        "avatar": 135,
-        "doll": "mob_human_female",
-        "picture": "mob_human_female",
-        "gender": 2,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 50, 20]
-            },
-            "randloot": {
-                "default": {
-                    "1112": 100
-                }
-            },
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 35
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "217": {
-        "id": 217,
-        "adminname": "Сойер - СА",
-        "name": "Сойер",
-        "isboss": "",
-        "maxhp": 1500,
-        "startrage": 50,
-        "level": 19,
-        "avatar": 138,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 50, 20]
-            },
-            "randloot": {
-                "default": {
-                    "1112": 100
-                }
-            },
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 35
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "218": {
-        "id": 218,
-        "adminname": "Воин Арены",
-        "name": "Воин Арены",
-        "isboss": "",
-        "maxhp": 1600,
-        "startrage": 50,
-        "level": 19,
-        "avatar": 179,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 20, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1112": 40
-                }
-            },
-            "questloot": {
-                "207": {
-                    "19": {
-                        "390": 10
-                    }
-                },
-                "220": {
-                    "default": {
-                        "1262": 40
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 35
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 35
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "219": {
-        "id": 219,
-        "adminname": "Алиса  - СА",
-        "name": "Алиса",
-        "isboss": "",
-        "maxhp": 1600,
-        "startrage": 50,
-        "level": 19,
-        "avatar": 181,
-        "doll": "mob_elv_female",
-        "picture": "mob_elv_female",
-        "gender": 2,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 20, 20]
-            },
-            "randloot": {
-                "default": {
-                    "1112": 100
-                }
-            }
-        },
-        "location": ""
-    },
-    "220": {
-        "id": 220,
-        "adminname": "Чемпион Арены",
-        "name": "Чемпион Арены",
-        "isboss": "",
-        "maxhp": 1750,
-        "startrage": 50,
-        "level": 20,
-        "avatar": 1,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 60, 40]
-            },
-            "randloot": {
-                "default": {
-                    "1112": 90
-                }
-            },
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 55
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "221": {
-        "id": 221,
-        "adminname": "Голем Арены",
-        "name": "Голем Арены",
-        "isboss": "",
-        "maxhp": 2000,
-        "startrage": 50,
-        "level": 19,
-        "avatar": 78,
-        "doll": "golem_twohit_twi",
-        "picture": "golem_twohit_twi",
-        "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "1115": 25,
-                    "1116": 25,
-                    "1117": 25,
-                    "1118": 25
-                }
-            },
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 75
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "222": {
-        "id": 222,
-        "adminname": "Хранитель Арены",
-        "name": "Хранитель Арены",
-        "isboss": "",
-        "maxhp": 3000,
-        "startrage": 50,
-        "level": 20,
-        "avatar": 78,
-        "doll": "golem_twohit_twi",
-        "picture": "golem_twohit_twi",
-        "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "1115": 25,
-                    "1116": 25,
-                    "1117": 25,
-                    "1118": 25
-                }
-            },
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 75
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 75
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "223": {
-        "id": 223,
-        "adminname": "Хендерсон",
-        "name": "Хендерсон",
-        "isboss": "",
-        "maxhp": 1850,
-        "startrage": 50,
-        "level": 20,
-        "avatar": 84,
-        "doll": "mob_elv_male",
-        "picture": "mob_elv_male",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 50, 30, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1112": 100
-                }
-            },
-            "questloot": {
-                "208": {
-                    "default": {
-                        "1153": 100
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "224": {
-        "id": 224,
-        "adminname": "Портал Сумеречного леса 16-20",
-        "name": "Портал",
-        "isboss": "",
-        "maxhp": 3300,
-        "startrage": "",
-        "level": 16,
-        "avatar": 218,
-        "doll": "portal_darkforest",
-        "picture": "portal_darkforest",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "921": 200,
-                    "910": 200,
-                    "912": 200,
-                    "915": 200,
-                    "918": 200,
-                    "922": 15,
-                    "911": 15,
-                    "896": 15,
-                    "913": 15,
-                    "919": 15,
-                    "923": 1,
-                    "924": 1,
-                    "914": 1,
-                    "917": 1,
-                    "920": 1
-                }
-            },
-            "randloot": {
-                "default": {
-                    "877": 3,
-                    "1196x1": 100,
-                    "1196x2": 30
-                }
-            }
-        },
-        "location": ""
-    },
-    "225": {
-        "id": 225,
-        "adminname": "Портал Сумеречного города 16-20",
-        "name": "Портал",
-        "isboss": "",
-        "maxhp": 3700,
-        "startrage": "",
-        "level": 18,
-        "avatar": 218,
-        "doll": "portal_town",
-        "picture": "portal_town",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "921": 200,
-                    "910": 200,
-                    "912": 200,
-                    "915": 200,
-                    "918": 200,
-                    "922": 15,
-                    "911": 15,
-                    "896": 15,
-                    "913": 15,
-                    "919": 15,
-                    "923": 1,
-                    "924": 1,
-                    "914": 1,
-                    "917": 1,
-                    "920": 1
-                }
-            },
-            "randloot": {
-                "default": {
-                    "877": 3,
-                    "1196x1": 100,
-                    "1196x2": 50,
-                    "1196x3": 10
-                }
-            }
-        },
-        "location": ""
-    },
-    "226": {
-        "id": 226,
-        "adminname": "Портал из АДА 16-20",
-        "name": "Портал",
-        "isboss": "",
-        "maxhp": 3900,
-        "startrage": "",
-        "level": 15,
-        "avatar": 218,
-        "doll": "portal_circus",
-        "picture": "portal_circus",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "loot": {
-                "default": {
-                    "921": 200,
-                    "910": 200,
-                    "912": 200,
-                    "915": 200,
-                    "918": 200,
-                    "922": 15,
-                    "911": 15,
-                    "896": 15,
-                    "913": 15,
-                    "919": 15,
-                    "923": 1,
-                    "924": 1,
-                    "914": 1,
-                    "917": 1,
-                    "920": 1
-                }
-            },
-            "randloot": {
-                "default": {
-                    "877": 3,
-                    "1196x1": 100,
-                    "1196x2": 70,
-                    "1196x3": 20
-                }
-            }
-        },
-        "location": ""
-    },
-    "227": {
-        "id": 227,
-        "adminname": "Туманный Кратер Портал",
-        "name": "Туманный Кратер",
-        "isboss": "",
-        "maxhp": 1600,
-        "startrage": 50,
-        "level": 16,
-        "avatar": 198,
-        "doll": "moonblue",
-        "picture": "moonblue",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 25
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 25
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 25
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 25
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 25
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "228": {
-        "id": 228,
-        "adminname": "Чам Портал",
-        "name": "Чам",
-        "isboss": "",
-        "maxhp": 1500,
-        "startrage": 35,
-        "level": 16,
-        "avatar": 199,
-        "doll": "cham",
-        "picture": "cham",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "229": {
-        "id": 229,
-        "adminname": "Чам-бригадир-портал",
-        "name": "Чам-бригадир",
-        "isboss": "",
-        "maxhp": 1700,
-        "startrage": 50,
-        "level": 16,
-        "avatar": 200,
-        "doll": "cham_angry",
-        "picture": "cham_angry",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "230": {
-        "id": 230,
-        "adminname": "Кратер-Портал",
-        "name": "Кратер",
-        "isboss": "",
-        "maxhp": 1400,
-        "startrage": "",
-        "level": 16,
-        "avatar": 197,
-        "doll": "moonkin",
-        "picture": "moonkin",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "231": {
-        "id": 231,
-        "adminname": "Могильный Пупмат - портал",
-        "name": "Могильный Пупмат",
-        "isboss": "",
-        "maxhp": 1600,
-        "startrage": "",
-        "level": 17,
-        "avatar": 222,
-        "doll": "grimmpup",
-        "picture": "grimmpup",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "232": {
-        "id": 232,
-        "adminname": "Кровавый Пупмат - портал",
-        "name": "Кровавый Пупмат",
-        "isboss": "",
-        "maxhp": 1900,
-        "startrage": "",
-        "level": 18,
-        "avatar": 223,
-        "doll": "grimmpup_bloody",
-        "picture": "grimmpup_bloody",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 15
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "233": {
-        "id": 233,
-        "adminname": "Гриммер - портал",
-        "name": "Гриммер",
-        "isboss": "",
-        "maxhp": 1900,
-        "startrage": "",
-        "level": 17,
-        "avatar": 224,
-        "doll": "grimmer",
-        "picture": "grimmer",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "234": {
-        "id": 234,
-        "adminname": "Гриммер-воин-портал",
-        "name": "Гриммер-воин",
-        "isboss": "",
-        "maxhp": 2100,
-        "startrage": "",
-        "level": 18,
-        "avatar": 225,
-        "doll": "grimmer_warrior",
-        "picture": "grimmer_warrior",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 15
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "235": {
-        "id": 235,
-        "adminname": "Прототип-D2-портал",
-        "name": "Прототип-D2",
-        "isboss": "",
-        "maxhp": 3000,
-        "startrage": "",
-        "level": 18,
-        "avatar": 233,
-        "doll": "cyber_skeleton_blue",
-        "picture": "cyber_skeleton_blue",
-        "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 15
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "236": {
-        "id": 236,
-        "adminname": "Клоун-портал",
-        "name": "Клоун",
-        "isboss": "",
-        "maxhp": 2000,
-        "startrage": "",
-        "level": 19,
-        "avatar": 238,
-        "doll": "clown",
-        "picture": "clown",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 15
-                    }
-                }
-            }
-        },
-        "location": ""
+        "location": "cirk",
     },
     "237": {
         "id": 237,
-        "adminname": "Скарр",
         "name": "Скарр",
         "isboss": 1,
         "maxhp": 4600,
-        "startrage": "",
         "level": 20,
         "avatar": 252,
         "doll": "skarr",
         "picture": "skarr",
+        "minhit": 280,
+        "maxhit": 350,
+        "crit": 25,
+        "mastery": 800,
+        "resilience": 100,
+        "defence": 345,
+        "hitsound": "metal",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "loot": {
                 "default": {
@@ -11371,183 +15070,28 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "238": {
-        "id": 238,
-        "adminname": "Клоун(второй) - портал",
-        "name": "Клоун",
-        "isboss": "",
-        "maxhp": 3000,
-        "startrage": "",
-        "level": 19,
-        "avatar": 241,
-        "doll": "clownwhite",
-        "picture": "clownwhite",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "220": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 15
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 15
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "239": {
-        "id": 239,
-        "adminname": "Огненная Погибель",
-        "name": "Огненная Погибель",
-        "isboss": "",
-        "maxhp": 3600,
-        "startrage": 30,
-        "level": 20,
-        "avatar": 123,
-        "doll": "dragon_twohit",
-        "picture": "dragon_twohit",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "240": {
-        "id": 240,
-        "adminname": "Штурмовик",
-        "name": "Штурмовик",
-        "isboss": "",
-        "maxhp": 210,
-        "startrage": "",
-        "level": 5,
-        "avatar": 254,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "213": {
-                    "default": {
-                        "1207": 100
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "241": {
-        "id": 241,
-        "adminname": "Штурмовик",
-        "name": "Штурмовик",
-        "isboss": "",
-        "maxhp": 510,
-        "startrage": "",
-        "level": 12,
-        "avatar": 254,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "214": {
-                    "default": {
-                        "1207": 100
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "242": {
-        "id": 242,
-        "adminname": "Штурмовик",
-        "name": "Штурмовик",
-        "isboss": "",
-        "maxhp": 810,
-        "startrage": "",
-        "level": 16,
-        "avatar": 254,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "215": {
-                    "default": {
-                        "1207": 100
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "243": {
-        "id": 243,
-        "adminname": "Сумеречный Охотник",
-        "name": "Сумеречный Охотник",
-        "isboss": "",
-        "maxhp": 2600,
-        "startrage": "",
-        "level": 20,
-        "avatar": 257,
-        "doll": "citizen_black",
-        "picture": "citizen_black",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "1237": 100,
-                    "1259": 3
-                }
-            }
-        },
-        "location": ""
+        "location": "cirk",
     },
     "244": {
         "id": 244,
-        "adminname": "Миёри Хард",
         "name": "Миёри",
         "isboss": 1,
         "maxhp": 6666,
-        "startrage": "",
         "level": 20,
         "avatar": 39,
         "doll": "miery",
         "picture": "miery",
+        "minhit": 800,
+        "maxhit": 990,
+        "dodge": 62,
+        "crit": 40,
+        "mastery": 650,
+        "resilience": 950,
+        "defence": 630,
+        "hitsound": "wood",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
+        "pet": 2,
         "loot": {
             "randloot": {
                 "default": {
@@ -11597,103 +15141,28 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "245": {
-        "id": 245,
-        "adminname": "Кратер",
-        "name": "Кратер",
-        "isboss": "",
-        "maxhp": 630,
-        "startrage": "",
-        "level": 11,
-        "avatar": 197,
-        "doll": "moonkinsmall",
-        "picture": "moonkinsmall",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "246": {
-        "id": 246,
-        "adminname": "Придворный призрак",
-        "name": "Придворный призрак",
-        "isboss": "",
-        "maxhp": 3200,
-        "startrage": "",
-        "level": 20,
-        "avatar": 236,
-        "doll": "frau_mob",
-        "picture": "frau_mob",
-        "gender": 2,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [150, 40]
-            },
-            "randloot": {
-                "default": {
-                    "1294": 30,
-                    "1379": 24
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                },
-                "220": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "229": {
-                    "default": {
-                        "1297": 15
-                    }
-                }
-            }
-        },
-        "location": ""
+        "location": "cirk",
+        "hidden": 1
     },
     "247": {
         "id": 247,
-        "adminname": "Страж Замка",
         "name": "Страж Замка",
         "isboss": 1,
         "maxhp": 4800,
-        "startrage": "",
         "level": 20,
         "avatar": 268,
         "doll": "guardian",
         "picture": "guardian",
+        "minhit": 470,
+        "maxhit": 660,
+        "dodge": 15,
+        "crit": 55,
+        "mastery": 950,
+        "resilience": 300,
+        "defence": 375,
+        "hitsound": "metal",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 100, 50, 30, 10]
@@ -11719,176 +15188,10 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "248": {
-        "id": 248,
-        "adminname": "Двойник",
-        "name": "Страж Замка",
-        "isboss": "",
-        "maxhp": 4800,
-        "startrage": "",
-        "level": 20,
-        "avatar": 268,
-        "doll": "guardian",
-        "picture": "guardian",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "249": {
-        "id": 249,
-        "adminname": "Страж Замка - призывной",
-        "name": "Страж Замка",
-        "isboss": "",
-        "maxhp": 4800,
-        "startrage": "",
-        "level": 20,
-        "avatar": 268,
-        "doll": "guardian",
-        "picture": "guardian",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "250": {
-        "id": 250,
-        "adminname": "Двойник - 2",
-        "name": "Страж Замка",
-        "isboss": "",
-        "maxhp": 4800,
-        "startrage": "",
-        "level": 20,
-        "avatar": 268,
-        "doll": "guardian",
-        "picture": "guardian",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "251": {
-        "id": 251,
-        "adminname": "Мимик",
-        "name": "Мимик",
-        "isboss": "",
-        "maxhp": 3150,
-        "startrage": "",
-        "level": 20,
-        "avatar": 269,
-        "doll": "mimic",
-        "picture": "mimic",
-        "gender": 2,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [90, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1294": 16,
-                    "1297": 70,
-                    "1327": 0.3,
-                    "1380": 5
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                },
-                "220": {
-                    "default": {
-                        "1262": 25
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 25
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 25
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 20
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 20
-                    }
-                },
-                "229": {
-                    "default": {
-                        "1297": 15
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "252": {
-        "id": 252,
-        "adminname": "Старейшина Джейкоб",
-        "name": "Старейшина Джейкоб",
-        "isboss": "",
-        "maxhp": 15000,
-        "startrage": 50,
-        "level": 20,
-        "avatar": 169,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "factionmoney": {
-                "default": {
-                    "min": 200,
-                    "max": 200
-                }
-            }
-        },
-        "location": ""
-    },
-    "253": {
-        "id": 253,
-        "adminname": "Магистр Адамс",
-        "name": "Магистр Адамс",
-        "isboss": "",
-        "maxhp": 15000,
-        "startrage": 50,
-        "level": 20,
-        "avatar": 168,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "factionmoney": {
-                "default": {
-                    "min": 200,
-                    "max": 200
-                }
-            }
-        },
-        "location": ""
+        "location": "zamok",
     },
     "254": {
         "id": 254,
-        "adminname": "Чупакабра-Хард",
         "name": "Чупакабра",
         "isboss": 1,
         "maxhp": 5500,
@@ -11897,9 +15200,16 @@ mobs = {
         "avatar": 166,
         "doll": "chupakabra",
         "picture": "chupakabra",
+        "minhit": 452,
+        "maxhit": 530,
+        "dodge": 25,
+        "crit": 50,
+        "mastery": 1200,
+        "resilience": 300,
+        "defence": 550,
+        "hitsound": "organic",
         "gender": 1,
         "race": "demon",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -11951,227 +15261,11 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "255": {
-        "id": 255,
-        "adminname": "Лукэтлог - фантом",
-        "name": "Лукэтлог",
-        "isboss": "",
-        "maxhp": 600,
-        "startrage": "",
-        "level": 2,
-        "avatar": 14,
-        "doll": "lookatlog",
-        "picture": "lookatlog",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "factionmoney": {
-                "default": {
-                    "min": 2,
-                    "max": 2
-                }
-            }
-        },
-        "location": "city"
-    },
-    "256": {
-        "id": 256,
-        "adminname": "Лукэтлог выкикивалка",
-        "name": "Лукэтлог",
-        "isboss": "",
-        "maxhp": 50,
-        "startrage": "",
-        "level": 2,
-        "avatar": 38,
-        "doll": "lal",
-        "picture": "lal",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "factionmoney": {
-                "default": {
-                    "min": 7,
-                    "max": 7
-                }
-            }
-        },
-        "location": "city"
-    },
-    "257": {
-        "id": 257,
-        "adminname": "Злой Клоун",
-        "name": "Злой Клоун",
-        "isboss": "",
-        "maxhp": 2000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 238,
-        "doll": "clown",
-        "picture": "clown",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "258": {
-        "id": 258,
-        "adminname": "Полтергейст",
-        "name": "Полтергейст",
-        "isboss": "",
-        "maxhp": 2330,
-        "startrage": 20,
-        "level": 20,
-        "avatar": 274,
-        "doll": "armor_mob",
-        "picture": "armor_mob",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [150, 50, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1294": 32
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                },
-                "220": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "229": {
-                    "default": {
-                        "1297": 25
-                    }
-                },
-                "232": {
-                    "default": {
-                        "1371": 100
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "259": {
-        "id": 259,
-        "adminname": "Золотой Мимик",
-        "name": "Золотой Мимик",
-        "isboss": "",
-        "maxhp": 3550,
-        "startrage": "",
-        "level": 20,
-        "avatar": 270,
-        "doll": "mimic_gold",
-        "picture": "mimic_gold",
-        "gender": 2,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 50, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1294": 16,
-                    "1297": 80,
-                    "1327": 0.5,
-                    "1380": 10
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                },
-                "220": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "229": {
-                    "default": {
-                        "1297": 15
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "260": {
-        "id": 260,
-        "adminname": "Беглый Голем",
-        "name": "Беглый Голем",
-        "isboss": "",
-        "maxhp": 800,
-        "startrage": "",
-        "level": 4,
-        "avatar": 78,
-        "doll": "golem_twohit",
-        "picture": "golem_twohit",
-        "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
+        "location": "cirk",
+        "hidden": 1
     },
     "261": {
         "id": 261,
-        "adminname": "Жак-Циркач",
         "name": "Жак",
         "isboss": 1,
         "maxhp": 6800,
@@ -12180,9 +15274,15 @@ mobs = {
         "avatar": 66,
         "doll": "jacques",
         "picture": "jacques",
+        "minhit": 488,
+        "maxhit": 593,
+        "crit": 40,
+        "mastery": 1100,
+        "resilience": 50,
+        "defence": 350,
         "gender": 1,
         "race": "undead",
-        "isevent": "",
+        "pet": 31,
         "loot": {
             "randloot": {
                 "default": {
@@ -12234,87 +15334,10 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "262": {
-        "id": 262,
-        "adminname": "Клоун Жака",
-        "name": "Белый",
-        "isboss": "",
-        "maxhp": 2000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 241,
-        "doll": "clownwhite",
-        "picture": "clownwhite",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "263": {
-        "id": 263,
-        "adminname": "Дух Гвоздей",
-        "name": "Дух Гвоздей",
-        "isboss": "",
-        "maxhp": 3630,
-        "startrage": 70,
-        "level": 20,
-        "avatar": 275,
-        "doll": "metal1",
-        "picture": "metal1",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1375": 45,
-                    "1401": 40
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                },
-                "220": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "221": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "222": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "223": {
-                    "default": {
-                        "1262": 55
-                    }
-                },
-                "224": {
-                    "default": {
-                        "1262": 55
-                    }
-                }
-            }
-        },
-        "location": ""
+        "location": "cirk",
     },
     "264": {
         "id": 264,
-        "adminname": "Хозяин Туманов",
         "name": "Хозяин Туманов",
         "isboss": 1,
         "maxhp": 5800,
@@ -12323,9 +15346,16 @@ mobs = {
         "avatar": 276,
         "doll": "dollmaster",
         "picture": "dollmaster",
+        "minhit": 940,
+        "maxhit": 1070,
+        "dodge": 30,
+        "crit": 75,
+        "mastery": 1480,
+        "resilience": 550,
+        "defence": 575,
+        "hitsound": "metal",
         "gender": 1,
         "race": "ghost",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 100, 50, 30, 10]
@@ -12346,22 +15376,27 @@ mobs = {
                 "1392": 50
             }
         },
-        "location": ""
+        "location": "zamok",
     },
     "265": {
         "id": 265,
-        "adminname": "Кейси Циркач",
         "name": "Кейси",
         "isboss": 1,
         "maxhp": 3800,
-        "startrage": "",
         "level": 20,
         "avatar": 64,
         "doll": "mob_human_male",
         "picture": "mob_human_male_cock",
+        "minhit": 735,
+        "maxhit": 1090,
+        "crit": 40,
+        "mastery": 1300,
+        "resilience": 300,
+        "defence": 550,
+        "hitsound": "metal",
         "gender": 1,
         "race": "undead",
-        "isevent": "",
+        "pet": 11,
         "loot": {
             "randloot": {
                 "default": {
@@ -12410,178 +15445,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "266": {
-        "id": 266,
-        "adminname": "Охотник - Альфа",
-        "name": "Охотник",
-        "isboss": "",
-        "maxhp": 3600,
-        "startrage": 50,
-        "level": 20,
-        "avatar": 257,
-        "doll": "citizen_black",
-        "picture": "citizen_black",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "267": {
-        "id": 267,
-        "adminname": "Пожиратель - Бета",
-        "name": "Пожиратель",
-        "isboss": "",
-        "maxhp": 3600,
-        "startrage": 50,
-        "level": 20,
-        "avatar": 270,
-        "doll": "mimic_gold",
-        "picture": "mimic_gold",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "268": {
-        "id": 268,
-        "adminname": "Летучая змея",
-        "name": "Летучая змея",
-        "isboss": "",
-        "maxhp": 3600,
-        "startrage": 70,
-        "level": 20,
-        "avatar": 283,
-        "doll": "serpentfly",
-        "picture": "serpentfly",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [70, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1410": 60
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                }
-            },
-            "reqloot": {
-                "reqs": [{
-                    "type": "charparam",
-                    "key": "canineknown",
-                    "sign": "=",
-                    "value": "1"
-                }],
-                "items": {
-                    "1412": 10
-                }
-            }
-        },
-        "location": ""
-    },
-    "269": {
-        "id": 269,
-        "adminname": "Виверна",
-        "name": "Виверна",
-        "isboss": "",
-        "maxhp": 4300,
-        "startrage": 70,
-        "level": 20,
-        "avatar": 284,
-        "doll": "serpentfly_blue",
-        "picture": "serpentfly_blue",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1410": 60
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                }
-            },
-            "reqloot": {
-                "reqs": [{
-                    "type": "charparam",
-                    "key": "canineknown",
-                    "sign": "=",
-                    "value": "1"
-                }],
-                "items": {
-                    "1412": 50
-                }
-            }
-        },
-        "location": ""
-    },
-    "270": {
-        "id": 270,
-        "adminname": "Летучая змея",
-        "name": "Летучая змея",
-        "isboss": "",
-        "maxhp": 3300,
-        "startrage": 70,
-        "level": 20,
-        "avatar": 283,
-        "doll": "serpentfly",
-        "picture": "serpentfly",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "271": {
-        "id": 271,
-        "adminname": "Несуществующий моб",
-        "name": "Несуществующий моб",
-        "isboss": "",
-        "maxhp": 3300,
-        "startrage": 70,
-        "level": 20,
-        "avatar": 285,
-        "doll": "hydra",
-        "picture": "hydra",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "cirk",
     },
     "272": {
         "id": 272,
-        "adminname": "Гидра - красная",
         "name": "Та",
         "isboss": 1,
         "maxhp": 6500,
-        "startrage": "",
         "level": 20,
         "avatar": 285,
         "doll": "hydra",
         "picture": "hydra",
+        "minhit": 820,
+        "maxhit": 980,
+        "dodge": 35,
+        "crit": 40,
+        "mastery": 1000,
+        "resilience": 150,
+        "defence": 360,
+        "hitsound": "organic",
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 30, 10]
@@ -12603,329 +15487,10 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "273": {
-        "id": 273,
-        "adminname": "Гидра - синяя",
-        "name": "Рив",
-        "isboss": "",
-        "maxhp": 5900,
-        "startrage": "",
-        "level": 20,
-        "avatar": 286,
-        "doll": "hydra1",
-        "picture": "hydra1",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1456": 30,
-                    "1495": 14
-                }
-            },
-            "questloot": {
-                "250": {
-                    "default": {
-                        "1469": 30
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "274": {
-        "id": 274,
-        "adminname": "Гидра - зелёная",
-        "name": "Муирт",
-        "isboss": "",
-        "maxhp": 5600,
-        "startrage": "",
-        "level": 20,
-        "avatar": 287,
-        "doll": "hydra2",
-        "picture": "hydra2",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1457": 30,
-                    "1495": 18
-                }
-            },
-            "questloot": {
-                "250": {
-                    "default": {
-                        "1470": 30
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "275": {
-        "id": 275,
-        "adminname": "Королевская Виверна",
-        "name": "Королевская Виверна",
-        "isboss": "",
-        "maxhp": 4600,
-        "startrage": 70,
-        "level": 20,
-        "avatar": 284,
-        "doll": "serpentfly_blue",
-        "picture": "serpentfly_blue",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1410": 60,
-                    "1413": 100
-                }
-            },
-            "questloot": {
-                "207": {
-                    "20": {
-                        "390": 10
-                    }
-                }
-            },
-            "reqloot": {
-                "reqs": [{
-                    "type": "charparam",
-                    "key": "canineknown",
-                    "sign": "=",
-                    "value": "1"
-                }],
-                "items": {
-                    "1412": 50
-                }
-            }
-        },
-        "location": ""
-    },
-    "276": {
-        "id": 276,
-        "adminname": "С.Т.М.в.В.",
-        "name": "С.Т.М.в.В.",
-        "isboss": "",
-        "maxhp": 1000,
-        "startrage": "",
-        "level": 15,
-        "avatar": 14,
-        "doll": "lookatlog",
-        "picture": "lookatlog",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "277": {
-        "id": 277,
-        "adminname": "Рачий Воитель",
-        "name": "Рачий Воитель",
-        "isboss": "",
-        "maxhp": 650,
-        "startrage": "",
-        "level": 9,
-        "avatar": 109,
-        "doll": "armored_orc",
-        "picture": "armored_orc",
-        "gender": 1,
-        "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "278": {
-        "id": 278,
-        "adminname": "Черепаха",
-        "name": "Черепаха",
-        "isboss": "",
-        "maxhp": 4250,
-        "startrage": "",
-        "level": 20,
-        "avatar": 292,
-        "doll": "turtle_green",
-        "picture": "turtle_green",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1505": 50,
-                    "1506": 50
-                }
-            },
-            "questloot": {
-                "266": {
-                    "default": {
-                        "1547": 30
-                    }
-                },
-                "296": {
-                    "default": {
-                        "1793": 2
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "279": {
-        "id": 279,
-        "adminname": "Черепаха",
-        "name": "Черепаха",
-        "isboss": "",
-        "maxhp": 4500,
-        "startrage": "",
-        "level": 20,
-        "avatar": 293,
-        "doll": "turtle_black",
-        "picture": "turtle_black",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1505": 50,
-                    "1506": 50
-                }
-            },
-            "questloot": {
-                "266": {
-                    "default": {
-                        "1548": 30
-                    }
-                },
-                "296": {
-                    "default": {
-                        "1793": 2
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "280": {
-        "id": 280,
-        "adminname": "Черепаха",
-        "name": "Черепаха",
-        "isboss": "",
-        "maxhp": 5500,
-        "startrage": "",
-        "level": 20,
-        "avatar": 294,
-        "doll": "turtle_red",
-        "picture": "turtle_red",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 15, 5]
-            },
-            "randloot": {
-                "default": {
-                    "1505": 100,
-                    "1506": 100,
-                    "1509": 100
-                }
-            },
-            "questloot": {
-                "260": {
-                    "default": {
-                        "1509": 100
-                    }
-                },
-                "296": {
-                    "default": {
-                        "1793": 2
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "281": {
-        "id": 281,
-        "adminname": "Скелет-Охранник",
-        "name": "Скелет-Охранник",
-        "isboss": "",
-        "maxhp": 365,
-        "startrage": "",
-        "level": 3,
-        "avatar": 41,
-        "doll": "ozs",
-        "picture": "ozs",
-        "gender": 1,
-        "race": "undead",
-        "isevent": "",
-        "loot": {
-            "questloot": {
-                "264": {
-                    "default": {
-                        "1520": 100
-                    }
-                }
-            }
-        },
-        "location": "city"
-    },
-    "282": {
-        "id": 282,
-        "adminname": "Слуга Руа",
-        "name": "Слуга Руа",
-        "isboss": "",
-        "maxhp": 4000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 294,
-        "doll": "turtle_red",
-        "picture": "turtle_red",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 15, 5, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1505": 100,
-                    "1506": 100,
-                    "1509": 10
-                }
-            }
-        },
-        "location": ""
+        "location": "land",
     },
     "283": {
         "id": 283,
-        "adminname": "Шаман Матында - Цирк",
         "name": "Шаман Матында",
         "isboss": 1,
         "maxhp": 6000,
@@ -12934,9 +15499,14 @@ mobs = {
         "avatar": 110,
         "doll": "shaman_orc",
         "picture": "shaman_orc",
+        "minhit": 820,
+        "maxhit": 1140,
+        "dodge": 40,
+        "crit": 10,
+        "mastery": 1150,
+        "defence": 445,
         "gender": 1,
         "race": "intelligent",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "default": {
@@ -12984,39 +15554,25 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "284": {
-        "id": 284,
-        "adminname": "В.В.В. Вурун - Цирк",
-        "name": "В.В.В. Вурун",
-        "isboss": "",
-        "maxhp": 7500,
-        "startrage": "",
-        "level": 20,
-        "avatar": 111,
-        "doll": "bigboss_orc",
-        "picture": "bigboss_orc",
-        "gender": 1,
-        "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": ""
+        "location": "cirk",
     },
     "285": {
         "id": 285,
-        "adminname": "Руа",
         "name": "Руа",
         "isboss": 1,
         "maxhp": 9000,
-        "startrage": "",
         "level": 20,
         "avatar": 296,
         "doll": "turtle_evil",
         "picture": "turtle_evil",
+        "minhit": 1100,
+        "maxhit": 1350,
+        "crit": 50,
+        "mastery": 1150,
+        "resilience": 120,
+        "defence": 750,
         "gender": 1,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0, 0]
@@ -13037,170 +15593,10 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "286": {
-        "id": 286,
-        "adminname": "Следующий моб",
-        "name": "Следующий моб",
-        "isboss": "",
-        "maxhp": 11,
-        "startrage": "",
-        "level": 20,
-        "avatar": 294,
-        "doll": "turtle_red",
-        "picture": "turtle_red",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 15, 5]
-            },
-            "randloot": {
-                "default": {
-                    "1505": 100,
-                    "1506": 100
-                }
-            },
-            "questloot": {
-                "259": {
-                    "default": {
-                        "1509": 100
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "287": {
-        "id": 287,
-        "adminname": "Ифрит",
-        "name": "Ифрит",
-        "isboss": "",
-        "maxhp": 3500,
-        "startrage": 1,
-        "level": 19,
-        "avatar": 164,
-        "doll": "djin",
-        "picture": "djin",
-        "gender": 1,
-        "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "288": {
-        "id": 288,
-        "adminname": "Бреган|Лакки|Бруччо",
-        "name": "Бреган|Лакки|Бруччо ",
-        "isboss": "",
-        "maxhp": 2000,
-        "startrage": "",
-        "level": 19,
-        "avatar": 55,
-        "doll": "mob_demon_male",
-        "picture": "mob_demon_male",
-        "gender": 1,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.2,
-                    "1042": 0.2,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1181": 0.2
-                },
-                "default": {
-                    "405": 100,
-                    "404": 0.2
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "289": {
-        "id": 289,
-        "adminname": "Элиза|Алекси|Акрома",
-        "name": "Элиза|Алекси|Акрома",
-        "isboss": "",
-        "maxhp": 1900,
-        "startrage": 50,
-        "level": 19,
-        "avatar": 181,
-        "doll": "mob_demon_female",
-        "picture": "mob_demon_female",
-        "gender": 2,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.2,
-                    "1042": 0.2,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1180": 0.2
-                },
-                "default": {
-                    "405": 100,
-                    "404": 0.2
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "290": {
-        "id": 290,
-        "adminname": "Рон|Катбарр|Венерант",
-        "name": "Рон|Катбарр|Венерант",
-        "isboss": "",
-        "maxhp": 1650,
-        "startrage": "",
-        "level": 19,
-        "avatar": 139,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.2,
-                    "1042": 0.2,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1179": 0.2
-                },
-                "default": {
-                    "405": 100,
-                    "404": 0.2
-                }
-            }
-        },
-        "location": "pant"
+        "location": "les",
     },
     "291": {
         "id": 291,
-        "adminname": "Чак",
         "name": "Чак",
         "isboss": 1,
         "maxhp": 99999,
@@ -13209,378 +15605,21 @@ mobs = {
         "avatar": 298,
         "doll": "mob_human_male",
         "picture": "mob_human_male",
+        "minhit": 10,
+        "maxhit": 10,
+        "dodge": 99,
+        "crit": 99,
+        "mastery": 1000,
+        "resilience": 1000,
+        "defence": 300,
+        "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "isevent": "",
-        "loot": "",
-        "location": "pant"
-    },
-    "292": {
-        "id": 292,
-        "adminname": "Крималл|Ронго|Нихо",
-        "name": "Крималл|Ронго|Нихо",
-        "isboss": "",
-        "maxhp": 2050,
-        "startrage": "",
-        "level": 20,
-        "avatar": 134,
-        "doll": "mob_elv_male",
-        "picture": "mob_elv_male",
-        "gender": 1,
-        "race": "elv",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.5
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.2,
-                    "1042": 0.2,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1179": 0.2
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "293": {
-        "id": 293,
-        "adminname": "Арибет|Вай|Нами",
-        "name": "Арибет|Вай|Нами",
-        "isboss": "",
-        "maxhp": 2350,
-        "startrage": "",
-        "level": 20,
-        "avatar": 131,
-        "doll": "mob_elv_female",
-        "picture": "mob_elv_female",
-        "gender": 2,
-        "race": "elv",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.5
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.2,
-                    "1042": 0.2,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1180": 0.2
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "294": {
-        "id": 294,
-        "adminname": "Бальмур|Лонгин|Пелей",
-        "name": "Бальмур|Лонгин|Пелей",
-        "isboss": "",
-        "maxhp": 2350,
-        "startrage": "",
-        "level": 20,
-        "avatar": 61,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.5
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.2,
-                    "1042": 0.2,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1180": 0.2
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "295": {
-        "id": 295,
-        "adminname": "Тирфинг|Вел|Крода ",
-        "name": "Тирфинг|Вел|Крода ",
-        "isboss": "",
-        "maxhp": 3250,
-        "startrage": "",
-        "level": 20,
-        "avatar": 134,
-        "doll": "mob_elv_male",
-        "picture": "mob_elv_male",
-        "gender": 1,
-        "race": "elv",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.7
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1179": 0.3
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "296": {
-        "id": 296,
-        "adminname": "Ассайл|Ареа|Тришула",
-        "name": "Ассайл|Ареа|Тришула",
-        "isboss": "",
-        "maxhp": 2350,
-        "startrage": "",
-        "level": 20,
-        "avatar": 125,
-        "doll": "mob_demon_female",
-        "picture": "mob_demon_female",
-        "gender": 2,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.5
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1181": 0.3
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "297": {
-        "id": 297,
-        "adminname": "Огмия|Шакти|Охайн",
-        "name": "Огмия|Шакти|Охайн",
-        "isboss": "",
-        "maxhp": 4350,
-        "startrage": "",
-        "level": 20,
-        "avatar": 131,
-        "doll": "mob_elv_female",
-        "picture": "mob_elv_female",
-        "gender": 2,
-        "race": "elv",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 50, 10, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.5
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.7,
-                    "1180": 0.3
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "298": {
-        "id": 298,
-        "adminname": "Фиокл",
-        "name": "Фиокл",
-        "isboss": "",
-        "maxhp": 2650,
-        "startrage": "",
-        "level": 20,
-        "avatar": 128,
-        "doll": "mob_demon_male",
-        "picture": "mob_demon_male",
-        "gender": 1,
-        "race": "demon",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 100, 50, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.5
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.3,
-                    "641": 5,
-                    "1560": 10
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "299": {
-        "id": 299,
-        "adminname": "Сигурдр",
-        "name": "Сигурдр",
-        "isboss": "",
-        "maxhp": 2650,
-        "startrage": "",
-        "level": 20,
-        "avatar": 128,
-        "doll": "mob_human_male",
-        "picture": "mob_human_male",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 100, 100, 100, 50, 5]
-            },
-            "randloot": {
-                "19": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.1,
-                    "641": 0.5
-                },
-                "default": {
-                    "405": 100,
-                    "1559": 50,
-                    "404": 0.3,
-                    "1042": 0.3,
-                    "1041": 0.3,
-                    "641": 5,
-                    "1560": 10
-                }
-            }
-        },
-        "location": "pant"
-    },
-    "300": {
-        "id": 300,
-        "adminname": "Дедуля НГ14",
-        "name": "Дедуля",
-        "isboss": "",
-        "maxhp": 2014,
-        "startrage": 1,
-        "level": 14,
-        "avatar": 81,
-        "doll": "santa",
-        "picture": "santa",
-        "gender": 1,
-        "race": "intelligent",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "301": {
-        "id": 301,
-        "adminname": "Тень",
-        "name": "Тень",
-        "isboss": "",
-        "maxhp": 3000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 303,
-        "doll": "mob_darkshade",
-        "picture": "mob_darkshade",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 10, 0]
-            },
-            "randloot": {
-                "default": {
-                    "1646": 60
-                }
-            }
-        },
-        "location": ""
+        "pet": 23,
+        "location": "city, pant",
     },
     "302": {
         "id": 302,
-        "adminname": "Истинный Руа",
         "name": "Истинный Руа",
         "isboss": 1,
         "maxhp": 10000,
@@ -13589,9 +15628,16 @@ mobs = {
         "avatar": 309,
         "doll": "chief",
         "picture": "chief",
+        "minhit": 1000,
+        "maxhit": 1250,
+        "dodge": 50,
+        "crit": 50,
+        "mastery": 1000,
+        "resilience": 250,
+        "defence": 1000,
+        "hitsound": "metal",
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [100, 10, 0]
@@ -13609,168 +15655,51 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "les",
     },
-    "304": {
-        "id": 304,
-        "adminname": "Баг Ад ивент",
-        "name": "Баг",
-        "isboss": "",
-        "maxhp": 120,
-        "startrage": 66,
-        "level": 99,
-        "avatar": 315,
-        "doll": "toy1",
-        "picture": "toy1",
+    "303": {
+        "id": 303,
+        "name": "Тестовый босс",
+        "isboss": 1,
+        "maxhp": 400,
+        "level": 20,
+        "avatar": 40,
+        "doll": "skeletonboss",
+        "picture": "skeletonboss",
+        "minhit": 31,
+        "maxhit": 43,
+        "crit": 5,
+        "defence": 11,
+        "hitsound": "wood",
         "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
+        "race": "undead",
         "loot": {
             "randloot": {
-                "5": {
-                    "882": 10
-                },
-                "6": {
-                    "882": 10
-                },
-                "7": {
-                    "882": 10
-                },
-                "8": {
-                    "882": 10
-                },
-                "9": {
-                    "882": 10,
-                    "926": 10
-                },
-                "10": {
-                    "926": 10
-                },
-                "11": {
-                    "926": 10
-                },
-                "12": {
-                    "926": 10
-                },
-                "13": {
-                    "926": 15
-                },
-                "14": {
-                    "926": 10
-                },
-                "15": {
-                    "926": 10
-                },
-                "16": {
-                    "926": 10,
-                    "968": 10
-                },
-                "17": {
-                    "926": 10,
-                    "968": 10
-                },
-                "18": {
-                    "926": 10,
-                    "968": 10
-                },
-                "19": {
-                    "926": 10,
-                    "968": 10
-                },
-                "20": {
-                    "968": 10
-                }
+                "default": {}
             }
         },
-        "location": ""
-    },
-    "305": {
-        "id": 305,
-        "adminname": "Лаг Ад ивент",
-        "name": "Лаг",
-        "isboss": "",
-        "maxhp": 450,
-        "startrage": "",
-        "level": 99,
-        "avatar": 316,
-        "doll": "toy3",
-        "picture": "toy3",
-        "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "5": {
-                    "882": 10
-                },
-                "6": {
-                    "882": 10
-                },
-                "7": {
-                    "882": 10
-                },
-                "8": {
-                    "882": 10
-                },
-                "9": {
-                    "882": 10,
-                    "926": 10
-                },
-                "10": {
-                    "926": 10
-                },
-                "11": {
-                    "926": 10
-                },
-                "12": {
-                    "926": 10
-                },
-                "13": {
-                    "926": 15
-                },
-                "14": {
-                    "926": 10
-                },
-                "15": {
-                    "926": 10
-                },
-                "16": {
-                    "926": 10,
-                    "968": 10
-                },
-                "17": {
-                    "926": 10,
-                    "968": 10
-                },
-                "18": {
-                    "926": 10,
-                    "968": 10
-                },
-                "19": {
-                    "926": 10,
-                    "968": 10
-                },
-                "20": {
-                    "968": 10
-                }
-            }
-        },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "306": {
         "id": 306,
-        "adminname": "Обнова Ад ивент",
         "name": "Обнова",
         "isboss": 1,
         "maxhp": 500,
-        "startrage": "",
         "level": 99,
         "avatar": 318,
         "doll": "obnova",
         "picture": "obnova",
+        "minhit": 60,
+        "maxhit": 150,
+        "dodge": 90,
+        "crit": 90,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 100,
+        "hitsound": "metal",
         "gender": 2,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "5": {
@@ -13988,11 +15917,11 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "307": {
         "id": 307,
-        "adminname": "Апдейт Ад ивент",
         "name": "Апдейт",
         "isboss": 1,
         "maxhp": 2000,
@@ -14001,9 +15930,16 @@ mobs = {
         "avatar": 317,
         "doll": "toy2",
         "picture": "toy2",
+        "minhit": 60,
+        "maxhit": 150,
+        "dodge": 90,
+        "crit": 90,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 100,
+        "hitsound": "metal",
         "gender": 1,
         "race": "mechanics",
-        "isevent": "",
         "loot": {
             "randloot": {
                 "5": {
@@ -14221,457 +16157,251 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
-    "310": {
-        "id": 310,
-        "adminname": "Пират",
-        "name": "Пират",
-        "isboss": "",
-        "maxhp": 6000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 321,
-        "doll": "pirrate_01",
-        "picture": "pirrate_01",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1808": 50,
-                    "1809": 50
-                }
-            },
-            "questloot": {
-                "302": {
-                    "default": {
-                        "1801": 3
-                    }
-                },
-                "323": {
-                    "default": {
-                        "1985": 10,
-                        "1991": 10
-                    }
-                },
-                "327": {
-                    "default": {
-                        "1985": 10,
-                        "1991": 10
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "311": {
-        "id": 311,
-        "adminname": "Навигатор",
-        "name": "Навигатор",
-        "isboss": "",
-        "maxhp": 6500,
-        "startrage": 20,
-        "level": 20,
-        "avatar": 323,
-        "doll": "pirrate_03",
-        "picture": "pirrate_03",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1808": 50,
-                    "1811": 50
-                }
-            },
-            "questloot": {
-                "302": {
-                    "default": {
-                        "1804": 3,
-                        "1805": 3
-                    }
-                },
-                "323": {
-                    "default": {
-                        "1985": 10,
-                        "1991": 10
-                    }
-                },
-                "327": {
-                    "default": {
-                        "1985": 10,
-                        "1991": 10
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "312": {
-        "id": 312,
-        "adminname": "Первый помощник Эдвард",
-        "name": "Первый помощник Эдвард",
-        "isboss": "",
-        "maxhp": 10000,
-        "startrage": 20,
-        "level": 20,
-        "avatar": 323,
-        "doll": "pirrate_03",
-        "picture": "pirrate_03",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1808": 100,
-                    "1811x5": 100
-                }
-            },
-            "questloot": {
-                "302": {
-                    "default": {
-                        "1806": 100
-                    }
-                },
-                "323": {
-                    "default": {
-                        "1990": 100
-                    }
-                },
-                "327": {
-                    "default": {
-                        "1990": 100
-                    }
-                },
-                "320": {
-                    "default": {
-                        "1983": 50
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "313": {
-        "id": 313,
-        "adminname": "Канонир",
-        "name": "Канонир",
-        "isboss": "",
-        "maxhp": 5000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 322,
-        "doll": "pirrate_02",
-        "picture": "pirrate_02",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1808": 50,
-                    "1810": 50
-                }
-            },
-            "questloot": {
-                "302": {
-                    "default": {
-                        "1802": 3
-                    }
-                },
-                "323": {
-                    "default": {
-                        "1985": 10,
-                        "1991": 10
-                    }
-                },
-                "327": {
-                    "default": {
-                        "1985": 10,
-                        "1991": 10
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "314": {
-        "id": 314,
-        "adminname": "Квартмейстер Билл",
-        "name": "Квартмейстер Билл",
-        "isboss": "",
-        "maxhp": 8000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 322,
-        "doll": "pirrate_02",
-        "picture": "pirrate_02",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 30, 10, 1]
-            },
-            "randloot": {
-                "default": {
-                    "1808": 100,
-                    "1810x5": 100
-                }
-            },
-            "questloot": {
-                "302": {
-                    "default": {
-                        "1803": 100
-                    }
-                },
-                "323": {
-                    "default": {
-                        "1989": 80
-                    }
-                },
-                "327": {
-                    "default": {
-                        "1989": 80
-                    }
-                }
-            }
-        },
-        "location": ""
-    },
-    "315": {
-        "id": 315,
-        "adminname": "Призывной пират",
-        "name": "Призванный пират",
-        "isboss": "",
-        "maxhp": 1000,
+    "308": {
+        "id": 308,
+        "name": "Тесто-Апдейт",
+        "isboss": 1,
+        "maxhp": 100,
         "startrage": 100,
-        "level": 20,
-        "avatar": 100,
-        "doll": "pirrate_01",
-        "picture": "pirrate_01",
+        "level": 99,
+        "avatar": 317,
+        "doll": "chief",
+        "picture": "chief",
+        "minhit": 100,
+        "maxhit": 100,
+        "dodge": 100,
+        "crit": 100,
+        "mastery": 100,
+        "resilience": 100,
+        "defence": 100,
+        "hitsound": "organic",
         "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "316": {
-        "id": 316,
-        "adminname": "Клешнерыб",
-        "name": "Клешнерыб",
-        "isboss": "",
-        "maxhp": 3000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 335,
-        "doll": "ppirate01",
-        "picture": "ppirate01",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "317": {
-        "id": 317,
-        "adminname": "Тюремщик",
-        "name": "Тюремщик",
-        "isboss": "",
-        "maxhp": 6000,
-        "startrage": 40,
-        "level": 20,
-        "avatar": 333,
-        "doll": "jailer",
-        "picture": "jailer",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
+        "race": "beast",
         "loot": {
-            "crystals": {
-                "default": [100, 10, 0]
-            },
-            "loot": {
-                "default": {
-                    "1999": 100
-                }
-            }
-        },
-        "location": ""
-    },
-    "318": {
-        "id": 318,
-        "adminname": "Пилозуб",
-        "name": "Пилозуб",
-        "isboss": "",
-        "maxhp": 2500,
-        "startrage": "",
-        "level": 20,
-        "avatar": 334,
-        "doll": "ppirate02",
-        "picture": "ppirate02",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "319": {
-        "id": 319,
-        "adminname": "Шаркспир",
-        "name": "Капитан Шаркспир",
-        "isboss": "",
-        "maxhp": 13000,
-        "startrage": 30,
-        "level": 20,
-        "avatar": 332,
-        "doll": "shark1",
-        "picture": "shark1",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 10, 0]
-            },
-            "loot": {
-                "default": {
-                    "1987": 3,
-                    "1988": 3,
-                    "2002": 3,
-                    "2008": 1,
-                    "2284": 1,
-                    "1949": 20,
-                    "1950": 20,
-                    "1951": 20,
-                    "1952": 20,
-                    "1953": 20,
-                    "1962": 20,
-                    "1964": 20,
-                    "1966": 20,
-                    "1968": 20,
-                    "1970": 20,
-                    "1963": 20,
-                    "1965": 20,
-                    "1967": 20,
-                    "1969": 20,
-                    "1971": 20
-                }
-            },
             "randloot": {
-                "default": {
-                    "1995": 5,
-                    "2011": 100
+                "5": {
+                    "1721": 1,
+                    "1723": 1,
+                    "1725": 1,
+                    "1739": 1,
+                    "1741": 1,
+                    "1743": 1,
+                    "1759": 1,
+                    "1761": 1,
+                    "1763": 1,
+                    "882": 10,
+                    "1751": 100
+                },
+                "6": {
+                    "1721": 1,
+                    "1723": 1,
+                    "1725": 1,
+                    "1739": 1,
+                    "1741": 1,
+                    "1743": 1,
+                    "1759": 1,
+                    "1761": 1,
+                    "1763": 1,
+                    "882": 10,
+                    "1751": 100
+                },
+                "7": {
+                    "1721": 1,
+                    "1723": 1,
+                    "1725": 1,
+                    "1739": 1,
+                    "1741": 1,
+                    "1743": 1,
+                    "1759": 1,
+                    "1761": 1,
+                    "1763": 1,
+                    "882": 10,
+                    "1751": 100
+                },
+                "8": {
+                    "1721": 1,
+                    "1723": 1,
+                    "1725": 1,
+                    "1739": 1,
+                    "1741": 1,
+                    "1743": 1,
+                    "1759": 1,
+                    "1761": 1,
+                    "1763": 1,
+                    "882": 10,
+                    "1751": 100
+                },
+                "9": {
+                    "1721": 1,
+                    "1723": 1,
+                    "1725": 1,
+                    "1739": 1,
+                    "1741": 1,
+                    "1743": 1,
+                    "1759": 1,
+                    "1761": 1,
+                    "1763": 1,
+                    "882": 10,
+                    "926": 10,
+                    "1751": 100
+                },
+                "10": {
+                    "1721": 1,
+                    "1723": 1,
+                    "1725": 1,
+                    "1739": 1,
+                    "1741": 1,
+                    "1743": 1,
+                    "1759": 1,
+                    "1761": 1,
+                    "1763": 1,
+                    "926": 10,
+                    "1751": 100
+                },
+                "11": {
+                    "1721": 1,
+                    "1723": 1,
+                    "1725": 1,
+                    "1739": 1,
+                    "1741": 1,
+                    "1743": 1,
+                    "1759": 1,
+                    "1761": 1,
+                    "1763": 1,
+                    "926": 10,
+                    "1751": 100
+                },
+                "12": {
+                    "1727": 1,
+                    "1729": 1,
+                    "1731": 1,
+                    "1745": 1,
+                    "1748": 1,
+                    "1750": 1,
+                    "1765": 1,
+                    "1767": 1,
+                    "1769": 1,
+                    "926": 10,
+                    "1751": 100
+                },
+                "13": {
+                    "1727": 1,
+                    "1729": 1,
+                    "1731": 1,
+                    "1745": 1,
+                    "1748": 1,
+                    "1750": 1,
+                    "1765": 1,
+                    "1767": 1,
+                    "1769": 1,
+                    "926": 15,
+                    "1751": 100
+                },
+                "14": {
+                    "1727": 1,
+                    "1729": 1,
+                    "1731": 1,
+                    "1745": 1,
+                    "1748": 1,
+                    "1750": 1,
+                    "1765": 1,
+                    "1767": 1,
+                    "1769": 1,
+                    "926": 10,
+                    "1751": 100
+                },
+                "15": {
+                    "1727": 1,
+                    "1729": 1,
+                    "1731": 1,
+                    "1745": 1,
+                    "1748": 1,
+                    "1750": 1,
+                    "1765": 1,
+                    "1767": 1,
+                    "1769": 1,
+                    "926": 10,
+                    "1751": 100
+                },
+                "16": {
+                    "1727": 1,
+                    "1729": 1,
+                    "1731": 1,
+                    "1745": 1,
+                    "1748": 1,
+                    "1750": 1,
+                    "1765": 1,
+                    "1767": 1,
+                    "1769": 1,
+                    "926": 10,
+                    "968": 10,
+                    "1751": 100
+                },
+                "17": {
+                    "1727": 1,
+                    "1729": 1,
+                    "1731": 1,
+                    "1745": 1,
+                    "1748": 1,
+                    "1750": 1,
+                    "1765": 1,
+                    "1767": 1,
+                    "1769": 1,
+                    "926": 10,
+                    "968": 10,
+                    "1751": 100
+                },
+                "18": {
+                    "1733": 1,
+                    "1735": 1,
+                    "1737": 1,
+                    "1753": 1,
+                    "1755": 1,
+                    "1757": 1,
+                    "1771": 1,
+                    "1773": 1,
+                    "1775": 1,
+                    "926": 10,
+                    "968": 10,
+                    "1751": 100
+                },
+                "19": {
+                    "1733": 1,
+                    "1735": 1,
+                    "1737": 1,
+                    "1753": 1,
+                    "1755": 1,
+                    "1757": 1,
+                    "1771": 1,
+                    "1773": 1,
+                    "1775": 1,
+                    "926": 10,
+                    "968": 10,
+                    "1751": 100
+                },
+                "20": {
+                    "1733": 1,
+                    "1735": 1,
+                    "1737": 1,
+                    "1753": 1,
+                    "1755": 1,
+                    "1757": 1,
+                    "1771": 1,
+                    "1773": 1,
+                    "1775": 1,
+                    "968": 10,
+                    "1751": 100
                 }
             }
         },
-        "location": ""
-    },
-    "320": {
-        "id": 320,
-        "adminname": "Даги Два Пальца (Заражённые пираты_Мини-босс)",
-        "name": "Даги Два Пальца",
-        "isboss": "",
-        "maxhp": 7000,
-        "startrage": "",
-        "level": 20,
-        "avatar": 335,
-        "doll": "ppirate01",
-        "picture": "ppirate01",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 10, 0]
-            },
-            "loot": {
-                "default": {
-                    "1176": 20,
-                    "1177": 10,
-                    "1178": 5,
-                    "1164": 20,
-                    "1165": 10,
-                    "1166": 5,
-                    "2002": 1,
-                    "1167": 20,
-                    "1168": 10,
-                    "1169": 5,
-                    "1170": 20,
-                    "1171": 10,
-                    "1172": 5,
-                    "1987": 1,
-                    "1988": 1,
-                    "1173": 20,
-                    "1174": 10,
-                    "1175": 5
-                }
-            }
-        },
-        "location": ""
-    },
-    "321": {
-        "id": 321,
-        "adminname": "Красавчик Бью (Заражённые пираты_Мини-босс)",
-        "name": "Красавчик Бью",
-        "isboss": "",
-        "maxhp": 6000,
-        "startrage": 20,
-        "level": 20,
-        "avatar": 334,
-        "doll": "ppirate02",
-        "picture": "ppirate02",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [100, 10, 0]
-            },
-            "loot": {
-                "default": {
-                    "1176": 20,
-                    "1177": 10,
-                    "1178": 5,
-                    "1164": 20,
-                    "1165": 10,
-                    "1166": 5,
-                    "2002": 1,
-                    "1167": 20,
-                    "1168": 10,
-                    "1169": 5,
-                    "1170": 20,
-                    "1171": 10,
-                    "1172": 5,
-                    "1987": 1,
-                    "1988": 1,
-                    "1173": 20,
-                    "1174": 10,
-                    "1175": 5
-                }
-            }
-        },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "322": {
         "id": 322,
-        "adminname": "Дерзкая Тишина",
         "name": "Тишина",
         "isboss": 1,
         "maxhp": 550,
@@ -14680,9 +16410,14 @@ mobs = {
         "avatar": 30,
         "doll": "ghost",
         "picture": "ghost",
+        "minhit": 35,
+        "maxhit": 47,
+        "dodge": 12,
+        "crit": 12,
+        "defence": 13,
+        "hitsound": "wood",
         "gender": 2,
         "race": "undead",
-        "isevent": "",
         "loot": {
             "money": {
                 "5": {
@@ -14737,203 +16472,30 @@ mobs = {
                 }
             }
         },
-        "location": "city"
-    },
-    "323": {
-        "id": 323,
-        "adminname": "Нечто - Экс Все Живое",
-        "name": "Нечто",
-        "isboss": "",
-        "maxhp": 300,
-        "startrage": "",
-        "level": 3,
-        "avatar": 193,
-        "doll": "evalive_twohit",
-        "picture": "evalive_twohit",
-        "gender": 1,
-        "race": "demon",
-        "isevent": "",
-        "loot": "",
-        "location": ""
-    },
-    "324": {
-        "id": 324,
-        "adminname": "Подвал_Полтергейст(призывается в подвале на алтаре)",
-        "name": "Полтергейст",
-        "isboss": "",
-        "maxhp": 2330,
-        "startrage": 20,
-        "level": 20,
-        "avatar": 274,
-        "doll": "armor_mob",
-        "picture": "armor_mob",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "crystals": {
-                "default": [150, 50, 10]
-            },
-            "randloot": {
-                "default": {
-                    "1294": 7
-                }
-            }
-        },
-        "location": ""
-    },
-    "325": {
-        "id": 325,
-        "adminname": "Ледяная Пустошь_Пушистый Страж",
-        "name": "Пушистый Страж",
-        "isboss": "",
-        "maxhp": 100,
-        "startrage": 35,
-        "level": 99,
-        "avatar": 91,
-        "doll": "lal_polar",
-        "picture": "lal_polar",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "535": "0.15",
-                    "536": "0.15",
-                    "537": "0.15",
-                    "538": "0.15",
-                    "2090": 30,
-                    "2091": 15,
-                    "534": "0.15"
-                }
-            }
-        },
-        "location": ""
-    },
-    "326": {
-        "id": 326,
-        "adminname": "НЕНУЖНЫЙ МОБ",
-        "name": "НЕНУЖНЫЙ МОБ",
-        "isboss": "",
-        "maxhp": 100,
-        "startrage": 35,
-        "level": 99,
-        "avatar": 91,
-        "doll": "lal_polar",
-        "picture": "lal_polar",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "2091": 15,
-                    "2090": 40,
-                    "536": 0.15,
-                    "538": 0.15,
-                    "534": 0.15,
-                    "536": 0.15,
-                    "537": 0.15,
-                    "536": 0.15,
-                    "535": 0.15
-                }
-            }
-        },
-        "location": ""
-    },
-    "327": {
-        "id": 327,
-        "adminname": "Древнее Зло",
-        "name": "Древнее Зло",
-        "isboss": "",
-        "maxhp": 100000,
-        "startrage": 100,
-        "level": 22,
-        "avatar": 359,
-        "doll": "iotuns_leg_twohit",
-        "picture": "iotuns_leg_twohit",
-        "gender": 1,
-        "race": "human",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "2203": 100
-                }
-            }
-        },
-        "location": ""
-    },
-    "328": {
-        "id": 328,
-        "adminname": "Ледяная Пустошь_Ледяной Страж",
-        "name": "Ледяной Страж",
-        "isboss": "",
-        "maxhp": 100,
-        "startrage": "",
-        "level": 99,
-        "avatar": 102,
-        "doll": "icegolem",
-        "picture": "icegolem",
-        "gender": 2,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "2099": 3,
-                    "2103": 3,
-                    "2104": 3,
-                    "2107": 15,
-                    "2100": 3
-                }
-            }
-        },
-        "location": ""
-    },
-    "329": {
-        "id": 329,
-        "adminname": "Новый год_Бракованная игрушка (Баг)",
-        "name": "Бракованная игрушка",
-        "isboss": "",
-        "maxhp": 70,
-        "startrage": 70,
-        "level": 99,
-        "avatar": 315,
-        "doll": "toy1",
-        "picture": "toy1",
-        "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "2091": 5,
-                    "2107": 15,
-                    "2099": 7,
-                    "2103": 7,
-                    "2104": 5,
-                    "2105": 1
-                }
-            }
-        },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "330": {
         "id": 330,
-        "adminname": "Проекция",
         "name": "Проекция",
         "isboss": 1,
         "maxhp": 20,
-        "startrage": "",
         "level": 99,
         "avatar": 38,
         "doll": "lal",
         "picture": "lal",
+        "minhit": 1,
+        "maxhit": 10,
+        "dodge": 20,
+        "crit": 20,
+        "mastery": 20,
+        "resilience": 20,
+        "defence": 20,
+        "hitsound": "organic",
         "gender": 1,
         "race": "beast",
         "isevent": 1,
+        "pet": 9,
         "loot": {
             "massloot": {
                 "default": {
@@ -14945,52 +16507,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "331": {
-        "id": 331,
-        "adminname": "Гигантская ОДР",
-        "name": "Гигантская ОДР",
-        "isboss": "",
-        "maxhp": 39209,
-        "startrage": "",
-        "level": 19,
-        "avatar": 44,
-        "doll": "drspecial",
-        "picture": "drspecial",
-        "gender": 2,
-        "race": "plant",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "2231": 100
-                }
-            },
-            "questloot": {
-                "344": {
-                    "default": {
-                        "2277": 100
-                    }
-                }
-            }
-        },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "332": {
         "id": 332,
-        "adminname": "Тихоходка 2015 хелловин",
         "name": "Земфира|Зоя|Зухра|Зарина|Антон|Зинаида|Зульфия",
         "isboss": 1,
         "maxhp": 300000,
-        "startrage": "",
         "level": 7,
         "avatar": 62,
         "doll": "tihohodka",
         "picture": "tihohodka",
+        "minhit": 50,
+        "maxhit": 80,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 2000,
+        "resilience": 1000,
+        "hitsound": "organic",
         "gender": 2,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "crystals": {
                 "default": [150, 40, 5, 0, 0]
@@ -15006,22 +16543,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "333": {
         "id": 333,
-        "adminname": "Личинка Тихоходки 2015 хелловин",
         "name": "Илюся|Инна|Изаура|Изида|Изабелла|Изольда|Антон|Инна|Ирина",
         "isboss": 1,
         "maxhp": 3000,
-        "startrage": "",
         "level": 6,
         "avatar": 62,
         "doll": "tihohodka",
         "picture": "tihohodka",
+        "minhit": 20,
+        "maxhit": 50,
+        "dodge": 5,
+        "crit": 5,
+        "mastery": 1000,
+        "resilience": 1900,
+        "hitsound": "organic",
         "gender": 2,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -15073,22 +16615,27 @@ mobs = {
                 }
             }
         },
-        "location": ""
+        "location": "city",
+        "hidden": 1
     },
     "334": {
         "id": 334,
-        "adminname": "Личинка Тихоходки 2015 хелловин ТЕСТ",
         "name": "Илюся|Инна|Изаура|Изида|Изабелла|Изольда|Антон|Инна|Ирина",
         "isboss": 1,
         "maxhp": 3000,
-        "startrage": "",
         "level": 6,
         "avatar": 62,
         "doll": "tihohodka",
         "picture": "tihohodka",
+        "minhit": 20,
+        "maxhit": 50,
+        "dodge": 15,
+        "crit": 25,
+        "mastery": 1000,
+        "resilience": 1900,
+        "hitsound": "organic",
         "gender": 2,
         "race": "beast",
-        "isevent": "",
         "loot": {
             "money": {
                 "3": {
@@ -15140,146 +16687,7 @@ mobs = {
                 }
             }
         },
-        "location": ""
-    },
-    "335": {
-        "id": 335,
-        "adminname": "Дух Снежного Лукэтлога",
-        "name": "Дух Снежного Лукэтлога",
-        "isboss": "",
-        "maxhp": 1,
-        "startrage": "",
-        "level": 9,
-        "avatar": 91,
-        "doll": "lal_polar",
-        "picture": "lal_polar",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {},
-        "location": "gory"
-    },
-    "336": {
-        "id": 336,
-        "adminname": "Бракованный голем",
-        "name": "Бракованный голем",
-        "isboss": "",
-        "maxhp": 200,
-        "startrage": "",
-        "level": 1,
-        "avatar": 78,
-        "doll": "golem_twohit",
-        "picture": "golem_twohit",
-        "gender": 1,
-        "race": "mechanics",
-        "isevent": "",
-        "loot": "",
-        "location": "city"
-    },
-    "337": {
-        "id": 337,
-        "adminname": "ТПЛ",
-        "name": "ТПЛ",
-        "isboss": "",
-        "maxhp": 26,
-        "startrage": "",
-        "level": 2,
-        "avatar": 14,
-        "doll": "lookatlog",
-        "picture": "lookatlog",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "2204": 10
-                }
-            }
-        },
-        "location": "city"
-    },
-    "338": {
-        "id": 338,
-        "adminname": "Одержимый зайчик",
-        "name": "Одержимый зайчик",
-        "isboss": "",
-        "maxhp": 20000,
-        "startrage": "",
-        "level": 3,
-        "avatar": 91,
-        "doll": "lal_polar",
-        "picture": "lal_polar",
-        "gender": 1,
-        "race": "beast",
-        "isevent": "",
-        "loot": {},
-        "location": "city"
-    },
-    "339": {
-        "id": 339,
-        "adminname": "Освободившееся Зло",
-        "name": "Освободившееся Зло",
-        "isboss": "",
-        "maxhp": 1400,
-        "startrage": "",
-        "level": 16,
-        "avatar": 197,
-        "doll": "moonkin",
-        "picture": "moonkin",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {},
-        "location": ""
-    },
-    "340": {
-        "id": 340,
-        "adminname": "Ослабленное зло",
-        "name": "Ослабленное зло",
-        "isboss": "",
-        "maxhp": 700,
-        "startrage": "",
-        "level": 3,
-        "avatar": 198,
-        "doll": "moonblue",
-        "picture": "moonblue",
-        "gender": 1,
-        "race": "ghost",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "2246": 30,
-                    "2247": 30,
-                    "2248": 30,
-                    "2249": 30
-                }
-            }
-        },
-        "location": "city"
-    },
-    "341": {
-        "id": 341,
-        "adminname": "Вьетнамский Бревень",
-        "name": "Вьетнамский Бревень",
-        "isboss": "",
-        "maxhp": 150,
-        "startrage": "",
-        "level": 4,
-        "avatar": 52,
-        "doll": "breven",
-        "picture": "breven",
-        "gender": 1,
-        "race": "plant",
-        "isevent": "",
-        "loot": {
-            "randloot": {
-                "default": {
-                    "247x9": 100
-                }
-            }
-        },
-        "location": "city"
+        "location": "city",
+        "hidden": 1
     }
 };

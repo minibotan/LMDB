@@ -46,16 +46,27 @@ function makeItemBox(item) {
     p += '<table class = "bot">'
     p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
     p += '</table>';
+    if (item.bottleparams) {
+        p += itemParams(item);
+    }
     if(item.type == 'sunduk') {
         p += '<div>';
         p += '<div class="loot_block_title">Содержимое</div>';
         p += '<div class="loot_block_content">';
-        p += lootblock(item.bottleparams, );
+        p += lootblock(item.bottleparams);
         p += '</div></div>';
     }
     p += '</div>';
     return p;
 }
+
+function itemParams(item) {
+    var type = item.type;
+    var params = item.bottleparams;
+    
+}
+
+
 
 function getPrice(price) {
     var r = '';
@@ -98,7 +109,8 @@ function Reqs(item) {
 }
 
 function check(a) {
-    if (a[Property] == Value  || (typeof a[Property] == Value))
+    console.log(a[Property] + '  ---  ' + Property + '  ---  ' + Value);
+    if (a[Property] == Value  || (typeof a[Property] == Value) || ((Property == 'location' && a[Property])?(a[Property].indexOf(Value) !== -1):(false)))
         return true;
     return false;
 }
