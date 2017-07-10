@@ -100,6 +100,17 @@ function lootblock(loot) {
             case 'crystals':
                 p += getLootBylvl(loot[loottype], loottype);
                 break;
+            case 'psevdorandloot':
+                var prl = loot[loottype];
+                for (var it in prl) {
+                    p += '<div class="drop" title="' + items[it].name + '\nШанс: от ' + prl[it].min + '% до ' + prl[it].max + '%" value="' + it + '">';
+                    p += '<img class="miniimg ' + items[it].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[it].image + '.jpg">';
+                    p += '</div>';
+                }
+                break;
+            case 'personalloot':
+                p += makeDropBlock(loot[loottype]);
+                break;
             default:
                 p += 'скоро будет инфа';
         }
@@ -161,9 +172,12 @@ function getLootBylvl(loot, loottype) {
                 p += 'От ' + loot[lvl].min + '<img src=""> До ' + loot[lvl].max + '<img src"">';
                 break;
             case 'crystals':
+                chance = getChance(loot[lvl]);
                 for (var k in loot[lvl]) {
+                    if(k == 0) continue;
                     if (loot[lvl][k] == 0) break;
-                    p += '<img src="img/crystal.png" title="' + loot[lvl][k] + '">';
+                    var c = Math.round(((chance)?(loot[lvl][k]/chance):(loot[lvl][k])) * 100)/100;
+                    p += '<img src="img/crystal.png" title="' + c + '%">';
                 }
                 break;
         }
