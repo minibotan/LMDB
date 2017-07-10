@@ -309,8 +309,7 @@ searchValues = {
       'elv': 'Эльфы',
       'ghost': 'Одержимые',
       'mechanics': 'Механизмы',
-      'intelligent': 'Разумные'
-
+      'intelligent': 'Разумные',
     },
     'level': {
       "1": "1 Уровень",
@@ -342,21 +341,39 @@ searchValues = {
       'sumerki':'Сумерки',
       'land':'Древние земли',
       'pirates': 'Пираты',
-      'pant': 'Пантеон'
+      'pant': 'Пантеон',
+      'sklep': 'Склеп',
+      'melnica':'Мельница',
+      'pg':'Плывучий Голландец',
+      'gribnaya':'Грибная пещера',
+      'logovo':'Логово',
+      'nedra':'Недра',
+      'nora':'Нора',
+      'morfonora':'Пещера Идолов',
+      'cirk':'Цирк',
+      'zamok':'Темный Замок',
+      'les':'Вечный Лес',
+      'sharkonora':'Пещера Проклятых',
+      'limb':'Лимб',
     }
   }
 };
 
 
 lootLoc = {
-    loot:'одно из',
-    randloot:'возможное содержимое',
-    questloot:'квестовый лут',
-    factionmoney:'стигмы',
-    money:'голда',
-    twilights:'анимы',
-    crystals:'осколки магии',
-    sockets: 'количество дыр',
+    'loot':'одно из',
+    'randloot':'возможное содержимое',
+    'questloot':'квестовый лут',
+    'factionmoney':'стигмы',
+    'money':'голда',
+    'twilights':'анимы',
+    'crystals':'осколки магии',
+    'psevdorandloot':'псевдорандомный лут',
+    'personalloot':'персональный дроп',
+
+
+    'sockets': 'количество дыр',
+
     1:'первых',
     2:'вторых',
     3:'третьих',
