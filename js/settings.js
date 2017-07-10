@@ -1,6 +1,6 @@
 var lmdbCookie;
 var cT = new Date();
-cT.setTime (cT.getTime () - 1);
+cT.setTime (cT.getTime () - 100);
 var expiredTime = 'expires=' + cT.toUTCString();
 var cT = new Date();
 cT.setTime (cT.getTime () + 365 * 24 * 3600 * 1000);
