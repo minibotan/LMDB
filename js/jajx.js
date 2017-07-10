@@ -238,14 +238,15 @@ function tmpLocs() {
 
 
 var last = 1;
+var step = 50;
 
 function locationObjects(k) {
   if (k !== undefined) {
-    last = k * 100 + 1;
+    last = k * step + 1;
   }
   var p = '<h2> Это список из объектов в локациях. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
   p += '<ol>';
-  for (var i = last; i < last + 100; i++) {
+  for (var i = last; i < last + step; i++) {
     p += '<li>';
     var swfsrc = '' + path + '/play/lib/locationObjects/general/' + i + '.swf';
     p += '<object type="application/x-shockwave-flash" width="970" height="330">';
@@ -258,11 +259,12 @@ function locationObjects(k) {
     p += '<param name="loop" value="true" />';
     p += '<param name="scale" value="noScale" />';
     p += '</object>';
-    p += '<a href="' + swfsrc + '" a> ссылочка </a>';
+    p += '<a href="' + swfsrc + '"> ссылочка </a>';
+    p += '<a href="' + swfsrc + '" download> скачать </a>';
     p += '</li>';
   }
   p += '</ol>';
-  last += 100;
+  last += step;
   $('.contentbox').html(p);
 }
 
