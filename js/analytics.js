@@ -1,7 +1,6 @@
 function anal() {
   googleanal();
-
-
+  yaanal();
 }
 
 function googleanal() {
