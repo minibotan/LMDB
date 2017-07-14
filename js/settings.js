@@ -17,8 +17,7 @@ var settings = {
         false: "Я адекватный",
         regexp: /\{ok:([а-яё a-z0-9\-]*):([а-яё a-z0-9\-]*)\}/ig
     },
-    showmeall:{
-        val : false
+    showmeall: {
     }
 }
 
