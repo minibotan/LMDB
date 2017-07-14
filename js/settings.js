@@ -43,7 +43,7 @@ function readCookie() {
             case 'ok':
             case 'gender':
             case 'showmeall':
-                settings[name].val = val;
+                settings[name].val = (val == 'true');
                 break;
         }
     }
