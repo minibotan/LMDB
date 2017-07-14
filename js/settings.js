@@ -33,7 +33,9 @@ function change(id) {
 
 
 function readCookie() {
+    console.log('readcookie');
     lmdbCookie = document.cookie.split('; ');
+    console.log(lmdbCookie);
     for (let i of lmdbCookie) {
         var name = i.split('=')[0];
         var val = i.split('=')[1];
