@@ -9,7 +9,7 @@ $(document).ready(function () {
     alert('Включите cookie для комфортной работы с этим сайтом');
   }
 
-  if(!settings.showmeall) {
+  if(!settings.showmeall.val) {
       anal();
   }
 
@@ -284,4 +284,21 @@ function showWeeks() {
   p += '</ol>';
   $('.contentbox').html(p);
   clearImgs();
+}
+
+
+function downloadAll(){
+  for(var mob in mobs) {
+    var src = path + '/play/lib/dolls/' + mobs[mob].doll + '.swf';
+    window.open(src, '_blank');
+    wt(100);
+  }
+}
+
+function wt(sleeptime) {
+  stTime = new Date().getMilliseconds;
+    while (true) {
+        if(sleeptime < new Date().getMilliseconds - stTime) break;
+    }
+
 }
