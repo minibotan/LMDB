@@ -18,7 +18,7 @@ var settings = {
         regexp: /\{ok:([а-яё a-z0-9\-]*):([а-яё a-z0-9\-]*)\}/ig
     },
     showmeall:{
-        val:false
+        val : false
     }
 }
 
@@ -37,11 +37,13 @@ function readCookie() {
     for (let i of lmdbCookie) {
         var name = i.split('=')[0];
         var val = i.split('=')[1];
+        console.log(name + ' --- ' + val);
         switch (name) {
             case 'ok':
             case 'gender':
             case 'showmeall':
                 settings[name].val = val;
+                break;
         }
     }
 }
