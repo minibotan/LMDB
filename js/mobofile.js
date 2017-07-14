@@ -12536,6 +12536,7 @@ mobs = {
         "gender": 1,
         "race": "ghost",
         "location": "zamok",
+        "hidden" : 1
     },
     "249": {
         "id": 249,
@@ -12556,6 +12557,7 @@ mobs = {
         "gender": 1,
         "race": "ghost",
         "location": "zamok",
+        "hidden" : 1
     },
     "250": {
         "id": 250,
@@ -12576,6 +12578,7 @@ mobs = {
         "gender": 1,
         "race": "ghost",
         "location": "zamok",
+        "hidden" : 1
     },
     "251": {
         "id": 251,
