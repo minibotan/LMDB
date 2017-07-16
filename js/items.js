@@ -45,7 +45,9 @@ function makeItemBox(item) {
     p += (item.descr) ? ('<p class="goldentext">' + item.descr + '</p>') : ('');
     p += '<table class = "bot">'
     p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
+    p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + getTime(item.validtime) + '</td></tr>') : ('');
     p += '</table>';
+    p += (item.owner) ? ('<p class="">Владелец - <a href="lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
     if (item.bottleparams) {
         p += itemParams(item);
     }
@@ -73,6 +75,14 @@ function getPrice(price) {
     r += (price > 9999) ? ((Math.floor(price / 10000)) + ' <img src="img/gold.jpg"> ') : ('');
     r += ((Math.floor(price / 100)) % 100 > 0) ? ((Math.floor(price / 100)) % 100 + ' <img src="img/silver.jpg"> ') : ('');
     r += (price % 100 > 0) ? (price % 100 + ' <img src="img/bronze.jpg">') : ('');
+    return r;
+}
+
+function getTime(time) {
+    var r = '';
+    r += (time > 3599) ? ((Math.floor(time / 3600)) + ' часов ') : ('');
+    r += ((Math.floor(time / 60)) % 60 > 0) ? ((Math.floor(time / 60)) % 60 + ' минут ') : ('');
+    r += (time % 60 > 0) ? (time % 60 + ' секунд ') : ('');
     return r;
 }
 
