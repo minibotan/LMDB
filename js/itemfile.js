@@ -18697,11 +18697,9 @@ var items = {
     "descr": "Интересно, что может быть внутри?",
     "instruction": "Двойной клик: вскрыть коробку.",
     "bottleparams": {
-      "loot": {
-        "randloot": {
-          "default": {
-            "239x2": 100,
-          }
+      "randloot": {
+        "default": {
+          "239x2": 100,
         }
       }
     },

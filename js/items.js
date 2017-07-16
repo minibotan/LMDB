@@ -120,7 +120,7 @@ function Reqs(item) {
 
 function check(a) {
     if (a.hidden) return false;
-    console.log(a[Property] + '  ---  ' + Property + '  ---  ' + Value);
+    console.log(a.name + ' --- ' + a[Property] + '  ---  ' + Property + '  ---  ' + Value);
     if (a[Property] == Value  || (typeof a[Property] == Value) || ((Property == 'location' && a[Property])?(a[Property].indexOf(Value) !== -1):(false)))
         return true;
     return false;
