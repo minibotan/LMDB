@@ -43,11 +43,11 @@ function makeItemBox(item) {
     p += (item.maxdur) ? (is1 + '">Прочность:' + is2 + item.maxdur + '</td></tr>') : ('');
     p += '</table>'
     p += (item.descr) ? ('<p class="goldentext">' + item.descr + '</p>') : ('');
-    p += '<table class = "bot">'
+    p += '<table>'
     p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
     p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + getTime(item.validtime) + '</td></tr>') : ('');
     p += '</table>';
-    p += (item.owner) ? ('<p class="">Владелец - <a href="lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
+    p += (item.owner) ? ('<p class="itemowner">Владелец - <a href="http://lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
     if (item.bottleparams) {
         p += itemParams(item);
     }

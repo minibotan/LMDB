@@ -264,6 +264,7 @@ table {
     display: inline-block;
     width: 235px;
     vertical-align: top;
+    padding-bottom: 5px;
 }
 
 .itemname {
@@ -294,8 +295,9 @@ table {
     color: #55d;
 }
 
-.bot{
-    margin-bottom: 5px;
+.itemowner{
+    margin: 0px;
+    font-size: 14px;
 }
 
 
