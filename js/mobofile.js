@@ -15891,7 +15891,7 @@ mobs = {
         "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "location": "sharknora",
+        "location": "sharkonora",
     },
     "317": {
         "id": 317,
@@ -15922,7 +15922,7 @@ mobs = {
                 }
             }
         },
-        "location": "sharknora",
+        "location": "sharkonora",
     },
     "318": {
         "id": 318,
@@ -15942,7 +15942,7 @@ mobs = {
         "hitsound": "organic",
         "gender": 1,
         "race": "human",
-        "location": "sharknora",
+        "location": "sharkonora",
     },
     "319": {
         "id": 319,
@@ -15999,7 +15999,7 @@ mobs = {
                 }
             }
         },
-        "location": "sharknora",
+        "location": "sharkonora",
     },
     "320": {
         "id": 320,
@@ -16046,7 +16046,7 @@ mobs = {
                 }
             }
         },
-        "location": "sharknora",
+        "location": "sharkonora",
     },
     "321": {
         "id": 321,
@@ -16094,7 +16094,7 @@ mobs = {
                 }
             }
         },
-        "location": "sharknora",
+        "location": "sharkonora",
     },
     "322": {
         "id": 322,
