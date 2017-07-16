@@ -407,6 +407,7 @@ table {
     border: 1px solid #222;
     border-bottom: none;
     background: rgba(20, 20, 20, 0.2);
+    cursor: pointer;
 }
 
 .loot_block_content{
@@ -425,6 +426,7 @@ table {
     border: none;
     display: inline-block;
     vertical-align: middle;
+    
 }
 .miniimg{
     vertical-align: middle;
