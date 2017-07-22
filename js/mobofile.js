@@ -14585,7 +14585,7 @@ mobs = {
                 }
             }
         },
-        "location": "les",
+        "location": "zamok",
     },
     "302": {
         "id": 302,
