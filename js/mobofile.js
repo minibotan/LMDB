@@ -14019,6 +14019,7 @@ mobs = {
                 }
             }
         },
+        "hidden": 1,
         "location": "les",
     },
     "287": {
