@@ -51,13 +51,6 @@ function makeItemBox(item) {
     if (item.bottleparams) {
         p += itemParams(item);
     }
-    if(item.type == 'sunduk') {
-        p += '<div>';
-        p += '<div class="loot_block_title">Содержимое</div>';
-        p += '<div class="loot_block_content">';
-        p += lootblock(item.bottleparams);
-        p += '</div></div>';
-    }
     p += '</div>';
     return p;
 }
@@ -65,8 +58,56 @@ function makeItemBox(item) {
 function itemParams(item) {
     var type = item.type;
     var params = item.bottleparams;
-    
+    var p = '';
+    p += '<div>';
+    p += '<div class="loot_block_title">Свойства</div>';
+    p += '<div class="loot_block_content">';
+    for(var i in params) {
+        var param = params[i];
+        switch (i) {
+            case 'loot' :
+            case 'randloot':
+                p += getLootBylvl(param, i);
+                break;
+            case 'targettypes':
+                p += getTargetTypes(param);
+                break;
+            case 'type':
+                p += 'Тип - ' + param + '<br>';
+                break;
+            case 'cooldown':
+                p += 'кд - ' + param + '<br>';
+                break;
+            case 'effects':
+                p += getEffects(param);
+                break;
+            case 'strictreqs':
+                break;
+            default :
+                p += i + '<br>';
+                break;
+        }
+    }
+    p += '</div></div>';
+    return p;
 }
+
+function getTargetTypes(tt){
+    var p = '';
+    p += '<div>';
+    p += '<div class="loot_block_title">Используется на</div>';
+    p += '<div class="loot_block_content">';
+    for(var i in tt) {
+        p += searchValues.items.type[tt[i]] + '<br>';   
+    }
+    p += '</div></div>';
+    return p;
+}
+
+function getEffects(eff) {
+    return '';
+}
+
 
 
 

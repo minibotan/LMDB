@@ -140,7 +140,7 @@ function itemOption(itemid) {
 function equipItem2(slot, itemid) {
     $(slot).removeClass("rare epic legendary common uncommon borderedpic");
     if (itemid == -1) {
-        $(slot).css("background", "none");
+        $(slot).css("background", "url('img/item/"+ $(slot).class().split(' ')[1] +".png') center center");
         $(slot).removeAttr("value");
         recalculate($(slot).parents(".char"));
         return;

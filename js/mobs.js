@@ -59,12 +59,10 @@ function makeMobBlock(mob) {
     var p = '<div class="moboblock">';
     //p+= '<img src="' + path + '/play/lib/jpg/'+mob.doll+'.jpg">'
     p += '<div class="mobinfo">'
-    p += '<p class="mobname">' + mob.name + '</p>';
+    p += '<img class="info_bg" src="img/other/charinfo.png">';
+    p += '<div class="mobname" title="'+ mob.name +'"><p>' + getName(mob.name) + '</p></div>';
     p += '<p class="mobhp">' + mob.maxhp + '/' + mob.maxhp + '</p>';
-    p += '</div>';
-
-
-    p += '<div class="avatar_level">';
+    p += '<div class="race" title="'+ searchValues.mobs.race[mob.race] +'"><img src="img/race/'+ mob.race +'.png"></div>';
     p += '<img class="avatar" src="' + path + '/play/lib/avatar/' + mob.avatar + '.png">';
     p += '<h4 class="mob_level">' + mob.level + '</h4>';
     p += '</div>';
@@ -77,6 +75,11 @@ function makeMobBlock(mob) {
 
     p += '</div>';
     return p;
+}
+
+function getName(name){
+    names = name.split('|');
+    return names[Math.floor(Math.random()*names.length)];
 }
 
 
