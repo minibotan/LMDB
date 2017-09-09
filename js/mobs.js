@@ -207,7 +207,13 @@ function makeDropBlock(loot, chance) {
     var p = '';
     for (var j in loot) {
         var l = j.split('x');
-        var c = Math.round(((chance)?(loot[j]/chance):(loot[j])) * 100)/100;
+        if(chance){
+            var c = Math.round(((chance)?(loot[j]/chance):(loot[j])) * 100)/100;
+        }else{ 
+            var c = "от 0 до 100";
+            l = [loot[j]];
+        }
+        console.log(l);
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
             p += '<div class="drop" title="' + mobs[k[1]].name + '\nШанс: ' + c + '%">';

@@ -359,10 +359,11 @@ table {
 }
 
 .mobname{
+    --mobname-width: 120px;
     margin: 0px;
     top: -13px;
     left: -25px;
-    width: 120px;
+    width: var(--mobname-width);
 }
 .mobname>p{
     margin: 0px;

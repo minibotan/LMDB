@@ -1,4 +1,7 @@
 function showItems() {
+    if(settings.showmeall.val) {
+        upgradeItems();
+    }
     var k = counter*40;
     var p = '';
     for(var i in items) {
@@ -48,12 +51,30 @@ function makeItemBox(item) {
     p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + getTime(item.validtime) + '</td></tr>') : ('');
     p += '</table>';
     p += (item.owner) ? ('<p class="itemowner">Владелец - <a href="http://lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
+    if(item.dropfrom){
+        p += getDrops(item.dropfrom);
+    }
     if (item.bottleparams) {
         p += itemParams(item);
     }
     p += '</div>';
     return p;
 }
+
+function getDrops(drops){
+    var p = '';
+    p += '<div>';
+    p += '<div class="loot_block_title">Падает с</div>';
+    p += '<div class="loot_block_content">';
+    p += makeDropBlock(drops) ;
+    
+    p += '</div></div>';
+    return p;
+}
+
+
+
+
 
 function itemParams(item) {
     var type = item.type;

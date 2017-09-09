@@ -3,214 +3,214 @@ var text = '';
 $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
 
 $(document).ready(function () {
-  readCookie();
-  if (!navigator.cookieEnabled) {
-    console.log(navigator.cookieEnabled);
-    alert('Включите cookie для комфортной работы с этим сайтом');
-  }
-
-  if(!settings.showmeall.val) {
-      anal();
-  }
-
-  /*               NAVIGATOR  & SETTINGS                   */
-
-
-  //settings
-  $('.settings_bar').on('click', 'li', function () {
-    var id = $(this).attr('id');
-    settings[id].val = !settings[id].val;
-    $(this).html(settings[id][settings[id].val]);
-    updateCookie(id);
-    change(id);
-  });
-
-  //nav_panel buttons
-  $('.nav_bar').html(function () {
-    var newHtml = '';
-    for (var x in mainButtons) {
-      newHtml += '<button class="nav_button" id="' + mainButtons[x] + '" >' + x + '</button>';
-    }
-    return newHtml;
-  });
-
-
-  //navigation events
-  $('.nav_button').click(function () {
-    $('.contentbox').html('');
-    $(curPage).css('background', 'none');
-    $(this).css('background', '#888');
-    id = $(this).attr("id");
-    curPage = this;
-    switch (id) {
-      case 'home':
-        $('.contentbox').html(tmp());
-        break;
-      case 'items':
-      case 'mobs':
-        $('.contentbox').html(makeSelectHTML(id));
-        break;
-      case 'events':
-        $('.contentbox').html(makeEventHTML());
-        break;
-      case 'maps':
-        $('.contentbox').html(makeMapHTML());
-        break;
-      case 'odevalka':
-        $('.contentbox').html(makeOdevalka());
-        recalculate($('.char'));
-        break;
-      default:
-        $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
+    readCookie();
+    if (!navigator.cookieEnabled) {
+        console.log(navigator.cookieEnabled);
+        alert('Включите cookie для комфортной работы с этим сайтом');
     }
 
-  });
-
-
-  /*                    CONTENT                       */
-
-  //events
-  $('.contentbox').on('click', ".event_title", function () {
-    showEvent(events[$(this).val()]);
-    return false;
-  });
-
-
-  //maps
-  $('.contentbox').on('click', ".map_button", function () {
-    showMap(this);
-    return false;
-  });
-
-
-  //items & mobs
-  $('.contentbox').on('change', ".prop_selector", function () {
-    Property = $(this).val();
-    $(this).parent().parent().children('.div_val').html(addSelect($(curPage).attr('id')));
-    return false;
-  });
-
-  $('.contentbox').on('change', ".val_selector", function () {
-    counter = 0;
-    $('.stuff_holder').empty();
-    Value = $(this).val();
-    $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
-    showContent();
-    return false;
-  });
-
-  $('.contentbox').on('click', ".moar_button button", function () {
-    showContent();
-    console.log(counter);
-    return false;
-  });
-
-
-
-  //mob loot
-  $('.contentbox').on('click', ".loot_block_title", function () {
-    $(this).parent().children('.loot_block_content').fadeToggle("fast");
-    return false;
-  });
-
-  $('.contentbox').on('click', ".drop", function(){
-    var id = $(this).attr('value');
-    $(this).append('<div><div>')
-           .children('div')
-           .css('position', 'relative')
-           .html(makeItemBox(items[id]))
-           .children('.item')
-           .css('position', 'absolute')
-           .css('width', '260px')
-           .css('z-index', '3');
-  });
-
-  $('.contentbox').on('mouseleave', ".drop div", function(){
-    $(this).remove();
-  });
-
-
-
-  // odevalka
-  $('.contentbox').on('click', "#odevalka_change", function () {
-    if (bull) {
-      $(this).parent().parent().append(secondChar());
-      recalculate($('.reversed'));
-    } else {
-      $('.reversed').remove();
+    if (!settings.showmeall.val) {
+        anal();
     }
-    bull = !bull;
-    $('#odevalka_change').html(odevalkastate[bull]);
-    return false;
-  });
 
-  $('.contentbox').on('click', ".char .itemslot", function () {
-    $(this).html(chooseItem($(this)));
-    return false;
-  });
-
-  $('.contentbox').on('mouseleave', '.char .itemselect', function () {
-    $(this).remove();
-  });
-
-  $('.contentbox').on('click', ".char .option", function () {
-    var selected = $(this);
-    equipItem2($(this).parent().parent().empty(), selected.attr("value"));
-
-    return false;
-  });
-
-  $('.contentbox').on('mouseenter', ".char tr>[value]", function(){
-    var id = $(this).attr('value');
-    $(this).append('<div><div>')
-           .children('div')
-           .css('position', 'relative')
-           .html(makeItemBox(items[id]))
-           .children('.item')
-           .css('position', 'absolute')
-           .css('width', '260px')
-           .css('z-index', '3');
-  });
-
-  $('.contentbox').on('mouseleave', ".char tr>[value]", function(){
-    $(this).empty();
-  });
+    /*               NAVIGATOR  & SETTINGS                   */
 
 
-  //naked Trisha
-  $('body').keyup(function (eventObject) {
-    if (eventObject.which > 64 && eventObject.which < 91) {
-      text += String.fromCharCode(eventObject.which);
-    } else {
-      text = '';
-    }
-    if (text.substr(text.length - 10) == 'TITSORGTFO') {
-      var swfsrc = '' + path + '/play/lib/locationObjects/general/812.swf';
-      var p = '<h2>Хорошо, вот тебе голая Триша</h2>';
-      p += '<a href="' + swfsrc + '" download>Скачать</a>';
-      p += '<object type="application/x-shockwave-flash" width="400" height="550">';
-      p += '<param name="movie" value="' + swfsrc + '">';
-      p += '<embeded src="' + swfsrc + '"></embeded>';
-      p += '<param name="wmode" value="transparent" />';
-      p += '<param name="allowScriptAccess" value="always" />';
-      p += '<param name="flashvars" value="stage=1"/>';
-      p += '<param name="play" value="true" />';
-      p += '<param name="loop" value="true" />';
-      p += '</object>';
-      $('.contentbox').html(p);
-    }
-    if (window.btoa(text.substr(text.length - 14)) == 'SVNFRURFQURQRU9QTEU=') {
-      settings.showmeall.val = !settings.showmeall.val;
-      updateCookie('showmeall');
-      $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
-      counter--;
-      showContent();
-    }
-    if(text.substr(text.length - 6) == 'PIKCHI') {
-      $('.contentbox').html(pikchi());
-    }
-    console.log(text);
-  });
+    //settings
+    $('.settings_bar').on('click', 'li', function () {
+        var id = $(this).attr('id');
+        settings[id].val = !settings[id].val;
+        $(this).html(settings[id][settings[id].val]);
+        updateCookie(id);
+        change(id);
+    });
+
+    //nav_panel buttons
+    $('.nav_bar').html(function () {
+        var newHtml = '';
+        for (var x in mainButtons) {
+            newHtml += '<button class="nav_button" id="' + mainButtons[x] + '" >' + x + '</button>';
+        }
+        return newHtml;
+    });
+
+
+    //navigation events
+    $('.nav_button').click(function () {
+        $('.contentbox').html('');
+        $(curPage).css('background', 'none');
+        $(this).css('background', '#888');
+        id = $(this).attr("id");
+        curPage = this;
+        switch (id) {
+            case 'home':
+                $('.contentbox').html(tmp());
+                break;
+            case 'items':
+            case 'mobs':
+                $('.contentbox').html(makeSelectHTML(id));
+                break;
+            case 'events':
+                $('.contentbox').html(makeEventHTML());
+                break;
+            case 'maps':
+                $('.contentbox').html(makeMapHTML());
+                break;
+            case 'odevalka':
+                $('.contentbox').html(makeOdevalka());
+                recalculate($('.char'));
+                break;
+            default:
+                $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
+        }
+
+    });
+
+
+    /*                    CONTENT                       */
+
+    //events
+    $('.contentbox').on('click', ".event_title", function () {
+        showEvent(events[$(this).val()]);
+        return false;
+    });
+
+
+    //maps
+    $('.contentbox').on('click', ".map_button", function () {
+        showMap(this);
+        return false;
+    });
+
+
+    //items & mobs
+    $('.contentbox').on('change', ".prop_selector", function () {
+        Property = $(this).val();
+        $(this).parent().parent().children('.div_val').html(addSelect($(curPage).attr('id')));
+        return false;
+    });
+
+    $('.contentbox').on('change', ".val_selector", function () {
+        counter = 0;
+        $('.stuff_holder').empty();
+        Value = $(this).val();
+        $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
+        showContent();
+        return false;
+    });
+
+    $('.contentbox').on('click', ".moar_button button", function () {
+        showContent();
+        console.log(counter);
+        return false;
+    });
+
+
+
+    //mob loot
+    $('.contentbox').on('click', ".loot_block_title", function () {
+        $(this).parent().children('.loot_block_content').fadeToggle("fast");
+        return false;
+    });
+
+    $('.contentbox').on('click', ".drop", function () {
+        var id = $(this).attr('value');
+        $(this).append('<div><div>')
+            .children('div')
+            .css('position', 'relative')
+            .html(makeItemBox(items[id]))
+            .children('.item')
+            .css('position', 'absolute')
+            .css('width', '260px')
+            .css('z-index', '3');
+    });
+
+    $('.contentbox').on('mouseleave', ".drop div", function () {
+        $(this).remove();
+    });
+
+
+
+    // odevalka
+    $('.contentbox').on('click', "#odevalka_change", function () {
+        if (bull) {
+            $(this).parent().parent().append(secondChar());
+            recalculate($('.reversed'));
+        } else {
+            $('.reversed').remove();
+        }
+        bull = !bull;
+        $('#odevalka_change').html(odevalkastate[bull]);
+        return false;
+    });
+
+    $('.contentbox').on('click', ".char .itemslot", function () {
+        $(this).html(chooseItem($(this)));
+        return false;
+    });
+
+    $('.contentbox').on('mouseleave', '.char .itemselect', function () {
+        $(this).remove();
+    });
+
+    $('.contentbox').on('click', ".char .option", function () {
+        var selected = $(this);
+        equipItem2($(this).parent().parent().empty(), selected.attr("value"));
+
+        return false;
+    });
+
+    $('.contentbox').on('mouseenter', ".char tr>[value]", function () {
+        var id = $(this).attr('value');
+        $(this).append('<div><div>')
+            .children('div')
+            .css('position', 'relative')
+            .html(makeItemBox(items[id]))
+            .children('.item')
+            .css('position', 'absolute')
+            .css('width', '260px')
+            .css('z-index', '3');
+    });
+
+    $('.contentbox').on('mouseleave', ".char tr>[value]", function () {
+        $(this).empty();
+    });
+
+
+    //naked Trisha
+    $('body').keyup(function (eventObject) {
+        if (eventObject.which > 64 && eventObject.which < 91) {
+            text += String.fromCharCode(eventObject.which);
+        } else {
+            text = '';
+        }
+        if (text.substr(text.length - 10) == 'TITSORGTFO') {
+            var swfsrc = '' + path + '/play/lib/locationObjects/general/812.swf';
+            var p = '<h2>Хорошо, вот тебе голая Триша</h2>';
+            p += '<a href="' + swfsrc + '" download>Скачать</a>';
+            p += '<object type="application/x-shockwave-flash" width="400" height="550">';
+            p += '<param name="movie" value="' + swfsrc + '">';
+            p += '<embeded src="' + swfsrc + '"></embeded>';
+            p += '<param name="wmode" value="transparent" />';
+            p += '<param name="allowScriptAccess" value="always" />';
+            p += '<param name="flashvars" value="stage=1"/>';
+            p += '<param name="play" value="true" />';
+            p += '<param name="loop" value="true" />';
+            p += '</object>';
+            $('.contentbox').html(p);
+        }
+        if (window.btoa(text.substr(text.length - 14)) == 'SVNFRURFQURQRU9QTEU=') {
+            settings.showmeall.val = !settings.showmeall.val;
+            updateCookie('showmeall');
+            $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
+            counter--;
+            showContent();
+        }
+        if (text.substr(text.length - 6) == 'PIKCHI') {
+            $('.contentbox').html(pikchi());
+        }
+        console.log(text);
+    });
 
 });
 
@@ -224,16 +224,16 @@ function tmp() {
 
 
 function tmpLocs() {
-  var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
-  p += '<ol>';
-  for (var i = 1; i < 10; i++) {
-    p += '<li><img src="' + path + '/play/lib/location/0' + i + '.jpg"></li>';
-  }
-  for (var i = 10; i < 300; i++) {
-    p += '<li><img src="' + path + '/play/lib/location/' + i + '.jpg"></li>';
-  }
-  p += '</ol>';
-  return p;
+    var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+    p += '<ol>';
+    for (var i = 1; i < 10; i++) {
+        p += '<li><img src="' + path + '/play/lib/location/0' + i + '.jpg"></li>';
+    }
+    for (var i = 10; i < 300; i++) {
+        p += '<li><img src="' + path + '/play/lib/location/' + i + '.jpg"></li>';
+    }
+    p += '</ol>';
+    return p;
 }
 
 
@@ -241,64 +241,130 @@ var last = 1;
 var step = 50;
 
 function locationObjects(k) {
-  if (k !== undefined) {
-    last = k * step + 1;
-  }
-  var p = '<h2> Это список из объектов в локациях. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
-  p += '<ol>';
-  for (var i = last; i < last + step; i++) {
-    p += '<li>';
-    var swfsrc = '' + path + '/play/lib/locationObjects/general/' + i + '.swf';
-    p += '<object type="application/x-shockwave-flash" width="970" height="330">';
-    p += '<param name="movie" value="' + swfsrc + '">';
-    p += '<embeded src="' + swfsrc + '"></embeded>';
-    p += '<param name="wmode" value="transparent" />';
-    p += '<param name="allowScriptAccess" value="always" />';
-    p += '<param name="flashvars" value="stage=1"/>';
-    p += '<param name="play" value="true" />';
-    p += '<param name="loop" value="true" />';
-    p += '<param name="scale" value="noScale" />';
-    p += '</object>';
-    p += '<a href="' + swfsrc + '"> ссылочка </a>';
-    p += '<a href="' + swfsrc + '" download> скачать </a>';
-    p += '</li>';
-  }
-  p += '</ol>';
-  last += step;
-  $('.contentbox').html(p);
+    if (k !== undefined) {
+        last = k * step + 1;
+    }
+    var p = '<h2> Это список из объектов в локациях. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+    p += '<ol>';
+    for (var i = last; i < last + step; i++) {
+        p += '<li>';
+        var swfsrc = '' + path + '/play/lib/locationObjects/general/' + i + '.swf';
+        p += '<object type="application/x-shockwave-flash" width="970" height="330">';
+        p += '<param name="movie" value="' + swfsrc + '">';
+        p += '<embeded src="' + swfsrc + '"></embeded>';
+        p += '<param name="wmode" value="transparent" />';
+        p += '<param name="allowScriptAccess" value="always" />';
+        p += '<param name="flashvars" value="stage=1"/>';
+        p += '<param name="play" value="true" />';
+        p += '<param name="loop" value="true" />';
+        p += '<param name="scale" value="noScale" />';
+        p += '</object>';
+        p += '<a href="' + swfsrc + '"> ссылочка </a>';
+        p += '<a href="' + swfsrc + '" download> скачать </a>';
+        p += '</li>';
+    }
+    p += '</ol>';
+    last += step;
+    $('.contentbox').html(p);
 }
 
 
 
 function showWeeks() {
-  var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
-  p += '<ol>';
-  for(var y = 2010; y < 2018; y++) {
-    for(var m = 1; m < 13; m++) {
-      for(var d = 1; d < 32; d++) {
-        p+= '<li>' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + y + '<img src="http://www.lostmagic.ru/useruploads/images/news/' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + y + '.png"></li>';
-        p+= '<li>' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + (''+y).substr(2) + '<img src="http://www.lostmagic.ru/useruploads/images/news/' + ((d<10)?('0'+d):(d)) + ((m<10)?('0'+m):(m)) + (''+y).substr(2) + '.png"></li>';
-      }
+    var p = '<h2> Это список из локаций. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+    p += '<ol>';
+    for (var y = 2010; y < 2018; y++) {
+        for (var m = 1; m < 13; m++) {
+            for (var d = 1; d < 32; d++) {
+                p += '<li>' + ((d < 10) ? ('0' + d) : (d)) + ((m < 10) ? ('0' + m) : (m)) + y + '<img src="http://www.lostmagic.ru/useruploads/images/news/' + ((d < 10) ? ('0' + d) : (d)) + ((m < 10) ? ('0' + m) : (m)) + y + '.png"></li>';
+                p += '<li>' + ((d < 10) ? ('0' + d) : (d)) + ((m < 10) ? ('0' + m) : (m)) + ('' + y).substr(2) + '<img src="http://www.lostmagic.ru/useruploads/images/news/' + ((d < 10) ? ('0' + d) : (d)) + ((m < 10) ? ('0' + m) : (m)) + ('' + y).substr(2) + '.png"></li>';
+            }
+        }
     }
-  }
-  p += '</ol>';
-  $('.contentbox').html(p);
-  clearImgs();
+    p += '</ol>';
+    $('.contentbox').html(p);
+    clearImgs();
 }
 
 
-function downloadAll(){
-  for(var mob in mobs) {
-    var src = path + '/play/lib/dolls/' + mobs[mob].doll + '.swf';
-    window.open(src, '_blank');
-    wt(100);
-  }
+function downloadAll() {
+    for (var mob in mobs) {
+        var src = path + '/play/lib/dolls/' + mobs[mob].doll + '.swf';
+        window.open(src, '_blank');
+        wt(100);
+    }
 }
 
 function wt(sleeptime) {
-  stTime = new Date().getMilliseconds;
+    stTime = new Date().getMilliseconds;
     while (true) {
-        if(sleeptime < new Date().getMilliseconds - stTime) break;
+        if (sleeptime < new Date().getMilliseconds - stTime) break;
     }
 
+}
+
+function upgradeItems() {
+    console.log("123");
+    let itemloot = {};
+    var upgraded_items = items;
+    for (var mob in mobs) {
+        let mobid = mob;
+        for (var loottype in mobs[mob].loot) {
+            if (loottype.indexOf("loot") != -1) {
+                let l = mobs[mob].loot[loottype];
+                for (var lvl in l) {
+                    drops = l[lvl];
+                    if (typeof (l[lvl]) !== "object") {
+                        drops = l;
+                    }
+                    for (var drop in drops) {
+                        drop = drop.split("x")[0];
+                        if (!itemloot[drop])
+                            itemloot[drop] = [];
+                        itemloot[drop].push(mobid);
+                    }
+                }
+            }
+        }
+    }
+    console.log("321");
+    console.log(itemloot);
+
+    for (var iid in itemloot) {
+        if(!upgraded_items[iid]) continue;
+        upgraded_items[iid].dropfrom = [];
+        var prev = 0;
+        for(var mid in itemloot[iid]){
+            if(itemloot[iid][mid] == prev) continue;
+            prev = itemloot[iid][mid];
+            upgraded_items[iid].dropfrom.push("adsf:" + prev);
+        }
+    }
+    console.log(upgraded_items);
+    items = upgraded_items;
+    save_content_to_file(upgraded_items, "new_items");
+
+}
+
+
+
+function save_content_to_file(content, filename) {
+    var dlg = false;
+    with(document) {
+        ir = createElement('iframe');
+        ir.id = 'ifr';
+        ir.location = 'about.blank';
+        ir.style.display = 'none';
+        body.appendChild(ir);
+        with(getElementById('ifr').contentWindow.document) {
+            open("text/plain", "replace");
+            charset = "utf-8";
+            write(content);
+            close();
+            document.charset = "utf-8";
+            dlg = execCommand('SaveAs', false, filename + '.js');
+        }
+        body.removeChild(ir);
+    }
+    return dlg;
 }
