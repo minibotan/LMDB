@@ -1,7 +1,5 @@
 function showItems() {
-    if(settings.showmeall.val) {
-        upgradeItems();
-    }
+    upgradeItems();
     var k = counter*40;
     var p = '';
     for(var i in items) {
