@@ -304,7 +304,6 @@ function wt(sleeptime) {
 }
 
 function upgradeItems() {
-    console.log("123");
     let itemloot = {};
     var upgraded_items = items;
     for (var mob in mobs) {
@@ -312,38 +311,43 @@ function upgradeItems() {
         for (var loottype in mobs[mob].loot) {
             if (loottype.indexOf("loot") != -1) {
                 let l = mobs[mob].loot[loottype];
-                for (var lvl in l) {
-                    drops = l[lvl];
-                    if (typeof (l[lvl]) !== "object") {
-                        drops = l;
-                    }
-                    for (var drop in drops) {
-                        drop = drop.split("x")[0];
-                        if (!itemloot[drop])
-                            itemloot[drop] = [];
-                        itemloot[drop].push(mobid);
-                    }
+                var iids = getUpDrop(l);
+                for(var drop in iids){
+                    if (!itemloot[iids[drop]])
+                        itemloot[iids[drop]] = [];
+                    itemloot[iids[drop]].push(mobid);
                 }
             }
         }
     }
-    console.log("321");
-    console.log(itemloot);
 
     for (var iid in itemloot) {
         if(!upgraded_items[iid]) continue;
         upgraded_items[iid].dropfrom = [];
         var prev = 0;
+        itemloot[iid].sort();
         for(var mid in itemloot[iid]){
             if(itemloot[iid][mid] == prev) continue;
             prev = itemloot[iid][mid];
             upgraded_items[iid].dropfrom.push("adsf:" + prev);
         }
     }
-    console.log(upgraded_items);
     items = upgraded_items;
     save_content_to_file(upgraded_items, "new_items");
 
+}
+
+
+function getUpDrop(l){
+    r = [];
+    for (var lvl in l) {
+        drops = l[lvl];
+        if (typeof (drops) == "object") {
+            r = r.concat(getUpDrop(drops));
+        } else
+            r.push(lvl);
+    }
+    return r;
 }
 
 

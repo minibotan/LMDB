@@ -210,17 +210,16 @@ function makeDropBlock(loot, chance) {
         if(chance){
             var c = Math.round(((chance)?(loot[j]/chance):(loot[j])) * 100)/100;
         }else{ 
-            var c = "от 0 до 100";
             l = [loot[j]];
         }
         console.log(l);
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
-            p += '<div class="drop" title="' + mobs[k[1]].name + '\nШанс: ' + c + '%">';
+            p += '<div class="drop" title="' + mobs[k[1]].name + ((c)?('\nШанс: ' + c + '%'):('')) + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
-            p += '<div class="drop" title="' + items[l[0]].name + '\nШанс: ' + c + '%" value="' + l[0] + '">';
+            p += '<div class="drop" title="' + items[l[0]].name + ((c)?('\nШанс: ' + c + '%'):('')) + '" value="' + l[0] + '">';
             p += '<img class="miniimg ' + items[l[0]].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         }
