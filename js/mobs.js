@@ -112,7 +112,7 @@ function lootblock(loot) {
                 }
                 break;
             case 'personalloot':
-                p += makeDropBlock(loot[loottype]);
+                p += makeDropBlock(loot[loottype], 1);
                 break;
             default:
                 p += 'скоро будет инфа';

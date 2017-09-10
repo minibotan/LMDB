@@ -333,7 +333,6 @@ function upgradeItems() {
         }
     }
     items = upgraded_items;
-    save_content_to_file(upgraded_items, "new_items");
 
 }
 
@@ -350,25 +349,3 @@ function getUpDrop(l){
     return r;
 }
 
-
-
-function save_content_to_file(content, filename) {
-    var dlg = false;
-    with(document) {
-        ir = createElement('iframe');
-        ir.id = 'ifr';
-        ir.location = 'about.blank';
-        ir.style.display = 'none';
-        body.appendChild(ir);
-        with(getElementById('ifr').contentWindow.document) {
-            open("text/plain", "replace");
-            charset = "utf-8";
-            write(content);
-            close();
-            document.charset = "utf-8";
-            dlg = execCommand('SaveAs', false, filename + '.js');
-        }
-        body.removeChild(ir);
-    }
-    return dlg;
-}
