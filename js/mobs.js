@@ -203,12 +203,12 @@ function getChance(loot) {
 // высота 0
 // функция создает самый последний уровень, с самими вещами          
 function makeDropBlock(loot, chance) {
-    console.log(loot);
+    console.log(loot + " -- " + chance);
     var p = '';
     for (var j in loot) {
         var l = j.split('x');
         if(chance){
-            var c = Math.round(((chance)?(loot[j]/chance):(loot[j])) * 100)/100;
+            var c = Math.round(((chance)?(loot[j]/chance):(loot[j])) * 1000)/1000;
         }else{ 
             l = [loot[j]];
         }
