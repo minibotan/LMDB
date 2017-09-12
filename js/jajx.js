@@ -209,6 +209,9 @@ $(document).ready(function () {
         if (text.substr(text.length - 6) == 'PIKCHI') {
             $('.contentbox').html(pikchi());
         }
+        if (text.substr(text.length - 11) == 'SHOWMECLANS') {
+            $('.contentbox').html(showClanList());
+        }
         console.log(text);
     });
 
@@ -349,3 +352,12 @@ function getUpDrop(l){
     return r;
 }
 
+function showClanList() {
+    var p = '<h2> Это список Кланов. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+    p += '<ol>';
+    for (var i = 1; i < 300; i++) {
+        p += '<li><img src="' + path + '/play/lib/clan/' + i + '.jpg"></li>';
+    }
+    p += '</ol>';
+    return p;
+}
