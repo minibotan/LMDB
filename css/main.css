@@ -419,6 +419,28 @@ table {
     margin-top: 60px;
 }
 
+.mob_locations{
+    display: block;
+    border: 1px solid #333;
+    padding-bottom: 3px;
+}
+
+.mob_locations>p{
+    display: block;
+    margin: 0px;
+    padding: 1px;
+    font-size: 16px;
+    color: burlywood;
+}
+
+.mob_locations>span{
+    margin: 2px;
+    border: 1px solid #456;
+    border-radius: 18px;
+    padding: 0px 4px;
+}
+
+
 .loot_block{
     max-width: 220px;
 }

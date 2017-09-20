@@ -27,7 +27,7 @@ function addSelect(t) {
 
 
 function showContent() {
-    console.log('show');
+
     $('.moar_button').before(($(curPage).attr('id') == 'items') ? showItems() : showMobs());
     change('ok');
     change('gender');
@@ -60,34 +60,42 @@ function makeMobBlock(mob) {
     //p+= '<img src="' + path + '/play/lib/jpg/'+mob.doll+'.jpg">'
     p += '<div class="mobinfo">'
     p += '<img class="info_bg" src="img/other/charinfo.png">';
-    p += '<div class="mobname" title="'+ mob.name +'"><p>' + getName(mob.name) + '</p></div>';
+    p += '<div class="mobname" title="' + mob.name + '"><p>' + getName(mob.name) + '</p></div>';
     p += '<p class="mobhp">' + mob.maxhp + '/' + mob.maxhp + '</p>';
-    p += '<div class="race" title="'+ searchValues.mobs.race[mob.race] +'"><img src="img/race/'+ mob.race +'.png"></div>';
+    p += '<div class="race" title="' + searchValues.mobs.race[mob.race] + '"><img src="img/race/' + mob.race + '.png"></div>';
     p += '<img class="avatar" src="' + path + '/play/lib/avatar/' + mob.avatar + '.png">';
     p += '<h4 class="mob_level">' + mob.level + '</h4>';
     p += '</div>';
 
 
     p += '<img class="mobpic"src="img/mobs/' + mob.doll + '.png">';
-    if(settings.showmeall.val) { p += '<a href="' + path + '/play/lib/dolls/' + mob.doll + '.swf" download> скачать </a>'; }
-    console.log(mob.name);
+    p += '<div class="mob_locations">';
+    p += '<p> Места обитания: </p>';
+    var locs = mob.location.split(", ");
+    for (var loc in locs) {
+        p += '<span>' + searchValues.mobs.location[locs[loc]] + '</span>';
+    }
+    p += '</div>';
+    if (settings.showmeall.val) {
+        p += '<a href="' + path + '/play/lib/dolls/' + mob.doll + '.swf" download> скачать </a>';
+    }
     p += lootblock(mob.loot);
 
     p += '</div>';
     return p;
 }
 
-function getName(name){
+function getName(name) {
     names = name.split('|');
-    return names[Math.floor(Math.random()*names.length)];
+    return names[Math.floor(Math.random() * names.length)];
 }
 
 
 function lootblock(loot) {
-    console.log(loot);
+
     var p = '<div class="loot_block">';
     for (var loottype in loot) {
-        console.log(loottype);
+
         p += '<div class="' + loottype + '">';
         p += '<div class="loot_block_title">' + lootLoc[loottype] + '</div>';
         p += '<div class="loot_block_content">';
@@ -146,11 +154,11 @@ function getQuestLoot(loot) {
 //функция создает блоки под каждый уровень
 function getLootBylvl(loot, loottype) {
     var p = '';
-    console.log(loot);
+
     for (var lvl in loot) {
         /*
         if (typeof loot[lvl] !== 'object') {
-            console.log(loot);
+            
             p += makeDropBlock(loot);
             break;
         }
@@ -161,7 +169,7 @@ function getLootBylvl(loot, loottype) {
         var chance = 1;
         switch (loottype) {
             case 'loot':
-                console.log(loot[lvl]);
+
                 chance = getChance(loot[lvl]);
             case 'questloot':
             case 'randloot':
@@ -177,9 +185,9 @@ function getLootBylvl(loot, loottype) {
             case 'crystals':
                 chance = getChance(loot[lvl]);
                 for (var k in loot[lvl]) {
-                    if(k == 0) continue;
+                    if (k == 0) continue;
                     if (loot[lvl][k] == 0) break;
-                    var c = Math.round(((chance)?(loot[lvl][k]/chance):(loot[lvl][k])) * 100)/100;
+                    var c = Math.round(((chance) ? (loot[lvl][k] / chance) : (loot[lvl][k])) * 100) / 100;
                     p += '<img src="img/crystal.png" title="' + c + '%">';
                 }
                 break;
@@ -192,34 +200,34 @@ function getLootBylvl(loot, loottype) {
 
 function getChance(loot) {
     var c = 0;
-    console.log(loot);
-    for(var i in loot) {
+
+    for (var i in loot) {
         c += loot[i];
     }
-    return c/100;
+    return c / 100;
 }
 
 
 // высота 0
 // функция создает самый последний уровень, с самими вещами          
 function makeDropBlock(loot, chance) {
-    console.log(loot + " -- " + chance);
+
     var p = '';
     for (var j in loot) {
         var l = j.split('x');
-        if(chance){
-            var c = Math.round(((chance)?(loot[j]/chance):(loot[j])) * 1000)/1000;
-        }else{ 
+        if (chance) {
+            var c = Math.round(((chance) ? (loot[j] / chance) : (loot[j])) * 1000) / 1000;
+        } else {
             l = [loot[j]];
         }
-        console.log(l);
+
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
-            p += '<div class="drop" title="' + mobs[k[1]].name + ((c)?('\nШанс: ' + c + '%'):('')) + '">';
+            p += '<div class="drop" title="' + mobs[k[1]].name + ((c) ? ('\nШанс: ' + c + '%') : ('')) + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
-            p += '<div class="drop" title="' + items[l[0]].name + ((c)?('\nШанс: ' + c + '%'):('')) + '" value="' + l[0] + '">';
+            p += '<div class="drop" title="' + items[l[0]].name + ((c) ? ('\nШанс: ' + c + '%') : ('')) + '" value="' + l[0] + '">';
             p += '<img class="miniimg ' + items[l[0]].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         }

@@ -114,7 +114,6 @@ function chooseItem(cell) {
     }
     for (var i in items) {
         for (var j in itemtype) {
-            console.log(cell.parents('.char').find('.level input').val())
             if (items[i].type == itemtype[j] &&
                 ((!items[i].reqlevel) || items[i].reqlevel <= cell.parents('.char').find('.level input').val()) &&
                 ((!items[i].reqparagon) || (items[i].reqparagon <= cell.parents('.char').find('.paragon input').val())) &&
@@ -169,13 +168,13 @@ function recalculate(char) {
         "mastery": 0,
         "resilience": 0
     }
-    //console.log(chrClass + ' .itemslot');
+    //
     $('.' + chrClass + ' .itemslot').each(function (index, element) {
-        //console.log($(element).attr("value"));
+        //
         if ($(element).attr('value')) {
             for (var i in nulldstats) {
                 nulldstats[i] += (items[$(element).attr("value")][i]) ? (items[$(element).attr("value")][i]) : (0);
-                //console.log(i + ' ' + nulldstats[i] + ' ' + $(element).attr("value") + ' ' + items[$(element).attr("value")][i]);
+                //
             }
         }
     });
@@ -258,7 +257,7 @@ $('.contentbox').on('change', '.stamina input, .agility input, .strength input',
     };
     var input = $(this);
     var statclass = input.parent().attr('class');
-    console.log(statclass);
+    
     var lav = Number(input.val());
 
     bonusStats[statclass] = lav - par - baseStats[statclass];
@@ -266,12 +265,12 @@ $('.contentbox').on('change', '.stamina input, .agility input, .strength input',
     if(lav < baseStats[statclass] + par) {
         input.val(baseStats[statclass] + par);
         bonusStats[statclass] = 0;
-        console.log('<');
+        
     }
 
 
     if(bonusStats.max < (bonusStats.strength + bonusStats.agility + bonusStats.stamina)) {
-        console.log('>');
+        
         bonusStats[statclass] = bonusStats[statclass] + (bonusStats.max - (bonusStats.strength + bonusStats.agility + bonusStats.stamina));
         input.val(baseStats[statclass] + par + bonusStats[statclass]);
     }

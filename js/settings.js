@@ -5,6 +5,8 @@ var expiredTime = 'expires=' + cT.toUTCString();
 var cT = new Date();
 cT.setTime (cT.getTime () + 365 * 24 * 3600 * 1000);
 var expireTime =  'expires=' + cT.toUTCString();
+var APIkey = 'AIzaSyDDfqYSyJiT27e_06gd9DR-LncrXggzflI';
+var moboTableID = '19Oc7dnSkyR2oA8CwOamqbReNQ911-vf5sVECROdi';
 
 var settings = {
     gender: {
@@ -23,7 +25,7 @@ var settings = {
 
 
 function change(id) {
-    console.log(id);
+    
     var regexp = settings[id].regexp;
     regexp.compile(regexp);
     html = $('.content').html();
@@ -32,13 +34,13 @@ function change(id) {
 
 
 function readCookie() {
-    console.log('readcookie');
+    
     lmdbCookie = document.cookie.split('; ');
-    console.log(lmdbCookie);
+    
     for (let i of lmdbCookie) {
         var name = i.split('=')[0];
         var val = i.split('=')[1];
-        console.log(name + ' --- ' + val);
+        
         switch (name) {
             case 'ok':
             case 'gender':

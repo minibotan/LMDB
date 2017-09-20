@@ -5,7 +5,6 @@ $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/des
 $(document).ready(function () {
     readCookie();
     if (!navigator.cookieEnabled) {
-        console.log(navigator.cookieEnabled);
         alert('Включите cookie для комфортной работы с этим сайтом');
     }
 
@@ -101,7 +100,6 @@ $(document).ready(function () {
 
     $('.contentbox').on('click', ".moar_button button", function () {
         showContent();
-        console.log(counter);
         return false;
     });
 
@@ -212,7 +210,6 @@ $(document).ready(function () {
         if (text.substr(text.length - 11) == 'SHOWMECLANS') {
             $('.contentbox').html(showClanList());
         }
-        console.log(text);
     });
 
 });
