@@ -2,13 +2,15 @@ function makeSelectHTML(t) {
     var newHTML = '<div class="selector_parent">';
     newHTML += '<div class="div_prop selector">';
     newHTML += '<select class="prop_selector">';
-    newHTML += '<option selected hidden>Параметр Выбора</option>';
+    //newHTML += '<option selected hidden>Параметр Выбора</option>';
+    Property = "none";
     for (var i in searchProps[t]) {
+        if(Property == "none") Property = i;
         newHTML += '<option class="prop_option" value="' + i + '">' + searchProps[t][i] + '</option>';
     }
     newHTML += '</select>';
     newHTML += '</div>';
-    newHTML += '<div class="div_val selector"></div>';
+    newHTML += '<div class="div_val selector">' + addSelect(t) + '</div>';
     newHTML += '</div>';
     newHTML += '<div class="stuff_holder content"></div>';
     return newHTML;
@@ -17,10 +19,21 @@ function makeSelectHTML(t) {
 
 function addSelect(t) {
     var newHTML = '<select class="val_selector">';
-    newHTML += '<option selected hidden>Выберите ' + searchProps[t][Property] + '</option>';
-    for (var i in searchValues[t][Property]) {
-        newHTML += '<option value="' + i + '">' + searchValues[t][Property][i] + '</option>';
+    //newHTML += '<option selected hidden>Выберите ' + searchProps[t][Property] + '</option>';
+    var par = searchValues[t][Property];
+    var b = false;
+    Value = "none";
+    for (var i in par) {
+        if(Value == "none") Value = i;
+        if(i.indexOf('group') != -1){
+            if(b) newHTML += '</optgroup>';
+            newHTML += '<optgroup label="' + par[i] + '">';
+            b = true;
+        } else {
+            newHTML += '<option value="' + i + '">' + par[i] + '</option>';
+        }
     }
+    if(b) newHTML += '</optgroup>';
     newHTML += '<select>';
     return newHTML;
 }

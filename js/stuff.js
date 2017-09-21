@@ -222,47 +222,59 @@ searchProps = {
 searchValues = {
   'items': {
     "type": {
-      "additive": "Присадка",
-      "belt": "Пояс",
-      "book": "Книги",
-      "boots": "Боты",
-      "bottle": "Бутылка",
-      "catalyst": "Катализатор(Амальгама)",
+
+      'group1':'Одежда',
+      "head": "Шлем",
       "chest": "Нагрудник",
       "cloak": "Плащ",
-      "coupon": "Купон",
-      "emptybottle": "Сосуд",
-      "extractor": "Щипцы",
-      "fertilizer": "Удобрение",
-      "gemmpart": "Компонент",
       "gloves": "Перчатки",
-      "grass": "Трава",
-      "head": "Шлем",
+      "belt": "Пояс",
+      "legs": "Поножи",
+      "boots": "Боты",
+
+      'group2':'Аксессуары',
+      "neck": "Ожерелье",
+      "ring": "Кольцо",
+      "trinket": "Безделушка",
+      "rune": "Аура",
+      "totem": "Тотем",
+
+      'group3':'Оружие',
+      "rweapon": "Праворуч",
+      "weapon": "Оружие в любую руку",
+      "twohandedweapon": "Двуруч",
+      "lweapon": "Леворуч",
+      "shield": "Щит",
+
+      'group4':'Ювелирное дело',
+      "catalyst": "Катализатор(Амальгама)",
+      "extractor": "Щипцы",
       "holemaker": "Сверло",
       "improver": "Катализатор",
-      "legs": "Поножи",
-      "lottery": "Лотерейки",
-      "lweapon": "Леворуч",
-      "map": "Карта",
-      "neck": "Ожерелье",
-      "other": "Другое",
-      "personalcoupon": "Персональный Купон",
+      "gemmpart": "Компонент",
+      "reagent": "Реагент",
+      "recipe": "Рецепт",
+      "socket": "Гемма",
+
+      'group5':'Травничество/Алхимия',
+      "additive": "Присадка",
+      "emptybottle": "Пустой сосуд",
+      "bottle": "Бутылка",
+      "fertilizer": "Удобрение",
+      "grass": "Трава",
+      "seed": "Семечко",
+
+      'group6':'Остальное',
+      "sunduk": "Коробочка",
       "pet": "Петы",
       "present": "Подарок",
       "pvp_drop": "ПВП-дроп",
-      "reagent": "Реагент",
-      "recipe": "Рецепт",
-      "ring": "Кольцо",
-      "rune": "Аура",
-      "rweapon": "Праворуч",
-      "seed": "Семечко",
-      "shield": "Щит",
-      "socket": "Гемма",
-      "sunduk": "Коробочка",
-      "totem": "Тотем",
-      "trinket": "Безделушка",
-      "twohandedweapon": "Двуруч",
-      "weapon": "Оружие в любую руку"
+      "book": "Книги",
+      "lottery": "Лотерейки",
+      "map": "Карта",
+      "other": "Другое",
+      "coupon": "Купон",
+      "personalcoupon": "Персональный Купон",
     },
     "rarity": {
       "common": "Белый",
@@ -334,6 +346,7 @@ searchValues = {
       "20": "20 Уровень"
     },
     'location': {
+      'group1':'Зона обитания',
       'city':'Город',
       'bolota':'Болота',
       'gory':'Горы',
@@ -341,6 +354,8 @@ searchValues = {
       'sumerki':'Сумерки',
       'land':'Древние земли',
       'pirates': 'Пираты',
+
+      'group2':'Инсты',
       'pant': 'Пантеон',
       'sklep': 'Склеп',
       'melnica':'Мельница',
@@ -356,7 +371,13 @@ searchValues = {
       'les':'Вечный Лес',
       'sharkonora':'Пещера Проклятых',
       'limb':'Лимб',
-      //'priziv':'Свисток'
+
+      'group3':'ПВП-Инсты',
+      'arena':'Арена',
+      'arka':'Башня Арканы',
+
+      'group4':'Другое',
+      'priziv':'Свисток'
     }
   }
 };

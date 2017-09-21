@@ -48,6 +48,7 @@ $(document).ready(function () {
             case 'items':
             case 'mobs':
                 $('.contentbox').html(makeSelectHTML(id));
+                $('.val_selector').trigger('change');
                 break;
             case 'events':
                 $('.contentbox').html(makeEventHTML());
@@ -90,6 +91,7 @@ $(document).ready(function () {
     });
 
     $('.contentbox').on('change', ".val_selector", function () {
+        console.log("got chng");
         counter = 0;
         $('.stuff_holder').empty();
         Value = $(this).val();
