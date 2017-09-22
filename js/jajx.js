@@ -12,6 +12,7 @@ $(document).ready(function () {
         anal();
     }
 
+    upgradeItems();
     /*               NAVIGATOR  & SETTINGS                   */
 
 
@@ -321,6 +322,7 @@ function upgradeItems() {
     let itemloot = {};
     var upgraded_items = items;
     for (var mob in mobs) {
+        if(mobs[mob].hidden) continue;
         let mobid = mob;
         for (var loottype in mobs[mob].loot) {
             if (loottype.indexOf("loot") != -1) {
@@ -347,7 +349,6 @@ function upgradeItems() {
         }
     }
     items = upgraded_items;
-
 }
 
 
