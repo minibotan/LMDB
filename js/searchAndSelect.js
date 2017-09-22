@@ -92,10 +92,15 @@ function showElement(elem){
 }
 
 
-function search(str){
+function search(){
+    console.log($('.search_input').val());
+    if($('.search_input').val()){
+        str = $('.search_input').val().toLowerCase();
+    } else {
+        return false;
+    }
     $('.stuff_holder').empty();
     $('.moar_button').remove();
-    str = str.toLowerCase();
     var attrs = str.split(', ');
     var arrToSearch;
     if($(curPage).attr("id") == "items") {

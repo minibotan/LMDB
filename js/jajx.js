@@ -86,8 +86,13 @@ $(document).ready(function () {
     //items & mobs
 
     $('.contentbox').on('click', '.search_button', function(){
-        if($('.search_input').val()){
-            search($('.search_input').val());
+        search();
+    });
+
+    $('.contentbox').on('keydown', '.search_input', function(e){
+        if(e.keyCode == 13)
+        {
+            search();
         }
     });
 
