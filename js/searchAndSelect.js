@@ -110,6 +110,7 @@ function search(){
     }
     for(var arrElem in arrToSearch){
         element = arrToSearch[arrElem];
+        if(element.hidden) continue;
         if(searchCheck(element, attrs)){
             showElement(element);
         }
