@@ -1,4 +1,5 @@
 var curPage;
+var curPageID;
 var Value;
 var Property;
 var counter = 0;

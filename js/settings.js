@@ -24,12 +24,14 @@ var settings = {
 }
 
 
-function change(id) {
-    
-    var regexp = settings[id].regexp;
+function change(str) {
+    var regexp = settings['ok'].regexp;
     regexp.compile(regexp);
-    html = $('.content').html();
-    $('.content').html(html.replace(regexp, (settings[id].val) ? ('$1') : ('$2')));
+    str = str.replace(regexp, (settings['ok'].val) ? ('$1') : ('$2'));
+    regexp = settings['gender'].regexp;
+    regexp.compile(regexp);
+    str = str.replace(regexp, (settings['gender'].val) ? ('$1') : ('$2'));
+    return str;
 }
 
 

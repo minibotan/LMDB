@@ -1,23 +1,3 @@
-function showItems() {
-    upgradeItems();
-    var k = counter*40;
-    var p = '';
-    for(var i in items) {
-        if(check(items[i])){
-            if(k < 1){
-                p += makeItemBox(items[i]);
-            }
-            if (k < -38) break;
-            k--;
-        }
-    }
-    if(k > -39) {
-        $('.moar_button').css("display", "none");
-    }
-    counter++;
-    return p;
-}
-
 function makeItemBox(item) {
     var is1 = '<tr><td class="itemstat';
     var is2 = '</td><td class="itemstat2">';

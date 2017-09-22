@@ -39,15 +39,15 @@ $(document).ready(function () {
         $('.contentbox').html('');
         $(curPage).css('background', 'none');
         $(this).css('background', '#888');
-        id = $(this).attr("id");
         curPage = this;
-        switch (id) {
+        curPageID = $(this).attr("id");
+        switch (curPageID) {
             case 'home':
                 $('.contentbox').html(tmp());
                 break;
             case 'items':
             case 'mobs':
-                $('.contentbox').html(makeSelectHTML(id));
+                $('.contentbox').html(makeSelectHTML(curPageID));
                 $('.val_selector').trigger('change');
                 break;
             case 'events':
@@ -84,6 +84,13 @@ $(document).ready(function () {
 
 
     //items & mobs
+
+    $('.contentbox').on('click', '.search_button', function(){
+        if($('.search_input').val()){
+            search($('.search_input').val());
+        }
+    });
+
     $('.contentbox').on('change', ".prop_selector", function () {
         Property = $(this).val();
         $(this).parent().parent().children('.div_val').html(addSelect($(curPage).attr('id')));
@@ -95,7 +102,7 @@ $(document).ready(function () {
         counter = 0;
         $('.stuff_holder').empty();
         Value = $(this).val();
-        $('.stuff_holder').html('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
+        $('.stuff_holder').after('<div class ="moar_button"><button>ЕЩЕ!</button></div>');
         showContent();
         return false;
     });

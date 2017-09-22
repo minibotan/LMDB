@@ -229,7 +229,45 @@ table {
 }
 
 
+
+/** SEARCH  **/
+
+.search{
+    text-align: right;
+}
+
+
+.search_input::-webkit-input-placeholder{
+    color: #444;
+}
+
+.search_input{
+    border-radius: 5px;
+    border-color: #111;
+    background-color: #999;
+    color: #222;
+    outline: none;
+    padding: 4px;
+}
+
+.search_button{
+    background-color: #444;
+    border: 2px solid;
+    margin-left: -5px;
+    padding: 4px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    outline: none;
+}
+
+.highlight{
+    background-color: rgba(202, 202, 38, 0.6);
+}
+
+
 /** ITEMS */
+
+
 
 .itemstat {
     text-align: right;
@@ -326,7 +364,6 @@ table {
     width: 100%;
     padding: 20px 0px;
 }
-
 
 
 
