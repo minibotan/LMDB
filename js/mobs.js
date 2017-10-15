@@ -11,7 +11,7 @@ function makeMobBlock(mob) {
     p += '<h4 class="mob_level">' + mob.level + '</h4>';
     p += '</div>';
     p+= '<div class="empty_space"></div>'
-    p += '<img class="mobpic click_to_hide" src="img/mobs/' + mob.doll + '.png"  onerror="imgError(this);">';
+    p += '<img class="mobpic click_to_hide" src="img/mobs/' + mob.doll + '.png"  onerror="imgError(this)"/>';
     p += getMobStats(mob);
     p += '<div class="mob_locations">';
     p += '<p> Места обитания: </p>';
