@@ -31,7 +31,7 @@ function makeMobBlock(mob) {
 
 function imgError(image) {
     image.onerror = "";
-    image.src = "/img/mobs/lal.png";
+    image.src = "img/mobs/lal.png";
     return true;
 }
 
