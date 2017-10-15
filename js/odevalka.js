@@ -56,7 +56,7 @@ function makeOdevalka() {
 
 
 function firstChar() {
-    var r = '<div class="char norm"><div><table>';
+    var r = '<div class="char me"><div><table>';
     r += '<tr><td class="itemslot head" /><td class="doll" colspan="5" rowspan="5" /><td class="itemslot neck" /></tr>';
     r += '<tr><td class="itemslot chest" /><td class="itemslot ring" /></tr>';
     r += '<tr><td class="itemslot cloak" /><td class="itemslot ring" /></tr>';
@@ -70,16 +70,17 @@ function firstChar() {
 }
 
 function secondChar() {
-    var r = '<div class="char reversed">';
-    r += stats();
+    var r = '<div class="char enemy">';
     r += '<div><table>';
-    r += '<tr><td class="itemslot neck" /><td class="doll" colspan="5" rowspan="5" /><td class="itemslot head" /></tr>';
-    r += '<tr><td class="itemslot ring" /><td class="itemslot chest" /></tr>';
-    r += '<tr><td class="itemslot ring" /><td class="itemslot cloak" /></tr>';
-    r += '<tr><td class="itemslot trinket" /><td class="itemslot belt" /></tr>';
-    r += '<tr><td class="itemslot trinket" /><td class="itemslot legs" /></tr>';
-    r += '<tr><td class="itemslot totem" /><td class="itemslot rune" /><td class="itemslot weapon lweapon shield" /><td class="sep"/><td class="itemslot weapon rweapon twohandedweapon" /><td class="itemslot gloves" /><td class="itemslot boots" /></tr>';
-    r += '</table></div></div>';
+    r += '<tr><td class="itemslot head" /><td class="doll" colspan="5" rowspan="5" /><td class="itemslot neck" /></tr>';
+    r += '<tr><td class="itemslot chest" /><td class="itemslot ring" /></tr>';
+    r += '<tr><td class="itemslot cloak" /><td class="itemslot ring" /></tr>';
+    r += '<tr><td class="itemslot belt" /><td class="itemslot trinket" /></tr>';
+    r += '<tr><td class="itemslot legs" /><td class="itemslot trinket" /></tr>';
+    r += '<tr><td class="itemslot boots" /><td class="itemslot gloves" /><td class="itemslot weapon rweapon twohandedweapon" /><td class="sep"/><td class="itemslot weapon lweapon shield" /><td class="itemslot rune" /><td class="itemslot totem" /></tr>';
+    r += '</table></div>'
+    r += stats();
+    r += '</div>';
     return r;
 
 }

@@ -56,6 +56,7 @@ $(document).ready(function () {
                 break;
             case 'maps':
                 $('.contentbox').html(makeMapHTML());
+                $('#beginning').trigger('click');
                 break;
             case 'odevalka':
                 $('.contentbox').html(makeOdevalka());
@@ -119,6 +120,17 @@ $(document).ready(function () {
     });
 
 
+    // mob image/stats changer
+    $('.contentbox').on('click', ".click_to_hide", function () {
+        let parent = $(this).parent();
+
+        block = parent.children(".mob_stats");
+        block.css("display", ((block.css("display") == "none")?("block"):("none")));
+        block = parent.children(".mobpic");
+        block.css("display", ((block.css("display") == "none")?("block"):("none")));
+    });
+
+
 
     //mob loot
     $('.contentbox').on('click', ".loot_block_title", function () {
@@ -148,9 +160,9 @@ $(document).ready(function () {
     $('.contentbox').on('click', "#odevalka_change", function () {
         if (bull) {
             $(this).parent().parent().append(secondChar());
-            recalculate($('.reversed'));
+            recalculate($('.enemy'));
         } else {
-            $('.reversed').remove();
+            $('.enemy').remove();
         }
         bull = !bull;
         $('#odevalka_change').html(odevalkastate[bull]);

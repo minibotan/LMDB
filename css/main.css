@@ -448,12 +448,37 @@ table {
     left: 112px;
 }
 
+.empty_space{
+    height: 60px;
+}
+
 .mobpic{
     display: block;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     width: 100%;
-    margin-top: 60px;
+}
+.mob_stats{
+    display: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 100%;
+    height: 220px;
+}
+
+.mob_stats>table{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mob_stats td{
+    font-size: 16px;
+    padding-top: 5px;
+    width: 50%;
+}
+
+.mob_stats .itemstat2{
+    color: goldenrod;
 }
 
 .mob_locations{
@@ -624,6 +649,7 @@ ODEVALKA
     border: 3px solid #222;
     border-radius: 5px;
     max-height: 220px;
+    width: 400px;
     overflow: scroll;
     overflow-x: hidden;
     text-align: left;

@@ -1,6 +1,7 @@
+var statsHidden = true;
+
 function makeMobBlock(mob) {
     var p = '<div class="moboblock">';
-    //p+= '<img src="' + path + '/play/lib/jpg/'+mob.doll+'.jpg">'
     p += '<div class="mobinfo">'
     p += '<img class="info_bg" src="img/other/charinfo.png">';
     p += '<div class="mobname" title="' + mob.name + '"><p>' + getName(mob.name) + '</p></div>';
@@ -9,9 +10,9 @@ function makeMobBlock(mob) {
     p += '<img class="avatar" src="' + path + '/play/lib/avatar/' + mob.avatar + '.png">';
     p += '<h4 class="mob_level">' + mob.level + '</h4>';
     p += '</div>';
-
-
-    p += '<img class="mobpic"src="img/mobs/' + mob.doll + '.png">';
+    p+= '<div class="empty_space"></div>'
+    p += '<img class="mobpic click_to_hide" src="img/mobs/' + mob.doll + '.png"  onerror="imgError(this);">';
+    p += getMobStats(mob);
     p += '<div class="mob_locations">';
     p += '<p> Места обитания: </p>';
     var locs = mob.location.split(", ");
@@ -27,6 +28,36 @@ function makeMobBlock(mob) {
     p += '</div>';
     return p;
 }
+
+function imgError(image) {
+    image.onerror = "";
+    image.src = "/img/mobs/lal.png";
+    return true;
+}
+
+
+function getMobStats(mob) {
+    var p = '';
+    p += '<div class="mob_stats click_to_hide">';
+    p += '<table>';
+
+    var is1 = '<tr><td class="itemstat';
+    var is2 = '</td><td class="itemstat2">';
+
+    p += (mob.minhit || mob.maxhit) ? (is1 + '">Урон:' + is2 + ((mob.minhit) ? (mob.minhit) : (0)) + ' - ' + ((mob.maxhit) ? (mob.maxhit) : (0)) + '</td></tr>') : ('');
+    p += (mob.defence) ? (is1 + '">Защита:' + is2 + mob.defence + '</td></tr>') : ('');
+    p += (mob.strength) ? (is1 + '">Сила:' + is2 + mob.strength + '</td></tr>') : ('');
+    p += (mob.agility) ? (is1 + '">Ловкость:' + is2 + mob.agility + '</td></tr>') : ('');
+    p += (mob.stamina) ? (is1 + '">Выносливость:' + is2 + mob.stamina + '</td></tr>') : ('');
+    p += (mob.crit) ? (is1 + '">Крит:' + is2 + mob.crit + '%</td></tr>') : ('');
+    p += (mob.dodge) ? (is1 + '">Уворот:' + is2 + mob.dodge + '%</td></tr>') : ('');
+    p += (mob.mastery) ? (is1 + '">Мастерство:' + is2 + mob.mastery + '</td></tr>') : ('');
+    p += (mob.resilience) ? (is1 + '">Устойчивость:' + is2 + mob.resilience + '</td></tr>') : ('');
+    p += '</table>';
+    p += '</div>';
+    return p;
+}
+
 
 function getName(name) {
     names = name.split('|');
