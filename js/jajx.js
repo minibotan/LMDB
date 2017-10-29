@@ -16,7 +16,7 @@ $(document).ready(function () {
     $.getJSON("./js/achieves.json", function(data){
         achieves = data;
     });
-    $.getJSON("./js/achievesCategories.json", function(data){
+    $.getJSON("./js/achievCategories.json", function(data){
         achievesCat = data;
     });
     /*               NAVIGATOR  & SETTINGS                   */
