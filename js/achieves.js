@@ -1,34 +1,17 @@
-var achieves = [
-{
-"id":"444",
-"ts":"1494476046",
-"name":"Легенда Гвардии",
-"descr":"Превзош{g:ел:ла} всех Героев Королевской Гвардии, совершая подвиги во имя Его Величества.",
-"points":"15",
-"image":"paragon3"
-},
-{
-"id":"468",
-"ts":"1494106865",
-"name":"Скептик",
-"descr":"Не испугавшись разрушительной силы проклятий забрал{g::а} сокровища из Темного Замка и доставил{g::а} их Остапу.",
-"points":"5",
-"image":"damnedtreasure"
-},
-{
-"id":"233",
-"ts":"1492823107",
-"name":"Заклинатель{g::ница} огня",
-"descr":"Собрал{g::а} все элементы доспехов Первозданного Огня.",
-"points":"10",
-"image":"t3_chest"
-},
-{
-"id":"508",
-"ts":"1492652146",
-"name":"Победитель{g::ница} Виверны",
-"descr":"Одержал{g::а} победу над Виверной в Древних Землях.",
-"points":"10",
-"image":"serpentfly_blue"
+var achievesCat;
+var achieves;
+
+function showAchieves(){
+    var p = '<div class="achieves_block">';
+    p += '<div class ="achieves_selector">';
+    for(var i in achievesCat) {
+        p += '<option class="achieves_title" value="'+i+'">' + achievesCat[i].name + '</option>';
+    }
+    p += '</div>';
+    p += '<div class ="achievess_content">';
+    p += '<div class="achieve_descr">Выберите Ачиву</div>';
+    p += '<div class="achieve_img">Картиночка</div>';
+    p += '</div>';
+    p += '</div>';
+    return p;
 }
-];

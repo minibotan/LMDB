@@ -5,7 +5,9 @@ function makeMobBlock(mob) {
     p += '<div class="mobinfo">'
     p += '<img class="info_bg" src="img/other/charinfo.png">';
     p += '<div class="mobname" title="' + mob.name + '"><p>' + getName(mob.name) + '</p></div>';
-    p += '<p class="mobhp">' + mob.maxhp + '/' + mob.maxhp + '</p>';
+    p += '<div class="mob__bar hp"><p class="mob__number">' + mob.maxhp + '/' + mob.maxhp + '</p></div>';
+    if(!mob.startrage) mob.startrage = 0;
+    p += '<div class="mob__bar rage" style="width: '+ (127*mob.startrage/100) +'px;"><p class="mob__number">' + mob.startrage + '/' + 100 + '</p></div>';
     p += '<div class="race" title="' + searchValues.mobs.race[mob.race] + '"><img src="img/race/' + mob.race + '.png"></div>';
     p += '<img class="avatar" src="' + path + '/play/lib/avatar/' + mob.avatar + '.png">';
     p += '<h4 class="mob_level">' + mob.level + '</h4>';

@@ -13,6 +13,12 @@ $(document).ready(function () {
     }
 
     upgradeItems();
+    $.getJSON("./js/achieves.json", function(data){
+        achieves = data;
+    });
+    $.getJSON("./js/achievesCategories.json", function(data){
+        achievesCat = data;
+    });
     /*               NAVIGATOR  & SETTINGS                   */
 
 
@@ -61,6 +67,10 @@ $(document).ready(function () {
             case 'odevalka':
                 $('.contentbox').html(makeOdevalka());
                 recalculate($('.char'));
+                break;
+            case 'achievements':
+                if(settings.showmeall.val)
+                    $('.contentbox').html(showAchieves());
                 break;
             default:
                 $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');

@@ -407,15 +407,32 @@ table {
     font-size: 13px;
 }
 
-.mobhp{
-    background: green;
-    width: 127px;
+.mob__bar{
     height: 9px;
     border-radius: 5px;
     left: -26px;
-    top: 16px;
     margin: 0px;   
-    font-size: 9px; 
+
+}
+
+.mob__number{
+    position: inherit;
+    width: 127px;
+    font-size: 11px;
+    top: -3px;
+    margin: 0px;
+    text-align: center;
+}
+
+.hp{
+    width: 127px;
+    top: 16px;
+    background: linear-gradient(rgb(0, 155, 90), rgb(2, 63, 27));
+}
+
+.rage {
+    top: 31px;
+    background: linear-gradient(rgb(165, 24, 24), rgb(63, 2, 2));
 }
 
 .info_bg{
