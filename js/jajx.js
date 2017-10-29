@@ -14,6 +14,7 @@ $(document).ready(function () {
         anal();
     }
     
+    achievesCat.sort((a, b) => +a.orderm - +b.orderm);
 
     upgradeItems();
     
