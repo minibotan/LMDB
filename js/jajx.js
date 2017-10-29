@@ -3,6 +3,8 @@ var text = '';
 $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
 
 $(document).ready(function () {
+    if(location.hostname === "")
+        settings.showmeall.val = true;
     readCookie();
     if (!navigator.cookieEnabled) {
         alert('Включите cookie для комфортной работы с этим сайтом');
@@ -11,14 +13,10 @@ $(document).ready(function () {
     if (!settings.showmeall.val) {
         anal();
     }
+    
 
     upgradeItems();
-    $.getJSON("./js/achieves.json", function(data){
-        achieves = data;
-    });
-    $.getJSON("./js/achievCategories.json", function(data){
-        achievesCat = data;
-    });
+    
     /*               NAVIGATOR  & SETTINGS                   */
 
 
@@ -39,6 +37,26 @@ $(document).ready(function () {
         }
         return newHtml;
     });
+
+
+    $(function(){
+        var curDown = false,
+            curXPos = 0;
+        $(".nav_bar").mousemove(function(m){
+          if(curDown === true){
+           $(".nav_bar").scrollLeft($(".nav_bar").scrollLeft() + (curXPos - m.pageX));
+          }
+        });
+        
+        $(".nav_bar").mousedown(function(m){
+          curDown = true;
+          curXPos = m.pageX;
+        });
+        
+        $(".nav_bar").mouseup(function(){
+          curDown = false;
+        });
+      })
 
 
     //navigation events
@@ -70,7 +88,8 @@ $(document).ready(function () {
                 break;
             case 'achievements':
                 if(settings.showmeall.val)
-                    $('.contentbox').html(showAchieves());
+                    showAchieveCats();
+                    
                 break;
             default:
                 $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
@@ -84,6 +103,21 @@ $(document).ready(function () {
     //events
     $('.contentbox').on('click', ".event_title", function () {
         showEvent(events[$(this).val()]);
+        return false;
+    });
+
+
+    //achieves
+    $('.contentbox').on('click', ".achieves_title", function () {
+        let id = $(this).val();
+        if($(this).attr("parent") == 0)
+            $(".childs").hide();
+
+        if($(this).hasClass("parentCat")){
+            console.log($("#child_of_"+id).show());
+            //$("#child_of_"+id).show("fast");
+        }
+        showAchieves(id);
         return false;
     });
 

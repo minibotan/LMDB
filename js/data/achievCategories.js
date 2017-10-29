@@ -1,4 +1,4 @@
-[{
+var achievesCat = [{
     "id": "1",
     "changed": "0",
     "count": 47,
@@ -414,4 +414,4 @@
     "orderm": "9",
     "parent_id": "14",
     "maxcount": 2
-}]
+}];
