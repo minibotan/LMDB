@@ -21,6 +21,20 @@ a {
     text-decoration: none;
 }
 
+
+a[target=_blank] {
+    display: inline-block;
+    outline: none;
+    color: #333;
+    text-decoration: none;
+    border-radius: 7px;
+    background: linear-gradient(#999, #ccc, #999);
+    padding: 0px 3px;
+    margin: 3px;
+}
+
+
+
 .settings_bar{
     text-align: left;
     z-index: 10;
@@ -99,6 +113,16 @@ footer {
 footer p {
     margin: 0;
     padding: 20px 0;
+}
+
+.contacts{
+    
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    height: 60px;
 }
 
 
@@ -248,6 +272,7 @@ footer p {
     background: #666;
     color: #ddd;
     overflow-x: hidden;
+    font-size: 24px;
 }
 
 .achieve{
@@ -259,6 +284,8 @@ footer p {
     border-radius: 10px;
     min-height: 50px;
     margin: 3px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .achieve_img{
@@ -268,16 +295,19 @@ footer p {
     top: 7px;
     left: 7px;
     border-radius: 3px;
-    border: 2px solid rgba(37, 37, 37, 0.3);
+    border: 3px solid rgba(37, 37, 37, 0.3);
 }
 
 .achieve_desc {
     display: block;
-    padding: 5px 60px 5px;
+    padding: 5px 70px 5px 50px;
     margin: 0px 5px 5px;
     border: 1px solid rgba(27, 27, 27, 0.4);
     background: #777;
     border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
 
 }
 
@@ -308,13 +338,13 @@ footer p {
     top: 15px;
     right: 20px;
     font-size: 20px;
-    font-weight: 700;
-    color: rgb(206, 226, 27);
+    font-weight: 900;
+    color: #333;
 }
 
 
 .hidden{
-    border: 3px solid rgb(206, 226, 27);
+    border: 3px solid #bd9813;
 }
 
 

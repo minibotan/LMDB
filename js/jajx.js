@@ -1,4 +1,5 @@
 var text = '';
+var mainText;
 
 $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
 
@@ -17,6 +18,7 @@ $(document).ready(function () {
     achievesCat.sort((a, b) => +a.orderm - +b.orderm);
 
     upgradeItems();
+    mainText = $('.contentbox').html();
     
     /*               NAVIGATOR  & SETTINGS                   */
 
@@ -69,7 +71,7 @@ $(document).ready(function () {
         curPageID = $(this).attr("id");
         switch (curPageID) {
             case 'home':
-                $('.contentbox').html(tmp());
+                $('.contentbox').html(mainText);
                 break;
             case 'items':
             case 'mobs':
@@ -88,9 +90,7 @@ $(document).ready(function () {
                 recalculate($('.char'));
                 break;
             case 'achievements':
-                if(settings.showmeall.val)
-                    showAchieveCats();
-                    
+                showAchieveCats();
                 break;
             default:
                 $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
@@ -110,7 +110,7 @@ $(document).ready(function () {
 
     //achieves
     $('.contentbox').on('click', ".achieves_title", function () {
-        let id = $(this).val();
+        let id = $(this).attr("value");
         if($(this).attr("parent") == 0)
             $(".childs").hide();
 

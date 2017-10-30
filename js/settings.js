@@ -25,6 +25,7 @@ var settings = {
 
 
 function change(str) {
+    str += "";
     var regexp = settings['ok'].regexp;
     regexp.compile(regexp);
     str = str.replace(regexp, (settings['ok'].val) ? ('$1') : ('$2'));
