@@ -251,7 +251,7 @@ footer p {
     border: 1px solid #444;
     border-radius: 4px;
     background: #555;
-    background: linear-gradient(#555, #666);
+    background: linear-gradient(#555, #666, #555);
     padding: 2px;
     margin-bottom: 1px;
      
@@ -265,7 +265,7 @@ footer p {
 }
 
 .selected_ach{
-    background: linear-gradient(#888, #666, #888);
+    background: linear-gradient(#888, #777, #888);
 }
 
 
