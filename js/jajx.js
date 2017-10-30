@@ -114,6 +114,9 @@ $(document).ready(function () {
         if($(this).attr("parent") == 0)
             $(".childs").hide();
 
+        $(".selected_ach").removeClass("selected_ach");
+        $(this).addClass("selected_ach");
+
         if($(this).hasClass("parentCat")){
             console.log($("#child_of_"+id).show());
             //$("#child_of_"+id).show("fast");
