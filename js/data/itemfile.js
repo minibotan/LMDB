@@ -3080,6 +3080,7 @@ var items = {
     "image": "eyepatch",
     "personal": 1,
     "descr": "«Наши желания - это полужизнь, наше безразличие - это полусмерть» (с) Халиль Джебран",
+    "owner": "Kayran"
   },
   "181": {
     "id": 181,
@@ -3161,6 +3162,7 @@ var items = {
     "personal": 1,
     "descr": "- 46 к интеллекту.",
     "instruction": "Смотри и тупей!",
+    "owner": "Maniak"
   },
   "185": {
     "id": 185,
@@ -3176,6 +3178,7 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Мы захватим этот мир, потому что мы инжир!",
+    "owner": "Трю"
   },
   "186": {
     "id": 186,
@@ -4355,6 +4358,7 @@ var items = {
     "price": 1000000,
     "personal": 1,
     "descr": "В Багдаде все спокойно (с)",
+    "owner": "Maniak"
   },
   "254": {
     "id": 254,
@@ -5272,6 +5276,7 @@ var items = {
     "price": 100000,
     "becomepersonal": 1,
     "descr": "Если долго смотреть в Бездну, Бездна начинает смотреть на тебя.",
+    "owner": "Darkverge"
   },
   "300": {
     "id": 300,
@@ -9738,7 +9743,7 @@ var items = {
     "price": 400000,
     "personal": 1,
     "descr": "Абсолютной истины не существует — такова абсолютная истина.",
-    "owner": "nosferatusmage"
+    "owner": "Kostand"
   },
   "540": {
     "id": 540,
@@ -12722,7 +12727,7 @@ var items = {
     "image": "hammer_bk",
     "price": 400000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Торнадолрлоп"
   },
   "696": {
     "id": 696,
@@ -12744,7 +12749,7 @@ var items = {
     "image": "shield_00",
     "price": 400000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Barka"
   },
   "697": {
     "id": 697,
@@ -13321,7 +13326,7 @@ var items = {
     "image": "radiance_icon",
     "price": 440000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Laury"
   },
   "733": {
     "id": 733,
@@ -13481,6 +13486,7 @@ var items = {
     "image": "ice_icon",
     "price": 480000,
     "personal": 1,
+    "owner": "Этолед"
   },
   "739": {
     "id": 739,
@@ -13646,7 +13652,7 @@ var items = {
     "image": "uniq_alanyr",
     "price": 400000,
     "personal": 1,
-    "owner": "Ala"
+    "owner": "Alanyr"
   },
   "745": {
     "id": 745,
@@ -13670,7 +13676,7 @@ var items = {
     "image": "uniq_bugi",
     "price": 400000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Буги"
   },
   "746": {
     "id": 746,
@@ -16950,7 +16956,7 @@ var items = {
     "image": "uniq_fox",
     "price": 150000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Ytekjdbvfz"
   },
   "929": {
     "id": 929,
@@ -18697,11 +18703,11 @@ var items = {
     "descr": "Интересно, что может быть внутри?",
     "instruction": "Двойной клик: вскрыть коробку.",
     "bottleparams": {
-      "randloot": {
-        "default": {
-          "239x2": 100,
+        "randloot": {
+          "default": {
+            "239x2": 100,
+          }
         }
-      }
     },
   },
   "1022": {
@@ -18955,7 +18961,7 @@ var items = {
     "image": "beartrinket",
     "price": 500000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Oteslao"
   },
   "1034": {
     "id": 1034,
@@ -19259,7 +19265,7 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "На каждого Лиса найдется свой Тигр...",
-    "owner": "nosferatusmage"
+    "owner": "Supervasya"
   },
   "1052": {
     "id": 1052,
@@ -19763,7 +19769,7 @@ var items = {
     "image": "unikukaraca",
     "price": 500000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Kukaraca"
   },
   "1076": {
     "id": 1076,
@@ -21351,7 +21357,7 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "«Сердце Горы», главное сокровище Эребора.",
-    "owner": "nosferatusmage"
+    "owner": "Diebold"
   },
   "1152": {
     "id": 1152,
@@ -23791,7 +23797,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Norton"
+    "owner": "Gendolfwait"
   },
   "1282": {
     "id": 1282,
@@ -24867,7 +24873,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "nosferatusmage"
+    "owner": "Stegan"
   },
   "1333": {
     "id": 1333,
@@ -24890,6 +24896,7 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "Obedience Breeds Discipline, Discipline Breeds Unity, Unity Breeds Power, Power is Life.",
+    "owner": "Tanunah"
   },
   "1334": {
     "id": 1334,
@@ -25296,7 +25303,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "nosferatusmage"
+    "owner": "Джон Сноу"
   },
   "1360": {
     "id": 1360,
@@ -25556,6 +25563,7 @@ var items = {
     "image": "blade",
     "price": 500000,
     "personal": 1,
+    "owner": "Nfgjxrf"
   },
   "1368": {
     "id": 1368,
@@ -25575,7 +25583,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "nosferatusmage"
+    "owner": "Мордер"
   },
   "1369": {
     "id": 1369,
@@ -27098,6 +27106,7 @@ var items = {
     "personal": 1,
     "descr": "Нам нужен мир.",
     "validtime": 864000,
+    "owner": "nosferatusmage"
   },
   "1452": {
     "id": 1452,
@@ -27205,6 +27214,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "owner": "Полдник"
   },
   "1460": {
     "id": 1460,
@@ -27402,6 +27412,7 @@ var items = {
     "image": "ico_fox",
     "price": 500000,
     "personal": 1,
+    "owner": "War Machine"
   },
   "1472": {
     "id": 1472,
@@ -27743,6 +27754,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "owner": "nosferatusmage"
   },
   "1492": {
     "id": 1492,
@@ -27783,6 +27795,7 @@ var items = {
     "image": "un_blue_sword",
     "price": 400000,
     "personal": 1,
+    "owner": "Kuzlek"
   },
   "1494": {
     "id": 1494,
@@ -29242,6 +29255,7 @@ var items = {
     "price": 23500,
     "personal": 1,
     "descr": "Восстанавливает здоровье вам и всем вашим союзникам в бою! Эффекты колец складываются.",
+    "owner": "nosferatusmage"
   },
   "1567": {
     "id": 1567,
@@ -30895,6 +30909,7 @@ var items = {
     "price": 1000000,
     "personal": 1,
     "descr": "*Древний идол молчалив и грозен*",
+    "owner": "Могилан"
   },
   "1646": {
     "id": 1646,
@@ -30928,6 +30943,7 @@ var items = {
     "image": "leaves_birch",
     "personal": 1,
     "descr": "Инструкция: приложить в больному месту.",
+    "hidden": 1,
   },
   "1649": {
     "id": 1649,
@@ -31300,6 +31316,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "owner": "Arktida"
   },
   "1670": {
     "id": 1670,
@@ -31320,6 +31337,7 @@ var items = {
     "image": "icon_narasimha",
     "price": 500000,
     "personal": 1,
+    "owner": "Jarryk"
   },
   "1671": {
     "id": 1671,
@@ -33785,6 +33803,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "owner": "Казябазя"
   },
   "1796": {
     "id": 1796,
@@ -33806,6 +33825,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "owner": "Баттерс"
   },
   "1797": {
     "id": 1797,
@@ -34758,7 +34778,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Монстры»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Vodkoed"
   },
   "1847": {
     "id": 1847,
@@ -34772,7 +34792,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Монстры»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Казябазя"
   },
   "1848": {
     "id": 1848,
@@ -34786,7 +34806,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Монстры»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Urr"
   },
   "1849": {
     "id": 1849,
@@ -34800,7 +34820,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Обнова»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Red"
   },
   "1850": {
     "id": 1850,
@@ -34814,7 +34834,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Обнова»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Тенил"
   },
   "1851": {
     "id": 1851,
@@ -34828,7 +34848,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Обнова»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Urr"
   },
   "1852": {
     "id": 1852,
@@ -34842,7 +34862,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Апдейт»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Лонгвей"
   },
   "1853": {
     "id": 1853,
@@ -34856,7 +34876,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Апдейт»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Казябазя"
   },
   "1854": {
     "id": 1854,
@@ -34870,7 +34890,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Апдейт»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Urr"
   },
   "1855": {
     "id": 1855,
@@ -34884,7 +34904,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Поединки»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Urr"
   },
   "1856": {
     "id": 1856,
@@ -34898,7 +34918,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Поединки»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Лонгвей"
   },
   "1857": {
     "id": 1857,
@@ -34912,7 +34932,7 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Поединки»",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Казябазя"
   },
   "1858": {
     "id": 1858,
@@ -36405,7 +36425,7 @@ var items = {
     "descr": "Особый приз победителям акции «Золотая лихорадка», посвященной IV годовщине LostMagic",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 72,
-    "owner": "nosferatusmage"
+    "owner": "Wulff,Getva"
   },
   "1940": {
     "id": 1940,
@@ -38009,6 +38029,7 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "owner": "Пионка"
   },
   "2014": {
     "id": 2014,
@@ -40176,7 +40197,7 @@ var items = {
     "image": "earth_trinket",
     "price": 500000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "Ююрийй"
   },
   "2122": {
     "id": 2122,
@@ -40949,7 +40970,7 @@ var items = {
         "locationstatus": 1
       }
     },
-    "owner": "Untergang"
+    "owner": "Untergang,Лонгвей,Сэрмакс,Skazohcnik,Fall,Мерк,Goblin,Neoginator,Skazohcnik,Wulff"
   },
   "2156": {
     "id": 2156,
@@ -40991,7 +41012,7 @@ var items = {
     "personal": 1,
     "descr": "Награда для лучших из лучших интеллектуалов мира.",
     "validtime": -1,
-    "owner": "nosferatusmage"
+    "owner": "Глокта"
   },
   "2159": {
     "id": 2159,
@@ -41375,7 +41396,7 @@ var items = {
     "price": 5000000,
     "personal": 1,
     "quest": 2,
-    "owner": "nosferatusmage"
+    "owner": "Huuntra"
   },
   "2177": {
     "id": 2177,
@@ -43417,7 +43438,8 @@ var items = {
           "2151": 1,
           "2152": 1,
           "1941": 1,
-          "2289": 1
+          "2289": 1,
+          "2159": 1
         }
       }
     },
