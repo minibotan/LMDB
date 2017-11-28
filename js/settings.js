@@ -20,6 +20,8 @@ var settings = {
         regexp: /\{ok:([а-яё a-z0-9\-_]*):([а-яё a-z0-9\-_]*)\}/ig
     },
     showmeall: {
+    },
+    iAmDebil:{
     }
 }
 
@@ -48,6 +50,7 @@ function readCookie() {
             case 'ok':
             case 'gender':
             case 'showmeall':
+            case 'iAmDebil':
                 settings[name].val = (val == 'true');
                 break;
         }

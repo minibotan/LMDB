@@ -14,6 +14,10 @@ $(document).ready(function () {
     if (!settings.showmeall.val) {
         anal();
     }
+
+    if(settings.iAmDebil.val){
+        ShowMePony();
+    }
     
     achievesCat.sort((a, b) => +a.orderm - +b.orderm);
 
@@ -285,9 +289,16 @@ $(document).ready(function () {
         if (text.substr(text.length - 11) == 'SHOWMECLANS') {
             $('.contentbox').html(showClanList());
         }
+        if (text.substr(text.length - 5) == 'DEBIL') {
+            ShowMePony();
+        }
     });
 
 });
+
+function ShowMePony(){
+    $('body').css("background", "url('https://images.alphacoders.com/512/thumb-1920-512795.jpg') center center fixed");
+}
 
 
 
