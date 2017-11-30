@@ -4,8 +4,15 @@ function makeItemBox(item) {
     var p ='';
     p += '<div class = "item">';
     p += '<h6 class = "itemname ' + item.rarity + '_text">' + item.name + '</h6>';
-    if($(curPage).attr('id') == 'items')
-        p += '<img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
+    if($(curPage).attr('id') == 'items'){
+        p += '<div class="item_pic_holder"><img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
+        if(item.maxcnt > 1)
+            p += '<div class="item_maxcnt">' + item.maxcnt + '</div>';
+        if(item.id == 809) //прикол с лопаткой у одного из админов
+            p += '<div class="item_maxcnt">2</div>';
+        
+        p += '</div>';
+    }
     p += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     p += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
     p += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
