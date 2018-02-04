@@ -1,4 +1,5 @@
 var statsHidden = true;
+var lootChance;
 
 function makeMobBlock(mob) {
     var p = '<div class="moboblock">';
@@ -76,11 +77,13 @@ function lootblock(loot) {
         p += '<div class="loot_block_title">' + lootLoc[loottype] + '</div>';
         p += '<div class="loot_block_content">';
         switch (loottype) {
+            case 'loot':
+            case 'randloot':
+                p += makeItemInfo(loot[loottype]);
+                break;
             case 'questloot':
                 p += getQuestLoot(loot[loottype]);
                 break;
-            case 'randloot':
-            case 'loot':
             case 'money':
             case 'factionmoney':
             case 'twilights':
@@ -118,12 +121,46 @@ function getQuestLoot(loot) {
         p += '<div>';
         p += '<div class="loot_block_title" title="инфы о самих квестах у меня пока нет">id квеста: ' + questnum + '</div>';
         p += '<div class="loot_block_content">';
-        p += getLootBylvl(loot[questnum], 'questloot');
+        p += makeItemInfo(loot[questnum]);
         p += '</div>';
         p += '</div>';
     }
     return p;
 }
+
+
+function makeItemInfo(loot){
+    let itemInfo = {};
+    let p = '';
+    for(let lvl in loot){
+        for(let item in loot[lvl]){
+            if(!itemInfo[item])
+                itemInfo[item] = {};
+            itemInfo[item][lvl] = loot[lvl][item];
+        }
+    }
+
+    for(let item in itemInfo){
+        let pp = '\nШансы:';
+        for(let lvl in itemInfo[item]){
+            pp += "\n" + ((lvl == 'default')?("любой"):(lvl)) + " лвл : " + itemInfo[item][lvl] + "%";
+        }
+
+        let l = item.split('x');
+        if (l[0].indexOf(':') !== -1) {
+            var k = l[0].split(':');
+            p += '<div class="drop" title="' + mobs[k[1]].name + pp +'">';
+            p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
+            p += '</div>';
+        } else {
+            p += '<div class="drop" title="' + items[l[0]].name + pp + '" value="' + l[0] + '">';
+            p += '<img class="miniimg ' + items[l[0]].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l[0]].image + '.jpg">' + ((l.length > 1) ? ("X" + l[1]) : (''));
+            p += '</div>';
+        }
+    }
+    return p;
+}
+
 
 
 // высота 1
@@ -132,31 +169,17 @@ function getLootBylvl(loot, loottype) {
     var p = '';
 
     for (var lvl in loot) {
-        /*
-        if (typeof loot[lvl] !== 'object') {
-            
-            p += makeDropBlock(loot);
-            break;
-        }
-        */
         p += '<div>';
-        p += '<div class="loot_block_title">Для ' + lootLoc[lvl] + ' уровней</div>';
+        p += '<div class="loot_block_title">Для ' + lvl + ' уровней</div>';
         p += '<div class="loot_block_content">';
         var chance = 1;
         switch (loottype) {
-            case 'loot':
-
-                chance = getChance(loot[lvl]);
-            case 'questloot':
-            case 'randloot':
-                p += makeDropBlock(loot[lvl], chance);
-                break;
             case 'money':
                 p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
                 break;
             case 'factionmoney':
             case 'twilights':
-                p += 'От ' + loot[lvl].min + '<img src=""> До ' + loot[lvl].max + '<img src"">';
+                p += 'От ' + loot[lvl].min + '<img src=""> До ' + loot[lvl].max + '<img src="">';
                 break;
             case 'crystals':
                 chance = getChance(loot[lvl]);
@@ -212,35 +235,7 @@ function makeDropBlock(loot, chance) {
 }
 
 
-/*
-// высота 1
-//функция создает блок где все отображается уникально.
-function getLootUnique(loot, loottype) {
-    var p = '';
-    for (var lvl in loot) {
-        p += '<div>';
-        switch (loottype) {
-            case 'questloot':
-            case 'randloot':
-            case 'loot':
-                p += makeDropBlock(loot[lvl]);
-                break;
-            case 'money':
-                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
-                break;
-            case 'factionmoney':
-            case 'twilights':
-                p += 'От ' + loot[lvl].min + ' До ' + loot[lvl].max + ' ' + lootLoc[loottype];
-                break;
-            case 'crystals':
-                
-                break;
-        }
-        p += '</div>';
-    }
-    return p;
-}
-*/
+
 
 
 

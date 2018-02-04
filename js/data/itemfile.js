@@ -10392,6 +10392,7 @@ var items = {
     "rarity": "rare",
     "image": "pumpkinpet",
     "price": 5000,
+    "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 15,
   },

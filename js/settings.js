@@ -21,6 +21,8 @@ var settings = {
     },
     showmeall: {
     },
+    iAmTester:{
+    },
     iAmDebil:{
     }
 }

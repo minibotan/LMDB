@@ -73,7 +73,7 @@ function itemParams(item) {
         switch (i) {
             case 'loot' :
             case 'randloot':
-                p += getLootBylvl(param, i);
+                p += makeItemInfo(param, i);
                 break;
             case 'targettypes':
                 p += getTargetTypes(param);
@@ -163,11 +163,4 @@ function Reqs(item) {
         bool = true;
     }
     return (bool) ? ('<table>' + t + r + '</table>') : ('');
-}
-
-function check(a) {
-    if (a.hidden) return false;
-    if (a[Property] == Value  || (typeof a[Property] == Value) || ((Property == 'location' && a[Property])?(a[Property].indexOf(Value) !== -1):(false)))
-        return true;
-    return false;
 }

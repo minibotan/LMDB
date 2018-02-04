@@ -85,6 +85,22 @@ function showContent() {
 }
 
 
+function check(a) {
+    //if hidden
+    if  (a.hidden) return false;
+    //
+    if  (a[Property] == Value  || 
+        (typeof a[Property] == Value) || 
+        ((Property == 'location' && a[Property])?(a[Property].indexOf(Value) !== -1):(false)))
+        return true;
+        
+    if(Value == 'boss' && a.isboss)
+        return true;
+
+    return false;
+}
+
+
 function showElement(elem){
     let content = (curPageID == "items")?(makeItemBox(elem)):(makeMobBlock(elem));
     content = change(content);

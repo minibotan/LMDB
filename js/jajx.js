@@ -4,9 +4,21 @@ var mainText;
 $('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
 
 $(document).ready(function () {
-    if(location.hostname === "")
-        settings.showmeall.val = true;
+
+    
     readCookie();
+
+    if(settings.iAmTester.val == false && settings.showmeall.val == true){
+        settings.showmeall.val = false;
+        settings.iAmTester.val = true;
+    }
+
+    if(location.hostname === ""){
+        settings.showmeall.val = true;
+        settings.iAmTester.val = true;
+    }
+    
+
     if (!navigator.cookieEnabled) {
         alert('Включите cookie для комфортной работы с этим сайтом');
     }

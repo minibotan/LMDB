@@ -7703,7 +7703,7 @@ mobs = {
         "level": 14,
         "avatar": 175,
         "doll": "straj",
-        "picture": "straj",
+        "picture": "azazel",
         "minhit": 149,
         "maxhit": 198,
         "dodge": 41,
