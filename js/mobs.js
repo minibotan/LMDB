@@ -72,6 +72,8 @@ function lootblock(loot) {
 
     var p = '<div class="loot_block">';
     for (var loottype in loot) {
+        if(loottype == 'money' || loottype == 'crystals')
+            continue;
 
         p += '<div class="' + loottype + '">';
         p += '<div class="loot_block_title">' + lootLoc[loottype] + '</div>';
@@ -79,15 +81,13 @@ function lootblock(loot) {
         switch (loottype) {
             case 'loot':
             case 'randloot':
-                p += makeItemInfo(loot[loottype]);
+                p += makeItemInfo(loot[loottype], loottype);
                 break;
             case 'questloot':
                 p += getQuestLoot(loot[loottype]);
                 break;
-            case 'money':
             case 'factionmoney':
             case 'twilights':
-            case 'crystals':
                 p += getLootBylvl(loot[loottype], loottype);
                 break;
             case 'psevdorandloot':
@@ -102,7 +102,7 @@ function lootblock(loot) {
                 p += makeDropBlock(loot[loottype], 1);
                 break;
             default:
-                p += 'скоро будет инфа';
+                p += 'скоро все будет';
         }
         p += '</div>';
         p += '</div>';
@@ -129,21 +129,29 @@ function getQuestLoot(loot) {
 }
 
 
-function makeItemInfo(loot){
+function makeItemInfo(loot, loottype){
     let itemInfo = {};
     let p = '';
+    let totalChance = {};
     for(let lvl in loot){
+        totalChance[lvl] = 0;
         for(let item in loot[lvl]){
-            if(!itemInfo[item])
+            if(!itemInfo[item]){
                 itemInfo[item] = {};
+            }
             itemInfo[item][lvl] = loot[lvl][item];
+            totalChance[lvl] += loot[lvl][item]
         }
     }
 
     for(let item in itemInfo){
         let pp = '\nШансы:';
         for(let lvl in itemInfo[item]){
-            pp += "\n" + ((lvl == 'default')?("любой"):(lvl)) + " лвл : " + itemInfo[item][lvl] + "%";
+            if(loottype == 'loot')
+                chance = Math.round((itemInfo[item][lvl]/totalChance[lvl])*10000)/100;
+            else 
+                chance =  itemInfo[item][lvl];
+            pp += "\n" + ((lvl == 'default')?("любой"):(lvl)) + " лвл : " + chance + "%";
         }
 
         let l = item.split('x');
@@ -169,20 +177,31 @@ function getLootBylvl(loot, loottype) {
     var p = '';
 
     for (var lvl in loot) {
-        p += '<div>';
-        p += '<div class="loot_block_title">Для ' + lvl + ' уровней</div>';
-        p += '<div class="loot_block_content">';
         var chance = 1;
         switch (loottype) {
-            case 'money':
-                p += 'От ' + getPrice(loot[lvl].min) + ' До ' + getPrice(loot[lvl].max);
-                break;
             case 'factionmoney':
+                p += 'oт ' + loot[lvl].min + '<img src=""> до ' + loot[lvl].max + '<img src="">';
+                break; 
             case 'twilights':
-                p += 'От ' + loot[lvl].min + '<img src=""> До ' + loot[lvl].max + '<img src="">';
-                break;
-            case 'crystals':
-                chance = getChance(loot[lvl]);
+                p += 'oт ' + loot[lvl].min + '<img src=""> до ' + loot[lvl].max + '<img src="">';
+                break; 
+        }
+    }
+    return p;
+}
+
+function getCrystalInfo(loot){
+    let itemInfo = {};
+    let p = '';
+    for(let lvl in loot){
+        for(let item in loot[lvl]){
+            if(!itemInfo[item])
+                itemInfo[item] = {};
+            itemInfo[item][lvl] = loot[lvl][item];
+        }
+    }
+
+    chance = getChance(loot[lvl]);
                 for (var k in loot[lvl]) {
                     if (k == 0) continue;
                     if (loot[lvl][k] == 0) break;
@@ -190,11 +209,6 @@ function getLootBylvl(loot, loottype) {
                     p += '<img src="img/crystal.png" title="' + c + '%">';
                 }
                 break;
-        }
-        p += '</div>';
-        p += '</div>';
-    }
-    return p;
 }
 
 function getChance(loot) {
