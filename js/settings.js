@@ -52,6 +52,7 @@ function readCookie() {
             case 'ok':
             case 'gender':
             case 'showmeall':
+            case 'iAmTester':
             case 'iAmDebil':
                 settings[name].val = (val == 'true');
                 break;

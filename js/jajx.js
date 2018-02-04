@@ -211,7 +211,7 @@ $(document).ready(function () {
             .children('.item')
             .css('position', 'absolute')
             .css('width', '260px')
-            .css('z-index', '3');
+            .css('z-index', '5');
     });
 
     $('.contentbox').on('mouseleave', ".drop div", function () {
