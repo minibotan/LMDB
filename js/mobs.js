@@ -7,13 +7,13 @@ function makeMobBlock(mob) {
     p += '<img class="info_bg" src="img/other/charinfo.png">';
     p += '<div class="mobname" title="' + mob.name + '"><p>' + getName(mob.name) + '</p></div>';
     p += '<div class="mob__bar hp"><p class="mob__number">' + mob.maxhp + '/' + mob.maxhp + '</p></div>';
-    if(!mob.startrage) mob.startrage = 0;
-    p += '<div class="mob__bar rage" style="width: '+ (127*mob.startrage/100) +'px;"><p class="mob__number">' + mob.startrage + '/' + 100 + '</p></div>';
+    if (!mob.startrage) mob.startrage = 0;
+    p += '<div class="mob__bar rage" style="width: ' + (127 * mob.startrage / 100) + 'px;"><p class="mob__number">' + mob.startrage + '/' + 100 + '</p></div>';
     p += '<div class="race" title="' + searchValues.mobs.race[mob.race] + '"><img src="img/race/' + mob.race + '.png"></div>';
     p += '<img class="avatar" src="' + path + '/play/lib/avatar/' + mob.avatar + '.png">';
     p += '<h4 class="mob_level">' + mob.level + '</h4>';
     p += '</div>';
-    p+= '<div class="empty_space"></div>'
+    p += '<div class="empty_space"></div>'
     p += '<img class="mobpic click_to_hide" src="img/mobs/' + mob.picture + '.png"  onerror="imgError(this)"/>';
     p += getMobStats(mob);
     p += '<div class="mob_locations">';
@@ -72,7 +72,7 @@ function lootblock(loot) {
 
     var p = '<div class="loot_block">';
     for (var loottype in loot) {
-        if(loottype == 'money' || loottype == 'crystals')
+        if (loottype == 'money' || loottype == 'crystals')
             continue;
 
         p += '<div class="' + loottype + '">';
@@ -100,6 +100,9 @@ function lootblock(loot) {
                 break;
             case 'personalloot':
                 p += makeDropBlock(loot[loottype], 1);
+                break;
+            case 'reqloot':
+                p += makeReqLootBlock(loot[loottype]);
                 break;
             default:
                 p += 'скоро все будет';
@@ -129,14 +132,14 @@ function getQuestLoot(loot) {
 }
 
 
-function makeItemInfo(loot, loottype){
+function makeItemInfo(loot, loottype) {
     let itemInfo = {};
     let p = '';
     let totalChance = {};
-    for(let lvl in loot){
+    for (let lvl in loot) {
         totalChance[lvl] = 0;
-        for(let item in loot[lvl]){
-            if(!itemInfo[item]){
+        for (let item in loot[lvl]) {
+            if (!itemInfo[item]) {
                 itemInfo[item] = {};
             }
             itemInfo[item][lvl] = loot[lvl][item];
@@ -144,20 +147,20 @@ function makeItemInfo(loot, loottype){
         }
     }
 
-    for(let item in itemInfo){
+    for (let item in itemInfo) {
         let pp = '\nШансы:';
-        for(let lvl in itemInfo[item]){
-            if(loottype == 'loot')
-                chance = Math.round((itemInfo[item][lvl]/totalChance[lvl])*10000)/100;
-            else 
-                chance =  itemInfo[item][lvl];
-            pp += "\n" + ((lvl == 'default')?("любой"):(lvl)) + " лвл : " + chance + "%";
+        for (let lvl in itemInfo[item]) {
+            if (loottype == 'loot')
+                chance = Math.round((itemInfo[item][lvl] / totalChance[lvl]) * 10000) / 100;
+            else
+                chance = itemInfo[item][lvl];
+            pp += "\n" + ((lvl == 'default') ? ("любой") : (lvl)) + " лвл : " + chance + "%";
         }
 
         let l = item.split('x');
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
-            p += '<div class="drop" title="' + mobs[k[1]].name + pp +'">';
+            p += '<div class="drop" title="' + mobs[k[1]].name + pp + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
@@ -181,34 +184,34 @@ function getLootBylvl(loot, loottype) {
         switch (loottype) {
             case 'factionmoney':
                 p += 'oт ' + loot[lvl].min + '<img src=""> до ' + loot[lvl].max + '<img src="">';
-                break; 
+                break;
             case 'twilights':
                 p += 'oт ' + loot[lvl].min + '<img src=""> до ' + loot[lvl].max + '<img src="">';
-                break; 
+                break;
         }
     }
     return p;
 }
 
-function getCrystalInfo(loot){
+function getCrystalInfo(loot) {
     let itemInfo = {};
     let p = '';
-    for(let lvl in loot){
-        for(let item in loot[lvl]){
-            if(!itemInfo[item])
+    for (let lvl in loot) {
+        for (let item in loot[lvl]) {
+            if (!itemInfo[item])
                 itemInfo[item] = {};
             itemInfo[item][lvl] = loot[lvl][item];
         }
     }
 
     chance = getChance(loot[lvl]);
-                for (var k in loot[lvl]) {
-                    if (k == 0) continue;
-                    if (loot[lvl][k] == 0) break;
-                    var c = Math.round(((chance) ? (loot[lvl][k] / chance) : (loot[lvl][k])) * 100) / 100;
-                    p += '<img src="img/crystal.png" title="' + c + '%">';
-                }
-                break;
+    for (var k in loot[lvl]) {
+        if (k == 0) continue;
+        if (loot[lvl][k] == 0) break;
+        var c = Math.round(((chance) ? (loot[lvl][k] / chance) : (loot[lvl][k])) * 100) / 100;
+        p += '<img src="img/crystal.png" title="' + c + '%">';
+    }
+    break;
 }
 
 function getChance(loot) {
@@ -248,7 +251,31 @@ function makeDropBlock(loot, chance) {
     return p;
 }
 
+function makeReqLootBlock(loot) {
+    let reqs = loot.reqs;
+    let drop = loot.items;
+    let p = '';
+    p += '<div> Требования: </div>';
+    p += '<div class="dropreqs">';
 
+    for (let r of reqs) {
+        if (r.type == "buff") {
+            p += '<div class="drop" title="' + buffs[r.key].name + '" value="' + r.key + '">';
+            p += '<img class="buffimg buffcolor' + buffs[r.key].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[r.key].image + '.jpg">';
+            p += '</div>';
+        } else {
+            p+='<div>Надо получить 1% репы Роутега</div>';
+        }
+    }
+    p += '</div>';
+
+    for (let l in drop) {
+        p += '<div class="drop" title="' + items[l].name + '\nШанс: ' + drop[l] + '%' + '" value="' + l + '">';
+        p += '<img class="miniimg ' + items[l].rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + items[l].image + '.jpg">';
+        p += '</div>';
+    }
+    return p;
+}
 
 
 

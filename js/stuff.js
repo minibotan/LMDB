@@ -35,9 +35,9 @@ mainButtons = {
   'Мобы': 'mobs',
   'События': 'events',
   'Карты': 'maps',
-  'Квесты': 'quests',
+  //'Квесты': 'quests',
   'Ачивки': 'achievements',
-  'Одевалка': 'odevalka'
+  //'Одевалка': 'odevalka'
 };
 
 
@@ -396,6 +396,7 @@ lootLoc = {
     'crystals':'осколки магии',
     'psevdorandloot':'псевдорандомный лут',
     'personalloot':'персональный дроп',
+    'reqloot':'дроп с условием получения',
 
 
     'sockets': 'количество дыр'
