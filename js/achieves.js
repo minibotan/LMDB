@@ -44,7 +44,7 @@ function showAchieves(id) {
     console.log("----------------   " + id);
     $(".achieve").remove();
     for (let i in achieves) {
-        a = achieves[i];
+        let a = achieves[i];
         if (a.categ_id == id) {
             $(".achieves_content").append(AchieveBlock(a));
         }

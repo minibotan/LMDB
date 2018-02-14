@@ -4,7 +4,7 @@ var statsHidden = true;
 var lootChance;
 
 function makeMobBlock(mob) {
-    var p = '<div class="moboblock">';
+    let p = '<div class="moboblock">';
     p += '<div class="mobinfo">'
     p += '<img class="info_bg" src="img/other/charinfo.png">';
     p += '<div class="mobname" title="' + mob.name + '"><p>' + getName(mob.name) + '</p></div>';
@@ -20,8 +20,8 @@ function makeMobBlock(mob) {
     p += getMobStats(mob);
     p += '<div class="mob_locations">';
     p += '<p> Места обитания: </p>';
-    var locs = mob.location.split(", ");
-    for (var loc in locs) {
+    let locs = mob.location.split(", ");
+    for (let loc in locs) {
         p += '<span>' + searchValues.mobs.location[locs[loc]] + '</span>';
     }
     p += '</div>';
@@ -42,12 +42,12 @@ function imgError(image) {
 
 
 function getMobStats(mob) {
-    var p = '';
+    let p = '';
     p += '<div class="mob_stats click_to_hide">';
     p += '<table>';
 
-    var is1 = '<tr><td class="itemstat';
-    var is2 = '</td><td class="itemstat2">';
+    let is1 = '<tr><td class="itemstat';
+    let is2 = '</td><td class="itemstat2">';
 
     p += (mob.minhit || mob.maxhit) ? (is1 + '">Урон:' + is2 + ((mob.minhit) ? (mob.minhit) : (0)) + ' - ' + ((mob.maxhit) ? (mob.maxhit) : (0)) + '</td></tr>') : ('');
     p += (mob.defence) ? (is1 + '">Защита:' + is2 + mob.defence + '</td></tr>') : ('');
@@ -65,15 +65,15 @@ function getMobStats(mob) {
 
 
 function getName(name) {
-    names = name.split('|');
+    let names = name.split('|');
     return names[Math.floor(Math.random() * names.length)];
 }
 
 
 function lootblock(loot) {
 
-    var p = '<div class="loot_block">';
-    for (var loottype in loot) {
+    let p = '<div class="loot_block">';
+    for (let loottype in loot) {
         if (loottype == 'money' || loottype == 'crystals')
             continue;
 
@@ -121,8 +121,8 @@ function lootblock(loot) {
 // высота 2
 // создает блоки под каждый квест
 function getQuestLoot(loot) {
-    var p = '';
-    for (var questnum in loot) {
+    let p = '';
+    for (let questnum in loot) {
         p += '<div>';
         p += '<div class="loot_block_title" title="инфы о самих квестах у меня пока нет">id квеста: ' + questnum + '</div>';
         p += '<div class="loot_block_content">';
@@ -148,7 +148,7 @@ function makeItemInfo(loot, loottype) {
             totalChance[lvl] += loot[lvl][item]
         }
     }
-
+    let chance = 0;
     for (let item in itemInfo) {
         let pp = '\nШансы:';
         for (let lvl in itemInfo[item]) {
@@ -179,10 +179,10 @@ function makeItemInfo(loot, loottype) {
 // высота 1
 //функция создает блоки под каждый уровень
 function getLootBylvl(loot, loottype) {
-    var p = '';
+    let p = '';
 
-    for (var lvl in loot) {
-        var chance = 1;
+    for (let lvl in loot) {
+        let chance = 1;
         switch (loottype) {
             case 'factionmoney':
                 p += 'oт ' + loot[lvl].min + '<img src=""> до ' + loot[lvl].max + '<img src="">';
@@ -206,20 +206,20 @@ function getCrystalInfo(loot) {
         }
     }
 
-    chance = getChance(loot[lvl]);
-    for (var k in loot[lvl]) {
+    let chance = getChance(loot[lvl]);
+    for (let k in loot[lvl]) {
         if (k == 0) continue;
         if (loot[lvl][k] == 0) break;
-        var c = Math.round(((chance) ? (loot[lvl][k] / chance) : (loot[lvl][k])) * 100) / 100;
+        let c = Math.round(((chance) ? (loot[lvl][k] / chance) : (loot[lvl][k])) * 100) / 100;
         p += '<img src="img/crystal.png" title="' + c + '%">';
     }
     break;
 }
 
 function getChance(loot) {
-    var c = 0;
+    let c = 0;
 
-    for (var i in loot) {
+    for (let i in loot) {
         c += loot[i];
     }
     return c / 100;
@@ -230,17 +230,18 @@ function getChance(loot) {
 // функция создает самый последний уровень, с самими вещами          
 function makeDropBlock(loot, chance) {
 
-    var p = '';
-    for (var j in loot) {
-        var l = j.split('x');
+    let p = '';
+    for (let j in loot) {
+        let l = j.split('x');
+        let c;
         if (chance) {
-            var c = Math.round(((chance) ? (loot[j] / chance) : (loot[j])) * 1000) / 1000;
+            c = Math.round(((chance) ? (loot[j] / chance) : (loot[j])) * 1000) / 1000;
         } else {
             l = [loot[j]];
         }
 
         if (l[0].indexOf(':') !== -1) {
-            var k = l[0].split(':');
+            let k = l[0].split(':');
             p += '<div class="drop" title="' + mobs[k[1]].name + ((c) ? ('\nШанс: ' + c + '%') : ('')) + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
