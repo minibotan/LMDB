@@ -422,12 +422,12 @@ function upgradeItems() {
         }
     }
 
-    for (var iid in itemloot) {
+    for (let iid in itemloot) {
         if(!upgraded_items[iid]) continue;
         upgraded_items[iid].dropfrom = [];
-        var prev = 0;
+        let prev = 0;
         itemloot[iid].sort();
-        for(var mid in itemloot[iid]){
+        for(let mid in itemloot[iid]){
             if(itemloot[iid][mid] == prev) continue;
             prev = itemloot[iid][mid];
             upgraded_items[iid].dropfrom.push("adsf:" + prev);
@@ -439,8 +439,8 @@ function upgradeItems() {
 
 function getUpDrop(l){
     let r = [];
-    for (var lvl in l) {
-        drops = l[lvl];
+    for (let lvl in l) {
+        let drops = l[lvl];
         if (typeof (drops) == "object") {
             r = r.concat(getUpDrop(drops));
         } else
@@ -450,9 +450,9 @@ function getUpDrop(l){
 }
 
 function showClanList() {
-    var p = '<h2> Это список Кланов. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
+    let p = '<h2> Это список Кланов. Названий у меня нет. И скоро я уберу этот список.<br>Кто успел, тот посмотрел</h2>';
     p += '<ol  align="left">';
-    for (var i = 1; i < 300; i++) {
+    for (let i = 1; i < 300; i++) {
         p += '<li><img src="' + path + '/play/lib/clan/' + i + '.png"></li>';
     }
     p += '</ol>';
