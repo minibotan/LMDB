@@ -1,3 +1,5 @@
+'use strict'
+
 var lmdbCookie;
 var cT = new Date();
 cT.setTime (cT.getTime () - 100);

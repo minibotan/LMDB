@@ -1,3 +1,5 @@
+'use strict'
+
 var statsHidden = true;
 var lootChance;
 

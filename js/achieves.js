@@ -1,3 +1,5 @@
+'use strict'
+
 function showAchieveCats() {
     $('.contentbox').html(makeAchieveCatBlock());
     SortAchieveCats();
