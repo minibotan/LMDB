@@ -438,7 +438,7 @@ function upgradeItems() {
 
 
 function getUpDrop(l){
-    r = [];
+    let r = [];
     for (var lvl in l) {
         drops = l[lvl];
         if (typeof (drops) == "object") {
