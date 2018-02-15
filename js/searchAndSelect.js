@@ -14,7 +14,7 @@ var elemContentNames = [
 
 
 function makeSelectHTML(t) {
-    var p = '';
+    let p = '';
     //if(settings.showmeall.val){
         p += '<div class ="search">';
         p += '<input type="text" placeholder="ура, поиск!" class="search_input">';
@@ -26,7 +26,7 @@ function makeSelectHTML(t) {
     p += '<select class="prop_selector">';
     //p += '<option selected hidden>Параметр Выбора</option>';
     Property = "none";
-    for (var i in searchProps[t]) {
+    for (let i in searchProps[t]) {
         if (Property == "none") Property = i;
         p += '<option class="prop_option" value="' + i + '">' + searchProps[t][i] + '</option>';
     }
@@ -40,12 +40,12 @@ function makeSelectHTML(t) {
 
 
 function addSelect(t) {
-    var p = '<select class="val_selector">';
+    let p = '<select class="val_selector">';
     //p += '<option selected hidden>Выберите ' + searchProps[t][Property] + '</option>';
-    var par = searchValues[t][Property];
-    var b = false;
+    let par = searchValues[t][Property];
+    let b = false;
     Value = "none";
-    for (var i in par) {
+    for (let i in par) {
         if (Value == "none") Value = i;
         if (i.indexOf('group') != -1) {
             if (b) p += '</optgroup>';
@@ -66,10 +66,10 @@ function getMobOrItem(){
 }
 
 function showContent() {
-    var k = counter * 40;
-    var p = '';
-    var contentList = getMobOrItem();
-    for (var i in contentList) {
+    let k = counter * 40;
+    let p = '';
+    let contentList = getMobOrItem();
+    for (let i in contentList) {
         let elem = contentList[i];
         if (check(elem)) {
             if (k < 1) {
@@ -113,21 +113,21 @@ function showElement(elem){
 function search(){
     console.log($('.search_input').val());
     if($('.search_input').val()){
-        str = $('.search_input').val().toLowerCase();
+        var str = $('.search_input').val().toLowerCase();
     } else {
         return false;
     }
     $('.stuff_holder').empty();
     $('.moar_button').remove();
-    var attrs = str.split(', ');
-    var arrToSearch;
+    let attrs = str.split(', ');
+    let arrToSearch;
     if($(curPage).attr("id") == "items") {
         arrToSearch = items;
     } else {
         arrToSearch = mobs;
     }
-    for(var arrElem in arrToSearch){
-        element = arrToSearch[arrElem];
+    for(let arrElem in arrToSearch){
+        let element = arrToSearch[arrElem];
         if(element.hidden) continue;
         if(searchCheck(element, attrs)){
             showElement(element);
@@ -138,10 +138,10 @@ function search(){
 
 function searchCheck(element, attrs){
     let elementContent = '';
-    for(var i of elemContentNames)
+    for(let i of elemContentNames)
         elementContent += ' ::: ' + element[i];
     elementContent = elementContent.toLowerCase();
-    for(var attr of attrs){
+    for(let attr of attrs){
         if(elementContent.indexOf(attr) != -1)
             return true;
     }
