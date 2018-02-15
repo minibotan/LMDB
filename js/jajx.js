@@ -113,7 +113,7 @@ $(document).ready(function () {
             default:
                 $('.contentbox').html('<p>Тут пока ничего нет, но возможно, скоро что-то появится</p>');
         }
-
+        $(window).scrollTop(0);
     });
 
 
@@ -214,8 +214,9 @@ $(document).ready(function () {
         $(".overlay").html(makeMobBlock(mobs[id]));
     });
 
-    $('.row').on('mouseleave', ".overlay>div", function () {
-        $(this).remove();
+    $('.overlay').click(function (e) {
+        if(e.target != this) return;
+        $(this).children('div').remove();
         $(".overlay").toggle();
     });
 
