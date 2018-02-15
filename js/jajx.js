@@ -187,49 +187,36 @@ $(document).ready(function () {
 
 
     // mob image/stats changer
-    $('.contentbox').on('click', ".click_to_hide", function () {
+    $('.row').on('click', ".click_to_hide", function () {
         let parent = $(this).parent();
 
-        block = parent.children(".mob_stats");
-        block.css("display", ((block.css("display") == "none")?("block"):("none")));
-        block = parent.children(".mobpic");
-        block.css("display", ((block.css("display") == "none")?("block"):("none")));
+        parent.children(".mob_stats").toggle();
+        parent.children(".mobpic").toggle();
     });
 
 
 
     //mob loot
-    $('.contentbox').on('click', ".loot_block_title", function () {
+    $('.row').on('click', ".loot_block_title", function () {
         $(this).parent().children('.loot_block_content').fadeToggle("fast");
         return false;
     });
 
     $('.contentbox').on('click', ".drop", function () {
         var id = $(this).attr('value');
-        $(this).append('<div class="thisIsRelative"><div class="thisIsAbsolute"></div></div>')
-            .children('.thisIsRelative')
-            .css('position', 'relative')
-            .children('.thisIsAbsolute')
-            .css('position', 'absolute')
-            .css('width', '260px')
-            .css('z-index', '5')
-            .html(makeItemBox(items[id]))
+        $(".overlay").toggle();
+        $(".overlay").html(makeItemBox(items[id]));
     });
 
     $('.contentbox').on('click', ".dropmob", function () {
         var id = $(this).attr('value');
-        $(this).append('<div class="thisIsRelative"><div class="thisIsAbsolute"></div></div>')
-            .children('.thisIsRelative')
-            .css('position', 'relative')
-            .children('.thisIsAbsolute')
-            .css('position', 'absolute')
-            .css('width', '220px')
-            .css('z-index', '5')
-            .html(makeMobBlock(mobs[id]));
+        $(".overlay").toggle();
+        $(".overlay").html(makeMobBlock(mobs[id]));
     });
 
-    $('.contentbox').on('mouseleave', ".thisIsRelative", function () {
+    $('.row').on('mouseleave', ".overlay>div", function () {
         $(this).remove();
+        $(".overlay").toggle();
     });
 
 

@@ -4,15 +4,13 @@ function makeItemBox(item) {
     var p ='';
     p += '<div class = "item">';
     p += '<h6 class = "itemname ' + item.rarity + '_text">' + item.name + '</h6>';
-    if($(curPage).attr('id') == 'items'){
-        p += '<div class="item_pic_holder"><img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
-        if(item.maxcnt > 1)
-            p += '<div class="item_maxcnt">' + item.maxcnt + '</div>';
-        if(item.id == 809) //прикол с лопаткой у одного из админов
-            p += '<div class="item_maxcnt">2</div>';
-        
-        p += '</div>';
-    }
+    p += '<div class="item_pic_holder"><img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
+    if(item.maxcnt > 1)
+        p += '<div class="item_maxcnt">' + item.maxcnt + '</div>';
+    if(item.id == 809) //прикол с лопаткой у одного из админов
+        p += '<div class="item_maxcnt">2</div>';
+    
+    p += '</div>';
     p += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     p += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
     p += (item.becomepersonal) ? ('<p class="small">Становится персональным при надевании</p>') : ('');
@@ -36,19 +34,19 @@ function makeItemBox(item) {
     p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + getTime(item.validtime) + '</td></tr>') : ('');
     p += '</table>';
     p += (item.owner) ? ('<p class="itemowner">Владелец - <a href="http://lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
+    p+= '<div class="loot_block">'
     if(item.dropfrom){
         p += getDrops(item.dropfrom);
     }
     if (item.bottleparams) {
         p += itemParams(item);
     }
-    p += '</div>';
+    p += '</div></div>';
     return p;
 }
 
 function getDrops(drops){
-    var p = '';
-    p += '<div>';
+    var p = '<div>';
     p += '<div class="loot_block_title">Падает с</div>';
     p += '<div class="loot_block_content">';
     p += makeDropBlock(drops) ;
@@ -64,8 +62,7 @@ function getDrops(drops){
 function itemParams(item) {
     var type = item.type;
     var params = item.bottleparams;
-    var p = '';
-    p += '<div>';
+    var p = '<div>';
     p += '<div class="loot_block_title">Свойства</div>';
     p += '<div class="loot_block_content">';
     for(var i in params) {
