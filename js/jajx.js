@@ -206,17 +206,29 @@ $(document).ready(function () {
 
     $('.contentbox').on('click', ".drop", function () {
         var id = $(this).attr('value');
-        $(this).append('<div><div>')
-            .children('div')
+        $(this).append('<div class="thisIsRelative"><div class="thisIsAbsolute"></div></div>')
+            .children('.thisIsRelative')
             .css('position', 'relative')
-            .html(makeItemBox(items[id]))
-            .children('.item')
+            .children('.thisIsAbsolute')
             .css('position', 'absolute')
             .css('width', '260px')
-            .css('z-index', '5');
+            .css('z-index', '5')
+            .html(makeItemBox(items[id]))
     });
 
-    $('.contentbox').on('mouseleave', ".drop div", function () {
+    $('.contentbox').on('click', ".dropmob", function () {
+        var id = $(this).attr('value');
+        $(this).append('<div class="thisIsRelative"><div class="thisIsAbsolute"></div></div>')
+            .children('.thisIsRelative')
+            .css('position', 'relative')
+            .children('.thisIsAbsolute')
+            .css('position', 'absolute')
+            .css('width', '220px')
+            .css('z-index', '5')
+            .html(makeMobBlock(mobs[id]));
+    });
+
+    $('.contentbox').on('mouseleave', ".thisIsRelative", function () {
         $(this).remove();
     });
 

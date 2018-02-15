@@ -162,7 +162,7 @@ function makeItemInfo(loot, loottype) {
         let l = item.split('x');
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
-            p += '<div class="drop" title="' + mobs[k[1]].name + pp + '">';
+            p += '<div class="dropmob" title="' + mobs[k[1]].name + pp + '" value="'+ k[1] + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
@@ -242,7 +242,7 @@ function makeDropBlock(loot, chance) {
 
         if (l[0].indexOf(':') !== -1) {
             let k = l[0].split(':');
-            p += '<div class="drop" title="' + mobs[k[1]].name + ((c) ? ('\nШанс: ' + c + '%') : ('')) + '">';
+            p += '<div class="dropmob" title="' + mobs[k[1]].name + ((c) ? ('\nШанс: ' + c + '%') : ('')) + '" value="'+ k[1] + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {

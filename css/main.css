@@ -728,6 +728,14 @@ table {
     vertical-align: middle;
     
 }
+.dropmob {
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+
 .miniimg{
     vertical-align: middle;
     height: 34px;
