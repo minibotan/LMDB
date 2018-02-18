@@ -7300,7 +7300,7 @@ mobs = {
                 }
             }
         },
-        "location": "zona, nora",
+        "location": "zona, nora50",
     },
     "116": {
         "id": 116,
@@ -7693,7 +7693,7 @@ mobs = {
                 }
             }
         },
-        "location": "zona, nora",
+        "location": "zona, nora50",
     },
     "123": {
         "id": 123,
@@ -7938,7 +7938,7 @@ mobs = {
                 }
             }
         },
-        "location": "nora",
+        "location": "nora50",
     },
     "130": {
         "id": 130,
@@ -7975,7 +7975,7 @@ mobs = {
                 }
             }
         },
-        "location": "nora",
+        "location": "nora50",
     },
     "131": {
         "id": 131,
@@ -8019,7 +8019,7 @@ mobs = {
                 }
             }
         },
-        "location": "nora",
+        "location": "nora50",
     },
     "132": {
         "id": 132,
@@ -8063,7 +8063,7 @@ mobs = {
                 }
             }
         },
-        "location": "nora",
+        "location": "nora50",
     },
     "133": {
         "id": 133,
@@ -8104,7 +8104,7 @@ mobs = {
                 }
             }
         },
-        "location": "nora",
+        "location": "nora50",
     },
     "134": {
         "id": 134,

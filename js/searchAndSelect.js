@@ -91,13 +91,22 @@ function check(a) {
     //if hidden
     if  (a.hidden) return false;
     //
-    if  (a[Property] == Value  || 
-        (typeof a[Property] == Value) || 
-        ((Property == 'location' && a[Property])?(a[Property].indexOf(Value) !== -1):(false)))
-        return true;
-        
-    if(Value == 'boss' && a.isboss)
-        return true;
+    if  (a[Property] == Value) return true;
+    // для разных undefined
+    if  (typeof a[Property] == Value) return true;
+    if  (typeof a[Property] == 'undefined' && Value == 0) return true;
+    // если ищем по локации и локация у моба установлена, то смотрим, совпадает ли. иначе фолс.
+    if ((Property == 'location' && a[Property])?(a[Property].indexOf(Value) !== -1):(false))  return true;
+    // если ищем боссов
+    if(Value == 'boss' && a.isboss) return true;
+
+    if(Property == 'reqlevel'){
+        console.log("level")
+        if (Value.indexOf('par') !== -1){
+            console.log("par")
+            if (a.reqparagon == Value.substr(3)) return true;
+        }
+    }
 
     return false;
 }

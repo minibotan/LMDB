@@ -167,6 +167,7 @@ $(document).ready(function () {
     $('.contentbox').on('change', ".prop_selector", function () {
         Property = $(this).val();
         $(this).parent().parent().children('.div_val').html(addSelect($(curPage).attr('id')));
+        $(".val_selector").trigger("change");
         return false;
     });
 
