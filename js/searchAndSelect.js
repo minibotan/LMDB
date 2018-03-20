@@ -147,10 +147,11 @@ function searchCheck(element, params, values){
     let elementContent = '';
     for(let i of params){
         for(let val of values){
+            let s = (""+element[i]).toLowerCase();
             if(hardsearch){
-                if(element[i] == val) return true;
+                if(s == val) return true;
             }else{
-                if(element[i].indexOf(val) != -1) return true;
+                if(s.indexOf(val) != -1) return true;
             }
         }
     }
@@ -188,6 +189,7 @@ function ParseSearchAndDoStuff(){
     if(props.i){
         hardsearch = true;
         search(['id'], props.i.split(','));
+        hardsearch = false;
     }
 
     if(props.n)
