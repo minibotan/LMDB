@@ -40,10 +40,10 @@ $(document).ready(function () {
     mainText = $('.contentbox').html();
 
     
-    if(settings.iAmTester.val || settings.showmeall.val){
+    //if(settings.iAmTester.val || settings.showmeall.val){
         if(window.location.search !== "")
             ParseSearchAndDoStuff();
-    }
+    //}
     
     /*               NAVIGATOR  & SETTINGS                   */
 
