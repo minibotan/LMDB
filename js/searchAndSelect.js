@@ -1,8 +1,7 @@
 'use strict'
 
 var defaultSearchParams = [
-    'name',
-    'descr'
+    'name'
 ]
 // true - равенство
 // false - присутствие
