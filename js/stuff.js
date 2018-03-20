@@ -401,8 +401,12 @@ lootLoc = {
     'crystals':'осколки магии',
     'psevdorandloot':'псевдорандомный лут',
     'personalloot':'персональный дроп',
-    'reqloot':'дроп с условием получения',
-
-
-    'sockets': 'количество дыр'
+    'reqloot':'дроп с условием получения'
 }
+
+var itemparamsLoc = {
+  'hp':"хилл",
+  'rage':"ярость",
+  
+}
+

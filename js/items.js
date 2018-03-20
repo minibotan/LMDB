@@ -2,7 +2,7 @@ function makeItemBox(item) {
     var is1 = '<tr><td class="itemstat';
     var is2 = '</td><td class="itemstat2">';
     var p ='';
-    p += '<div class = "item">';
+    p += '<div class = "item"  value="' + item.id + '">';
     p += '<h6 class = "itemname ' + item.rarity + '_text">' + item.name + '</h6>';
     p += '<div class="item_pic_holder"><img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
     if(item.maxcnt > 1)
@@ -60,13 +60,13 @@ function getDrops(drops){
 
 
 function itemParams(item) {
-    var type = item.type;
-    var params = item.bottleparams;
-    var p = '<div>';
+    let type = item.type;
+    let params = item.bottleparams;
+    let p = '<div>';
     p += '<div class="loot_block_title">Свойства</div>';
     p += '<div class="loot_block_content">';
-    for(var i in params) {
-        var param = params[i];
+    for(let i in params) {
+        let param = params[i];
         switch (i) {
             case 'loot' :
             case 'randloot':
@@ -79,7 +79,7 @@ function itemParams(item) {
                 p += 'Тип - ' + param + '<br>';
                 break;
             case 'cooldown':
-                p += 'кд - ' + param + '<br>';
+                p += 'перезарядка - ' + param + '<br>';
                 break;
             case 'effects':
                 p += getEffects(param);
@@ -107,7 +107,37 @@ function getTargetTypes(tt){
     return p;
 }
 
-function getEffects(eff) {
+function getEffects(effects) {
+    let p = '';
+    for(let e of effects){
+        let type = e.type;
+        let value = e.value;
+        switch(type){
+            case 'buff':
+                if(buffs[value].ishidden) break;
+                p += 'накладывает бафф - <img class="buffimg buffcolor' + buffs[value].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[value].image + '.jpg">';
+                break;
+            case 'rage':
+                p+= "+" + value + "ярости";
+                break;
+            case 'changeformob':
+            case 'buffall':
+            case 'changeparam':
+            case 'incrementparam':
+            case 'addnbb':
+            case 'changelocation':
+            case 'system':
+            case 'addbuff':
+            case 'attackmob':
+            case 'buffgroupinlocation':
+            case 'maxhp':
+            case 'summonmob':
+            case 'battleprotect':
+            case 'candieseaten':
+            case 'hp':
+            default: 
+        }
+    }
     return '';
 }
 

@@ -16,6 +16,7 @@ function makeMobBlock(mob) {
     p += '<h4 class="mob_level">' + mob.level + '</h4>';
     p += '</div>';
     p += '<div class="empty_space"></div>'
+    p += mobBuffs(mob.buffs);
     p += '<img class="mobpic click_to_hide" src="img/mobs/' + mob.picture + '.png"  onerror="imgError(this)"/>';
     p += getMobStats(mob);
     p += '<div class="mob_locations">';
@@ -38,6 +39,11 @@ function imgError(image) {
     image.onerror = "";
     image.src = "img/mobs/lal.png";
     return true;
+}
+
+
+function mobBuffs(){
+    return "";
 }
 
 
@@ -162,7 +168,7 @@ function makeItemInfo(loot, loottype) {
         let l = item.split('x');
         if (l[0].indexOf(':') !== -1) {
             var k = l[0].split(':');
-            p += '<div class="dropmob" title="' + mobs[k[1]].name + pp + '" value="'+ k[1] + '">';
+            p += '<div class="dropmob" title="' + mobs[k[1]].name + pp + '" value="' + k[1] + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
@@ -213,7 +219,6 @@ function getCrystalInfo(loot) {
         let c = Math.round(((chance) ? (loot[lvl][k] / chance) : (loot[lvl][k])) * 100) / 100;
         p += '<img src="img/crystal.png" title="' + c + '%">';
     }
-    break;
 }
 
 function getChance(loot) {
@@ -242,7 +247,7 @@ function makeDropBlock(loot, chance) {
 
         if (l[0].indexOf(':') !== -1) {
             let k = l[0].split(':');
-            p += '<div class="dropmob" title="' + mobs[k[1]].name + ((c) ? ('\nШанс: ' + c + '%') : ('')) + '" value="'+ k[1] + '">';
+            p += '<div class="dropmob" title="' + mobs[k[1]].name + ((c) ? ('\nШанс: ' + c + '%') : ('')) + '" value="' + k[1] + '">';
             p += '<img class="miniimg" src="' + path + '/play/lib/avatar/' + mobs[k[1]].avatar + '.png">' + ((l.length > 1) ? ("X" + l[1]) : (''));
             p += '</div>';
         } else {
@@ -267,7 +272,7 @@ function makeReqLootBlock(loot) {
             p += '<img class="buffimg buffcolor' + buffs[r.key].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[r.key].image + '.jpg">';
             p += '</div>';
         } else {
-            p+='<div>Надо получить 1% репы Роутега</div>';
+            p += '<div>Надо получить 1% репы Роутега</div>';
         }
     }
     p += '</div>';
@@ -280,49 +285,3 @@ function makeReqLootBlock(loot) {
     return p;
 }
 
-
-
-
-/*
-
-
-ffffffff    ll                  aaaa          ssssss        hh      hh
-ffffffff    ll                  aaaa        sss    sss      hh      hh
-ff          ll                 aaaaaa       ss      ss      hh      hh
-ff          ll                 aa  aa       sss             hh      hh
-ffffffff    ll                aa    aa       sssss          hhhhhhhhhh
-ffffffff    ll                aa    aa          ssss        hhhhhhhhhh
-ff          ll               aaaaaaaaaa            sss      hh      hh 
-ff          ll               aaaaaaaaaa     ss      ss      hh      hh
-ff          llllllllll      aa        aa    sss    sss      hh      hh
-ff          llllllllll      aa        aa      ssssss        hh      hh
-
-
-
-
-
- */
-
-
-function addLMLoginer() {
-    var r = '';
-    r += '<div id="login" class="logined"><object data="' + path + '/flash/logined.swf" type="application/x-shockwave-flash" id="flash_428931508" width="217" height="163"><param name="params" value="menu=false&amp;wmode=opaque"><param name="allowScriptAccess" value="always"><param name="flashvars" value="name=Just%20Bot&amp;race=1&amp;level=20&amp;avatar=186&amp;hp=3388&amp;maxhp=3388&amp;inner=0&amp;isgamexp=0&amp;lang=ru&amp;cdn=' + path + '"><param name="movie" value="' + path + '/flash/logined.swf"><param name="wmode" value="opaque"></object></div>';
-    return r;
-}
-
-function addFlash(mob) {
-    /* флеш объект отображается не так, как должен =( */
-    /* на гитхабе вообще не грузит, так как не https */
-    var swfsrc = '' + path + '/play/lib/dolls/' + mob.doll + '.swf'
-    var p = '';
-    p += '<object type="application/x-shockwave-flash">'
-    p += '<param name="movie" value="' + swfsrc + '">'
-    p += '<embeded src="' + swfsrc + '"></embeded>'
-    p += '<param name="wmode" value="transparent" />';
-    p += '<param name="allowScriptAccess" value="always" />';
-    p += '<param name="flashvars" value="stage=1"/>';
-    p += '<param name="play" value="true" />';
-    p += '<param name="loop" value="true" />';
-    p += '</object>';
-    return p;
-}

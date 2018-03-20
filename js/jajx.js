@@ -32,11 +32,18 @@ $(document).ready(function () {
     if(settings.iAmDebil.val){
         ShowMePony();
     }
-    
+
+
     achievesCat.sort((a, b) => +a.orderm - +b.orderm);
 
     upgradeItems();
     mainText = $('.contentbox').html();
+
+    
+    if(settings.iAmTester.val || settings.showmeall.val){
+        if(window.location.search !== "")
+            ParseSearchAndDoStuff();
+    }
     
     /*               NAVIGATOR  & SETTINGS                   */
 

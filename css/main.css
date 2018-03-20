@@ -709,6 +709,7 @@ table {
     border: 1px solid #456;
     border-radius: 18px;
     padding: 0px 4px;
+    display: inline-flex;
 }
 
 

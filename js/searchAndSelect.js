@@ -1,16 +1,12 @@
 'use strict'
 
-var elemContentNames = [
+var defaultSearchParams = [
     'name',
     'descr'
 ]
-
-
-
-
-
-
-
+// true - равенство
+// false - присутствие
+var hardsearch = false;
 
 
 function makeSelectHTML(t) {
@@ -99,7 +95,7 @@ function check(a) {
     if ((Property == 'location' && a[Property])?(a[Property].indexOf(Value) !== -1):(false))  return true;
     // если ищем боссов
     if(Value == 'boss' && a.isboss) return true;
-
+    // поиск по ступеням
     if(Property == 'reqlevel'){
         console.log("level")
         if (Value.indexOf('par') !== -1){
@@ -119,40 +115,83 @@ function showElement(elem){
 }
 
 
-function search(){
-    console.log($('.search_input').val());
-    if($('.search_input').val()){
-        var str = $('.search_input').val().toLowerCase();
-    } else {
-        return false;
-    }
+function search(params, values){
+    if(!params)
+        var params = defaultSearchParams;
+    
+    if(!values)
+        if($('.search_input').val())
+            var values = $('.search_input').val().toLowerCase().split(', ');
+        else 
+            return false;
+
     $('.stuff_holder').empty();
     $('.moar_button').remove();
-    let attrs = str.split(', ');
-    let arrToSearch;
-    if($(curPage).attr("id") == "items") {
-        arrToSearch = items;
-    } else {
-        arrToSearch = mobs;
-    }
-    for(let arrElem in arrToSearch){
-        let element = arrToSearch[arrElem];
-        if(element.hidden) continue;
-        if(searchCheck(element, attrs)){
+
+
+    var content = getMobOrItem();
+
+    console.log(params)
+    console.log(values)
+
+    for(let e in content){
+        let element = content[e];
+        if(!settings.showmeall.val && element.hidden) continue;
+        if(searchCheck(element, params, values)){ 
             showElement(element);
         }
     }
 }
 
 
-function searchCheck(element, attrs){
+function searchCheck(element, params, values){
     let elementContent = '';
-    for(let i of elemContentNames)
-        elementContent += ' ::: ' + element[i];
-    elementContent = elementContent.toLowerCase();
-    for(let attr of attrs){
-        if(elementContent.indexOf(attr) != -1)
-            return true;
+    for(let i of params){
+        for(let val of values){
+            if(hardsearch){
+                if(element[i] == val) return true;
+            }else{
+                if(element[i].indexOf(val) != -1) return true;
+            }
+        }
     }
     return false;
+}
+
+
+
+/*
+    't',//type "m" or "i" for mobs and items
+    'i', // id of it
+    'p',// propery 
+    'v',// value of property
+    'n'// search by name
+*/
+
+
+
+
+
+function ParseSearchAndDoStuff(){
+    $('.contentbox').html('<div class="stuff_holder"></div>');
+    let args = window.location.search.replace('?','').split('&');
+    let props = {};
+    for (const arg of args) {
+        let a = decodeURIComponent(arg.split('=')[0]);
+        let b = decodeURIComponent(arg.split('=')[1]);
+        props[a] = b;
+    }
+
+    console.log(props);
+
+    curPageID = (props.t == 'm')?('mobs'):('items');
+
+    if(props.i){
+        hardsearch = true;
+        search(['id'], props.i.split(','));
+    }
+
+    if(props.n)
+        search(['name'], props.n.split(','));
+
 }

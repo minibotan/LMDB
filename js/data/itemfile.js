@@ -15802,7 +15802,9 @@ var items = {
     "crit": 50,
     "price": 10000,
     "descr": "Описание",
-    "bottleparams": "{\"chance\":10}<br>",
+    "bottleparams": {
+      "chance": 10
+    },
     "hidden": 1,
   },
   "863": {
@@ -18704,11 +18706,11 @@ var items = {
     "descr": "Интересно, что может быть внутри?",
     "instruction": "Двойной клик: вскрыть коробку.",
     "bottleparams": {
-        "randloot": {
-          "default": {
-            "239x2": 100,
-          }
+      "randloot": {
+        "default": {
+          "239x2": 100,
         }
+      }
     },
   },
   "1022": {
@@ -23002,7 +23004,9 @@ var items = {
     "instruction": "Двойной клик: почитать свиток!",
     "bottleparams": {
       "locations": "235,232,230,239",
-      "attackmob": "{\"243x1\":100}"
+      "attackmob": {
+        "243x1": 100
+      }
     },
     "validtime": 3000,
   },
@@ -24835,7 +24839,9 @@ var items = {
     "instruction": "Двойной клик: вступить в бой с призраком.",
     "bottleparams": {
       "locations": "260,142",
-      "attackmob": "{\"255x1\":100}"
+      "attackmob": {
+        "255x1": 100
+      }
     },
   },
   "1331": {
@@ -24852,7 +24858,9 @@ var items = {
     "instruction": "Двойной клик: вступить в бой с призраком.",
     "bottleparams": {
       "locations": "259,143",
-      "attackmob": "{\"255x1\":100}"
+      "attackmob": {
+        "255x1": 100
+      }
     },
   },
   "1332": {
@@ -24927,7 +24935,9 @@ var items = {
     "bottleparams": {
       "locations": "143,142,141,140,148,152",
       "faction": "2",
-      "attackmob": "{\"256x1\":100}"
+      "attackmob": {
+        "256x1": 100
+      }
     },
   },
   "1336": {
@@ -26339,7 +26349,9 @@ var items = {
       }],
       "effects": [{
         "type": "attackmob",
-        "value": "{\"270x1\":100}"
+        "value": {
+          "270x1": 100
+        }
       }]
     },
     "quest": 1,
@@ -30658,7 +30670,15 @@ var items = {
     "personal": 1,
     "descr": "Позволяет получить конструкторский предмет без требования к уровню со случайными частями. Время жизни - час.",
     "instruction": "Двойной клик: получить оружие.",
-    "bottleparams": "{\"loot\":{\"default\":{\"718x1\":1,\"719x1\":1,\"721x1\":1}}}<br>",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "718x1": 1,
+          "719x1": 1,
+          "721x1": 1
+        }
+      }
+    },
     "validtime": 86400,
   },
   "1634": {
@@ -33463,7 +33483,12 @@ var items = {
     "personal": 1,
     "descr": "Временно делает непойми что.",
     "instruction": "Двойной клик: сделать непойми что.",
-    "bottleparams": "{\"effects\":[{\"type\":\"buff\",\"value\":\"752\"}]}<br>",
+    "bottleparams": {
+      "effects": [{
+        "type": "buff",
+        "value": "752"
+      }]
+    },
     "hidden": 1,
   },
   "1778": {
@@ -37574,7 +37599,10 @@ var items = {
     "personal": 1,
     "descr": "Легендарное средство починки всего и вся. Если бы в день, когда из мира ушла магия, у магов было достаточно этой штуки, большой катаклизм мог и не произойти.",
     "instruction": "Двойной клик: починить респиратор.",
-    "bottleparams": "{\"buff_id\":727,\"value\":\"1\"}<br>",
+    "bottleparams": {
+      "buff_id": 727,
+      "value": "1"
+    },
   },
   "1987": {
     "id": 1987,
@@ -37801,7 +37829,10 @@ var items = {
     "personal": 1,
     "descr": "Вот это удача! В ваших руках ключ от темницы.",
     "instruction": "Двойной клик: открыть дверь.",
-    "bottleparams": "{\"buff_id\":737,\"value\":\"1\"}<br>",
+    "bottleparams": {
+      "buff_id": 737,
+      "value": "1"
+    },
     "quest": 1,
     "validtime": 600,
   },
@@ -39618,7 +39649,20 @@ var items = {
     "personal": 1,
     "descr": "Внутри находятся:              Золотые лаббиты,                     Премиум-эликсиры,                   Лицензионные настои лечения                           Лицензионные настои силы                         Лицензионные настои защиты                                     Сладкие подъелочники                    и, конечно же, мандаринки! <br>[w]Чем выше новогодняя ёлка –              тем лучше подарки![/w]",
     "instruction": "Двойной клик - открыть подарок.",
-    "bottleparams": "{\"globalparamloot\":{\"default\":{\"2088x1\":\"jolkalevelx100\",\"247x1\":\"jolkalevelx100\",\"1105x0.35\":\"jolkalevelx100\",\"1492x0.5\":\"jolkalevelx100\",\"600x1\":\"jolkalevelx100\",\"566x1\":\"jolkalevelx100\",\"565x1\":\"jolkalevelx100\",\"2098x1\":\"jolkalevelx100\"}}}<br>",
+    "bottleparams": {
+      "globalparamloot": {
+        "default": {
+          "2088x1": "jolkalevelx100",
+          "247x1": "jolkalevelx100",
+          "1105x0.35": "jolkalevelx100",
+          "1492x0.5": "jolkalevelx100",
+          "600x1": "jolkalevelx100",
+          "566x1": "jolkalevelx100",
+          "565x1": "jolkalevelx100",
+          "2098x1": "jolkalevelx100"
+        }
+      }
+    },
   },
   "2095": {
     "id": 2095,
