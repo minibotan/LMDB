@@ -26,6 +26,10 @@ h6 {
     font-size: 12px;
 }
 
+input{
+    outline: none;
+}
+
 
 a {
     outline: none;
@@ -436,7 +440,23 @@ table {
 }
 
 
+
+
+
+
+
+
+
+
+
+
 /** ITEMS */
+
+
+
+
+
+
 
 
 
@@ -475,6 +495,31 @@ table {
     vertical-align: top;
 }
 
+
+.search_box{
+    width: 80%;
+}
+
+.selector_parent{
+    display: block;
+    width: 100%;
+    align-items: center;
+    padding: 1px;
+    margin: 0px;
+}
+input.itemname{
+    border: none;
+    padding: 5px;
+    margin: 0px;
+    height: 20px;
+    font-size: 16px;
+    width: -webkit-fill-available;
+    text-align: center;
+    color: #ccc;
+}
+
+
+
 .itemname {
     margin: 0px;
     margin-bottom: 10px; 
@@ -484,6 +529,8 @@ table {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-size: 14px;
+    left: 0;
+    right: 0;
 }
 
 .item_pic_holder{
@@ -509,8 +556,10 @@ table {
 }
 
 .itemtype{
-    color: #666
+    color: #666;
+    margin: 2px;
 }
+
 .goldentext{
     color: gold;
     line-height: 1;
@@ -524,6 +573,15 @@ table {
 .itemowner{
     margin: 0px;
     font-size: 14px;
+}
+
+td>input{
+    width:100px;
+    border:none;
+    background: #444;
+    outline: none;
+    color: goldenrod;
+    margin: 2px;
 }
 
 
@@ -821,8 +879,29 @@ ODEVALKA
     margin: 0px;
 }
 
+.bordered_checkbox{
+    border: 10px solid;
+    border-radius: 2px;
+    padding: 0px;
+    margin: 5px;
+    width: 1px;
+    height: 0px;
+    display: inline-flex;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+}
+
+#rarity>div,
+#personality>div{
+    display: inline-flex;
+    margin: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
 .legend{
-    border-color: orangered;
+    border-color: orange;
 }
 
 .epic{
@@ -843,7 +922,7 @@ ODEVALKA
 
 
 .legend_text{
-    color: orangered;
+    color: orange;
 }
 
 .epic_text{

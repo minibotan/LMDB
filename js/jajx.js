@@ -35,6 +35,7 @@ $(document).ready(function () {
 
 
     achievesCat.sort((a, b) => +a.orderm - +b.orderm);
+    //fillItemAndMob();
 
     upgradeItems();
     mainText = $('.contentbox').html();
@@ -99,8 +100,8 @@ $(document).ready(function () {
                 $('.contentbox').html(mainText);
                 break;
             case 'items':
+            $('.contentbox').html(makeSearchItemBox());
             case 'mobs':
-                $('.contentbox').html(makeSelectHTML(curPageID));
                 $('.val_selector').trigger('change');
                 break;
             case 'events':
@@ -158,6 +159,33 @@ $(document).ready(function () {
     });
 
 
+    //search stuff
+
+    $('.contentbox').on('click', '#rarity>*', function(){
+        $('#rarity').toggleClass($(this).val());
+        $(this).toggleClass("borderedpic");
+    });
+
+    $('.contentbox').on('click', '#need_more_types', function(){
+        $(this).before(addSelect("items","type"));
+        $("#need_less_types").show();
+    });
+
+    $('.contentbox').on('click', '#need_less_types', function(){
+        $(".selector_parent:last").remove();
+        selectCounter--;
+        if(selectCounter == 1)
+            $("#need_less_types").hide();
+    });
+
+    $('.contentbox').on('click', '#MakeSearch', function(){
+        
+    });
+
+
+
+
+
     //items & mobs
 
     $('.contentbox').on('click', '.search_button', function(){
@@ -179,7 +207,6 @@ $(document).ready(function () {
     });
 
     $('.contentbox').on('change', ".val_selector", function () {
-        console.log("got chng");
         counter = 0;
         $('.stuff_holder').empty();
         Value = $(this).val();

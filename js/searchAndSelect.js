@@ -7,15 +7,14 @@ var defaultSearchParams = [
 // false - присутствие
 var hardsearch = false;
 
+var ItemForSearch = {};
+var MobForSearch = {};
+
+
 
 function makeSelectHTML(t) {
-    let p = '';
-    //if(settings.showmeall.val){
-        p += '<div class ="search">';
-        p += '<input type="text" placeholder="ура, поиск!" class="search_input">';
-        p += '<button class="search_button">Поиск</button>';
-        p += '</div>';
-    //}
+    
+    let p = "";
     p += '<div class="selector_parent">';
     p += '<div class="div_prop selector">';
     p += '<select class="prop_selector">';
@@ -27,17 +26,21 @@ function makeSelectHTML(t) {
     }
     p += '</select>';
     p += '</div>';
-    p += '<div class="div_val selector">' + addSelect(t) + '</div>';
+    p += '<div class="div_val selector">' + addSelect("items", Property) + '</div>';
     p += '</div>';
     p += '<div class="stuff_holder content"></div>';
     return p;
 }
 
+var selectCounter = 0;
 
-function addSelect(t) {
-    let p = '<select class="val_selector">';
-    //p += '<option selected hidden>Выберите ' + searchProps[t][Property] + '</option>';
-    let par = searchValues[t][Property];
+
+function addSelect(itemormob, param, isfirst) {
+    selectCounter ++;
+    let p = '<p class="selector_parent"><select class="val_selector">';
+    if(isfirst)
+        p += '<option value="">Любой тип</option>';
+    let par = searchValues[itemormob][param];
     let b = false;
     Value = "none";
     for (let i in par) {
@@ -51,7 +54,7 @@ function addSelect(t) {
         }
     }
     if (b) p += '</optgroup>';
-    p += '<select>';
+    p += '</select></p>';
     return p;
 }
 
@@ -194,5 +197,13 @@ function ParseSearchAndDoStuff(){
 
     if(props.n)
         search(['name'], props.n.split(','));
+        
+    if(props.p){
+        if(props.v){
+            search(props.p.split(','), props.v.split(','));
+        } else {
+            search(props.p.split(','));
+        }
+    }
 
 }
