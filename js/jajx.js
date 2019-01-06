@@ -229,6 +229,17 @@ $(document).ready(function () {
     });
 
 
+    //buffs
+
+    $('.contentbox').on('mouseenter', ".buffimg", function(){
+        $(this).append(getBuffTooltip($(this).val));
+    })
+
+    $('.contentbox').on('mouseleave', ".buffimg", function(){
+        $(this).empty();
+    })
+
+
 
     // odevalka
     $('.contentbox').on('click', "#odevalka_change", function () {

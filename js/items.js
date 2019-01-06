@@ -152,7 +152,7 @@ function getEffects(effects) {
                 if (buffs[value]) {
                     if (buffs[value].ishidden) break;
                     let ttip = buffs[value].descr;
-                    p += 'накладывает бафф - <img title="' + ttip + '" class="buffimg buffcolor' + buffs[value].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[value].image + '.jpg">';
+                    p += 'накладывает бафф - <img value="'+value+'" title="' + ttip + '" class="buffimg buffcolor' + buffs[value].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[value].image + '.jpg">';
                 }
                 break;
             case 'rage':
