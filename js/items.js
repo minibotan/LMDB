@@ -1,15 +1,15 @@
 function makeItemBox(item) {
     var is1 = '<tr><td class="itemstat';
     var is2 = '</td><td class="itemstat2">';
-    var p ='';
+    var p = '';
     p += '<div class = "item"  value="' + item.id + '">';
     p += '<h6 class = "itemname ' + item.rarity + '_text">' + item.name + '</h6>';
     p += '<div class="item_pic_holder"><img class="' + item.rarity + ' borderedpic" src="' + path + '/play/lib/jpg/' + item.image + '.jpg">';
-    if(item.maxcnt > 1)
+    if (item.maxcnt > 1)
         p += '<div class="item_maxcnt">' + item.maxcnt + '</div>';
-    if(item.id == 809) //прикол с лопаткой у одного из админов
+    if (item.id == 809) //прикол с лопаткой у одного из админов
         p += '<div class="item_maxcnt">2</div>';
-    
+
     p += '</div>';
     p += '<p class ="itemtype small">' + searchValues.items["type"][item.type] + '</p>';
     p += (item.personal) ? ('<p class="small">Персональный предмет</p>') : ('');
@@ -17,7 +17,9 @@ function makeItemBox(item) {
     p += (item.instruction) ? ('<p class="small">' + item.instruction + '</p>') : ('');
     p += Reqs(item);
     p += '<table>'
-    p += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + ((item.minhit)?(item.minhit):(0)) + ' - ' + ((item.maxhit)?(item.maxhit):(0)) + '</td></tr>') : ('');
+    if (item.bottleparams && item.bottleparams.charges)
+        p += itemChargesInfo(item.bottleparams.charges);
+    p += (item.minhit || item.maxhit) ? (is1 + '">Урон:' + is2 + ((item.minhit) ? (item.minhit) : (0)) + ' - ' + ((item.maxhit) ? (item.maxhit) : (0)) + '</td></tr>') : ('');
     p += (item.defence) ? (is1 + '">Защита:' + is2 + item.defence + '</td></tr>') : ('');
     p += (item.strength) ? (is1 + '">Сила:' + is2 + item.strength + '</td></tr>') : ('');
     p += (item.agility) ? (is1 + '">Ловкость:' + is2 + item.agility + '</td></tr>') : ('');
@@ -34,8 +36,8 @@ function makeItemBox(item) {
     p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + getTime(item.validtime) + '</td></tr>') : ('');
     p += '</table>';
     p += (item.owner) ? ('<p class="itemowner">Владелец - <a href="http://lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
-    p+= '<div class="loot_block">'
-    if(item.dropfrom){
+    p += '<div class="loot_block">'
+    if (item.dropfrom) {
         p += getDrops(item.dropfrom);
     }
     if (item.bottleparams) {
@@ -45,12 +47,12 @@ function makeItemBox(item) {
     return p;
 }
 
-function getDrops(drops){
+function getDrops(drops) {
     var p = '<div>';
     p += '<div class="loot_block_title">Падает с</div>';
     p += '<div class="loot_block_content">';
-    p += makeDropBlock(drops) ;
-    
+    p += makeDropBlock(drops);
+
     p += '</div></div>';
     return p;
 }
@@ -65,10 +67,10 @@ function itemParams(item) {
     let p = '<div>';
     p += '<div class="loot_block_title">Свойства</div>';
     p += '<div class="loot_block_content">';
-    for(let i in params) {
+    for (let i in params) {
         let param = params[i];
         switch (i) {
-            case 'loot' :
+            case 'loot':
             case 'randloot':
                 p += makeItemInfo(param, i);
                 break;
@@ -84,9 +86,19 @@ function itemParams(item) {
             case 'effects':
                 p += getEffects(param);
                 break;
+            case 'socket':
+                p += socketInfo(param);
+                break;
+            case 'charges':
+                // реализовано в характеристиках
+                break;
             case 'strictreqs':
                 break;
-            default :
+            case 'reqs':
+                break;
+            case 'misc':
+                break;
+            default:
                 p += i + '<br>';
                 break;
         }
@@ -95,30 +107,56 @@ function itemParams(item) {
     return p;
 }
 
-function getTargetTypes(tt){
+function getTargetTypes(tt) {
     var p = '';
     p += '<div>';
     p += '<div class="loot_block_title">Используется на</div>';
     p += '<div class="loot_block_content">';
-    for(var i in tt) {
-        p += searchValues.items.type[tt[i]] + '<br>';   
+    for (var i in tt) {
+        p += searchValues.items.type[tt[i]] + '<br>';
     }
     p += '</div></div>';
     return p;
 }
 
+function socketInfo(sockets) {
+    let p = '';
+    p += '<div>';
+    p += '<div class="loot_block_title">Сокеты</div>';
+    p += '<div class="loot_block_content">';
+    for (let socket in sockets) {
+        if (socket == 0 || sockets[socket] == 0) continue;
+        p += '<div class="socketimg"><div>' + sockets[socket] + '%</div></div>';
+    }
+    p += '</div></div>';
+    return p;
+}
+
+function itemChargesInfo(charges) {
+    let p = '';
+    for (let charge in charges) {
+        if (charge == 0) continue;
+        p += '<tr class="reqs"><td class="itemstat">Заряды:</td><td class="itemstat2">' + charge + '(' + charges[charge] + '%)</td></tr>';
+    }
+    return p;
+}
+
+
 function getEffects(effects) {
     let p = '';
-    for(let e of effects){
+    for (let e of effects) {
         let type = e.type;
         let value = e.value;
-        switch(type){
+        switch (type) {
             case 'buff':
-                if(buffs[value].ishidden) break;
-                p += 'накладывает бафф - <img class="buffimg buffcolor' + buffs[value].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[value].image + '.jpg">';
+                if (buffs[value]) {
+                    if (buffs[value].ishidden) break;
+                    let ttip = buffs[value].descr;
+                    p += 'накладывает бафф - <img title="' + ttip + '" class="buffimg buffcolor' + buffs[value].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[value].image + '.jpg">';
+                }
                 break;
             case 'rage':
-                p+= "+" + value + "ярости";
+                p += "+" + value + "ярости";
                 break;
             case 'changeformob':
             case 'buffall':
@@ -126,7 +164,9 @@ function getEffects(effects) {
             case 'incrementparam':
             case 'addnbb':
             case 'changelocation':
+                break;
             case 'system':
+                p += 'Выводит системное сообщение: <div class="system_message">' + e.text + '</div>';
             case 'addbuff':
             case 'attackmob':
             case 'buffgroupinlocation':
@@ -135,10 +175,10 @@ function getEffects(effects) {
             case 'battleprotect':
             case 'candieseaten':
             case 'hp':
-            default: 
+            default:
         }
     }
-    return '';
+    return p;
 }
 
 
