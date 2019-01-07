@@ -32,8 +32,8 @@ function makeItemBox(item) {
     p += '</table>'
     p += (item.descr) ? ('<p class="goldentext">' + item.descr + '</p>') : ('');
     p += '<table>'
-    p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + getPrice(item.price) + '</td></tr>') : ('');
-    p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + getTime(item.validtime) + '</td></tr>') : ('');
+    p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + GetPrice(item.price) + '</td></tr>') : ('');
+    p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + GetTime(item.validtime) + '</td></tr>') : ('');
     p += '</table>';
     p += (item.owner) ? ('<p class="itemowner">Владелец - <a href="http://lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
     p += '<div class="loot_block">'
@@ -151,8 +151,7 @@ function getEffects(effects) {
             case 'buff':
                 if (buffs[value]) {
                     if (buffs[value].ishidden) break;
-                    let ttip = buffs[value].descr;
-                    p += 'накладывает бафф - <img value="'+value+'" title="' + ttip + '" class="buffimg buffcolor' + buffs[value].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[value].image + '.jpg">';
+                    p += '<div class="buff_block">накладывает бафф - <img value="'+value+'" class="buffimg buffcolor' + buffs[value].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[value].image + '.jpg"></div>';
                 }
                 break;
             case 'rage':
@@ -184,7 +183,7 @@ function getEffects(effects) {
 
 
 
-function getPrice(price) {
+function GetPrice(price) {
     var r = '';
     r += (price > 9999) ? ((Math.floor(price / 10000)) + ' <img src="img/gold.jpg"> ') : ('');
     r += ((Math.floor(price / 100)) % 100 > 0) ? ((Math.floor(price / 100)) % 100 + ' <img src="img/silver.jpg"> ') : ('');
@@ -192,9 +191,10 @@ function getPrice(price) {
     return r;
 }
 
-function getTime(time) {
+function GetTime(time) {
     var r = '';
-    r += (time > 3599) ? ((Math.floor(time / 3600)) + ' часов ') : ('');
+    r += (time >= 86400) ? ((Math.floor(time / 86400)) + ' дней ') : ('');
+    r += ((Math.floor(time / 3600)) % 24 > 0) ? ((Math.floor(time / 3600)) % 24 + ' часов ') : ('');
     r += ((Math.floor(time / 60)) % 60 > 0) ? ((Math.floor(time / 60)) % 60 + ' минут ') : ('');
     r += (time % 60 > 0) ? (time % 60 + ' секунд ') : ('');
     return r;
