@@ -16784,5 +16784,915 @@ mobs = {
         },
         "location": "city",
         "hidden": 1
+    },
+    "342" : {
+      "id": 342,
+      "name": "Red",
+      "adminname": "Red",
+      "isboss": 1,
+      "maxhp": 99999,
+      "startrage": 100,
+      "level": 20,
+      "avatar": 1049,
+      "doll": "mob_demon_male",
+      "minhit": 10,
+      "maxhit": 10,
+      "dodge": 99,
+      "crit": 99,
+      "mastery": 1000,
+      "resilience": 1000,
+      "defence": 300,
+      "loot": "",
+      "items": "mob_has_face_100",
+      "hitsound": "organic",
+      "gender": 1,
+      "race": "human",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 3,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 23,
+      "location": "city",
+      "hidden": 1
+    },
+    "343" : {
+      "id": 343,
+      "name": "Чак",
+      "adminname": "Чак Ивентовый",
+      "isboss": 1,
+      "maxhp": 99999,
+      "startrage": 100,
+      "level": 20,
+      "avatar": 298,
+      "doll": "mob_human_male",
+      "minhit": 10,
+      "maxhit": 10,
+      "dodge": 99,
+      "crit": 99,
+      "mastery": 1000,
+      "resilience": 1000,
+      "defence": 300,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 0
+            }
+          ],
+          "ability": 510
+        }
+      ],
+      "loot": "",
+      "items": "tier1_legs,tier1_boots,hand_norm_1,mob_has_face_3,10rats_hair,mob_has_face_5",
+      "hitsound": "organic",
+      "gender": 1,
+      "race": "human",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 3,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 23,
+      "location": "city",
+      "hidden": 1
+    },
+    "344" : {
+      "id": 344,
+      "name": "ЛСВ",
+      "adminname": "ЛСВ",
+      "isboss": 0,
+      "maxhp": 700,
+      "startrage": 0,
+      "level": 2,
+      "avatar": 38,
+      "doll": "lal",
+      "minhit": 10,
+      "maxhit": 5000,
+      "dodge": 20,
+      "crit": 20,
+      "mastery": 1000,
+      "resilience": 1000,
+      "defence": 0,
+      "loot": {
+        "randloot": {
+          "default": {
+            "1671": 10
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "beast",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 0,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "345" : {
+      "id": 345,
+      "name": "Гриммер Агрессор",
+      "adminname": "Гриммер - Ивент",
+      "isboss": 0,
+      "maxhp": 166,
+      "startrage": 13,
+      "level": 99,
+      "avatar": 224,
+      "doll": "grimmer",
+      "minhit": 50,
+      "maxhit": 100,
+      "dodge": 50,
+      "crit": 25,
+      "mastery": 2000,
+      "resilience": 50,
+      "defence": 85,
+      "loot": {
+        "randloot": {
+          "default": {
+            "2309": 50,
+            "2310": 5
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "undead",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "346" : {
+      "id": 346,
+      "name": "Пупмат Агрессор",
+      "adminname": "Пупмат - Ивент",
+      "isboss": 0,
+      "maxhp": 200,
+      "startrage": 0,
+      "level": 99,
+      "avatar": 222,
+      "doll": "grimmpup",
+      "minhit": 55,
+      "maxhit": 75,
+      "dodge": 15,
+      "crit": 80,
+      "mastery": 250,
+      "resilience": 50,
+      "defence": 55,
+      "loot": {
+        "randloot": {
+          "default": {
+            "2309": 50,
+            "2310": 5
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "beast",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "347" : {
+      "id": 347,
+      "name": "депр ошибка",
+      "adminname": "депр ошибка",
+      "isboss": 0,
+      "maxhp": 201800,
+      "startrage": 0,
+      "level": 5,
+      "avatar": 81,
+      "doll": "santa",
+      "minhit": 50,
+      "maxhit": 100,
+      "dodge": 0,
+      "crit": 0,
+      "mastery": 99999,
+      "resilience": 0,
+      "defence": 99999,
+      "loot": {
+        "questloot": {
+          "347": {
+            "default": {
+              "2332": 100
+            }
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "cotton",
+      "gender": 1,
+      "race": "intelligent",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 0,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 1
+    },
+    "348" : {
+      "id": 348,
+      "name": "Дед Толероз",
+      "adminname": "Дед Толероз",
+      "isboss": 0,
+      "maxhp": 201800,
+      "startrage": 0,
+      "level": 5,
+      "avatar": 81,
+      "doll": "santa",
+      "minhit": 50,
+      "maxhit": 100,
+      "dodge": 0,
+      "crit": 0,
+      "mastery": 99999,
+      "resilience": 0,
+      "defence": 99999,
+      "loot": {
+        "questloot": {
+          "347": {
+            "default": {
+              "2325": 30,
+              "2326": 30,
+              "2327": 30,
+              "2328": 30,
+              "2329": 30,
+              "2332": 30,
+              "2333": 30
+            }
+          }
+        },
+        "randloot": {
+          "default": {
+            "2332": 50,
+            "2333": 50
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "cotton",
+      "gender": 1,
+      "race": "intelligent",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 0,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "349" : {
+      "id": 349,
+      "name": "Безумный Болельщик",
+      "adminname": "Безумный Болельщик",
+      "isboss": 0,
+      "maxhp": 1750,
+      "startrage": 50,
+      "level": 20,
+      "avatar": 1,
+      "doll": "mob_human_male",
+      "minhit": 290,
+      "maxhit": 320,
+      "dodge": 45,
+      "crit": 65,
+      "mastery": 800,
+      "resilience": 700,
+      "defence": 320,
+      "loot": {
+        "randloot": {
+          "default": {
+            "2411": 30
+          }
+        }
+      },
+      "items": "dzuba,hand_norm_1,mob_has_face_3,basik2,keds",
+      "hitsound": "organic",
+      "gender": 1,
+      "race": "ghost",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "350" : {
+      "id": 350,
+      "name": "Лукэтлог Сладкоежка",
+      "adminname": "Лукэтлог Сладкоежка",
+      "isboss": 0,
+      "maxhp": 80000,
+      "startrage": 0,
+      "level": 3,
+      "avatar": 14,
+      "doll": "lookatlog",
+      "minhit": 1,
+      "maxhit": 100,
+      "dodge": 0,
+      "crit": 0,
+      "mastery": 0,
+      "resilience": 0,
+      "defence": 0,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "havebuff",
+              "type": "!=",
+              "value": 161
+            },
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 50
+            }
+          ],
+          "ability": 15
+        },
+        {
+          "reqs": [
+            {
+              "param": "havebuff",
+              "type": "!=",
+              "value": 161
+            },
+            {
+              "param": "myhp",
+              "type": "<",
+              "value": 20
+            },
+            {
+              "param": "havebuff",
+              "type": "!=",
+              "value": 11
+            }
+          ],
+          "ability": 9
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 1,
+            "max": 10000
+          }
+        },
+        "randloot": {
+          "default": {
+            "1105": 3,
+            "2101": 1,
+            "2294": 2,
+            "2308": 1,
+            "2376": 1,
+            "2436": 25
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "beast",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "351" : {
+      "id": 351,
+      "name": "Бродячее Ничтожество",
+      "adminname": "Бродячее Ничтожество",
+      "isboss": 0,
+      "maxhp": 5000,
+      "startrage": 0,
+      "level": 20,
+      "avatar": 99,
+      "doll": "keeper",
+      "minhit": 1500,
+      "maxhit": 1800,
+      "dodge": 70,
+      "crit": 25,
+      "mastery": 1200,
+      "resilience": 1200,
+      "defence": 1100,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 40
+            }
+          ],
+          "ability": 519
+        },
+        {
+          "reqs": [
+            {
+              "param": "myhp",
+              "type": "<",
+              "value": 2000
+            },
+            {
+              "param": "havebuff",
+              "type": "!=",
+              "value": 854
+            }
+          ],
+          "ability": 520
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 10000,
+            "max": 50000
+          }
+        },
+        "randloot": {
+          "default": {
+            "2465": 3,
+            "2466": 3
+          }
+        },
+        "questloot": {
+          "348": {
+            "default": {
+              "2467": 5
+            }
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "bones",
+      "gender": 1,
+      "race": "undead",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 23,
+      "location": "city, crypt",
+      "hidden": 0
+    },
+    "352" : {
+      "id": 352,
+      "name": "МЖПСО",
+      "adminname": "МЖПСО",
+      "isboss": 0,
+      "maxhp": 6666,
+      "startrage": 20,
+      "level": 20,
+      "avatar": 68,
+      "doll": "drowned",
+      "minhit": 1700,
+      "maxhit": 1900,
+      "dodge": 70,
+      "crit": 30,
+      "mastery": 1000,
+      "resilience": 1000,
+      "defence": 900,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 30
+            }
+          ],
+          "ability": 521
+        },
+        {
+          "reqs": [
+            {
+              "param": "havebuff",
+              "type": "!=",
+              "value": 856
+            },
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 20
+            }
+          ],
+          "ability": 522
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 10000,
+            "max": 50000
+          }
+        },
+        "randloot": {
+          "default": {
+            "2465": 3,
+            "2466": 3
+          }
+        },
+        "questloot": {
+          "348": {
+            "default": {
+              "2467": 5
+            }
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "",
+      "gender": 2,
+      "race": "undead",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city, crypt",
+      "hidden": 0
+    },
+    "353" : {
+      "id": 353,
+      "name": "Отравитель из Чилтона",
+      "adminname": "Отравитель из Чилтона",
+      "isboss": 0,
+      "maxhp": 4242,
+      "startrage": 0,
+      "level": 20,
+      "avatar": 64,
+      "doll": "mob_human_male",
+      "minhit": 1200,
+      "maxhit": 1400,
+      "dodge": 0,
+      "crit": 50,
+      "mastery": 2000,
+      "resilience": 800,
+      "defence": 700,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 30
+            },
+            {
+              "param": "havebuff",
+              "type": "!=",
+              "value": 858
+            }
+          ],
+          "ability": 523
+        },
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 40
+            }
+          ],
+          "ability": 524
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 10000,
+            "max": 50000
+          }
+        },
+        "randloot": {
+          "default": {
+            "2465": 3,
+            "2466": 3
+          }
+        },
+        "questloot": {
+          "348": {
+            "default": {
+              "2467": 10
+            }
+          }
+        }
+      },
+      "items": "cook_chest,cook_boots,cook_gloves,cook_hat,cook_pants,rweapon_butchers_cleaver",
+      "hitsound": "metal",
+      "gender": 1,
+      "race": "undead",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 3,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city, crypt",
+      "hidden": 0
+    },
+    "354" : {
+      "id": 354,
+      "name": "Могильный Камнеед",
+      "adminname": "Могильный Камнеед",
+      "isboss": 1,
+      "maxhp": 13000,
+      "startrage": 30,
+      "level": 20,
+      "avatar": 146,
+      "doll": "zombiefish",
+      "minhit": 1500,
+      "maxhit": 2100,
+      "dodge": 70,
+      "crit": 30,
+      "mastery": 800,
+      "resilience": 800,
+      "defence": 1000,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 90
+            }
+          ],
+          "ability": 525
+        },
+        {
+          "reqs": [
+            {
+              "param": "myhp",
+              "type": ">",
+              "value": 2000
+            }
+          ],
+          "ability": 526
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 10000,
+            "max": 50000
+          }
+        },
+        "randloot": {
+          "default": {
+            "2465": 10,
+            "2466": 10,
+            "2468": 3
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "",
+      "gender": 1,
+      "race": "undead",
+      "isevent": 0,
+      "dropkoeff": 1,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city, crypt",
+      "hidden": 0
+    },
+    "355" : {
+      "id": 355,
+      "name": "Невинный зайчик",
+      "adminname": "Невинный зайчик",
+      "isboss": 0,
+      "maxhp": 40,
+      "startrage": 0,
+      "level": 1,
+      "avatar": 14,
+      "doll": "lookatlog",
+      "minhit": 1,
+      "maxhit": 100,
+      "dodge": 0,
+      "crit": 0,
+      "mastery": 1000,
+      "resilience": 0,
+      "defence": 5,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 90
+            }
+          ],
+          "ability": 529
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 1,
+            "max": 10000
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "beast",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "356" : {
+      "id": 356,
+      "name": "Безобидный зайка",
+      "adminname": "Безобидный зайка",
+      "isboss": 0,
+      "maxhp": 201,
+      "startrage": 0,
+      "level": 3,
+      "avatar": 91,
+      "doll": "lal_polar",
+      "minhit": 1,
+      "maxhit": 1000,
+      "dodge": 0,
+      "crit": 0,
+      "mastery": 1000,
+      "resilience": 0,
+      "defence": 0,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 50
+            }
+          ],
+          "ability": 530
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 1,
+            "max": 10000
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "beast",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 0,
+      "location": "city",
+      "hidden": 0
+    },
+    "357" : {
+      "id": 357,
+      "name": "Матерый зайчище",
+      "adminname": "Матерый зайчище",
+      "isboss": 0,
+      "maxhp": 2019,
+      "startrage": 0,
+      "level": 3,
+      "avatar": 14,
+      "doll": "lal_ny",
+      "minhit": 1,
+      "maxhit": 1000,
+      "dodge": 80,
+      "crit": 80,
+      "mastery": 1000,
+      "resilience": 1000,
+      "defence": 0,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 50
+            }
+          ],
+          "ability": 531
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 1,
+            "max": 10000
+          }
+        },
+        "randloot": {
+          "default": {
+            "2500": 100
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "beast",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 76,
+      "location": "city",
+      "hidden": 0
+    },
+    "358" : {
+      "id": 358,
+      "name": "Матерый зайчище тест лута",
+      "adminname": "Матерый зайчище тест лута",
+      "isboss": 0,
+      "maxhp": 2019,
+      "startrage": 0,
+      "level": 3,
+      "avatar": 14,
+      "doll": "lal_ny",
+      "minhit": 1,
+      "maxhit": 1000,
+      "dodge": 80,
+      "crit": 80,
+      "mastery": 1000,
+      "resilience": 1000,
+      "defence": 0,
+      "moblogic": [
+        {
+          "reqs": [
+            {
+              "param": "myrage",
+              "type": ">=",
+              "value": 50
+            }
+          ],
+          "ability": 531
+        }
+      ],
+      "loot": {
+        "money": {
+          "default": {
+            "min": 1,
+            "max": 10000
+          }
+        },
+        "randloot": {
+          "default": {
+            "2500": 100
+          }
+        }
+      },
+      "items": "",
+      "hitsound": "wood",
+      "gender": 1,
+      "race": "beast",
+      "isevent": 0,
+      "dropkoeff": 2,
+      "drophard": 2,
+      "changed": 1,
+      "savestates": 0,
+      "pet": 76,
+      "location": "city",
+      "hidden": 1
     }
 };
