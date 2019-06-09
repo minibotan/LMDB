@@ -997,9 +997,31 @@ input[type=number]::-webkit-outer-spin-button {
 
 /*buffs*/
 
+.buff_block{
+    position: relative;
+}
 
 .buff_tooltip{
-    position: relative;   
+    display: block;
+    background-color: #456;
+    border : solid #111 2px;
+    border-radius: 6px;
+    position: absolute;  
+    z-index: 30;
+    width: 220px; 
+    left: 200px;  
+    top: 10px;
+    text-align: left;
+    padding: 2px;
+}
+
+.buff_name{
+    
+}
+
+.buff_descr{
+    color: gold;
+    font-size: 10pt;
 }
 
 

@@ -232,11 +232,11 @@ $(document).ready(function () {
     //buffs
 
     $('.contentbox').on('mouseenter', ".buffimg", function(){
-        $(this).append(getBuffTooltip($(this).val));
+        $(this).after(BuffTooltipById($(this).attr("value")));
     })
 
-    $('.contentbox').on('mouseleave', ".buffimg", function(){
-        $(this).empty();
+    $('.contentbox').on('mouseleave', ".buff_block", function(){
+        $('.buff_tooltip').remove();
     })
 
 
