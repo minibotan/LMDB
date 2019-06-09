@@ -17,6 +17,7 @@ function makeMobBlock(mob) {
     p += '</div>';
     p += '<div class="empty_space"></div>'
     p += mobBuffs(mob.buffs);
+    if(!mob.picture) mob.picture = mob.doll;
     p += '<img class="mobpic click_to_hide" src="img/mobs/' + mob.picture + '.png"  onerror="imgError(this)"/>';
     p += getMobStats(mob);
     p += '<div class="mob_locations">';
