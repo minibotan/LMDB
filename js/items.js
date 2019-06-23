@@ -33,6 +33,7 @@ function makeItemBox(item) {
     p += (item.descr) ? ('<p class="goldentext">' + item.descr + '</p>') : ('');
     p += '<table>'
     p += (item.price) ? (is1 + ' itemtype">Цена:' + is2 + GetPrice(item.price) + '</td></tr>') : ('');
+    p += (item.buff_id) ? ('<div class="buff_block">имеет бафф - <img value="'+item.buff_id+'" class="buffimg buffcolor' + buffs[item.buff_id].isdebuff + ' borderedpic" src="' + path + '/play/lib/jpg/' + buffs[item.buff_id].image + '.jpg"></div>') : ('');
     p += (item.validtime) ? (is1 + ' itemtype">Срок Жизни:' + is2 + GetTime(item.validtime) + '</td></tr>') : ('');
     p += '</table>';
     p += (item.owner) ? ('<p class="itemowner">Владелец - <a href="http://lostmagic.ru/player/' + item.owner + '/" target="_blank">' + item.owner + '</a></p>') : ('');
