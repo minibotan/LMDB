@@ -27841,7 +27841,6 @@ var items = {
     "rarity": "rare",
     "image": "hydrapoison",
     "price": 1,
-    "personal": 1,
     "descr": "Сильнодействующий нейротоксический яд. ",
     "quest": 1,
   },

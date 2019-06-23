@@ -6264,5 +6264,399 @@ buffs = {
     "unremovable": 1,
     "image": "20k_kills",
     "validtime": 120
+  },
+  "835": {
+    "id": 835,
+    "name": "Металлическое волшебство",
+    "adminname": "Металлическое волшебство новогодний пет бафф 2018",
+    "descr": "Увеличивает ваш урон на 15 единиц и изредка лечит вас на 100 единиц здоровья.",
+    "unremovable": 1,
+    "image": "robopesava",
+    "changed": 1,
+    "prop": ""
+  },
+  "836": {
+    "id": 836,
+    "name": "Дед Мороз",
+    "adminname": "Дед Мороз",
+    "descr": "Странно что б это значило?",
+    "unremovable": 1,
+    "image": "santa_hat",
+    "changed": 1,
+    "prop": ""
+  },
+  "837": {
+    "id": 837,
+    "name": "Эликсир трансцендентности",
+    "adminname": "Эликсир трансцендентности",
+    "descr": "Увеличивает получаемый опыт в ПЯТЬ раз и значительно повышает шанс добычи предметов, необходимых для заданий.",
+    "nonbattle": 1,
+    "noduration": 1,
+    "unremovable": 1,
+    "summarize": 1,
+    "image": "3liter",
+    "validtime": 60,
+    "type": 2,
+    "changed": 1,
+    "prop": ""
+  },
+  "838": {
+    "id": 838,
+    "name": "бафф на рес против мерка",
+    "adminname": "бафф на рес против мерка",
+    "descr": "Увеличивает основные характеристики на +56                    Эффект зависит от  позиции                              в рейтинге помощников Снегурки.",
+    "nonbattle": 1,
+    "noduration": 1,
+    "unremovable": 1,
+    "image": "cup_spring",
+    "changed": 1,
+    "prop": ""
+  },
+  "839": {
+    "id": 839,
+    "name": "Четыре Сердца",
+    "adminname": "Четыре Сердца",
+    "descr": "Каждый ход наносит сопернику 120 единиц урона ядом и поглощает 50% урона от яда.",
+    "invisible": 2,
+    "unremovable": 1,
+    "image": "heart_trinket1",
+    "changed": 1,
+    "prop": {
+      "poisondef": "50"
+    }
+  },
+  "840": {
+    "id": 840,
+    "name": "Всплеск Яда",
+    "adminname": "Всплеск Яда",
+    "descr": "",
+    "invisible": 2,
+    "unremovable": 1,
+    "image": "verd",
+    "changed": 1,
+    "prop": ""
+  },
+  "841": {
+    "id": 841,
+    "name": "Большая Аура Воздуха",
+    "adminname": "Большая Аура Воздуха",
+    "descr": "При попадании по сопернику наносит 60 единиц урона воздухом и поглощает 50% урона землей.",
+    "invisible": 2,
+    "unremovable": 1,
+    "image": "aura_air",
+    "changed": 1,
+    "prop": {
+      "poisondef": "50"
+    }
+  },
+  "842": {
+    "id": 842,
+    "name": "Бафф -1 кд ожерелье мерка",
+    "adminname": "Бафф -1 кд ожерелье мерка",
+    "descr": "Снижает время восстановления способностей в бою.",
+    "isdebuff": 1,
+    "invisible": 2,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "shark_teeth_neck",
+    "validtime": 5000,
+    "changed": 1,
+    "prop": ""
+  },
+  "843": {
+    "id": 843,
+    "name": "Заряд пессимизма",
+    "adminname": "Заряд пессимизма",
+    "descr": "гном не уверен в себе и потому уменьшает урон вдвое",
+    "isdebuff": 1,
+    "stackable": 1,
+    "image": "gnomeGreenPic",
+    "changed": 1,
+    "prop": ""
+  },
+  "844": {
+    "id": 844,
+    "name": "Гном-оруженосец",
+    "adminname": "Гном-оруженосец",
+    "descr": "Время от времени наделяет хозяина одним из существующих зарядов.",
+    "invisible": 1,
+    "unremovable": 1,
+    "image": "gnomeGreenPic",
+    "changed": 1,
+    "prop": ""
+  },
+  "845": {
+    "id": 845,
+    "name": "Бафф -1 кд ожерелье мерка и ЯД",
+    "adminname": "Бафф -1 кд ожерелье мерка и ЯД",
+    "descr": "Снижает время восстановления способностей в бою и дает 50% зашиты от яда.",
+    "isdebuff": 1,
+    "invisible": 2,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "ruby_ring",
+    "validtime": 5000,
+    "changed": 1,
+    "prop": {
+      "poisondef": "50"
+    }
+  },
+  "846": {
+    "id": 846,
+    "name": "Solarium",
+    "adminname": "Solarium эпик Марумья",
+    "descr": "Каждый ход наносит сопернику 20 единиц урона землей и возвращает 30% полученного урона.",
+    "invisible": 2,
+    "unremovable": 1,
+    "image": "ring_sklep",
+    "changed": 1,
+    "prop": {}
+  },
+  "847": {
+    "id": 847,
+    "name": "Бафф щита Баньши",
+    "adminname": "Бафф щита Баньши",
+    "descr": "Копит 10 зарядов",
+    "invisible": 2,
+    "unremovable": 1,
+    "image": "ganesh_shield",
+    "changed": 1,
+    "prop": {
+      "pvpdef": "15"
+    }
+  },
+  "848": {
+    "id": 848,
+    "name": "Заряд баффа щита",
+    "adminname": "Заряд баффа щита",
+    "descr": "виден только тебе %)",
+    "invisible": 1,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "ganesh_shield",
+    "changed": 1,
+    "prop": {}
+  },
+  "849": {
+    "id": 849,
+    "name": "Болельщик ЧМ 2018",
+    "adminname": "Болельщик ЧМ 2018",
+    "descr": "живи футболом, дыши футболом, покупай лаббиты!",
+    "unremovable": 1,
+    "image": 1,
+    "changed": 1,
+    "prop": {}
+  },
+  "850": {
+    "id": 850,
+    "name": "Настой Партизана",
+    "adminname": "Настой Партизана",
+    "descr": "При просмотре информации о вашем персонаже, а также в списке друзей или врагов выдает фальшивую информацию о вашем местонахождении.",
+    "nonbattle": 1,
+    "noduration": 1,
+    "unremovable": 1,
+    "summarize": 1,
+    "image": "bottle",
+    "validtime": 60,
+    "changed": 1,
+    "prop": ""
+  },
+  "851": {
+    "id": 851,
+    "name": "Рубиновое кольцо 18aed",
+    "adminname": "Рубиновое кольцо 18aed 100 раги в начале боя",
+    "descr": "Вы начинаете бой с 100 ярости.",
+    "nonbattle": 1,
+    "invisible": 2,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "living_ring",
+    "changed": 1,
+    "prop": ""
+  },
+  "852": {
+    "id": 852,
+    "name": "Обледеневший щит",
+    "adminname": "Обледеневший щит",
+    "descr": "Ваш щит выглядит необычно.",
+    "nonbattle": 1,
+    "noduration": 1,
+    "invisible": 2,
+    "unremovable": 1,
+    "summarize": 1,
+    "image": "icecold_shield",
+    "validtime": 10080,
+    "type": 5,
+    "changed": 1,
+    "prop": ""
+  },
+  "853": {
+    "id": 853,
+    "name": "Чудовищная изворотливость",
+    "adminname": "Чудовищная изворотливость",
+    "descr": "Увеличивает шанс увернуться от атаки.",
+    "stackable": 1,
+    "image": "abil_41",
+    "changed": 1,
+    "prop": ""
+  },
+  "854": {
+    "id": 854,
+    "name": "Последний шанс II",
+    "adminname": "Последний шанс II",
+    "descr": "Увеличен урон ударов и шанс нанести критические повреждения",
+    "image": "mob_abil_4",
+    "changed": 1,
+    "prop": ""
+  },
+  "855": {
+    "id": 855,
+    "name": "Волновое состояние",
+    "adminname": "Волновое состояние",
+    "descr": "Трудно нанести урон телу, не имеющему физической формы.",
+    "image": "water_ripple",
+    "changed": 1,
+    "prop": ""
+  },
+  "856": {
+    "id": 856,
+    "name": "Волновое состояние КД",
+    "adminname": "Волновое состояние КД",
+    "descr": "",
+    "invisible": 2,
+    "unremovable": 1,
+    "changed": 1,
+    "prop": ""
+  },
+  "857": {
+    "id": 857,
+    "name": "Оглушение II",
+    "adminname": "Оглушение II",
+    "descr": "Лишает вас шанса уклониться от вражеского удара.",
+    "isdebuff": 1,
+    "stackable": 1,
+    "image": "ovepower",
+    "changed": 1,
+    "prop": ""
+  },
+  "858": {
+    "id": 858,
+    "name": "кулдаун абилки кока",
+    "adminname": "кулдаун абилки кока",
+    "descr": "",
+    "invisible": 2,
+    "unremovable": 1,
+    "changed": 1,
+    "prop": ""
+  },
+  "859": {
+    "id": 859,
+    "name": "Трупный яд II",
+    "adminname": "Трупный яд II",
+    "descr": "Наносит вам урон после каждого обмена ударами.",
+    "isdebuff": 1,
+    "stackable": 1,
+    "image": "acid",
+    "changed": 1,
+    "prop": ""
+  },
+  "860": {
+    "id": 860,
+    "name": "Метка камнееда",
+    "adminname": "Метка камнееда",
+    "descr": "Значительно уменьшает защиту цели",
+    "isdebuff": 1,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "fish_flashlight",
+    "changed": 1,
+    "prop": ""
+  },
+  "861": {
+    "id": 861,
+    "name": "Рубиновое кольцо 18aed 100 ярости",
+    "adminname": "100 ярости в начале боя",
+    "descr": "Вы начинаете бой с 100 ярости",
+    "nonbattle": 1,
+    "invisible": 2,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "ruby_ring",
+    "changed": 1,
+    "prop": ""
+  },
+  "862": {
+    "id": 862,
+    "name": "Ярость акулы",
+    "adminname": "Ярость акулы 50 ярости сет шарка",
+    "descr": "Доспехи предводителя пиратов наполняют вас жаждой крови, позволяя начать бой с 50 ярости.",
+    "nonbattle": 1,
+    "invisible": 2,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "pirate_skull",
+    "changed": 1,
+    "prop": ""
+  },
+  "863": {
+    "id": 863,
+    "name": "Бафф Delen",
+    "adminname": "Бафф Delen",
+    "descr": "Урон в PvP увеличен! С вероятностью 6% нанесет огромный урон по цели.",
+    "nonbattle": 1,
+    "unremovable": 1,
+    "image": "poisonbottle1",
+    "changed": 1,
+    "prop": {
+      "pvpdmg": "15"
+    }
+  },
+  "864": {
+    "id": 864,
+    "name": "Заряд баффа щита 5 ходов",
+    "adminname": "Заряд баффа щита 5 ходов",
+    "descr": "виден только тебе %)",
+
+    "invisible": 1,
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "ganesh_shield",
+    "changed": 1,
+    "prop": {}
+  },
+  "865": {
+    "id": 865,
+    "name": "Бафф щита урон раз 5 в ходов Блейд",
+    "adminname": "Бафф щита урон раз 5 в ходов Блейд",
+    "descr": "Копит 5 зарядов",
+    "invisible": 2,
+    "unremovable": 1,
+    "image": "ganesh_shield",
+    "changed": 1,
+    "prop": {
+      "pvpdef": "15"
+    }
+  },
+  "866": {
+    "id": 866,
+    "name": "Под защитой новогоднего тотема",
+    "adminname": "Под защитой новогоднего тотема",
+    "descr": "Защита увеличена на 1956. Кстати кто первым угадает и сообщит на ЦП Лео почему именно на столько - получит админский подарочек.",
+    "unremovable": 1,
+    "stackable": 1,
+    "image": "ny_def_totem",
+    "changed": 1,
+    "prop": ""
+  },
+  "867": {
+    "id": 867,
+    "name": "Бафф Баньши Тринкет",
+    "adminname": "Бафф Баньши Тринкет",
+    "descr": "Накапливает 2 заряда терпения каждый размен ударами.",
+    "nonbattle": 1,
+    "unremovable": 1,
+    "image": "poisonbottle1",
+    "changed": 1,
+    "prop": ""
   }
-}
+};
