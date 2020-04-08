@@ -98,13 +98,14 @@ a[target=_blank] {
     font-size: 16px;
     font-weight: 400;
     line-height: normal;
-    padding: 15px 20px;
+    padding: 20px 20px;
     background: rgba(255, 255, 255, 0);
     border: none;
     outline: none;
     color: #ccc;
     cursor: pointer;
 }
+
 
 
 footer {
@@ -450,6 +451,7 @@ table {
 
 .item {
     border: 1px solid #292929;
+	background: #111;
     text-align: center;
     align-items: center;
     border-radius: 5px;
@@ -833,7 +835,7 @@ ODEVALKA
 }
 
 .legend{
-    border-color: orangered;
+    border-color: rgb(230, 111, 8);
 }
 
 .epic{
@@ -854,7 +856,7 @@ ODEVALKA
 
 
 .legend_text{
-    color: orangered;
+    color: rgb(230, 111, 8);
 }
 
 .epic_text{
@@ -987,16 +989,17 @@ input[type=number]::-webkit-outer-spin-button {
 
 .buff_tooltip{
     display: block;
-    background-color: #456;
-    border : solid #111 2px;
-    border-radius: 6px;
+    background-color: #111;
+    border : solid #eee 1px;
+    border-radius: 5px;
     position: absolute;  
     z-index: 30;
     width: 220px; 
-    left: 200px;  
+    left: 100px;  
     top: 10px;
+Font-size:11px;
     text-align: left;
-    padding: 2px;
+    padding: 10px;
 }
 
 .buff_name{
@@ -1004,8 +1007,8 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .buff_descr{
-    color: gold;
-    font-size: 10pt;
+    color: rgb(255, 213, 66);
+    font-size: 10px;
 }
 
 
@@ -1017,11 +1020,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .buffcolor1{ 
-    border-color: #e32200;
+    border-color: rgb(255, 213, 66);
 }
 
 .buffcolorundefined{
-    border-color: green;
+    border-color: rgb(255, 213, 66);
 }
 
 
