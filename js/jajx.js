@@ -3,7 +3,6 @@
 var text = '';
 var mainText;
 
-$('body').css("background", "url('http://www.lostmagic.ru/useruploads/images/desk" + (Math.trunc(Math.random() * 5) + 1) + "_1920x1200.jpg') no-repeat center center fixed");
 
 $(document).ready(function () {
 

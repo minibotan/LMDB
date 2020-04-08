@@ -6,12 +6,14 @@ html{
 }
 body{
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #ccc;
+	font-size:12px;
+	Margin:5%;
+    background-color: #111;
+    color: #eee;
 }
 
 .overlay{
     display: none;
-    background-color: rgba(32, 32, 32, 0.8);
     height: 100%;
     left: 0;  
     position: fixed; 
@@ -37,12 +39,8 @@ a {
 a[target=_blank] {
     display: inline-block;
     outline: none;
-    color: #333;
+    color: #de3b68;
     text-decoration: none;
-    border-radius: 7px;
-    background: linear-gradient(#999, #ccc, #999);
-    padding: 0px 3px;
-    margin: 3px;
 }
 
 
@@ -66,8 +64,8 @@ a[target=_blank] {
 
 .settings_bar ul{
     display: none;
-    background: rgba(60, 60, 60, 0.95);
-    border: 3px solid #111;
+    background: rgba(0, 0, 0, 0.95);
+    border: none;
     margin: 0px;
     padding: 1px;
     cursor: pointer;
@@ -81,14 +79,14 @@ a[target=_blank] {
 
 .nav_bar {
     text-align: center;
-    background: rgba(60, 60, 60, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 4;
     overflow: hidden;
-    height: 50px;
+    height: 60px;
     white-space: nowrap;
     padding-left: 100px;
     padding-right: 100px;
@@ -97,7 +95,7 @@ a[target=_blank] {
 
 
 .nav_button {
-    font-size: 17.5px;
+    font-size: 16px;
     font-weight: 400;
     line-height: normal;
     padding: 15px 20px;
@@ -111,8 +109,7 @@ a[target=_blank] {
 
 footer {
     text-align: center;
-    background: #fff;
-    background: rgba(60, 60, 60, 0.9);
+    background: #131313;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -135,6 +132,7 @@ footer p {
     bottom: 0;
     width: 200px;
     height: 60px;
+	top: 10px;
 }
 
 
@@ -150,11 +148,8 @@ footer p {
 
 
 .contentbox {
-    margin: 0px 60px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    padding: 30px 15px;
-    background: rgba(60, 60, 60, 0.9);
+    margin: 0px;
+    padding: 0px;
     text-align: center;
 }
 
@@ -174,7 +169,7 @@ footer p {
     text-decoration: none;
     width: 40%;
     display: block; 
-    border: 3px solid #555;
+    border: 1px solid #555;
 }
 
 
@@ -194,9 +189,7 @@ footer p {
     width: 58%;
     height: 100%;
     display: inline-table;
-    border: 3px solid #555;
     border-radius: 5px;
-    background: #666;
     color: #ddd;
 }
 
@@ -204,8 +197,7 @@ footer p {
     display: block;
     padding: 10px 20px 15px;
     margin: 10px;
-    border: 3px solid #555;
-    background: #777;
+    border: 1px solid #555;
     border-radius: 8px;
 
 }
@@ -254,7 +246,6 @@ footer p {
     text-decoration: none;
     width: 40%;
     display: block; 
-    border: 3px solid #555;
     overflow-x: hidden;
 }
 
@@ -262,22 +253,20 @@ footer p {
 .achieves_title {
     border: 1px solid #444;
     border-radius: 4px;
-    background: #555;
-    background: linear-gradient(#555, #666, #555);
+    background: #111;
     padding: 2px;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
      
 }
 
 .childs{
     display: block;
     margin-left: 15px;
-    border: 3px solid #444;
     border-radius: 7px;
 }
 
 .selected_ach{
-    background: linear-gradient(#888, #777, #888);
+    background: #191919;
 }
 
 
@@ -285,9 +274,9 @@ footer p {
     display: inline-block;
     margin: 0px 20px;
     width: 58%;
-    border: 3px solid #555;
+    border: 1px solid #555;
     border-radius: 5px;
-    background: #666;
+    background: #111;
     color: #ddd;
     overflow-x: hidden;
     font-size: 24px;
@@ -297,13 +286,14 @@ footer p {
     position: relative;
     display: block;
     width: 100% - 5px;
-    background: #444;
-    border: 3px solid #333;
-    border-radius: 10px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 5px;
     min-height: 50px;
-    margin: 3px;
-    font-size: 18px;
-    font-weight: 600;
+    margin: 7px;
+	padding-top:7px;
+    font-size: 12px;
+	Color:burlywood;
 }
 
 .achieve_img{
@@ -313,19 +303,15 @@ footer p {
     top: 7px;
     left: 7px;
     border-radius: 3px;
-    border: 3px solid rgba(37, 37, 37, 0.3);
+    border: 1px solid rgba(37, 37, 37, 0.3);
 }
 
 .achieve_desc {
     display: block;
     padding: 5px 70px 5px 50px;
     margin: 0px 5px 5px;
-    border: 1px solid rgba(27, 27, 27, 0.4);
-    background: #777;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #333;
+    font-size: 12px;
+    color: #eee;
 
 }
 
@@ -357,12 +343,12 @@ footer p {
     right: 20px;
     font-size: 20px;
     font-weight: 900;
-    color: #333;
+    color: #111;
 }
 
 
 .hidden{
-    border: 3px solid #bd9813;
+    border: 1px solid #473c11;
 }
 
 
@@ -379,14 +365,13 @@ footer p {
 }
 
 select, option {
-    border: 3px #999;
+    border: 1px #292929;
     border-radius: 5px;
     font-size: 15px;
-    font-weight: 600;
-    padding: 2px;
+    padding: 10px;
     outline: none;
-    background: #555;
-    color: #ccc;
+    background: #111;
+    color: #eee;
 }
 
 
@@ -395,7 +380,6 @@ select, option {
 table {
     width: 100%;
     margin: 10px;
-    padding: 3px;
     border-collapse: separate;
 }
 
@@ -414,20 +398,24 @@ table {
 
 .search_input{
     border-radius: 5px;
-    border-color: #111;
-    background-color: #999;
-    color: #222;
+    border-color: #eee;
+    background-color: #111;
+    color: #eee;
+	font-size:12px;
     outline: none;
-    padding: 4px;
+    padding: 10px;
 }
 
 .search_button{
-    background-color: #444;
-    border: 2px solid;
+    background-color: #111;
+    border: 1px solid #eee;
     margin-left: -5px;
-    padding: 4px;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
+
+	font-size:12px;
+	color:#eee;
+	margin-left:5px;
+    padding: 10px;
+    border-radius: 5px;
     outline: none;
 }
 
@@ -442,8 +430,7 @@ table {
 
 .itemstat {
     text-align: right;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 10px;
     line-height: 1;
     padding-right: 5px;
     display: table-cell;
@@ -452,8 +439,7 @@ table {
 
 .itemstat2 {
     text-align: left;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 10px;
     line-height: 1;
     padding-left: 5px;
     display: table-cell;
@@ -463,15 +449,14 @@ table {
 
 
 .item {
-    border: 1px solid #888;
+    border: 1px solid #292929;
     text-align: center;
     align-items: center;
-    border-radius: 10px;
-    background: #222;
+    border-radius: 5px;
     padding: 0px;
     margin: 1%;
     display: inline-block;
-    width: 235px;
+    width: 200px;
     vertical-align: top;
 }
 
@@ -479,11 +464,11 @@ table {
     margin: 0px;
     margin-bottom: 10px; 
     padding: 5px;
-    background: #444;
+    background: #191919;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    font-size: 14px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 12px;
 }
 
 .item_pic_holder{
@@ -492,9 +477,9 @@ table {
 
 .item_maxcnt{
     position: absolute;
-    right: 100px;
-    bottom: 5px;
-    font-size: 12px;
+right: 81px;
+bottom: 8px;
+font-size: 10px;
     color: #fff;
     text-shadow:
     -1px -1px 0 #000,
@@ -509,21 +494,20 @@ table {
 }
 
 .itemtype{
-    color: #666
+    color: #888
 }
 .goldentext{
-    color: gold;
+    color: rgb(255, 213, 66);
     line-height: 1;
     margin: 0px 10px;
-    font-size: 14px;
+    font-size: 10px;
 }
 .reqs{
     color: #55d;
 }
 
 .itemowner{
-    margin: 0px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -539,9 +523,9 @@ table {
 .map_button{
     padding: 10px 20px;
     margin: 0px 10px;
-    background: rgba(100, 100, 100, 0.4);
-    border: 2px solid #222;
-    border-radius: 7px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 5px;
     outline: none;
     color: #ccc;
      
@@ -550,7 +534,7 @@ table {
 
 .pic_holder{
     text-align: center;
-    width: 100%;
+    width: 70%;
     padding: 20px 0px;
 }
 
@@ -562,12 +546,12 @@ table {
 }
 
 .moboblock {
-    width: 220px;
-    border: 1px solid grey;
-    border-radius: 10px;
+    width: 200px;
+    border: 1px solid #292929;
+    border-radius: 5px;
     margin: 20px;
     display: inline-table;
-    background: #444;
+	background-color: #111;
 }
 
 
@@ -593,8 +577,8 @@ table {
     width: var(--mobname-width);
 }
 .mobname>p{
-    margin: 0px;
-    font-size: 13px;
+    margin-top: 5px;
+    font-size: 10px;
 }
 
 .mob__bar{
@@ -608,7 +592,7 @@ table {
 .mob__number{
     position: inherit;
     width: 127px;
-    font-size: 11px;
+    font-size: 10px;
     top: -3px;
     margin: 0px;
     text-align: center;
@@ -644,7 +628,7 @@ table {
 }
 
 .mob_level{
-    top: 13px;
+    top: 20px;
     left: 106px;
     width: 20px;
 }
@@ -661,17 +645,14 @@ table {
 
 .mobpic{
     display: block;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+	margin-top: -20px;
     width: 100%;
     cursor: pointer;
 }
 .mob_stats{
     display: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     width: 100%;
-    height: 220px;
+    height: 150px;
     cursor: pointer;
 }
 
@@ -681,7 +662,7 @@ table {
 }
 
 .mob_stats td{
-    font-size: 16px;
+    font-size: 10px;
     padding-top: 5px;
     width: 50%;
 }
@@ -692,7 +673,6 @@ table {
 
 .mob_locations{
     display: block;
-    border: 1px solid #333;
     padding-bottom: 3px;
 }
 
@@ -700,24 +680,26 @@ table {
     display: block;
     margin: 0px;
     padding: 1px;
-    font-size: 16px;
+    font-size: 10px;
     color: burlywood;
 }
 
 .mob_locations>span{
     margin: 2px;
-    border: 1px solid #456;
-    border-radius: 18px;
+    border: 1px solid #292929;
+    border-radius: 3px;
     padding: 0px 4px;
     display: inline-flex;
+    font-size: 10px;
+    color: burlywood;
 }
 
 
 .loot_block{
     width: 100% - 2px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border: 1px solid #222;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0px solid #292929;
     padding: 1px;
 
 }
@@ -730,6 +712,8 @@ table {
 
 .loot_block_content{
     display: none;
+	padding-top:5px;
+	padding-bottom:5px;
     background: rgba(20, 20, 20, 0.3);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -819,14 +803,14 @@ ODEVALKA
 }
 
 .socketimg>div{
-    font-size: 10pt;
+    font-size: 11px;
     border: 1px solid #1111;
     background: #1117;
-    border-radius: 5px;
+    border-radius: 2px;
     align-self: center;
     display: inline-flex;
     vertical-align: middle;
-    margin-top: 15px;
+    margin-top: 17px;
 }
 
 .itemslot{
@@ -841,7 +825,7 @@ ODEVALKA
     border: 1px solid;
     border-radius: 3px;
     padding: 0px;
-    margin: 0px;
+    margin: 3px;
 }
 
 .system_message{
@@ -853,15 +837,15 @@ ODEVALKA
 }
 
 .epic{
-    border-color: RebeccaPurple;
+    border-color: #d900ff;
 }
 
 .rare{
-     border-color: #014682;
+     border-color: #0088ff;
 }
 
 .uncommon{
-     border-color: green;
+     border-color: #07b155;
 }
 
 .common{
@@ -874,15 +858,15 @@ ODEVALKA
 }
 
 .epic_text{
-    color: #d647ff;
+    color: #d900ff;
 }
 
 .rare_text{
-     color: #0190ff;
+     color: #0088ff;
 }
 
 .uncommon_text{
-     color: #15e300;
+     color: #07b155;
 }
 
 .common_text{
@@ -895,9 +879,9 @@ ODEVALKA
 .itemselect{
     position: absolute;
     z-index: 2;
-    border: 3px solid #222;
+    border: 1px solid #222;
     border-radius: 5px;
-    max-height: 220px;
+    max-height: 200px;
     width: 400px;
     overflow: scroll;
     overflow-x: hidden;
