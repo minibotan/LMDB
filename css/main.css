@@ -244,8 +244,9 @@ footer p {
 
 .achieves_selector {
     text-decoration: none;
-    width: 40%;
+    width: 15%;
     display: block; 
+    padding-left:21%;
     overflow-x: hidden;
 }
 
@@ -254,7 +255,7 @@ footer p {
     border: 1px solid #444;
     border-radius: 4px;
     background: #111;
-    padding: 2px;
+    padding: 3px;
     margin-bottom: 5px;
      
 }
@@ -273,13 +274,13 @@ footer p {
 .achieves_content{
     display: inline-block;
     margin: 0px 20px;
-    width: 58%;
+    width: 40%;
     border: 1px solid #555;
     border-radius: 5px;
     background: #111;
     color: #ddd;
     overflow-x: hidden;
-    font-size: 24px;
+    font-size: 11px;
 }
 
 .achieve{
@@ -308,10 +309,13 @@ footer p {
 
 .achieve_desc {
     display: block;
-    padding: 5px 70px 5px 50px;
     margin: 0px 5px 5px;
-    font-size: 12px;
-    color: #eee;
+    padding-top: 5px;
+    padding-left:80px;
+    padding-right:80px;
+    padding-bottom:5px;
+    font-size: 11px;
+    color: #ccc;
 
 }
 
@@ -544,9 +548,11 @@ table {
 
 .moboblock {
     width: 200px;
-    border: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    border-left: 1px solid #292929;
+    border-right: 1px solid #292929;
     border-radius: 5px;
-    margin: 20px;
+    margin: 15px;
     display: inline-table;
     background-color: #111;
 }
@@ -830,15 +836,15 @@ ODEVALKA
 }
 
 .legend{
-    border-color: rgb(230, 111, 8);
+    border-color: #f3a95e;
 }
 
 .epic{
-    border-color: #af05cd;
+    border-color: #c556f7;
 }
 
 .rare{
-     border-color: #0088ff;
+     border-color: #3890f7;
 }
 
 .uncommon{
@@ -851,15 +857,15 @@ ODEVALKA
 
 
 .legend_text{
-    color: rgb(230, 111, 8);
+    color: #f3a95e;
 }
 
 .epic_text{
-    color: #af05cd;
+    color: #c556f7;
 }
 
 .rare_text{
-     color: #0088ff;
+     color: #3890f7;
 }
 
 .uncommon_text{
@@ -986,12 +992,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .buff_tooltip{
     display: block;
-    background-color: #111;
-    border : solid #eee 1px;
+    background-color: rgba(17, 17, 17, 0.9);
+    border: 1px solid #292929;
     border-radius: 5px;
     position: absolute;  
     z-index: 30;
-    width: 220px; 
+    width: 180px; 
     left: 100px;  
     top: 10px;
     font-size:11px;
@@ -1000,7 +1006,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .buff_name{
-    
+    padding-bottom: 3px;
 }
 
 .buff_descr{
