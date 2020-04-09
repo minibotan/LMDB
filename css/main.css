@@ -248,6 +248,7 @@ footer p {
     display: block; 
     padding-left:21%;
     overflow-x: hidden;
+    color: burlywood;
 }
 
 
@@ -304,7 +305,7 @@ footer p {
     top: 7px;
     left: 7px;
     border-radius: 3px;
-    border: 1px solid rgba(37, 37, 37, 0.3);
+    border: 1px solid burlywood;
 }
 
 .achieve_desc {

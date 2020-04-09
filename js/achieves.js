@@ -12,7 +12,7 @@ function makeAchieveCatBlock() {
     p += '<div class ="achieves_selector">';
     for (let i in achievesCat) {
         p += '<div class="achieves_title" id="achCat_' + achievesCat[i].id + '" parent="' + achievesCat[i].parent_id + '" value="' + achievesCat[i].id + '">'
-        p += achievesCat[i].name + '(<span>' + achievesCat[i].maxcount + '</span>)'
+        p += achievesCat[i].name + '&nbsp;(<span style="color:#fff;">' + achievesCat[i].maxcount + '</span>)'
         p += '</div>';
     }
     p += '</div>';
