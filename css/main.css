@@ -5,11 +5,11 @@ html{
     
 }
 body{
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size:12px;
-	Margin:5%;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size:12px;
+    margin:5%;
     background-color: #111;
-    color: #eee;
+    color: #ddd;
 }
 
 .overlay{
@@ -26,6 +26,7 @@ body{
 
 h6 {
     font-size: 12px;
+    font-weight: 600;
 }
 
 
@@ -39,8 +40,8 @@ a {
 a[target=_blank] {
     display: inline-block;
     outline: none;
-    color: #de3b68;
-    text-decoration: none;
+    color: #15bd7b;
+    text-decoration: underline;
 }
 
 
@@ -71,7 +72,7 @@ a[target=_blank] {
     margin-left: 10px;
     margin-top: -10px;
     padding: 10px;
-	font-size:11px;
+    font-size:11px;
     cursor: pointer;
 }
 
@@ -136,13 +137,8 @@ footer p {
     bottom: 0;
     width: 200px;
     height: 60px;
-	top: 10px;
+    top: 10px;
 }
-
-
-
-
-
 
 
 
@@ -295,9 +291,9 @@ footer p {
     border-radius: 5px;
     min-height: 50px;
     margin: 7px;
-	padding-top:7px;
+    padding-top:7px;
     font-size: 12px;
-	Color:burlywood;
+    color:burlywood;
 }
 
 .achieve_img{
@@ -392,12 +388,13 @@ table {
 /** SEARCH  **/
 
 .search{
-    text-align: right;
+    padding-top:10px;
+    text-align: center;
 }
 
 
 .search_input::-webkit-input-placeholder{
-    color: #eee;
+    color: #ccc;
 }
 
 .search_input{
@@ -405,20 +402,19 @@ table {
     border: 1px solid #ccc;
     background-color: #111;
     color: #eee;
-	font-size:12px;
+    font-size:12px;
     outline: none;
-    padding: 10px;
+    padding: 7px;
 }
 
 .search_button{
     background-color: #111;
     border: 1px solid #eee;
     margin-left: -5px;
-
-	font-size:12px;
-	color:#eee;
-	margin-left:5px;
-    padding: 10px;
+    font-size:12px;
+    color:#eee;
+    margin-left:5px;
+    padding: 7px;
     border-radius: 5px;
     outline: none;
 }
@@ -434,7 +430,7 @@ table {
 
 .itemstat {
     text-align: right;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1;
     padding-right: 5px;
     display: table-cell;
@@ -443,7 +439,7 @@ table {
 
 .itemstat2 {
     text-align: left;
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1;
     padding-left: 5px;
     display: table-cell;
@@ -454,12 +450,12 @@ table {
 
 .item {
     border: 1px solid #292929;
-	background: #111;
+    background: #111;
     text-align: center;
     align-items: center;
     border-radius: 5px;
     padding: 0px;
-    margin: 1%;
+    margin: 5px;
     display: inline-block;
     width: 200px;
     vertical-align: top;
@@ -482,9 +478,9 @@ table {
 
 .item_maxcnt{
     position: absolute;
-right: 81px;
-bottom: 8px;
-font-size: 10px;
+    right: 81px;
+    bottom: 8px;
+    font-size: 11px;
     color: #fff;
     text-shadow:
     -1px -1px 0 #000,
@@ -505,7 +501,7 @@ font-size: 10px;
     color: rgb(255, 213, 66);
     line-height: 1;
     margin: 0px 10px;
-    font-size: 10px;
+    font-size: 11px;
 }
 .reqs{
     color: #55d;
@@ -514,10 +510,6 @@ font-size: 10px;
 .itemowner{
     font-size: 12px;
 }
-
-
-
-
 
 
 .map_button_bar{
@@ -556,7 +548,7 @@ font-size: 10px;
     border-radius: 5px;
     margin: 20px;
     display: inline-table;
-	background-color: #111;
+    background-color: #111;
 }
 
 
@@ -581,6 +573,7 @@ font-size: 10px;
     left: -25px;
     width: var(--mobname-width);
 }
+
 .mobname>p{
     margin-top: 5px;
     font-size: 10px;
@@ -598,7 +591,7 @@ font-size: 10px;
     position: inherit;
     width: 127px;
     font-size: 10px;
-    top: -3px;
+    top:-3px;
     margin: 0px;
     text-align: center;
 }
@@ -667,7 +660,7 @@ font-size: 10px;
 }
 
 .mob_stats td{
-    font-size: 10px;
+    font-size: 11px;
     padding-top: 5px;
     width: 50%;
 }
@@ -684,18 +677,18 @@ font-size: 10px;
 .mob_locations>p{
     display: block;
     margin: 0px;
-    padding: 1px;
-    font-size: 10px;
-    color: burlywood;
+    padding-top: 5px;
+    font-size: 11px;
+    color: #ccc;
 }
 
 .mob_locations>span{
     margin: 2px;
     border: 1px solid #292929;
     border-radius: 3px;
-    padding: 0px 4px;
+    padding: 2px 6px;
     display: inline-flex;
-    font-size: 10px;
+    font-size: 11px;
     color: burlywood;
 }
 
@@ -712,16 +705,15 @@ font-size: 10px;
 .loot_block_title{
     border-top: 1px solid #333;
     background: rgba(20, 20, 20, 0.3);
+    padding: 4px;
     cursor: pointer;
 }
 
 .loot_block_content{
     display: none;
-	padding-top:5px;
-	padding-bottom:5px;
-    background: rgba(20, 20, 20, 0.3);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    padding-top:5px;
+    padding-bottom:10px;
+    font-size:10px;
 }
 
 .drop {
@@ -734,7 +726,6 @@ font-size: 10px;
     border: none;
     display: inline-block;
     vertical-align: middle;
-    
 }
 
 
@@ -743,6 +734,7 @@ font-size: 10px;
     height: 34px;
     width: 34px;
     margin: 1px;
+    cursor: pointer;
 }
 
 .dropreqs{
@@ -842,7 +834,7 @@ ODEVALKA
 }
 
 .epic{
-    border-color: #d900ff;
+    border-color: #af05cd;
 }
 
 .rare{
@@ -863,7 +855,7 @@ ODEVALKA
 }
 
 .epic_text{
-    color: #d900ff;
+    color: #af05cd;
 }
 
 .rare_text{
@@ -988,6 +980,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .buff_block{
     position: relative;
+    color:burlywood;
+    font-size:10px;
 }
 
 .buff_tooltip{
@@ -1000,7 +994,7 @@ input[type=number]::-webkit-outer-spin-button {
     width: 220px; 
     left: 100px;  
     top: 10px;
-Font-size:11px;
+    font-size:11px;
     text-align: left;
     padding: 10px;
 }
@@ -1011,7 +1005,7 @@ Font-size:11px;
 
 .buff_descr{
     color: rgb(255, 213, 66);
-    font-size: 10px;
+    font-size: 11px;
 }
 
 
@@ -1023,11 +1017,11 @@ Font-size:11px;
 
 
 .buffcolor1{ 
-    border-color: rgb(255, 213, 66);
+    border-color: burlywood;
 }
 
 .buffcolorundefined{
-    border-color: rgb(255, 213, 66);
+    border-color: burlywood;
 }
 
 
