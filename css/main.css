@@ -55,7 +55,8 @@ a[target=_blank] {
 }
 
 .settings_bar img{
-    margin: 4px;
+    margin: 15px;
+    width:30px;
 }
 
 .settings_bar:hover ul{
@@ -64,17 +65,19 @@ a[target=_blank] {
 
 .settings_bar ul{
     display: none;
-    background: rgba(0, 0, 0, 0.95);
-    border: none;
-    margin: 0px;
-    padding: 1px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: -10px;
+    padding: 10px;
+	font-size:11px;
     cursor: pointer;
 }
 
 .settings_bar ul li {
     display: block;
-    border: 1px solid #222;
-    padding: 3px;
+    padding: 5px;
 }
 
 .nav_bar {
@@ -394,12 +397,12 @@ table {
 
 
 .search_input::-webkit-input-placeholder{
-    color: #444;
+    color: #eee;
 }
 
 .search_input{
     border-radius: 5px;
-    border-color: #eee;
+    border: 1px solid #ccc;
     background-color: #111;
     color: #eee;
 	font-size:12px;
