@@ -4515,7 +4515,7 @@ buffs = {
     "invisible": 2,
     "unremovable": 1,
     "summarize": 1,
-    "image": "diamond_tusk"
+    "image": "diamond_fang"
   },
   "620": {
     "id": 620,
@@ -6416,7 +6416,7 @@ buffs = {
     "id": 847,
     "name": "Бафф щита Баньши",
     "adminname": "Бафф щита Баньши",
-    "descr": "Копит 10 зарядов",
+    "descr": "Копит 10 зарядов, на 11-й размен наносит урон",
     "invisible": 2,
     "unremovable": 1,
     "image": "ganesh_shield",
@@ -6628,7 +6628,7 @@ buffs = {
     "id": 865,
     "name": "Бафф щита урон раз 5 в ходов Блейд",
     "adminname": "Бафф щита урон раз 5 в ходов Блейд",
-    "descr": "Копит 5 зарядов",
+    "descr": "Копит 4 заряда, на 5-й размен наносит урон",
     "invisible": 2,
     "unremovable": 1,
     "image": "ganesh_shield",
