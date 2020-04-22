@@ -10,6 +10,12 @@ var items = {
     "image": "tooth",
     "price": 30,
     "descr": "Клык, конечно, не драконий, зато добыт в честном бою!",
+    "dropfrom": ["adsf:23", "adsf:5", "adsf:6"],
+    "consumable": "none",
+    "material": "bones",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "3": {
     "id": 3,
@@ -25,6 +31,8 @@ var items = {
     "price": 3,
     "descr": "Некоторые маги лучше всего творят в одиночестве. Другие же лучше всего творят само одиночество.",
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "4": {
     "id": 4,
@@ -39,6 +47,8 @@ var items = {
     "price": 4,
     "descr": "«Он не вернулся в Облачный лес, но я все еще чувствую его успокаивающее присутствие».<br>— Залики, леонинка из Найи",
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "6": {
     "id": 6,
@@ -58,6 +68,8 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "7": {
     "id": 7,
@@ -70,6 +82,12 @@ var items = {
     "image": "wpn_1hand_norm_3",
     "price": 7,
     "descr": "Йорик стал еще беднее...",
+    "dropfrom": ["adsf:2", "adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "bones",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "8": {
     "id": 8,
@@ -95,6 +113,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:31"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "9": {
     "id": 9,
@@ -107,6 +130,11 @@ var items = {
     "price": 1,
     "descr": "Ужасное оружие в нежных руках.",
     "quest": 1,
+    "dropfrom": ["adsf:5", "adsf:6"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "10": {
     "id": 10,
@@ -124,6 +152,9 @@ var items = {
     "price": 10,
     "descr": "Для разделки животных и не только",
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "11": {
     "id": 11,
@@ -141,6 +172,12 @@ var items = {
     "price": 11,
     "becomepersonal": 1,
     "descr": "Та самая, легендарная!",
+    "dropfrom": ["adsf:11", "adsf:28", "adsf:7"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "12": {
     "id": 12,
@@ -157,6 +194,12 @@ var items = {
     "image": "wpn_1hand_norm_2",
     "price": 400,
     "descr": "Но как не играй - все играешь отбой.",
+    "dropfrom": ["adsf:1", "adsf:15"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "13": {
     "id": 13,
@@ -175,6 +218,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Для прирожденных вилоносцев",
+    "dropfrom": ["adsf:64"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "14": {
     "id": 14,
@@ -194,6 +241,10 @@ var items = {
     "price": 14,
     "personal": 1,
     "descr": "Многофункциональное средство защиты и нападения.",
+    "dropfrom": ["adsf:110"],
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "15": {
     "id": 15,
@@ -212,6 +263,10 @@ var items = {
     "price": 3000,
     "becomepersonal": 1,
     "descr": "Не лучший выбор для серьезного боя.",
+    "dropfrom": ["adsf:22", "adsf:65"],
+    "consumable": "none",
+    "material": "wood",
+    "indacache": "1"
   },
   "16": {
     "id": 16,
@@ -229,6 +284,9 @@ var items = {
     "price": 16,
     "descr": "Ключ к любому сердцу",
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "17": {
     "id": 17,
@@ -245,6 +303,9 @@ var items = {
     "image": "wpn_1hand_norm_10",
     "price": 3000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "18": {
     "id": 18,
@@ -270,6 +331,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:16", "adsf:20"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "19": {
     "id": 19,
@@ -296,6 +362,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:21", "adsf:22"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "20": {
     "id": 20,
@@ -323,6 +394,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:19", "adsf:43"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "21": {
     "id": 21,
@@ -349,6 +425,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:16", "adsf:18"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "22": {
     "id": 22,
@@ -361,6 +442,8 @@ var items = {
     "image": "shld_2",
     "price": 22,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "23": {
     "id": 23,
@@ -373,6 +456,8 @@ var items = {
     "image": "shld_1",
     "price": 23,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "24": {
     "id": 24,
@@ -390,6 +475,10 @@ var items = {
     "price": 20000,
     "personal": 1,
     "descr": "На лицевой стороне видны отчетливые следы клыков.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "25": {
     "id": 25,
@@ -406,6 +495,10 @@ var items = {
     "price": 220,
     "personal": 1,
     "descr": "Базовая защита для рук. Спрашивайте в аптеках.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "26": {
     "id": 26,
@@ -418,6 +511,8 @@ var items = {
     "image": "hand_norm_2",
     "price": 26,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "27": {
     "id": 27,
@@ -430,6 +525,8 @@ var items = {
     "image": "hand_norm_3",
     "price": 27,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "28": {
     "id": 28,
@@ -442,6 +539,8 @@ var items = {
     "image": "hand_norm_4",
     "price": 28,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "29": {
     "id": 29,
@@ -458,6 +557,10 @@ var items = {
     "price": 300,
     "personal": 1,
     "descr": "Чуть лучше домашних тапочек. Только по лужам не ходите - расклеятся. ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "30": {
     "id": 30,
@@ -470,6 +573,8 @@ var items = {
     "image": "foot_norm_1",
     "price": 30,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "31": {
     "id": 31,
@@ -482,6 +587,8 @@ var items = {
     "image": "foot_norm_3",
     "price": 31,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "32": {
     "id": 32,
@@ -494,6 +601,8 @@ var items = {
     "image": "foot_norm_4",
     "price": 32,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "33": {
     "id": 33,
@@ -510,6 +619,10 @@ var items = {
     "price": 450,
     "personal": 1,
     "descr": "Ваша голова будет хоть немного, но защищенной.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "34": {
     "id": 34,
@@ -522,6 +635,8 @@ var items = {
     "image": "head_norm_2",
     "price": 34,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "35": {
     "id": 35,
@@ -534,6 +649,8 @@ var items = {
     "image": "head_norm_3",
     "price": 35,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "36": {
     "id": 36,
@@ -546,6 +663,8 @@ var items = {
     "image": "head_norm_4",
     "price": 36,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "37": {
     "id": 37,
@@ -563,6 +682,10 @@ var items = {
     "price": 600,
     "personal": 1,
     "descr": "Спасают разве что от крапивы, зато опрятны на вид.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "38": {
     "id": 38,
@@ -575,6 +698,8 @@ var items = {
     "image": "leg_norm_2",
     "price": 38,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "39": {
     "id": 39,
@@ -587,6 +712,8 @@ var items = {
     "image": "leg_norm_3",
     "price": 39,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "40": {
     "id": 40,
@@ -599,6 +726,8 @@ var items = {
     "image": "leg_norm_4",
     "price": 40,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "41": {
     "id": 41,
@@ -616,6 +745,10 @@ var items = {
     "price": 500,
     "personal": 1,
     "descr": "Ватная подкладка слегка смягчает удары. Главное - не забывать заштопывать.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "42": {
     "id": 42,
@@ -628,6 +761,8 @@ var items = {
     "image": "torso_norm_2",
     "price": 42,
     "hidden": 1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "43": {
     "id": 43,
@@ -641,6 +776,8 @@ var items = {
     "price": 43,
     "descr": "torso_norm_4",
     "hidden": 1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "44": {
     "id": 44,
@@ -654,6 +791,8 @@ var items = {
     "price": 44,
     "descr": "torso_norm_3",
     "hidden": 1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "45": {
     "id": 45,
@@ -671,6 +810,10 @@ var items = {
     "image": "wpn_1hand_axe_3",
     "price": 1000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "46": {
     "id": 46,
@@ -690,6 +833,11 @@ var items = {
     "price": 100,
     "becomepersonal": 1,
     "descr": "Пригоден для наведения локального хаоса в небольших помещениях.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "47": {
     "id": 47,
@@ -718,6 +866,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:17", "adsf:18"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "48": {
     "id": 48,
@@ -735,6 +888,10 @@ var items = {
     "image": "wpn_1hand_blunt_1",
     "price": 250,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:6"],
+    "consumable": "none",
+    "material": "wood",
+    "indacache": "1"
   },
   "49": {
     "id": 49,
@@ -752,6 +909,11 @@ var items = {
     "image": "wpn_1hand_blunt_2",
     "price": 2000,
     "personal": 1,
+    "becomepersonal": 1,
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "50": {
     "id": 50,
@@ -782,6 +944,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:17", "adsf:20"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "51": {
     "id": 51,
@@ -800,6 +967,10 @@ var items = {
     "price": 15000,
     "personal": 1,
     "descr": "Новейшее средство находить виновных.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "52": {
     "id": 52,
@@ -816,6 +987,9 @@ var items = {
     "image": "wpn_1hand_sw_3",
     "price": 140,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "53": {
     "id": 53,
@@ -832,6 +1006,10 @@ var items = {
     "image": "wpn_1hand_sw_4",
     "descr": "Сомнительная реликвия семьи Гектора и Париса.",
     "quest": 1,
+    "dropfrom": ["adsf:48"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "54": {
     "id": 54,
@@ -845,6 +1023,10 @@ var items = {
     "personal": 1,
     "descr": "Нас невозможно сбить с пути! Нам пофигу куда идти!",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "55": {
     "id": 55,
@@ -865,6 +1047,11 @@ var items = {
     "price": 10000,
     "becomepersonal": 1,
     "descr": "Свидетельствует о серьезных намерениях.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "56": {
     "id": 56,
@@ -881,6 +1068,10 @@ var items = {
     "image": "wpn_2hand_swt_3",
     "price": 6000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "57": {
     "id": 57,
@@ -910,6 +1101,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:19", "adsf:21", "adsf:43"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "58": {
     "id": 58,
@@ -930,6 +1126,11 @@ var items = {
     "price": 55000,
     "becomepersonal": 1,
     "descr": "Сайонара!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "59": {
     "id": 59,
@@ -945,6 +1146,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Каждый украшает себя как может.",
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "60": {
     "id": 60,
@@ -959,6 +1163,9 @@ var items = {
     "price": 100,
     "personal": 1,
     "descr": "Красивое украшение. Вот только стоило дорого...",
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "61": {
     "id": 61,
@@ -971,6 +1178,8 @@ var items = {
     "image": "jewel_nec_3",
     "price": 61,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "62": {
     "id": 62,
@@ -983,6 +1192,8 @@ var items = {
     "image": "jewel_nec_4",
     "price": 62,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "63": {
     "id": 63,
@@ -1008,6 +1219,15 @@ var items = {
         "value": "235"
       }]
     },
+    "dropfrom": ["adsf:1", "adsf:11", "adsf:15", "adsf:2", "adsf:23", "adsf:28", "adsf:3", "adsf:30", "adsf:47", "adsf:5", "adsf:6", "adsf:7", "adsf:73", "adsf:77", "adsf:90"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "64": {
     "id": 64,
@@ -1034,6 +1254,14 @@ var items = {
         "value": "236"
       }]
     },
+    "dropfrom": ["adsf:117", "adsf:16", "adsf:17", "adsf:18", "adsf:19", "adsf:20", "adsf:21", "adsf:22", "adsf:31", "adsf:32", "adsf:33", "adsf:34", "adsf:35", "adsf:36", "adsf:41", "adsf:42", "adsf:43", "adsf:48"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "65": {
     "id": 65,
@@ -1063,6 +1291,13 @@ var items = {
         "value": "30"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "66": {
     "id": 66,
@@ -1089,6 +1324,14 @@ var items = {
         "value": "237"
       }]
     },
+    "dropfrom": ["adsf:115", "adsf:116", "adsf:122", "adsf:129", "adsf:130", "adsf:131", "adsf:132", "adsf:134", "adsf:135", "adsf:136", "adsf:137", "adsf:66", "adsf:67", "adsf:68", "adsf:70", "adsf:71", "adsf:72", "adsf:75", "adsf:76", "adsf:84", "adsf:85", "adsf:89", "adsf:91", "adsf:93", "adsf:94", "adsf:98"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "67": {
     "id": 67,
@@ -1109,6 +1352,15 @@ var items = {
         "value": "20"
       }]
     },
+    "dropfrom": ["adsf:1", "adsf:11", "adsf:15", "adsf:2", "adsf:23", "adsf:28", "adsf:3", "adsf:30", "adsf:47", "adsf:5", "adsf:6", "adsf:7", "adsf:73", "adsf:77", "adsf:90"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "68": {
     "id": 68,
@@ -1135,6 +1387,14 @@ var items = {
         "value": "35"
       }]
     },
+    "dropfrom": ["adsf:117", "adsf:16", "adsf:17", "adsf:18", "adsf:19", "adsf:20", "adsf:21", "adsf:22", "adsf:31", "adsf:32", "adsf:33", "adsf:34", "adsf:35", "adsf:36", "adsf:41", "adsf:42", "adsf:43", "adsf:48"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "69": {
     "id": 69,
@@ -1161,6 +1421,14 @@ var items = {
         "value": "50"
       }]
     },
+    "dropfrom": ["adsf:115", "adsf:116", "adsf:122", "adsf:129", "adsf:130", "adsf:131", "adsf:132", "adsf:134", "adsf:135", "adsf:136", "adsf:137", "adsf:84", "adsf:85", "adsf:93", "adsf:94"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "70": {
     "id": 70,
@@ -1190,6 +1458,13 @@ var items = {
         "value": "30"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "71": {
     "id": 71,
@@ -1210,6 +1485,14 @@ var items = {
         "value": "9"
       }]
     },
+    "dropfrom": ["adsf:1", "adsf:11", "adsf:15", "adsf:2", "adsf:23", "adsf:28", "adsf:3", "adsf:30", "adsf:47", "adsf:5", "adsf:6", "adsf:7", "adsf:73", "adsf:77", "adsf:90"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "72": {
     "id": 72,
@@ -1230,6 +1513,14 @@ var items = {
         "value": "10"
       }]
     },
+    "dropfrom": ["adsf:1", "adsf:11", "adsf:15", "adsf:2", "adsf:23", "adsf:28", "adsf:3", "adsf:30", "adsf:47", "adsf:5", "adsf:6", "adsf:7", "adsf:73", "adsf:77", "adsf:90"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "73": {
     "id": 73,
@@ -1252,6 +1543,9 @@ var items = {
     },
     "validtime": 172800,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "74": {
     "id": 74,
@@ -1265,6 +1559,9 @@ var items = {
     "personal": 1,
     "descr": "Верная жена Хьюберта. Немного потрепанная, но все же в приличном состоянии.",
     "quest": 1,
+    "dropfrom": ["adsf:9"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "75": {
     "id": 75,
@@ -1277,6 +1574,10 @@ var items = {
     "image": 1,
     "descr": "Это квестовый лут. Падает только по квесту ололо.",
     "hidden": 1,
+    "dropfrom": ["adsf:3", "adsf:7"],
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "76": {
     "id": 76,
@@ -1292,6 +1593,10 @@ var items = {
     "image": "club_pants",
     "price": 1,
     "descr": "Стильно, модно, молодежно!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "77": {
     "id": 77,
@@ -1307,6 +1612,10 @@ var items = {
     "image": "club_chest",
     "price": 1,
     "descr": "90% трикотаж, 10% синтетика.<br>И никакой магии!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "78": {
     "id": 78,
@@ -1318,6 +1627,10 @@ var items = {
     "image": "bone2",
     "descr": "Очень интересный экземпляр кости скелета.",
     "quest": 1,
+    "dropfrom": ["adsf:2", "adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "bones",
+    "indacache": "1"
   },
   "79": {
     "id": 79,
@@ -1332,6 +1645,9 @@ var items = {
     "image": "basik3",
     "price": 1,
     "descr": "Удобная, но не очень практичная в бою обувь.",
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "80": {
     "id": 80,
@@ -1344,6 +1660,9 @@ var items = {
     "personal": 1,
     "descr": "Волшебная энергия, рассредоточенная по Миру после ухода Магии.",
     "quest": 1,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "81": {
     "id": 81,
@@ -1356,6 +1675,10 @@ var items = {
     "personal": 1,
     "descr": "При изготовлении ни одного Лукэтлога не пострадало.",
     "quest": 1,
+    "dropfrom": ["adsf:23", "adsf:5", "adsf:6"],
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "82": {
     "id": 82,
@@ -1370,6 +1693,9 @@ var items = {
     "image": "tooth_necklace",
     "price": 4000,
     "personal": 1,
+    "consumable": "none",
+    "material": "bones",
+    "indacache": "1"
   },
   "83": {
     "id": 83,
@@ -1382,6 +1708,10 @@ var items = {
     "personal": 1,
     "descr": "Выдернут без анестезии.",
     "quest": 1,
+    "dropfrom": ["adsf:6"],
+    "consumable": "none",
+    "material": "bones",
+    "indacache": "1"
   },
   "84": {
     "id": 84,
@@ -1395,6 +1725,9 @@ var items = {
     "personal": 1,
     "descr": "На обороте видна отчетливая подпись автора. Кровью.",
     "quest": 1,
+    "dropfrom": ["adsf:1"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "85": {
     "id": 85,
@@ -1421,6 +1754,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:12"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "86": {
     "id": 86,
@@ -1434,6 +1771,10 @@ var items = {
     "personal": 1,
     "descr": "Результат спинной пункции по методу доктора Виктора. Главная отличительная черта данной методики - использование топора вместо специализированной иглы.",
     "quest": 1,
+    "dropfrom": ["adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "bones",
+    "indacache": "1"
   },
   "87": {
     "id": 87,
@@ -1447,6 +1788,10 @@ var items = {
     "personal": 1,
     "descr": "Хороший образец для паладинских исследований.",
     "quest": 1,
+    "dropfrom": ["adsf:7"],
+    "consumable": "none",
+    "material": "bones",
+    "indacache": "1"
   },
   "88": {
     "id": 88,
@@ -1460,6 +1805,10 @@ var items = {
     "personal": 1,
     "descr": "Интересно, какие эксперименты будет проводить над ним Виктор.",
     "quest": 1,
+    "dropfrom": ["adsf:11", "adsf:28"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "89": {
     "id": 89,
@@ -1480,6 +1829,9 @@ var items = {
     "price": 10000,
     "descr": "Рабочий инструмент",
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "90": {
     "id": 90,
@@ -1504,6 +1856,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:12", "adsf:14"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "91": {
     "id": 91,
@@ -1528,6 +1885,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:13", "adsf:14"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "92": {
     "id": 92,
@@ -1553,6 +1915,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:13"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "93": {
     "id": 93,
@@ -1578,6 +1945,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:12"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "94": {
     "id": 94,
@@ -1605,6 +1977,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:14"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "95": {
     "id": 95,
@@ -1622,6 +1999,10 @@ var items = {
     "image": "rider_hat",
     "price": 2000,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:12", "adsf:13"],
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "96": {
     "id": 96,
@@ -1642,6 +2023,11 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Лезвие покрыто едва заметным руническим узором.",
+    "dropfrom": ["adsf:14"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "97": {
     "id": 97,
@@ -1670,6 +2056,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:12", "adsf:14"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "98": {
     "id": 98,
@@ -1697,6 +2087,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:12", "adsf:14"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "99": {
     "id": 99,
@@ -1709,6 +2103,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "В критический момент поможет вам и вашим товарищам.",
+    "consumable": "none",
+    "ability_id": 23,
+    "material": "ring",
+    "indacache": "1"
   },
   "100": {
     "id": 100,
@@ -1724,6 +2122,10 @@ var items = {
     "image": "ring_sklep",
     "price": 1000,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:12", "adsf:13"],
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "101": {
     "id": 101,
@@ -1740,6 +2142,10 @@ var items = {
     "image": "necklace_sklep",
     "price": 3000,
     "personal": 1,
+    "dropfrom": ["adsf:14"],
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "102": {
     "id": 102,
@@ -1756,6 +2162,9 @@ var items = {
     "image": "hand_norm_2",
     "price": 1500,
     "becomepersonal": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "103": {
     "id": 103,
@@ -1772,6 +2181,10 @@ var items = {
     "image": "foot_norm_1",
     "price": 2500,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:12", "adsf:13"],
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "104": {
     "id": 104,
@@ -1790,6 +2203,11 @@ var items = {
     "price": 3500,
     "becomepersonal": 1,
     "descr": "Страшно подумать, как она оказалась в склепе...",
+    "dropfrom": ["adsf:12", "adsf:13"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "105": {
     "id": 105,
@@ -1808,6 +2226,10 @@ var items = {
     "price": 3000,
     "becomepersonal": 1,
     "descr": "Созданы специально для того, чтобы вызывать у соперника страх и отвращение.",
+    "dropfrom": ["adsf:12", "adsf:13"],
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "106": {
     "id": 106,
@@ -1822,6 +2244,8 @@ var items = {
     "personal": 1,
     "descr": "Полноценный суточный паек.",
     "quest": 1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "107": {
     "id": 107,
@@ -1848,6 +2272,14 @@ var items = {
         "value": "27"
       }]
     },
+    "dropfrom": ["adsf:117", "adsf:16", "adsf:17", "adsf:18", "adsf:19", "adsf:20", "adsf:21", "adsf:22", "adsf:31", "adsf:32", "adsf:33", "adsf:34", "adsf:35", "adsf:36", "adsf:41", "adsf:42", "adsf:43", "adsf:48"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "108": {
     "id": 108,
@@ -1874,6 +2306,14 @@ var items = {
         "value": "28"
       }]
     },
+    "dropfrom": ["adsf:117", "adsf:16", "adsf:17", "adsf:18", "adsf:19", "adsf:20", "adsf:21", "adsf:22", "adsf:31", "adsf:32", "adsf:33", "adsf:34", "adsf:35", "adsf:36", "adsf:41", "adsf:42", "adsf:43", "adsf:48"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "109": {
     "id": 109,
@@ -1885,6 +2325,11 @@ var items = {
     "image": "ghost_dust",
     "price": 50,
     "descr": "Нюхать не рекомендуется.",
+    "dropfrom": ["adsf:1"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "110": {
     "id": 110,
@@ -1896,6 +2341,12 @@ var items = {
     "image": "johnathan_seed",
     "price": 300,
     "descr": "Каждая луковица содержит более десяти тысяч потенциальных Джонатанчиков. ",
+    "dropfrom": ["adsf:17", "adsf:19"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "111": {
     "id": 111,
@@ -1907,6 +2358,12 @@ var items = {
     "image": "pupmat_eyes",
     "price": 200,
     "descr": "Говорят, на них хорошо клюет саблезубая сельдь...",
+    "dropfrom": ["adsf:16", "adsf:18", "adsf:43"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "112": {
     "id": 112,
@@ -1921,6 +2378,11 @@ var items = {
     "price": 5000,
     "becomepersonal": 1,
     "descr": "Покровительство драконов - лишним не бывает.",
+    "dropfrom": ["adsf:21"],
+    "consumable": "none",
+    "buff_id": 34,
+    "material": "ring",
+    "indacache": "1"
   },
   "113": {
     "id": 113,
@@ -1932,6 +2394,12 @@ var items = {
     "image": "purple_heart",
     "price": 150,
     "descr": "Поговаривают, что отвар из них открывает дорогу к сердцу любой девушки...",
+    "dropfrom": ["adsf:20", "adsf:21", "adsf:22", "adsf:32", "adsf:33", "adsf:34"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "114": {
     "id": 114,
@@ -1944,6 +2412,9 @@ var items = {
     "price": 1,
     "descr": "Основные компоненты: CH4,CO2 и N2",
     "quest": 1,
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "115": {
     "id": 115,
@@ -1957,6 +2428,9 @@ var items = {
     "personal": 1,
     "descr": "Ням-ням!",
     "validtime": 259200,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "116": {
     "id": 116,
@@ -1970,6 +2444,9 @@ var items = {
     "personal": 1,
     "descr": "Миниатюрная копия лопаты, охваченная миниатюрным огнем. Для копания непригодна!",
     "validtime": 432000,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "117": {
     "id": 117,
@@ -1983,6 +2460,8 @@ var items = {
     "personal": 1,
     "descr": "Кормить мелкими грызунами и аккуратно поливать.",
     "validtime": 1036800,
+    "consumable": "none",
+    "indacache": "1"
   },
   "118": {
     "id": 118,
@@ -1996,6 +2475,9 @@ var items = {
     "personal": 1,
     "descr": "Наполнен хорошим настроением!",
     "validtime": 432000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "119": {
     "id": 119,
@@ -2009,6 +2491,9 @@ var items = {
     "personal": 1,
     "descr": "Вершина цветоводческого искусства!",
     "validtime": 864000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "120": {
     "id": 120,
@@ -2022,6 +2507,10 @@ var items = {
     "personal": 1,
     "descr": "Не сулит ничего хорошего.",
     "validtime": 604800,
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "121": {
     "id": 121,
@@ -2035,6 +2524,9 @@ var items = {
     "personal": 1,
     "descr": "Сулит еще меньше хорошего, чем Черная метка.",
     "validtime": 604800,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "122": {
     "id": 122,
@@ -2048,6 +2540,10 @@ var items = {
     "personal": 1,
     "descr": "Ключ от моего сердца.",
     "validtime": 1036800,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "123": {
     "id": 123,
@@ -2060,6 +2556,9 @@ var items = {
     "personal": 1,
     "descr": "Понравится, даже если у него уже есть не одна.",
     "validtime": 1296000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "124": {
     "id": 124,
@@ -2073,6 +2572,9 @@ var items = {
     "personal": 1,
     "descr": "Ручная работа.",
     "validtime": 777600,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "125": {
     "id": 125,
@@ -2087,6 +2589,10 @@ var items = {
     "descr": "Отличный подарок младшему товарищу по оружию.",
     "validtime": 864000,
     "giveitem": 46,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "126": {
     "id": 126,
@@ -2117,6 +2623,11 @@ var items = {
       }
     },
     "giveitem": 98,
+    "dropfrom": ["adsf:40"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "127": {
     "id": 127,
@@ -2131,6 +2642,10 @@ var items = {
     "descr": "Отличный подарок товарищу по оружию.",
     "validtime": 1728000,
     "giveitem": 55,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "128": {
     "id": 128,
@@ -2144,6 +2659,8 @@ var items = {
     "validtime": 432000,
     "giveitem": 74,
     "hidden": 1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "129": {
     "id": 129,
@@ -2163,6 +2680,9 @@ var items = {
     "price": 20000,
     "personal": 1,
     "descr": "Зуб, вероятно, молочный.",
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "130": {
     "id": 130,
@@ -2184,6 +2704,13 @@ var items = {
         "value": "24"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "131": {
     "id": 131,
@@ -2197,6 +2724,9 @@ var items = {
     "personal": 1,
     "descr": "Лютая симпатия!",
     "validtime": 1036800,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "132": {
     "id": 132,
@@ -2224,6 +2754,13 @@ var items = {
         "value": "25"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "bones",
+    "changed": 1,
+    "indacache": "1"
   },
   "133": {
     "id": 133,
@@ -2251,6 +2788,13 @@ var items = {
         "value": "26"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "134": {
     "id": 134,
@@ -2275,6 +2819,9 @@ var items = {
         "maxhit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "135": {
     "id": 135,
@@ -2286,6 +2833,10 @@ var items = {
     "image": "orange_heart",
     "descr": "Сердце одной из самых опасных болотных тварей. ",
     "quest": 1,
+    "dropfrom": ["adsf:21"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "136": {
     "id": 136,
@@ -2298,6 +2849,10 @@ var items = {
     "price": 1,
     "descr": "Саженец одной из самых опасных болотных тварей. ",
     "quest": 1,
+    "dropfrom": ["adsf:21"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "137": {
     "id": 137,
@@ -2327,6 +2882,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:38", "adsf:39"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "138": {
     "id": 138,
@@ -2338,6 +2898,8 @@ var items = {
     "image": 1,
     "descr": "Благодарность Администрации Lost Magic.",
     "validtime": 2592000,
+    "consumable": "none",
+    "indacache": "1"
   },
   "139": {
     "id": 139,
@@ -2349,6 +2911,9 @@ var items = {
     "image": "candle",
     "price": 40,
     "descr": "С ароматом клубники.",
+    "dropfrom": ["adsf:30", "adsf:31"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "140": {
     "id": 140,
@@ -2360,6 +2925,12 @@ var items = {
     "image": "candlestick",
     "price": 60,
     "descr": "Целый килограмм позолоченной латуни.",
+    "dropfrom": ["adsf:30", "adsf:31"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "141": {
     "id": 141,
@@ -2371,6 +2942,10 @@ var items = {
     "image": "clay_totem",
     "price": 100,
     "descr": "Наследие культа Зайцепоклонников.",
+    "dropfrom": ["adsf:30", "adsf:31"],
+    "consumable": "none",
+    "material": "wood",
+    "indacache": "1"
   },
   "142": {
     "id": 142,
@@ -2382,6 +2957,9 @@ var items = {
     "image": "brazier",
     "price": 60,
     "descr": "Объем - 5 литров.",
+    "dropfrom": ["adsf:30", "adsf:31"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "143": {
     "id": 143,
@@ -2393,6 +2971,10 @@ var items = {
     "image": "bulb",
     "price": 100,
     "descr": "Мощность - 80 Вт.",
+    "dropfrom": ["adsf:30", "adsf:31"],
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "144": {
     "id": 144,
@@ -2412,6 +2994,11 @@ var items = {
     "price": 3000,
     "becomepersonal": 1,
     "descr": "Девять, десять...",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "145": {
     "id": 145,
@@ -2431,6 +3018,11 @@ var items = {
     "price": 12000,
     "becomepersonal": 1,
     "descr": "В этом мире таких не делают...",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "146": {
     "id": 146,
@@ -2443,6 +3035,9 @@ var items = {
     "personal": 1,
     "descr": "Тяжелый и громоздкий.",
     "quest": 1,
+    "dropfrom": ["adsf:34"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "147": {
     "id": 147,
@@ -2461,6 +3056,9 @@ var items = {
         "value": "47"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "148": {
     "id": 148,
@@ -2478,6 +3076,9 @@ var items = {
         "value": "46"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "149": {
     "id": 149,
@@ -2495,6 +3096,9 @@ var items = {
         "value": "48"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "150": {
     "id": 150,
@@ -2518,6 +3122,9 @@ var items = {
         "mastery": 4
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "151": {
     "id": 151,
@@ -2531,6 +3138,9 @@ var items = {
     "descr": "Ушки на макушке.",
     "validtime": 864000,
     "giveitem": 152,
+    "dropfrom": ["adsf:13"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "152": {
     "id": 152,
@@ -2548,6 +3158,8 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Ушки на макушке.",
+    "consumable": "none",
+    "indacache": "1"
   },
   "153": {
     "id": 153,
@@ -2562,7 +3174,11 @@ var items = {
     "image": "pumpkin",
     "price": 10000,
     "personal": 1,
-    "descr": "Trick or Treat!",
+    "descr": "Trock or Treat!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "154": {
     "id": 154,
@@ -2590,6 +3206,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:40"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "155": {
     "id": 155,
@@ -2618,6 +3239,11 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:40"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "156": {
     "id": 156,
@@ -2644,6 +3270,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:38", "adsf:39"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "157": {
     "id": 157,
@@ -2670,6 +3301,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:40"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "158": {
     "id": 158,
@@ -2697,6 +3333,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:39", "adsf:40"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "159": {
     "id": 159,
@@ -2725,6 +3366,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:38"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "160": {
     "id": 160,
@@ -2745,6 +3391,11 @@ var items = {
     "price": 77000,
     "becomepersonal": 1,
     "descr": "Из декабря в июнь...",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "161": {
     "id": 161,
@@ -2765,6 +3416,11 @@ var items = {
     "price": 66000,
     "becomepersonal": 1,
     "descr": "И нет в названии никакой ошибки!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "162": {
     "id": 162,
@@ -2792,6 +3448,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:38"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "163": {
     "id": 163,
@@ -2818,6 +3479,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:38", "adsf:39"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "164": {
     "id": 164,
@@ -2843,6 +3508,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:38"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "165": {
     "id": 165,
@@ -2856,6 +3526,10 @@ var items = {
     "image": "living_heart",
     "personal": 1,
     "descr": "Восстанавливает 13 здоровья после каждой победы.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 80,
+    "indacache": "1"
   },
   "166": {
     "id": 166,
@@ -2868,6 +3542,8 @@ var items = {
     "price": 3000,
     "descr": "Тот который «тринитро», а не тот, где строят любовь.",
     "instruction": "Кликните 2 раза и бегите!",
+    "consumable": "explode",
+    "indacache": "1"
   },
   "167": {
     "id": 167,
@@ -2879,6 +3555,10 @@ var items = {
     "image": "pot",
     "price": 2000,
     "descr": "Кейси готовил что-то явно несъедобное.",
+    "dropfrom": ["adsf:38"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "168": {
     "id": 168,
@@ -2894,6 +3574,10 @@ var items = {
     "image": "tinypearl_ring",
     "price": 15000,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:38", "adsf:39"],
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "169": {
     "id": 169,
@@ -2911,6 +3595,10 @@ var items = {
     "image": "tinypearl_necklace",
     "price": 20000,
     "personal": 1,
+    "dropfrom": ["adsf:39", "adsf:40"],
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "170": {
     "id": 170,
@@ -2924,6 +3612,11 @@ var items = {
     "image": "living_ring",
     "personal": 1,
     "descr": "Дает 10 ярости в начале каждого боя.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 83,
+    "material": "ring",
+    "indacache": "1"
   },
   "171": {
     "id": 171,
@@ -2943,6 +3636,11 @@ var items = {
     "price": 6000,
     "becomepersonal": 1,
     "descr": "Настоящее японское качество!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "172": {
     "id": 172,
@@ -2955,6 +3653,8 @@ var items = {
     "personal": 1,
     "descr": "от Администрации LostMagic.",
     "validtime": -1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "173": {
     "id": 173,
@@ -2967,6 +3667,8 @@ var items = {
     "personal": 1,
     "descr": "от Администрации LostMagic.",
     "validtime": -1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "174": {
     "id": 174,
@@ -2979,6 +3681,8 @@ var items = {
     "personal": 1,
     "descr": "от Администрации LostMagic.",
     "validtime": -1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "175": {
     "id": 175,
@@ -2989,8 +3693,12 @@ var items = {
     "rarity": "uncommon",
     "image": "moneysack",
     "price": 100000,
-    "descr": "Свободно конвертируемый кошель. ",
-    "instruction": "Двойной клик: обмен на 10 лаббитов.",
+    "descr": "Говорят, у Murmiau такими забит весь банк.",
+    "instruction": "Двойной клик: получить на свой счет 10 лаббитов.",
+    "consumable": "exchange10",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "176": {
     "id": 176,
@@ -3002,6 +3710,9 @@ var items = {
     "image": "lens",
     "descr": "Поможет обмануть сканер сетчатки.",
     "quest": 1,
+    "dropfrom": ["adsf:35", "adsf:36", "adsf:39"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "177": {
     "id": 177,
@@ -3030,6 +3741,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:39", "adsf:40"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "178": {
     "id": 178,
@@ -3049,6 +3765,9 @@ var items = {
         "value": "89"
       }]
     },
+    "consumable": "useeffect",
+    "changed": 1,
+    "indacache": "1"
   },
   "179": {
     "id": 179,
@@ -3069,6 +3788,11 @@ var items = {
     "price": 70000,
     "becomepersonal": 1,
     "descr": "Холодный расчет.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "180": {
     "id": 180,
@@ -3080,7 +3804,10 @@ var items = {
     "image": "eyepatch",
     "personal": 1,
     "descr": "«Наши желания - это полужизнь, наше безразличие - это полусмерть» (с) Халиль Джебран",
-    "owner": "Kayran"
+    "owner": "Kayran",
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "181": {
     "id": 181,
@@ -3092,6 +3819,10 @@ var items = {
     "image": "finger_bones",
     "descr": "Отличное доказательство победы над Замогильником.",
     "quest": 1,
+    "dropfrom": ["adsf:11", "adsf:2", "adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "bones",
+    "indacache": "1"
   },
   "182": {
     "id": 182,
@@ -3120,6 +3851,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "indacache": "1"
   },
   "183": {
     "id": 183,
@@ -3148,6 +3881,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "indacache": "1"
   },
   "184": {
     "id": 184,
@@ -3162,7 +3897,9 @@ var items = {
     "personal": 1,
     "descr": "- 46 к интеллекту.",
     "instruction": "Смотри и тупей!",
-    "owner": "Maniak"
+    "owner": "Maniak",
+    "consumable": "explode",
+    "indacache": "1"
   },
   "185": {
     "id": 185,
@@ -3178,7 +3915,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Мы захватим этот мир, потому что мы инжир!",
-    "owner": "Трю"
+    "owner": "Трю",
+    "consumable": "none",
+    "indacache": "1"
   },
   "186": {
     "id": 186,
@@ -3191,6 +3930,8 @@ var items = {
     "reqlevel": 9,
     "image": "sleeper_eye",
     "price": 15000,
+    "consumable": "none",
+    "indacache": "1"
   },
   "187": {
     "id": 187,
@@ -3213,6 +3954,8 @@ var items = {
       }
     },
     "hidden": 1,
+    "material": "organic",
+    "indacache": "1"
   },
   "188": {
     "id": 188,
@@ -3230,6 +3973,10 @@ var items = {
         "value": "99"
       }]
     },
+    "dropfrom": ["adsf:48"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "189": {
     "id": 189,
@@ -3247,6 +3994,10 @@ var items = {
         "value": "99"
       }]
     },
+    "dropfrom": ["adsf:48"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "190": {
     "id": 190,
@@ -3264,6 +4015,10 @@ var items = {
         "value": "99"
       }]
     },
+    "dropfrom": ["adsf:48"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "191": {
     "id": 191,
@@ -3281,6 +4036,10 @@ var items = {
         "value": "99"
       }]
     },
+    "dropfrom": ["adsf:48"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "192": {
     "id": 192,
@@ -3298,6 +4057,10 @@ var items = {
         "value": "99"
       }]
     },
+    "dropfrom": ["adsf:48"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "193": {
     "id": 193,
@@ -3315,6 +4078,10 @@ var items = {
         "value": "99"
       }]
     },
+    "dropfrom": ["adsf:48"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "194": {
     "id": 194,
@@ -3332,6 +4099,10 @@ var items = {
         "value": "99"
       }]
     },
+    "dropfrom": ["adsf:48"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "195": {
     "id": 195,
@@ -3345,6 +4116,9 @@ var items = {
     "maxdur": 150,
     "image": "cap",
     "price": 1000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "196": {
     "id": 196,
@@ -3356,6 +4130,10 @@ var items = {
     "image": "haunted",
     "price": 20,
     "descr": "Неосторожное обращение в неподходящем месте может заставить эктоплазму вселиться в неодушевленный предмет.",
+    "dropfrom": ["adsf:47", "adsf:48"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "197": {
     "id": 197,
@@ -3376,6 +4154,9 @@ var items = {
     "image": "gangsta_hat",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "198": {
     "id": 198,
@@ -3398,6 +4179,9 @@ var items = {
     "image": "gangsta_boots",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "199": {
     "id": 199,
@@ -3419,6 +4203,9 @@ var items = {
     "image": "gangsta_chest",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "200": {
     "id": 200,
@@ -3441,6 +4228,9 @@ var items = {
     "image": "gangsta_mitts",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "201": {
     "id": 201,
@@ -3460,6 +4250,9 @@ var items = {
     "image": "gangsta_pants",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "202": {
     "id": 202,
@@ -3480,6 +4273,10 @@ var items = {
     "image": "twoside_axe",
     "price": 220000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "203": {
     "id": 203,
@@ -3506,6 +4303,13 @@ var items = {
         "value": "55"
       }]
     },
+    "dropfrom": ["adsf:49", "adsf:53"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "indacache": "1"
   },
   "204": {
     "id": 204,
@@ -3532,6 +4336,13 @@ var items = {
         "value": "56"
       }]
     },
+    "dropfrom": ["adsf:50", "adsf:51"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "indacache": "1"
   },
   "205": {
     "id": 205,
@@ -3558,6 +4369,13 @@ var items = {
         "value": "57"
       }]
     },
+    "dropfrom": ["adsf:52", "adsf:54"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "indacache": "1"
   },
   "206": {
     "id": 206,
@@ -3569,6 +4387,11 @@ var items = {
     "maxdur": 100,
     "image": "santa_hat",
     "newyear": 1,
+    "descr": "А что если надеть все новогодние вещи?",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "207": {
     "id": 207,
@@ -3582,6 +4405,9 @@ var items = {
     "maxdur": 100,
     "image": "santa_chest",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "208": {
     "id": 208,
@@ -3595,6 +4421,9 @@ var items = {
     "maxdur": 100,
     "image": "santa_mitts",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "209": {
     "id": 209,
@@ -3608,6 +4437,9 @@ var items = {
     "maxdur": 100,
     "image": "santa_pants",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "210": {
     "id": 210,
@@ -3621,6 +4453,9 @@ var items = {
     "maxdur": 100,
     "image": "santa_boots",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "211": {
     "id": 211,
@@ -3640,6 +4475,9 @@ var items = {
     "personal": 1,
     "descr": "Творит чудеса.",
     "newyear": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "212": {
     "id": 212,
@@ -3659,6 +4497,9 @@ var items = {
     "personal": 1,
     "descr": "Творит чудеса. Оптом.",
     "newyear": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "213": {
     "id": 213,
@@ -3678,6 +4519,11 @@ var items = {
     "personal": 1,
     "descr": "Только что из морозилки!",
     "newyear": 1,
+    "consumable": "none",
+    "buff_id": 105,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "214": {
     "id": 214,
@@ -3699,6 +4545,9 @@ var items = {
     "personal": 1,
     "descr": "Канонический наконечник для ёлки. Ёлка в комплекте не идет.",
     "newyear": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "215": {
     "id": 215,
@@ -3717,6 +4566,9 @@ var items = {
     "personal": 1,
     "descr": "Гоблины еще не научились добывать огонь.",
     "newyear": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "216": {
     "id": 216,
@@ -3734,6 +4586,9 @@ var items = {
     "personal": 1,
     "descr": "Приспособленный для боя наконечник для ёлки.",
     "newyear": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "217": {
     "id": 217,
@@ -3753,6 +4608,9 @@ var items = {
     "personal": 1,
     "descr": "Попробуй-ка отобрать такую конфетку у ребенка...",
     "newyear": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "218": {
     "id": 218,
@@ -3766,6 +4624,8 @@ var items = {
     "personal": 1,
     "validtime": 1728000,
     "giveitem": 221,
+    "consumable": "none",
+    "indacache": "1"
   },
   "219": {
     "id": 219,
@@ -3779,6 +4639,8 @@ var items = {
     "personal": 1,
     "validtime": 1728000,
     "giveitem": 222,
+    "consumable": "none",
+    "indacache": "1"
   },
   "220": {
     "id": 220,
@@ -3792,6 +4654,8 @@ var items = {
     "personal": 1,
     "validtime": 1728000,
     "giveitem": 223,
+    "consumable": "none",
+    "indacache": "1"
   },
   "221": {
     "id": 221,
@@ -3811,7 +4675,6 @@ var items = {
           "109x1": 5,
           "113x1": 5,
           "141x1": 10,
-          "141x1": 10,
           "2x1": 10,
           "139x1": 10,
           "130x1": 10,
@@ -3823,6 +4686,8 @@ var items = {
       }
     },
     "newyear": 1,
+    "consumable": "openchest",
+    "indacache": "1"
   },
   "222": {
     "id": 222,
@@ -3854,6 +4719,8 @@ var items = {
       }
     },
     "newyear": 1,
+    "consumable": "openchest",
+    "indacache": "1"
   },
   "223": {
     "id": 223,
@@ -3889,6 +4756,8 @@ var items = {
       }
     },
     "newyear": 1,
+    "consumable": "openchest",
+    "indacache": "1"
   },
   "224": {
     "id": 224,
@@ -3902,6 +4771,8 @@ var items = {
     "personal": 1,
     "descr": "Милый чуть более чем на 100%!",
     "validtime": 1036800,
+    "consumable": "none",
+    "indacache": "1"
   },
   "225": {
     "id": 225,
@@ -3915,6 +4786,9 @@ var items = {
     "personal": 1,
     "descr": "Изысканные сладости - универсальный подарок.",
     "validtime": 259200,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "226": {
     "id": 226,
@@ -3928,6 +4802,9 @@ var items = {
     "personal": 1,
     "descr": "Вечнозеленый символ Рождества.",
     "validtime": 518400,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "227": {
     "id": 227,
@@ -3941,6 +4818,8 @@ var items = {
     "personal": 1,
     "descr": "Куда же без него ;)",
     "validtime": 259200,
+    "consumable": "none",
+    "indacache": "1"
   },
   "228": {
     "id": 228,
@@ -3954,6 +4833,9 @@ var items = {
     "personal": 1,
     "descr": "Много на ёлочке шариков цветных!",
     "validtime": 1209600,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "229": {
     "id": 229,
@@ -3970,6 +4852,10 @@ var items = {
     "price": 4000,
     "personal": 1,
     "descr": "Кому-то может показаться странным наличие такого талисмана у ветерана Арены, но не стоит говорить об этом владельцу.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "indacache": "1"
   },
   "230": {
     "id": 230,
@@ -3986,6 +4872,10 @@ var items = {
     "price": 20000,
     "personal": 1,
     "descr": "Кому-то может показаться странным наличие такого талисмана у ветерана Арены, но не стоит говорить об этом владельцу.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "indacache": "1"
   },
   "231": {
     "id": 231,
@@ -4002,6 +4892,10 @@ var items = {
     "price": 60000,
     "personal": 1,
     "descr": "Кому-то может показаться странным наличие такого талисмана у ветерана Арены, но не стоит говорить об этом владельцу.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "indacache": "1"
   },
   "232": {
     "id": 232,
@@ -4018,6 +4912,11 @@ var items = {
     "price": 50000,
     "becomepersonal": 1,
     "descr": "Chicks love confidence.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "233": {
     "id": 233,
@@ -4030,6 +4929,8 @@ var items = {
     "personal": 1,
     "descr": "Призеру новогоднего конкурса.",
     "validtime": -1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "234": {
     "id": 234,
@@ -4044,6 +4945,10 @@ var items = {
     "image": "club_boots",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "235": {
     "id": 235,
@@ -4055,6 +4960,9 @@ var items = {
     "price": 100,
     "personal": 1,
     "descr": "Удача обходит вас стороной. До поры до времени.|Возможно, с другим предсказанием вам больше повезет.|Та лопата, что вы продали Элтону, была действительно легендарной.|Вам следовало убить еще одну фантазму.|Ваше будущее ждет вас в норе лукэтлогов.|Ваши лучшие времена еще впереди.|Дарите девушкам цветы! Только не те, что растут на южных болотах.|Не все то бомж, что в подвале.|Магия никуда не делась. Она просто умело скрывается от вас.|Много групп поляжет в самом скором вашем будущем.|У нас кончился черный картридж, и мы не смогли напечатать на этом предсказании текст. Простите!|Сегодня вам будет удача заточить оружие еще на единичку.|Наверняка следующее предсказание будет интереснее этого!|Успех, признание, крутые шмотки и всенародная любовь ждут вас далеко-далеко впереди.|Самое главное богатство - друзья. Особенно донаторы.|Ищите прекрасное в обычных вещах. А затем продавайте их торговцам.|Собирающийся пойти на свидание вслепую рискует стать персональным при получении.|Ваш шмот - хоть куда. Если только не придется с кем-нибудь подраться.|Велика верятность, что сегодня вы с-/roll-ите 100 из 100.|У вас много нераскрытых талантов. И с ростом уровней будут раскрываться новые.|За вами следят из космоса.|Играйте честно: в склепе еще полно незанятых саркофагов.|Вы очень нравитесь Миёри. В гастрономическом смысле.|Сегодня вас ждет приятное знакомство.|Если вы будете есть так много печенья - станете как Фери!|Лукэтлог лукэтлогу - друг, товарищ и обед.|Хорошему клочку бумаги всегда найдется применение.",
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "236": {
     "id": 236,
@@ -4081,6 +4989,14 @@ var items = {
         "value": "108"
       }]
     },
+    "dropfrom": ["adsf:115", "adsf:116", "adsf:122", "adsf:129", "adsf:131", "adsf:132", "adsf:134", "adsf:135", "adsf:136", "adsf:137", "adsf:66", "adsf:67", "adsf:68", "adsf:70", "adsf:71", "adsf:72", "adsf:75", "adsf:76", "adsf:84", "adsf:85", "adsf:89", "adsf:91", "adsf:93", "adsf:94", "adsf:98"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "237": {
     "id": 237,
@@ -4107,6 +5023,14 @@ var items = {
         "value": "107"
       }]
     },
+    "dropfrom": ["adsf:115", "adsf:116", "adsf:122", "adsf:129", "adsf:131", "adsf:132", "adsf:134", "adsf:135", "adsf:136", "adsf:137", "adsf:66", "adsf:67", "adsf:68", "adsf:70", "adsf:71", "adsf:72", "adsf:75", "adsf:76", "adsf:84", "adsf:85", "adsf:89", "adsf:91", "adsf:93", "adsf:94", "adsf:98"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "238": {
     "id": 238,
@@ -4138,6 +5062,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "239": {
     "id": 239,
@@ -4167,12 +5094,16 @@ var items = {
         }
       }
     },
+    "dropfrom": ["adsf:118"],
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "240": {
     "id": 240,
     "categ_id": 20,
     "name": "Имбирный чай",
-    "maxcnt": 10,
+    "maxcnt": 100,
     "type": "bottle",
     "rarity": "uncommon",
     "level": 3,
@@ -4180,6 +5111,10 @@ var items = {
     "image": "cup_of_tea",
     "price": 500,
     "instruction": "Двойной клик: выпить.",
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": 1,
+    "indacache": "1"
   },
   "241": {
     "id": 241,
@@ -4191,6 +5126,9 @@ var items = {
     "price": 500,
     "personal": 1,
     "descr": "Самое время попробовать что-нибудь новое. Например, спек танка.|Не верьте читерам. И не верьте Dream Team. И особенно - читерам из Dream Team.|Тот, кто ждет поражения, никогда не окажется разочарован.|Ваши таланты непременно оценят по достоинству. При условии, что вы правильно раскидаете очки талантов.|Помогите! Меня насильно держат в пекарне печенек с предсказаниями!|Завтра взойдет солнце.|Сегодня в вашей группе арены будут одни хайлевелы.|На следующем уровне кидайте все в ловкость.|Каждый охотник желает знать, где сидит ОДР.|Берегитесь черной кошки с пустыми ведрами.|Обходи трамвай спереди, автобус - сзади, а семейку Гектора - по широкой траектории.|Одна девочка экономила банки, и было ей несчастье.|Разведчика может погубить красивая женщина.|Когда молодость смеется, старость задумывается.|Бейте своих, чтобы чужие боялись.|Не пытайтесь согнуть ложку. Это невозможно.|На всякий случай прихватите в дорогу молоток.|Жизнь несется. Если не останавливаться хоть иногда и не оглядываться по сторонам, можно все пропустить.|Когда не останется выбора, выбирай настой многоножки.|Эпики - как дети: ваши всегда самые лучшие.|Все, кто достиг меньше вас - неспособия; все, кто больше - задроты.",
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "242": {
     "id": 242,
@@ -4202,6 +5140,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Не все то золото, что блестит. Но кое-какие деньги торговцы дадут и за это.|Вы проживете долгую счастливую жизнь, по ходу которой многократно воскреснете на Площади Пришельцев.|Этот мир прекрасен. Вот только обитатели его портят.|Хочешь быть пилотом? Будь им!|За вами больше не будут следить из космоса.|Однажды в студеную зимнюю пору лошадка примерзла пиписькой к забору.|Следующее обновление случится раньше, чем вы думаете.|На самом деле Жанна - не библиотекарша.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "243": {
     "id": 243,
@@ -4213,6 +5155,9 @@ var items = {
     "price": 100000,
     "personal": 1,
     "descr": "У вас много друзей и очень мало врагов среди живых.|В логове пупматов вами пугают маленьких пупматиков, когда они себя плохо ведут.|Деньги не приносят радости. А вот то, что на них можно купить...|Вас ждет великое богатство!",
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "244": {
     "id": 244,
@@ -4224,6 +5169,10 @@ var items = {
     "image": "ruby_splinter",
     "price": 200000,
     "descr": "Любой торговец даст за него хорошие деньги... Если только вы не найдете камню лучшего применения.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "245": {
     "id": 245,
@@ -4235,6 +5184,10 @@ var items = {
     "image": "sapphire_splinter",
     "price": 300000,
     "descr": "Этот камень чуть не стоил вам зуба... Впрочем, вырученных за его продажу денег хватило бы на голливудскую улыбку.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "246": {
     "id": 246,
@@ -4246,6 +5199,9 @@ var items = {
     "image": "cardamom",
     "price": 500,
     "descr": "Что только не попадается в печенье Фрэнка...",
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "247": {
     "id": 247,
@@ -4258,6 +5214,10 @@ var items = {
     "price": 10000,
     "descr": "Полновесный Золотой Лаббит новой чеканки.",
     "instruction": "Двойной клик: пополнить свой счет на 1 Лаббит.",
+    "consumable": "exchange1",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "248": {
     "id": 248,
@@ -4268,6 +5228,9 @@ var items = {
     "rarity": "rare",
     "image": "strange_note1",
     "descr": "Текст написан на незнакомом вам языке. Надо бы поспрашивать горожан об этой записке.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "249": {
     "id": 249,
@@ -4286,6 +5249,10 @@ var items = {
         "value": "474"
       }]
     },
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": 1,
+    "indacache": "1"
   },
   "250": {
     "id": 250,
@@ -4299,6 +5266,10 @@ var items = {
     "personal": 1,
     "descr": "Ничего на свете лучше нету, чем схомячить вкусную конфету!",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "251": {
     "id": 251,
@@ -4319,6 +5290,13 @@ var items = {
         "value": "500"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "252": {
     "id": 252,
@@ -4342,6 +5320,9 @@ var items = {
         "resilience": 4
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "253": {
     "id": 253,
@@ -4358,7 +5339,12 @@ var items = {
     "price": 1000000,
     "personal": 1,
     "descr": "В Багдаде все спокойно (с)",
-    "owner": "Maniak"
+    "owner": "Maniak",
+    "consumable": "none",
+    "ability_id": 195,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "254": {
     "id": 254,
@@ -4370,6 +5356,11 @@ var items = {
     "image": "eye_drop",
     "price": 5000,
     "descr": "Тренировки на пупматах не прошли даром.",
+    "dropfrom": ["adsf:40"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "255": {
     "id": 255,
@@ -4386,6 +5377,11 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "Объявлен вне закона всемирной организацией по защите древних чудовищ.",
+    "consumable": "none",
+    "uniq": 1,
+    "ability_id": 98,
+    "material": "ring",
+    "indacache": "1"
   },
   "256": {
     "id": 256,
@@ -4397,6 +5393,10 @@ var items = {
     "image": "scroll2",
     "descr": "Прочтение заклинания, записанного на этом свитке, позволит вам заново распределить характеристики персонажа.",
     "instruction": "Двойной клик: прочитать заклинание!",
+    "dropfrom": ["adsf:12", "adsf:123", "adsf:13", "adsf:133", "adsf:138", "adsf:14", "adsf:150", "adsf:38", "adsf:39", "adsf:40", "adsf:87", "adsf:92", "adsf:97", "adsf:99"],
+    "consumable": "dropstat",
+    "material": "cotton",
+    "indacache": "1"
   },
   "257": {
     "id": 257,
@@ -4408,6 +5408,10 @@ var items = {
     "image": "scroll3",
     "descr": "Прочтение заклинания, записанного на этом свитке, позволит вам заново распределить таланты.",
     "instruction": "Двойной клик: прочитать заклинание!",
+    "dropfrom": ["adsf:12", "adsf:123", "adsf:13", "adsf:133", "adsf:138", "adsf:14", "adsf:150", "adsf:38", "adsf:39", "adsf:40", "adsf:87", "adsf:92", "adsf:97", "adsf:99"],
+    "consumable": "droptalent",
+    "material": "cotton",
+    "indacache": "1"
   },
   "258": {
     "id": 258,
@@ -4419,6 +5423,10 @@ var items = {
     "image": "scroll1",
     "descr": "Прочтение заклинания, записанного на этом свитке, позволит вам заново распределить таланты. Дает на одно очко талантов больше, чем нужно. Эффект от использования нескольких свитков подряд не аккумулируется. При взятии нового уровня эффект пропадает.",
     "instruction": "Двойной клик: прочитать заклинание!",
+    "consumable": "droptalentplus",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "259": {
     "id": 259,
@@ -4430,6 +5438,10 @@ var items = {
     "image": "palarium",
     "descr": "Скорее всего инопланетного происхождения.",
     "quest": 1,
+    "dropfrom": ["adsf:66", "adsf:67", "adsf:68"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "260": {
     "id": 260,
@@ -4441,6 +5453,10 @@ var items = {
     "image": "icy_fur",
     "price": 500,
     "descr": "Используется для изготовления прохладительной одежды и прочих потребительских товаров. ",
+    "dropfrom": ["adsf:67", "adsf:68", "adsf:71"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "261": {
     "id": 261,
@@ -4470,6 +5486,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:71", "adsf:72"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "262": {
     "id": 262,
@@ -4497,6 +5517,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:71", "adsf:76"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "263": {
     "id": 263,
@@ -4525,6 +5549,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:75"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "264": {
     "id": 264,
@@ -4554,6 +5582,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:71", "adsf:72"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "265": {
     "id": 265,
@@ -4583,6 +5615,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:75"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "266": {
     "id": 266,
@@ -4614,6 +5651,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "267": {
     "id": 267,
@@ -4636,6 +5678,9 @@ var items = {
     "price": 50000,
     "becomepersonal": 1,
     "descr": "Ходят слухи, что Лурдук умеет жонглировать десятью такими штуками одновременно.",
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "268": {
     "id": 268,
@@ -4654,6 +5699,11 @@ var items = {
     "price": 60000,
     "becomepersonal": 1,
     "descr": "И тут появляешься ты...",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "269": {
     "id": 269,
@@ -4675,6 +5725,9 @@ var items = {
     "image": "long_knife",
     "price": 30000,
     "becomepersonal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "270": {
     "id": 270,
@@ -4705,6 +5758,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:70", "adsf:72"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "271": {
     "id": 271,
@@ -4734,6 +5792,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:67", "adsf:68"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "272": {
     "id": 272,
@@ -4750,6 +5812,10 @@ var items = {
     "image": "blunt_sword",
     "price": 12000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "273": {
     "id": 273,
@@ -4779,6 +5845,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:66", "adsf:70"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "274": {
     "id": 274,
@@ -4798,6 +5868,10 @@ var items = {
     "image": "long_axe",
     "price": 50000,
     "becomepersonal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "275": {
     "id": 275,
@@ -4816,6 +5890,9 @@ var items = {
     "image": "rounded_sword",
     "price": 24000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "276": {
     "id": 276,
@@ -4848,6 +5925,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:89"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "277": {
     "id": 277,
@@ -4876,6 +5957,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:76"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "278": {
     "id": 278,
@@ -4904,6 +5990,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:66"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "279": {
     "id": 279,
@@ -4934,6 +6025,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:68"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "280": {
     "id": 280,
@@ -4959,6 +6054,9 @@ var items = {
         "value": "110"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "281": {
     "id": 281,
@@ -4971,6 +6069,8 @@ var items = {
     "personal": 1,
     "descr": "Копия письма, полученного благодаря ЕКП (Единой Королевской Почте).",
     "instruction": "Двойной клик: прочесть.",
+    "consumable": "invletterread",
+    "indacache": "1"
   },
   "282": {
     "id": 282,
@@ -5002,6 +6102,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:67", "adsf:68"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "283": {
     "id": 283,
@@ -5022,6 +6127,10 @@ var items = {
     "price": 80000,
     "becomepersonal": 1,
     "descr": "Люди гибнут за металл.",
+    "consumable": "none",
+    "uniq": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "284": {
     "id": 284,
@@ -5050,6 +6159,10 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "285": {
     "id": 285,
@@ -5061,6 +6174,10 @@ var items = {
     "image": "long_feather",
     "price": 700,
     "descr": "Результат планомерного ощипывания горных разбойников. ",
+    "dropfrom": ["adsf:70", "adsf:71"],
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "286": {
     "id": 286,
@@ -5072,6 +6189,9 @@ var items = {
     "image": "nightingale_egg",
     "price": 400,
     "descr": "Страусиные яйца нервно курят в сторонке.",
+    "consumable": "none",
+    "material": "bones",
+    "indacache": "1"
   },
   "287": {
     "id": 287,
@@ -5085,6 +6205,9 @@ var items = {
     "personal": 1,
     "descr": "Да будет вечная весна! ",
     "validtime": 604800,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "288": {
     "id": 288,
@@ -5098,6 +6221,9 @@ var items = {
     "personal": 1,
     "descr": "Чиста и невинна.",
     "validtime": 1296000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "289": {
     "id": 289,
@@ -5111,6 +6237,10 @@ var items = {
     "personal": 1,
     "descr": "Да, это признание!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "290": {
     "id": 290,
@@ -5121,6 +6251,10 @@ var items = {
     "rarity": "rare",
     "image": "firemask",
     "quest": 1,
+    "dropfrom": ["adsf:68"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "291": {
     "id": 291,
@@ -5135,6 +6269,9 @@ var items = {
     "validtime": 432000,
     "giveitem": 292,
     "hidden": 1,
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "292": {
     "id": 292,
@@ -5149,6 +6286,9 @@ var items = {
     "descr": "Свободно конвертируемый кошель. ",
     "instruction": "Двойной клик: обмен на 10 лаббитов.",
     "hidden": 1,
+    "consumable": "exchange10",
+    "material": "ring",
+    "indacache": "1"
   },
   "293": {
     "id": 293,
@@ -5160,6 +6300,10 @@ var items = {
     "image": "teardrops",
     "descr": "Горькая слезинка Ено.",
     "quest": 1,
+    "dropfrom": ["adsf:73"],
+    "consumable": "none",
+    "material": "liquid",
+    "indacache": "1"
   },
   "294": {
     "id": 294,
@@ -5178,6 +6322,9 @@ var items = {
     "image": "gangsta_hat",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "295": {
     "id": 295,
@@ -5196,6 +6343,9 @@ var items = {
     "image": "gangsta_boots",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "296": {
     "id": 296,
@@ -5216,6 +6366,9 @@ var items = {
     "image": "gangsta_chest",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "indacache": "1"
   },
   "297": {
     "id": 297,
@@ -5228,6 +6381,10 @@ var items = {
     "price": 10,
     "descr": "Пушистые хвостики Ено. Пушистые и соленые от слез.",
     "quest": 1,
+    "dropfrom": ["adsf:73"],
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "298": {
     "id": 298,
@@ -5256,6 +6413,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "indacache": "1"
   },
   "299": {
     "id": 299,
@@ -5276,7 +6435,10 @@ var items = {
     "price": 100000,
     "becomepersonal": 1,
     "descr": "Если долго смотреть в Бездну, Бездна начинает смотреть на тебя.",
-    "owner": "Darkverge"
+    "owner": "Darkverge",
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "300": {
     "id": 300,
@@ -5290,6 +6452,9 @@ var items = {
     "personal": 1,
     "descr": "10х100 боевых грамм.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "301": {
     "id": 301,
@@ -5309,6 +6474,11 @@ var items = {
     "price": 200,
     "becomepersonal": 1,
     "descr": "Жизнь в черно-розовых тонах.",
+    "dropfrom": ["adsf:77"],
+    "consumable": "none",
+    "buff_id": 119,
+    "material": "cotton",
+    "indacache": "1"
   },
   "302": {
     "id": 302,
@@ -5325,6 +6495,9 @@ var items = {
     "validtime": 1296000,
     "charges": 18,
     "cooldown": 20,
+    "consumable": "printlabbit",
+    "changed": 1,
+    "indacache": "1"
   },
   "303": {
     "id": 303,
@@ -5336,6 +6509,10 @@ var items = {
     "image": "centaur_ear",
     "price": 1000,
     "descr": "Особой ценности не представляет, так как кольцо в нем из позолоченной латуни.",
+    "dropfrom": ["adsf:76", "adsf:98"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "304": {
     "id": 304,
@@ -5347,6 +6524,10 @@ var items = {
     "image": "ice_heart",
     "price": 1000,
     "descr": "Доказательство, что феи отнюдь не бессердечны.",
+    "dropfrom": ["adsf:75", "adsf:89"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "305": {
     "id": 305,
@@ -5360,6 +6541,10 @@ var items = {
     "personal": 1,
     "descr": "Лучший символ весны, нежности и красоты.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "306": {
     "id": 306,
@@ -5372,6 +6557,8 @@ var items = {
     "descr": "Бурные фантазии выжившего из ума старика, или же исторически достоверные факты?",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 3,
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "307": {
     "id": 307,
@@ -5386,6 +6573,8 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 1,
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "308": {
     "id": 308,
@@ -5400,6 +6589,9 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 2,
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "309": {
     "id": 309,
@@ -5414,6 +6606,8 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 4,
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "310": {
     "id": 310,
@@ -5440,6 +6634,13 @@ var items = {
         "value": "81"
       }]
     },
+    "dropfrom": ["adsf:82", "adsf:83"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "indacache": "1"
   },
   "311": {
     "id": 311,
@@ -5451,6 +6652,10 @@ var items = {
     "image": "broken_sword",
     "descr": "Подтверждение победы над Могучей Сестрой.",
     "quest": 1,
+    "dropfrom": ["adsf:69"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "312": {
     "id": 312,
@@ -5462,6 +6667,10 @@ var items = {
     "image": "broken_axe",
     "descr": "Подтверждение победы над Крепкой Сестрой.",
     "quest": 1,
+    "dropfrom": ["adsf:80"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "313": {
     "id": 313,
@@ -5473,6 +6682,10 @@ var items = {
     "image": "broken_mace",
     "descr": "Подтверждение победы над Коварной Сестрой.",
     "quest": 1,
+    "dropfrom": ["adsf:79"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "314": {
     "id": 314,
@@ -5502,6 +6715,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:87"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "315": {
     "id": 315,
@@ -5530,6 +6747,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:87"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "316": {
     "id": 316,
@@ -5558,6 +6779,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:87"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "317": {
     "id": 317,
@@ -5587,6 +6812,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:92"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "318": {
     "id": 318,
@@ -5616,6 +6846,11 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:92"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "319": {
     "id": 319,
@@ -5645,6 +6880,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:87", "adsf:92"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "320": {
     "id": 320,
@@ -5673,6 +6912,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:87", "adsf:92"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "321": {
     "id": 321,
@@ -5702,6 +6945,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:92"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "322": {
     "id": 322,
@@ -5723,6 +6971,11 @@ var items = {
     "price": 80000,
     "becomepersonal": 1,
     "descr": "Мои друзья всегда идут по жизни маршем.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "323": {
     "id": 323,
@@ -5741,6 +6994,10 @@ var items = {
     "price": 9000,
     "becomepersonal": 1,
     "descr": "В Канзасе таких не делают.",
+    "dropfrom": ["adsf:69", "adsf:79", "adsf:80"],
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "324": {
     "id": 324,
@@ -5771,6 +7028,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:70", "adsf:71"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "325": {
     "id": 325,
@@ -5781,6 +7042,10 @@ var items = {
     "rarity": "common",
     "image": "scheme1",
     "descr": "Нанотехнологии повсюду...",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "326": {
     "id": 326,
@@ -5792,12 +7057,16 @@ var items = {
     "image": "scheme2",
     "descr": "War, war never changes.",
     "quest": 1,
+    "dropfrom": ["adsf:17", "adsf:19"],
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "327": {
     "id": 327,
     "categ_id": 21,
     "name": "Болотный гриб",
-    "maxcnt": 40,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "common",
     "image": "amanita",
@@ -5813,6 +7082,10 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "328": {
     "id": 328,
@@ -5833,6 +7106,11 @@ var items = {
     "price": 100000,
     "becomepersonal": 1,
     "descr": "На 76 процентов больше страха и отвращения.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "329": {
     "id": 329,
@@ -5844,6 +7122,10 @@ var items = {
     "image": "orc_scalp",
     "descr": "...Инакомыслящий - значит враг!",
     "quest": 1,
+    "dropfrom": ["adsf:84", "adsf:85"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "330": {
     "id": 330,
@@ -5861,6 +7143,9 @@ var items = {
     "image": "garnet_ring",
     "price": 25000,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:87"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "331": {
     "id": 331,
@@ -5872,6 +7157,9 @@ var items = {
     "image": "rabbit_paw",
     "descr": "Лукэтлогам они удачи не принесли.",
     "quest": 1,
+    "dropfrom": ["adsf:5", "adsf:6"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "332": {
     "id": 332,
@@ -5883,6 +7171,9 @@ var items = {
     "image": "ghost_cloth",
     "descr": "Хоть что-то в Фантазмах оказалось материальным.",
     "quest": 1,
+    "dropfrom": ["adsf:1"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "333": {
     "id": 333,
@@ -5894,6 +7185,9 @@ var items = {
     "image": "cogwheel",
     "descr": "Теперь ему не шестерить...",
     "quest": 1,
+    "dropfrom": ["adsf:124", "adsf:125", "adsf:190", "adsf:191", "adsf:49", "adsf:50", "adsf:51", "adsf:52", "adsf:53", "adsf:54", "adsf:82", "adsf:83"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "334": {
     "id": 334,
@@ -5908,6 +7202,9 @@ var items = {
     "descr": "История появления людей.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 5,
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "335": {
     "id": 335,
@@ -5922,6 +7219,9 @@ var items = {
     "descr": "Незаконченный дневник неизвестного автора.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 6,
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "336": {
     "id": 336,
@@ -5936,6 +7236,9 @@ var items = {
     "descr": "Незавершенные заметки о нравах местных правителей. ",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 7,
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "337": {
     "id": 337,
@@ -5961,6 +7264,9 @@ var items = {
         "defence": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "338": {
     "id": 338,
@@ -5972,6 +7278,9 @@ var items = {
     "image": "page_for_dreven",
     "descr": "Утерянные исследования королевской экспедиции.",
     "quest": 1,
+    "dropfrom": ["adsf:30", "adsf:31"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "339": {
     "id": 339,
@@ -5983,6 +7292,9 @@ var items = {
     "image": "page_for_coach",
     "descr": "Набор псевдонаучных очерков о воздействии эктоплазмы на кресла.",
     "quest": 1,
+    "dropfrom": ["adsf:47"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "340": {
     "id": 340,
@@ -6001,6 +7313,10 @@ var items = {
         "value": "140"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "341": {
     "id": 341,
@@ -6015,6 +7331,8 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 10,
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "342": {
     "id": 342,
@@ -6029,6 +7347,8 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 12,
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "343": {
     "id": 343,
@@ -6042,6 +7362,9 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 9,
+    "dropfrom": ["adsf:73", "adsf:77"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "344": {
     "id": 344,
@@ -6055,6 +7378,9 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 8,
+    "dropfrom": ["adsf:2", "adsf:3", "adsf:7"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "345": {
     "id": 345,
@@ -6068,6 +7394,9 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 13,
+    "dropfrom": ["adsf:48"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "346": {
     "id": 346,
@@ -6081,6 +7410,9 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 11,
+    "dropfrom": ["adsf:11"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "347": {
     "id": 347,
@@ -6108,6 +7440,12 @@ var items = {
         "value": "95"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "348": {
     "id": 348,
@@ -6122,6 +7460,10 @@ var items = {
     "bottleparams": {
       "discount": 1
     },
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "349": {
     "id": 349,
@@ -6137,6 +7479,11 @@ var items = {
     "price": 30000,
     "becomepersonal": 1,
     "descr": "Вооружившись этим зеркальцем, вы, наконец, сможете противостоять убийственному дыханию дракона.",
+    "dropfrom": ["adsf:97"],
+    "consumable": "none",
+    "buff_id": 141,
+    "material": "ring",
+    "indacache": "1"
   },
   "350": {
     "id": 350,
@@ -6167,6 +7514,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "351": {
     "id": 351,
@@ -6198,6 +7549,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "buff_id": 160,
+    "changed": 1,
+    "indacache": "1"
   },
   "352": {
     "id": 352,
@@ -6226,6 +7582,12 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "buff_id": 156,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "353": {
     "id": 353,
@@ -6256,6 +7618,12 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "buff_id": 168,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "354": {
     "id": 354,
@@ -6282,6 +7650,12 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "buff_id": 158,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "355": {
     "id": 355,
@@ -6311,6 +7685,11 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "buff_id": 162,
+    "changed": 1,
+    "indacache": "1"
   },
   "356": {
     "id": 356,
@@ -6342,6 +7721,12 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "buff_id": 166,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "357": {
     "id": 357,
@@ -6360,6 +7745,10 @@ var items = {
         "value": "151"
       }]
     },
+    "dropfrom": ["adsf:97"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "358": {
     "id": 358,
@@ -6379,12 +7768,16 @@ var items = {
         "value": "150"
       }]
     },
+    "dropfrom": ["adsf:97"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "359": {
     "id": 359,
     "categ_id": 22,
     "name": "Эликсир Гиперактивности",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "rare",
     "image": "shroom_btl_3",
@@ -6397,6 +7790,11 @@ var items = {
         "value": "152"
       }]
     },
+    "dropfrom": ["adsf:97"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "360": {
     "id": 360,
@@ -6415,6 +7813,10 @@ var items = {
         "value": "153"
       }]
     },
+    "dropfrom": ["adsf:97"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "361": {
     "id": 361,
@@ -6424,6 +7826,9 @@ var items = {
     "type": "trinket",
     "rarity": "rare",
     "image": "dried_mushroom",
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "362": {
     "id": 362,
@@ -6435,6 +7840,10 @@ var items = {
     "image": "ancient_lichen_emerald",
     "price": 2000,
     "descr": "Фрагмент очень древнего камня, являющегося одной из ключевых частей какой-то таинственной композиции.",
+    "dropfrom": ["adsf:93"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "363": {
     "id": 363,
@@ -6446,6 +7855,10 @@ var items = {
     "image": "ancient_lichen_green",
     "price": 1000,
     "descr": "Очень древний камень, испещренный таинственными узорами.",
+    "dropfrom": ["adsf:94"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "364": {
     "id": 364,
@@ -6464,6 +7877,11 @@ var items = {
         "value": "154"
       }]
     },
+    "dropfrom": ["adsf:97"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "365": {
     "id": 365,
@@ -6490,6 +7908,10 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "366": {
     "id": 366,
@@ -6501,6 +7923,10 @@ var items = {
     "image": "lava_heart",
     "price": 2000,
     "descr": "А вместо сердца пламенный мотор.",
+    "dropfrom": ["adsf:91"],
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "367": {
     "id": 367,
@@ -6512,6 +7938,9 @@ var items = {
     "image": "fish_dead",
     "descr": "Скелет маленькой зомборыбки, съеденной большой зомборыбкой.",
     "quest": 1,
+    "dropfrom": ["adsf:90"],
+    "consumable": "none",
+    "indacache": "1"
   },
   "368": {
     "id": 368,
@@ -6523,6 +7952,9 @@ var items = {
     "image": "spoon1",
     "price": 2000,
     "descr": "Акустические блесны - это блесны, которые во время своего движения издают различные шумы",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "369": {
     "id": 369,
@@ -6534,6 +7966,9 @@ var items = {
     "image": "spoon2",
     "price": 2000,
     "descr": "Во время движения в воде эта блесна совершает колебательные движения, это понятно из ее названия.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "370": {
     "id": 370,
@@ -6545,6 +7980,9 @@ var items = {
     "image": "spoon3",
     "price": 2000,
     "descr": "Сегодня одной из лучших незацепляющихся блесен является блесна с крючком, который все время до момента поклевки остается в собранном виде.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "371": {
     "id": 371,
@@ -6556,6 +7994,9 @@ var items = {
     "image": "spoon4",
     "price": 2000,
     "descr": "Хорошая вращающаяся блесна легко начинает вращаться с места при самой медленной проводке.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "372": {
     "id": 372,
@@ -6572,6 +8013,10 @@ var items = {
     "descr": "Могущественнейший артефакт. Хотя это как повезет...",
     "instruction": "Двойной клик: использовать Заряд Рандома.",
     "charges": 13,
+    "consumable": "randomsharp",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "373": {
     "id": 373,
@@ -6585,6 +8030,10 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 14,
+    "dropfrom": ["adsf:16", "adsf:18", "adsf:43"],
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "374": {
     "id": 374,
@@ -6598,6 +8047,10 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 15,
+    "dropfrom": ["adsf:20", "adsf:21", "adsf:22"],
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "375": {
     "id": 375,
@@ -6611,6 +8064,10 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 17,
+    "dropfrom": ["adsf:17", "adsf:19"],
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "376": {
     "id": 376,
@@ -6624,6 +8081,10 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 16,
+    "dropfrom": ["adsf:35"],
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "377": {
     "id": 377,
@@ -6637,6 +8098,10 @@ var items = {
     "descr": "Все самое интересное - внутри.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 18,
+    "dropfrom": ["adsf:41"],
+    "consumable": "readbook",
+    "material": "cotton",
+    "indacache": "1"
   },
   "378": {
     "id": 378,
@@ -6666,6 +8131,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:123"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "379": {
     "id": 379,
@@ -6696,6 +8166,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:123"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "380": {
     "id": 380,
@@ -6725,6 +8200,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:122", "adsf:129"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "381": {
     "id": 381,
@@ -6754,6 +8234,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:123"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "382": {
     "id": 382,
@@ -6783,6 +8268,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:122", "adsf:129"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "383": {
     "id": 383,
@@ -6812,6 +8302,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:116", "adsf:123"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "384": {
     "id": 384,
@@ -6840,6 +8335,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:116", "adsf:123"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "385": {
     "id": 385,
@@ -6870,6 +8370,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:116", "adsf:123"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "386": {
     "id": 386,
@@ -6885,6 +8390,9 @@ var items = {
     "personal": 1,
     "descr": "Это любимая руна гномьего бога Тейррека, покровителя древних взломщиков, медвежатников и прочих рыцарей отмычки и фомки.",
     "instruction": "Двойной клик: вскрыть рунный замок.",
+    "consumable": "runekey",
+    "material": "ring",
+    "indacache": "1"
   },
   "387": {
     "id": 387,
@@ -6915,6 +8423,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "388": {
     "id": 388,
@@ -6949,6 +8460,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "389": {
     "id": 389,
@@ -6979,6 +8493,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "390": {
     "id": 390,
@@ -6990,6 +8507,10 @@ var items = {
     "image": "sack",
     "descr": "Пойманный монстр яростно рычит и ворочается, что явственно свидетельствует о его недовольстве текущим положением дел. ",
     "quest": 1,
+    "dropfrom": ["adsf:113", "adsf:114", "adsf:115", "adsf:116", "adsf:117", "adsf:122", "adsf:129", "adsf:130", "adsf:131", "adsf:132", "adsf:134", "adsf:135", "adsf:136", "adsf:137", "adsf:16", "adsf:17", "adsf:18", "adsf:19", "adsf:193", "adsf:194", "adsf:195", "adsf:196", "adsf:197", "adsf:199", "adsf:20", "adsf:200", "adsf:203", "adsf:205", "adsf:208", "adsf:209", "adsf:21", "adsf:210", "adsf:211", "adsf:212", "adsf:215", "adsf:218", "adsf:22", "adsf:246", "adsf:251", "adsf:258", "adsf:259", "adsf:263", "adsf:268", "adsf:269", "adsf:275", "adsf:30", "adsf:31", "adsf:41", "adsf:43", "adsf:47", "adsf:48", "adsf:66", "adsf:67", "adsf:68", "adsf:70", "adsf:71", "adsf:72", "adsf:75", "adsf:76", "adsf:77", "adsf:84", "adsf:85", "adsf:89", "adsf:91", "adsf:93", "adsf:94", "adsf:98"],
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "391": {
     "id": 391,
@@ -7000,6 +8521,8 @@ var items = {
     "rarity": "uncommon",
     "image": 1,
     "quest": 1,
+    "consumable": "none",
+    "indacache": "1"
   },
   "392": {
     "id": 392,
@@ -7026,6 +8549,10 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "393": {
     "id": 393,
@@ -7038,6 +8565,9 @@ var items = {
     "price": 8420,
     "descr": "Выглядит знакомо...",
     "instruction": "Инструкция: Продать торговцу, получить монеты.",
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "394": {
     "id": 394,
@@ -7048,6 +8578,9 @@ var items = {
     "rarity": "common",
     "image": "anchor",
     "price": 3660,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "395": {
     "id": 395,
@@ -7075,6 +8608,10 @@ var items = {
       }
     },
     "quest": 1,
+    "dropfrom": ["adsf:43"],
+    "consumable": "useeffect",
+    "material": "organic",
+    "indacache": "1"
   },
   "396": {
     "id": 396,
@@ -7094,6 +8631,10 @@ var items = {
         "engrave": 100
       }
     },
+    "consumable": "engrave",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "397": {
     "id": 397,
@@ -7114,7 +8655,10 @@ var items = {
     "price": 300000,
     "personal": 1,
     "descr": "Pity! Your mind has been fried already",
-    "owner": "Meow"
+    "owner": "Meow",
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "398": {
     "id": 398,
@@ -7128,6 +8672,10 @@ var items = {
     "personal": 1,
     "descr": "Оружие Победы!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "399": {
     "id": 399,
@@ -7141,6 +8689,10 @@ var items = {
     "personal": 1,
     "descr": "Make love. Not war.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "400": {
     "id": 400,
@@ -7154,6 +8706,10 @@ var items = {
     "personal": 1,
     "descr": "Первым делом, первым делом...",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "401": {
     "id": 401,
@@ -7171,6 +8727,11 @@ var items = {
     "price": 1700,
     "becomepersonal": 1,
     "descr": "Rock the baby!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "402": {
     "id": 402,
@@ -7190,6 +8751,11 @@ var items = {
     "price": 3500,
     "becomepersonal": 1,
     "descr": "Мы пришли с миром!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "403": {
     "id": 403,
@@ -7203,12 +8769,16 @@ var items = {
     "personal": 1,
     "descr": "Временное освобождение от грехов. Действительно 15 дней.",
     "validtime": 1296000,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "404": {
     "id": 404,
     "categ_id": 23,
     "name": "Мистические часы",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "rare",
     "image": "magic_sandclock",
@@ -7216,6 +8786,11 @@ var items = {
     "personal": 1,
     "descr": "Удаляет все сохраненные копии подземелий.",
     "instruction": "Двойной клик: удалить все сохраненные копии подземелий.",
+    "dropfrom": ["adsf:100", "adsf:101", "adsf:102", "adsf:103", "adsf:104", "adsf:106", "adsf:108", "adsf:110", "adsf:111", "adsf:288", "adsf:289", "adsf:290", "adsf:292", "adsf:293", "adsf:294", "adsf:295", "adsf:296", "adsf:297", "adsf:298"],
+    "consumable": "dropcooldown",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "405": {
     "id": 405,
@@ -7227,6 +8802,10 @@ var items = {
     "image": "stone_debris",
     "price": 5000,
     "descr": "Навечно проклят, как и его предыдущий владелец.",
+    "dropfrom": ["adsf:100", "adsf:101", "adsf:102", "adsf:103", "adsf:104", "adsf:106", "adsf:108", "adsf:110", "adsf:111", "adsf:288", "adsf:289", "adsf:290", "adsf:292", "adsf:293", "adsf:294", "adsf:295", "adsf:296", "adsf:297", "adsf:298"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "406": {
     "id": 406,
@@ -7241,6 +8820,11 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "Все дозволено... кроме того, что противоречит правилам.",
+    "dropfrom": ["adsf:111"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "indacache": "1"
   },
   "407": {
     "id": 407,
@@ -7269,6 +8853,11 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:100"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "408": {
     "id": 408,
@@ -7280,7 +8869,7 @@ var items = {
     "level": 9,
     "reqlevel": 10,
     "maxdur": 140,
-    "defence": 14,
+    "defence": 34,
     "strength": 4,
     "stamina": 4,
     "mastery": 36,
@@ -7288,6 +8877,11 @@ var items = {
     "price": 180000,
     "becomepersonal": 1,
     "descr": "В московский ОМОН вступил покемон.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "409": {
     "id": 409,
@@ -7298,6 +8892,9 @@ var items = {
     "rarity": "common",
     "image": "herb_pinkclover",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "410": {
     "id": 410,
@@ -7321,6 +8918,11 @@ var items = {
       }
     },
     "giveitem": 409,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "411": {
     "id": 411,
@@ -7331,6 +8933,11 @@ var items = {
     "rarity": "common",
     "image": "herb_needler",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "412": {
     "id": 412,
@@ -7342,6 +8949,10 @@ var items = {
     "image": "empty_btl_3",
     "price": 1000,
     "descr": "Пустой сосуд для приготовления необычных зелий.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "413": {
     "id": 413,
@@ -7352,6 +8963,11 @@ var items = {
     "rarity": "common",
     "image": "herb_pirosium",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "414": {
     "id": 414,
@@ -7362,6 +8978,11 @@ var items = {
     "rarity": "common",
     "image": "herb_firebug",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "415": {
     "id": 415,
@@ -7372,6 +8993,11 @@ var items = {
     "rarity": "common",
     "image": "herb_palmire",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "416": {
     "id": 416,
@@ -7382,6 +9008,11 @@ var items = {
     "rarity": "common",
     "image": "herb_yellowgrass",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "417": {
     "id": 417,
@@ -7392,6 +9023,10 @@ var items = {
     "rarity": "uncommon",
     "image": "flower_camomile",
     "price": 10,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "418": {
     "id": 418,
@@ -7402,6 +9037,9 @@ var items = {
     "rarity": "uncommon",
     "image": "flower_alfalfa",
     "price": 10,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "419": {
     "id": 419,
@@ -7412,6 +9050,9 @@ var items = {
     "rarity": "uncommon",
     "image": "flower_firework",
     "price": 10,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "420": {
     "id": 420,
@@ -7422,6 +9063,9 @@ var items = {
     "rarity": "uncommon",
     "image": "flower_poppy",
     "price": 10,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "421": {
     "id": 421,
@@ -7432,6 +9076,9 @@ var items = {
     "rarity": "uncommon",
     "image": "flower_cornflower",
     "price": 10,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "422": {
     "id": 422,
@@ -7442,6 +9089,9 @@ var items = {
     "rarity": "uncommon",
     "image": "flower_echinacea",
     "price": 10,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "423": {
     "id": 423,
@@ -7465,6 +9115,11 @@ var items = {
       }
     },
     "giveitem": 411,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "424": {
     "id": 424,
@@ -7488,6 +9143,11 @@ var items = {
       }
     },
     "giveitem": 413,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "425": {
     "id": 425,
@@ -7503,14 +9163,19 @@ var items = {
       "mincnt": 6,
       "maxcnt": 12,
       "alsorise": {
-        "420": 20,
         "419": 10,
+        "420": 20,
         "450": 1,
         "576x1": 0.2,
         "577x1": 0.02
       }
     },
     "giveitem": 414,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "426": {
     "id": 426,
@@ -7526,14 +9191,19 @@ var items = {
       "mincnt": 4,
       "maxcnt": 8,
       "alsorise": {
-        "421": 20,
         "418": 10,
+        "421": 20,
         "450": 1,
         "576x1": 0.2,
         "577x1": 0.02
       }
     },
     "giveitem": 415,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "427": {
     "id": 427,
@@ -7549,14 +9219,19 @@ var items = {
       "mincnt": 2,
       "maxcnt": 4,
       "alsorise": {
-        "422": 20,
         "417": 10,
+        "422": 20,
         "450": 1,
         "576x1": 0.2,
         "577x1": 0.02
       }
     },
     "giveitem": 416,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "428": {
     "id": 428,
@@ -7567,6 +9242,11 @@ var items = {
     "rarity": "common",
     "image": "herb_ivy",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "429": {
     "id": 429,
@@ -7577,6 +9257,10 @@ var items = {
     "rarity": "uncommon",
     "image": "herb_plantain",
     "price": 500,
+    "dropfrom": ["adsf:117"],
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "430": {
     "id": 430,
@@ -7587,6 +9271,9 @@ var items = {
     "rarity": "rare",
     "image": "herb_bluegrass",
     "price": 1000,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "431": {
     "id": 431,
@@ -7597,6 +9284,9 @@ var items = {
     "rarity": "rare",
     "image": "herb_clover",
     "price": 1000,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "432": {
     "id": 432,
@@ -7607,6 +9297,10 @@ var items = {
     "rarity": "rare",
     "image": "flower_equisetum",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "433": {
     "id": 433,
@@ -7617,6 +9311,10 @@ var items = {
     "rarity": "rare",
     "image": "flower_tansy",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "434": {
     "id": 434,
@@ -7627,6 +9325,10 @@ var items = {
     "rarity": "rare",
     "image": "flower_pinky",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "435": {
     "id": 435,
@@ -7637,6 +9339,10 @@ var items = {
     "rarity": "rare",
     "image": "flower_buttercaps",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "436": {
     "id": 436,
@@ -7654,6 +9360,11 @@ var items = {
         "value": "185"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "437": {
     "id": 437,
@@ -7671,6 +9382,11 @@ var items = {
         "value": "185"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "438": {
     "id": 438,
@@ -7688,6 +9404,9 @@ var items = {
         "value": "185"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "indacache": "1"
   },
   "439": {
     "id": 439,
@@ -7699,6 +9418,11 @@ var items = {
     "image": "empty_btl_1",
     "price": 100,
     "descr": "Пустой сосуд для приготовления простых зелий.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "440": {
     "id": 440,
@@ -7710,6 +9434,11 @@ var items = {
     "image": "empty_btl_2",
     "price": 200,
     "descr": "Пустой сосуд для приготовления зелий. Годится для хранения умеренно агрессивных жидкостей.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "441": {
     "id": 441,
@@ -7721,6 +9450,10 @@ var items = {
     "image": "empty_btl_4",
     "price": 100,
     "descr": "Пустой сосуд для приготовления зелий. Подходит для сумеречных настоев.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "442": {
     "id": 442,
@@ -7732,6 +9465,10 @@ var items = {
     "image": "empty_btl_5",
     "price": 1,
     "descr": "Пустой сосуд для приготовления зелий.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "443": {
     "id": 443,
@@ -7746,6 +9483,9 @@ var items = {
     "bottleparams": {
       "cntplus": "5"
     },
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "444": {
     "id": 444,
@@ -7760,6 +9500,9 @@ var items = {
     "bottleparams": {
       "cntmult": "2"
     },
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "445": {
     "id": 445,
@@ -7774,6 +9517,9 @@ var items = {
     "bottleparams": {
       "cntmult": "4"
     },
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "446": {
     "id": 446,
@@ -7788,6 +9534,9 @@ var items = {
     "bottleparams": {
       "timediv": "2"
     },
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "447": {
     "id": 447,
@@ -7802,6 +9551,9 @@ var items = {
     "bottleparams": {
       "time": "1800"
     },
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "448": {
     "id": 448,
@@ -7816,6 +9568,9 @@ var items = {
     "bottleparams": {
       "alsoriseplus": "25"
     },
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "449": {
     "id": 449,
@@ -7837,6 +9592,11 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Why so?..",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "450": {
     "id": 450,
@@ -7848,6 +9608,10 @@ var items = {
     "image": "weed_1",
     "price": 20,
     "descr": "В больших количествах произрастает в Чилтоне.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "451": {
     "id": 451,
@@ -7860,6 +9624,9 @@ var items = {
     "price": 70000,
     "personal": 1,
     "descr": "Трофей, достойный великого героя.",
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "452": {
     "id": 452,
@@ -7877,6 +9644,11 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "changed": "1"
   },
   "453": {
     "id": 453,
@@ -7899,6 +9671,11 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_mob": 1,
+    "changed": "1"
   },
   "454": {
     "id": 454,
@@ -7918,6 +9695,10 @@ var items = {
     "image": "monk_t1_boots",
     "price": 171700,
     "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "455": {
     "id": 455,
@@ -7937,6 +9718,10 @@ var items = {
     "image": "pal_t1_boots",
     "price": 171700,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "456": {
     "id": 456,
@@ -7957,6 +9742,9 @@ var items = {
     "image": "monk_t1_chest",
     "price": 340000,
     "personal": 1,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "457": {
     "id": 457,
@@ -7977,6 +9765,10 @@ var items = {
     "image": "pal_t1_chest",
     "price": 340000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "458": {
     "id": 458,
@@ -7997,6 +9789,10 @@ var items = {
     "image": "monk_t1_hood",
     "price": 160900,
     "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "459": {
     "id": 459,
@@ -8017,6 +9813,10 @@ var items = {
     "image": "pal_t1_glasses",
     "price": 160900,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "460": {
     "id": 460,
@@ -8037,6 +9837,10 @@ var items = {
     "image": "monk_t1_mitts",
     "price": 150000,
     "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "461": {
     "id": 461,
@@ -8057,6 +9861,10 @@ var items = {
     "image": "pal_t1_mitts",
     "price": 150000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "462": {
     "id": 462,
@@ -8077,6 +9885,10 @@ var items = {
     "image": "monk_t1_pants",
     "price": 199800,
     "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "463": {
     "id": 463,
@@ -8097,12 +9909,16 @@ var items = {
     "image": "pal_t1_pants",
     "price": 199800,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "464": {
     "id": 464,
     "categ_id": 23,
     "name": "Приманка",
-    "maxcnt": 10,
+    "maxcnt": 20,
     "type": "other",
     "rarity": "uncommon",
     "image": "meat_mace",
@@ -8114,6 +9930,11 @@ var items = {
       "locations": "140,141",
       "attackmob": "{\"113x1\":30,\"113x2\":10,\"114x1\":30,\"114x2\":10,\"115x1\":20}"
     },
+    "dropfrom": ["adsf:113", "adsf:114"],
+    "consumable": "attackmob",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "465": {
     "id": 465,
@@ -8132,6 +9953,9 @@ var items = {
       "attackmob": "{\"114x1\":70,\"114x2\":30}"
     },
     "hidden": 1,
+    "consumable": "attackmob",
+    "material": "organic",
+    "changed": "1"
   },
   "466": {
     "id": 466,
@@ -8145,6 +9969,9 @@ var items = {
     "descr": "Несколько листов из дневника, который, по-видимому, принадлежал Джеральду.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 19,
+    "dropfrom": ["adsf:115"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "467": {
     "id": 467,
@@ -8158,6 +9985,9 @@ var items = {
     "descr": "Несколько листов из дневника, который, по-видимому, принадлежал Джеральду.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 20,
+    "dropfrom": ["adsf:115"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "468": {
     "id": 468,
@@ -8171,6 +10001,9 @@ var items = {
     "descr": "Несколько листов из дневника, который, по-видимому, принадлежал Джеральду.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 21,
+    "dropfrom": ["adsf:115"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "469": {
     "id": 469,
@@ -8184,6 +10017,9 @@ var items = {
     "descr": "Несколько листов из дневника, который, по-видимому, принадлежал Джеральду.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 22,
+    "dropfrom": ["adsf:115"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "470": {
     "id": 470,
@@ -8197,6 +10033,9 @@ var items = {
     "descr": "Несколько листов из дневника, который, по-видимому, принадлежал Джеральду.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 23,
+    "dropfrom": ["adsf:115"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "471": {
     "id": 471,
@@ -8209,6 +10048,10 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Можно обменять на право бесплатно заказать персональную аватару у лучших художников мира.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "472": {
     "id": 472,
@@ -8222,12 +10065,17 @@ var items = {
       "discount": 30
     },
     "hidden": 1,
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "changed": "1"
   },
   "473": {
     "id": 473,
     "categ_id": 20,
     "name": "Кустарный энергетический настой",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "common",
     "level": 1,
@@ -8247,6 +10095,11 @@ var items = {
         "value": "0.05"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "474": {
     "id": 474,
@@ -8270,9 +10123,15 @@ var items = {
       }],
       "effects": [{
         "type": "maxhp",
-        "value": 0.1
+        "value": "0.1"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "475": {
     "id": 475,
@@ -8297,9 +10156,15 @@ var items = {
       }],
       "effects": [{
         "type": "maxhp",
-        "value": 0.2
+        "value": "0.2"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "476": {
     "id": 476,
@@ -8322,6 +10187,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "477": {
     "id": 477,
@@ -8344,6 +10213,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "478": {
     "id": 478,
@@ -8368,6 +10241,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "479": {
     "id": 479,
@@ -8390,6 +10267,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "480": {
     "id": 480,
@@ -8414,6 +10295,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "481": {
     "id": 481,
@@ -8436,6 +10321,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "482": {
     "id": 482,
@@ -8458,6 +10347,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "483": {
     "id": 483,
@@ -8480,6 +10373,10 @@ var items = {
     "price": 110000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "484": {
     "id": 484,
@@ -8497,6 +10394,10 @@ var items = {
     "price": 8000,
     "personal": 1,
     "descr": "Если пристально вглядываться в рубины, то можно сойти с ума.",
+    "dropfrom": ["adsf:118"],
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "485": {
     "id": 485,
@@ -8516,6 +10417,10 @@ var items = {
     "price": 190000,
     "becomepersonal": 1,
     "descr": "Одобрено гуркской бригадой.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "486": {
     "id": 486,
@@ -8556,6 +10461,12 @@ var items = {
         "value": "202"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "487": {
     "id": 487,
@@ -8596,6 +10507,12 @@ var items = {
         "value": "150"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "488": {
     "id": 488,
@@ -8636,6 +10553,12 @@ var items = {
         "value": "128"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "489": {
     "id": 489,
@@ -8679,6 +10602,12 @@ var items = {
         "value": "140,141"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "490": {
     "id": 490,
@@ -8719,6 +10648,12 @@ var items = {
         "value": "203"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "491": {
     "id": 491,
@@ -8759,6 +10694,13 @@ var items = {
         "value": "204"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_oppgroup": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "492": {
     "id": 492,
@@ -8788,6 +10730,10 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "493": {
     "id": 493,
@@ -8801,6 +10747,9 @@ var items = {
     "descr": "Древний манускрипт, написанный одним из исследователей Северных Гор.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 24,
+    "dropfrom": ["adsf:76", "adsf:98"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "494": {
     "id": 494,
@@ -8830,6 +10779,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:123"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "495": {
     "id": 495,
@@ -8869,6 +10823,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "496": {
     "id": 496,
@@ -8881,12 +10838,16 @@ var items = {
     "price": 300,
     "descr": "Дзынь-дзынь-дзынь. Дзынь-дзынь-дзынь. Колокольчик звенит...",
     "quest": 1,
+    "dropfrom": ["adsf:122"],
+    "consumable": "none",
+    "material": "ring",
+    "indacache": "1"
   },
   "497": {
     "id": 497,
     "categ_id": 22,
     "name": "Глинтвейн",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "rare",
     "image": "mulled_wine",
@@ -8900,6 +10861,9 @@ var items = {
         "value": "213"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "498": {
     "id": 498,
@@ -8912,6 +10876,11 @@ var items = {
     "price": 20000,
     "personal": 1,
     "descr": "Осколок древней руны из храма Солнца, впитавший в себя милость Азазеля.",
+    "dropfrom": ["adsf:123"],
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "499": {
     "id": 499,
@@ -8924,6 +10893,10 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Осколок древней руны из ящика Пандоры, куда Азазель поместил всю свою ярость.",
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "500": {
     "id": 500,
@@ -8947,6 +10920,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "501": {
     "id": 501,
@@ -8970,6 +10947,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "502": {
     "id": 502,
@@ -8992,6 +10973,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "503": {
     "id": 503,
@@ -9016,6 +11001,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "504": {
     "id": 504,
@@ -9039,6 +11028,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "505": {
     "id": 505,
@@ -9063,6 +11056,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "506": {
     "id": 506,
@@ -9085,6 +11082,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "507": {
     "id": 507,
@@ -9108,6 +11109,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "508": {
     "id": 508,
@@ -9154,6 +11159,9 @@ var items = {
       }
     },
     "validtime": 86400,
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "509": {
     "id": 509,
@@ -9202,6 +11210,9 @@ var items = {
       }
     },
     "validtime": 86400,
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "510": {
     "id": 510,
@@ -9250,6 +11261,9 @@ var items = {
       }
     },
     "validtime": 86400,
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "511": {
     "id": 511,
@@ -9290,6 +11304,9 @@ var items = {
       }
     },
     "validtime": 86400,
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "512": {
     "id": 512,
@@ -9305,6 +11322,9 @@ var items = {
     "descr": "Лотерейный билет на праздничный розыгрыш персональной аватары в честь дня рождения Lost Magic! Участвуют все!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "513": {
     "id": 513,
@@ -9320,6 +11340,9 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш персональной аватары в честь дня рождения Lost Magic! Участвуют 25 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "514": {
     "id": 514,
@@ -9335,6 +11358,9 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального вечного подарка в честь дня рождения Lost Magic! Участвуют 20 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "515": {
     "id": 515,
@@ -9350,6 +11376,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального игрового предмета в честь Нового Года! Участвуют 100 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "516": {
     "id": 516,
@@ -9364,6 +11394,9 @@ var items = {
     "descr": "С днем рождения, Lost Magic!",
     "validtime": 1209600,
     "giveitem": 518,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "517": {
     "id": 517,
@@ -9378,6 +11411,9 @@ var items = {
     "descr": "С днем рождения, Lost Magic! Танцы, пляски, веселье!",
     "validtime": 1209600,
     "giveitem": 519,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "518": {
     "id": 518,
@@ -9391,6 +11427,9 @@ var items = {
     "personal": 1,
     "descr": "С днем рождения, Lost Magic!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "519": {
     "id": 519,
@@ -9404,6 +11443,9 @@ var items = {
     "personal": 1,
     "descr": "С днем рождения, Lost Magic! Танцы, пляски, веселье!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "520": {
     "id": 520,
@@ -9423,6 +11465,9 @@ var items = {
     "validtime": 604800,
     "newyear": 1,
     "charges": 7,
+    "consumable": "randomsharp",
+    "material": "cotton",
+    "indacache": "1"
   },
   "521": {
     "id": 521,
@@ -9442,6 +11487,9 @@ var items = {
     "validtime": 604800,
     "newyear": 1,
     "charges": 6,
+    "consumable": "randomsharp",
+    "material": "cotton",
+    "indacache": "1"
   },
   "522": {
     "id": 522,
@@ -9461,6 +11509,9 @@ var items = {
     "validtime": 604800,
     "newyear": 1,
     "charges": 5,
+    "consumable": "randomsharp",
+    "material": "cotton",
+    "indacache": "1"
   },
   "523": {
     "id": 523,
@@ -9480,6 +11531,9 @@ var items = {
     "validtime": 604800,
     "newyear": 1,
     "charges": 6,
+    "consumable": "randomsharp",
+    "material": "cotton",
+    "indacache": "1"
   },
   "524": {
     "id": 524,
@@ -9499,6 +11553,9 @@ var items = {
     "validtime": 604800,
     "newyear": 1,
     "charges": 5,
+    "consumable": "randomsharp",
+    "material": "cotton",
+    "indacache": "1"
   },
   "525": {
     "id": 525,
@@ -9516,6 +11573,10 @@ var items = {
     "validtime": 604800,
     "newyear": 1,
     "charges": 4,
+    "consumable": "randomsharp",
+    "uniq": 1,
+    "material": "cotton",
+    "indacache": "1"
   },
   "526": {
     "id": 526,
@@ -9531,6 +11592,9 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального игрового предмета в честь дня рождения Lost Magic! Участвуют 50 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "527": {
     "id": 527,
@@ -9546,6 +11610,9 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального игрового предмета в честь дня рождения Lost Magic! Участвуют 50 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "528": {
     "id": 528,
@@ -9572,6 +11639,13 @@ var items = {
         "value": "126"
       }]
     },
+    "dropfrom": ["adsf:124", "adsf:125"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "indacache": "1"
   },
   "529": {
     "id": 529,
@@ -9585,6 +11659,9 @@ var items = {
     "descr": "Древний манускрипт, написанный одним из исследователей Северных Гор.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 25,
+    "dropfrom": ["adsf:67", "adsf:68"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "530": {
     "id": 530,
@@ -9598,6 +11675,9 @@ var items = {
     "descr": "Древний манускрипт, написанный одним из исследователей Северных Гор.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 26,
+    "dropfrom": ["adsf:70", "adsf:71"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "531": {
     "id": 531,
@@ -9611,6 +11691,9 @@ var items = {
     "descr": "Древний манускрипт, написанный одним из исследователей Северных Гор.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 27,
+    "dropfrom": ["adsf:72"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "532": {
     "id": 532,
@@ -9624,6 +11707,9 @@ var items = {
     "descr": "Древний манускрипт, написанный одним из исследователей Северных Гор.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 28,
+    "dropfrom": ["adsf:75", "adsf:89", "adsf:91"],
+    "consumable": "readbook",
+    "indacache": "1"
   },
   "533": {
     "id": 533,
@@ -9639,6 +11725,9 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш персональной аватары в честь дня рождения Lost Magic! Участвуют 25 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "534": {
     "id": 534,
@@ -9655,6 +11744,9 @@ var items = {
     "personal": 1,
     "descr": "Ой, да не смешите мои тапочки...",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "535": {
     "id": 535,
@@ -9671,6 +11763,9 @@ var items = {
     "personal": 1,
     "descr": "Подтяжки не прилагаются.",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "536": {
     "id": 536,
@@ -9687,6 +11782,9 @@ var items = {
     "personal": 1,
     "descr": "Не разевай варежку попусту!",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "537": {
     "id": 537,
@@ -9703,6 +11801,9 @@ var items = {
     "personal": 1,
     "descr": "Ушки на макушке!",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "538": {
     "id": 538,
@@ -9719,6 +11820,9 @@ var items = {
     "personal": 1,
     "descr": "Даешь Лаббитов - хороших и разных!",
     "newyear": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "indacache": "1"
   },
   "539": {
     "id": 539,
@@ -9743,7 +11847,10 @@ var items = {
     "price": 400000,
     "personal": 1,
     "descr": "Абсолютной истины не существует — такова абсолютная истина.",
-    "owner": "Kostand"
+    "owner": "Kostand",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "540": {
     "id": 540,
@@ -9756,6 +11863,8 @@ var items = {
     "personal": 1,
     "descr": "Победителям Аренного турнира для 9-11 уровней, приуроченного ко дню рождения мира Lost Magic.",
     "validtime": 31536000,
+    "consumable": "none",
+    "indacache": "1"
   },
   "541": {
     "id": 541,
@@ -9769,6 +11878,9 @@ var items = {
     "personal": 1,
     "descr": "Бог счастья Хотей дарит передаваемые Золотые Лаббиты в размере 10% от суммы последней за 30 дней покупки Золотых Лаббитов на счет.",
     "instruction": "Двойной клик: узнать сумму Золотых Лаббитов, которые могут быть получены.",
+    "consumable": "hotey",
+    "material": "metal",
+    "indacache": "1"
   },
   "542": {
     "id": 542,
@@ -9790,6 +11902,11 @@ var items = {
     "becomepersonal": 1,
     "descr": "На счастье!",
     "newyear": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "543": {
     "id": 543,
@@ -9802,6 +11919,10 @@ var items = {
     "price": 99,
     "personal": 1,
     "descr": "Магический замок не позволяет открыть фолиант. ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "544": {
     "id": 544,
@@ -9822,7 +11943,11 @@ var items = {
     "price": 340000,
     "personal": 1,
     "descr": "Спикард. Бреет бороды, дробит кварки, делит на ноль.",
-    "owner": "Нолан"
+    "owner": "Нолан",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "545": {
     "id": 545,
@@ -9840,6 +11965,12 @@ var items = {
     "price": 90000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный огненный урон, пропорциональный количеству ярости. Максимум 16 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 215,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "546": {
     "id": 546,
@@ -9853,7 +11984,10 @@ var items = {
     "personal": 1,
     "descr": "Не забывай поливать",
     "validtime": -1,
-    "owner": "Astra"
+    "owner": "Astra",
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "547": {
     "id": 547,
@@ -9866,6 +12000,11 @@ var items = {
     "price": 5000,
     "personal": 1,
     "bottleparams": 1,
+    "dropfrom": ["adsf:48"],
+    "consumable": "caresspet",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "548": {
     "id": 548,
@@ -9879,6 +12018,11 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 2,
+    "dropfrom": ["adsf:13"],
+    "consumable": "caresspet",
+    "material": "bones",
+    "changed": 1,
+    "indacache": "1"
   },
   "549": {
     "id": 549,
@@ -9891,6 +12035,11 @@ var items = {
     "price": 10,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 3,
+    "dropfrom": ["adsf:73", "adsf:77"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "550": {
     "id": 550,
@@ -9903,6 +12052,10 @@ var items = {
     "price": 10000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 4,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "551": {
     "id": 551,
@@ -9915,6 +12068,11 @@ var items = {
     "price": 1000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 5,
+    "dropfrom": ["adsf:75", "adsf:76"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "552": {
     "id": 552,
@@ -9928,6 +12086,10 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 6,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "553": {
     "id": 553,
@@ -9940,6 +12102,11 @@ var items = {
     "price": 1000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 7,
+    "dropfrom": ["adsf:117", "adsf:118"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "554": {
     "id": 554,
@@ -9952,6 +12119,11 @@ var items = {
     "price": 1000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 8,
+    "dropfrom": ["adsf:47"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "555": {
     "id": 555,
@@ -9964,6 +12136,11 @@ var items = {
     "price": 1000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 9,
+    "dropfrom": ["adsf:43"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "556": {
     "id": 556,
@@ -9976,6 +12153,11 @@ var items = {
     "price": 1000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 10,
+    "dropfrom": ["adsf:21"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "557": {
     "id": 557,
@@ -9989,6 +12171,11 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 11,
+    "dropfrom": ["adsf:38"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "558": {
     "id": 558,
@@ -10002,6 +12189,11 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 13,
+    "dropfrom": ["adsf:87"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "559": {
     "id": 559,
@@ -10014,6 +12206,11 @@ var items = {
     "price": 1000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 12,
+    "dropfrom": ["adsf:89"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "560": {
     "id": 560,
@@ -10028,6 +12225,10 @@ var items = {
     "descr": "Домашнее «ушастое» животное - замечательный и необычный подарок близкому человеку.",
     "validtime": 1209600,
     "giveitem": 552,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "561": {
     "id": 561,
@@ -10041,6 +12242,9 @@ var items = {
     "personal": 1,
     "descr": "Кошель содержит эквивалент 1000 рублей в Золотых Лаббитах.",
     "instruction": "Двойной клик: обмен на 40 лаббитов.",
+    "consumable": "exchange40",
+    "material": "ring",
+    "indacache": "1"
   },
   "562": {
     "id": 562,
@@ -10062,8 +12266,12 @@ var items = {
     "image": "oscomina",
     "price": 400000,
     "personal": 1,
-    "descr": "Воистину, нет ничего более отвратного, нежели монстры оные, натуре противные, ведьмаками именуемые, ибо суть они плоды мерзопакостного волшебства и диавольства﻿.",
-    "owner": "Oscom"
+    "descr": "Воистину, нет ничего более отвратного, нежели монстры оные, натуре противные, ведьмаками именуемые, ибо суть они плоды мерзопакостного волшебства и диавольства&#65279;.",
+    "owner": "Oscom",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "563": {
     "id": 563,
@@ -10084,6 +12292,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "564": {
     "id": 564,
@@ -10104,20 +12316,23 @@ var items = {
     "price": 200000,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "indacache": "1"
   },
   "565": {
     "id": 565,
     "categ_id": 20,
     "name": "Лицензионный настой силы",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "rare",
     "level": 3,
     "reqlevel": 3,
     "image": "bottle_type1_orange",
-    "price": 500,
+    "price": 1,
     "personal": 1,
-    "descr": "Увеличивает в бою урон в 2 раза и гарантированно наносит критический удар. Действует 1 ход.",
+    "descr": "Увеличивает в бою урон в 2 раза и гарантированно наносит критический удар. Может частично не сработать против более сильного эффекта противника. Действует 1 ход.",
     "bottleparams": {
       "type": "dmg",
       "cooldown": 10,
@@ -10131,18 +12346,26 @@ var items = {
         "value": "216"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "566": {
     "id": 566,
     "categ_id": 20,
     "name": "Лицензионный настой защиты",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "rare",
     "level": 3,
     "reqlevel": 3,
     "image": "bottle_type1_violet",
-    "price": 500,
+    "price": 1,
     "personal": 1,
     "descr": "Увеличивает в бою защиту в 2 раза. Действует 1 ход.",
     "bottleparams": {
@@ -10158,6 +12381,14 @@ var items = {
         "value": "217"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "567": {
     "id": 567,
@@ -10184,6 +12415,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "568": {
     "id": 568,
@@ -10210,6 +12445,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "569": {
     "id": 569,
@@ -10236,6 +12475,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "570": {
     "id": 570,
@@ -10262,6 +12505,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "571": {
     "id": 571,
@@ -10288,6 +12535,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "572": {
     "id": 572,
@@ -10314,6 +12565,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "573": {
     "id": 573,
@@ -10340,6 +12595,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "574": {
     "id": 574,
@@ -10356,6 +12615,9 @@ var items = {
     "personal": 1,
     "descr": "Trick or Treat!",
     "validtime": 604800,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "575": {
     "id": 575,
@@ -10370,6 +12632,9 @@ var items = {
     "descr": "Trick or Treat!",
     "validtime": 604800,
     "giveitem": 574,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "576": {
     "id": 576,
@@ -10382,6 +12647,10 @@ var items = {
     "price": 1000,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 14,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "577": {
     "id": 577,
@@ -10395,6 +12664,10 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 15,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "578": {
     "id": 578,
@@ -10408,6 +12681,10 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 16,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "579": {
     "id": 579,
@@ -10420,6 +12697,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Мышка бежала, хвостиком махнула...",
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "580": {
     "id": 580,
@@ -10440,6 +12720,11 @@ var items = {
     "price": 70000,
     "becomepersonal": 1,
     "descr": "И в гостиной при свечах он танцевал, как Бог.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "581": {
     "id": 581,
@@ -10461,6 +12746,11 @@ var items = {
     "price": 90000,
     "becomepersonal": 1,
     "descr": "Son, this is the road to Hell.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "582": {
     "id": 582,
@@ -10479,6 +12769,10 @@ var items = {
         "value": "226"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "583": {
     "id": 583,
@@ -10507,6 +12801,12 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:129"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "584": {
     "id": 584,
@@ -10518,6 +12818,9 @@ var items = {
     "image": "ingot_au",
     "price": 1000,
     "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "585": {
     "id": 585,
@@ -10529,6 +12832,9 @@ var items = {
     "image": "ingot_ag",
     "price": 1000,
     "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "586": {
     "id": 586,
@@ -10540,6 +12846,9 @@ var items = {
     "image": "ingot_br",
     "price": 1000,
     "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "indacache": "1"
   },
   "587": {
     "id": 587,
@@ -10567,6 +12876,11 @@ var items = {
         "value": "227"
       }]
     },
+    "dropfrom": ["adsf:122"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "588": {
     "id": 588,
@@ -10585,6 +12899,9 @@ var items = {
     "image": "ring_f",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "589": {
     "id": 589,
@@ -10603,6 +12920,9 @@ var items = {
     "image": "ring_w",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "590": {
     "id": 590,
@@ -10620,6 +12940,9 @@ var items = {
     "image": "ring_b",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "indacache": "1"
   },
   "591": {
     "id": 591,
@@ -10637,6 +12960,9 @@ var items = {
     "becomepersonal": 1,
     "descr": "Базовая защита для рук. Спрашивайте в аптеках.",
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "592": {
     "id": 592,
@@ -10653,6 +12979,9 @@ var items = {
     "personal": 1,
     "descr": "Даешь Лаббитов - хороших и разных!",
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "593": {
     "id": 593,
@@ -10669,6 +12998,9 @@ var items = {
     "personal": 1,
     "descr": "Ушки на макушке!",
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "594": {
     "id": 594,
@@ -10685,6 +13017,9 @@ var items = {
     "personal": 1,
     "descr": "Подтяжки не прилагаются.",
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "595": {
     "id": 595,
@@ -10701,6 +13036,9 @@ var items = {
     "personal": 1,
     "descr": "Ой, да не смешите мои тапочки...",
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "596": {
     "id": 596,
@@ -10713,6 +13051,11 @@ var items = {
     "price": 20000,
     "personal": 1,
     "descr": "Божественный символ, украденный много веков назад из храма Солнца.",
+    "dropfrom": ["adsf:133"],
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "597": {
     "id": 597,
@@ -10732,6 +13075,10 @@ var items = {
     "image": "r_b",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "598": {
     "id": 598,
@@ -10750,6 +13097,10 @@ var items = {
     "image": "r_w",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "599": {
     "id": 599,
@@ -10768,18 +13119,22 @@ var items = {
     "image": "r_f",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "600": {
     "id": 600,
     "categ_id": 20,
     "name": "Лицензионный лечебный настой",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "rare",
     "level": 1,
     "reqlevel": 1,
     "image": "bottle_type1_green",
-    "price": 500,
+    "price": 1,
     "personal": 1,
     "descr": "Увеличивает в бою текущее и максимальное здоровье на 20% и лечит на 20% от максимального здоровья в течение 3-х ходов. ",
     "bottleparams": {
@@ -10792,7 +13147,7 @@ var items = {
       }],
       "effects": [{
         "type": "maxhp",
-        "value": 0.2
+        "value": "0.2"
       }, {
         "type": "buff",
         "value": "231"
@@ -10801,18 +13156,26 @@ var items = {
         "value": "419"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "601": {
     "id": 601,
     "categ_id": 20,
     "name": "Лицензионный настой ярости",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "rare",
     "level": 1,
     "reqlevel": 1,
     "image": "bottle_type1_red",
-    "price": 500,
+    "price": 1,
     "personal": 1,
     "descr": "Наполняет яростью после каждого обмена ударами в бою в течение 3-х ходов. ",
     "bottleparams": {
@@ -10831,6 +13194,14 @@ var items = {
         "value": "232"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "602": {
     "id": 602,
@@ -10850,6 +13221,10 @@ var items = {
         "value": "230"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "603": {
     "id": 603,
@@ -10868,6 +13243,10 @@ var items = {
         "value": "234"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "604": {
     "id": 604,
@@ -10893,6 +13272,9 @@ var items = {
         "agility": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "605": {
     "id": 605,
@@ -10903,6 +13285,9 @@ var items = {
     "image": "meat_mace",
     "personal": 1,
     "descr": "Неведомая вещица",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "606": {
     "id": 606,
@@ -10913,6 +13298,11 @@ var items = {
     "rarity": "common",
     "image": "kleshnya",
     "price": 800,
+    "dropfrom": ["adsf:113", "adsf:114", "adsf:115"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "607": {
     "id": 607,
@@ -10934,6 +13324,11 @@ var items = {
     "price": 100000,
     "becomepersonal": 1,
     "descr": "aka Ninja Shoes.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "608": {
     "id": 608,
@@ -10955,6 +13350,11 @@ var items = {
     "price": 100000,
     "becomepersonal": 1,
     "descr": "Никогда прежде промывание мозгов не было таким легким.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "609": {
     "id": 609,
@@ -10985,6 +13385,9 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "610": {
     "id": 610,
@@ -11005,6 +13408,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "611": {
     "id": 611,
@@ -11017,6 +13423,11 @@ var items = {
     "price": 1000,
     "personal": 1,
     "quest": 1,
+    "dropfrom": ["adsf:134"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "612": {
     "id": 612,
@@ -11028,6 +13439,10 @@ var items = {
     "image": "map",
     "personal": 1,
     "descr": "Тропинки волшебных полян нанесены в точности.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "613": {
     "id": 613,
@@ -11040,6 +13455,11 @@ var items = {
     "personal": 1,
     "descr": "Похоже, это часть одеяния Ходзи.",
     "quest": 1,
+    "dropfrom": ["adsf:136"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "614": {
     "id": 614,
@@ -11071,6 +13491,10 @@ var items = {
         }
       }
     },
+    "dropfrom": ["adsf:137"],
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "615": {
     "id": 615,
@@ -11083,6 +13507,10 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Божественное свечение этого кристалла - единственный способ достигнуть нирваны.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "616": {
     "id": 616,
@@ -11107,6 +13535,10 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "617": {
     "id": 617,
@@ -11116,6 +13548,9 @@ var items = {
     "rarity": "epic",
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "618": {
     "id": 618,
@@ -11125,6 +13560,9 @@ var items = {
     "rarity": "rare",
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "619": {
     "id": 619,
@@ -11155,6 +13593,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:138"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "620": {
     "id": 620,
@@ -11185,6 +13628,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:138"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "621": {
     "id": 621,
@@ -11215,6 +13663,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:138"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "622": {
     "id": 622,
@@ -11245,6 +13698,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:138"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "623": {
     "id": 623,
@@ -11275,6 +13733,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:138"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "624": {
     "id": 624,
@@ -11289,6 +13752,10 @@ var items = {
     "descr": "Преврати друга в Деда Санту!",
     "validtime": 604800,
     "giveitem": 519,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "625": {
     "id": 625,
@@ -11314,6 +13781,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "626": {
     "id": 626,
@@ -11340,6 +13811,10 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "627": {
     "id": 627,
@@ -11366,6 +13841,10 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "628": {
     "id": 628,
@@ -11392,6 +13871,10 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "629": {
     "id": 629,
@@ -11402,6 +13885,10 @@ var items = {
     "rarity": "uncommon",
     "image": "liquidsnow",
     "price": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "630": {
     "id": 630,
@@ -11417,6 +13904,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный розыгрыш персональной аватары в честь Нового Года! Участвуют все!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "631": {
     "id": 631,
@@ -11432,6 +13923,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш персональной аватары в честь Нового Года! Участвуют 50 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "632": {
     "id": 632,
@@ -11447,6 +13942,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального вечного подарка в честь Нового Года! Участвуют 20 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "633": {
     "id": 633,
@@ -11462,6 +13961,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального игрового предмета в честь Нового Года! Участвуют 100 билетов!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "634": {
     "id": 634,
@@ -11490,6 +13993,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "635": {
     "id": 635,
@@ -11518,6 +14026,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:138", "adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "636": {
     "id": 636,
@@ -11546,6 +14059,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "637": {
     "id": 637,
@@ -11574,6 +14092,11 @@ var items = {
         "3": 1
       }
     },
+    "dropfrom": ["adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "638": {
     "id": 638,
@@ -11602,6 +14125,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:138", "adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "639": {
     "id": 639,
@@ -11626,6 +14154,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "640": {
     "id": 640,
@@ -11645,6 +14177,10 @@ var items = {
       }]
     },
     "validtime": 1296000,
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "641": {
     "id": 641,
@@ -11664,6 +14200,11 @@ var items = {
         "value": "255"
       }]
     },
+    "dropfrom": ["adsf:288", "adsf:289", "adsf:290", "adsf:292", "adsf:293", "adsf:294", "adsf:295", "adsf:296", "adsf:297", "adsf:298"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "642": {
     "id": 642,
@@ -11688,6 +14229,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "643": {
     "id": 643,
@@ -11712,6 +14257,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "644": {
     "id": 644,
@@ -11736,6 +14285,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "645": {
     "id": 645,
@@ -11760,6 +14313,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "646": {
     "id": 646,
@@ -11784,6 +14341,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "647": {
     "id": 647,
@@ -11808,6 +14369,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "648": {
     "id": 648,
@@ -11832,6 +14397,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "649": {
     "id": 649,
@@ -11856,6 +14425,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "650": {
     "id": 650,
@@ -11880,6 +14453,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "651": {
     "id": 651,
@@ -11904,6 +14481,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "652": {
     "id": 652,
@@ -11928,6 +14509,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "653": {
     "id": 653,
@@ -11952,6 +14537,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "654": {
     "id": 654,
@@ -11969,6 +14558,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "655": {
     "id": 655,
@@ -11983,6 +14576,10 @@ var items = {
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 17,
     "validtime": 604800,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "656": {
     "id": 656,
@@ -12000,6 +14597,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "657": {
     "id": 657,
@@ -12017,6 +14618,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "658": {
     "id": 658,
@@ -12034,6 +14639,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "659": {
     "id": 659,
@@ -12051,6 +14660,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "660": {
     "id": 660,
@@ -12068,6 +14681,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "661": {
     "id": 661,
@@ -12085,6 +14702,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "662": {
     "id": 662,
@@ -12102,6 +14723,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "663": {
     "id": 663,
@@ -12119,6 +14744,10 @@ var items = {
       }
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "664": {
     "id": 664,
@@ -12136,6 +14765,10 @@ var items = {
       "discount": 10
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "665": {
     "id": 665,
@@ -12153,6 +14786,10 @@ var items = {
       "discount": 10
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "666": {
     "id": 666,
@@ -12170,6 +14807,10 @@ var items = {
       "discount": 10
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "667": {
     "id": 667,
@@ -12187,6 +14828,10 @@ var items = {
       "discount": 10
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "668": {
     "id": 668,
@@ -12204,6 +14849,10 @@ var items = {
       "discount": 10
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "669": {
     "id": 669,
@@ -12215,12 +14864,16 @@ var items = {
     "image": "ny_SALE",
     "price": 12,
     "personal": 1,
-    "descr": "Купон на скидку в Магазине. Имея такой купон вы можете приобрести Катану всего за 12 Лаббитов!",
+    "descr": "Купон на скидку в Магазине. Имея такой купон вы можете приобрести Катану всего за ДЕВЯТЬ Лаббитов!",
     "bottleparams": {
       "item": 58,
-      "discount": 12
+      "discount": 9
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "670": {
     "id": 670,
@@ -12238,6 +14891,10 @@ var items = {
       "discount": 12
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "671": {
     "id": 671,
@@ -12255,6 +14912,10 @@ var items = {
       "discount": 15
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "672": {
     "id": 672,
@@ -12272,6 +14933,10 @@ var items = {
       "discount": 15
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "673": {
     "id": 673,
@@ -12289,6 +14954,10 @@ var items = {
       "discount": 17
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "674": {
     "id": 674,
@@ -12306,6 +14975,10 @@ var items = {
       "discount": 17
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "675": {
     "id": 675,
@@ -12323,6 +14996,10 @@ var items = {
       "discount": 17
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "676": {
     "id": 676,
@@ -12340,6 +15017,10 @@ var items = {
       "discount": 17
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "677": {
     "id": 677,
@@ -12357,6 +15038,10 @@ var items = {
       "discount": 17
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "678": {
     "id": 678,
@@ -12374,6 +15059,10 @@ var items = {
       "discount": 17
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "679": {
     "id": 679,
@@ -12391,6 +15080,10 @@ var items = {
       "discount": 17
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "680": {
     "id": 680,
@@ -12408,6 +15101,10 @@ var items = {
       "discount": 20
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "681": {
     "id": 681,
@@ -12425,6 +15122,10 @@ var items = {
       "discount": 20
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "682": {
     "id": 682,
@@ -12442,6 +15143,10 @@ var items = {
       "discount": 20
     },
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "683": {
     "id": 683,
@@ -12457,6 +15162,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального игрового предмета в честь Нового Года! Участвуют 100 билетов! (Второй розыгрыш)",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "684": {
     "id": 684,
@@ -12487,6 +15196,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "685": {
     "id": 685,
@@ -12501,6 +15213,9 @@ var items = {
     "descr": "Раритетный подарок, добытый из Врагов Счастливого Нового Года.",
     "validtime": 1209600,
     "giveitem": 684,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "686": {
     "id": 686,
@@ -12527,6 +15242,9 @@ var items = {
         "resilience": 2
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "687": {
     "id": 687,
@@ -12542,6 +15260,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального игрового предмета в честь Нового Года! Участвуют 100 билетов! (Третий розыгрыш)",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "688": {
     "id": 688,
@@ -12557,6 +15279,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш уникального игрового предмета в честь Нового Года! Участвуют 100 билетов! (Четвертый розыгрыш)",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "689": {
     "id": 689,
@@ -12578,6 +15304,11 @@ var items = {
     "price": 400000,
     "becomepersonal": 1,
     "descr": "Коллекция глазных яблок волшебных монстров Мира позволяет своему владельцу увидеть сокрытое от взора простых смертных",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "690": {
     "id": 690,
@@ -12590,6 +15321,10 @@ var items = {
     "price": 1,
     "descr": "Секретное послание клана Сакуры Советнику Джону",
     "quest": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "691": {
     "id": 691,
@@ -12630,6 +15365,12 @@ var items = {
         "value": "265"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "692": {
     "id": 692,
@@ -12670,6 +15411,13 @@ var items = {
         "value": "90"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "693": {
     "id": 693,
@@ -12689,7 +15437,11 @@ var items = {
     "image": "ring_breg",
     "price": 100000,
     "personal": 1,
-    "owner": "Breg"
+    "owner": "Breg",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "694": {
     "id": 694,
@@ -12704,6 +15456,10 @@ var items = {
     "descr": "Лесная фея будет услаждать слух пением и охранять ваш сон.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 18,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "695": {
     "id": 695,
@@ -12728,7 +15484,11 @@ var items = {
     "image": "hammer_bk",
     "price": 400000,
     "personal": 1,
-    "owner": "Торнадолрлоп"
+    "owner": "Торнадолрлоп",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "696": {
     "id": 696,
@@ -12750,7 +15510,11 @@ var items = {
     "image": "shield_00",
     "price": 400000,
     "personal": 1,
-    "owner": "Barka"
+    "owner": "Barka",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "697": {
     "id": 697,
@@ -12765,6 +15529,10 @@ var items = {
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 19,
     "validtime": 604800,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "698": {
     "id": 698,
@@ -12777,6 +15545,10 @@ var items = {
     "personal": 1,
     "descr": "Пропуск на тестовый сервер. Все подробности на форуме в разделе «Общий»",
     "validtime": 432000,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "699": {
     "id": 699,
@@ -12791,6 +15563,10 @@ var items = {
     "personal": 1,
     "descr": "Хочешь быть Ангелом? Будь им!",
     "instruction": "Двойной клик: надеть крылья",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "700": {
     "id": 700,
@@ -12805,6 +15581,10 @@ var items = {
     "descr": "Очаровательный ангелочек не оставит никого равнодушным.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 20,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "701": {
     "id": 701,
@@ -12819,6 +15599,10 @@ var items = {
     "descr": "Уникальный, ни с чем не сравнимый подарок - живой ангелочек. Возможность проявить симпатию или даже признаться в любви.",
     "validtime": 604800,
     "giveitem": 700,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "702": {
     "id": 702,
@@ -12832,6 +15616,10 @@ var items = {
     "personal": 1,
     "descr": "Многофункциональный подарок. Высочайшее качество исполнения.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "703": {
     "id": 703,
@@ -12845,6 +15633,10 @@ var items = {
     "personal": 1,
     "descr": "Бойцам пустынного фронта посвящается...",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "704": {
     "id": 704,
@@ -12858,6 +15650,10 @@ var items = {
     "personal": 1,
     "descr": "Подари коняшку няшкам!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "705": {
     "id": 705,
@@ -12871,6 +15667,10 @@ var items = {
     "personal": 1,
     "descr": "Поделись улыбкою своей, и она ещё не раз к тебе вернется",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "706": {
     "id": 706,
@@ -12884,6 +15684,10 @@ var items = {
     "personal": 1,
     "descr": "Сувенирные мозги станут украшением любой пыльной полки с кучей ненужного хлама",
     "validtime": 1468800,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "707": {
     "id": 707,
@@ -12897,6 +15701,10 @@ var items = {
     "personal": 1,
     "descr": "Алмаз души, свет очей, жемчужина сердца!",
     "validtime": 1468800,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "708": {
     "id": 708,
@@ -12910,6 +15718,10 @@ var items = {
     "personal": 1,
     "descr": "Само совершенство!",
     "validtime": 1468800,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "709": {
     "id": 709,
@@ -12923,6 +15735,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "710": {
     "id": 710,
@@ -12944,7 +15759,11 @@ var items = {
     "price": 400000,
     "personal": 1,
     "descr": "Made in the Universe.",
-    "owner": "Aero"
+    "owner": "Aero",
+    "consumable": "none",
+    "buff_id": 410,
+    "material": "cotton",
+    "changed": "1"
   },
   "711": {
     "id": 711,
@@ -12965,6 +15784,9 @@ var items = {
     "descr": "Переходящая награда победителю Милтонфеста. Заряды могут давать бонусы к силе, ловкости, выносливости и защите. Чем выше ваш уровень - тем больше зарядов будет на плаще.",
     "instruction": "Двойной клик: использовать Заряд и получить бонус к характеристикам.",
     "validtime": 86400,
+    "consumable": "randomsharp",
+    "material": "cotton",
+    "changed": "1"
   },
   "712": {
     "id": 712,
@@ -12984,6 +15806,10 @@ var items = {
     "personal": 1,
     "descr": "Тайлер всегда прав.",
     "validtime": 604800,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "713": {
     "id": 713,
@@ -12991,12 +15817,16 @@ var items = {
     "name": "Генеральские погоны",
     "maxcnt": 1,
     "type": "present",
-    "rarity": "rare",
+    "rarity": "epic",
     "image": "general",
     "price": 20000,
     "personal": 1,
     "descr": "Да, мой генерал!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "714": {
     "id": 714,
@@ -13009,6 +15839,10 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Можно обменять на право бесплатно заказать уникальный предмет эпического качества.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "715": {
     "id": 715,
@@ -13033,6 +15867,9 @@ var items = {
         "maxhit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "716": {
     "id": 716,
@@ -13057,6 +15894,9 @@ var items = {
         "maxhit": 10
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "717": {
     "id": 717,
@@ -13084,6 +15924,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "718": {
     "id": 718,
@@ -13096,6 +15939,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "719": {
     "id": 719,
@@ -13108,6 +15955,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "720": {
     "id": 720,
@@ -13120,6 +15971,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "721": {
     "id": 721,
@@ -13132,6 +15987,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "722": {
     "id": 722,
@@ -13146,6 +16005,10 @@ var items = {
     "descr": "Мартовская Киса - уникальный питомец в подарок игрокам на 8-е марта. Она не только МИМИМИ, но и верный товарищ в бою, так как в течение двух недель придает своему хозяину сил, увеличивая наносимый в боях урон.",
     "instruction": "Двойной клик: приручить МИМИМИ.",
     "bottleparams": 21,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "723": {
     "id": 723,
@@ -13160,6 +16023,11 @@ var items = {
     "descr": "Настоящий боевой ёжик.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 22,
+    "dropfrom": ["adsf:70", "adsf:71"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "724": {
     "id": 724,
@@ -13183,6 +16051,12 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_mob": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "725": {
     "id": 725,
@@ -13196,6 +16070,10 @@ var items = {
     "descr": "Рукопись, сделанная первыми королевскими экспедициями в Зону 50.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 29,
+    "dropfrom": ["adsf:115"],
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "726": {
     "id": 726,
@@ -13209,6 +16087,10 @@ var items = {
     "descr": "Рукопись, сделанная первыми королевскими экспедициями в Зону 50.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 30,
+    "dropfrom": ["adsf:116"],
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "727": {
     "id": 727,
@@ -13222,6 +16104,10 @@ var items = {
     "descr": "Рукопись, сделанная первыми королевскими экспедициями в Зону 50.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 31,
+    "dropfrom": ["adsf:122", "adsf:131"],
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "728": {
     "id": 728,
@@ -13235,6 +16121,10 @@ var items = {
     "descr": "Рукопись, сделанная первыми королевскими экспедициями в Зону 50.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 32,
+    "dropfrom": ["adsf:123"],
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "729": {
     "id": 729,
@@ -13260,6 +16150,9 @@ var items = {
         "dodge": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "730": {
     "id": 730,
@@ -13285,6 +16178,9 @@ var items = {
         "crit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "731": {
     "id": 731,
@@ -13306,7 +16202,13 @@ var items = {
     "image": "dragoneye_icon",
     "price": 500000,
     "personal": 1,
-    "owner": "Ускользающий"
+    "owner": "Ускользающий",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 298,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "732": {
     "id": 732,
@@ -13327,7 +16229,12 @@ var items = {
     "image": "radiance_icon",
     "price": 440000,
     "personal": 1,
-    "owner": "Laury"
+    "owner": "Laury",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "733": {
     "id": 733,
@@ -13349,7 +16256,12 @@ var items = {
     "image": "bliss_icon",
     "price": 480000,
     "personal": 1,
-    "owner": "Lyarva"
+    "owner": "Lyarva",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "734": {
     "id": 734,
@@ -13380,6 +16292,14 @@ var items = {
         "value": "299"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "735": {
     "id": 735,
@@ -13404,13 +16324,21 @@ var items = {
       }],
       "effects": [{
         "type": "maxhp",
-        "value": "20",
+        "value": 20,
         "operand": "+"
       }, {
         "type": "buff",
         "value": "300"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "736": {
     "id": 736,
@@ -13438,6 +16366,14 @@ var items = {
         "value": "302"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "737": {
     "id": 737,
@@ -13466,6 +16402,13 @@ var items = {
         "value": "301"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "738": {
     "id": 738,
@@ -13487,7 +16430,12 @@ var items = {
     "image": "ice_icon",
     "price": 480000,
     "personal": 1,
-    "owner": "Этолед"
+    "owner": "Этолед",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "739": {
     "id": 739,
@@ -13519,6 +16467,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "740": {
     "id": 740,
@@ -13549,6 +16502,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "741": {
     "id": 741,
@@ -13580,6 +16538,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "742": {
     "id": 742,
@@ -13609,6 +16572,11 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:150"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "743": {
     "id": 743,
@@ -13628,6 +16596,9 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "744": {
     "id": 744,
@@ -13653,7 +16624,11 @@ var items = {
     "image": "uniq_alanyr",
     "price": 400000,
     "personal": 1,
-    "owner": "Alanyr"
+    "owner": "Alanyr",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "745": {
     "id": 745,
@@ -13677,7 +16652,11 @@ var items = {
     "image": "uniq_bugi",
     "price": 400000,
     "personal": 1,
-    "owner": "Буги"
+    "owner": "Буги",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "746": {
     "id": 746,
@@ -13691,6 +16670,10 @@ var items = {
     "personal": 1,
     "descr": "Первому ясновидящему, разгадавшему все секреты колбы с глазами.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "747": {
     "id": 747,
@@ -13708,6 +16691,10 @@ var items = {
       "slots": 4,
       "maxcnt": 10
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "748": {
     "id": 748,
@@ -13726,6 +16713,10 @@ var items = {
       "slots": 5,
       "maxcnt": 10
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "749": {
     "id": 749,
@@ -13744,6 +16735,10 @@ var items = {
       "slots": 6,
       "maxcnt": 10
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "750": {
     "id": 750,
@@ -13766,6 +16761,11 @@ var items = {
         "crit": -1
       }
     },
+    "dropfrom": ["adsf:40"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "751": {
     "id": 751,
@@ -13788,6 +16788,11 @@ var items = {
         "rage": -1
       }
     },
+    "dropfrom": ["adsf:123"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "752": {
     "id": 752,
@@ -13815,6 +16820,10 @@ var items = {
         "faction_ring_of_fire": -1
       }
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "753": {
     "id": 753,
@@ -13842,6 +16851,10 @@ var items = {
         "faction_ring_of_fire": -1
       }
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "754": {
     "id": 754,
@@ -13856,6 +16869,10 @@ var items = {
     "descr": "Камень. Просто камень. Говорят, если долго смотреть на него, то он может начать шевелиться!",
     "instruction": "Двойной клик: приручить камень.",
     "bottleparams": 23,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "755": {
     "id": 755,
@@ -13881,6 +16898,9 @@ var items = {
         "strength": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "756": {
     "id": 756,
@@ -13904,6 +16924,10 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "757": {
     "id": 757,
@@ -13931,6 +16955,12 @@ var items = {
         "value": "116"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "758": {
     "id": 758,
@@ -13968,6 +16998,12 @@ var items = {
         "value": "216,217,218,220"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "759": {
     "id": 759,
@@ -14005,6 +17041,12 @@ var items = {
         "value": "180,181,182,183,184,186,187,188,189"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "760": {
     "id": 760,
@@ -14018,6 +17060,9 @@ var items = {
     "personal": 1,
     "descr": "Ловушка, установленная в локации, нанесет 50 урона следующему, кто в нее войдет. Ниндзя, попавший в ловушку, теряет свое свойство невидимости.",
     "instruction": "Двойной клик: установить ловушку.",
+    "consumable": "arcanasettrap",
+    "changed": 1,
+    "indacache": "1"
   },
   "761": {
     "id": 761,
@@ -14041,6 +17086,9 @@ var items = {
         "mastery": 4
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "762": {
     "id": 762,
@@ -14064,6 +17112,9 @@ var items = {
         "resilience": 4
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "763": {
     "id": 763,
@@ -14095,6 +17146,13 @@ var items = {
         "value": "155"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "bones",
+    "changed": 1,
+    "indacache": "1"
   },
   "764": {
     "id": 764,
@@ -14108,6 +17166,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 33,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "765": {
     "id": 765,
@@ -14121,6 +17182,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 34,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "766": {
     "id": 766,
@@ -14134,6 +17198,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 35,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "767": {
     "id": 767,
@@ -14147,6 +17214,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 36,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "768": {
     "id": 768,
@@ -14160,6 +17230,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 37,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "769": {
     "id": 769,
@@ -14173,6 +17246,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 38,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "770": {
     "id": 770,
@@ -14186,6 +17262,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 39,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "771": {
     "id": 771,
@@ -14199,6 +17278,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 40,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "772": {
     "id": 772,
@@ -14212,6 +17294,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 41,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "773": {
     "id": 773,
@@ -14225,6 +17310,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 42,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "774": {
     "id": 774,
@@ -14245,6 +17333,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Свидетельствует о серьезных намерениях.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "775": {
     "id": 775,
@@ -14263,6 +17354,9 @@ var items = {
     "image": "tier1_chest",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "776": {
     "id": 776,
@@ -14279,6 +17373,9 @@ var items = {
     "resilience": 15,
     "image": "gangsta_hat",
     "price": 5000,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "777": {
     "id": 777,
@@ -14295,6 +17392,9 @@ var items = {
     "stamina": 3,
     "image": "t2_hat",
     "price": 50000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "778": {
     "id": 778,
@@ -14313,6 +17413,8 @@ var items = {
     "mastery": 5,
     "image": "horned_helm",
     "price": 75000,
+    "consumable": "none",
+    "changed": "1"
   },
   "779": {
     "id": 779,
@@ -14330,6 +17432,9 @@ var items = {
     "image": "kroeger",
     "price": 3000,
     "descr": "Девять, десять...",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "780": {
     "id": 780,
@@ -14346,6 +17451,9 @@ var items = {
     "stamina": 2,
     "image": "torso_set_1",
     "price": 10000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "781": {
     "id": 781,
@@ -14364,6 +17472,10 @@ var items = {
     "image": "moto_chest",
     "price": 70000,
     "descr": "И в гостиной при свечах он танцевал, как Бог.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "782": {
     "id": 782,
@@ -14381,6 +17493,9 @@ var items = {
     "image": "six_pants",
     "price": 12000,
     "descr": "В этом мире таких не делают...",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "783": {
     "id": 783,
@@ -14398,6 +17513,9 @@ var items = {
     "resilience": 30,
     "image": "gangsta_pants",
     "price": 60000,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "784": {
     "id": 784,
@@ -14415,6 +17533,9 @@ var items = {
     "resilience": 5,
     "image": "t2_pants",
     "price": 50000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "785": {
     "id": 785,
@@ -14429,6 +17550,9 @@ var items = {
     "stamina": 2,
     "image": "tier1_boots",
     "price": 3000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "786": {
     "id": 786,
@@ -14447,6 +17571,9 @@ var items = {
     "image": "boots_sneakers",
     "price": 77000,
     "descr": "Из декабря в июнь...",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "787": {
     "id": 787,
@@ -14466,6 +17593,9 @@ var items = {
     "resilience": 15,
     "image": "t3_boots",
     "price": 120000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "788": {
     "id": 788,
@@ -14480,6 +17610,9 @@ var items = {
     "reqstrength": 5,
     "image": "hand_norm_2",
     "price": 1500,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "789": {
     "id": 789,
@@ -14497,6 +17630,9 @@ var items = {
     "image": "fighter_mitts",
     "price": 6000,
     "descr": "Настоящее японское качество!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "790": {
     "id": 790,
@@ -14515,6 +17651,9 @@ var items = {
     "mastery": 5,
     "image": "rivet_wrist",
     "price": 60000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "791": {
     "id": 791,
@@ -14527,6 +17666,9 @@ var items = {
     "crit": 5,
     "image": "tooth_necklace",
     "price": 4000,
+    "consumable": "none",
+    "material": "bones",
+    "changed": "1"
   },
   "792": {
     "id": 792,
@@ -14541,6 +17683,9 @@ var items = {
     "stamina": 1,
     "image": "necklace_sklep",
     "price": 3000,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "793": {
     "id": 793,
@@ -14556,6 +17701,9 @@ var items = {
     "resilience": 10,
     "image": "tinypearl_necklace",
     "price": 20000,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "794": {
     "id": 794,
@@ -14569,6 +17717,9 @@ var items = {
     "crit": 1,
     "image": "ring_sklep",
     "price": 1000,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "795": {
     "id": 795,
@@ -14582,6 +17733,9 @@ var items = {
     "agility": 1,
     "image": "tinypearl_ring",
     "price": 15000,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "796": {
     "id": 796,
@@ -14596,6 +17750,10 @@ var items = {
     "image": "amber_seal",
     "price": 50000,
     "descr": "Chicks love confidence.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "797": {
     "id": 797,
@@ -14613,6 +17771,10 @@ var items = {
     "image": "mystical_ring",
     "price": 3500,
     "descr": "Мы пришли с миром!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "798": {
     "id": 798,
@@ -14628,6 +17790,8 @@ var items = {
     "stamina": 3,
     "image": "garnet_ring",
     "price": 25000,
+    "consumable": "none",
+    "changed": "1"
   },
   "799": {
     "id": 799,
@@ -14643,6 +17807,10 @@ var items = {
     "image": "yoyo_trink",
     "price": 1700,
     "descr": "Rock the baby!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "changed": "1"
   },
   "800": {
     "id": 800,
@@ -14657,6 +17825,10 @@ var items = {
     "image": "lucky_dice_2",
     "price": 20000,
     "descr": "Кому-то может показаться странным наличие такого талисмана у ветерана Арены, но не стоит говорить об этом владельцу.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "changed": "1"
   },
   "801": {
     "id": 801,
@@ -14676,6 +17848,10 @@ var items = {
     "image": "dragon_tooth",
     "price": 20000,
     "descr": "Зуб, вероятно, молочный.",
+    "consumable": "none",
+    "ability_id": 292,
+    "material": "metal",
+    "changed": "1"
   },
   "802": {
     "id": 802,
@@ -14696,6 +17872,10 @@ var items = {
     "mastery": 20,
     "image": "long_knife",
     "price": 30000,
+    "consumable": "none",
+    "ability_id": 292,
+    "material": "metal",
+    "changed": "1"
   },
   "803": {
     "id": 803,
@@ -14719,6 +17899,11 @@ var items = {
     "image": "dragon_edge",
     "price": 80000,
     "descr": "Не нужно пробовать яд, чтобы понять, что он смертелен.",
+    "consumable": "none",
+    "ability_id": 292,
+    "buff_id": 166,
+    "material": "metal",
+    "changed": "1"
   },
   "804": {
     "id": 804,
@@ -14734,6 +17919,9 @@ var items = {
     "image": "wpn_1hand_norm_2",
     "price": 400,
     "descr": "Но как не играй - все играешь отбой.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "805": {
     "id": 805,
@@ -14751,6 +17939,9 @@ var items = {
     "image": "wpn_1hand_axe_1",
     "price": 100,
     "descr": "Пригоден для наведения локального хаоса в небольших помещениях.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "806": {
     "id": 806,
@@ -14768,6 +17959,9 @@ var items = {
     "image": "skul_axe",
     "price": 4500,
     "descr": "Under the bridge downtown is where I drew some blood.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "807": {
     "id": 807,
@@ -14786,6 +17980,9 @@ var items = {
     "image": "butchers_cleaver",
     "price": 65000,
     "descr": "Fresh meat!",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "808": {
     "id": 808,
@@ -14800,6 +17997,9 @@ var items = {
     "maxhit": 17,
     "image": "wpn_2hand_swt_3",
     "price": 6000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "809": {
     "id": 809,
@@ -14815,6 +18015,9 @@ var items = {
     "image": "wpn_1hand_norm_8",
     "price": 11,
     "descr": "Та самая, легендарная!",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "810": {
     "id": 810,
@@ -14831,11 +18034,15 @@ var items = {
     "image": "worlds_destroyer",
     "price": 15000,
     "descr": "Новейшее средство находить виновных.",
+    "consumable": "none",
+    "ability_id": 291,
+    "material": "metal",
+    "changed": "1"
   },
   "811": {
     "id": 811,
     "categ_id": 2,
-    "name": "Меч Древних",
+    "name": "Меч Древних брак",
     "maxcnt": 1,
     "type": "twohandedweapon",
     "rarity": "common",
@@ -14851,6 +18058,10 @@ var items = {
     "price": 80000,
     "descr": "Срока годности не имеет.",
     "giveitem": 98,
+    "consumable": "none",
+    "ability_id": 291,
+    "material": "metal",
+    "changed": "1"
   },
   "812": {
     "id": 812,
@@ -14867,6 +18078,10 @@ var items = {
     "image": "wpn_1hand_norm_1",
     "price": 3000,
     "descr": "Не лучший выбор для серьезного боя.",
+    "consumable": "none",
+    "ability_id": 291,
+    "material": "wood",
+    "changed": "1"
   },
   "813": {
     "id": 813,
@@ -14886,11 +18101,14 @@ var items = {
     "image": "coloured_shield",
     "price": 60000,
     "descr": "Иногда орки наносят на щит клановую символику, но обычно им лень.",
+    "consumable": "none",
+    "ability_id": 293,
+    "changed": "1"
   },
   "814": {
     "id": 814,
     "categ_id": 5,
-    "name": "Солнцеворот",
+    "name": "Солнцеворот м",
     "maxcnt": 1,
     "type": "shield",
     "rarity": "common",
@@ -14902,6 +18120,10 @@ var items = {
     "image": "steel_shield",
     "price": 60000,
     "descr": "И тут появляешься ты...",
+    "consumable": "none",
+    "ability_id": 293,
+    "material": "metal",
+    "changed": "1"
   },
   "815": {
     "id": 815,
@@ -14918,6 +18140,10 @@ var items = {
     "resilience": 32,
     "image": "lion_shield",
     "price": 110000,
+    "consumable": "none",
+    "ability_id": 293,
+    "material": "metal",
+    "changed": "1"
   },
   "816": {
     "id": 816,
@@ -14934,6 +18160,9 @@ var items = {
       "type": "hp",
       "value": 50
     },
+    "consumable": "useeffect",
+    "changed": 1,
+    "indacache": "1"
   },
   "817": {
     "id": 817,
@@ -14946,6 +18175,9 @@ var items = {
     "price": 1000,
     "descr": "При съедании восстанавливает 500 здоровья вне боя.",
     "instruction": "Двойной клик: восстановить 500 здоровья!",
+    "consumable": "useeffect",
+    "changed": 1,
+    "indacache": "1"
   },
   "818": {
     "id": 818,
@@ -14971,6 +18203,9 @@ var items = {
         "agility": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "819": {
     "id": 819,
@@ -14996,6 +18231,9 @@ var items = {
         "defence": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "820": {
     "id": 820,
@@ -15020,6 +18258,9 @@ var items = {
         "maxhit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "821": {
     "id": 821,
@@ -15044,7 +18285,7 @@ var items = {
           "554x1": 600,
           "553x1": 600,
           "551x1": 600,
-          "723x1": 200,
+          "723x1": 50,
           "577x1": 200,
           "558x1": 100,
           "557x1": 100,
@@ -15053,13 +18294,15 @@ var items = {
           "547x1": 100,
           "550x1": 50,
           "578x1": 50,
-          "723x1": 50,
           "700x1": 12,
           "697x1": 12,
           "694x1": 12
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "822": {
     "id": 822,
@@ -15073,6 +18316,10 @@ var items = {
     "personal": 1,
     "descr": "Воистину кулич.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "823": {
     "id": 823,
@@ -15092,6 +18339,9 @@ var items = {
     "descr": "Тайлер всегда прав.",
     "validtime": 604800,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "824": {
     "id": 824,
@@ -15110,6 +18360,12 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "При нанесении или получении урона наносит сопернику от 1 до 50 единиц урона огнем. Поглощает 50% урона льдом.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 319,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "825": {
     "id": 825,
@@ -15128,6 +18384,12 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "При получении урона наносит сопернику 30 единиц урона льдом. Поглощает 50% урона огнем.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 320,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "826": {
     "id": 826,
@@ -15146,6 +18408,12 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "Каждый ход наносит сопернику 20 единиц урона землей. Поглощает 50% урона воздухом.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 321,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "827": {
     "id": 827,
@@ -15164,6 +18432,12 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "При попадании по сопернику наносит 30 единиц урона воздухом. Поглощает 50% урона землей.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 322,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "828": {
     "id": 828,
@@ -15177,6 +18451,10 @@ var items = {
     "personal": 1,
     "descr": "Героям, которые первыми достигли отметки в 2000 очков достижений.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "829": {
     "id": 829,
@@ -15197,6 +18475,12 @@ var items = {
     "price": 20000,
     "personal": 1,
     "descr": "Увеличивает урон огнем и землей на 30%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 323,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "830": {
     "id": 830,
@@ -15217,6 +18501,12 @@ var items = {
     "price": 20000,
     "personal": 1,
     "descr": "Увеличивает урон льдом и воздухом на 30%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 324,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "831": {
     "id": 831,
@@ -15237,6 +18527,11 @@ var items = {
     "price": 70000,
     "becomepersonal": 1,
     "descr": "Изготовлено из отборных летучих мышей.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "832": {
     "id": 832,
@@ -15256,6 +18551,11 @@ var items = {
     "image": "cloak_elf",
     "price": 70000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "833": {
     "id": 833,
@@ -15272,6 +18572,11 @@ var items = {
     "price": 150000,
     "personal": 1,
     "descr": "Freaks love confidence.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "834": {
     "id": 834,
@@ -15291,6 +18596,12 @@ var items = {
     "price": 190000,
     "personal": 1,
     "descr": "Ваши удары начинают наносить дополнительный огненный урон, пропорциональный количеству ярости.  Максимум 24 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 325,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "835": {
     "id": 835,
@@ -15310,6 +18621,11 @@ var items = {
     "price": 23500,
     "personal": 1,
     "descr": "Мы пришли с миром!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "836": {
     "id": 836,
@@ -15326,6 +18642,10 @@ var items = {
     "image": "tinypearl_ring_upg",
     "price": 35000,
     "personal": 1,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "837": {
     "id": 837,
@@ -15340,6 +18660,10 @@ var items = {
     "descr": "Сезонная порода кроликов. Помогает владельцу в бою во время праздничной недели.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 24,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "838": {
     "id": 838,
@@ -15366,6 +18690,9 @@ var items = {
         "resilience": 2
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "839": {
     "id": 839,
@@ -15388,6 +18715,8 @@ var items = {
       "reagent": 861
     },
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "840": {
     "id": 840,
@@ -15401,6 +18730,10 @@ var items = {
     "descr": "Похоже на желе.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 26,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "841": {
     "id": 841,
@@ -15415,6 +18748,10 @@ var items = {
     "descr": "Slowpoke is sooo sloooow~",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 25,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "842": {
     "id": 842,
@@ -15428,6 +18765,10 @@ var items = {
     "personal": 1,
     "descr": "ДА ЗДРАвствует ПЕРвое МАя!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "843": {
     "id": 843,
@@ -15446,6 +18787,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171", "adsf:179"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "844": {
     "id": 844,
@@ -15465,6 +18810,10 @@ var items = {
       "chance": 100,
       "reagent": 872
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "845": {
     "id": 845,
@@ -15484,6 +18833,10 @@ var items = {
       "chance": 90,
       "reagent": 873
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "846": {
     "id": 846,
@@ -15503,6 +18856,10 @@ var items = {
       "chance": 90,
       "reagent": 873
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "847": {
     "id": 847,
@@ -15522,6 +18879,10 @@ var items = {
       "chance": 90,
       "reagent": 873
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "848": {
     "id": 848,
@@ -15542,6 +18903,10 @@ var items = {
       "chance": 90,
       "reagent": 873
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "849": {
     "id": 849,
@@ -15561,6 +18926,10 @@ var items = {
       "chance": 90,
       "reagent": 873
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "850": {
     "id": 850,
@@ -15580,6 +18949,10 @@ var items = {
       "chance": 100,
       "reagent": 872
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "851": {
     "id": 851,
@@ -15599,6 +18972,10 @@ var items = {
       "chance": 100,
       "reagent": 872
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "852": {
     "id": 852,
@@ -15619,6 +18996,10 @@ var items = {
       "chance": 100,
       "reagent": 872
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "853": {
     "id": 853,
@@ -15638,6 +19019,10 @@ var items = {
       "chance": 100,
       "reagent": 872
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "854": {
     "id": 854,
@@ -15656,6 +19041,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171", "adsf:179"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "855": {
     "id": 855,
@@ -15674,6 +19063,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171", "adsf:179"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "856": {
     "id": 856,
@@ -15693,6 +19086,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171", "adsf:179"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "857": {
     "id": 857,
@@ -15711,6 +19108,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:156", "adsf:157", "adsf:158", "adsf:171", "adsf:179"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "858": {
     "id": 858,
@@ -15725,6 +19126,10 @@ var items = {
     "descr": "Slowpoke is sooo sloooow~",
     "validtime": 1209600,
     "giveitem": 841,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "859": {
     "id": 859,
@@ -15747,6 +19152,8 @@ var items = {
       "reagent": 861
     },
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "860": {
     "id": 860,
@@ -15768,6 +19175,8 @@ var items = {
       "chance": 50
     },
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "861": {
     "id": 861,
@@ -15786,6 +19195,8 @@ var items = {
     "price": 10000,
     "descr": "Описание",
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "862": {
     "id": 862,
@@ -15806,6 +19217,8 @@ var items = {
       "chance": 10
     },
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "863": {
     "id": 863,
@@ -15819,6 +19232,10 @@ var items = {
     "personal": 1,
     "descr": "Идеальный подарок для усталого воина.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "864": {
     "id": 864,
@@ -15844,6 +19261,10 @@ var items = {
         }
       }
     },
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "865": {
     "id": 865,
@@ -15855,6 +19276,10 @@ var items = {
     "image": "apple_used",
     "price": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "trash": "1"
   },
   "866": {
     "id": 866,
@@ -15866,6 +19291,10 @@ var items = {
     "image": "apple_gold",
     "price": 3000,
     "descr": "Нет, это не то золотое яблочко, которое нужно! Это старое и просроченное.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "867": {
     "id": 867,
@@ -15897,6 +19326,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "868": {
     "id": 868,
@@ -15914,6 +19346,9 @@ var items = {
       "chance": 100,
       "reagent": 871
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "869": {
     "id": 869,
@@ -15931,6 +19366,9 @@ var items = {
       "chance": 100,
       "reagent": 871
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "870": {
     "id": 870,
@@ -15943,6 +19381,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Необходим для вставки необычных гемм в предмет. Используется на верстаке в Магикмаркете.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "871": {
     "id": 871,
@@ -15955,6 +19396,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Необходимо для работы щипцов и сверл на верстаке в Магикмаркете.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "872": {
     "id": 872,
@@ -15967,6 +19411,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Необходим для вставки редких гемм в предмет. Используется на верстаке в Магикмаркете.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "873": {
     "id": 873,
@@ -15979,6 +19426,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Необходим для вставки эпических гемм в предмет. Используется на верстаке в Магикмаркете.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "874": {
     "id": 874,
@@ -15995,6 +19445,8 @@ var items = {
     "bottleparams": {
       "chance": 2
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "875": {
     "id": 875,
@@ -16011,6 +19463,10 @@ var items = {
       "chance": 10,
       "reagent": 871
     },
+    "dropfrom": ["adsf:171", "adsf:189", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "876": {
     "id": 876,
@@ -16027,6 +19483,10 @@ var items = {
       "chance": 10,
       "reagent": 871
     },
+    "dropfrom": ["adsf:171", "adsf:189", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "877": {
     "id": 877,
@@ -16043,6 +19503,10 @@ var items = {
       "chance": 10,
       "reagent": 871
     },
+    "dropfrom": ["adsf:158", "adsf:171", "adsf:179", "adsf:184", "adsf:188", "adsf:224", "adsf:225", "adsf:226"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "878": {
     "id": 878,
@@ -16059,6 +19523,9 @@ var items = {
     "bottleparams": {
       "chance": 10
     },
+    "dropfrom": ["adsf:171"],
+    "consumable": "none",
+    "changed": "1"
   },
   "879": {
     "id": 879,
@@ -16073,6 +19540,10 @@ var items = {
     "descr": "«Королевская» награда.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 27,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "880": {
     "id": 880,
@@ -16090,6 +19561,9 @@ var items = {
       "chance": 2,
       "reagent": 871
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "881": {
     "id": 881,
@@ -16103,6 +19577,10 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: жадно съесть.",
     "validtime": 1209600,
+    "consumable": "useeffect",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "882": {
     "id": 882,
@@ -16114,6 +19592,9 @@ var items = {
     "level": 1,
     "image": "silver_dust",
     "price": 1000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "883": {
     "id": 883,
@@ -16127,6 +19608,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Используется для сплавки ронд.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "884": {
     "id": 884,
@@ -16145,6 +19629,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "885": {
     "id": 885,
@@ -16164,6 +19652,10 @@ var items = {
       "chance": 90,
       "reagent": 872
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "886": {
     "id": 886,
@@ -16183,6 +19675,10 @@ var items = {
       "chance": 80,
       "reagent": 873
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "887": {
     "id": 887,
@@ -16200,6 +19696,9 @@ var items = {
     "bottleparams": {
       "color": "red"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "888": {
     "id": 888,
@@ -16217,6 +19716,9 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "889": {
     "id": 889,
@@ -16234,6 +19736,9 @@ var items = {
     "bottleparams": {
       "color": "white"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "890": {
     "id": 890,
@@ -16251,6 +19756,9 @@ var items = {
     "bottleparams": {
       "color": "green"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "891": {
     "id": 891,
@@ -16268,6 +19776,9 @@ var items = {
     "bottleparams": {
       "color": "yellow"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "892": {
     "id": 892,
@@ -16286,6 +19797,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "893": {
     "id": 893,
@@ -16305,6 +19820,10 @@ var items = {
       "chance": 90,
       "reagent": 872
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "894": {
     "id": 894,
@@ -16324,6 +19843,10 @@ var items = {
       "chance": 80,
       "reagent": 873
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "895": {
     "id": 895,
@@ -16342,6 +19865,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "896": {
     "id": 896,
@@ -16361,6 +19888,10 @@ var items = {
       "chance": 90,
       "reagent": 872
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189", "adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "897": {
     "id": 897,
@@ -16380,6 +19911,10 @@ var items = {
       "chance": 80,
       "reagent": 873
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "898": {
     "id": 898,
@@ -16399,6 +19934,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "899": {
     "id": 899,
@@ -16419,6 +19958,10 @@ var items = {
       "chance": 90,
       "reagent": 872
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "900": {
     "id": 900,
@@ -16439,6 +19982,10 @@ var items = {
       "chance": 80,
       "reagent": 873
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "901": {
     "id": 901,
@@ -16457,6 +20004,10 @@ var items = {
       "chance": 100,
       "reagent": 870
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "902": {
     "id": 902,
@@ -16476,6 +20027,10 @@ var items = {
       "chance": 90,
       "reagent": 872
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "903": {
     "id": 903,
@@ -16495,6 +20050,10 @@ var items = {
       "chance": 80,
       "reagent": 873
     },
+    "dropfrom": ["adsf:179", "adsf:184", "adsf:188", "adsf:189"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "904": {
     "id": 904,
@@ -16521,6 +20080,14 @@ var items = {
         "value": "192"
       }]
     },
+    "dropfrom": ["adsf:190", "adsf:191"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "905": {
     "id": 905,
@@ -16538,6 +20105,9 @@ var items = {
     "bottleparams": {
       "color": "red"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "906": {
     "id": 906,
@@ -16555,6 +20125,9 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "907": {
     "id": 907,
@@ -16572,6 +20145,9 @@ var items = {
     "bottleparams": {
       "color": "white"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "908": {
     "id": 908,
@@ -16589,6 +20165,9 @@ var items = {
     "bottleparams": {
       "color": "green"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "909": {
     "id": 909,
@@ -16606,6 +20185,9 @@ var items = {
     "bottleparams": {
       "color": "yellow"
     },
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "910": {
     "id": 910,
@@ -16624,6 +20206,10 @@ var items = {
       "chance": 90,
       "reagent": 870
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "911": {
     "id": 911,
@@ -16643,6 +20229,10 @@ var items = {
       "chance": 80,
       "reagent": 872
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "912": {
     "id": 912,
@@ -16661,6 +20251,10 @@ var items = {
       "chance": 90,
       "reagent": 870
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "913": {
     "id": 913,
@@ -16680,6 +20274,10 @@ var items = {
       "chance": 80,
       "reagent": 872
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "914": {
     "id": 914,
@@ -16699,6 +20297,10 @@ var items = {
       "chance": 70,
       "reagent": 873
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "915": {
     "id": 915,
@@ -16718,6 +20320,10 @@ var items = {
       "chance": 90,
       "reagent": 870
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "916": {
     "id": 916,
@@ -16738,6 +20344,9 @@ var items = {
       "chance": 80,
       "reagent": 872
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "917": {
     "id": 917,
@@ -16758,6 +20367,10 @@ var items = {
       "chance": 70,
       "reagent": 873
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "918": {
     "id": 918,
@@ -16776,6 +20389,10 @@ var items = {
       "chance": 90,
       "reagent": 870
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "919": {
     "id": 919,
@@ -16795,6 +20412,10 @@ var items = {
       "chance": 80,
       "reagent": 872
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "920": {
     "id": 920,
@@ -16814,6 +20435,10 @@ var items = {
       "chance": 70,
       "reagent": 873
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "921": {
     "id": 921,
@@ -16832,6 +20457,10 @@ var items = {
       "chance": 90,
       "reagent": 870
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "922": {
     "id": 922,
@@ -16851,6 +20480,10 @@ var items = {
       "chance": 80,
       "reagent": 872
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "923": {
     "id": 923,
@@ -16870,6 +20503,10 @@ var items = {
       "chance": 70,
       "reagent": 873
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "924": {
     "id": 924,
@@ -16889,6 +20526,10 @@ var items = {
       "chance": 70,
       "reagent": 873
     },
+    "dropfrom": ["adsf:224", "adsf:225", "adsf:226", "adsf:237"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "925": {
     "id": 925,
@@ -16902,6 +20543,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Используется для сплавки стилл.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "926": {
     "id": 926,
@@ -16913,6 +20557,9 @@ var items = {
     "level": 2,
     "image": "gold_dust",
     "price": 1500,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "927": {
     "id": 927,
@@ -16935,7 +20582,12 @@ var items = {
     "image": "chaos_icon",
     "price": 500000,
     "personal": 1,
-    "owner": "Wulff"
+    "owner": "Wulff",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "928": {
     "id": 928,
@@ -16959,18 +20611,25 @@ var items = {
     "image": "uniq_fox",
     "price": 150000,
     "personal": 1,
-    "owner": "Ytekjdbvfz"
+    "owner": "Ytekjdbvfz",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "929": {
     "id": 929,
     "categ_id": 18,
     "name": "Сумеречная эссенция",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "common",
     "image": "twilight_field",
     "price": 50,
     "descr": "Неведомый и непостижимый обрывок тумана. ",
+    "dropfrom": ["adsf:193", "adsf:194", "adsf:195", "adsf:196", "adsf:197", "adsf:199", "adsf:200"],
+    "consumable": "none",
+    "changed": "1"
   },
   "930": {
     "id": 930,
@@ -16997,6 +20656,14 @@ var items = {
         "value": "353"
       }]
     },
+    "dropfrom": ["adsf:197", "adsf:199", "adsf:200"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "931": {
     "id": 931,
@@ -17023,6 +20690,14 @@ var items = {
         "value": "70"
       }]
     },
+    "dropfrom": ["adsf:197", "adsf:199", "adsf:200"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "932": {
     "id": 932,
@@ -17049,6 +20724,14 @@ var items = {
         "value": "355"
       }]
     },
+    "dropfrom": ["adsf:197", "adsf:199", "adsf:200"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "933": {
     "id": 933,
@@ -17075,6 +20758,14 @@ var items = {
         "value": "354"
       }]
     },
+    "dropfrom": ["adsf:197", "adsf:199", "adsf:200"],
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "934": {
     "id": 934,
@@ -17095,6 +20786,9 @@ var items = {
         "value": "351"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "935": {
     "id": 935,
@@ -17117,6 +20811,11 @@ var items = {
       }
     },
     "giveitem": 936,
+    "dropfrom": ["adsf:193", "adsf:194", "adsf:195", "adsf:196"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "936": {
     "id": 936,
@@ -17128,6 +20827,10 @@ var items = {
     "image": "weed_2",
     "price": 10,
     "descr": "Иссохшая и мертвая трава.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "937": {
     "id": 937,
@@ -17140,6 +20843,11 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Лучше не задумываться, чем это было раньше.",
+    "dropfrom": ["adsf:193", "adsf:194", "adsf:195", "adsf:196", "adsf:197", "adsf:199"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "938": {
     "id": 938,
@@ -17152,6 +20860,11 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Почти неповрежденный, в отличие от своего прошлого владельца.",
+    "dropfrom": ["adsf:193"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "939": {
     "id": 939,
@@ -17164,6 +20877,11 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Гриммеру он больше не понадобится.",
+    "dropfrom": ["adsf:195"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "940": {
     "id": 940,
@@ -17176,6 +20894,11 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Можно использовать в качестве пилы.",
+    "dropfrom": ["adsf:197"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "941": {
     "id": 941,
@@ -17195,6 +20918,9 @@ var items = {
         "value": "352"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "942": {
     "id": 942,
@@ -17215,6 +20941,9 @@ var items = {
     "image": "new_pal_boots",
     "price": 290000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "943": {
     "id": 943,
@@ -17235,6 +20964,9 @@ var items = {
     "image": "new_monk_boots",
     "price": 290000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "944": {
     "id": 944,
@@ -17263,6 +20995,9 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "945": {
     "id": 945,
@@ -17291,6 +21026,9 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "946": {
     "id": 946,
@@ -17311,12 +21049,17 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "На треть уменьшает эффект Изнурения, полученного в Сумеречном Городе.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 356,
+    "material": "ring",
+    "changed": "1"
   },
   "947": {
     "id": 947,
     "categ_id": 22,
     "name": "Туманный тоник",
-    "maxcnt": 10,
+    "maxcnt": 50,
     "type": "bottle",
     "rarity": "rare",
     "level": 17,
@@ -17330,6 +21073,10 @@ var items = {
       "buff_id": 349,
       "value": "1.33"
     },
+    "consumable": "buffremove",
+    "material": "glass",
+    "changed": 1,
+    "monitoring": "1"
   },
   "948": {
     "id": 948,
@@ -17348,6 +21095,9 @@ var items = {
       "chance": 70,
       "reagent": 870
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "949": {
     "id": 949,
@@ -17367,6 +21117,9 @@ var items = {
       "chance": 60,
       "reagent": 872
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "950": {
     "id": 950,
@@ -17385,6 +21138,9 @@ var items = {
       "chance": 70,
       "reagent": 870
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "951": {
     "id": 951,
@@ -17404,6 +21160,9 @@ var items = {
       "chance": 60,
       "reagent": 872
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "952": {
     "id": 952,
@@ -17423,6 +21182,9 @@ var items = {
       "chance": 50,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "953": {
     "id": 953,
@@ -17442,6 +21204,9 @@ var items = {
       "chance": 70,
       "reagent": 870
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "954": {
     "id": 954,
@@ -17462,6 +21227,9 @@ var items = {
       "chance": 60,
       "reagent": 872
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "955": {
     "id": 955,
@@ -17482,6 +21250,9 @@ var items = {
       "chance": 50,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "956": {
     "id": 956,
@@ -17500,6 +21271,9 @@ var items = {
       "chance": 70,
       "reagent": 870
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "957": {
     "id": 957,
@@ -17519,6 +21293,9 @@ var items = {
       "chance": 60,
       "reagent": 872
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "958": {
     "id": 958,
@@ -17538,6 +21315,9 @@ var items = {
       "chance": 50,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "959": {
     "id": 959,
@@ -17556,6 +21336,9 @@ var items = {
       "chance": 70,
       "reagent": 870
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "960": {
     "id": 960,
@@ -17575,6 +21358,9 @@ var items = {
       "chance": 60,
       "reagent": 872
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "961": {
     "id": 961,
@@ -17594,6 +21380,9 @@ var items = {
       "chance": 50,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "962": {
     "id": 962,
@@ -17613,6 +21402,9 @@ var items = {
       "chance": 50,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "963": {
     "id": 963,
@@ -17630,6 +21422,10 @@ var items = {
     "bottleparams": {
       "color": "red"
     },
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "964": {
     "id": 964,
@@ -17647,6 +21443,10 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "965": {
     "id": 965,
@@ -17664,6 +21464,10 @@ var items = {
     "bottleparams": {
       "color": "white"
     },
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "966": {
     "id": 966,
@@ -17681,6 +21485,10 @@ var items = {
     "bottleparams": {
       "color": "green"
     },
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "967": {
     "id": 967,
@@ -17698,6 +21506,10 @@ var items = {
     "bottleparams": {
       "color": "yellow"
     },
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "gemrecipe",
+    "changed": 1,
+    "indacache": "1"
   },
   "968": {
     "id": 968,
@@ -17709,6 +21521,10 @@ var items = {
     "level": 3,
     "image": "platinum_dust",
     "price": 1500,
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "969": {
     "id": 969,
@@ -17722,6 +21538,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Используется для сплавки дельт.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "970": {
     "id": 970,
@@ -17735,6 +21554,9 @@ var items = {
     "descr": "Не злоупотребляйте общением с ним.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 28,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "971": {
     "id": 971,
@@ -17747,6 +21569,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Продукт радикальной коррекции осанки.",
+    "dropfrom": ["adsf:196"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "972": {
     "id": 972,
@@ -17769,6 +21595,9 @@ var items = {
     "descr": "Все случайные совпадения есть хитросплетения вселенских закономерностей.",
     "instruction": "Двойной клик: использовать Заряд Рандома.",
     "charges": 13,
+    "consumable": "randomsharp",
+    "material": "ring",
+    "changed": "1"
   },
   "973": {
     "id": 973,
@@ -17781,6 +21610,10 @@ var items = {
     "price": 2000,
     "personal": 1,
     "descr": "Причудливая смесь технологии и магии.",
+    "dropfrom": ["adsf:200"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "974": {
     "id": 974,
@@ -17820,6 +21653,11 @@ var items = {
         "value": "349"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "975": {
     "id": 975,
@@ -17834,6 +21672,9 @@ var items = {
     "descr": "Душа Падшего героя, заточенная в сферу.",
     "instruction": "Двойной клик: прочитать душу.",
     "bottleparams": 43,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "976": {
     "id": 976,
@@ -17848,6 +21689,9 @@ var items = {
     "descr": "Душа Падшего героя, заточенная в сферу.",
     "instruction": "Двойной клик: прочитать душу.",
     "bottleparams": 44,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "977": {
     "id": 977,
@@ -17862,6 +21706,9 @@ var items = {
     "descr": "Душа Падшего героя, заточенная в сферу.",
     "instruction": "Двойной клик: прочитать душу.",
     "bottleparams": 45,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "978": {
     "id": 978,
@@ -17876,6 +21723,9 @@ var items = {
     "descr": "Душа Падшего героя, заточенная в сферу.",
     "instruction": "Двойной клик: прочитать душу.",
     "bottleparams": 46,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "979": {
     "id": 979,
@@ -17890,6 +21740,9 @@ var items = {
     "descr": "Душа Падшего героя, заточенная в сферу.",
     "instruction": "Двойной клик: прочитать душу.",
     "bottleparams": 48,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "980": {
     "id": 980,
@@ -17904,6 +21757,9 @@ var items = {
     "descr": "Душа Падшего героя, заточенная в сферу.",
     "instruction": "Двойной клик: прочитать душу.",
     "bottleparams": 49,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "981": {
     "id": 981,
@@ -17935,13 +21791,17 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "buff_id": 396,
+    "material": "metal",
+    "changed": "1"
   },
   "982": {
     "id": 982,
     "categ_id": 3,
     "name": "Молот Морфея",
     "maxcnt": 1,
-    "type": "rweapon",
+    "type": "weapon",
     "rarity": "epic",
     "level": 17,
     "reqlevel": 17,
@@ -17968,6 +21828,10 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "buff_id": 396,
+    "material": "metal",
+    "changed": "1"
   },
   "983": {
     "id": 983,
@@ -17982,6 +21846,9 @@ var items = {
     "descr": "Душа Падшего героя, заточенная в сферу.",
     "instruction": "Двойной клик: прочитать душу.",
     "bottleparams": 47,
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "984": {
     "id": 984,
@@ -18000,6 +21867,10 @@ var items = {
     "image": "snake_trink",
     "price": 200000,
     "personal": 1,
+    "dropfrom": ["adsf:211"],
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "985": {
     "id": 985,
@@ -18033,6 +21904,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "986": {
     "id": 986,
@@ -18092,6 +21965,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "987": {
     "id": 987,
@@ -18105,6 +21980,9 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "Таинственный обломок души ничем не примечательного жителя Города, случайно забредшего в Сумеречную долину.",
+    "dropfrom": ["adsf:244", "adsf:254", "adsf:261", "adsf:265", "adsf:283"],
+    "consumable": "none",
+    "changed": "1"
   },
   "988": {
     "id": 988,
@@ -18144,6 +22022,12 @@ var items = {
         "value": "364"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_oppgroup": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "989": {
     "id": 989,
@@ -18169,6 +22053,11 @@ var items = {
       }]
     },
     "validtime": 21600,
+    "dropfrom": ["adsf:203"],
+    "consumable": "useeffect",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "990": {
     "id": 990,
@@ -18183,6 +22072,9 @@ var items = {
     "descr": "Котейка-хищник.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 30,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "991": {
     "id": 991,
@@ -18198,6 +22090,8 @@ var items = {
     "bottleparams": {
       "chance": 15
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "992": {
     "id": 992,
@@ -18210,6 +22104,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "«Делай добро и бросай его в воду.»",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "993": {
     "id": 993,
@@ -18222,6 +22119,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "«Справедливость есть крайняя мера добродетели.»",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "994": {
     "id": 994,
@@ -18234,6 +22134,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "«Правда - это то, во что мы верим.»",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "995": {
     "id": 995,
@@ -18246,6 +22149,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "«Честь - это награда, присуждаемая за добродетель.»",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "996": {
     "id": 996,
@@ -18258,6 +22164,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "«Дорогу осилит идущий.»",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "997": {
     "id": 997,
@@ -18266,8 +22175,8 @@ var items = {
     "maxcnt": 10,
     "type": "socket",
     "rarity": "epic",
-    "level": 21,
-    "reqlevel": 17,
+    "level": 99,
+    "reqlevel": 5,
     "defence": 4,
     "strength": 4,
     "agility": 3,
@@ -18281,6 +22190,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "998": {
     "id": 998,
@@ -18310,6 +22222,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "999": {
     "id": 999,
@@ -18330,6 +22244,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "По легенде, он знает дорогу из страны Мертвых.",
+    "dropfrom": ["adsf:211"],
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1000": {
     "id": 1000,
@@ -18342,6 +22260,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Собери 50 штук и получи шанс выиграть уникальный эпический предмет! Гарантированно получи розовые крылья в подарок!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1001": {
     "id": 1001,
@@ -18365,7 +22286,10 @@ var items = {
     "image": "ghotic_hammer",
     "price": 350000,
     "personal": 1,
-    "owner": "Баттерс"
+    "owner": "Баттерс",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1002": {
     "id": 1002,
@@ -18389,7 +22313,10 @@ var items = {
     "image": "uniq_2hand",
     "price": 250000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "nosferatusmage",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1003": {
     "id": 1003,
@@ -18409,7 +22336,11 @@ var items = {
     "image": "palantir",
     "price": 500000,
     "personal": 1,
-    "owner": "Гэнд"
+    "owner": "Гэнд",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1004": {
     "id": 1004,
@@ -18421,6 +22352,9 @@ var items = {
     "image": "robcipe",
     "price": 1,
     "descr": "Детально описывает процесс создания прототипа. Запатентован.",
+    "dropfrom": ["adsf:202"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1005": {
     "id": 1005,
@@ -18432,6 +22366,9 @@ var items = {
     "image": "bulb_explode",
     "price": 1,
     "descr": "Чистая энергия жизни.",
+    "dropfrom": ["adsf:198"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1006": {
     "id": 1006,
@@ -18443,6 +22380,9 @@ var items = {
     "image": "detal1",
     "price": 1,
     "descr": "Несколько нетронутых ржавчиной деталей. Можно собрать из них что-нибудь.",
+    "dropfrom": ["adsf:203"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1007": {
     "id": 1007,
@@ -18468,6 +22408,10 @@ var items = {
         "crit": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1008": {
     "id": 1008,
@@ -18485,6 +22429,9 @@ var items = {
     "personal": 1,
     "descr": "Сделаны из бумажных Лаббитов.",
     "instruction": "Двойной клик: надеть крылья",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1009": {
     "id": 1009,
@@ -18501,6 +22448,9 @@ var items = {
     "bottleparams": {
       "chance": 25
     },
+    "dropfrom": ["adsf:189", "adsf:237"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1010": {
     "id": 1010,
@@ -18521,6 +22471,9 @@ var items = {
     "image": "new_monk_pants",
     "price": 200000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1011": {
     "id": 1011,
@@ -18541,6 +22494,9 @@ var items = {
     "image": "new_pal_pants",
     "price": 200000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1012": {
     "id": 1012,
@@ -18561,6 +22517,9 @@ var items = {
     "image": "new_pal_glasses",
     "price": 180000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1013": {
     "id": 1013,
@@ -18581,6 +22540,9 @@ var items = {
     "image": "new_monk_hood",
     "price": 180000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1014": {
     "id": 1014,
@@ -18601,6 +22563,9 @@ var items = {
     "image": "new_monk_chest",
     "price": 250000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1015": {
     "id": 1015,
@@ -18621,6 +22586,9 @@ var items = {
     "image": "new_pal_chest",
     "price": 250000,
     "personal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1016": {
     "id": 1016,
@@ -18634,6 +22602,8 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "1-место в зачете Лимба.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1017": {
     "id": 1017,
@@ -18647,6 +22617,8 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "2-место в зачете Лимба.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1018": {
     "id": 1018,
@@ -18660,6 +22632,8 @@ var items = {
     "price": 100,
     "personal": 1,
     "descr": "3-место в зачете Лимба.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1019": {
     "id": 1019,
@@ -18677,6 +22651,9 @@ var items = {
       "chance": 100,
       "reagent": 871
     },
+    "dropfrom": ["adsf:171", "adsf:189", "adsf:237"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1020": {
     "id": 1020,
@@ -18692,6 +22669,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный розыгрыш персональной аватары в честь второго дня рождения Lost Magic!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1021": {
     "id": 1021,
@@ -18708,10 +22689,20 @@ var items = {
     "bottleparams": {
       "randloot": {
         "default": {
-          "239x2": 100,
+          "239x2": 100
+        }
+      },
+      "loot": {
+        "randloot": {
+          "default": {
+            "239x2": 100
+          }
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "1022": {
     "id": 1022,
@@ -18727,6 +22718,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный премиум-розыгрыш персонального предмета в честь второго дня рождения Lost Magic!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1023": {
     "id": 1023,
@@ -18739,6 +22734,9 @@ var items = {
     "image": "gift_4",
     "descr": "Коробка с приятной безделушкой внутри.",
     "instruction": "Любой житель Города будет рад такому подарку.",
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1024": {
     "id": 1024,
@@ -18772,6 +22770,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1025": {
     "id": 1025,
@@ -18787,6 +22787,9 @@ var items = {
     "descr": "Лотерейный билет на дополнительный праздничный розыгрыш персонального предмета в честь второго дня рождения Lost Magic!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1026": {
     "id": 1026,
@@ -18802,6 +22805,9 @@ var items = {
     "descr": "Лотерейный билет на дополнительный праздничный розыгрыш персональной аватары в честь второго дня рождения Lost Magic!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1027": {
     "id": 1027,
@@ -18828,6 +22834,9 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1028": {
     "id": 1028,
@@ -18854,6 +22863,9 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1029": {
     "id": 1029,
@@ -18880,6 +22892,9 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1030": {
     "id": 1030,
@@ -18894,6 +22909,9 @@ var items = {
     "descr": "Синий котейка.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 31,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1031": {
     "id": 1031,
@@ -18930,6 +22948,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1032": {
     "id": 1032,
@@ -18944,6 +22964,9 @@ var items = {
     "descr": "Выключенный робот.",
     "instruction": "Двойной клик: активировать питомца.",
     "bottleparams": 32,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1033": {
     "id": 1033,
@@ -18964,7 +22987,10 @@ var items = {
     "image": "beartrinket",
     "price": 500000,
     "personal": 1,
-    "owner": "Oteslao"
+    "owner": "Oteslao",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1034": {
     "id": 1034,
@@ -18978,6 +23004,9 @@ var items = {
     "personal": 1,
     "descr": "За победу в летней Олимпиаде Лимба.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1035": {
     "id": 1035,
@@ -18991,6 +23020,9 @@ var items = {
     "personal": 1,
     "descr": "За второе место в летней Олимпиаде Лимба 2012 года.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1036": {
     "id": 1036,
@@ -19004,6 +23036,9 @@ var items = {
     "personal": 1,
     "descr": "За третье место в летней Олимпиаде Лимба 2012 года.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1037": {
     "id": 1037,
@@ -19018,6 +23053,9 @@ var items = {
     "descr": "Гордая птица.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 33,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1038": {
     "id": 1038,
@@ -19030,6 +23068,9 @@ var items = {
     "descr": "Страница 7.",
     "instruction": "Двойной клик: прочитать.",
     "bottleparams": 50,
+    "dropfrom": ["adsf:194", "adsf:196", "adsf:197", "adsf:199", "adsf:200", "adsf:203"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1039": {
     "id": 1039,
@@ -19042,6 +23083,9 @@ var items = {
     "descr": "Страница 11.",
     "instruction": "Двойной клик: прочитать.",
     "bottleparams": 51,
+    "dropfrom": ["adsf:205"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1040": {
     "id": 1040,
@@ -19054,6 +23098,8 @@ var items = {
     "descr": "Страница 13.",
     "instruction": "Двойной клик: прочитать.",
     "bottleparams": 52,
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1041": {
     "id": 1041,
@@ -19079,12 +23125,15 @@ var items = {
         "stamina": 1
       }
     },
+    "dropfrom": ["adsf:288", "adsf:289", "adsf:290", "adsf:292", "adsf:293", "adsf:294", "adsf:295", "adsf:296", "adsf:297", "adsf:298"],
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1042": {
     "id": 1042,
     "categ_id": 23,
     "name": "Клепсидра",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "rare",
     "image": "clepsidra",
@@ -19092,6 +23141,10 @@ var items = {
     "personal": 1,
     "descr": "Обнуляет время ожидания ежедневных заданий.<br><br><font color=\"#FF0000\">НЕ ДЕЙСТВУЕТ НА ПРАЗДНИЧНЫЕ ЗАДАНИЯ</font>",
     "instruction": "Двойной клик: обнулить время ожидания всех ежедневных заданий.",
+    "dropfrom": ["adsf:288", "adsf:289", "adsf:290", "adsf:292", "adsf:293", "adsf:294", "adsf:295", "adsf:296", "adsf:297", "adsf:298"],
+    "consumable": "dropcooldownquest",
+    "material": "glass",
+    "changed": "1"
   },
   "1043": {
     "id": 1043,
@@ -19114,6 +23167,11 @@ var items = {
     "price": 150000,
     "becomepersonal": 1,
     "descr": "Поглощает 25% стихийного урона и на 25% увеличивает наносимый стихийный урон. Легат гарантирует!",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 378,
+    "material": "cotton",
+    "changed": "1"
   },
   "1044": {
     "id": 1044,
@@ -19142,6 +23200,10 @@ var items = {
         "grouplocstatus": 1
       }
     },
+    "dropfrom": ["adsf:208", "adsf:210"],
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1045": {
     "id": 1045,
@@ -19174,6 +23236,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": "1"
   },
   "1046": {
     "id": 1046,
@@ -19185,6 +23250,10 @@ var items = {
     "image": "man_ear",
     "price": 830,
     "descr": "Уши клоунов - любимый деликатес мертвых плюшевых игрушек.",
+    "dropfrom": ["adsf:208", "adsf:210"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1047": {
     "id": 1047,
@@ -19197,6 +23266,9 @@ var items = {
     "descr": "Страница 14.",
     "instruction": "Двойной клик: прочитать.",
     "bottleparams": 53,
+    "dropfrom": ["adsf:209", "adsf:212"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1048": {
     "id": 1048,
@@ -19208,6 +23280,9 @@ var items = {
     "image": "energystick",
     "personal": 1,
     "descr": "Хранит в себе чистую энергию.",
+    "dropfrom": ["adsf:211"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1049": {
     "id": 1049,
@@ -19227,6 +23302,9 @@ var items = {
         "gemmmagic": 100
       }
     },
+    "dropfrom": ["adsf:209", "adsf:211", "adsf:212"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1050": {
     "id": 1050,
@@ -19248,7 +23326,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Наугламир, Ожерелье Гномов, самое прославленное изделие Древних Дней.",
-    "owner": "Гэнд"
+    "owner": "Гэнд",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1051": {
     "id": 1051,
@@ -19268,7 +23349,10 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "На каждого Лиса найдется свой Тигр...",
-    "owner": "Supervasya"
+    "owner": "Supervasya",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1052": {
     "id": 1052,
@@ -19301,6 +23385,8 @@ var items = {
         "characterstatus": 1
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1053": {
     "id": 1053,
@@ -19313,6 +23399,10 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Очень качественный гипсовый реквизит.",
+    "dropfrom": ["adsf:209", "adsf:212"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1054": {
     "id": 1054,
@@ -19345,6 +23435,8 @@ var items = {
         "characterstatus": 1
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1055": {
     "id": 1055,
@@ -19373,6 +23465,8 @@ var items = {
         "characterstatus": 1
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1056": {
     "id": 1056,
@@ -19386,6 +23480,9 @@ var items = {
     "personal": 1,
     "descr": "Участник конкурса фотографий 2012.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1057": {
     "id": 1057,
@@ -19399,6 +23496,9 @@ var items = {
     "personal": 1,
     "descr": "Участник конкурса фотографий 2012.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1058": {
     "id": 1058,
@@ -19418,6 +23518,10 @@ var items = {
     "price": 10000,
     "becomepersonal": 1,
     "descr": "На подкладке из шкуры молодого дермантина.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1059": {
     "id": 1059,
@@ -19450,6 +23554,9 @@ var items = {
       }
     },
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1060": {
     "id": 1060,
@@ -19482,6 +23589,9 @@ var items = {
       }
     },
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1061": {
     "id": 1061,
@@ -19506,6 +23616,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1062": {
     "id": 1062,
@@ -19530,6 +23643,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1063": {
     "id": 1063,
@@ -19552,6 +23668,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1064": {
     "id": 1064,
@@ -19574,6 +23693,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1065": {
     "id": 1065,
@@ -19597,6 +23719,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1066": {
     "id": 1066,
@@ -19620,6 +23745,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1067": {
     "id": 1067,
@@ -19640,6 +23768,9 @@ var items = {
     "price": 100,
     "personal": 1,
     "descr": "Бесценный подарок. Ограниченная партия.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1068": {
     "id": 1068,
@@ -19654,6 +23785,8 @@ var items = {
     "descr": "Помогает хозяину в бою в течение всего октября!",
     "instruction": "Двойной клик: открыть коробку.",
     "bottleparams": 35,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1069": {
     "id": 1069,
@@ -19666,6 +23799,8 @@ var items = {
     "image": "detal2",
     "personal": 1,
     "descr": "Загадочная часть таинственного механизма.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1070": {
     "id": 1070,
@@ -19678,6 +23813,9 @@ var items = {
     "image": "dried_mushroom",
     "personal": 1,
     "descr": "Грибная энергия заставляет дрожать воздух вокруг него.",
+    "dropfrom": ["adsf:16", "adsf:18", "adsf:43"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1071": {
     "id": 1071,
@@ -19695,6 +23833,8 @@ var items = {
       "chance": 100,
       "reagent": 871
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "1072": {
     "id": 1072,
@@ -19708,6 +23848,9 @@ var items = {
     "personal": 1,
     "descr": "Прочная коробка с хитрым замком.",
     "quest": 1,
+    "dropfrom": ["adsf:118"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1073": {
     "id": 1073,
@@ -19732,6 +23875,11 @@ var items = {
         "crit": -3
       }
     },
+    "dropfrom": ["adsf:211"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1074": {
     "id": 1074,
@@ -19752,6 +23900,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Холодное и прочное кольцо из серого металла.",
+    "dropfrom": ["adsf:211"],
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1075": {
     "id": 1075,
@@ -19772,7 +23924,10 @@ var items = {
     "image": "unikukaraca",
     "price": 500000,
     "personal": 1,
-    "owner": "Kukaraca"
+    "owner": "Kukaraca",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1076": {
     "id": 1076,
@@ -19794,7 +23949,10 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "Maybe I'm a Lion...",
-    "owner": "Squall"
+    "owner": "Squall",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1077": {
     "id": 1077,
@@ -19809,6 +23967,9 @@ var items = {
     "descr": "Работает на солнечной батарее. Для активации погладить.",
     "instruction": "Двойной клик: активировать питомца.",
     "bottleparams": 34,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1078": {
     "id": 1078,
@@ -19823,6 +23984,8 @@ var items = {
     "descr": "Акуна-Матата.",
     "instruction": "Двойной клик: открыть коробку.",
     "bottleparams": 35,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1079": {
     "id": 1079,
@@ -19842,6 +24005,10 @@ var items = {
     "personal": 1,
     "descr": "При нанесении или получении урона наносит сопернику от 1 до 125 единиц урона огнем. Поглощает 50% урона льдом. Аура нестабильна и разрушается через 15 дней.",
     "validtime": 1296000,
+    "consumable": "none",
+    "buff_id": 398,
+    "material": "cotton",
+    "changed": "1"
   },
   "1080": {
     "id": 1080,
@@ -19861,6 +24028,10 @@ var items = {
     "personal": 1,
     "descr": "При получении урона наносит сопернику 75 единиц урона льдом. Поглощает 50% урона огнем. Аура нестабильна и разрушается через 15 дней.",
     "validtime": 1296000,
+    "consumable": "none",
+    "buff_id": 399,
+    "material": "cotton",
+    "changed": "1"
   },
   "1081": {
     "id": 1081,
@@ -19880,6 +24051,10 @@ var items = {
     "personal": 1,
     "descr": "Каждый ход наносит сопернику 60 единиц урона землей. Поглощает 50% урона воздухом. Аура нестабильна и разрушается через 15 дней.",
     "validtime": 1296000,
+    "consumable": "none",
+    "buff_id": 400,
+    "material": "cotton",
+    "changed": "1"
   },
   "1082": {
     "id": 1082,
@@ -19899,6 +24074,10 @@ var items = {
     "personal": 1,
     "descr": "При попадании по сопернику наносит 75 единиц урона воздухом. Поглощает 50% урона землей. Аура нестабильна и разрушается через 15 дней.",
     "validtime": 1296000,
+    "consumable": "none",
+    "buff_id": 401,
+    "material": "cotton",
+    "changed": "1"
   },
   "1083": {
     "id": 1083,
@@ -19916,6 +24095,12 @@ var items = {
     "price": 90000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный урон землей, пропорциональный количеству ярости. Максимум 16 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 402,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1084": {
     "id": 1084,
@@ -19933,6 +24118,11 @@ var items = {
     "price": 90000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный урон воздухом, пропорциональный количеству ярости. Максимум 16 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 403,
+    "material": "glass",
+    "changed": "1"
   },
   "1085": {
     "id": 1085,
@@ -19950,6 +24140,11 @@ var items = {
     "price": 90000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный урон льдом, пропорциональный количеству ярости. Максимум 16 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 404,
+    "material": "glass",
+    "changed": "1"
   },
   "1086": {
     "id": 1086,
@@ -19976,21 +24171,24 @@ var items = {
           "818x3": 5,
           "819x3": 5,
           "820x3": 5,
-          "715x1": 1.1,
-          "716x1": 1.1,
+          "715x1": "1.1",
+          "716x1": "1.1",
           "1041x3": 1,
-          "729x1": 3.2,
-          "730x1": 3.2,
+          "729x1": "3.2",
+          "730x1": "3.2",
           "838x3": 2,
           "755x3": 2,
-          "1103x1": 3.2,
-          "1104x1": 3.2,
+          "1103x1": "3.2",
+          "1104x1": "3.2",
           "1179x2": 2,
           "1180x2": 2,
           "1181x2": 2
         }
       }
     },
+    "dropfrom": ["adsf:272"],
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1087": {
     "id": 1087,
@@ -20023,6 +24221,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1088": {
     "id": 1088,
@@ -20035,6 +24235,9 @@ var items = {
     "price": 30000,
     "personal": 1,
     "descr": "Этот череп доказывает, что в пустынях и тысячи лет назад было не все в порядке...",
+    "dropfrom": ["adsf:116", "adsf:122", "adsf:131"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1089": {
     "id": 1089,
@@ -20047,6 +24250,8 @@ var items = {
     "price": 30000,
     "personal": 1,
     "descr": "Последняя запись едва различима: «23 октября 2012 года».",
+    "consumable": "none",
+    "changed": "1"
   },
   "1090": {
     "id": 1090,
@@ -20059,6 +24264,8 @@ var items = {
     "price": 30000,
     "personal": 1,
     "descr": "Скрывает в себе тайны Зоны-50. Может быть.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1091": {
     "id": 1091,
@@ -20071,6 +24278,8 @@ var items = {
     "price": 30000,
     "personal": 1,
     "descr": "Изображает шестирукого бородатого мужчину с недобрым взглядом. ",
+    "consumable": "none",
+    "changed": "1"
   },
   "1092": {
     "id": 1092,
@@ -20083,6 +24292,8 @@ var items = {
     "price": 30000,
     "personal": 1,
     "descr": "Наполовину уничтоженный временем, он теперь пригоден только для выманивания денег у коллекционеров.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1093": {
     "id": 1093,
@@ -20101,6 +24312,11 @@ var items = {
     "price": 190000,
     "personal": 1,
     "descr": "Ваши удары начинают наносить дополнительный урон землей, пропорциональный количеству ярости. Максимум 24 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 405,
+    "material": "glass",
+    "changed": "1"
   },
   "1094": {
     "id": 1094,
@@ -20119,6 +24335,11 @@ var items = {
     "price": 190000,
     "personal": 1,
     "descr": "Ваши удары начинают наносить дополнительный урон льдом, пропорциональный количеству ярости. Максимум 24 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 406,
+    "material": "glass",
+    "changed": "1"
   },
   "1095": {
     "id": 1095,
@@ -20137,6 +24358,11 @@ var items = {
     "price": 190000,
     "personal": 1,
     "descr": "Ваши удары начинают наносить дополнительный урон воздухом, пропорциональный количеству ярости. Максимум 24 урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 407,
+    "material": "glass",
+    "changed": "1"
   },
   "1096": {
     "id": 1096,
@@ -20174,6 +24400,10 @@ var items = {
         "3": 10
       }
     },
+    "dropfrom": ["adsf:211"],
+    "consumable": "randomsharp",
+    "material": "metal",
+    "changed": "1"
   },
   "1097": {
     "id": 1097,
@@ -20205,6 +24435,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:193", "adsf:194", "adsf:211"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1098": {
     "id": 1098,
@@ -20242,6 +24476,10 @@ var items = {
         "3": 10
       }
     },
+    "dropfrom": ["adsf:195", "adsf:196", "adsf:211"],
+    "consumable": "randomsharp",
+    "material": "metal",
+    "changed": "1"
   },
   "1099": {
     "id": 1099,
@@ -20279,6 +24517,10 @@ var items = {
         "3": 10
       }
     },
+    "dropfrom": ["adsf:211"],
+    "consumable": "randomsharp",
+    "material": "metal",
+    "changed": "1"
   },
   "1100": {
     "id": 1100,
@@ -20310,6 +24552,10 @@ var items = {
         "3": 0
       }
     },
+    "dropfrom": ["adsf:197", "adsf:211"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1101": {
     "id": 1101,
@@ -20331,7 +24577,11 @@ var items = {
     "image": "uniqred",
     "price": 500000,
     "personal": 1,
-    "owner": "Red"
+    "owner": "Red",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1102": {
     "id": 1102,
@@ -20340,7 +24590,7 @@ var items = {
     "maxcnt": 10,
     "type": "socket",
     "rarity": "epic",
-    "level": 21,
+    "level": 99,
     "image": "supergemma",
     "price": 10900,
     "personal": 1,
@@ -20351,6 +24601,9 @@ var items = {
       "reagent": 873
     },
     "hidden": 1,
+    "consumable": "none",
+    "ability_id": 198,
+    "changed": "1"
   },
   "1103": {
     "id": 1103,
@@ -20376,6 +24629,8 @@ var items = {
         "mastery": 10
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1104": {
     "id": 1104,
@@ -20401,18 +24656,20 @@ var items = {
         "resilience": 10
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1105": {
     "id": 1105,
     "categ_id": 22,
     "name": "Премиум Эликсир на 7 дней",
-    "maxcnt": 5,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "rare",
     "image": "premium_pot",
     "price": 10000,
     "personal": 1,
-    "descr": "Вдвое ускоряет передвижение по локациям<br>Мгновенно восстанавливает здоровье после боя<br>Вдвое снижает время до повторного прохождения ежедневных заданий <font color=\"#FF0000\">(не действует на праздничные задания)</font> <br>150% золота в боях<br>150% Очков Арканы и Арены<br>200% Стигм и Аним Сумрака<br>200% Осколков Магии в боях<br><font color=\"#FF0000\">Заменяет эффект Эликсира Пришельца!</font>",
+    "descr": "Вдвое ускоряет передвижение по локациям<br>Мгновенно восстанавливает здоровье после боя<br>Вдвое снижает время до повторного прохождения ежедневных заданий <font color=\"#FF0000\>(не действует на праздничные задания)</font> <br>150% золота в боях<br>150% Очков Арканы и Арены<br>200% Стигм и Аним Сумрака<br>200% Осколков Магии в боях<br><font color=\"#FF0000\">Заменяет эффект Эликсира Пришельца!</font>",
     "instruction": "Двойной клик: выпить.",
     "bottleparams": {
       "effects": [{
@@ -20420,12 +24677,16 @@ var items = {
         "value": "416"
       }]
     },
+    "dropfrom": ["adsf:350"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1106": {
     "id": 1106,
     "categ_id": 22,
     "name": "Премиум Эликсир на 30 дней",
-    "maxcnt": 5,
+    "maxcnt": 1000,
     "type": "bottle",
     "rarity": "epic",
     "image": "premium_elixir",
@@ -20439,6 +24700,9 @@ var items = {
         "value": "417"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1107": {
     "id": 1107,
@@ -20457,6 +24721,9 @@ var items = {
         "value": "418"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1108": {
     "id": 1108,
@@ -20469,6 +24736,9 @@ var items = {
     "price": 500,
     "personal": 1,
     "descr": "Такой луут с кратеров - большая удача!",
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1109": {
     "id": 1109,
@@ -20481,6 +24751,9 @@ var items = {
     "price": 200,
     "personal": 1,
     "descr": "Бессмысленный и беспощадный.",
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1110": {
     "id": 1110,
@@ -20497,7 +24770,10 @@ var items = {
     "image": "craterloot2",
     "price": 700,
     "personal": 1,
-    "descr": "Обыкновенный луут, но дроп. На обратной стороне подписано \"Mister ...\". Наверное, это статуэтка божества кратеров.",
+    "descr": "Обыкновенный луут, но дроп. На обратной стороне подписано \"Mister...\". Наверное, это статуэтка божества кратеров.",
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1111": {
     "id": 1111,
@@ -20512,6 +24788,9 @@ var items = {
     "descr": "Вероятно существующий питомец.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 36,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1112": {
     "id": 1112,
@@ -20524,6 +24803,10 @@ var items = {
     "price": 10,
     "personal": 1,
     "descr": "Душа одного из древних воинов арены.",
+    "dropfrom": ["adsf:215", "adsf:216", "adsf:217", "adsf:218", "adsf:219", "adsf:220", "adsf:223"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1113": {
     "id": 1113,
@@ -20552,6 +24835,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1114": {
     "id": 1114,
@@ -20567,6 +24852,9 @@ var items = {
     "descr": "Билет на беспроигрышную лотерею в честь Хеллоуина. Разыгрываются: <br>1 Уникальный предмет эпического качества<br>1 Любой конструкторский предмет по вашему выбору <br>1 Персональная аватара<br>3 Золотых слитка номиналом в тысячу золотых <br>Гарантированный приз: передаваемый питомец-привидение<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1115": {
     "id": 1115,
@@ -20579,6 +24867,10 @@ var items = {
     "price": 830,
     "personal": 1,
     "descr": "Поможет усилить двуручное оружие.",
+    "dropfrom": ["adsf:221", "adsf:222"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1116": {
     "id": 1116,
@@ -20591,6 +24883,10 @@ var items = {
     "price": 830,
     "personal": 1,
     "descr": "Поможет усилить оружие в левую руку.",
+    "dropfrom": ["adsf:221", "adsf:222"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1117": {
     "id": 1117,
@@ -20603,6 +24899,10 @@ var items = {
     "price": 830,
     "personal": 1,
     "descr": "Поможет усилить щит.",
+    "dropfrom": ["adsf:221", "adsf:222"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1118": {
     "id": 1118,
@@ -20615,6 +24915,10 @@ var items = {
     "price": 830,
     "personal": 1,
     "descr": "Поможет усилить основное оружие.",
+    "dropfrom": ["adsf:221", "adsf:222"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1119": {
     "id": 1119,
@@ -20638,6 +24942,9 @@ var items = {
     "price": 210000,
     "becomepersonal": 1,
     "descr": "Гарантируют неприятности вашим врагам.",
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1120": {
     "id": 1120,
@@ -20664,6 +24971,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 422,
+    "material": "cotton",
+    "changed": "1"
   },
   "1121": {
     "id": 1121,
@@ -20690,6 +25002,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 423,
+    "material": "cotton",
+    "changed": "1"
   },
   "1122": {
     "id": 1122,
@@ -20716,6 +25033,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 424,
+    "material": "cotton",
+    "changed": "1"
   },
   "1123": {
     "id": 1123,
@@ -20742,6 +25064,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 425,
+    "material": "cotton",
+    "changed": "1"
   },
   "1124": {
     "id": 1124,
@@ -20768,6 +25095,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 426,
+    "material": "cotton",
+    "changed": "1"
   },
   "1125": {
     "id": 1125,
@@ -20794,6 +25126,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 427,
+    "material": "cotton",
+    "changed": "1"
   },
   "1126": {
     "id": 1126,
@@ -20820,6 +25157,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 428,
+    "material": "cotton",
+    "changed": "1"
   },
   "1127": {
     "id": 1127,
@@ -20846,6 +25188,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 429,
+    "material": "cotton",
+    "changed": "1"
   },
   "1128": {
     "id": 1128,
@@ -20872,6 +25219,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 430,
+    "material": "cotton",
+    "changed": "1"
   },
   "1129": {
     "id": 1129,
@@ -20898,6 +25250,11 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 431,
+    "material": "cotton",
+    "changed": "1"
   },
   "1130": {
     "id": 1130,
@@ -20926,6 +25283,14 @@ var items = {
         "value": "432"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_oppgroup": 1,
+    "target_mob": 1,
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1131": {
     "id": 1131,
@@ -20951,9 +25316,14 @@ var items = {
         "type": ">=",
         "value": "18"
       }],
-      "buff_id": "349",
+      "buff_id": 349,
       "value": "1.33"
     },
+    "consumable": "buffremove",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "monitoring": "1"
   },
   "1132": {
     "id": 1132,
@@ -20980,6 +25350,14 @@ var items = {
         "value": "434"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_oppgroup": 1,
+    "target_mob": 1,
+    "uniq": 1,
+    "material": "wood",
+    "changed": "1"
   },
   "1133": {
     "id": 1133,
@@ -21006,6 +25384,14 @@ var items = {
         "value": "435"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_oppgroup": 1,
+    "target_mob": 1,
+    "uniq": 1,
+    "material": "wood",
+    "changed": "1"
   },
   "1134": {
     "id": 1134,
@@ -21031,6 +25417,14 @@ var items = {
         "value": "436"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_oppgroup": 1,
+    "target_mob": 1,
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1135": {
     "id": 1135,
@@ -21043,6 +25437,9 @@ var items = {
     "image": "candy_cane",
     "price": 99,
     "descr": "Зачарованная конфета - самый простой способ стать повелителем зла.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1136": {
     "id": 1136,
@@ -21061,6 +25458,9 @@ var items = {
         "value": "437"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1137": {
     "id": 1137,
@@ -21075,6 +25475,9 @@ var items = {
     "descr": "Старый друг.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 37,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1138": {
     "id": 1138,
@@ -21089,6 +25492,9 @@ var items = {
     "descr": "Прощальный подарок Джека-Фонаря.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 38,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1139": {
     "id": 1139,
@@ -21102,6 +25508,9 @@ var items = {
     "descr": "Легендарный призрак заброшенного поместья!",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 39,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1140": {
     "id": 1140,
@@ -21125,6 +25534,10 @@ var items = {
     "price": 210000,
     "becomepersonal": 1,
     "descr": "Вжжж! Вжжжжж!",
+    "consumable": "randomsharp",
+    "buff_id": 438,
+    "material": "metal",
+    "changed": "1"
   },
   "1141": {
     "id": 1141,
@@ -21136,6 +25549,9 @@ var items = {
     "image": "1000gold",
     "price": 10000000,
     "descr": "Номиналом 1000 золотых монет. Надежное вложение капитала.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1142": {
     "id": 1142,
@@ -21160,6 +25576,10 @@ var items = {
     "price": 240000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
+    "consumable": "none",
+    "buff_id": 445,
+    "material": "metal",
+    "changed": "1"
   },
   "1143": {
     "id": 1143,
@@ -21192,6 +25612,10 @@ var items = {
         "3": 0
       }
     },
+    "consumable": "none",
+    "buff_id": 445,
+    "material": "metal",
+    "changed": "1"
   },
   "1144": {
     "id": 1144,
@@ -21216,6 +25640,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
+    "consumable": "none",
+    "buff_id": 442,
+    "material": "metal",
+    "changed": "1"
   },
   "1145": {
     "id": 1145,
@@ -21240,6 +25668,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
+    "consumable": "none",
+    "buff_id": 442,
+    "material": "metal",
+    "changed": "1"
   },
   "1146": {
     "id": 1146,
@@ -21261,6 +25693,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
+    "consumable": "none",
+    "buff_id": 444,
+    "material": "metal",
+    "changed": "1"
   },
   "1147": {
     "id": 1147,
@@ -21282,6 +25718,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
+    "consumable": "none",
+    "buff_id": 444,
+    "material": "metal",
+    "changed": "1"
   },
   "1148": {
     "id": 1148,
@@ -21304,6 +25744,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
+    "consumable": "none",
+    "buff_id": 443,
+    "material": "metal",
+    "changed": "1"
   },
   "1149": {
     "id": 1149,
@@ -21315,6 +25759,9 @@ var items = {
     "price": 200000,
     "personal": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1150": {
     "id": 1150,
@@ -21337,6 +25784,10 @@ var items = {
     "price": 200000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
+    "consumable": "none",
+    "buff_id": 443,
+    "material": "metal",
+    "changed": "1"
   },
   "1151": {
     "id": 1151,
@@ -21360,7 +25811,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "«Сердце Горы», главное сокровище Эребора.",
-    "owner": "Diebold"
+    "owner": "Diebold",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1152": {
     "id": 1152,
@@ -21371,6 +25826,9 @@ var items = {
     "rarity": "uncommon",
     "image": "prediction_sheet4",
     "descr": "Исписана историями далекого и загадочного мира. С картинками.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1153": {
     "id": 1153,
@@ -21382,6 +25840,11 @@ var items = {
     "image": "fastfoodquest",
     "personal": 1,
     "descr": "Ухо неведомого животного. Легенды о его размерах явно преувеличены...",
+    "dropfrom": ["adsf:223"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "organic",
+    "changed": "1"
   },
   "1154": {
     "id": 1154,
@@ -21405,6 +25868,10 @@ var items = {
     "price": 90000,
     "personal": 1,
     "descr": "В мире всего семь таких колец. Владеть одним из них - большая удача!",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1155": {
     "id": 1155,
@@ -21439,6 +25906,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1156": {
     "id": 1156,
@@ -21453,6 +25922,9 @@ var items = {
     "descr": "Уникальная лотерея! Главный приз - великолепное кольцо «Улыбка Фортуны». Не упустите свой шанс!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1157": {
     "id": 1157,
@@ -21476,7 +25948,11 @@ var items = {
     "price": 400000,
     "personal": 1,
     "descr": "Увеличивает урон в PvP.",
-    "owner": "Cetus"
+    "owner": "Cetus",
+    "consumable": "none",
+    "buff_id": 453,
+    "material": "metal",
+    "changed": "1"
   },
   "1158": {
     "id": 1158,
@@ -21489,6 +25965,8 @@ var items = {
     "personal": 1,
     "descr": "Камень с иероглифами. Понадобится настоящий знаток древностей, чтобы уловить их смысл.",
     "quest": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "1159": {
     "id": 1159,
@@ -21501,6 +25979,9 @@ var items = {
     "personal": 1,
     "descr": "Камень с изображением гор и загадочными рунами. Нужно быть экспертом, чтобы понять их значение.",
     "quest": 1,
+    "dropfrom": ["adsf:72"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1160": {
     "id": 1160,
@@ -21513,6 +25994,8 @@ var items = {
     "personal": 1,
     "descr": "Камень с изображением Лесного тотема и загадочными рунами. Нужно быть экспертом, чтобы понять их значение.",
     "quest": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "1161": {
     "id": 1161,
@@ -21525,6 +26008,9 @@ var items = {
     "personal": 1,
     "descr": "Камень с изображением дюн и загадочными символами. О значении рисунка лучше спросить у специалиста.",
     "quest": 1,
+    "dropfrom": ["adsf:133"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1162": {
     "id": 1162,
@@ -21545,6 +26031,10 @@ var items = {
     "image": "relicring",
     "price": 190000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1163": {
     "id": 1163,
@@ -21566,6 +26056,11 @@ var items = {
     "price": 190000,
     "becomepersonal": 1,
     "descr": "Количество желаний не ограничено.",
+    "consumable": "none",
+    "uniq": 1,
+    "ability_id": 317,
+    "material": "glass",
+    "changed": "1"
   },
   "1164": {
     "id": 1164,
@@ -21584,6 +26079,9 @@ var items = {
       "chance": 60,
       "reagent": 870
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1165": {
     "id": 1165,
@@ -21603,6 +26101,9 @@ var items = {
       "chance": 50,
       "reagent": 872
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1166": {
     "id": 1166,
@@ -21622,6 +26123,9 @@ var items = {
       "chance": 40,
       "reagent": 873
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1167": {
     "id": 1167,
@@ -21640,6 +26144,9 @@ var items = {
       "chance": 60,
       "reagent": 870
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1168": {
     "id": 1168,
@@ -21659,6 +26166,9 @@ var items = {
       "chance": 50,
       "reagent": 872
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1169": {
     "id": 1169,
@@ -21678,6 +26188,9 @@ var items = {
       "chance": 40,
       "reagent": 873
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1170": {
     "id": 1170,
@@ -21697,6 +26210,9 @@ var items = {
       "chance": 60,
       "reagent": 870
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1171": {
     "id": 1171,
@@ -21717,6 +26233,9 @@ var items = {
       "chance": 50,
       "reagent": 872
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1172": {
     "id": 1172,
@@ -21737,6 +26256,9 @@ var items = {
       "chance": 40,
       "reagent": 873
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1173": {
     "id": 1173,
@@ -21755,6 +26277,9 @@ var items = {
       "chance": 60,
       "reagent": 870
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1174": {
     "id": 1174,
@@ -21774,6 +26299,9 @@ var items = {
       "chance": 50,
       "reagent": 872
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1175": {
     "id": 1175,
@@ -21793,6 +26321,9 @@ var items = {
       "chance": 40,
       "reagent": 873
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1176": {
     "id": 1176,
@@ -21811,6 +26342,9 @@ var items = {
       "chance": 60,
       "reagent": 870
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1177": {
     "id": 1177,
@@ -21830,6 +26364,9 @@ var items = {
       "chance": 50,
       "reagent": 872
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1178": {
     "id": 1178,
@@ -21849,6 +26386,9 @@ var items = {
       "chance": 40,
       "reagent": 873
     },
+    "dropfrom": ["adsf:320", "adsf:321"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1179": {
     "id": 1179,
@@ -21874,6 +26414,9 @@ var items = {
         "strength": 1
       }
     },
+    "dropfrom": ["adsf:290", "adsf:292", "adsf:295"],
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1180": {
     "id": 1180,
@@ -21899,6 +26442,9 @@ var items = {
         "stamina": 1
       }
     },
+    "dropfrom": ["adsf:289", "adsf:293", "adsf:294", "adsf:297"],
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1181": {
     "id": 1181,
@@ -21924,6 +26470,9 @@ var items = {
         "agility": 1
       }
     },
+    "dropfrom": ["adsf:288", "adsf:296"],
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1182": {
     "id": 1182,
@@ -21937,6 +26486,8 @@ var items = {
     "price": 700,
     "personal": 1,
     "descr": "Фамильные драгоценности Париса. Старше, чем династия Милтонов. ",
+    "consumable": "none",
+    "changed": "1"
   },
   "1183": {
     "id": 1183,
@@ -21975,6 +26526,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1184": {
     "id": 1184,
@@ -21989,6 +26542,9 @@ var items = {
     "personal": 1,
     "descr": "Помогает выглядеть естественно без грима.",
     "quest": 1,
+    "dropfrom": ["adsf:211", "adsf:212"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1185": {
     "id": 1185,
@@ -22006,6 +26562,9 @@ var items = {
     "price": 700,
     "personal": 1,
     "descr": "Тролли зовут меня<br>луной жилища Хрунгнира (?),<br>высасывающей богатство ётуна,<br>несчастьем солнца бури,<br>трудом вёльвы,<br>стражем скалистого края,<br>заглатывающей небесное колесо –<br>что же тролль, если не это?",
+    "consumable": "none",
+    "ability_id": 318,
+    "changed": "1"
   },
   "1186": {
     "id": 1186,
@@ -22023,6 +26582,9 @@ var items = {
     "personal": 1,
     "descr": "На 30% уменьшает повреждения от комет, цунами и магических катастроф.",
     "instruction": "Надеть на голову, лечь на землю.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1187": {
     "id": 1187,
@@ -22037,6 +26599,8 @@ var items = {
     "descr": "На 30% уменьшает повреждения от комет, цунами и магических катастроф.",
     "validtime": 3600,
     "giveitem": 1186,
+    "consumable": "none",
+    "changed": "1"
   },
   "1188": {
     "id": 1188,
@@ -22073,6 +26637,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1189": {
     "id": 1189,
@@ -22086,6 +26652,9 @@ var items = {
     "descr": "Покоритель нового мира.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 40,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1190": {
     "id": 1190,
@@ -22101,6 +26670,9 @@ var items = {
     "descr": "Билет на постапокалиптическую лотерею. Розыгрыш состоится после Конца Света<br>Разыгрываются: <br>1 Уникальный предмет эпического качества<br>1 Любой конструкторский предмет по вашему выбору <br>2 Любых предмета из раздела 'Экипировка' из Магазина по вашему выбору <br>3 Золотых слитка номиналом в тысячу золотых<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1191": {
     "id": 1191,
@@ -22118,6 +26690,8 @@ var items = {
     "bottleparams": {
       "color": "red"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1192": {
     "id": 1192,
@@ -22135,6 +26709,8 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1193": {
     "id": 1193,
@@ -22152,6 +26728,8 @@ var items = {
     "bottleparams": {
       "color": "white"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1194": {
     "id": 1194,
@@ -22169,6 +26747,8 @@ var items = {
     "bottleparams": {
       "color": "green"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1195": {
     "id": 1195,
@@ -22186,6 +26766,8 @@ var items = {
     "bottleparams": {
       "color": "yellow"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1196": {
     "id": 1196,
@@ -22197,6 +26779,8 @@ var items = {
     "level": 4,
     "image": "rare_dust",
     "price": 1500,
+    "consumable": "none",
+    "changed": "1"
   },
   "1197": {
     "id": 1197,
@@ -22210,6 +26794,8 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Используется для сплавки квадр.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1198": {
     "id": 1198,
@@ -22231,6 +26817,9 @@ var items = {
     "image": "gangsta1_pants",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1199": {
     "id": 1199,
@@ -22252,6 +26841,9 @@ var items = {
     "image": "gangsta1_hat",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1200": {
     "id": 1200,
@@ -22274,6 +26866,9 @@ var items = {
     "image": "gangsta1_boots",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1201": {
     "id": 1201,
@@ -22296,6 +26891,9 @@ var items = {
     "image": "gangsta1_chest",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1202": {
     "id": 1202,
@@ -22318,6 +26916,9 @@ var items = {
     "image": "gangsta1_mitts",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1203": {
     "id": 1203,
@@ -22331,6 +26932,9 @@ var items = {
     "personal": 1,
     "descr": "Навершие жезла Скарра. Эманации чистого Зла вызывают устойчивое желание избавится от него.",
     "quest": 1,
+    "dropfrom": ["adsf:237"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1204": {
     "id": 1204,
@@ -22342,6 +26946,8 @@ var items = {
     "level": 1,
     "image": "meteoritloot",
     "descr": "Чужеродный материал. Выглядит достаточно необычным, чтобы ему нашлось применение. ",
+    "consumable": "none",
+    "changed": "1"
   },
   "1205": {
     "id": 1205,
@@ -22356,6 +26962,9 @@ var items = {
     "descr": "Добро пожаловать в Год Змеи!",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 41,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1206": {
     "id": 1206,
@@ -22376,7 +26985,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "«Nec sol, nec frigora mutant»",
-    "owner": "Cetus"
+    "owner": "Cetus",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1207": {
     "id": 1207,
@@ -22392,6 +27005,8 @@ var items = {
     "descr": "Необходимо как можно скорее отнести её в тепло и уют.",
     "quest": 1,
     "validtime": 6000,
+    "consumable": "none",
+    "changed": "1"
   },
   "1208": {
     "id": 1208,
@@ -22437,6 +27052,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1209": {
     "id": 1209,
@@ -22450,6 +27067,10 @@ var items = {
     "personal": 1,
     "descr": "Состав: белка — 99%, шерсть рыжая - 1%. Постарайтесь не увидеть её до конца праздников!",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1210": {
     "id": 1210,
@@ -22463,6 +27084,10 @@ var items = {
     "personal": 1,
     "descr": "Сейчас таких шишек уже не делают. Эх, молодость...",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1211": {
     "id": 1211,
@@ -22476,6 +27101,10 @@ var items = {
     "personal": 1,
     "descr": "Скептическое яблоко. Отличный собеседник в новогоднюю ночь.",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1212": {
     "id": 1212,
@@ -22500,6 +27129,9 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1213": {
     "id": 1213,
@@ -22524,6 +27156,9 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1214": {
     "id": 1214,
@@ -22548,6 +27183,9 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1215": {
     "id": 1215,
@@ -22572,6 +27210,9 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1216": {
     "id": 1216,
@@ -22596,6 +27237,9 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1217": {
     "id": 1217,
@@ -22620,6 +27264,9 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1218": {
     "id": 1218,
@@ -22635,6 +27282,9 @@ var items = {
     "descr": "Билет на новогоднюю лотерею. Розыгрыш состоится 6 января.<br>Разыгрываются: <br>Право на персональную аватару<br>Любой конструкторский предмет по вашему выбору <br>Золотой кошель, содержащий эквивалент 1000 рублей в Золотых Лаббитах.<br>Золотой слиток номиналом в тысячу золотых<br>3 Любых предмета из раздела 'Экипировка' из Магазина по вашему выбору <br>10 Премиум-Эликсиров на 30 дней",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1219": {
     "id": 1219,
@@ -22667,6 +27317,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1220": {
     "id": 1220,
@@ -22682,6 +27334,9 @@ var items = {
     "descr": "Билет на новогоднюю лотерею. Розыгрыш состоится 6 января. Разыгрываются: <br>Уникальный предмет по вашему выбору<br>Право на персональную аватару<br>2 Любых конструкторских предмета по вашему выбору <br>3 Золотых кошеля, содержащих эквивалент 1000 рублей в Золотых Лаббитах.<br>3 Золотых слитка номиналом в тысячу золотых<br>За каждую цифру «3» в номере билета вы получите передаваемого питомца!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1221": {
     "id": 1221,
@@ -22695,6 +27350,10 @@ var items = {
     "personal": 1,
     "descr": "С новым 2012 годом!",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1222": {
     "id": 1222,
@@ -22709,6 +27368,9 @@ var items = {
     "descr": "Гость из других вселенных.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 42,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1223": {
     "id": 1223,
@@ -22732,6 +27394,9 @@ var items = {
         "defence": 7
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1224": {
     "id": 1224,
@@ -22755,6 +27420,9 @@ var items = {
         "agility": 7
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1225": {
     "id": 1225,
@@ -22769,6 +27437,9 @@ var items = {
     "descr": "Необходимый реквизит любого фокусника.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 43,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1226": {
     "id": 1226,
@@ -22798,6 +27469,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1227": {
     "id": 1227,
@@ -22828,6 +27501,8 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1228": {
     "id": 1228,
@@ -22843,6 +27518,8 @@ var items = {
     "instruction": "Двойной клик: вскрыть сундук.",
     "validtime": 432000,
     "giveitem": 1226,
+    "consumable": "none",
+    "changed": "1"
   },
   "1229": {
     "id": 1229,
@@ -22858,6 +27535,8 @@ var items = {
     "instruction": "Двойной клик: вскрыть сундук.",
     "validtime": 432000,
     "giveitem": 1225,
+    "consumable": "none",
+    "changed": "1"
   },
   "1230": {
     "id": 1230,
@@ -22887,6 +27566,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1231": {
     "id": 1231,
@@ -22902,6 +27583,9 @@ var items = {
     "descr": "Билет на рождественскую лотерею. Розыгрыш состоится 11 января.<br>Разыгрываются: <br>Уникальный предмет по вашему выбору<br>Право на персональную аватару<br>Любой конструкторский предмет по вашему выбору <br>3 Золотых слитка номиналом в тысячу золотых<br>За каждый билет, номер которого кратен сотне вы гарантированно получите 20 Лаббитов на счет!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1232": {
     "id": 1232,
@@ -22915,6 +27599,9 @@ var items = {
     "descr": "Иногда снега не хватает...",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 44,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1233": {
     "id": 1233,
@@ -22927,6 +27614,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1234": {
     "id": 1234,
@@ -22945,6 +27635,9 @@ var items = {
     "price": 2000,
     "personal": 1,
     "descr": "Неизменный атрибут денди. Поможет отличить бордюр от поребрика.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1235": {
     "id": 1235,
@@ -22958,6 +27651,10 @@ var items = {
     "personal": 1,
     "descr": "Как это может работать?",
     "quest": 1,
+    "dropfrom": ["adsf:193", "adsf:194", "adsf:195", "adsf:196", "adsf:197", "adsf:199"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1236": {
     "id": 1236,
@@ -22977,7 +27674,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "Я раньше и не думал, что у нас на двоих с тобой одно лишь дыхание...",
-    "owner": "Анастезиолог"
+    "owner": "Анастезиолог",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1237": {
     "id": 1237,
@@ -22990,6 +27691,10 @@ var items = {
     "price": 5500,
     "personal": 1,
     "descr": "Вещество не из этого мира. Потусторонняя энергия вокруг него заставляет свет меркнуть.",
+    "dropfrom": ["adsf:243", "adsf:244", "adsf:254", "adsf:261", "adsf:265", "adsf:283"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1238": {
     "id": 1238,
@@ -23009,6 +27714,9 @@ var items = {
       }
     },
     "validtime": 3000,
+    "dropfrom": ["adsf:196", "adsf:197", "adsf:199", "adsf:203"],
+    "consumable": "attackmob",
+    "changed": "1"
   },
   "1239": {
     "id": 1239,
@@ -23028,6 +27736,9 @@ var items = {
         "value": "473"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1240": {
     "id": 1240,
@@ -23065,6 +27776,9 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "randomsharp",
+    "material": "metal",
+    "changed": "1"
   },
   "1241": {
     "id": 1241,
@@ -23096,6 +27810,8 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1242": {
     "id": 1242,
@@ -23113,6 +27829,10 @@ var items = {
         "value": "476"
       }]
     },
+    "dropfrom": ["adsf:67", "adsf:68", "adsf:72", "adsf:75"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1243": {
     "id": 1243,
@@ -23126,6 +27846,8 @@ var items = {
     "instruction": "Двойной клик: прочитать.",
     "bottleparams": 54,
     "quest": 1,
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1244": {
     "id": 1244,
@@ -23140,6 +27862,9 @@ var items = {
     "descr": "Из хранилища №13167",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 45,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1245": {
     "id": 1245,
@@ -23174,6 +27899,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "1246": {
     "id": 1246,
@@ -23187,6 +27915,9 @@ var items = {
     "personal": 1,
     "descr": "Честь, отвага, преданность идеалам.",
     "validtime": 804800,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1247": {
     "id": 1247,
@@ -23199,6 +27930,10 @@ var items = {
     "personal": 1,
     "descr": "Фирменный головной убор из иного мира. ",
     "quest": 1,
+    "dropfrom": ["adsf:237"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1248": {
     "id": 1248,
@@ -23211,6 +27946,10 @@ var items = {
     "personal": 1,
     "descr": "Фирменная одежда покрыта пылью иных миров. ",
     "quest": 1,
+    "dropfrom": ["adsf:189"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1249": {
     "id": 1249,
@@ -23223,6 +27962,10 @@ var items = {
     "personal": 1,
     "descr": "Фирменная обувь из иного мира. ",
     "quest": 1,
+    "dropfrom": ["adsf:171"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1250": {
     "id": 1250,
@@ -23243,6 +27986,9 @@ var items = {
     "image": "guard_pants",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1251": {
     "id": 1251,
@@ -23263,6 +28009,9 @@ var items = {
     "image": "guard_helm",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1252": {
     "id": 1252,
@@ -23283,6 +28032,9 @@ var items = {
     "image": "guard_boots",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1253": {
     "id": 1253,
@@ -23303,6 +28055,9 @@ var items = {
     "image": "guard_chest",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1254": {
     "id": 1254,
@@ -23323,6 +28078,9 @@ var items = {
     "image": "guard_mitts",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1255": {
     "id": 1255,
@@ -23336,6 +28094,9 @@ var items = {
     "descr": "Корреспонденция исследователей, пропавших при изучении Сумеречного Города.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 55,
+    "dropfrom": ["adsf:134", "adsf:135"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1256": {
     "id": 1256,
@@ -23349,6 +28110,9 @@ var items = {
     "descr": "Корреспонденция исследователей, пропавших при изучении Сумеречного Города.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 56,
+    "dropfrom": ["adsf:193", "adsf:194"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1257": {
     "id": 1257,
@@ -23362,6 +28126,9 @@ var items = {
     "descr": "Корреспонденция исследователей, пропавших при изучении Сумеречного Города.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 57,
+    "dropfrom": ["adsf:195", "adsf:196"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1258": {
     "id": 1258,
@@ -23375,6 +28142,9 @@ var items = {
     "descr": "Корреспонденция исследователей, пропавших при изучении Сумеречного Города.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 58,
+    "dropfrom": ["adsf:197"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1259": {
     "id": 1259,
@@ -23388,6 +28158,9 @@ var items = {
     "descr": "Корреспонденция исследователей, пропавших при изучении Сумеречного Города.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 59,
+    "dropfrom": ["adsf:203", "adsf:243", "adsf:244", "adsf:254", "adsf:261", "adsf:265", "adsf:283"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1260": {
     "id": 1260,
@@ -23401,6 +28174,9 @@ var items = {
     "descr": "Корреспонденция исследователей, пропавших при изучении Сумеречного Города.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 60,
+    "dropfrom": ["adsf:199", "adsf:200"],
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1261": {
     "id": 1261,
@@ -23420,6 +28196,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "В начале каждого боя дарует владельцу могущественную поддержку одной из четырех стихий.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1262": {
     "id": 1262,
@@ -23433,6 +28212,10 @@ var items = {
     "personal": 1,
     "descr": "Цветок, сохранивший в себе магическую энергию. Является важным компонентом во многих ритуалах.",
     "quest": 1,
+    "dropfrom": ["adsf:208", "adsf:210", "adsf:216", "adsf:217", "adsf:218", "adsf:220", "adsf:221", "adsf:222", "adsf:227", "adsf:232", "adsf:234", "adsf:235", "adsf:236", "adsf:238", "adsf:244", "adsf:246", "adsf:251", "adsf:254", "adsf:258", "adsf:259", "adsf:261", "adsf:263", "adsf:265", "adsf:283"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1263": {
     "id": 1263,
@@ -23445,6 +28228,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Повредить её почти невозможно.",
+    "dropfrom": ["adsf:237"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1264": {
     "id": 1264,
@@ -23458,16 +28245,23 @@ var items = {
     "personal": 1,
     "descr": "Магический металл. Идеально подходит для создания доспехов.",
     "quest": 1,
+    "dropfrom": ["adsf:211", "adsf:212", "adsf:244", "adsf:254", "adsf:261", "adsf:265", "adsf:283"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1265": {
     "id": 1265,
     "categ_id": 23,
     "name": "Афиша",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "uncommon",
     "image": "afisha1",
     "descr": "Выступление в Проклятом Цирке! Настоящий вызов! Не пропустите!",
+    "dropfrom": ["adsf:194", "adsf:196", "adsf:197", "adsf:203"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1266": {
     "id": 1266,
@@ -23487,6 +28281,10 @@ var items = {
     "price": 1,
     "becomepersonal": 1,
     "descr": "При нанесении или получении урона наносит оппоненту от 16 до 24 урона кровотечением.",
+    "consumable": "none",
+    "buff_id": 485,
+    "material": "cotton",
+    "changed": "1"
   },
   "1267": {
     "id": 1267,
@@ -23499,6 +28297,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Отличный экземпляр в коллекции!",
+    "dropfrom": ["adsf:244"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1268": {
     "id": 1268,
@@ -23516,6 +28317,11 @@ var items = {
     "price": 11,
     "becomepersonal": 1,
     "descr": "Та самая, легендарная!",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "1269": {
     "id": 1269,
@@ -23531,6 +28337,8 @@ var items = {
     "instruction": "Двойной клик: подарить!",
     "validtime": 14000,
     "giveitem": 1270,
+    "consumable": "none",
+    "changed": "1"
   },
   "1270": {
     "id": 1270,
@@ -23558,6 +28366,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1271": {
     "id": 1271,
@@ -23573,6 +28383,9 @@ var items = {
     "descr": "Билет на беспроигрышную лотерею в честь Дня Святого Валентина. Разыгрываются: <br>Уникальный предмет эпического качества<br>Уникальная эпическая гемма с 12-ю единицами характеристик и дизайном на ваше усмотрение <br>Персональная аватара<br>Любой конструкторский предмет по вашему выбору <br>Золотой слиток номиналом в тысячу золотых<br>Гарантированный приз: уникальный питомец Жар-птица!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1272": {
     "id": 1272,
@@ -23597,7 +28410,11 @@ var items = {
     "price": 220000,
     "personal": 1,
     "descr": "Из далматиновой руды.",
-    "owner": "Долматин"
+    "owner": "Долматин",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1273": {
     "id": 1273,
@@ -23620,6 +28437,8 @@ var items = {
       }
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1274": {
     "id": 1274,
@@ -23632,6 +28451,9 @@ var items = {
     "price": 99,
     "personal": 1,
     "descr": "Шедевр кондитерского искусства гномов.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1275": {
     "id": 1275,
@@ -23662,6 +28484,9 @@ var items = {
       }
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "changed": "1"
   },
   "1276": {
     "id": 1276,
@@ -23692,6 +28517,9 @@ var items = {
       }
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "changed": "1"
   },
   "1277": {
     "id": 1277,
@@ -23722,6 +28550,9 @@ var items = {
       }
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "changed": "1"
   },
   "1278": {
     "id": 1278,
@@ -23749,6 +28580,9 @@ var items = {
       }
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "changed": "1"
   },
   "1279": {
     "id": 1279,
@@ -23770,6 +28604,10 @@ var items = {
     "price": 500000,
     "becomepersonal": 1,
     "descr": "Амулет из чистого золота. Наделяет владельца способностью общаться с духами.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1280": {
     "id": 1280,
@@ -23783,6 +28621,9 @@ var items = {
     "descr": "Осторожно, она горячая..",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 46,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1281": {
     "id": 1281,
@@ -23791,7 +28632,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 12,
     "image": "nergalrelic",
@@ -23802,7 +28643,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Gendolfwait"
+    "owner": "Gendolfwait",
+    "consumable": "none",
+    "changed": "1"
   },
   "1282": {
     "id": 1282,
@@ -23815,6 +28658,9 @@ var items = {
     "price": 5500,
     "personal": 1,
     "descr": "Защитнику Отечества, за доблесть в сражении...",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1283": {
     "id": 1283,
@@ -23836,7 +28682,11 @@ var items = {
     "image": "anununiq2",
     "price": 500000,
     "personal": 1,
-    "owner": "Anun"
+    "owner": "Anun",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1284": {
     "id": 1284,
@@ -23850,6 +28700,8 @@ var items = {
     "personal": 1,
     "descr": "Чужеродный материал. Выглядит достаточно необычным, чтобы ему нашлось применение. ",
     "quest": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "1285": {
     "id": 1285,
@@ -23863,6 +28715,8 @@ var items = {
     "descr": "Коллекционный журнал-хроника мира Утраченной Магии.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 61,
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1286": {
     "id": 1286,
@@ -23893,6 +28747,9 @@ var items = {
       }
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "changed": "1"
   },
   "1287": {
     "id": 1287,
@@ -23966,6 +28823,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1288": {
     "id": 1288,
@@ -23980,6 +28839,9 @@ var items = {
     "descr": "Редкое растение, которое цветет лишь несколько дней в году. Пахнет изумительно...",
     "quest": 1,
     "validtime": 14400,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1289": {
     "id": 1289,
@@ -23995,6 +28857,9 @@ var items = {
     "descr": "Билет на лотерею в честь 8 Марта. Разыгрываются: <br>Уникальный предмет эпического качества<br>Уникальная эпическая гемма с 12-ю единицами характеристик и дизайном на ваше усмотрение <br>Любой конструкторский предмет по вашему выбору <br>2 Любых предмета экипировки из Магазина по вашему выбору <br>3 Золотых слитка номиналом в тысячу золотых<br>5 Премиум-эликсиров на 30 дней",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1290": {
     "id": 1290,
@@ -24008,6 +28873,9 @@ var items = {
     "personal": 1,
     "descr": "Нежный запах весны...",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1291": {
     "id": 1291,
@@ -24035,6 +28903,14 @@ var items = {
         "value": "490"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "1292": {
     "id": 1292,
@@ -24049,6 +28925,9 @@ var items = {
     "descr": "Коллекционер и денди.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 47,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1293": {
     "id": 1293,
@@ -24072,6 +28951,10 @@ var items = {
     "personal": 1,
     "descr": "Амулет призрачного Стража.",
     "quest": 2,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1294": {
     "id": 1294,
@@ -24083,6 +28966,9 @@ var items = {
     "image": "bronze_key",
     "price": 1,
     "descr": "Открывает одну из призрачных дверей. Может быть использован лишь один раз.",
+    "dropfrom": ["adsf:246", "adsf:251", "adsf:258", "adsf:259", "adsf:324"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1295": {
     "id": 1295,
@@ -24096,6 +28982,8 @@ var items = {
     "descr": "Искусно украшенный магический том. ",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 62,
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1296": {
     "id": 1296,
@@ -24109,6 +28997,10 @@ var items = {
     "personal": 1,
     "descr": "Амулет одного из двойников Стража. Выглядит так же, но пользы никакой.",
     "quest": 1,
+    "dropfrom": ["adsf:247"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1297": {
     "id": 1297,
@@ -24121,6 +29013,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Драгоценные камни, бриллианты, золото. Все проклято, все тлен...",
+    "dropfrom": ["adsf:246", "adsf:247", "adsf:251", "adsf:258", "adsf:259"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1298": {
     "id": 1298,
@@ -24139,13 +29035,17 @@ var items = {
     "bottleparams": {
       "effects": [{
         "type": "addnbb",
-        "value": "30",
+        "value": 30,
         "param": "349"
       }],
       "misc": {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "monitoring": "1"
   },
   "1299": {
     "id": 1299,
@@ -24171,6 +29071,9 @@ var items = {
         "stamina": 1
       }
     },
+    "dropfrom": ["adsf:247"],
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1300": {
     "id": 1300,
@@ -24194,7 +29097,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "Ему к лицу доспехи боевые;<br>В руках он держит острое копье,<br>К копью значок привешен белоснежный,<br>Высокомолекулярный полиизобутилен.",
-    "owner": "Voa"
+    "owner": "Voa",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1301": {
     "id": 1301,
@@ -24207,6 +29114,8 @@ var items = {
     "image": "gemcatalyst1",
     "price": 10000,
     "descr": "Увеличивает шанс создать качественную стиллу при сплавке ронд.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1302": {
     "id": 1302,
@@ -24219,6 +29128,8 @@ var items = {
     "image": "gemcatalyst2",
     "price": 10000,
     "descr": "Увеличивает шанс создать качественную дельту при сплавке стилл.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1303": {
     "id": 1303,
@@ -24231,6 +29142,8 @@ var items = {
     "image": "gemcatalyst3",
     "price": 10000,
     "descr": "Увеличивает шанс создать качественную квадру при сплавке дельт.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1304": {
     "id": 1304,
@@ -24243,6 +29156,8 @@ var items = {
     "image": "gemcatalyst4",
     "price": 10000,
     "descr": "Увеличивает шанс создать качественную сигму при сплавке квадр.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1305": {
     "id": 1305,
@@ -24256,6 +29171,8 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Универсальный катализатор. Увеличивает шанс получить качественную гемму при сплавке гемм.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1306": {
     "id": 1306,
@@ -24275,6 +29192,10 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный стихийный урон, пропорциональный количеству ярости. Максимум 32 урона. Стихия определяется случайным образом в начале каждого боя.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1307": {
     "id": 1307,
@@ -24286,6 +29207,10 @@ var items = {
     "image": "soulbladeloot",
     "price": 100,
     "descr": "Все, что осталось от призрачного клинка Стража Замка. Отличный сувенир на память!",
+    "dropfrom": ["adsf:247"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1308": {
     "id": 1308,
@@ -24311,6 +29236,9 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1309": {
     "id": 1309,
@@ -24336,6 +29264,9 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1310": {
     "id": 1310,
@@ -24361,6 +29292,9 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1311": {
     "id": 1311,
@@ -24434,6 +29368,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1312": {
     "id": 1312,
@@ -24449,6 +29385,9 @@ var items = {
     "descr": "Билет на апрельскую лотерею. Разыгрываются: <br>Уникальный предмет эпического качества<br>Персональная аватара<br>Уникальная эпическая гемма с 12-ю единицами характеристик и дизайном на ваше усмотрение <br>Любой конструкторский предмет по вашему выбору <br>3 Любых предмета экипировки из Магазина по вашему выбору <br>5 Золотых слитка номиналом в тысячу золотых<br>Все обладатели пяти и более лотерейных билетов получат новый выпуск журнала Мурзилка! ",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1313": {
     "id": 1313,
@@ -24472,6 +29411,10 @@ var items = {
     "price": 250000,
     "personal": 1,
     "descr": "Призрачное оружие игнорирует часть защиты противника.",
+    "consumable": "none",
+    "buff_id": 511,
+    "material": "metal",
+    "changed": "1"
   },
   "1314": {
     "id": 1314,
@@ -24483,6 +29426,9 @@ var items = {
     "image": "silverkey",
     "price": 1,
     "descr": "Открывает одну из призрачных дверей. Может быть использован лишь один раз.",
+    "dropfrom": ["adsf:247"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1315": {
     "id": 1315,
@@ -24497,6 +29443,9 @@ var items = {
     "descr": "Особый вид радостей-меломанов.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 48,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1316": {
     "id": 1316,
@@ -24510,6 +29459,8 @@ var items = {
     "descr": "Коллекционный журнал-хроника мира Утраченной Магии.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 63,
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1317": {
     "id": 1317,
@@ -24533,6 +29484,9 @@ var items = {
         "mastery": 4
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1318": {
     "id": 1318,
@@ -24556,6 +29510,9 @@ var items = {
         "mastery": 28
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1319": {
     "id": 1319,
@@ -24579,6 +29536,9 @@ var items = {
         "resilience": 4
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1320": {
     "id": 1320,
@@ -24602,6 +29562,9 @@ var items = {
         "resilience": 28
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1321": {
     "id": 1321,
@@ -24627,6 +29590,9 @@ var items = {
         "defence": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1322": {
     "id": 1322,
@@ -24652,6 +29618,9 @@ var items = {
         "defence": 7
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1323": {
     "id": 1323,
@@ -24677,6 +29646,9 @@ var items = {
         "agility": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1324": {
     "id": 1324,
@@ -24702,6 +29674,8 @@ var items = {
         "agility": 7
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1325": {
     "id": 1325,
@@ -24731,6 +29705,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1326": {
     "id": 1326,
@@ -24766,6 +29742,11 @@ var items = {
         "value": "142"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1327": {
     "id": 1327,
@@ -24779,6 +29760,10 @@ var items = {
     "descr": "Есть ли создание милее, чем мимимик? Очевидно нет.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 49,
+    "dropfrom": ["adsf:251", "adsf:259"],
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1328": {
     "id": 1328,
@@ -24814,16 +29799,24 @@ var items = {
         "value": "143"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1329": {
     "id": 1329,
     "categ_id": 23,
     "name": "Афиша",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "uncommon",
     "image": "afisha2",
     "descr": "Уникальное Выступление в Проклятом Цирке! Не пропустите!",
+    "dropfrom": ["adsf:194", "adsf:196", "adsf:197", "adsf:203"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1330": {
     "id": 1330,
@@ -24843,6 +29836,9 @@ var items = {
         "255x1": 100
       }
     },
+    "consumable": "attackmob",
+    "material": "metal",
+    "changed": "1"
   },
   "1331": {
     "id": 1331,
@@ -24862,6 +29858,9 @@ var items = {
         "255x1": 100
       }
     },
+    "consumable": "attackmob",
+    "material": "metal",
+    "changed": "1"
   },
   "1332": {
     "id": 1332,
@@ -24870,7 +29869,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "defence": 8,
     "strength": 4,
@@ -24882,7 +29881,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Stegan"
+    "owner": "Stegan",
+    "consumable": "none",
+    "changed": "1"
   },
   "1333": {
     "id": 1333,
@@ -24905,7 +29906,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "Obedience Breeds Discipline, Discipline Breeds Unity, Unity Breeds Power, Power is Life.",
-    "owner": "Tanunah"
+    "owner": "Tanunah",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1334": {
     "id": 1334,
@@ -24919,6 +29924,9 @@ var items = {
     "descr": "Первый во всем!",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 50,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1335": {
     "id": 1335,
@@ -24934,11 +29942,15 @@ var items = {
     "instruction": "Двойной клик: создать двойника.",
     "bottleparams": {
       "locations": "143,142,141,140,148,152",
-      "faction": "2",
+      "faction": 2,
       "attackmob": {
         "256x1": 100
       }
     },
+    "consumable": "attackmob",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1336": {
     "id": 1336,
@@ -24960,6 +29972,10 @@ var items = {
         "value": "519"
       }]
     },
+    "dropfrom": ["adsf:272"],
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1337": {
     "id": 1337,
@@ -24971,6 +29987,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Игрушечный Чупакабра. Беречь от детей.",
+    "dropfrom": ["adsf:254"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1338": {
     "id": 1338,
@@ -24993,6 +30012,9 @@ var items = {
     "descr": "Все случайные совпадения есть хитросплетения вселенских закономерностей.",
     "instruction": "Двойной клик: использовать Заряд Рандома.",
     "charges": 13,
+    "consumable": "randomsharp",
+    "material": "ring",
+    "changed": "1"
   },
   "1339": {
     "id": 1339,
@@ -25017,6 +30039,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1340": {
     "id": 1340,
@@ -25027,6 +30051,9 @@ var items = {
     "rarity": "uncommon",
     "image": "tarot_cups1",
     "descr": "Старинная карта. Не самая редкая вещь, но возможно удастся найти ей применение? ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1341": {
     "id": 1341,
@@ -25052,6 +30079,12 @@ var items = {
         "value": "523"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1342": {
     "id": 1342,
@@ -25063,6 +30096,9 @@ var items = {
     "image": "tarot_cups2",
     "personal": 1,
     "descr": "Старинная карта. Королева Кубков - отличное украшение коллекции. Предвещает удачу. ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1343": {
     "id": 1343,
@@ -25075,6 +30111,9 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Старинная карта исключительной редкости.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1344": {
     "id": 1344,
@@ -25085,6 +30124,9 @@ var items = {
     "rarity": "uncommon",
     "image": "tarot_sword1",
     "descr": "Старинная карта. Не самая редкая вещь, но возможно удастся найти ей применение? ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1345": {
     "id": 1345,
@@ -25096,6 +30138,9 @@ var items = {
     "image": "tarot_sword2",
     "personal": 1,
     "descr": "Старинная карта. Королева мечей предвещает удачу в сражении.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1346": {
     "id": 1346,
@@ -25108,6 +30153,9 @@ var items = {
     "price": 100000,
     "personal": 1,
     "descr": "Старинная карта исключительной редкости.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1347": {
     "id": 1347,
@@ -25118,6 +30166,9 @@ var items = {
     "rarity": "uncommon",
     "image": "tarot_staff1",
     "descr": "Старинная карта. Не самая редкая вещь, но возможно удастся найти ей применение? ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1348": {
     "id": 1348,
@@ -25129,6 +30180,9 @@ var items = {
     "image": "tarot_staff2",
     "personal": 1,
     "descr": "Старинная карта. Королева Жезлов символизирует мудрость. Что бы это значило?",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1349": {
     "id": 1349,
@@ -25141,6 +30195,9 @@ var items = {
     "price": 100000,
     "personal": 1,
     "descr": "Старинная карта исключительной редкости.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1350": {
     "id": 1350,
@@ -25151,6 +30208,9 @@ var items = {
     "rarity": "uncommon",
     "image": "tarot_deni1",
     "descr": "Старинная карта. Не самая редкая вещь, но возможно удастся найти ей применение? ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1351": {
     "id": 1351,
@@ -25162,6 +30222,9 @@ var items = {
     "image": "tarot_deni2",
     "personal": 1,
     "descr": "Старинная карта. Королева Денарий предвещает богатство. ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1352": {
     "id": 1352,
@@ -25174,6 +30237,9 @@ var items = {
     "price": 100000,
     "personal": 1,
     "descr": "Старинная карта исключительной редкости.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1353": {
     "id": 1353,
@@ -25193,20 +30259,23 @@ var items = {
       "loot": {
         "default": {
           "1340": 15,
-          "1344": 15,
-          "1347": 15,
-          "1350": 15,
           "1342": 7,
-          "1345": 7,
-          "1348": 7,
-          "1351": 7,
           "1343": 3,
+          "1344": 15,
+          "1345": 7,
           "1346": 3,
+          "1347": 15,
+          "1348": 7,
           "1349": 3,
+          "1350": 15,
+          "1351": 7,
           "1352": 3
         }
       }
     },
+    "consumable": "openchest",
+    "material": "cotton",
+    "changed": "1"
   },
   "1354": {
     "id": 1354,
@@ -25230,6 +30299,9 @@ var items = {
     "price": 210000,
     "becomepersonal": 1,
     "descr": "Дзеттай акирамена!",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1355": {
     "id": 1355,
@@ -25252,6 +30324,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1356": {
     "id": 1356,
@@ -25266,6 +30340,9 @@ var items = {
     "descr": "Дарим сердце людям!",
     "instruction": "Двойной клик: подарить!",
     "validtime": 777600,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1357": {
     "id": 1357,
@@ -25280,6 +30357,10 @@ var items = {
     "descr": "Выглядит смутно знакомым...",
     "instruction": "Двойной клик: подарить!",
     "validtime": 604800,
+    "dropfrom": ["adsf:237"],
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": "1"
   },
   "1358": {
     "id": 1358,
@@ -25295,6 +30376,9 @@ var items = {
     "descr": "Билет на элитную лотерею в честь 1 Мая. Разыгрываются: <br>- Уникальный предмет бижутерии эпического качества с вашим дизайном!<br>- Уникальное оружие эпического качества по вашему выбору и с вашим дизайном!<br>- Уникальная эпическая гемма с 12-ю единицами характеристик и дизайном на ваше усмотрение! <br>- Пять утешительных призов: любой предмет экипировки из Магазина по вашему выбору!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1359": {
     "id": 1359,
@@ -25303,7 +30387,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 12,
     "image": "snowgemm",
@@ -25314,7 +30398,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Джон Сноу"
+    "owner": "Джон Сноу",
+    "consumable": "none",
+    "changed": "1"
   },
   "1360": {
     "id": 1360,
@@ -25327,6 +30413,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Пасхальное яйцо - обязательный атрибут праздника.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1361": {
     "id": 1361,
@@ -25356,6 +30445,8 @@ var items = {
         "characterstatus": 1
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1362": {
     "id": 1362,
@@ -25489,6 +30580,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1363": {
     "id": 1363,
@@ -25503,6 +30596,9 @@ var items = {
     "descr": "Уникальный подарок себе и товарищу в честь годовщины Победы.",
     "instruction": "Двойной клик: подарить!",
     "validtime": 777600,
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": "1"
   },
   "1364": {
     "id": 1364,
@@ -25517,6 +30613,9 @@ var items = {
     "descr": "Всегда готов!",
     "instruction": "Двойной клик: подарить!",
     "validtime": 31536000,
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": "1"
   },
   "1365": {
     "id": 1365,
@@ -25530,6 +30629,10 @@ var items = {
     "personal": 1,
     "descr": "10х100 боевых грамм.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1366": {
     "id": 1366,
@@ -25551,7 +30654,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "«Длить раздоры просто глупо, как японцы на Курилы, разжигай же мира трубку, радость новую получишь»",
-    "owner": "Acuk"
+    "owner": "Acuk",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1367": {
     "id": 1367,
@@ -25574,7 +30681,11 @@ var items = {
     "image": "blade",
     "price": 500000,
     "personal": 1,
-    "owner": "Nfgjxrf"
+    "owner": "Nfgjxrf",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1368": {
     "id": 1368,
@@ -25583,7 +30694,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 12,
     "image": "mordergemm",
@@ -25594,17 +30705,22 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Мордер"
+    "owner": "Мордер",
+    "consumable": "none",
+    "changed": "1"
   },
   "1369": {
     "id": 1369,
     "categ_id": 23,
     "name": "Афиша",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "uncommon",
     "image": "afisha3",
     "descr": "Опасное выступление в Проклятом Цирке! Спешите увидеть!",
+    "dropfrom": ["adsf:196", "adsf:197", "adsf:203"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1370": {
     "id": 1370,
@@ -25616,6 +30732,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Маленькая кукла Жака любому придется по нраву.",
+    "dropfrom": ["adsf:261"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1371": {
     "id": 1371,
@@ -25629,6 +30748,10 @@ var items = {
     "personal": 1,
     "descr": "Магнитный элемент обнаруженный в Полтергейсте. Выглядит довольно опасным.",
     "quest": 1,
+    "dropfrom": ["adsf:258"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1372": {
     "id": 1372,
@@ -25642,6 +30765,9 @@ var items = {
     "descr": "Весёлый и немного застенчивый питомец.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 51,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1373": {
     "id": 1373,
@@ -25655,6 +30781,8 @@ var items = {
     "descr": "Коллекционный журнал-хроника мира Утраченной Магии.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 64,
+    "consumable": "readbook",
+    "changed": "1"
   },
   "1374": {
     "id": 1374,
@@ -25676,6 +30804,12 @@ var items = {
     "price": 400000,
     "becomepersonal": 1,
     "descr": "Сохраняет способности предметов, использованных владельцем. Может быть использован вместо Пламегасителя, маски бедуинов, кирки самурая, Солнцеликого амулета или Колбы с глазами.<br>",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 141,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1375": {
     "id": 1375,
@@ -25686,6 +30820,11 @@ var items = {
     "rarity": "uncommon",
     "image": "detal2",
     "descr": "Как много нам открытий чудных...",
+    "dropfrom": ["adsf:263"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1376": {
     "id": 1376,
@@ -25701,6 +30840,9 @@ var items = {
     "descr": "За каждый четный номер билета в конце недели его владелец получит два лаббита на игровой счет!<br><br>Билет на последнюю лотерею весны! Разыгрываются: <br>- Право на получение уникального предмета эпического качества!<br>- Уникальная эпическая гемма с 12-ю единицами характеристик и дизайном на усмотрение владельца! <br>- Право на получение любого предмета из конструктора!<br>- Три любых предмета из игрового магазина!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1377": {
     "id": 1377,
@@ -25721,6 +30863,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1378": {
     "id": 1378,
@@ -25761,6 +30905,9 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": "1"
   },
   "1379": {
     "id": 1379,
@@ -25792,6 +30939,10 @@ var items = {
         "locationstatus": 1
       }
     },
+    "dropfrom": ["adsf:246"],
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1380": {
     "id": 1380,
@@ -25823,6 +30974,10 @@ var items = {
         "locationstatus": 1
       }
     },
+    "dropfrom": ["adsf:251", "adsf:259"],
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": "1"
   },
   "1381": {
     "id": 1381,
@@ -25854,6 +31009,10 @@ var items = {
         "locationstatus": 1
       }
     },
+    "dropfrom": ["adsf:247"],
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": "1"
   },
   "1382": {
     "id": 1382,
@@ -25865,6 +31024,10 @@ var items = {
     "image": "coffeeloot",
     "price": 500,
     "descr": "Королевское качество.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1383": {
     "id": 1383,
@@ -25884,6 +31047,10 @@ var items = {
         "value": "540"
       }]
     },
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": 1,
+    "indacache": "1"
   },
   "1384": {
     "id": 1384,
@@ -25905,6 +31072,9 @@ var items = {
     "image": "punk_chest",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1385": {
     "id": 1385,
@@ -25927,6 +31097,9 @@ var items = {
     "image": "punk_mitts",
     "price": 80000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1386": {
     "id": 1386,
@@ -25948,6 +31121,9 @@ var items = {
     "image": "punk_boots",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1387": {
     "id": 1387,
@@ -25969,6 +31145,9 @@ var items = {
     "image": "punk_mask",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1388": {
     "id": 1388,
@@ -25990,6 +31169,9 @@ var items = {
     "image": "punk_pants",
     "price": 60000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1389": {
     "id": 1389,
@@ -26012,6 +31194,9 @@ var items = {
     "image": "cloak_punk",
     "price": 150000,
     "becomepersonal": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1390": {
     "id": 1390,
@@ -26023,16 +31208,23 @@ var items = {
     "image": "philacteria",
     "personal": 1,
     "descr": "Талисман с кровью неведомого существа.",
+    "dropfrom": ["adsf:264"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1391": {
     "id": 1391,
     "categ_id": 23,
     "name": "Афиша",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "uncommon",
     "image": "afisha4",
     "descr": "Жуткое выступление в Проклятом Цирке! На ваш страх и риск!",
+    "dropfrom": ["adsf:194", "adsf:196"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1392": {
     "id": 1392,
@@ -26044,6 +31236,10 @@ var items = {
     "image": "mainsphere",
     "personal": 1,
     "descr": "Одна целая двадцать одна сотая гигаватт!",
+    "dropfrom": ["adsf:264"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1393": {
     "id": 1393,
@@ -26066,7 +31262,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "The Best Cleaner!",
-    "owner": "Vanish"
+    "owner": "Vanish",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1394": {
     "id": 1394,
@@ -26075,7 +31275,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 5,
     "stamina": 7,
@@ -26087,7 +31287,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Lex"
+    "owner": "Lex",
+    "consumable": "none",
+    "changed": "1"
   },
   "1395": {
     "id": 1395,
@@ -26100,6 +31302,8 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Подходит для вставки гемм любой редкости в предмет. Используется на верстаке в Магикмаркете.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1396": {
     "id": 1396,
@@ -26124,6 +31328,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1397": {
     "id": 1397,
@@ -26135,6 +31341,9 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "Плюшевый кок - любимая игрушка мясного кролика!",
+    "dropfrom": ["adsf:265"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1398": {
     "id": 1398,
@@ -26148,6 +31357,9 @@ var items = {
     "descr": "Его легко потерять и невозможно найти.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 52,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1399": {
     "id": 1399,
@@ -26161,6 +31373,9 @@ var items = {
     "personal": 1,
     "descr": "Признанный Чемпион Арены Июня 2013 года!",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1400": {
     "id": 1400,
@@ -26173,6 +31388,8 @@ var items = {
     "image": "monokular",
     "personal": 1,
     "descr": "Удивительное рядом.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1401": {
     "id": 1401,
@@ -26184,6 +31401,10 @@ var items = {
     "image": "detal5",
     "personal": 1,
     "descr": "Время собирать гайки, время закручивать гайки.",
+    "dropfrom": ["adsf:263"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1402": {
     "id": 1402,
@@ -26211,6 +31432,9 @@ var items = {
       }
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "changed": "1"
   },
   "1403": {
     "id": 1403,
@@ -26231,6 +31455,9 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "useitemonotherchar",
+    "material": "cotton",
+    "changed": "1"
   },
   "1404": {
     "id": 1404,
@@ -26242,6 +31469,9 @@ var items = {
     "image": "detal5",
     "personal": 1,
     "descr": "Время собирать гайки, время закручивать гайки.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1405": {
     "id": 1405,
@@ -26275,6 +31505,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1406": {
     "id": 1406,
@@ -26290,6 +31522,9 @@ var items = {
     "descr": "Билет на игровую лотерею. Разыгрываются: <br>Уникальный предмет эпического качества<br>Персональная Аватара<br>2 Любых предмета экипировки из Магазина по вашему выбору <br>5 Премиум-эликсиров на 30 дней",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1407": {
     "id": 1407,
@@ -26298,7 +31533,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 6,
     "stamina": 6,
@@ -26310,6 +31545,8 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "1408": {
     "id": 1408,
@@ -26324,6 +31561,9 @@ var items = {
     "descr": "Работает на солнечной батарее. Для активации похвалить.",
     "instruction": "Двойной клик: активировать питомца.",
     "bottleparams": 53,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1409": {
     "id": 1409,
@@ -26355,6 +31595,10 @@ var items = {
       }]
     },
     "quest": 1,
+    "consumable": "useitemonotherchar",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1410": {
     "id": 1410,
@@ -26367,6 +31611,10 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Холодная, гибкая, прочная.",
+    "dropfrom": ["adsf:268", "adsf:269", "adsf:275"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1411": {
     "id": 1411,
@@ -26381,6 +31629,9 @@ var items = {
     "descr": "Работает на солнечной батарее. Для активации похвалить.",
     "instruction": "Двойной клик: активировать питомца.",
     "bottleparams": 53,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1412": {
     "id": 1412,
@@ -26393,6 +31644,10 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Яда в нём осталось предостаточно.",
+    "dropfrom": ["adsf:268", "adsf:269", "adsf:275"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1413": {
     "id": 1413,
@@ -26406,6 +31661,10 @@ var items = {
     "descr": "Реликвия с изображением Змеи.",
     "quest": 1,
     "validtime": 7200,
+    "dropfrom": ["adsf:275"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1414": {
     "id": 1414,
@@ -26425,6 +31684,9 @@ var items = {
         "value": "548"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1415": {
     "id": 1415,
@@ -26445,6 +31707,11 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Увеличивает опыт, получаемый персонажем в бою, на 10%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 551,
+    "material": "ring",
+    "changed": "1"
   },
   "1416": {
     "id": 1416,
@@ -26463,6 +31730,10 @@ var items = {
     "price": 90000,
     "personal": 1,
     "descr": "Кому-то может показаться странным наличие такого талисмана у ветерана Арены, но не стоит говорить об этом владельцу.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "changed": "1"
   },
   "1417": {
     "id": 1417,
@@ -26481,6 +31752,10 @@ var items = {
     "price": 90000,
     "personal": 1,
     "descr": "Кому-то может показаться странным наличие такого талисмана у ветерана Арены, но не стоит говорить об этом владельцу.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "changed": "1"
   },
   "1418": {
     "id": 1418,
@@ -26494,6 +31769,10 @@ var items = {
     "personal": 1,
     "descr": "Слишком жирное, чтобы можно было его съесть. ",
     "quest": 1,
+    "dropfrom": ["adsf:72"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1419": {
     "id": 1419,
@@ -26523,6 +31802,8 @@ var items = {
         "characterstatus": 1
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1420": {
     "id": 1420,
@@ -26544,7 +31825,11 @@ var items = {
     "image": "wulffuniq",
     "price": 500000,
     "personal": 1,
-    "owner": "Wulff"
+    "owner": "Wulff",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1421": {
     "id": 1421,
@@ -26578,6 +31863,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1422": {
     "id": 1422,
@@ -26593,6 +31880,9 @@ var items = {
     "descr": "Билет на летнюю лотерею. Разыгрываются: <br>Уникальный предмет эпического качества<br>Персональная аватара<br>Уникальная эпическая гемма с 12-ю единицами характеристик и дизайном на ваше усмотрение <br>Любой конструкторский предмет по вашему выбору <br>3 Любых предмета экипировки из Магазина по вашему выбору <br>5 Золотых слитка номиналом в тысячу золотых",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1423": {
     "id": 1423,
@@ -26612,6 +31902,11 @@ var items = {
     "price": 1700,
     "becomepersonal": 1,
     "descr": "Увеличивает количество получаемых очков арены.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 554,
+    "material": "wood",
+    "changed": "1"
   },
   "1424": {
     "id": 1424,
@@ -26624,6 +31919,9 @@ var items = {
     "price": 7000,
     "personal": 1,
     "descr": "Ключ от подарка.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1425": {
     "id": 1425,
@@ -26637,6 +31935,8 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Универсальный катализатор. Значительно увеличивает шанс получить качественную гемму при сплавке гемм.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1426": {
     "id": 1426,
@@ -26650,6 +31950,10 @@ var items = {
     "personal": 1,
     "descr": "Героям, которые первыми достигли отметки в 3000 очков достижений.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1427": {
     "id": 1427,
@@ -26661,6 +31965,8 @@ var items = {
     "image": "countermark",
     "personal": 1,
     "descr": "Позволяет бесплатно проникнуть на случайное представление в Проклятом Цирке.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1428": {
     "id": 1428,
@@ -26674,6 +31980,9 @@ var items = {
     "personal": 1,
     "descr": "Открывает сундук с ежедневным бонусом. Может быть использован только один раз.",
     "validtime": 72000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1429": {
     "id": 1429,
@@ -26692,6 +32001,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1430": {
     "id": 1430,
@@ -26711,6 +32024,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1431": {
     "id": 1431,
@@ -26730,6 +32047,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1432": {
     "id": 1432,
@@ -26750,6 +32071,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1433": {
     "id": 1433,
@@ -26770,6 +32095,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1434": {
     "id": 1434,
@@ -26790,6 +32119,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1435": {
     "id": 1435,
@@ -26810,6 +32143,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1436": {
     "id": 1436,
@@ -26832,6 +32169,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1437": {
     "id": 1437,
@@ -26855,6 +32196,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1438": {
     "id": 1438,
@@ -26878,6 +32223,10 @@ var items = {
     "price": 5000,
     "personal": 1,
     "descr": "Тайлер всегда прав.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1439": {
     "id": 1439,
@@ -26890,6 +32239,10 @@ var items = {
     "price": 3000,
     "personal": 1,
     "descr": "Нет, это не то золотое яблочко, которое нужно! Это старое и просроченное.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1440": {
     "id": 1440,
@@ -26918,6 +32271,11 @@ var items = {
         "crit": -3
       }
     },
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 556,
+    "material": "cotton",
+    "changed": "1"
   },
   "1441": {
     "id": 1441,
@@ -26933,6 +32291,9 @@ var items = {
     "descr": "Билет на праздничную лотерею в честь трехлетия мира Утраченной Магии!<br>Разыгрываются: <br>Персональная аватара<br>2 Любой конструкторский предмет по вашему выбору <br>5 Любых предмета экипировки из Магазина по вашему выбору <br>5 Премиум Эликсиров на месяц<br>5 Золотых слитков номиналом 1000 золотых!<br><br>Дополнительный приз обладателю максимального количества билетов: <br>Любой предмет из конструктора на выбор.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1442": {
     "id": 1442,
@@ -26948,6 +32309,9 @@ var items = {
     "descr": "Билет на лотерею Дракона в честь трехлетия мира Утраченной Магии!<br>Разыгрываются: <br>1 Уникальный предмет-безделушка легендарного качества<br>2 Любых предмета из конструктора <br>3 Любых предмета из Магазина<br>5 Премиум Эликсиров на месяц<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1443": {
     "id": 1443,
@@ -26967,6 +32331,10 @@ var items = {
     "price": 1,
     "becomepersonal": 1,
     "descr": "Каждый ход наносит оппоненту 25 урона ядом и добавляет 50% защиты от яда.",
+    "consumable": "none",
+    "buff_id": 557,
+    "material": "cotton",
+    "changed": "1"
   },
   "1444": {
     "id": 1444,
@@ -26979,6 +32347,8 @@ var items = {
     "image": "Olala",
     "personal": 1,
     "descr": "Неизменный атрибут праздника.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1445": {
     "id": 1445,
@@ -27007,6 +32377,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1446": {
     "id": 1446,
@@ -27027,6 +32399,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1447": {
     "id": 1447,
@@ -27036,7 +32410,7 @@ var items = {
     "type": "bottle",
     "rarity": "rare",
     "image": "teardrops",
-    "descr": "Позволяет на некоторое время превратиться в Ено.",
+    "descr": "Позволяет на сутки превратиться в Ено.",
     "bottleparams": {
       "strictreqs": [{
         "param": "level",
@@ -27050,6 +32424,9 @@ var items = {
     },
     "quest": 1,
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": "1"
   },
   "1448": {
     "id": 1448,
@@ -27060,7 +32437,7 @@ var items = {
     "rarity": "rare",
     "image": "johnathan_seed",
     "price": 300,
-    "descr": "Позволяет на время превратиться в Джонатана. ",
+    "descr": "Позволяет на сутки превратиться в Джонатана. ",
     "bottleparams": {
       "strictreqs": [{
         "param": "level",
@@ -27073,6 +32450,9 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "organic",
+    "changed": "1"
   },
   "1449": {
     "id": 1449,
@@ -27093,6 +32473,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1450": {
     "id": 1450,
@@ -27106,6 +32488,9 @@ var items = {
     "personal": 1,
     "descr": "Палитра мира Утраченной Магии.",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1451": {
     "id": 1451,
@@ -27119,7 +32504,10 @@ var items = {
     "personal": 1,
     "descr": "Нам нужен мир.",
     "validtime": 864000,
-    "owner": "nosferatusmage"
+    "owner": "nosferatusmage",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1452": {
     "id": 1452,
@@ -27133,6 +32521,9 @@ var items = {
     "personal": 1,
     "descr": "Памятная открытка в честь трехлетия мира Утраченной Магии.",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1453": {
     "id": 1453,
@@ -27146,6 +32537,9 @@ var items = {
     "personal": 1,
     "descr": "Уникальный подарок в честь трехлетия мира Утраченной Магии.",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1454": {
     "id": 1454,
@@ -27159,6 +32553,9 @@ var items = {
     "personal": 1,
     "descr": "Драгоценный камень, заменяющий божеству сердечную мышцу. Ярко пульсирует, излучая магическую энергию.",
     "quest": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1455": {
     "id": 1455,
@@ -27171,6 +32568,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Голова Гидры-Тирана. Самый яростный аспект Триумвирата.",
+    "dropfrom": ["adsf:272"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1456": {
     "id": 1456,
@@ -27183,6 +32584,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Голова Гидры-Хранителя. Мудрость Триумвирата.",
+    "dropfrom": ["adsf:273"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1457": {
     "id": 1457,
@@ -27195,6 +32600,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Голова Гидры-Покровителя. Аспект жизни воплощённый в Триумвирате.",
+    "dropfrom": ["adsf:274"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1458": {
     "id": 1458,
@@ -27207,6 +32616,10 @@ var items = {
     "price": 3000,
     "personal": 1,
     "descr": "Металл, наверняка обладающий какой-то неведомой волшебной силой.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1459": {
     "id": 1459,
@@ -27215,7 +32628,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 8,
     "stamina": 4,
@@ -27227,7 +32640,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Полдник"
+    "owner": "Полдник",
+    "consumable": "none",
+    "changed": "1"
   },
   "1460": {
     "id": 1460,
@@ -27247,6 +32662,9 @@ var items = {
       }]
     },
     "quest": 1,
+    "consumable": "useeffect",
+    "material": "wood",
+    "changed": "1"
   },
   "1461": {
     "id": 1461,
@@ -27272,7 +32690,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "Если не хотите со мной играть... убегайте скорее!",
-    "owner": "Getva"
+    "owner": "Getva",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1462": {
     "id": 1462,
@@ -27285,6 +32707,8 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Материализованная сущность Грома. Позволяет собирать аспекты Света при победе в PvP. Пропадает при PvP поражении.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1463": {
     "id": 1463,
@@ -27297,6 +32721,8 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Материализованная сущность Света. Позволяет собирать аспекты Грома при победе в PvP. Пропадает при PvP поражении.",
+    "consumable": "none",
+    "changed": "1"
   },
   "1464": {
     "id": 1464,
@@ -27318,6 +32744,10 @@ var items = {
     "price": 90000,
     "personal": 1,
     "descr": "Кому-то может показаться странным наличие такого талисмана у ветерана Арены, но не стоит говорить об этом владельцу.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "wood",
+    "changed": "1"
   },
   "1465": {
     "id": 1465,
@@ -27342,6 +32772,10 @@ var items = {
     "price": 500000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1466": {
     "id": 1466,
@@ -27354,6 +32788,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Принесите десять абонементов Лилу на Площади пришельцев и получите один лаббит на счет персонажа!",
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1467": {
     "id": 1467,
@@ -27366,6 +32803,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Принесите три абонемента Лилу и получите один лаббит на счет персонажа! Лилу ожидает вас на площади пришельцев.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1468": {
     "id": 1468,
@@ -27379,6 +32819,11 @@ var items = {
     "personal": 1,
     "descr": "Осколок клинка, отравляющий Бездонный колодец.",
     "quest": 1,
+    "dropfrom": ["adsf:272"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1469": {
     "id": 1469,
@@ -27392,6 +32837,11 @@ var items = {
     "personal": 1,
     "descr": "Осколок клинка, отравляющий Бездонный колодец.",
     "quest": 1,
+    "dropfrom": ["adsf:273"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1470": {
     "id": 1470,
@@ -27405,6 +32855,11 @@ var items = {
     "personal": 1,
     "descr": "Осколок клинка, отравляющий Бездонный колодец.",
     "quest": 1,
+    "dropfrom": ["adsf:274"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1471": {
     "id": 1471,
@@ -27425,7 +32880,11 @@ var items = {
     "image": "ico_fox",
     "price": 500000,
     "personal": 1,
-    "owner": "War Machine"
+    "owner": "War Machine",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1472": {
     "id": 1472,
@@ -27439,6 +32898,9 @@ var items = {
     "personal": 1,
     "descr": "Приз зрительских симпатий конкурса поздравлений в честь третьего дня рождения Мира Утраченной Магии.",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1473": {
     "id": 1473,
@@ -27463,7 +32925,11 @@ var items = {
     "price": 340000,
     "personal": 1,
     "descr": "«У него на поясе висел Экскалибур, самый прекрасный меч из всех, который разрубал железо, как дерево»",
-    "owner": "Wulff"
+    "owner": "Wulff",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1474": {
     "id": 1474,
@@ -27477,6 +32943,9 @@ var items = {
     "descr": "Олень — животное. Воробей — птица. Россия — наше отечество.",
     "instruction": "Двойной клик: прочитать.",
     "bottleparams": 65,
+    "consumable": "readbook",
+    "material": "wood",
+    "changed": "1"
   },
   "1475": {
     "id": 1475,
@@ -27491,6 +32960,9 @@ var items = {
     "descr": "Олень — животное. Воробей — птица. Россия — наше отечество.",
     "validtime": 1209600,
     "giveitem": 1474,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1476": {
     "id": 1476,
@@ -27515,6 +32987,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1477": {
     "id": 1477,
@@ -27526,6 +33000,9 @@ var items = {
     "image": "sep_txt",
     "price": 1,
     "descr": "Спервоначалу вёл себя эпатажно, фраппировал и манкировал напропалую. А следом вдруг сделался этакий бука, замкнулся в себе. Амикошонство. Фи!|Играл на уроке в карты. Не умеет подсчитывать висты.|Жил своей жизнью на уроке биологии.|Читал книгу на уроке литературы!|<br>Постоянно поет известные песни на несуществующем языке.|Искал призраков в школьных коридорах.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1478": {
     "id": 1478,
@@ -27537,6 +33014,9 @@ var items = {
     "image": "sep_2",
     "price": 1,
     "descr": "Все очень плохо!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1479": {
     "id": 1479,
@@ -27548,6 +33028,9 @@ var items = {
     "image": "sep_3",
     "price": 1,
     "descr": "Удовлетворительно.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1480": {
     "id": 1480,
@@ -27559,6 +33042,9 @@ var items = {
     "image": "sep_4",
     "price": 1,
     "descr": "Хорошо.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1481": {
     "id": 1481,
@@ -27570,6 +33056,9 @@ var items = {
     "image": "sep_5",
     "price": 1,
     "descr": "Отлично.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1482": {
     "id": 1482,
@@ -27584,6 +33073,9 @@ var items = {
     "descr": "Игроку получившему семь пятерок в первую учебную неделю!",
     "validtime": 1209600,
     "giveitem": 1474,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1483": {
     "id": 1483,
@@ -27599,6 +33091,9 @@ var items = {
     "image": "wpn_2hand_swt_3",
     "price": 6000,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1484": {
     "id": 1484,
@@ -27619,6 +33114,10 @@ var items = {
     "image": "shield_green",
     "price": 200000,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:211", "adsf:254", "adsf:261"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1485": {
     "id": 1485,
@@ -27650,6 +33149,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1486": {
     "id": 1486,
@@ -27665,6 +33166,9 @@ var items = {
     "descr": "Каждый игрок собравший 5 билетов получит уникального питомца в конце недели!<br>Разыгрываются: <br>Уникальный предмет эпического качества<br>Персональная аватара<br>Любой конструкторский предмет по вашему выбору <br>2 Любых предмета экипировки из Магазина по вашему выбору <br>5 Премиум-эликсиров на 30 дней",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1487": {
     "id": 1487,
@@ -27687,6 +33191,10 @@ var items = {
     "image": "hammer_green",
     "price": 20000,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:254", "adsf:261"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1488": {
     "id": 1488,
@@ -27709,6 +33217,10 @@ var items = {
     "image": "lh_green",
     "price": 20000,
     "becomepersonal": 1,
+    "dropfrom": ["adsf:211", "adsf:212", "adsf:254", "adsf:261"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1489": {
     "id": 1489,
@@ -27722,6 +33234,9 @@ var items = {
     "descr": "Несъедобен. ",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 54,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1490": {
     "id": 1490,
@@ -27746,6 +33261,8 @@ var items = {
         "maxhit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1491": {
     "id": 1491,
@@ -27754,7 +33271,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 4,
     "agility": 4,
@@ -27767,7 +33284,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "nosferatusmage"
+    "owner": "nosferatusmage",
+    "consumable": "none",
+    "changed": "1"
   },
   "1492": {
     "id": 1492,
@@ -27787,6 +33306,9 @@ var items = {
         "value": "572"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1493": {
     "id": 1493,
@@ -27808,7 +33330,10 @@ var items = {
     "image": "un_blue_sword",
     "price": 400000,
     "personal": 1,
-    "owner": "Kuzlek"
+    "owner": "Kuzlek",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1494": {
     "id": 1494,
@@ -27831,6 +33356,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": "1"
   },
   "1495": {
     "id": 1495,
@@ -27843,6 +33371,10 @@ var items = {
     "price": 1,
     "descr": "Сильнодействующий нейротоксический яд. ",
     "quest": 1,
+    "dropfrom": ["adsf:272", "adsf:273", "adsf:274"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1496": {
     "id": 1496,
@@ -27856,6 +33388,10 @@ var items = {
     "personal": 1,
     "descr": "Маленькая часть домашнего уюта.",
     "quest": 1,
+    "dropfrom": ["adsf:11", "adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1497": {
     "id": 1497,
@@ -27869,6 +33405,10 @@ var items = {
     "personal": 1,
     "descr": "Крайне важный атрибут радости.",
     "quest": 1,
+    "dropfrom": ["adsf:11", "adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1498": {
     "id": 1498,
@@ -27882,6 +33422,10 @@ var items = {
     "personal": 1,
     "descr": "Делает жизнь, и все остальное, слаще.",
     "quest": 1,
+    "dropfrom": ["adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1499": {
     "id": 1499,
@@ -27904,6 +33448,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": "1"
   },
   "1500": {
     "id": 1500,
@@ -27926,6 +33473,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": "1"
   },
   "1501": {
     "id": 1501,
@@ -27948,6 +33498,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": "1"
   },
   "1502": {
     "id": 1502,
@@ -27970,6 +33523,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "liquid",
+    "changed": "1"
   },
   "1503": {
     "id": 1503,
@@ -28010,6 +33566,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1504": {
     "id": 1504,
@@ -28021,6 +33579,9 @@ var items = {
     "image": "poisonevent",
     "price": 1,
     "descr": "Крайне важная для каждого охотника вещь. Не говорите о ней никому!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1505": {
     "id": 1505,
@@ -28033,6 +33594,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Традиционный завтрак, обед и ужин обитателей лагеря.",
+    "dropfrom": ["adsf:278", "adsf:279", "adsf:280", "adsf:282", "adsf:285"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1506": {
     "id": 1506,
@@ -28045,6 +33610,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Эту чрезвычайно универсальную вещь можно использовать в качестве тарелки, щита, лодки, доспеха  или головного убора. Главное - подобрать свой размер.",
+    "dropfrom": ["adsf:278", "adsf:279", "adsf:280", "adsf:282", "adsf:285"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1507": {
     "id": 1507,
@@ -28067,6 +33636,10 @@ var items = {
     "price": 3000,
     "becomepersonal": 1,
     "descr": "Восстанавливает здоровье после каждого размена ударами.",
+    "consumable": "none",
+    "buff_id": 585,
+    "material": "ring",
+    "changed": "1"
   },
   "1508": {
     "id": 1508,
@@ -28089,6 +33662,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "organic",
+    "changed": "1"
   },
   "1509": {
     "id": 1509,
@@ -28100,6 +33676,10 @@ var items = {
     "image": "turtletotem",
     "personal": 1,
     "descr": "Сломанная реликвия с изображением Черепахи.",
+    "dropfrom": ["adsf:280", "adsf:282"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1510": {
     "id": 1510,
@@ -28112,6 +33692,9 @@ var items = {
     "personal": 1,
     "descr": "Мощнейший катализатор очищающих заклятий. Несъедобен. ",
     "quest": 1,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1511": {
     "id": 1511,
@@ -28137,6 +33720,10 @@ var items = {
     "price": 500000,
     "personal": 1,
     "quest": 2,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1512": {
     "id": 1512,
@@ -28161,6 +33748,10 @@ var items = {
     "price": 150000,
     "becomepersonal": 1,
     "descr": "Повышает урон и защиту от стихий, яда и кровотечения на 25%.",
+    "consumable": "none",
+    "buff_id": 594,
+    "material": "metal",
+    "changed": "1"
   },
   "1513": {
     "id": 1513,
@@ -28184,6 +33775,10 @@ var items = {
     "price": 10000,
     "becomepersonal": 1,
     "descr": "Позволяет интуитивно говорить на языке чёрных котиков.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1514": {
     "id": 1514,
@@ -28212,6 +33807,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1515": {
     "id": 1515,
@@ -28227,6 +33824,9 @@ var items = {
     "descr": "Билет на беспроигрышную лотерею в честь Хеллоуина. Разыгрываются: <br>1 Уникальный предмет эпического качества<br>1 Любой конструкторский предмет по вашему выбору <br>1 Персональная аватара<br>5 Премиум-Эликсиров на 30 дней<br>Гарантированный приз: новый передаваемый питомец!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1516": {
     "id": 1516,
@@ -28240,6 +33840,9 @@ var items = {
     "descr": "Он вернулся!",
     "instruction": "Двойной клик: активировать питомца.",
     "bottleparams": 55,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1517": {
     "id": 1517,
@@ -28252,6 +33855,9 @@ var items = {
     "image": "candy_cane",
     "price": 99,
     "descr": "Зачарованная конфета - самый простой способ стать повелителем зла.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1518": {
     "id": 1518,
@@ -28282,6 +33888,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1519": {
     "id": 1519,
@@ -28312,6 +33921,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1520": {
     "id": 1520,
@@ -28324,6 +33936,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Безапелляционно доказывает не только невиновность зомби-руки, но и её героические заслуги в предотвращении апокалипсиса. ",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1521": {
     "id": 1521,
@@ -28343,6 +33959,9 @@ var items = {
       }]
     },
     "quest": 1,
+    "consumable": "useeffect",
+    "material": "wood",
+    "changed": "1"
   },
   "1522": {
     "id": 1522,
@@ -28354,6 +33973,10 @@ var items = {
     "image": "miery_drop",
     "price": 5000,
     "descr": "Имеет коллекционную ценность не только для фалеристов.",
+    "dropfrom": ["adsf:13", "adsf:244"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1523": {
     "id": 1523,
@@ -28365,6 +33988,10 @@ var items = {
     "image": "nidjel_drop",
     "price": 5000,
     "descr": "Ржавый и злой.",
+    "dropfrom": ["adsf:12"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1524": {
     "id": 1524,
@@ -28376,6 +34003,10 @@ var items = {
     "image": "silence_drop",
     "price": 5000,
     "descr": "Красивый наряд и прекрасное средство звукоизоляции. ",
+    "dropfrom": ["adsf:14"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1525": {
     "id": 1525,
@@ -28387,6 +34018,10 @@ var items = {
     "image": "keysi_drop",
     "price": 5000,
     "descr": "Содержит 666 разных блюд из кролика.",
+    "dropfrom": ["adsf:38"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1526": {
     "id": 1526,
@@ -28398,6 +34033,10 @@ var items = {
     "image": "jak_drop",
     "price": 5000,
     "descr": "Всегда показывает на дно.",
+    "dropfrom": ["adsf:39"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1527": {
     "id": 1527,
@@ -28409,6 +34048,10 @@ var items = {
     "image": "radagast_drop",
     "price": 5000,
     "descr": "Форма правильная, эмаль в норме, повреждений нет.",
+    "dropfrom": ["adsf:171"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1528": {
     "id": 1528,
@@ -28420,6 +34063,10 @@ var items = {
     "image": "dagod_drop",
     "price": 5000,
     "descr": "Размер клешней - повод для личной гордости среди обитателей дна.",
+    "dropfrom": ["adsf:189"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1529": {
     "id": 1529,
@@ -28431,6 +34078,10 @@ var items = {
     "image": "skarr_drop",
     "price": 5000,
     "descr": "И юный октябрь впереди!",
+    "dropfrom": ["adsf:237"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1530": {
     "id": 1530,
@@ -28441,6 +34092,9 @@ var items = {
     "rarity": "rare",
     "image": "chupakabra_drop",
     "price": 5000,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1531": {
     "id": 1531,
@@ -28452,6 +34106,10 @@ var items = {
     "image": "dragon_drop",
     "price": 5000,
     "descr": "Алхимики и маги многих миров находят применение любой части драконьего тела, от носа до хвоста. ",
+    "dropfrom": ["adsf:99"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1532": {
     "id": 1532,
@@ -28463,6 +34121,9 @@ var items = {
     "image": "orc_drop",
     "price": 5000,
     "descr": "Духовность крайне важна.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1533": {
     "id": 1533,
@@ -28474,6 +34135,9 @@ var items = {
     "image": "spore_drop",
     "price": 5000,
     "descr": "В меру разумны. Не спорьте со спорами.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1534": {
     "id": 1534,
@@ -28485,6 +34149,9 @@ var items = {
     "image": "volhv_drop",
     "price": 5000,
     "descr": "He who controls the spice, controls the universe!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1535": {
     "id": 1535,
@@ -28496,6 +34163,10 @@ var items = {
     "image": "mumia_drop",
     "price": 5000,
     "descr": "Весит немного меньше, чем гнев и гордыня. ",
+    "dropfrom": ["adsf:138"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1536": {
     "id": 1536,
@@ -28507,6 +34178,9 @@ var items = {
     "image": "morphey_drop",
     "price": 5000,
     "descr": "Маленький и непрофессиональный ловец снов. Способен поймать лишь самый глупые сны.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1537": {
     "id": 1537,
@@ -28518,6 +34192,10 @@ var items = {
     "image": "joker_drop",
     "price": 5000,
     "descr": "Лучше его не выпускать.",
+    "dropfrom": ["adsf:212"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1538": {
     "id": 1538,
@@ -28529,6 +34207,9 @@ var items = {
     "image": "darkguard_drop",
     "price": 5000,
     "descr": "Вперёд, куда зовут нас знамения богов и несправедливость недругов!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1539": {
     "id": 1539,
@@ -28540,6 +34221,10 @@ var items = {
     "image": "twilightlord_drop",
     "price": 5000,
     "descr": "Корона из туманов и иллюзий, как ни странно, все таки занимает место в инвентаре.",
+    "dropfrom": ["adsf:264"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1540": {
     "id": 1540,
@@ -28551,6 +34236,10 @@ var items = {
     "image": "hydro_drop",
     "price": 5000,
     "descr": "Сердце гидры. ",
+    "dropfrom": ["adsf:272"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1541": {
     "id": 1541,
@@ -28568,6 +34257,8 @@ var items = {
     "bottleparams": {
       "color": "red"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1542": {
     "id": 1542,
@@ -28585,6 +34276,8 @@ var items = {
     "bottleparams": {
       "color": "white"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1543": {
     "id": 1543,
@@ -28602,6 +34295,8 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "1544": {
     "id": 1544,
@@ -28610,7 +34305,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 6,
+    "level": 99,
     "reqlevel": 20,
     "strength": 12,
     "image": "drakonit",
@@ -28622,6 +34317,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "buff_id": 599,
+    "changed": "1"
   },
   "1545": {
     "id": 1545,
@@ -28630,7 +34328,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 6,
+    "level": 99,
     "reqlevel": 20,
     "defence": 12,
     "image": "necrolit",
@@ -28642,6 +34340,8 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "1546": {
     "id": 1546,
@@ -28650,7 +34350,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 6,
+    "level": 99,
     "reqlevel": 20,
     "stamina": 12,
     "image": "adenit",
@@ -28663,6 +34363,9 @@ var items = {
       "reagent": 873,
       "grouptype": "gloves"
     },
+    "consumable": "none",
+    "buff_id": 600,
+    "changed": "1"
   },
   "1547": {
     "id": 1547,
@@ -28675,6 +34378,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Из страны вечного лета.",
+    "dropfrom": ["adsf:278"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1548": {
     "id": 1548,
@@ -28687,16 +34394,23 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Светится в темноте.",
+    "dropfrom": ["adsf:279"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1549": {
     "id": 1549,
     "categ_id": 23,
     "name": "Афиша",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "uncommon",
     "image": "afisha5",
     "descr": "Два зелёных артиста не оставят вас равнодушными!",
+    "dropfrom": ["adsf:197"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1550": {
     "id": 1550,
@@ -28719,6 +34433,11 @@ var items = {
     "price": 190000,
     "personal": 1,
     "descr": "Количество желаний не ограничено.",
+    "consumable": "none",
+    "uniq": 1,
+    "ability_id": 317,
+    "material": "glass",
+    "changed": "1"
   },
   "1551": {
     "id": 1551,
@@ -28731,6 +34450,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Включают в себя жизнеописание типичных фольклорных персонажей народов пустыни. ",
+    "dropfrom": ["adsf:116"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1552": {
     "id": 1552,
@@ -28759,6 +34481,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1553": {
     "id": 1553,
@@ -28774,6 +34498,9 @@ var items = {
     "descr": "Призы:<br>Уникальный предмет эпического качества<br>Предмет из конструктора<br>5 предметов из Магазина<br>5 слитков номиналом 1000 золотых<br><br>Гарантированные призы:<br>10 билетов - 5 Эликсиров Мастера.<br>25 билетов - 5 коробок с инструментами Джереми<br>50 билетов - Премиум-Эликсир на 30 дней",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 1296000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1554": {
     "id": 1554,
@@ -28794,6 +34521,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1555": {
     "id": 1555,
@@ -28978,6 +34707,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1556": {
     "id": 1556,
@@ -29006,6 +34737,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1557": {
     "id": 1557,
@@ -29034,6 +34767,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1558": {
     "id": 1558,
@@ -29060,6 +34795,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1559": {
     "id": 1559,
@@ -29072,6 +34809,9 @@ var items = {
     "price": 9000,
     "personal": 1,
     "descr": "Ключевая валюта загробного мира. Эманирует хтонические вибрации. ",
+    "dropfrom": ["adsf:288", "adsf:289", "adsf:290", "adsf:292", "adsf:293", "adsf:294", "adsf:295", "adsf:296", "adsf:297", "adsf:298"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1560": {
     "id": 1560,
@@ -29087,6 +34827,11 @@ var items = {
     "price": 75000,
     "personal": 1,
     "descr": "И не спускай с неё узды.(с)",
+    "dropfrom": ["adsf:298"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1561": {
     "id": 1561,
@@ -29113,6 +34858,9 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1562": {
     "id": 1562,
@@ -29139,6 +34887,9 @@ var items = {
         "dmg": -3
       }
     },
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1563": {
     "id": 1563,
@@ -29154,6 +34905,9 @@ var items = {
     "descr": "Лотерея в честь первых дней зимы! Розыгрыш состоится 13 декабря.Разыгрываются: <br>Уникальный предмет по вашему выбору<br>Право на персональную аватару<br>Любой конструкторский предмет по вашему выбору <br>3 Золотых слитка номиналом в тысячу золотых<br>За каждый билет номер которого кратен сотне вы гарантированно получите 25 Лаббитов на счет!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1564": {
     "id": 1564,
@@ -29174,6 +34928,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1565": {
     "id": 1565,
@@ -29247,6 +35003,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1566": {
     "id": 1566,
@@ -29267,7 +35025,12 @@ var items = {
     "price": 23500,
     "personal": 1,
     "descr": "Восстанавливает здоровье вам и всем вашим союзникам в бою! Эффекты колец складываются.",
-    "owner": "nosferatusmage"
+    "owner": "nosferatusmage",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1567": {
     "id": 1567,
@@ -29276,7 +35039,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 7,
     "stamina": 6,
@@ -29290,6 +35053,8 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "1568": {
     "id": 1568,
@@ -29301,6 +35066,9 @@ var items = {
     "image": "apple_gold",
     "price": 77,
     "descr": "Собери десять золотых яблочек и получи уникальную гемму 'Яблоко Геспериды'. А если соберешь больше всех таких яблочек, то получишь уникальную Аватару со своим дизайном!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1569": {
     "id": 1569,
@@ -29327,6 +35095,9 @@ var items = {
         }
       }
     },
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1570": {
     "id": 1570,
@@ -29340,6 +35111,9 @@ var items = {
     "personal": 1,
     "descr": "Позволяет потестить гильдбафф.",
     "instruction": "Двойной клик: выпить.",
+    "consumable": "none",
+    "material": "liquid",
+    "changed": "1"
   },
   "1571": {
     "id": 1571,
@@ -29364,6 +35138,8 @@ var items = {
         "maxhit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1572": {
     "id": 1572,
@@ -29386,7 +35162,11 @@ var items = {
     "image": "storm_lightsaber_violet",
     "price": 400000,
     "personal": 1,
-    "owner": "Argenut"
+    "owner": "Argenut",
+    "consumable": "none",
+    "buff_id": 410,
+    "material": "metal",
+    "changed": "1"
   },
   "1573": {
     "id": 1573,
@@ -29400,6 +35180,9 @@ var items = {
     "personal": 1,
     "descr": "Как в детстве.",
     "validtime": 864000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1574": {
     "id": 1574,
@@ -29413,6 +35196,9 @@ var items = {
     "personal": 1,
     "descr": "Вешать над камином, зажмуриться и ждать чуда.",
     "validtime": 864000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1575": {
     "id": 1575,
@@ -29426,6 +35212,9 @@ var items = {
     "personal": 1,
     "descr": "Прими участие в конкурсе поздравлений 'с экрана' и выиграй новогодние призы!",
     "validtime": 1382400,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1576": {
     "id": 1576,
@@ -29444,13 +35233,19 @@ var items = {
       "strictreqs": [{
         "param": "level",
         "type": ">=",
-        "value": "2"
+        "value": "22"
       }],
       "effects": [{
         "type": "buff",
         "value": "614"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_opp": 1,
+    "target_mob": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1577": {
     "id": 1577,
@@ -29462,6 +35257,9 @@ var items = {
     "image": "fair_coupon",
     "price": 1,
     "descr": "Единая валюта новогодней гномьей ярмарки.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1578": {
     "id": 1578,
@@ -29483,6 +35281,10 @@ var items = {
     "becomepersonal": 1,
     "descr": "Мы пришли с миром!",
     "validtime": 86400,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1579": {
     "id": 1579,
@@ -29502,6 +35304,10 @@ var items = {
     "becomepersonal": 1,
     "descr": "Rock the baby!",
     "validtime": 86400,
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "1580": {
     "id": 1580,
@@ -29524,6 +35330,10 @@ var items = {
     "becomepersonal": 1,
     "descr": "Свидетельствует о серьезных намерениях.",
     "validtime": 86400,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1581": {
     "id": 1581,
@@ -29545,6 +35355,10 @@ var items = {
     "becomepersonal": 1,
     "descr": "В этом мире таких не делают...",
     "validtime": 86400,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1582": {
     "id": 1582,
@@ -29566,6 +35380,10 @@ var items = {
     "becomepersonal": 1,
     "descr": "Увеличивает количество получаемых очков арены.",
     "validtime": 86400,
+    "consumable": "none",
+    "buff_id": 554,
+    "material": "wood",
+    "changed": "1"
   },
   "1583": {
     "id": 1583,
@@ -29588,6 +35406,9 @@ var items = {
     "descr": "На подкладке из шкуры молодого дермантина.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1584": {
     "id": 1584,
@@ -29611,6 +35432,10 @@ var items = {
     "descr": "Холодный расчет.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1585": {
     "id": 1585,
@@ -29634,6 +35459,10 @@ var items = {
     "descr": "И нет в названии никакой ошибки!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1586": {
     "id": 1586,
@@ -29657,11 +35486,15 @@ var items = {
     "descr": "Из декабря в июнь...",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1587": {
     "id": 1587,
     "categ_id": 2,
-    "name": "Катана",
+    "name": "Катана брак",
     "maxcnt": 1,
     "type": "twohandedweapon",
     "rarity": "rare",
@@ -29680,6 +35513,10 @@ var items = {
     "descr": "Сайонара!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1588": {
     "id": 1588,
@@ -29705,6 +35542,10 @@ var items = {
     "descr": "Восстанавливает здоровье после каждого размена ударами.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 585,
+    "material": "ring",
+    "changed": "1"
   },
   "1589": {
     "id": 1589,
@@ -29728,6 +35569,10 @@ var items = {
     "descr": "И в гостиной при свечах он танцевал, как Бог.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1590": {
     "id": 1590,
@@ -29751,6 +35596,9 @@ var items = {
     "descr": "Люди гибнут за металл.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1591": {
     "id": 1591,
@@ -29772,6 +35620,10 @@ var items = {
     "descr": "И тут появляешься ты...",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1592": {
     "id": 1592,
@@ -29795,6 +35647,10 @@ var items = {
     "descr": "Изготовлено из отборных летучих мышей.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1593": {
     "id": 1593,
@@ -29814,6 +35670,10 @@ var items = {
     "descr": "Chicks love confidence.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1594": {
     "id": 1594,
@@ -29838,6 +35698,10 @@ var items = {
     "descr": "Мои друзья всегда идут по жизни маршем.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1595": {
     "id": 1595,
@@ -29860,18 +35724,22 @@ var items = {
     "descr": "Одобрено гуркской бригадой.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1596": {
     "id": 1596,
     "categ_id": 5,
-    "name": "Полицейский щит",
+    "name": "Полицейский щит ч",
     "maxcnt": 1,
     "type": "shield",
     "rarity": "rare",
     "level": 9,
     "reqlevel": 8,
     "maxdur": 140,
-    "defence": 14,
+    "defence": 34,
     "strength": 4,
     "stamina": 4,
     "mastery": 36,
@@ -29882,6 +35750,10 @@ var items = {
     "descr": "В московский ОМОН вступил покемон.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1597": {
     "id": 1597,
@@ -29901,6 +35773,10 @@ var items = {
     "validtime": 86400,
     "charges": 13,
     "hidden": 1,
+    "consumable": "randomsharp",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1598": {
     "id": 1598,
@@ -29924,6 +35800,10 @@ var items = {
     "descr": "На 76 процентов больше страха и отвращения.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1599": {
     "id": 1599,
@@ -29951,6 +35831,9 @@ var items = {
     "instruction": "Дополнительные фирменные эффекты не работают!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1600": {
     "id": 1600,
@@ -29975,6 +35858,10 @@ var items = {
     "descr": "Why so?..",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1601": {
     "id": 1601,
@@ -29999,6 +35886,10 @@ var items = {
     "descr": "Son, this is the road to Hell.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1602": {
     "id": 1602,
@@ -30019,6 +35910,10 @@ var items = {
     "descr": "Ваши удары начинают наносить дополнительный урон льдом, пропорциональный количеству ярости. Максимум 16 урона.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 404,
+    "material": "glass",
+    "changed": "1"
   },
   "1603": {
     "id": 1603,
@@ -30039,6 +35934,10 @@ var items = {
     "descr": "Ваши удары начинают наносить дополнительный урон воздухом, пропорциональный количеству ярости. Максимум 16 урона.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 403,
+    "material": "glass",
+    "changed": "1"
   },
   "1604": {
     "id": 1604,
@@ -30059,6 +35958,11 @@ var items = {
     "descr": "Ваши удары начинают наносить дополнительный урон землей, пропорциональный количеству ярости. Максимум 16 урона.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 402,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1605": {
     "id": 1605,
@@ -30079,6 +35983,11 @@ var items = {
     "descr": "Ваши удары начинают наносить дополнительный огненный урон, пропорциональный количеству ярости. Максимум 16 урона.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 215,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1606": {
     "id": 1606,
@@ -30101,6 +36010,10 @@ var items = {
     "descr": "При нанесении или получении урона наносит оппоненту от 16 до 24 урона кровотечением.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 485,
+    "material": "cotton",
+    "changed": "1"
   },
   "1607": {
     "id": 1607,
@@ -30125,6 +36038,10 @@ var items = {
     "descr": "Никогда прежде промывание мозгов не было таким легким.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1608": {
     "id": 1608,
@@ -30149,6 +36066,10 @@ var items = {
     "descr": "aka Ninja Shoes.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1609": {
     "id": 1609,
@@ -30172,6 +36093,10 @@ var items = {
     "descr": "На счастье!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1610": {
     "id": 1610,
@@ -30197,6 +36122,9 @@ var items = {
     "validtime": 86400,
     "charges": 13,
     "hidden": 1,
+    "consumable": "randomsharp",
+    "material": "ring",
+    "changed": "1"
   },
   "1611": {
     "id": 1611,
@@ -30222,6 +36150,10 @@ var items = {
     "instruction": "Дополнительные фирменные эффекты не работают!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1612": {
     "id": 1612,
@@ -30245,6 +36177,10 @@ var items = {
     "descr": "На треть уменьшает эффект Изнурения, полученного в Сумеречном Городе.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 356,
+    "material": "ring",
+    "changed": "1"
   },
   "1613": {
     "id": 1613,
@@ -30270,11 +36206,15 @@ var items = {
     "descr": "Поглощает 25% стихийного урона и на 25% увеличивает наносимый стихийный урон. Легат гарантирует!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 378,
+    "material": "cotton",
+    "changed": "1"
   },
   "1614": {
     "id": 1614,
     "categ_id": 23,
-    "name": "Аура Яда",
+    "name": "Аура Яда фейл",
     "maxcnt": 1,
     "type": "rune",
     "rarity": "rare",
@@ -30292,6 +36232,10 @@ var items = {
     "descr": "Каждый ход наносит оппоненту 25 урона ядом и добавляет 50% защиты от яда.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 557,
+    "material": "cotton",
+    "changed": "1"
   },
   "1615": {
     "id": 1615,
@@ -30318,6 +36262,8 @@ var items = {
     "descr": "Гарантируют неприятности вашим врагам.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "1616": {
     "id": 1616,
@@ -30343,6 +36289,9 @@ var items = {
     "validtime": 86400,
     "charges": 13,
     "hidden": 1,
+    "consumable": "randomsharp",
+    "material": "ring",
+    "changed": "1"
   },
   "1617": {
     "id": 1617,
@@ -30368,6 +36317,9 @@ var items = {
     "instruction": "Дополнительные фирменные эффекты не работают!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1618": {
     "id": 1618,
@@ -30408,6 +36360,9 @@ var items = {
     },
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "randomsharp",
+    "material": "metal",
+    "changed": "1"
   },
   "1619": {
     "id": 1619,
@@ -30430,6 +36385,9 @@ var items = {
     "descr": "Ваши удары начинают наносить дополнительный стихийный урон, пропорциональный количеству ярости. Максимум 32 урона. Стихия определяется случайным образом в начале каждого боя.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1620": {
     "id": 1620,
@@ -30454,6 +36412,10 @@ var items = {
     "descr": "Количество желаний не ограничено.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "ability_id": 317,
+    "material": "glass",
+    "changed": "1"
   },
   "1621": {
     "id": 1621,
@@ -30481,6 +36443,10 @@ var items = {
     "descr": "Повышает урон и защиту от стихий, яда и кровотечения на 25%.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 594,
+    "material": "metal",
+    "changed": "1"
   },
   "1622": {
     "id": 1622,
@@ -30504,6 +36470,10 @@ var items = {
     "descr": "Увеличивает опыт, получаемый персонажем в бою, на 10%.",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 551,
+    "material": "ring",
+    "changed": "1"
   },
   "1623": {
     "id": 1623,
@@ -30529,6 +36499,11 @@ var items = {
     "instruction": "Дополнительные фирменные эффекты не работают!",
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "none",
+    "buff_id": 141,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1624": {
     "id": 1624,
@@ -30543,6 +36518,10 @@ var items = {
     "descr": "Элитный подарок на Новый Год от ярмарочных гномов. Будет напоминать о далеком детстве и согревать в новогодние праздники. Весь январь помогает владельцу в бою.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 56,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1625": {
     "id": 1625,
@@ -30570,6 +36549,9 @@ var items = {
       }
     },
     "giveitem": 1625,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1626": {
     "id": 1626,
@@ -30582,6 +36564,11 @@ var items = {
     "price": 10,
     "personal": 1,
     "descr": "Особый гномий гриб. Лучше не употреблять!",
+    "dropfrom": ["adsf:285"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1627": {
     "id": 1627,
@@ -30594,6 +36581,11 @@ var items = {
     "price": 10,
     "personal": 1,
     "descr": "Особый гномий гриб. Лучше не употреблять!",
+    "dropfrom": ["adsf:285"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1628": {
     "id": 1628,
@@ -30606,6 +36598,11 @@ var items = {
     "price": 10,
     "personal": 1,
     "descr": "Особый гномий гриб. Лучше не употреблять!",
+    "dropfrom": ["adsf:285"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1629": {
     "id": 1629,
@@ -30618,6 +36615,11 @@ var items = {
     "price": 10,
     "personal": 1,
     "descr": "Особый гномий гриб. Лучше не употреблять!",
+    "dropfrom": ["adsf:285"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1630": {
     "id": 1630,
@@ -30630,6 +36632,11 @@ var items = {
     "price": 10,
     "personal": 1,
     "descr": "Особый гномий гриб. Лучше не употреблять!",
+    "dropfrom": ["adsf:285"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1631": {
     "id": 1631,
@@ -30642,6 +36649,10 @@ var items = {
     "price": 10,
     "personal": 1,
     "descr": "Ам-ням-ням!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1632": {
     "id": 1632,
@@ -30654,6 +36665,10 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Любимое лакомство гномов. ",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1633": {
     "id": 1633,
@@ -30679,6 +36694,8 @@ var items = {
       }
     },
     "validtime": 86400,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1634": {
     "id": 1634,
@@ -30712,6 +36729,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1635": {
     "id": 1635,
@@ -30727,6 +36746,9 @@ var items = {
     "descr": "Билет на новогоднюю лотерею. Розыгрыш состоится 10 января.<br>Разыгрываются:<br>Уникальный предмет легендарного качества!<br>Эпическая гемма с 14-ю единицами характеристик по вашему выбору.<br>2 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>4 Золотых слитка номиналом в 1000 золотых.<br>5 Премиум Эликсиров на месяц.<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1636": {
     "id": 1636,
@@ -30742,6 +36764,10 @@ var items = {
     "descr": "Лотерейный билет на праздничный розыгрыш персональной аватары в честь Нового Года! Участвуют все! Выигрышный номер будет объявлен 10 января. Дополнительные призы:<br>5 премиум-эликсиров на неделю.<br>3 любых предмета экипировки из магазина.<br>Премиум-эликсир на месяц.<br>Золотой слиток номиналом в тысячу золотых.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1637": {
     "id": 1637,
@@ -30773,6 +36799,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1638": {
     "id": 1638,
@@ -30787,6 +36816,8 @@ var items = {
     "descr": "Непосредственному участнику празднования Нового Года 2014 в Игре.",
     "validtime": 432000,
     "giveitem": 1639,
+    "consumable": "none",
+    "changed": "1"
   },
   "1639": {
     "id": 1639,
@@ -30811,6 +36842,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1640": {
     "id": 1640,
@@ -30832,7 +36865,11 @@ var items = {
     "image": "perec_lm",
     "price": 150000,
     "personal": 1,
-    "owner": "Бубазявра"
+    "owner": "Бубазявра",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1641": {
     "id": 1641,
@@ -30845,6 +36882,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Валюта, которой можно расплатиться в баре 'Full Duck'.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1642": {
     "id": 1642,
@@ -30866,6 +36906,12 @@ var items = {
     "price": 450000,
     "becomepersonal": 1,
     "descr": "Увеличивает мощность эффектов всех защитных настоев на 50%.<br>",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 619,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1643": {
     "id": 1643,
@@ -30874,7 +36920,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "stamina": 14,
     "image": "sun_gem",
     "price": 10000,
@@ -30884,7 +36930,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "nosferatusmage"
+    "owner": "nosferatusmage",
+    "consumable": "none",
+    "changed": "1"
   },
   "1644": {
     "id": 1644,
@@ -30907,6 +36955,10 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1645": {
     "id": 1645,
@@ -30929,7 +36981,11 @@ var items = {
     "price": 1000000,
     "personal": 1,
     "descr": "*Древний идол молчалив и грозен*",
-    "owner": "Могилан"
+    "owner": "Могилан",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1646": {
     "id": 1646,
@@ -30941,6 +36997,10 @@ var items = {
     "image": "shadowmark",
     "personal": 1,
     "descr": "Неощутим и почти незрим.",
+    "dropfrom": ["adsf:301"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1647": {
     "id": 1647,
@@ -30952,6 +37012,9 @@ var items = {
     "image": "leaves_birch",
     "personal": 1,
     "descr": "Инструкция: приложить к больному месту.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1648": {
     "id": 1648,
@@ -30964,6 +37027,9 @@ var items = {
     "personal": 1,
     "descr": "Инструкция: приложить в больному месту.",
     "hidden": 1,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1649": {
     "id": 1649,
@@ -30985,6 +37051,9 @@ var items = {
     "image": "aztek_mitts",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1650": {
     "id": 1650,
@@ -31007,6 +37076,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1651": {
     "id": 1651,
@@ -31020,6 +37092,8 @@ var items = {
     "price": 100,
     "personal": 1,
     "descr": "За выполненное задание!",
+    "consumable": "none",
+    "changed": "1"
   },
   "1652": {
     "id": 1652,
@@ -31033,6 +37107,8 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "За победу над Боссами!",
+    "consumable": "none",
+    "changed": "1"
   },
   "1653": {
     "id": 1653,
@@ -31046,6 +37122,8 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "За победу в Лимбе!",
+    "consumable": "none",
+    "changed": "1"
   },
   "1654": {
     "id": 1654,
@@ -31060,6 +37138,8 @@ var items = {
     "descr": "Настоящий. Синий. Твой.",
     "instruction": "Двойной клик: приручить.",
     "bottleparams": 57,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1655": {
     "id": 1655,
@@ -31082,6 +37162,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1656": {
     "id": 1656,
@@ -31097,6 +37179,9 @@ var items = {
     "descr": "Билет на олимпийскую лотерею. Разыгрываются: <br>- Уникальный предмет эпического качества с вашим дизайном!<br>- Уникальная эпическая гемма с 12-ю единицами характеристик и дизайном на ваше усмотрение! <br>- Пять утешительных призов: любой предмет экипировки из Магазина по вашему выбору!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1657": {
     "id": 1657,
@@ -31116,6 +37201,9 @@ var items = {
         "value": "625"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1658": {
     "id": 1658,
@@ -31131,6 +37219,9 @@ var items = {
     "instruction": "При вскрытии подарка дает эликсир, который добавляет 7 очков к силе, ловкости и выносливости на 12 часов. Может работать одновременно с другими тониками.",
     "validtime": 604800,
     "giveitem": 1657,
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1659": {
     "id": 1659,
@@ -31152,6 +37243,9 @@ var items = {
     "image": "aztek_boots",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1660": {
     "id": 1660,
@@ -31176,6 +37270,9 @@ var items = {
     "image": "aztek_helm",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1661": {
     "id": 1661,
@@ -31198,6 +37295,9 @@ var items = {
     "image": "aztek_pants",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1662": {
     "id": 1662,
@@ -31220,6 +37320,9 @@ var items = {
     "image": "aztek_chest",
     "price": 150000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1663": {
     "id": 1663,
@@ -31243,6 +37346,9 @@ var items = {
     "price": 100000,
     "becomepersonal": 1,
     "descr": 11001,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1664": {
     "id": 1664,
@@ -31264,6 +37370,8 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1665": {
     "id": 1665,
@@ -31271,12 +37379,16 @@ var items = {
     "name": "Пуля",
     "maxcnt": 1,
     "type": "present",
-    "rarity": "rare",
+    "rarity": "uncommon",
     "image": "icon_pulya",
     "price": 100,
     "personal": 1,
     "descr": "- Дура",
-    "validtime": 1209600,
+    "validtime": 604800,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1666": {
     "id": 1666,
@@ -31284,12 +37396,16 @@ var items = {
     "name": "Штык",
     "maxcnt": 1,
     "type": "present",
-    "rarity": "rare",
+    "rarity": "uncommon",
     "image": "icon_shtic",
     "price": 100,
     "personal": 1,
     "descr": "- Молодец!",
-    "validtime": 1209600,
+    "validtime": 604800,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1667": {
     "id": 1667,
@@ -31303,6 +37419,10 @@ var items = {
     "personal": 1,
     "descr": "Не бросай меня!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1668": {
     "id": 1668,
@@ -31316,6 +37436,10 @@ var items = {
     "personal": 1,
     "descr": "Светись всегда, светись везде!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1669": {
     "id": 1669,
@@ -31324,7 +37448,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 6,
     "stamina": 6,
@@ -31336,7 +37460,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Arktida"
+    "owner": "Arktida",
+    "consumable": "none",
+    "changed": "1"
   },
   "1670": {
     "id": 1670,
@@ -31357,7 +37483,11 @@ var items = {
     "image": "icon_narasimha",
     "price": 500000,
     "personal": 1,
-    "owner": "Jarryk"
+    "owner": "Jarryk",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1671": {
     "id": 1671,
@@ -31370,6 +37500,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Ишь ты, Масленица! И этот блин - особая масленичная валюта.",
+    "dropfrom": ["adsf:344"],
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1672": {
     "id": 1672,
@@ -31383,6 +37517,8 @@ var items = {
     "descr": "Бесконечная благодарность Его Величества Короля Милтона III за спасение мира Утраченной Магии от пришельцев из Лимба.",
     "instruction": "Двойной клик: приручить.",
     "bottleparams": 58,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1673": {
     "id": 1673,
@@ -31397,6 +37533,8 @@ var items = {
     "descr": "Он настоящий!",
     "instruction": "Двойной клик: приручить.",
     "bottleparams": 59,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1674": {
     "id": 1674,
@@ -31411,6 +37549,8 @@ var items = {
     "descr": "Ну какой Международный Женский День может обойтись без тюльпанов? А никакой!",
     "instruction": "Двойной клик: приручить.",
     "bottleparams": 60,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1675": {
     "id": 1675,
@@ -31426,6 +37566,8 @@ var items = {
     "personal": 1,
     "descr": "Подходит как для мужчин, так и для женщин.",
     "validtime": 28800,
+    "consumable": "none",
+    "changed": "1"
   },
   "1676": {
     "id": 1676,
@@ -31445,6 +37587,10 @@ var items = {
     "personal": 1,
     "descr": "Вы великолепны!",
     "validtime": 28800,
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "1677": {
     "id": 1677,
@@ -31459,6 +37605,8 @@ var items = {
     "descr": "Универсальный подарок.",
     "validtime": 86400,
     "giveitem": 1675,
+    "consumable": "none",
+    "changed": "1"
   },
   "1678": {
     "id": 1678,
@@ -31473,6 +37621,8 @@ var items = {
     "descr": "Вы великолепны!",
     "validtime": 86400,
     "giveitem": 1676,
+    "consumable": "none",
+    "changed": "1"
   },
   "1679": {
     "id": 1679,
@@ -31485,6 +37635,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "На такие клыки можно прикупить что-то полезное у Сулика.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1680": {
     "id": 1680,
@@ -31500,6 +37653,8 @@ var items = {
     "instruction": "При распаковке подарка игрок получит питомца.",
     "validtime": 432000,
     "giveitem": 1674,
+    "consumable": "none",
+    "changed": "1"
   },
   "1681": {
     "id": 1681,
@@ -31541,6 +37696,9 @@ var items = {
       }
     },
     "validtime": 86400,
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "1682": {
     "id": 1682,
@@ -31574,6 +37732,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1683": {
     "id": 1683,
@@ -31589,6 +37749,9 @@ var items = {
     "descr": "Билет на Мартовскую Лотерею. Розыгрыш состоится 14 марта в 15:00 МСК.<br>Разыгрываются 22 предмета:<br>Уникальный предмет Эпического качества! Тип, вид и параметры вы выберете сами!<br>Уникальная Аватара.<br>Уникальный Вечный подарок с вашим дизайном<br>3 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>3 Золотых слитка номиналом в 1000 золотых.<br>10 Премиум Эликсиров на неделю.<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1684": {
     "id": 1684,
@@ -31602,6 +37765,8 @@ var items = {
     "personal": 1,
     "descr": "Скажи! Да всю правду доложи: Я ль на свете всех милее, всех румяней и белее?",
     "validtime": 834000,
+    "consumable": "none",
+    "changed": "1"
   },
   "1685": {
     "id": 1685,
@@ -31615,6 +37780,8 @@ var items = {
     "personal": 1,
     "descr": "На нем нет никаких характеристик, зато в нем сокрыто самое главное - Любовь!",
     "validtime": 2592000,
+    "consumable": "none",
+    "changed": "1"
   },
   "1686": {
     "id": 1686,
@@ -31628,6 +37795,8 @@ var items = {
     "personal": 1,
     "descr": "Не дорог подарок, как дорого внимание...",
     "validtime": 834000,
+    "consumable": "none",
+    "changed": "1"
   },
   "1687": {
     "id": 1687,
@@ -31651,6 +37820,8 @@ var items = {
         "strength": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1688": {
     "id": 1688,
@@ -31674,6 +37845,8 @@ var items = {
         "defence": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "1689": {
     "id": 1689,
@@ -31686,6 +37859,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Валюта постапокалиптического мира.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1690": {
     "id": 1690,
@@ -31699,6 +37875,8 @@ var items = {
     "descr": "Обнимашки!",
     "instruction": "Двойной клик: приручить.",
     "bottleparams": 61,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1691": {
     "id": 1691,
@@ -31712,6 +37890,8 @@ var items = {
     "personal": 1,
     "descr": "Вот оно - настоящее счастье!",
     "validtime": 864000,
+    "consumable": "none",
+    "changed": "1"
   },
   "1692": {
     "id": 1692,
@@ -31720,7 +37900,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 5,
     "strength": 7,
     "stamina": 7,
@@ -31734,6 +37914,8 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "1693": {
     "id": 1693,
@@ -31755,6 +37937,10 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1694": {
     "id": 1694,
@@ -31769,6 +37955,10 @@ var items = {
     "descr": "Странное послание истинному Руа.",
     "instruction": "Двойной клик: прочесть.",
     "bottleparams": 66,
+    "dropfrom": ["adsf:302"],
+    "consumable": "readbook",
+    "changed": 1,
+    "indacache": "1"
   },
   "1695": {
     "id": 1695,
@@ -31797,6 +37987,12 @@ var items = {
         "dmg": -4
       }
     },
+    "dropfrom": ["adsf:302"],
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 676,
+    "material": "cotton",
+    "changed": "1"
   },
   "1696": {
     "id": 1696,
@@ -31818,7 +38014,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "В мире всё должно держаться в равновесии — если на тебя наорали, наступи кому-нибудь на ногу.",
-    "owner": "Bayan"
+    "owner": "Bayan",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1697": {
     "id": 1697,
@@ -31845,6 +38045,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1698": {
     "id": 1698,
@@ -31871,6 +38073,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1699": {
     "id": 1699,
@@ -31897,6 +38101,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1700": {
     "id": 1700,
@@ -31921,6 +38127,10 @@ var items = {
         }
       }
     },
+    "consumable": "caresspet",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1701": {
     "id": 1701,
@@ -31935,6 +38145,8 @@ var items = {
     "descr": "Такой только у тебя и у Майкла Джексона (с)",
     "validtime": 432000,
     "giveitem": 1700,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1702": {
     "id": 1702,
@@ -31947,6 +38159,8 @@ var items = {
     "descr": "Вселяет небывалый страх и ужас... Зовут Лиск, не кусается, к лотку приучен.<br>Эксклюзивный питомец, которого можно заполучить только в рамках акции \"Неделя Милитаризации\".",
     "instruction": "Двойной клик: приручить.",
     "bottleparams": 62,
+    "consumable": "caresspet",
+    "changed": "1"
   },
   "1703": {
     "id": 1703,
@@ -31972,7 +38186,6 @@ var items = {
           "820x5": 5,
           "761x5": 5,
           "819x5": 5,
-          "600x5": 5,
           "818x5": 5,
           "706x1": 5,
           "123x1": 5,
@@ -31996,6 +38209,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1704": {
     "id": 1704,
@@ -32020,7 +38235,11 @@ var items = {
     "image": "irokez_helmet",
     "price": 4000000,
     "personal": 1,
-    "owner": "nosferatusmage"
+    "owner": "nosferatusmage",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1705": {
     "id": 1705,
@@ -32039,6 +38258,9 @@ var items = {
         "value": "641"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1706": {
     "id": 1706,
@@ -32057,6 +38279,9 @@ var items = {
         "value": "642"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1707": {
     "id": 1707,
@@ -32084,6 +38309,14 @@ var items = {
         "value": "644"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "1708": {
     "id": 1708,
@@ -32114,6 +38347,14 @@ var items = {
         "value": "646"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "1709": {
     "id": 1709,
@@ -32138,15 +38379,23 @@ var items = {
       }],
       "effects": [{
         "type": "maxhp",
-        "value": 0.2
+        "value": "0.2"
       }, {
         "type": "buff",
-        "value": 645
+        "value": "645"
       }, {
         "type": "buff",
-        "value": 419
+        "value": "419"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "1710": {
     "id": 1710,
@@ -32174,6 +38423,14 @@ var items = {
         "value": "643"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "1711": {
     "id": 1711,
@@ -32184,6 +38441,9 @@ var items = {
     "image": "egg01",
     "personal": 1,
     "descr": "Один из украденных товаров Кролика Роджера",
+    "consumable": "none",
+    "material": "bones",
+    "changed": "1"
   },
   "1712": {
     "id": 1712,
@@ -32194,6 +38454,9 @@ var items = {
     "image": "egg02",
     "personal": 1,
     "descr": "Один из украденных товаров Кролика Роджера",
+    "consumable": "none",
+    "material": "bones",
+    "changed": "1"
   },
   "1713": {
     "id": 1713,
@@ -32204,6 +38467,9 @@ var items = {
     "image": "egg03",
     "personal": 1,
     "descr": "Один из украденных товаров Кролика Роджера",
+    "consumable": "none",
+    "material": "bones",
+    "changed": "1"
   },
   "1714": {
     "id": 1714,
@@ -32217,6 +38483,10 @@ var items = {
     "personal": 1,
     "descr": "Не каждый может застать миг рождения дракона<br><br>Вечный подарок",
     "validtime": -1,
+    "consumable": "none",
+    "material": "bones",
+    "changed": 1,
+    "indacache": "1"
   },
   "1715": {
     "id": 1715,
@@ -32230,6 +38500,10 @@ var items = {
     "personal": 1,
     "descr": "Цветы, которые никогда не завянут<br><br>Вечный подарок",
     "validtime": -1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1716": {
     "id": 1716,
@@ -32243,6 +38517,10 @@ var items = {
     "personal": 1,
     "descr": "За храбрость и невозмутимость!<br><br>Вечный подарок",
     "validtime": -1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1717": {
     "id": 1717,
@@ -32269,6 +38547,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1718": {
     "id": 1718,
@@ -32291,7 +38571,11 @@ var items = {
     "image": "ring_skull",
     "price": 2128506,
     "personal": 1,
-    "owner": "Red"
+    "owner": "Red",
+    "consumable": "none",
+    "buff_id": 325,
+    "material": "ring",
+    "changed": "1"
   },
   "1719": {
     "id": 1719,
@@ -32303,6 +38587,10 @@ var items = {
     "image": "cogwheels",
     "personal": 1,
     "descr": "В обмен на шестеренки М.Н.К. ты можешь приобрести товары у А. Д. Мина во время мероприятия \"Безумие машин\"",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1720": {
     "id": 1720,
@@ -32322,6 +38610,10 @@ var items = {
     "image": "necklace_red",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1721": {
     "id": 1721,
@@ -32342,6 +38634,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1722": {
     "id": 1722,
@@ -32361,6 +38656,10 @@ var items = {
     "image": "necklace_green",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1723": {
     "id": 1723,
@@ -32381,6 +38680,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1724": {
     "id": 1724,
@@ -32400,6 +38702,10 @@ var items = {
     "image": "necklace_blue",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1725": {
     "id": 1725,
@@ -32420,6 +38726,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1726": {
     "id": 1726,
@@ -32441,6 +38750,10 @@ var items = {
     "image": "necklace_red",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1727": {
     "id": 1727,
@@ -32463,6 +38776,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1728": {
     "id": 1728,
@@ -32484,6 +38800,10 @@ var items = {
     "image": "necklace_green",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1729": {
     "id": 1729,
@@ -32506,6 +38826,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1730": {
     "id": 1730,
@@ -32527,6 +38850,10 @@ var items = {
     "image": "necklace_blue",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1731": {
     "id": 1731,
@@ -32549,6 +38876,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1732": {
     "id": 1732,
@@ -32570,6 +38900,10 @@ var items = {
     "image": "necklace_red",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1733": {
     "id": 1733,
@@ -32592,6 +38926,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1734": {
     "id": 1734,
@@ -32613,6 +38950,10 @@ var items = {
     "image": "necklace_green",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1735": {
     "id": 1735,
@@ -32635,6 +38976,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1736": {
     "id": 1736,
@@ -32656,6 +39000,10 @@ var items = {
     "image": "necklace_green",
     "price": 5000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1737": {
     "id": 1737,
@@ -32678,6 +39026,9 @@ var items = {
     "price": 5000,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1738": {
     "id": 1738,
@@ -32696,6 +39047,10 @@ var items = {
     "image": "ring_1",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1739": {
     "id": 1739,
@@ -32715,6 +39070,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1740": {
     "id": 1740,
@@ -32733,6 +39091,10 @@ var items = {
     "image": "ring_3",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1741": {
     "id": 1741,
@@ -32752,6 +39114,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1742": {
     "id": 1742,
@@ -32770,6 +39135,10 @@ var items = {
     "image": "ring_2",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1743": {
     "id": 1743,
@@ -32789,6 +39158,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1744": {
     "id": 1744,
@@ -32809,6 +39181,10 @@ var items = {
     "image": "ring_1",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1745": {
     "id": 1745,
@@ -32830,6 +39206,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1746": {
     "id": 1746,
@@ -32848,6 +39227,8 @@ var items = {
       }]
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1747": {
     "id": 1747,
@@ -32868,6 +39249,10 @@ var items = {
     "image": "ring_3",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1748": {
     "id": 1748,
@@ -32889,6 +39274,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1749": {
     "id": 1749,
@@ -32909,6 +39297,10 @@ var items = {
     "image": "ring_2",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1750": {
     "id": 1750,
@@ -32930,6 +39322,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1751": {
     "id": 1751,
@@ -32948,6 +39343,8 @@ var items = {
       }]
     },
     "validtime": 3600,
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1752": {
     "id": 1752,
@@ -32968,6 +39365,10 @@ var items = {
     "image": "ring_1",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1753": {
     "id": 1753,
@@ -32989,6 +39390,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1754": {
     "id": 1754,
@@ -33009,6 +39413,10 @@ var items = {
     "image": "ring_3",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1755": {
     "id": 1755,
@@ -33030,6 +39438,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1756": {
     "id": 1756,
@@ -33050,6 +39461,10 @@ var items = {
     "image": "ring_2",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1757": {
     "id": 1757,
@@ -33071,6 +39486,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1758": {
     "id": 1758,
@@ -33090,6 +39508,10 @@ var items = {
     "image": "talisman_red",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1759": {
     "id": 1759,
@@ -33110,6 +39532,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1760": {
     "id": 1760,
@@ -33129,6 +39554,10 @@ var items = {
     "image": "talisman_green",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1761": {
     "id": 1761,
@@ -33149,6 +39578,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1762": {
     "id": 1762,
@@ -33168,6 +39600,10 @@ var items = {
     "image": "talisman_blue",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1763": {
     "id": 1763,
@@ -33188,6 +39624,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1764": {
     "id": 1764,
@@ -33209,6 +39648,10 @@ var items = {
     "image": "talisman_red",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1765": {
     "id": 1765,
@@ -33231,6 +39674,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1766": {
     "id": 1766,
@@ -33252,6 +39698,10 @@ var items = {
     "image": "talisman_green",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1767": {
     "id": 1767,
@@ -33274,6 +39724,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1768": {
     "id": 1768,
@@ -33295,6 +39748,10 @@ var items = {
     "image": "talisman_blue",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1769": {
     "id": 1769,
@@ -33317,6 +39774,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1770": {
     "id": 1770,
@@ -33338,6 +39798,10 @@ var items = {
     "image": "talisman_red",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1771": {
     "id": 1771,
@@ -33360,6 +39824,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1772": {
     "id": 1772,
@@ -33381,6 +39848,10 @@ var items = {
     "image": "talisman_green",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1773": {
     "id": 1773,
@@ -33403,6 +39874,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1774": {
     "id": 1774,
@@ -33424,6 +39898,10 @@ var items = {
     "image": "talisman_blue",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1775": {
     "id": 1775,
@@ -33446,6 +39924,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 259200,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1776": {
     "id": 1776,
@@ -33470,6 +39951,9 @@ var items = {
         "maxhit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "1777": {
     "id": 1777,
@@ -33489,6 +39973,13 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "useeffect",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "organic",
+    "changed": 1,
+    "monitoring": "1"
   },
   "1778": {
     "id": 1778,
@@ -33504,6 +39995,9 @@ var items = {
     "descr": "Билет дает право на участие в Майской премиум-лотерее. Розыгрыш состоится 30 мая в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Уникальный предмет (кольцо, ожерелье или безделушка) эпического качества по вашему выбору;<br>1 Право на Уникального питомца (внешность питомца выбираете сами!); <br>2 Эпических геммы с 14-ю единицами характеристик по вашему выбору;<br>3 Права на Конструкторский предмет по вашему выбору;<br>3 Права на предмет из Магазина по вашему выбору;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>5 Золотых слитков номиналом в 1000 золотых.<br>Каждый билет, номер которого заканчивается на \"0\" или \"5\", также дает право на получение специального питомца Майской лотереи - Майского слоника!<br>Все билеты после окончания розыгрыша можно обменять на особые сувениры Майской лотереи.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1779": {
     "id": 1779,
@@ -33528,6 +40022,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1780": {
     "id": 1780,
@@ -33549,6 +40045,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1781": {
     "id": 1781,
@@ -33572,6 +40070,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1782": {
     "id": 1782,
@@ -33595,6 +40095,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1783": {
     "id": 1783,
@@ -33618,6 +40120,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1784": {
     "id": 1784,
@@ -33641,6 +40145,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1785": {
     "id": 1785,
@@ -33664,6 +40170,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1786": {
     "id": 1786,
@@ -33689,6 +40197,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1787": {
     "id": 1787,
@@ -33702,6 +40212,10 @@ var items = {
     "personal": 1,
     "descr": "Полновесный Золотой Лаббит новой чеканки.",
     "instruction": "Двойной клик: пополнить свой счет на 1 Лаббит.",
+    "consumable": "exchange1",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1788": {
     "id": 1788,
@@ -33727,6 +40241,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1789": {
     "id": 1789,
@@ -33739,6 +40255,9 @@ var items = {
     "price": 1500,
     "personal": 1,
     "validtime": 2592000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1790": {
     "id": 1790,
@@ -33752,6 +40271,9 @@ var items = {
     "personal": 1,
     "descr": "Весёлый, заводной!",
     "validtime": 1209600,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1791": {
     "id": 1791,
@@ -33764,6 +40286,9 @@ var items = {
     "price": 1500,
     "personal": 1,
     "validtime": 2592000,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "1792": {
     "id": 1792,
@@ -33783,6 +40308,9 @@ var items = {
         "value": "665"
       }]
     },
+    "consumable": "useeffect",
+    "material": "organic",
+    "changed": "1"
   },
   "1793": {
     "id": 1793,
@@ -33796,6 +40324,10 @@ var items = {
     "personal": 1,
     "descr": "Тяжелый ключ из необычного металла.",
     "quest": 1,
+    "dropfrom": ["adsf:278", "adsf:279", "adsf:280"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1794": {
     "id": 1794,
@@ -33809,6 +40341,9 @@ var items = {
     "personal": 1,
     "descr": "Заряженный и работающий ключ. Осталось только использовать его по назначению.",
     "quest": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1795": {
     "id": 1795,
@@ -33828,7 +40363,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Казябазя"
+    "owner": "Казябазя",
+    "consumable": "none",
+    "changed": "1"
   },
   "1796": {
     "id": 1796,
@@ -33850,7 +40387,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Баттерс"
+    "owner": "Баттерс",
+    "consumable": "none",
+    "changed": "1"
   },
   "1797": {
     "id": 1797,
@@ -33874,7 +40413,11 @@ var items = {
     "price": 3000000,
     "personal": 1,
     "descr": "Это Аппа, мой летающий зубр.",
-    "owner": "Артымос"
+    "owner": "Артымос",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1798": {
     "id": 1798,
@@ -33888,6 +40431,10 @@ var items = {
     "personal": 1,
     "descr": "Бутылка доверху наполнена зеленой жидкостью с легким золотистым отливом.",
     "quest": 1,
+    "dropfrom": ["adsf:208", "adsf:210"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "1799": {
     "id": 1799,
@@ -33901,6 +40448,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 63,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1800": {
     "id": 1800,
@@ -33914,6 +40464,9 @@ var items = {
     "personal": 1,
     "descr": "Внутри явно находится приличное количество золота.",
     "quest": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1801": {
     "id": 1801,
@@ -33927,6 +40480,10 @@ var items = {
     "personal": 1,
     "descr": "Предмет гардероба морских волков.",
     "quest": 1,
+    "dropfrom": ["adsf:310"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1802": {
     "id": 1802,
@@ -33940,6 +40497,10 @@ var items = {
     "personal": 1,
     "descr": "Добротная пиратская шляпа.",
     "quest": 1,
+    "dropfrom": ["adsf:313"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1803": {
     "id": 1803,
@@ -33953,6 +40514,10 @@ var items = {
     "personal": 1,
     "descr": "Свод указаний, известных каждому пирату.",
     "quest": 1,
+    "dropfrom": ["adsf:314"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1804": {
     "id": 1804,
@@ -33966,6 +40531,10 @@ var items = {
     "personal": 1,
     "descr": "Отличный способ изменить внешность.",
     "quest": 1,
+    "dropfrom": ["adsf:311"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1805": {
     "id": 1805,
@@ -33979,6 +40548,10 @@ var items = {
     "personal": 1,
     "descr": "Ходить с ней будет тяжеловато...",
     "quest": 1,
+    "dropfrom": ["adsf:311"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1806": {
     "id": 1806,
@@ -33992,6 +40565,10 @@ var items = {
     "personal": 1,
     "descr": "Маленький секрет первого помощника Эдварда.",
     "quest": 1,
+    "dropfrom": ["adsf:312"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1807": {
     "id": 1807,
@@ -34016,6 +40593,9 @@ var items = {
         "value": "675"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1808": {
     "id": 1808,
@@ -34028,6 +40608,10 @@ var items = {
     "image": "pirate_dna",
     "personal": 1,
     "descr": "Образец ДНК зараженного пирата.",
+    "dropfrom": ["adsf:310", "adsf:311", "adsf:312", "adsf:313", "adsf:314"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1809": {
     "id": 1809,
@@ -34040,6 +40624,10 @@ var items = {
     "image": "pirate_gold",
     "personal": 1,
     "descr": "Часть добычи из Пещеры под горой.",
+    "dropfrom": ["adsf:310"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1810": {
     "id": 1810,
@@ -34052,6 +40640,10 @@ var items = {
     "image": "ingot_ag",
     "personal": 1,
     "descr": "Часть добычи из Пещеры под горой.",
+    "dropfrom": ["adsf:313"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1811": {
     "id": 1811,
@@ -34064,6 +40656,10 @@ var items = {
     "image": "jewels_icon",
     "personal": 1,
     "descr": "Часть добычи из Пещеры под горой.",
+    "dropfrom": ["adsf:311"],
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1812": {
     "id": 1812,
@@ -34076,6 +40672,10 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Зелье, способное временно остановить заражение.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1813": {
     "id": 1813,
@@ -34089,6 +40689,10 @@ var items = {
     "personal": 1,
     "descr": "Можно обменять на уникальный предмет эпического качества (кольцо, ожерелье или безделушку). ",
     "quest": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1814": {
     "id": 1814,
@@ -34103,7 +40707,11 @@ var items = {
     "descr": "Первый уникальный питомец в Мире Утраченной Магии.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 64,
-    "owner": "Acuk"
+    "owner": "Acuk",
+    "consumable": "caresspet",
+    "uniq": 1,
+    "material": "organic",
+    "changed": "1"
   },
   "1815": {
     "id": 1815,
@@ -34118,6 +40726,10 @@ var items = {
     "descr": "Можно обменять на уникальное оружие эпического качества, дизайн которого разрабатывается с учетом ваших пожеланий.",
     "quest": 1,
     "hidden": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1816": {
     "id": 1816,
@@ -34139,7 +40751,11 @@ var items = {
     "image": "uniq_red_necklace",
     "price": 3000000,
     "personal": 1,
-    "owner": "Red"
+    "owner": "Red",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "1817": {
     "id": 1817,
@@ -34162,6 +40778,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1818": {
     "id": 1818,
@@ -34175,6 +40793,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 65,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1819": {
     "id": 1819,
@@ -34188,6 +40809,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 66,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1820": {
     "id": 1820,
@@ -34201,6 +40825,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 67,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1821": {
     "id": 1821,
@@ -34214,6 +40841,9 @@ var items = {
     "personal": 1,
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 68,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1822": {
     "id": 1822,
@@ -34238,6 +40868,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1823": {
     "id": 1823,
@@ -34263,6 +40895,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1824": {
     "id": 1824,
@@ -34288,6 +40922,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1825": {
     "id": 1825,
@@ -34313,6 +40949,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1826": {
     "id": 1826,
@@ -34338,6 +40976,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1827": {
     "id": 1827,
@@ -34360,6 +41000,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1828": {
     "id": 1828,
@@ -34384,6 +41026,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1829": {
     "id": 1829,
@@ -34409,6 +41053,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1830": {
     "id": 1830,
@@ -34434,6 +41080,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1831": {
     "id": 1831,
@@ -34459,6 +41107,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1832": {
     "id": 1832,
@@ -34484,6 +41134,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1833": {
     "id": 1833,
@@ -34506,6 +41158,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1834": {
     "id": 1834,
@@ -34530,6 +41184,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1835": {
     "id": 1835,
@@ -34555,6 +41211,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1836": {
     "id": 1836,
@@ -34580,6 +41238,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1837": {
     "id": 1837,
@@ -34605,6 +41265,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1838": {
     "id": 1838,
@@ -34630,6 +41292,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1839": {
     "id": 1839,
@@ -34652,6 +41316,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1840": {
     "id": 1840,
@@ -34676,6 +41342,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1841": {
     "id": 1841,
@@ -34701,6 +41369,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1842": {
     "id": 1842,
@@ -34726,6 +41396,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1843": {
     "id": 1843,
@@ -34751,6 +41423,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1844": {
     "id": 1844,
@@ -34776,6 +41450,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1845": {
     "id": 1845,
@@ -34790,6 +41466,9 @@ var items = {
     "descr": "Особый приз победителям акции «Золотая лихорадка»",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 69,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1846": {
     "id": 1846,
@@ -34803,7 +41482,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Монстры»",
     "validtime": -1,
-    "owner": "Vodkoed"
+    "owner": "Vodkoed",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1847": {
     "id": 1847,
@@ -34817,7 +41500,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Монстры»",
     "validtime": -1,
-    "owner": "Казябазя"
+    "owner": "Казябазя",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1848": {
     "id": 1848,
@@ -34831,7 +41518,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Монстры»",
     "validtime": -1,
-    "owner": "Urr"
+    "owner": "Urr",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1849": {
     "id": 1849,
@@ -34845,7 +41536,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Обнова»",
     "validtime": -1,
-    "owner": "Red"
+    "owner": "Red",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1850": {
     "id": 1850,
@@ -34859,7 +41554,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Обнова»",
     "validtime": -1,
-    "owner": "Тенил"
+    "owner": "Тенил",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1851": {
     "id": 1851,
@@ -34873,7 +41572,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Обнова»",
     "validtime": -1,
-    "owner": "Urr"
+    "owner": "Urr",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1852": {
     "id": 1852,
@@ -34887,7 +41590,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Апдейт»",
     "validtime": -1,
-    "owner": "Лонгвей"
+    "owner": "Лонгвей",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1853": {
     "id": 1853,
@@ -34901,7 +41608,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Апдейт»",
     "validtime": -1,
-    "owner": "Казябазя"
+    "owner": "Казябазя",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1854": {
     "id": 1854,
@@ -34915,7 +41626,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Апдейт»",
     "validtime": -1,
-    "owner": "Urr"
+    "owner": "Urr",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1855": {
     "id": 1855,
@@ -34929,7 +41644,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему III место в Турнире Андрезия в номинации «Поединки»",
     "validtime": -1,
-    "owner": "Urr"
+    "owner": "Urr",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1856": {
     "id": 1856,
@@ -34943,7 +41662,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему II место в Турнире Андрезия в номинации «Поединки»",
     "validtime": -1,
-    "owner": "Лонгвей"
+    "owner": "Лонгвей",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1857": {
     "id": 1857,
@@ -34957,7 +41680,11 @@ var items = {
     "personal": 1,
     "descr": "Награда бойцу, занявшему I место в Турнире Андрезия в номинации «Поединки»",
     "validtime": -1,
-    "owner": "Казябазя"
+    "owner": "Казябазя",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1858": {
     "id": 1858,
@@ -34981,7 +41708,11 @@ var items = {
     "price": 3000000,
     "personal": 1,
     "descr": "Ash nazg durbatulûk,<br>ash nazg gimbatul,<br>ash nazg thrakatulûk,<br>agh burzum-ishi krimpatul",
-    "owner": "Еленка"
+    "owner": "Еленка",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1859": {
     "id": 1859,
@@ -34993,20 +41724,25 @@ var items = {
     "level": 20,
     "reqlevel": 20,
     "maxdur": 300,
-    "minhit": 156,
-    "maxhit": 195,
-    "defence": 12,
+    "minhit": 200,
+    "maxhit": 221,
+    "defence": 40,
     "strength": 20,
-    "stamina": 30,
-    "reqparagon": 15,
-    "dodge": 7,
-    "crit": 7,
-    "mastery": 100,
-    "resilience": 300,
+    "stamina": 20,
+    "reqparagon": 75,
+    "dodge": 11,
+    "crit": 10,
+    "mastery": 5,
+    "resilience": 220,
     "image": "saruman",
     "price": 3000000,
     "personal": 1,
-    "owner": "Еленка"
+    "owner": "Еленка",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1860": {
     "id": 1860,
@@ -35025,6 +41761,8 @@ var items = {
         "value": "679"
       }]
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1861": {
     "id": 1861,
@@ -35043,6 +41781,8 @@ var items = {
         "value": "680"
       }]
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1862": {
     "id": 1862,
@@ -35061,6 +41801,8 @@ var items = {
         "value": "681"
       }]
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1863": {
     "id": 1863,
@@ -35084,6 +41826,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1864": {
     "id": 1864,
@@ -35096,6 +41840,9 @@ var items = {
     "image": "choco_candy",
     "personal": 1,
     "descr": "Шедевр кондитерского искусства!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1865": {
     "id": 1865,
@@ -35111,6 +41858,9 @@ var items = {
     "descr": "Билет дает право на участие в Шоколадной премиум-лотерее. Розыгрыш состоится 11 июля в 15:00 по МСК.<br>В лотерее будут разыграны: <br>1 Право на Уникальный предмет эпического качества (кольцо, ожерелье или безделушку);<br>1 Эпическая гемма с 14-ю единицами характеристик;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в золотых лаббитах;<br>5 Предметов из Магазина по вашему выбору;<br>10 Коробок с Потусторонними чарами;<br>10 Эффектов «Выброс адреналина» (+5% силы) на 24 часа;<br>10 Эффектов «Координация» (+5% ловкости) на 24 часа;<br>10 Эффектов «Здоровый сон» (+5% выносливости) на 24 часа;<br>10 Золотых слитков номиналом в 1000 золотых.<br>Каждый участник лотереи получит гарантированный приз — праздничного питомца Шоколадного мишку!<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1866": {
     "id": 1866,
@@ -35132,6 +41882,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1867": {
     "id": 1867,
@@ -35190,6 +41942,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1868": {
     "id": 1868,
@@ -35214,6 +41968,9 @@ var items = {
         "value": "682"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1869": {
     "id": 1869,
@@ -35238,6 +41995,9 @@ var items = {
         "value": "683"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1870": {
     "id": 1870,
@@ -35262,6 +42022,9 @@ var items = {
         "value": "684"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1871": {
     "id": 1871,
@@ -35286,6 +42049,9 @@ var items = {
         "value": "685"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1872": {
     "id": 1872,
@@ -35310,6 +42076,9 @@ var items = {
         "value": "686"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1873": {
     "id": 1873,
@@ -35334,6 +42103,9 @@ var items = {
         "value": "687"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1874": {
     "id": 1874,
@@ -35358,6 +42130,9 @@ var items = {
         "value": "688"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1875": {
     "id": 1875,
@@ -35382,6 +42157,9 @@ var items = {
         "value": "689"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1876": {
     "id": 1876,
@@ -35406,6 +42184,9 @@ var items = {
         "value": "690"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1877": {
     "id": 1877,
@@ -35430,6 +42211,9 @@ var items = {
         "value": "691"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1878": {
     "id": 1878,
@@ -35442,6 +42226,9 @@ var items = {
     "image": "wudu1",
     "personal": 1,
     "descr": "Интересно, зачем они нужны библиотекарше? ",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "1879": {
     "id": 1879,
@@ -35472,6 +42259,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1880": {
     "id": 1880,
@@ -35490,6 +42279,8 @@ var items = {
         "value": "692"
       }]
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1881": {
     "id": 1881,
@@ -35508,6 +42299,8 @@ var items = {
         "value": "693"
       }]
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1882": {
     "id": 1882,
@@ -35526,6 +42319,8 @@ var items = {
         "value": "694"
       }]
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "1883": {
     "id": 1883,
@@ -35540,6 +42335,9 @@ var items = {
     "descr": "Особый приз участнику «Шоколадной лотереи»",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 70,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1884": {
     "id": 1884,
@@ -35552,6 +42350,10 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Можно обменять на уникальную аватарку для своего персонажа. ",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1885": {
     "id": 1885,
@@ -35572,7 +42374,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Могилан"
+    "owner": "Могилан",
+    "consumable": "none",
+    "changed": "1"
   },
   "1886": {
     "id": 1886,
@@ -35596,7 +42400,11 @@ var items = {
     "price": 3000000,
     "personal": 1,
     "descr": "Non timebo mala",
-    "owner": "Lunt"
+    "owner": "Lunt",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1887": {
     "id": 1887,
@@ -35622,6 +42430,8 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1888": {
     "id": 1888,
@@ -35647,6 +42457,8 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1889": {
     "id": 1889,
@@ -35672,6 +42484,8 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1890": {
     "id": 1890,
@@ -35697,6 +42511,8 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1891": {
     "id": 1891,
@@ -35709,6 +42525,9 @@ var items = {
     "image": "ace_spade",
     "personal": 1,
     "descr": "Это ваша карта?",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1892": {
     "id": 1892,
@@ -35721,6 +42540,9 @@ var items = {
     "image": "ace_heart",
     "personal": 1,
     "descr": "Это ваша карта?",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1893": {
     "id": 1893,
@@ -35733,6 +42555,9 @@ var items = {
     "image": "ace_diamond",
     "personal": 1,
     "descr": "Это ваша карта?",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1894": {
     "id": 1894,
@@ -35745,6 +42570,9 @@ var items = {
     "image": "ace_club",
     "personal": 1,
     "descr": "Это ваша карта?",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1895": {
     "id": 1895,
@@ -35757,6 +42585,9 @@ var items = {
     "image": "branch",
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения праздничного задания \"Загадочный куб\". ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1896": {
     "id": 1896,
@@ -35769,6 +42600,9 @@ var items = {
     "image": "clay",
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения праздничного задания \"Загадочный куб\". ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1897": {
     "id": 1897,
@@ -35781,6 +42615,9 @@ var items = {
     "image": "paper",
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения праздничного задания \"Загадочный куб\". ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1898": {
     "id": 1898,
@@ -35794,6 +42631,10 @@ var items = {
     "personal": 1,
     "descr": "Какой же праздник без торта?",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1899": {
     "id": 1899,
@@ -35807,6 +42648,10 @@ var items = {
     "personal": 1,
     "descr": "Для прекрасных дам! И не только.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1900": {
     "id": 1900,
@@ -35820,6 +42665,10 @@ var items = {
     "personal": 1,
     "descr": "Когда желания превышают возможности.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1901": {
     "id": 1901,
@@ -35833,6 +42682,10 @@ var items = {
     "personal": 1,
     "descr": "Сим официально заверяю получателя в своем безграничном уважении.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1902": {
     "id": 1902,
@@ -35846,6 +42699,10 @@ var items = {
     "personal": 1,
     "descr": "Внимание — бесценно.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1903": {
     "id": 1903,
@@ -35859,6 +42716,10 @@ var items = {
     "personal": 1,
     "descr": "На удачу!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1904": {
     "id": 1904,
@@ -35872,6 +42733,10 @@ var items = {
     "personal": 1,
     "descr": "В твоей ванной еще нет уточки? Теперь есть!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1905": {
     "id": 1905,
@@ -35885,6 +42750,10 @@ var items = {
     "personal": 1,
     "descr": "Тррррр!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1906": {
     "id": 1906,
@@ -35897,6 +42766,9 @@ var items = {
     "image": "white_feather",
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения праздничного задания \"Особая уличная магия\". ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1907": {
     "id": 1907,
@@ -35909,6 +42781,9 @@ var items = {
     "image": "blue_feather",
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения праздничного задания \"Особая уличная магия\". ",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1908": {
     "id": 1908,
@@ -35924,6 +42799,9 @@ var items = {
     "descr": "Билет дает право на участие в Солнечной лотерее, посвященной IV годовщине Мира Утраченной Магии. Розыгрыш состоится 8 августа в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на Персональную аватару;<br>3 Конструкторских предмета;<br>3 Предмета из Магазина;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней.<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1909": {
     "id": 1909,
@@ -35939,6 +42817,9 @@ var items = {
     "descr": "Билет дает право на участие в Лотерее Арканы, посвященной IV годовщине Мира Утраченной Магии. Розыгрыш состоится 8 августа в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Уникальный предмет эпического качества (кольцо, ожерелье или безделушка);<br>3 Конструкторских предмета;<br>3 Предмета из Магазина;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней.<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1910": {
     "id": 1910,
@@ -35954,6 +42835,9 @@ var items = {
     "descr": "Билет дает право на участие в Золотой лотерее, посвященной IV годовщине Мира Утраченной Магии. Розыгрыш состоится 8 августа в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на Уникального питомца;<br>3 Конструкторских предмета;<br>3 Предмета из Магазина;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней.<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1911": {
     "id": 1911,
@@ -35969,6 +42853,9 @@ var items = {
     "descr": "Билет дает право на участие в Лотерее Легенд, посвященной IV годовщине Мира Утраченной Магии. Розыгрыш состоится 8 августа в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на Уникальное оружие ЛЕГЕНДАРНОГО качества (двуручное, леворучное или щит);<br>3 Конструкторских предмета;<br>3 Предмета из Магазина;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней.<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "1912": {
     "id": 1912,
@@ -35982,6 +42869,10 @@ var items = {
     "personal": 1,
     "descr": "Привет от сицилийской мафии.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1913": {
     "id": 1913,
@@ -35995,6 +42886,10 @@ var items = {
     "personal": 1,
     "descr": "Ура, дополнительный ход!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1914": {
     "id": 1914,
@@ -36008,6 +42903,10 @@ var items = {
     "personal": 1,
     "descr": "IDDQD",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1915": {
     "id": 1915,
@@ -36021,6 +42920,10 @@ var items = {
     "personal": 1,
     "descr": "Тот самый, в беленькой рубашке.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1916": {
     "id": 1916,
@@ -36034,6 +42937,10 @@ var items = {
     "personal": 1,
     "descr": "Любимый цвет, любимый размер.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1917": {
     "id": 1917,
@@ -36047,6 +42954,10 @@ var items = {
     "personal": 1,
     "descr": "Осторожно, косточки!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1918": {
     "id": 1918,
@@ -36060,6 +42971,10 @@ var items = {
     "personal": 1,
     "descr": "Мяу!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1919": {
     "id": 1919,
@@ -36073,6 +42988,10 @@ var items = {
     "personal": 1,
     "descr": "Вам Лайкъ, сэр!",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "1920": {
     "id": 1920,
@@ -36105,6 +43024,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1921": {
     "id": 1921,
@@ -36118,6 +43039,9 @@ var items = {
     "personal": 1,
     "descr": "Праздничная валюта пятилетия Игры.",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "1922": {
     "id": 1922,
@@ -36138,6 +43062,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1923": {
     "id": 1923,
@@ -36150,6 +43076,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения задания \"Ленты и ножницы\".",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1924": {
     "id": 1924,
@@ -36170,6 +43099,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1925": {
     "id": 1925,
@@ -36190,6 +43121,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1926": {
     "id": 1926,
@@ -36210,6 +43143,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1927": {
     "id": 1927,
@@ -36222,6 +43157,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения задания \"Ленты и ножницы\".",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1928": {
     "id": 1928,
@@ -36234,6 +43172,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения задания \"Ленты и ножницы\".",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1929": {
     "id": 1929,
@@ -36246,6 +43187,9 @@ var items = {
     "price": 1000,
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения задания \"Ленты и ножницы\".",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "1930": {
     "id": 1930,
@@ -36259,6 +43203,9 @@ var items = {
     "personal": 1,
     "descr": "Предмет, необходимый для выполнения задания \"Спонсорская помощь\".",
     "validtime": 864000,
+    "consumable": "none",
+    "material": "wood",
+    "changed": "1"
   },
   "1931": {
     "id": 1931,
@@ -36280,6 +43227,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1932": {
     "id": 1932,
@@ -36301,6 +43250,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1933": {
     "id": 1933,
@@ -36322,6 +43273,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1934": {
     "id": 1934,
@@ -36343,6 +43296,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1935": {
     "id": 1935,
@@ -36357,6 +43312,9 @@ var items = {
     "descr": "Волшебный подарок от Дэвида к IV годовщине Мира Утраченной Магии. ",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 71,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1936": {
     "id": 1936,
@@ -36383,6 +43341,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "1937": {
     "id": 1937,
@@ -36411,6 +43372,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1938": {
     "id": 1938,
@@ -36436,6 +43399,8 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1939": {
     "id": 1939,
@@ -36450,7 +43415,10 @@ var items = {
     "descr": "Особый приз победителям акции «Золотая лихорадка», посвященной IV годовщине LostMagic",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 72,
-    "owner": "Wulff,Getva"
+    "owner": "Wulff,Getva",
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "1940": {
     "id": 1940,
@@ -36469,6 +43437,10 @@ var items = {
     "descr": "Почувствуй сокрушительную мощь рандома!",
     "instruction": "Двойной клик: распределить заряды случайным образом. ",
     "charges": 80,
+    "consumable": "randomsharp2",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1941": {
     "id": 1941,
@@ -36479,7 +43451,7 @@ var items = {
     "rarity": "rare",
     "level": 1,
     "image": "box_type2_green",
-    "price": 4000,
+    "price": 1,
     "personal": 1,
     "descr": "Внутри находятся 100 Лицензионных лечебных настоев.",
     "instruction": "Двойной клик: открыть коробку.",
@@ -36490,6 +43462,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1942": {
     "id": 1942,
@@ -36500,7 +43474,7 @@ var items = {
     "rarity": "rare",
     "level": 1,
     "image": "box_type2_orange",
-    "price": 4000,
+    "price": 1,
     "personal": 1,
     "descr": "Внутри находятся 100 Лицензионных настоев силы.",
     "instruction": "Двойной клик: открыть коробку.",
@@ -36511,6 +43485,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1943": {
     "id": 1943,
@@ -36521,7 +43497,7 @@ var items = {
     "rarity": "rare",
     "level": 1,
     "image": "box_type3_red",
-    "price": 4000,
+    "price": 1,
     "personal": 1,
     "descr": "Внутри находятся 100 Лицензионных настоев ярости.",
     "instruction": "Двойной клик: открыть коробку.",
@@ -36532,6 +43508,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1944": {
     "id": 1944,
@@ -36542,7 +43520,7 @@ var items = {
     "rarity": "rare",
     "level": 1,
     "image": "box_type4_violet",
-    "price": 4000,
+    "price": 1,
     "personal": 1,
     "descr": "Внутри находятся 100 Лицензионных настоев защиты.",
     "instruction": "Двойной клик: открыть коробку.",
@@ -36553,6 +43531,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1945": {
     "id": 1945,
@@ -36574,6 +43554,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1946": {
     "id": 1946,
@@ -36595,6 +43577,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1947": {
     "id": 1947,
@@ -36616,6 +43600,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1948": {
     "id": 1948,
@@ -36637,6 +43623,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1949": {
     "id": 1949,
@@ -36671,6 +43659,9 @@ var items = {
         "9": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1950": {
     "id": 1950,
@@ -36706,6 +43697,9 @@ var items = {
         "6": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1951": {
     "id": 1951,
@@ -36740,6 +43734,9 @@ var items = {
         "7": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1952": {
     "id": 1952,
@@ -36776,6 +43773,9 @@ var items = {
         "6": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1953": {
     "id": 1953,
@@ -36811,6 +43811,9 @@ var items = {
         "7": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1954": {
     "id": 1954,
@@ -36824,6 +43827,10 @@ var items = {
     "personal": 1,
     "descr": "Со временем часы утратили свою магическую силу. Теперь это всего лишь бесполезная стекляшка.",
     "validtime": 86400,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1955": {
     "id": 1955,
@@ -36848,6 +43855,11 @@ var items = {
     "price": 150000,
     "becomepersonal": 1,
     "descr": "Только пули свистят по степи...<br>Повышает урон и защиту от стихий, яда и кровотечения на 25%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 749,
+    "material": "cotton",
+    "changed": "1"
   },
   "1956": {
     "id": 1956,
@@ -36860,6 +43872,8 @@ var items = {
     "image": "pirate_liquor",
     "price": 10,
     "personal": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "1957": {
     "id": 1957,
@@ -36910,6 +43924,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1958": {
     "id": 1958,
@@ -36922,6 +43938,8 @@ var items = {
     "image": "blue_crystal",
     "price": 10,
     "personal": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "1959": {
     "id": 1959,
@@ -36941,6 +43959,10 @@ var items = {
     "descr": "Почувствуй сокрушительную мощь рандома!",
     "instruction": "Двойной клик: распределить заряды случайным образом. ",
     "charges": 93,
+    "consumable": "randomsharp2",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1960": {
     "id": 1960,
@@ -36960,6 +43982,10 @@ var items = {
     "descr": "Почувствуй сокрушительную мощь рандома!",
     "instruction": "Двойной клик: распределить заряды случайным образом. ",
     "charges": 106,
+    "consumable": "randomsharp2",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1961": {
     "id": 1961,
@@ -36979,6 +44005,10 @@ var items = {
     "descr": "Почувствуй сокрушительную мощь рандома!",
     "instruction": "Двойной клик: распределить заряды случайным образом. ",
     "charges": 119,
+    "consumable": "randomsharp2",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1962": {
     "id": 1962,
@@ -37012,6 +44042,9 @@ var items = {
         "9": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1963": {
     "id": 1963,
@@ -37045,6 +44078,9 @@ var items = {
         "9": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1964": {
     "id": 1964,
@@ -37078,6 +44114,9 @@ var items = {
         "6": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1965": {
     "id": 1965,
@@ -37114,6 +44153,9 @@ var items = {
         "6": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1966": {
     "id": 1966,
@@ -37147,6 +44189,9 @@ var items = {
         "7": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1967": {
     "id": 1967,
@@ -37180,6 +44225,9 @@ var items = {
         "7": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1968": {
     "id": 1968,
@@ -37213,6 +44261,9 @@ var items = {
         "6": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1969": {
     "id": 1969,
@@ -37249,6 +44300,9 @@ var items = {
         "6": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1970": {
     "id": 1970,
@@ -37284,6 +44338,9 @@ var items = {
         "7": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1971": {
     "id": 1971,
@@ -37319,6 +44376,9 @@ var items = {
         "7": 5
       }
     },
+    "dropfrom": ["adsf:319"],
+    "consumable": "randomsharp",
+    "changed": "1"
   },
   "1972": {
     "id": 1972,
@@ -37350,6 +44410,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1973": {
     "id": 1973,
@@ -37364,6 +44426,8 @@ var items = {
     "personal": 1,
     "descr": "Те самые склянки, которые необходимо доставить Хофману в Чилтон.",
     "quest": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "1974": {
     "id": 1974,
@@ -37397,6 +44461,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "1975": {
     "id": 1975,
@@ -37409,6 +44475,10 @@ var items = {
     "price": 5000,
     "descr": "Позволяет получить доступ к Ящику для зелий и настоев в Бункере терпимости.<br><br><font color=\"#FF0000\">Внимание! Для получения доступа достаточно использовать карту только один раз! Если у вас уже есть доступ к Ящику, карту использовать не нужно!</font>",
     "instruction": "Двойной клик: получить доступ к Ящику.",
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1976": {
     "id": 1976,
@@ -37421,6 +44491,10 @@ var items = {
     "personal": 1,
     "descr": "Сертификат позволяет покупать товары в Магазине на указанное количество лаббитов.<br>Покупаемые предметы становятся персональными.",
     "charges": 5,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1977": {
     "id": 1977,
@@ -37444,6 +44518,13 @@ var items = {
         "value": "315"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1978": {
     "id": 1978,
@@ -37467,6 +44548,14 @@ var items = {
         "value": "726"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "uniq": 1,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "1979": {
     "id": 1979,
@@ -37488,6 +44577,10 @@ var items = {
     "image": "skull_necklace",
     "price": 500000,
     "becomepersonal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "1980": {
     "id": 1980,
@@ -37509,6 +44602,11 @@ var items = {
     "image": "rudder",
     "price": 450000,
     "becomepersonal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "1981": {
     "id": 1981,
@@ -37528,6 +44626,10 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "useeffect",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "1982": {
     "id": 1982,
@@ -37542,7 +44644,11 @@ var items = {
     "descr": "Второй уникальный питомец в Мире Утраченной Магии.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 73,
-    "owner": "Арахн"
+    "owner": "Арахн",
+    "consumable": "caresspet",
+    "uniq": 1,
+    "material": "organic",
+    "changed": "1"
   },
   "1983": {
     "id": 1983,
@@ -37557,6 +44663,10 @@ var items = {
     "personal": 1,
     "descr": "Украшено алмазами редкой чистоты.",
     "quest": 1,
+    "dropfrom": ["adsf:312"],
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "1984": {
     "id": 1984,
@@ -37569,6 +44679,11 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "В основном разводится в ящиках на пиратских кораблях. Обладает мощными защитными свойствами. ",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "1985": {
     "id": 1985,
@@ -37586,6 +44701,12 @@ var items = {
       "maxcnt": 5
     },
     "giveitem": 1984,
+    "dropfrom": ["adsf:310", "adsf:311", "adsf:313"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "1986": {
     "id": 1986,
@@ -37602,6 +44723,9 @@ var items = {
       "buff_id": 727,
       "value": "1"
     },
+    "consumable": "buffremove",
+    "changed": 1,
+    "monitoring": "1"
   },
   "1987": {
     "id": 1987,
@@ -37625,6 +44749,11 @@ var items = {
     "price": 220000,
     "personal": 1,
     "descr": "Гарри был веселым малым...",
+    "dropfrom": ["adsf:319", "adsf:320", "adsf:321"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1988": {
     "id": 1988,
@@ -37644,6 +44773,11 @@ var items = {
     "image": "shark_ring",
     "price": 220000,
     "descr": "Душа морской хищницы в позолоте.",
+    "dropfrom": ["adsf:319", "adsf:320", "adsf:321"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "1989": {
     "id": 1989,
@@ -37657,6 +44791,9 @@ var items = {
     "price": 700,
     "personal": 1,
     "descr": "Подойдет для респиратора практически любой конструкции. ",
+    "dropfrom": ["adsf:314"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1990": {
     "id": 1990,
@@ -37670,6 +44807,9 @@ var items = {
     "price": 700,
     "personal": 1,
     "descr": "В наше время, казалось бы, существует достаточно способов синтезировать каучук, но нет.",
+    "dropfrom": ["adsf:312"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1991": {
     "id": 1991,
@@ -37683,6 +44823,9 @@ var items = {
     "price": 700,
     "personal": 1,
     "descr": "Интересно, чего в нем такого особенного? Выглядит как обычная серебристая пыль...",
+    "dropfrom": ["adsf:310", "adsf:311", "adsf:313"],
+    "consumable": "none",
+    "changed": "1"
   },
   "1992": {
     "id": 1992,
@@ -37707,6 +44850,9 @@ var items = {
         "value": "699"
       }]
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "1993": {
     "id": 1993,
@@ -37731,7 +44877,12 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Такая только у меня и у Майкла Джексона.",
-    "owner": "Leo"
+    "owner": "Leo",
+    "consumable": "none",
+    "ability_id": 195,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1994": {
     "id": 1994,
@@ -37746,6 +44897,10 @@ var items = {
     "descr": "Начав читать эти строки, ты...",
     "instruction": "Двойной клик: читать дальше.",
     "bottleparams": 67,
+    "consumable": "readbook",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "1995": {
     "id": 1995,
@@ -37760,6 +44915,11 @@ var items = {
     "descr": "Полундрррра!",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 74,
+    "dropfrom": ["adsf:319"],
+    "consumable": "caresspet",
+    "uniq": 1,
+    "material": "organic",
+    "changed": "1"
   },
   "1996": {
     "id": 1996,
@@ -37774,6 +44934,10 @@ var items = {
     "descr": "«Изучите язык жестов и похудейте на 10 кг! Революционная методика!»",
     "instruction": "Двойной клик: изучить.",
     "quest": 1,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "1997": {
     "id": 1997,
@@ -37796,6 +44960,10 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "1998": {
     "id": 1998,
@@ -37815,6 +44983,9 @@ var items = {
         "value": "738"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "1999": {
     "id": 1999,
@@ -37834,6 +45005,11 @@ var items = {
     },
     "quest": 1,
     "validtime": 600,
+    "dropfrom": ["adsf:317"],
+    "consumable": "buffremove",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2000": {
     "id": 2000,
@@ -37853,6 +45029,9 @@ var items = {
         "value": "739"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": "1"
   },
   "2001": {
     "id": 2001,
@@ -37867,6 +45046,9 @@ var items = {
     "personal": 1,
     "descr": "Бедняга... какая страшная смерть!",
     "quest": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "changed": "1"
   },
   "2002": {
     "id": 2002,
@@ -37889,6 +45071,12 @@ var items = {
     "price": 450000,
     "personal": 1,
     "descr": "Элегантная диковина из Пещеры под горой.",
+    "dropfrom": ["adsf:319", "adsf:320", "adsf:321"],
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "2003": {
     "id": 2003,
@@ -37902,6 +45090,9 @@ var items = {
     "personal": 1,
     "descr": "Собственность Капитана Уильяма Шаркспира. Коллекционный предмет.",
     "instruction": "Двойной клик: добавить предмет в коллекцию.",
+    "consumable": "useeffect",
+    "material": "ring",
+    "changed": "1"
   },
   "2004": {
     "id": 2004,
@@ -37915,6 +45106,9 @@ var items = {
     "personal": 1,
     "descr": "Собственность Капитана Уильяма Шаркспира. Коллекционный предмет.",
     "instruction": "Двойной клик: добавить предмет в коллекцию.",
+    "consumable": "useeffect",
+    "material": "ring",
+    "changed": "1"
   },
   "2005": {
     "id": 2005,
@@ -37928,6 +45122,9 @@ var items = {
     "personal": 1,
     "descr": "Собственность Капитана Уильяма Шаркспира. Коллекционный предмет.",
     "instruction": "Двойной клик: добавить предмет в коллекцию.",
+    "consumable": "useeffect",
+    "material": "ring",
+    "changed": "1"
   },
   "2006": {
     "id": 2006,
@@ -37941,6 +45138,9 @@ var items = {
     "personal": 1,
     "descr": "Собственность Капитана Уильяма Шаркспира. Коллекционный предмет.",
     "instruction": "Двойной клик: добавить предмет в коллекцию.",
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2007": {
     "id": 2007,
@@ -37954,6 +45154,9 @@ var items = {
     "personal": 1,
     "descr": "Собственность Капитана Уильяма Шаркспира. Коллекционный предмет.",
     "instruction": "Двойной клик: добавить предмет в коллекцию.",
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2008": {
     "id": 2008,
@@ -37978,6 +45181,11 @@ var items = {
     "price": 250000,
     "personal": 1,
     "descr": "Роскошное одеяние древнего пирата.<br>Повышает урон и защиту от стихий, яда и кровотечения на 20%.",
+    "dropfrom": ["adsf:319"],
+    "consumable": "none",
+    "buff_id": 750,
+    "material": "cotton",
+    "changed": "1"
   },
   "2009": {
     "id": 2009,
@@ -37991,6 +45199,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "И зачем вам она?",
+    "consumable": "none",
+    "material": "bones",
+    "changed": "1"
   },
   "2010": {
     "id": 2010,
@@ -38009,12 +45220,14 @@ var items = {
         "value": "741"
       }]
     },
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "2011": {
     "id": 2011,
     "categ_id": 23,
     "name": "Заражённая кровь чудовища",
-    "maxcnt": 10,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "rare",
     "level": 20,
@@ -38022,6 +45235,10 @@ var items = {
     "price": 50000,
     "personal": 1,
     "descr": "Выглядит омерзительно, да и пахнет соответственно.",
+    "dropfrom": ["adsf:319"],
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "2012": {
     "id": 2012,
@@ -38041,6 +45258,8 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "2013": {
     "id": 2013,
@@ -38049,7 +45268,7 @@ var items = {
     "maxcnt": 10,
     "type": "socket",
     "rarity": "epic",
-    "level": 9,
+    "level": 99,
     "reqlevel": 9,
     "strength": 10,
     "image": "brilliant_flower",
@@ -38060,7 +45279,10 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Пионка"
+    "owner": "Пионка",
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "2014": {
     "id": 2014,
@@ -38080,6 +45302,8 @@ var items = {
       }]
     },
     "hidden": 1,
+    "consumable": "useeffect",
+    "changed": "1"
   },
   "2015": {
     "id": 2015,
@@ -38092,6 +45316,8 @@ var items = {
     "image": "ghost_dust",
     "price": 10,
     "personal": 1,
+    "consumable": "none",
+    "changed": "1"
   },
   "2016": {
     "id": 2016,
@@ -38117,6 +45343,8 @@ var items = {
       }
     },
     "quest": 1,
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2017": {
     "id": 2017,
@@ -38142,7 +45370,13 @@ var items = {
     "price": 340000,
     "personal": 1,
     "descr": "Та самая, легендарная!",
-    "owner": "Getva"
+    "owner": "Getva",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 412,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2018": {
     "id": 2018,
@@ -38165,7 +45399,11 @@ var items = {
     "price": 3000000,
     "personal": 1,
     "descr": "И целого мира мало.",
-    "owner": "Acuk"
+    "owner": "Acuk",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "2019": {
     "id": 2019,
@@ -38183,6 +45421,8 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "2020": {
     "id": 2020,
@@ -38200,6 +45440,8 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "2021": {
     "id": 2021,
@@ -38217,6 +45459,8 @@ var items = {
     "bottleparams": {
       "color": "blue"
     },
+    "consumable": "gemrecipe",
+    "changed": "1"
   },
   "2022": {
     "id": 2022,
@@ -38225,7 +45469,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 6,
+    "level": 90,
     "reqlevel": 20,
     "strength": 8,
     "image": "adenit",
@@ -38238,6 +45482,9 @@ var items = {
       "reagent": 873,
       "grouptype": "gloves"
     },
+    "consumable": "none",
+    "buff_id": 752,
+    "changed": "1"
   },
   "2023": {
     "id": 2023,
@@ -38246,7 +45493,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 6,
+    "level": 90,
     "reqlevel": 20,
     "stamina": 7,
     "image": "adenit",
@@ -38259,6 +45506,9 @@ var items = {
       "reagent": 873,
       "grouptype": "chest"
     },
+    "consumable": "none",
+    "buff_id": 753,
+    "changed": "1"
   },
   "2024": {
     "id": 2024,
@@ -38267,7 +45517,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 8,
+    "level": 90,
     "reqlevel": 20,
     "minhit": 105,
     "maxhit": 105,
@@ -38282,6 +45532,8 @@ var items = {
       "reagent": 873,
       "grouptype": "gloves"
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "2025": {
     "id": 2025,
@@ -38296,6 +45548,10 @@ var items = {
     "personal": 1,
     "descr": "Лекарство, изготовленное из зараженной крови чудовища. ",
     "quest": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2026": {
     "id": 2026,
@@ -38351,6 +45607,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "wood",
+    "changed": "1"
   },
   "2027": {
     "id": 2027,
@@ -38371,6 +45630,10 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "useitemonotheritem",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2028": {
     "id": 2028,
@@ -38391,6 +45654,10 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "useitemonotheritem",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2029": {
     "id": 2029,
@@ -38411,6 +45678,10 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "useitemonotheritem",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2030": {
     "id": 2030,
@@ -38435,6 +45706,10 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "useitemonotheritem",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2031": {
     "id": 2031,
@@ -38457,6 +45732,8 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "openchestwithkey",
+    "changed": "1"
   },
   "2032": {
     "id": 2032,
@@ -38486,6 +45763,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2033": {
     "id": 2033,
@@ -38499,6 +45778,11 @@ var items = {
     "price": 6660000,
     "descr": "Судя по цене, она слоновая...",
     "instruction": "Двойной клик: продать вендору",
+    "consumable": "none",
+    "material": "bones",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2034": {
     "id": 2034,
@@ -38520,7 +45804,12 @@ var items = {
     "image": "zarina_present_magic",
     "price": 100000,
     "personal": 1,
-    "owner": "Zarina"
+    "owner": "Zarina",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "2035": {
     "id": 2035,
@@ -38534,7 +45823,11 @@ var items = {
     "personal": 1,
     "validtime": -1,
     "giveitem": 2034,
-    "owner": "Zarina"
+    "owner": "Zarina",
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "2036": {
     "id": 2036,
@@ -38559,6 +45852,9 @@ var items = {
         "maxhit": 0
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2037": {
     "id": 2037,
@@ -38574,6 +45870,9 @@ var items = {
     "descr": "Билет дает право на участие              в Лотерее Арены для уровней 1-9. Розыгрыш состоится 21 ноября        в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Уникальный эпический             предмет бижутерии;<br>1 Уникальная аватара;<br>1 Эпическая гемма с 10 очками параметров для распределения;<br>2 Любых предмета из Магазина;<br>4 Бонуса от Арены в виде               300 очков Арены;<br>6 Комплектов из 60 лицензионных настоев выбранного типа.<br>Обладатели же невыигрышного билета с кратным 5 номером получат по Премиум-эликсиру          на 7 дней.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2038": {
     "id": 2038,
@@ -38590,6 +45889,9 @@ var items = {
     "descr": "Билет дает право на участие                    в Лотерее Арены                          для уровней 16-19.                    Розыгрыш состоится 21 ноября               в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Уникальный эпический                    предмет бижутерии;<br>1 Уникальная аватара;<br>2 Эпические геммы с 13 очками параметров для распределения;<br>2 Конструкторских предмета                  из Магазина;<br>2 Кошеля с 40 золотыми лаббитами; <br>4 Премиум-эликсира на 30 дней.<br>Обладатели же невыигрышного билета с кратным 5 номером получат по Премиум-эликсиру           на 7 дней.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2039": {
     "id": 2039,
@@ -38606,6 +45908,9 @@ var items = {
     "descr": "Билет дает право на участие            в Лотерее Арены                            для уровней 10-15.                       Розыгрыш состоится 21 ноября                в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Уникальный эпический                   предмет бижутерии;<br>1 Уникальная аватара;<br>2 Эпические геммы с 12 очками параметров для распределения;<br>2 Конструкторских предмета              из Магазина;<br>2 Кошеля с 40 золотыми лаббитами; <br>4 Бонуса от Арены в виде                  500 очков Арены.<br>Обладатели же невыигрышного билета с кратным 5 номером получат по Премиум-эликсиру           на 7 дней.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2040": {
     "id": 2040,
@@ -38622,6 +45927,9 @@ var items = {
     "descr": "Билет дает право на участие              в Лотерее Арены для уровня 20. Розыгрыш состоится 21 ноября                                  в 15:00 по МСК.<br>В лотерее будут разыграны:<br>1 Уникальный эпический             предмет бижутерии;<br>1 Уникальная аватара;<br>2 Эпические геммы с 14 очками параметров для распределения;<br>2 Конструкторских предмета              из Магазина;<br>4 Кошеля с 40 золотыми лаббитами.<br>Обладатели же невыигрышного билета с кратным 5 номером получат по Премиум-эликсиру         на 7 дней.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2041": {
     "id": 2041,
@@ -38644,6 +45952,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2042": {
     "id": 2042,
@@ -38666,6 +45976,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2043": {
     "id": 2043,
@@ -38688,6 +46000,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2044": {
     "id": 2044,
@@ -38710,6 +46024,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2045": {
     "id": 2045,
@@ -38722,6 +46038,10 @@ var items = {
     "price": 7000,
     "personal": 1,
     "descr": "Высокотехнологичная шестерёнка конструкции К. Вестингауза. ",
+    "dropfrom": ["adsf:124", "adsf:125", "adsf:190", "adsf:191", "adsf:49", "adsf:50", "adsf:51", "adsf:52", "adsf:53", "adsf:54", "adsf:82", "adsf:83"],
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2046": {
     "id": 2046,
@@ -38733,6 +46053,10 @@ var items = {
     "image": "ruby",
     "price": 400000,
     "descr": "Отличное украшения для царского скипетра. Осталось раздобыть царя и скипетр.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2047": {
     "id": 2047,
@@ -38744,6 +46068,10 @@ var items = {
     "image": "saphire",
     "price": 600000,
     "descr": "Говорят, сапфиры лечат болезни. Возможно. От бедности он вас точно может вылечить.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2048": {
     "id": 2048,
@@ -38755,6 +46083,9 @@ var items = {
     "image": "jewelry_arhive_page",
     "price": 100000,
     "descr": "Для кого-то этот лист может и содержит полезную информацию, но не для вас.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2049": {
     "id": 2049,
@@ -38775,6 +46106,11 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Увеличивает опыт, получаемый персонажем в бою, на 10%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 551,
+    "material": "ring",
+    "changed": "1"
   },
   "2050": {
     "id": 2050,
@@ -38795,6 +46131,11 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Увеличивает опыт, получаемый персонажем в бою, на 10%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 551,
+    "material": "ring",
+    "changed": "1"
   },
   "2051": {
     "id": 2051,
@@ -38815,6 +46156,11 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Увеличивает опыт, получаемый персонажем в бою, на 10%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 551,
+    "material": "ring",
+    "changed": "1"
   },
   "2052": {
     "id": 2052,
@@ -38834,6 +46180,10 @@ var items = {
     "image": "ring_w",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2053": {
     "id": 2053,
@@ -38853,6 +46203,10 @@ var items = {
     "image": "ring_w",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2054": {
     "id": 2054,
@@ -38872,6 +46226,10 @@ var items = {
     "image": "ring_f",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2055": {
     "id": 2055,
@@ -38892,6 +46250,10 @@ var items = {
     "image": "relicring",
     "price": 190000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2056": {
     "id": 2056,
@@ -38912,6 +46274,10 @@ var items = {
     "image": "relicring",
     "price": 190000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2057": {
     "id": 2057,
@@ -38932,6 +46298,10 @@ var items = {
     "image": "relicring",
     "price": 190000,
     "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2058": {
     "id": 2058,
@@ -38951,6 +46321,10 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный стихийный урон, пропорциональный количеству ярости. Максимум 32 урона. Стихия определяется случайным образом в начале каждого боя.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "2059": {
     "id": 2059,
@@ -38970,6 +46344,10 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный стихийный урон, пропорциональный количеству ярости. Максимум 32 урона. Стихия определяется случайным образом в начале каждого боя.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "2060": {
     "id": 2060,
@@ -38989,6 +46367,10 @@ var items = {
     "price": 220000,
     "becomepersonal": 1,
     "descr": "Ваши удары начинают наносить дополнительный стихийный урон, пропорциональный количеству ярости. Максимум 32 урона. Стихия определяется случайным образом в начале каждого боя.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": "1"
   },
   "2061": {
     "id": 2061,
@@ -39008,6 +46390,10 @@ var items = {
     "image": "ring_w",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2062": {
     "id": 2062,
@@ -39027,6 +46413,10 @@ var items = {
     "image": "ring_f",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2063": {
     "id": 2063,
@@ -39046,6 +46436,10 @@ var items = {
     "image": "ring_f",
     "price": 100000,
     "personal": 1,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2064": {
     "id": 2064,
@@ -39069,6 +46463,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2065": {
     "id": 2065,
@@ -39098,6 +46494,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "wood",
+    "changed": "1"
   },
   "2066": {
     "id": 2066,
@@ -39120,6 +46519,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2067": {
     "id": 2067,
@@ -39142,6 +46543,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2068": {
     "id": 2068,
@@ -39159,6 +46562,10 @@ var items = {
     "price": 1500,
     "personal": 1,
     "descr": "Чудо инженерной мысли.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2069": {
     "id": 2069,
@@ -39176,6 +46583,10 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "С позолотой и стразами!<br>",
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2070": {
     "id": 2070,
@@ -39194,6 +46605,10 @@ var items = {
     "price": 100000,
     "becomepersonal": 1,
     "descr": "Если не победишь, то хоть уйдешь с честью.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2071": {
     "id": 2071,
@@ -39212,6 +46627,10 @@ var items = {
     "price": 300000,
     "becomepersonal": 1,
     "descr": "Для ценителей классики.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2072": {
     "id": 2072,
@@ -39230,6 +46649,11 @@ var items = {
     "price": 300,
     "becomepersonal": 1,
     "descr": "Ему то уже без надобности.",
+    "dropfrom": ["adsf:2", "adsf:3", "adsf:7"],
+    "consumable": "none",
+    "material": "bones",
+    "changed": 1,
+    "indacache": "1"
   },
   "2073": {
     "id": 2073,
@@ -39248,6 +46672,12 @@ var items = {
     "becomepersonal": 1,
     "descr": "Хочется взять и воевать!",
     "instruction": "+3 ярости за удар",
+    "dropfrom": ["adsf:15", "adsf:7"],
+    "consumable": "none",
+    "buff_id": 763,
+    "material": "bones",
+    "changed": 1,
+    "indacache": "1"
   },
   "2074": {
     "id": 2074,
@@ -39256,7 +46686,7 @@ var items = {
     "maxcnt": 1,
     "type": "socket",
     "rarity": "epic",
-    "level": 13,
+    "level": 99,
     "reqlevel": 13,
     "strength": 3,
     "stamina": 9,
@@ -39268,7 +46698,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Grifonchik"
+    "owner": "Grifonchik",
+    "consumable": "none",
+    "changed": "1"
   },
   "2075": {
     "id": 2075,
@@ -39284,6 +46716,10 @@ var items = {
     "image": "basik1",
     "price": 1,
     "descr": "90% трикотаж, 10% синтетика. И никакой магии!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2076": {
     "id": 2076,
@@ -39299,6 +46735,10 @@ var items = {
     "image": "basik2",
     "price": 1,
     "descr": "Джинсовая ткань никогда не выйдет из моды.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2077": {
     "id": 2077,
@@ -39313,6 +46753,10 @@ var items = {
     "image": "keds",
     "price": 1,
     "personal": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2078": {
     "id": 2078,
@@ -39334,7 +46778,10 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Необъяснимо усиливает атаки своего владельца. Видимо, во имя Луны.",
-    "owner": "Даб"
+    "owner": "Даб",
+    "consumable": "none",
+    "material": "bones",
+    "changed": "1"
   },
   "2079": {
     "id": 2079,
@@ -39347,7 +46794,11 @@ var items = {
     "image": "eternal_present_lentochka",
     "price": 10000,
     "validtime": -1,
-    "owner": "Getva"
+    "owner": "Getva",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": "1"
   },
   "2080": {
     "id": 2080,
@@ -39356,7 +46807,7 @@ var items = {
     "maxcnt": 10,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 20,
     "defence": 5,
     "strength": 3,
@@ -39369,7 +46820,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Siburianec"
+    "owner": "Siburianec",
+    "consumable": "none",
+    "changed": "1"
   },
   "2081": {
     "id": 2081,
@@ -39378,7 +46831,7 @@ var items = {
     "maxcnt": 10,
     "type": "socket",
     "rarity": "epic",
-    "level": 20,
+    "level": 99,
     "reqlevel": 20,
     "stamina": 13,
     "image": "dragon_gemm",
@@ -39389,7 +46842,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Ютай"
+    "owner": "Ютай",
+    "consumable": "none",
+    "changed": "1"
   },
   "2082": {
     "id": 2082,
@@ -39410,7 +46865,12 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Руками не трогать - только смотреть!",
-    "owner": "Grifonchik"
+    "owner": "Grifonchik",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "2083": {
     "id": 2083,
@@ -39419,7 +46879,7 @@ var items = {
     "maxcnt": 10,
     "type": "socket",
     "rarity": "epic",
-    "level": 19,
+    "level": 99,
     "reqlevel": 19,
     "strength": 7,
     "stamina": 6,
@@ -39431,7 +46891,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Пурум"
+    "owner": "Пурум",
+    "consumable": "none",
+    "changed": "1"
   },
   "2084": {
     "id": 2084,
@@ -39440,7 +46902,7 @@ var items = {
     "maxcnt": 10,
     "type": "socket",
     "rarity": "epic",
-    "level": 15,
+    "level": 99,
     "reqlevel": 15,
     "strength": 12,
     "image": "ruby_gemm",
@@ -39451,7 +46913,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Kakaka"
+    "owner": "Kakaka",
+    "consumable": "none",
+    "changed": "1"
   },
   "2085": {
     "id": 2085,
@@ -39474,7 +46938,11 @@ var items = {
     "price": 300000,
     "personal": 1,
     "descr": "\"Кто свой скрывает гнев, тот лучше мести служит.\" ",
-    "owner": "Пурум"
+    "owner": "Пурум",
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "2086": {
     "id": 2086,
@@ -39486,6 +46954,9 @@ var items = {
     "image": "frozen_heart",
     "price": 1,
     "descr": "Холодное, как чай у Миери.                                           Зимой. В холодильнике.",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2087": {
     "id": 2087,
@@ -39499,6 +46970,10 @@ var items = {
     "personal": 1,
     "descr": "Пахнет хвоей и смолой.",
     "quest": 1,
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2088": {
     "id": 2088,
@@ -39522,6 +46997,10 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2089": {
     "id": 2089,
@@ -39549,6 +47028,10 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2090": {
     "id": 2090,
@@ -39560,12 +47043,16 @@ var items = {
     "image": "shishka_gift",
     "price": 10,
     "descr": "Необычная шишка необычных стражей.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2091": {
     "id": 2091,
     "categ_id": 22,
     "name": "Жизненный леденец",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "rare",
     "image": "candy_club",
@@ -39588,6 +47075,14 @@ var items = {
         "value": "419"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "2092": {
     "id": 2092,
@@ -39611,6 +47106,9 @@ var items = {
         "value": "1"
       }]
     },
+    "consumable": "useeffect",
+    "changed": 1,
+    "indacache": "1"
   },
   "2093": {
     "id": 2093,
@@ -39636,6 +47134,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "2094": {
     "id": 2094,
@@ -39660,8 +47161,24 @@ var items = {
           "565x1": "jolkalevelx100",
           "2098x1": "jolkalevelx100"
         }
+      },
+      "globalparamloot ": {
+        "default ": {
+          "2088x1": "jolkalevelx100",
+          "247x1": "jolkalevelx100",
+          "1105x0.35": "jolkalevelx100",
+          "1492x0.5": "jolkalevelx100",
+          "600x1": "jolkalevelx100",
+          "566x1": "jolkalevelx100",
+          "565x1": "jolkalevelx100",
+          "2098x1": "jolkalevelx100"
+        }
       }
     },
+    "consumable": "openchest",
+    "use_after": 1420059601,
+    "changed": 1,
+    "indacache": "1"
   },
   "2095": {
     "id": 2095,
@@ -39677,6 +47194,9 @@ var items = {
     "instruction": "Двойной клик – отправить подарок другу.",
     "validtime": 1728000,
     "giveitem": 2093,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2096": {
     "id": 2096,
@@ -39692,6 +47212,9 @@ var items = {
     "instruction": "Двойной клик – отправить подарок другу.",
     "validtime": 1728000,
     "giveitem": 2094,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2097": {
     "id": 2097,
@@ -39707,6 +47230,9 @@ var items = {
     "instruction": "Двойной клик – отправить подарок другу.",
     "validtime": 1728000,
     "giveitem": 2088,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2098": {
     "id": 2098,
@@ -39727,6 +47253,10 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2099": {
     "id": 2099,
@@ -39748,6 +47278,14 @@ var items = {
         "value": "780"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "2100": {
     "id": 2100,
@@ -39758,6 +47296,10 @@ var items = {
     "rarity": "epic",
     "image": "icicle",
     "price": 200,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2101": {
     "id": 2101,
@@ -39770,6 +47312,11 @@ var items = {
     "price": 10000,
     "personal": 1,
     "descr": "Даёт возможность                                  БЕСПЛАТНО получить                    Конструкторский предмет на 3 дня.                           Для использования достаточно подобрать в Магазине конфигурацию Конструктора                                                       и нажать \"Купить\".",
+    "dropfrom": ["adsf:350"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2102": {
     "id": 2102,
@@ -39784,35 +47331,7 @@ var items = {
     "instruction": "Двойной клик: открыть.",
     "bottleparams": {
       "randloot": {
-        "default": {
-          "2101x1": 100,
-          "2093x1": 100
-        },
-        "9": {
-          "1788x1": 100,
-          "2093x1": 100
-        },
-        "8": {
-          "1788x1": 100,
-          "2093x1": 100
-        },
-        "7": {
-          "1788x1": 100,
-          "2093x1": 100
-        },
-        "6": {
-          "1788x1": 100,
-          "2093x1": 100
-        },
-        "5": {
-          "1788x1": 100,
-          "2093x1": 100
-        },
-        "4": {
-          "1788x1": 100,
-          "2093x1": 100
-        },
-        "3": {
+        "1": {
           "1788x1": 100,
           "2093x1": 100
         },
@@ -39820,12 +47339,43 @@ var items = {
           "1788x1": 100,
           "2093x1": 100
         },
-        "1": {
+        "3": {
           "1788x1": 100,
+          "2093x1": 100
+        },
+        "4": {
+          "1788x1": 100,
+          "2093x1": 100
+        },
+        "5": {
+          "1788x1": 100,
+          "2093x1": 100
+        },
+        "6": {
+          "1788x1": 100,
+          "2093x1": 100
+        },
+        "7": {
+          "1788x1": 100,
+          "2093x1": 100
+        },
+        "8": {
+          "1788x1": 100,
+          "2093x1": 100
+        },
+        "9": {
+          "1788x1": 100,
+          "2093x1": 100
+        },
+        "default": {
+          "2101x1": 100,
           "2093x1": 100
         }
       }
     },
+    "consumable": "openchest",
+    "material": "cotton",
+    "changed": "1"
   },
   "2103": {
     "id": 2103,
@@ -39848,6 +47398,14 @@ var items = {
       }]
     },
     "cooldown": 6,
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "2104": {
     "id": 2104,
@@ -39869,6 +47427,14 @@ var items = {
         "value": "782"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "2105": {
     "id": 2105,
@@ -39891,6 +47457,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2106": {
     "id": 2106,
@@ -39919,12 +47487,16 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "openchest",
+    "use_after": 1419260400,
+    "changed": 1,
+    "indacache": "1"
   },
   "2107": {
     "id": 2107,
     "categ_id": 22,
     "name": "Конфетка ярости",
-    "maxcnt": 100,
+    "maxcnt": 1000,
     "type": "other",
     "rarity": "rare",
     "image": "candy_cane",
@@ -39944,6 +47516,14 @@ var items = {
         "value": "1"
       }]
     },
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
   },
   "2108": {
     "id": 2108,
@@ -39956,8 +47536,25 @@ var items = {
     "personal": 1,
     "descr": "Внутри находятся:              Золотые лаббиты,                     Премиум-эликсиры,                   Лицензионные настои лечения                           Лицензионные настои силы                         Лицензионные настои защиты                                     Сладкие подъелочники                    и, конечно же, мандаринки! <br>[w]Чем выше новогодняя ёлка –              тем лучше подарки![/w]",
     "instruction": "Двойной клик - открыть подарок.",
-    "bottleparams": "{\"globalparamloot\":{\"default\":{\"2088x1\":\"jolkalevelx100\",\"247x1\":\"jolkalevelx100\",\"1105x0.35\":\"jolkalevelx100\",\"1492x0.5\":\"jolkalevelx100\",\"600x1\":\"jolkalevelx100\",\"566x1\":\"jolkalevelx100\",\"565x1\":\"jolkalevelx100\",\"2098x1\":\"jolkalevelx100\"}}}<br>",
+    "bottleparams": {
+      "globalparamloot ": {
+        "default ": {
+          "2088 x1 ": "jolkalevelx100",
+          "247 x1": "jolkalevelx100",
+          "1105 x0 .35": "jolkalevelx100",
+          "1492 x0 .5": "jolkalevelx100",
+          "600 x1": "jolkalevelx100",
+          "566 x1": "jolkalevelx100",
+          "565 x1": "jolkalevelx100",
+          "2098 x1": "jolkalevelx100"
+        }
+      }
+    },
     "hidden": 1,
+    "consumable": "openchest",
+    "use_after": 1420059,
+    "changed": 1,
+    "indacache": "1"
   },
   "2109": {
     "id": 2109,
@@ -39971,11 +47568,15 @@ var items = {
     "minhit": 22,
     "maxhit": 33,
     "crit": 5,
-    "image": "icy_thorn",
+    "image": "wpn_1hand_norm_8",
     "price": 1,
     "personal": 1,
-    "descr": "Немного безумия в праздники! Исчезнет по окончанию новогодних праздников.",
+    "descr": "Немного безумия в праздники! Исчезнет по окончанию праздников.",
     "validtime": 172800,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2110": {
     "id": 2110,
@@ -39991,12 +47592,16 @@ var items = {
     "maxhit": 150,
     "dodge": 15,
     "crit": 20,
-    "image": "candy_club",
+    "image": "fiery_flameberg",
     "price": 1,
     "personal": 1,
-    "descr": "Немного безумия в праздники! Исчезнет по окончанию новогодних праздников.",
+    "descr": "Немного безумия в праздники! Исчезнет по окончанию праздников.",
     "instruction": "беречь от детей",
     "validtime": 172800,
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2111": {
     "id": 2111,
@@ -40018,6 +47623,12 @@ var items = {
     "becomepersonal": 1,
     "descr": "Победа статов над здравым смыслом. Исчезнет по окончанию новогодних праздников.",
     "validtime": 172800,
+    "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2112": {
     "id": 2112,
@@ -40037,6 +47648,10 @@ var items = {
     "personal": 1,
     "descr": "Астрологи рекомендуют встречать Год Ежа в салатовом! Исчезнет по окончанию новогодних праздников.",
     "validtime": 172800,
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
   },
   "2113": {
     "id": 2113,
@@ -40050,6 +47665,10 @@ var items = {
     "personal": 1,
     "descr": "Его совсем не обязательно надевать. Нет, серьезно, ничего не изменится, никаких секретов нет, ничего такого. Исчезнет по окончанию новогодних праздников.",
     "validtime": 172800,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2114": {
     "id": 2114,
@@ -40073,6 +47692,8 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "2115": {
     "id": 2115,
@@ -40087,6 +47708,8 @@ var items = {
     "descr": "Непосредственному участнику празднования Нового Года 2015 в Игре.",
     "validtime": 432000,
     "giveitem": 2116,
+    "consumable": "none",
+    "changed": "1"
   },
   "2116": {
     "id": 2116,
@@ -40114,6 +47737,10 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2117": {
     "id": 2117,
@@ -40139,6 +47766,9 @@ var items = {
       }
     },
     "validtime": 172800,
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2118": {
     "id": 2118,
@@ -40172,6 +47802,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2119": {
     "id": 2119,
@@ -40187,6 +47819,9 @@ var items = {
     "descr": "Билет на Мартовскую Лотерею. Розыгрыш состоится 13 марта в 15:00 МСК.<br>Разыгрываются 22 предмета:<br>Уникальный предмет Эпического качества! Тип, вид и параметры вы выберете сами!<br>Уникальная Аватара.<br>Уникальный Вечный подарок с вашим дизайном<br>3 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>3 Золотых слитка номиналом в 1000 золотых.<br>10 Премиум Эликсиров на неделю.<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2120": {
     "id": 2120,
@@ -40217,6 +47852,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2121": {
     "id": 2121,
@@ -40241,7 +47879,11 @@ var items = {
     "image": "earth_trinket",
     "price": 500000,
     "personal": 1,
-    "owner": "Ююрийй"
+    "owner": "Ююрийй",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2122": {
     "id": 2122,
@@ -40272,6 +47914,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2123": {
     "id": 2123,
@@ -40302,6 +47947,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2124": {
     "id": 2124,
@@ -40332,6 +47980,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2125": {
     "id": 2125,
@@ -40362,6 +48013,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2126": {
     "id": 2126,
@@ -40392,6 +48046,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2127": {
     "id": 2127,
@@ -40422,6 +48079,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2128": {
     "id": 2128,
@@ -40452,6 +48112,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2129": {
     "id": 2129,
@@ -40482,6 +48145,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2130": {
     "id": 2130,
@@ -40512,6 +48178,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2131": {
     "id": 2131,
@@ -40524,7 +48193,7 @@ var items = {
     "image": "aprilbox",
     "price": 10000,
     "personal": 1,
-    "descr": "В каждом сундучке содержится один из 10 уникальных фонов для окна персонажа. Вероятность необычного фона - 60%, редкого - 30% и эпического - 10%<br>Картинку можно передать другому персонажу или продать на аукционе!",
+    "descr": "В каждом сундучке содержится один из 13 уникальных фонов для окна персонажа. Вероятность необычного фона - 60%, редкого - 30% и эпического - 10%<br>Картинку можно передать другому персонажу или продать на аукционе!",
     "instruction": "Двойной клик: вскрыть сундук.",
     "bottleparams": {
       "loot": {
@@ -40538,10 +48207,15 @@ var items = {
           "2127x1": 10,
           "2129x1": 10,
           "2128x1": 5,
-          "2126x1": 5
+          "2126x1": 5,
+          "2373x1": 3,
+          "2374x1": 3,
+          "2375x1": 3
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2132": {
     "id": 2132,
@@ -40564,7 +48238,11 @@ var items = {
     "image": "nunchak",
     "price": 500000,
     "personal": 1,
-    "owner": "Siburianec"
+    "owner": "Siburianec",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2133": {
     "id": 2133,
@@ -40577,7 +48255,10 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": -1,
-    "owner": "Siburianec"
+    "owner": "Siburianec",
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2134": {
     "id": 2134,
@@ -40612,6 +48293,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2135": {
     "id": 2135,
@@ -40627,6 +48310,9 @@ var items = {
     "descr": "Билет Майской лотереи. Розыгрыш состоится 17 мая в 21:00 МСК.<br>Разыгрываются 23 приза:<br>Уникальный предмет Эпического качества! Тип, вид и параметры вы выберете сами!<br>Уникальная гемма невиданной мощи с вашим дизайном.<br>Уникальный фон персонажа на основе любой существующей локации игры.<br>Уникальная Аватара.<br>3 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>3 Золотых слитка номиналом в 1000 золотых.<br>10 Премиум Эликсиров на неделю.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2136": {
     "id": 2136,
@@ -40650,6 +48336,9 @@ var items = {
         "defence": 24
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2137": {
     "id": 2137,
@@ -40669,6 +48358,10 @@ var items = {
       }]
     },
     "validtime": 86400,
+    "consumable": "useeffect",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2138": {
     "id": 2138,
@@ -40686,6 +48379,10 @@ var items = {
     "validtime": 1296000,
     "charges": 18,
     "cooldown": 20,
+    "consumable": "printlabbit",
+    "uniq": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "2139": {
     "id": 2139,
@@ -40703,6 +48400,10 @@ var items = {
     "validtime": 1296000,
     "charges": 18,
     "cooldown": 20,
+    "consumable": "printlabbit",
+    "uniq": 1,
+    "changed": 1,
+    "indacache": "1"
   },
   "2140": {
     "id": 2140,
@@ -40713,19 +48414,25 @@ var items = {
     "rarity": "epic",
     "level": 20,
     "reqlevel": 20,
-    "minhit": 20,
-    "maxhit": 42,
-    "defence": 25,
-    "strength": 25,
-    "stamina": 28,
-    "dodge": 6,
+    "minhit": 31,
+    "maxhit": 50,
+    "defence": 30,
+    "strength": 30,
+    "stamina": 38,
+    "dodge": 7,
     "mastery": 85,
-    "resilience": 115,
+    "resilience": 190,
     "image": "afor_ring",
     "price": 900000,
     "personal": 1,
     "becomepersonal": 1,
-    "owner": "Vovchyk"
+    "owner": "Vovchyk",
+    "reqparagon": 45,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2141": {
     "id": 2141,
@@ -40756,7 +48463,10 @@ var items = {
         "locationstatus": 1
       }
     },
-    "owner": "nosferatusmage"
+    "owner": "nosferatusmage",
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2142": {
     "id": 2142,
@@ -40769,6 +48479,11 @@ var items = {
     "price": 1378,
     "personal": 1,
     "descr": "Редкий алхимический ингридиент. Вот только не каждому суждено узнать рецепт...",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2143": {
     "id": 2143,
@@ -40781,6 +48496,11 @@ var items = {
     "price": 13780,
     "personal": 1,
     "descr": "Очень редкий алхимический ингридиент. Вот только не каждому суждено узнать рецепт...",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2144": {
     "id": 2144,
@@ -40802,6 +48522,11 @@ var items = {
       }
     },
     "giveitem": 2142,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2145": {
     "id": 2145,
@@ -40836,6 +48561,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2146": {
     "id": 2146,
@@ -40847,6 +48574,10 @@ var items = {
     "image": "empty_btl_5",
     "price": 9000,
     "descr": "Пустой сосуд для алхимии.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2147": {
     "id": 2147,
@@ -40866,6 +48597,10 @@ var items = {
         "value": "795"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2148": {
     "id": 2148,
@@ -40881,6 +48616,9 @@ var items = {
     "descr": "Билет июльской лотереи. Разыгрываются:<br>Десять экземпляров уникального передаваемого фона для персонажа работы легендарного masacra<br>Уникальный предмет эпического качества<br>Любой конструкторский предмет по вашему выбору <br>3 Любых предмета экипировки из Магазина по вашему выбору <br>5 Золотых слитка номиналом в тысячу золотых",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2149": {
     "id": 2149,
@@ -40900,7 +48638,9 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
-    "owner": "Вердаско"
+    "owner": "Вердаско",
+    "consumable": "none",
+    "changed": "1"
   },
   "2150": {
     "id": 2150,
@@ -40922,6 +48662,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2151": {
     "id": 2151,
@@ -40936,6 +48678,9 @@ var items = {
     "descr": "Обнуляет время ожидания ежедневных заданий.<br><br><font color=\"#FF0000\">НЕ ДЕЙСТВУЕТ НА ПРАЗДНИЧНЫЕ ЗАДАНИЯ</font><br><br>Maid in U.S.I.",
     "instruction": "Двойной клик: обнулить время ожидания всех ежедневных заданий.",
     "validtime": 432000,
+    "consumable": "dropcooldownquest",
+    "material": "glass",
+    "changed": "1"
   },
   "2152": {
     "id": 2152,
@@ -40950,6 +48695,10 @@ var items = {
     "descr": "Удаляет все сохраненные копии подземелий.<br><br>Maid in U.S.I. Срок годности 5 суток.",
     "instruction": "Двойной клик: удалить все сохраненные копии подземелий.",
     "validtime": 432000,
+    "consumable": "dropcooldown",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2153": {
     "id": 2153,
@@ -40971,6 +48720,10 @@ var items = {
     },
     "validtime": 86400,
     "hidden": 1,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2154": {
     "id": 2154,
@@ -40984,6 +48737,10 @@ var items = {
     "descr": "Похоже на желе.",
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 75,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2155": {
     "id": 2155,
@@ -41014,7 +48771,10 @@ var items = {
         "locationstatus": 1
       }
     },
-    "owner": "Untergang,Лонгвей,Сэрмакс,Skazohcnik,Fall,Мерк,Goblin,Neoginator,Skazohcnik,Wulff"
+    "owner": "Untergang,Лонгвей,Сэрмакс,Skazohcnik,Fall,Мерк,Goblin,Neoginator,Skazohcnik,Wulff",
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2156": {
     "id": 2156,
@@ -41029,6 +48789,10 @@ var items = {
     "descr": "В мире ЛМ поедание эклеров не приводит к увеличению веса...",
     "validtime": 259200,
     "giveitem": 2157,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2157": {
     "id": 2157,
@@ -41043,6 +48807,10 @@ var items = {
     "descr": "...Ну и само собой, за них нет никаких скрытых ачивок!",
     "instruction": "Двойной клик: съесть.",
     "bottleparams": {},
+    "consumable": "useeffect",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2158": {
     "id": 2158,
@@ -41056,7 +48824,11 @@ var items = {
     "personal": 1,
     "descr": "Награда для лучших из лучших интеллектуалов мира.",
     "validtime": -1,
-    "owner": "Глокта"
+    "owner": "Глокта",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2159": {
     "id": 2159,
@@ -41076,6 +48848,10 @@ var items = {
         "value": "797"
       }]
     },
+    "consumable": "useeffect",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2160": {
     "id": 2160,
@@ -41091,6 +48867,9 @@ var items = {
     "descr": "Билет дает право на участие в Лотерее Легенд, посвященной V годовщине Мира Утраченной Магии. Розыгрыш состоится 23 августа в 21:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на Уникальное оружие ЛЕГЕНДАРНОГО качества (двуручное, леворучное или щит);<br>3 Конструкторских предмета;<br>3 Предмета из Магазина;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней.<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2161": {
     "id": 2161,
@@ -41123,6 +48902,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2162": {
     "id": 2162,
@@ -41145,6 +48926,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "2163": {
     "id": 2163,
@@ -41159,6 +48943,8 @@ var items = {
     "descr": "Непосредственному участнику празднования Пятилетия Игры.",
     "validtime": 432000,
     "giveitem": 2162,
+    "consumable": "none",
+    "changed": "1"
   },
   "2164": {
     "id": 2164,
@@ -41171,6 +48957,8 @@ var items = {
     "price": 2000,
     "personal": 1,
     "descr": "Когда-то они действительно были из бумаги.",
+    "consumable": "none",
+    "changed": "1"
   },
   "2165": {
     "id": 2165,
@@ -41194,6 +48982,9 @@ var items = {
         "stamina": 9
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2166": {
     "id": 2166,
@@ -41218,6 +49009,8 @@ var items = {
         "resilience": 12
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": "1"
   },
   "2167": {
     "id": 2167,
@@ -41241,6 +49034,9 @@ var items = {
         "crit": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2168": {
     "id": 2168,
@@ -41264,6 +49060,9 @@ var items = {
         "dodge": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2169": {
     "id": 2169,
@@ -41275,7 +49074,7 @@ var items = {
     "image": "pally_lockbox",
     "price": 100000,
     "personal": 1,
-    "descr": "Возможное содержимое:<br>5 чар непреодолимой преграды (+24 защиты на щит), или<br>5 чар горного великана (+9 выносливости на двуручное оружие), или<br>5 чар мертвой головы (+12 мастерства и устойчивости на головной убор), или<br>5 чар разрушителя (+1% крита на пояс), или<br>5 чар медитации (+1% уворота на ожерелье).",
+    "descr": "Возможное содержимое:<br>5 чар непреодолимой преграды (+24 защиты на щит), или<br>5 чар горного великана (+9 выносливости на двуручное оружие), или<br>5 чар мертвой головы (+12 мастерства и устойчивости на головной убор), или<br>5 чар разрушителя (+1% крита на пояс), или<br>5 чар медитации (+1% уворота на ожерелье),<br>5 чар ловкости на оружие в левой руке (+7 урона).",
     "instruction": "Двойной клик: вскрыть подарок.",
     "bottleparams": {
       "loot": {
@@ -41284,10 +49083,13 @@ var items = {
           "2165x5": 20,
           "2166x5": 20,
           "2167x5": 20,
-          "2168x5": 20
+          "2168x5": 20,
+          "2315x5": 20
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2170": {
     "id": 2170,
@@ -41301,6 +49103,11 @@ var items = {
     "personal": 1,
     "descr": "Собран лично Фрэнком в местах, где еще не ступала нога смертного.",
     "instruction": "Может быть использован в алхимических экспериментах.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2171": {
     "id": 2171,
@@ -41320,6 +49127,12 @@ var items = {
         "value": "798"
       }]
     },
+    "consumable": "useeffect",
+    "battleeffect": 1,
+    "target_me": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2172": {
     "id": 2172,
@@ -41335,6 +49148,9 @@ var items = {
     "descr": "Билет Осенней лотереи. Розыгрыш состоится 18 октября в 21:00 МСК.<br>Разыгрываются 23 приза:<br>Уникальный предмет Эпического качества! Тип, вид и параметры вы выберете сами!<br>Уникальная гемма невиданной мощи с вашим дизайном.<br>Уникальный фон персонажа на основе любой существующей локации игры.<br>Уникальная Аватара.<br>3 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>3 Золотых слитка номиналом в 1000 золотых.<br>10 Премиум Эликсиров на неделю.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2173": {
     "id": 2173,
@@ -41369,6 +49185,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2174": {
     "id": 2174,
@@ -41390,6 +49208,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2175": {
     "id": 2175,
@@ -41415,7 +49235,12 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Я не сумасшедший, просто моя реальность отличается от вашей!",
-    "owner": "Skazohcnik"
+    "owner": "Skazohcnik",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 215,
+    "material": "ring",
+    "changed": "1"
   },
   "2176": {
     "id": 2176,
@@ -41440,7 +49265,12 @@ var items = {
     "price": 5000000,
     "personal": 1,
     "quest": 2,
-    "owner": "Huuntra"
+    "owner": "Huuntra",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 571,
+    "material": "metal",
+    "changed": "1"
   },
   "2177": {
     "id": 2177,
@@ -41463,6 +49293,9 @@ var items = {
         "locationstatus": 1
       }
     },
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": "1"
   },
   "2178": {
     "id": 2178,
@@ -41477,6 +49310,11 @@ var items = {
     "price": 666000,
     "personal": 1,
     "descr": "Вполне ожидаемый результат вашего «исследования».",
+    "consumable": "none",
+    "material": "bones",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2179": {
     "id": 2179,
@@ -41490,21 +49328,30 @@ var items = {
     "price": 6660,
     "personal": 1,
     "descr": "Нечто подобное вы видели на картинках в тесте Роршаха.",
+    "consumable": "none",
+    "material": "bones",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2180": {
     "id": 2180,
     "categ_id": 3,
     "name": "Ржавая труба",
     "maxcnt": 1,
-    "type": "lweapon",
+    "type": "weapon",
     "rarity": "common",
-    "level": 1,
+    "level": 16,
     "maxdur": 150,
-    "minhit": 4,
-    "maxhit": 8,
+    "minhit": 44,
+    "maxhit": 66,
     "image": "wpn_1hand_norm_2",
     "price": 400,
     "descr": "Но как не играй - все играешь отбой.",
+    "reqlevel": 16,
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "2181": {
     "id": 2181,
@@ -41518,6 +49365,11 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами. Предмет недавно добавлен в игру и может быть изменен.",
+    "consumable": "none",
+    "ability_id": 486,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2182": {
     "id": 2182,
@@ -41543,6 +49395,9 @@ var items = {
         "stamina": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2183": {
     "id": 2183,
@@ -41568,6 +49423,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "cotton",
+    "changed": "1"
   },
   "2184": {
     "id": 2184,
@@ -41583,6 +49441,9 @@ var items = {
     "descr": "Лотерея из предновогодних подарков! Розыгрыш состоится 31 декабря в 23:00. Разыгрываются: <br>Три конструкторских предмета по выбору<br>Три предмета из магазина по выбору<br>Пять золотых слитков<br>За каждый билет номер которого кратен сотне вы гарантированно получите 25 Лаббитов на счет!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2185": {
     "id": 2185,
@@ -41596,6 +49457,10 @@ var items = {
     "personal": 1,
     "descr": "Потому что в мире есть еще чудесные игры, кроме ЛМ.",
     "validtime": 2419200,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2186": {
     "id": 2186,
@@ -41609,6 +49474,10 @@ var items = {
     "personal": 1,
     "descr": "+1 к харизме.",
     "validtime": 2419200,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2187": {
     "id": 2187,
@@ -41622,6 +49491,10 @@ var items = {
     "personal": 1,
     "descr": "Нам не страшен паладин, много нас, а он один!",
     "validtime": 2419200,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2188": {
     "id": 2188,
@@ -41635,6 +49508,10 @@ var items = {
     "personal": 1,
     "descr": "Слонов не кормить!",
     "validtime": 2419200,
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2189": {
     "id": 2189,
@@ -41647,7 +49524,12 @@ var items = {
     "image": "life_totem",
     "personal": 1,
     "becomepersonal": 1,
-    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами. Предмет недавно добавлен в игру и может быть изменен.",
+    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами.",
+    "consumable": "none",
+    "ability_id": 487,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2190": {
     "id": 2190,
@@ -41660,7 +49542,12 @@ var items = {
     "image": "mech_totem",
     "personal": 1,
     "becomepersonal": 1,
-    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами. На призванного голема может не действовать способность Вихрь Клинков. Предмет недавно добавлен в игру и может быть изменен.",
+    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами. На призванного голема может не действовать способность Вихрь Клинков.",
+    "consumable": "none",
+    "ability_id": 488,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2191": {
     "id": 2191,
@@ -41673,7 +49560,12 @@ var items = {
     "image": "scifi_totem",
     "personal": 1,
     "becomepersonal": 1,
-    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами. Предмет недавно добавлен в игру и может быть изменен.",
+    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами.",
+    "consumable": "none",
+    "ability_id": 489,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2192": {
     "id": 2192,
@@ -41686,7 +49578,12 @@ var items = {
     "image": "fire_totem",
     "personal": 1,
     "becomepersonal": 1,
-    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами. Предмет недавно добавлен в игру и может быть изменен.",
+    "descr": "Можно надеть в слот для тотема. В бою дает способность воззвать к силе тотема. Не ремонтируется обычными способами.",
+    "consumable": "none",
+    "ability_id": 490,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2193": {
     "id": 2193,
@@ -41707,6 +49604,10 @@ var items = {
         "repair": 100
       }
     },
+    "consumable": "useitemonotheritem",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2194": {
     "id": 2194,
@@ -41722,6 +49623,9 @@ var items = {
     "descr": "Билет дает право на участие в Новогодней Премиум Лотерее в честь нового 2016 года. Розыгрыш состоится 10 января 2016 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на Уникальное оружие ЛЕГЕНДАРНОГО качества (двуручное, леворучное или щит);<br>1 ВЕЧНЫЙ тотем без запаса прочности на выбор из пяти существующих в игре;<br>3 Конструкторских предмета;<br>3 Предмета из Магазина;<br>3 Золотых кошеля, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней.<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!<br>",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2195": {
     "id": 2195,
@@ -41745,6 +49649,8 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "2196": {
     "id": 2196,
@@ -41761,10 +49667,10 @@ var items = {
     "bottleparams": {
       "loot": {
         "default": {
+          "2189": 25,
           "2190": 25,
           "2191": 25,
-          "2192": 25,
-          "2189": 25
+          "2192": 25
         }
       },
       "randloot": {
@@ -41782,6 +49688,10 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2197": {
     "id": 2197,
@@ -41796,6 +49706,8 @@ var items = {
     "descr": "Чудеса случаются! Вот это да!",
     "validtime": 432000,
     "giveitem": 2196,
+    "consumable": "none",
+    "changed": "1"
   },
   "2198": {
     "id": 2198,
@@ -41810,6 +49722,8 @@ var items = {
     "descr": "Подарков много не бывает!",
     "validtime": 432000,
     "giveitem": 2183,
+    "consumable": "none",
+    "changed": "1"
   },
   "2199": {
     "id": 2199,
@@ -41833,6 +49747,9 @@ var items = {
         "resilience": 2
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2200": {
     "id": 2200,
@@ -41856,6 +49773,9 @@ var items = {
         "mastery": 2
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2201": {
     "id": 2201,
@@ -41879,6 +49799,9 @@ var items = {
         "strength": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2202": {
     "id": 2202,
@@ -41902,6 +49825,9 @@ var items = {
         "stamina": 1
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2203": {
     "id": 2203,
@@ -41926,6 +49852,9 @@ var items = {
         "maxhit": 10
       }
     },
+    "consumable": "useitemonotheritem",
+    "changed": 1,
+    "indacache": "1"
   },
   "2204": {
     "id": 2204,
@@ -41952,6 +49881,7 @@ var items = {
       },
       "randloot": {
         "default": {
+          "2101": 1,
           "247x1": 1,
           "1019x1": 2,
           "1189x1": 1,
@@ -41961,11 +49891,14 @@ var items = {
           "2167x1": 2,
           "2168x1": 2,
           "2136x1": 2,
-          "1974x1": 3,
-          "2101": 1
+          "1974x1": 3
         }
       }
     },
+    "consumable": "openchest",
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2205": {
     "id": 2205,
@@ -41977,6 +49910,9 @@ var items = {
     "image": "icon_pulya",
     "price": 1000,
     "descr": "Последний патрон как последний патрон.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "2206": {
     "id": 2206,
@@ -41988,6 +49924,9 @@ var items = {
     "image": "lottery5",
     "price": 1000,
     "descr": "Наверняка выигрышный. Осталось изобрести машину времени!",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
   },
   "2207": {
     "id": 2207,
@@ -41999,6 +49938,9 @@ var items = {
     "image": "paper_labbit",
     "price": 5000,
     "descr": "Искусство изготовления зайцев из бумаги восходит к 6-му веку до н.э. Или нет.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2208": {
     "id": 2208,
@@ -42010,6 +49952,9 @@ var items = {
     "image": "rubber_duck",
     "price": 5000,
     "descr": "И только попробуйте сказать, что это плохое имя для утки!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2209": {
     "id": 2209,
@@ -42022,6 +49967,9 @@ var items = {
     "price": 20000,
     "descr": "И только попробуйте сказать, что это плохое имя для резиновой утки!",
     "hidden": 1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2210": {
     "id": 2210,
@@ -42033,6 +49981,9 @@ var items = {
     "image": "soul_sphere",
     "price": 10000,
     "descr": "Шайни!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2211": {
     "id": 2211,
@@ -42049,6 +50000,11 @@ var items = {
     "image": "wpn_1hand_norm_2",
     "price": 10000,
     "descr": "Хочешь быть Д'Артаньяном? Будь им!",
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": 1,
+    "trash": "1"
   },
   "2212": {
     "id": 2212,
@@ -42072,7 +50028,11 @@ var items = {
     "price": 500000,
     "personal": 1,
     "descr": "Его звали Роберт Грей, лучше известный как Боб Грей, а еще лучше как Пеннивайз, Танцующий Клоун. Хотя это было не его имя тоже.",
-    "owner": "Jbkklj"
+    "owner": "Jbkklj",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "glass",
+    "changed": "1"
   },
   "2213": {
     "id": 2213,
@@ -42085,6 +50045,9 @@ var items = {
     "price": 1,
     "descr": "Это от того, что мой ледокол не привык к воде тропических морей.",
     "validtime": 1209600,
+    "consumable": "none",
+    "changed": 1,
+    "indacache": "1"
   },
   "2214": {
     "id": 2214,
@@ -42098,6 +50061,10 @@ var items = {
     "personal": 1,
     "descr": "Четыре слова про любовь.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2215": {
     "id": 2215,
@@ -42113,6 +50080,9 @@ var items = {
     "descr": "Билет на Мартовскую Лотерею. Розыгрыш состоится 6 марта в 21:00 МСК.<br>Разыгрываются 22 предмета:<br>Уникальный предмет Эпического качества! Тип, вид и параметры вы выберете сами!<br>Уникальная Аватара.<br>Уникальный Вечный подарок с вашим дизайном<br>3 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>3 Золотых слитка номиналом в 1000 золотых.<br>10 Премиум Эликсиров на неделю.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2216": {
     "id": 2216,
@@ -42146,6 +50116,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2217": {
     "id": 2217,
@@ -42159,6 +50131,9 @@ var items = {
     "personal": 1,
     "descr": "Очень хрупкий и скоропортящийся продукт.",
     "validtime": 21600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2218": {
     "id": 2218,
@@ -42172,6 +50147,10 @@ var items = {
     "personal": 1,
     "descr": "Под властью гномов государство будет работать как почта.|Мы вернем возможность восстановления пароля!|Гномы - высшая раса!|Гномы рождены, чтобы править!|Гномы наведут порядок в стране!",
     "validtime": 21600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2219": {
     "id": 2219,
@@ -42185,6 +50164,10 @@ var items = {
     "personal": 1,
     "descr": "Королева снималась в кино для взрослых|Снегурочки - снегурочки!|Орки едят детей|Админы - метросексуалы|Милтону пора на покой",
     "validtime": 21600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2220": {
     "id": 2220,
@@ -42198,6 +50181,10 @@ var items = {
     "personal": 1,
     "descr": "Мы едим детей. Подпись: Орки.|Орки замышляют захват власти. Подпись: Доброжелатель.|Братство - рассадник скверны. Подпись: разочаровавшийся член Братства.|Орден - тоталитарная секта. Подпись: Аноним.|Дорогой мой друг, пишу тебе с далекого берега...|Поверьте: моего стыда вы не узнали б никогда. Подпись: Жанна",
     "validtime": 21600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2221": {
     "id": 2221,
@@ -42221,6 +50208,10 @@ var items = {
       }
     },
     "validtime": 21600,
+    "dropfrom": ["adsf:66", "adsf:68", "adsf:70", "adsf:71", "adsf:72", "adsf:76"],
+    "consumable": "openchest",
+    "changed": 1,
+    "indacache": "1"
   },
   "2222": {
     "id": 2222,
@@ -42234,6 +50225,10 @@ var items = {
     "personal": 1,
     "descr": "Победителю новогодней гонки баффов",
     "validtime": -1,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2223": {
     "id": 2223,
@@ -42246,7 +50241,12 @@ var items = {
     "image": "totem",
     "personal": 1,
     "becomepersonal": 1,
-    "owner": "Мерк"
+    "owner": "Мерк",
+    "consumable": "none",
+    "ability_id": 508,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2224": {
     "id": 2224,
@@ -42262,6 +50262,9 @@ var items = {
     "descr": "Билет Майской лотереи. Розыгрыш состоится 22 мая в 21:00 МСК.<br>Разыгрываются:<br>Уникальный фон для персонажа, нарисованный по вашему описанию и только для вас!<br>Вечный тотем бесконечной прочности на основе любого из существующих в игре.<br>Уникальный цвет чата для вашего персонажа.<br>10 наборов по 10 передаваемых лаббитов.<br>10 случайных тотемов.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2225": {
     "id": 2225,
@@ -42296,6 +50299,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2226": {
     "id": 2226,
@@ -42317,6 +50322,11 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Вдвое уменьшает все эффекты лечения противника. Можно приобрести в магазине или в Бойцовском Клубе",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 824,
+    "material": "ring",
+    "changed": "1"
   },
   "2227": {
     "id": 2227,
@@ -42338,6 +50348,9 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Можно получить, выполнив цепочку заданий Тайлера",
+    "consumable": "none",
+    "material": "ring",
+    "changed": "1"
   },
   "2228": {
     "id": 2228,
@@ -42361,6 +50374,10 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Можно получить, выполнив цепочку заданий Тайлера",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "2229": {
     "id": 2229,
@@ -42373,6 +50390,11 @@ var items = {
     "personal": 1,
     "descr": "Ядерная физика, и никакой магии!",
     "quest": 1,
+    "dropfrom": ["adsf:125", "adsf:191", "adsf:50", "adsf:52", "adsf:53", "adsf:82"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2230": {
     "id": 2230,
@@ -42385,17 +50407,27 @@ var items = {
     "personal": 1,
     "descr": "Это уже было в WoW.",
     "quest": 1,
+    "dropfrom": ["adsf:14"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2231": {
     "id": 2231,
     "categ_id": 23,
-    "name": "Полный Вахтанг",
+    "name": "Уточка",
     "maxcnt": 100,
     "type": "other",
     "rarity": "epic",
     "image": "rubber_duck",
-    "price": 100000,
-    "descr": "Больше, чем просто утка. Вы, конечно, можете продать его торговцу за целых 10 золотых, но кто знает, не станет ли это ошибкой.",
+    "price": 10000,
+    "descr": "Откуда они только берутся?",
+    "dropfrom": ["adsf:331"],
+    "personal": 1,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2232": {
     "id": 2232,
@@ -42408,6 +50440,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Сертификат, свидетельствующий о вкладе владельца в фонд подготовки Великой Космической Экспедиции. Когда на руках у игроков будет 1000 штук, произойдет нечто волнительное. А именно Leo запилит новый веселый тематический эвент.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2233": {
     "id": 2233,
@@ -42429,6 +50464,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2234": {
     "id": 2234,
@@ -42456,6 +50493,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2235": {
     "id": 2235,
@@ -42483,6 +50524,10 @@ var items = {
       }]
     },
     "validtime": 604800,
+    "consumable": "useeffect",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2236": {
     "id": 2236,
@@ -42496,6 +50541,10 @@ var items = {
     "personal": 1,
     "descr": "... в этот великий день ... и этим несравненным мастером было приготовлено девять конфет ... пять были розданы боссам... две поступили в продажу ... еще одну ... научил готовить всех присутствующих ... а самую вкусную оставил себе ... жлобяра ... обещал угостить ею того ... слиплась ...",
     "validtime": 604800,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2237": {
     "id": 2237,
@@ -42509,6 +50558,10 @@ var items = {
     "personal": 1,
     "descr": "Висели над камином старинные... носки!",
     "validtime": 2419200,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2238": {
     "id": 2238,
@@ -42522,6 +50575,10 @@ var items = {
     "personal": 1,
     "descr": "При открывании играет песенку о звенящих бубенцах. И еще дает новогодний фон, хотел бы я сказать, но нет.",
     "validtime": 2419200,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2239": {
     "id": 2239,
@@ -42537,8 +50594,13 @@ var items = {
     "price": 1,
     "personal": 1,
     "becomepersonal": 1,
-    "descr": "Точная реплика настоящего, выполненная в секретной камбоджийской лаборатории.",
+    "descr": "Точная реплика настоящего, выполненная в секретной камбоджийской лаборатории. Исчезнет по окончанию новогодних праздников.",
     "validtime": 259200,
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2240": {
     "id": 2240,
@@ -42550,9 +50612,13 @@ var items = {
     "image": "pirate_waistcoat",
     "price": 1,
     "personal": 1,
-    "descr": "Дарите нубам, ведь у нас их мало!",
+    "descr": "Дарите нубам, ведь у нас их мало! Это подарок, который при распаковке даст Камзол сроком жизни 3 дня, сила +20, ловкость +17, без требования к уровню. Такой есть только у Leo!",
     "validtime": 2419200,
     "giveitem": 2239,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2241": {
     "id": 2241,
@@ -42567,10 +50633,12 @@ var items = {
     "descr": "Выпустить одержимого зайна на Центральной Площади.",
     "instruction": "Двойной клик: использовать. ",
     "bottleparams": {
-      "locations": "7",
+      "locations": 7,
       "attackmob": "{\"338x1\":100}"
     },
     "validtime": 259200,
+    "consumable": "attackmob",
+    "changed": "1"
   },
   "2242": {
     "id": 2242,
@@ -42579,22 +50647,29 @@ var items = {
     "maxcnt": 1,
     "type": "sunduk",
     "rarity": "rare",
-    "image": "ny_socks",
+    "image": "present2018_1",
     "personal": 1,
     "descr": "Содержит замечательные новогодние приятности.",
     "instruction": "Двойной клик: открыть.",
     "bottleparams": {
       "randloot": {
         "default": {
-          "404x1": 50,
+          "404x1": 20,
           "2241x3": 100,
           "2243x1": 100,
           "2182x3": 100,
           "2244x1": 100,
-          "2245x1": 100
+          "2245x1": 100,
+          "2316x1": 100,
+          "239x1": 100,
+          "497x1": 100,
+          "2088x1": 100
         }
       }
     },
+    "consumable": "openchest",
+    "material": "cotton",
+    "changed": "1"
   },
   "2243": {
     "id": 2243,
@@ -42610,6 +50685,9 @@ var items = {
     "descr": "Лотерея из предновогодних подарков! Розыгрыш состоится 31 декабря в 23:00. Разыгрываются: <br>Три конструкторских предмета по выбору<br>Три предмета из магазина по выбору<br>Пять золотых слитков<br>За каждый билет номер которого кратен сотне вы гарантированно получите 25 Лаббитов на счет!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2244": {
     "id": 2244,
@@ -42623,6 +50701,11 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Можно надеть в слот для тотема. В бою дает способность излечить одержимое существо. Не ремонтируется обычными способами. Исчезнет после новогодних праздников.",
+    "consumable": "none",
+    "ability_id": 504,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2245": {
     "id": 2245,
@@ -42636,6 +50719,11 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Можно надеть в слот для тотема. В бою дает способность защитить одержимое существо. Не ремонтируется обычными способами. Исчезнет после новогодних праздников.",
+    "consumable": "none",
+    "ability_id": 505,
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2246": {
     "id": 2246,
@@ -42651,6 +50739,9 @@ var items = {
     "instruction": "Подарите другу, который коллекционирует такие, чтобы он смог обменять их у КОТа на премиум подарок!",
     "validtime": 259200,
     "giveitem": 2253,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2247": {
     "id": 2247,
@@ -42666,6 +50757,9 @@ var items = {
     "instruction": "Подарите другу, который коллекционирует такие, чтобы он смог обменять их у КОТа на премиум подарок!",
     "validtime": 259200,
     "giveitem": 2252,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2248": {
     "id": 2248,
@@ -42681,6 +50775,9 @@ var items = {
     "instruction": "Подарите другу, который коллекционирует такие, чтобы он смог обменять их у КОТа на премиум подарок!",
     "validtime": 259200,
     "giveitem": 2251,
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "2249": {
     "id": 2249,
@@ -42696,6 +50793,9 @@ var items = {
     "instruction": "Подарите другу, который коллекционирует такие, чтобы он смог обменять их у КОТа на премиум подарок!",
     "validtime": 259200,
     "giveitem": 2250,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2250": {
     "id": 2250,
@@ -42708,6 +50808,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Догоним и перегоним картошку!",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2251": {
     "id": 2251,
@@ -42720,6 +50823,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Парите вверх а главное не бойтесь вниз упасть.",
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "2252": {
     "id": 2252,
@@ -42732,6 +50838,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Изготовлен по традиционному рецепту.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2253": {
     "id": 2253,
@@ -42744,6 +50853,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "Современное искусство... не каждому оно придется впору.",
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2254": {
     "id": 2254,
@@ -42759,6 +50871,9 @@ var items = {
     "descr": "Билет дает право на участие в Новогодней Премиум Лотерее в честь нового 2017 года. Розыгрыш состоится 10 января 2017 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на Уникальную эпическую безделушку, изготовленную в течение недели;<br>1 уникальный фон персонажа;<br>5 Конструкторских предметов;<br>5 Предметов из Магазина;<br>5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней.<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2255": {
     "id": 2255,
@@ -42783,6 +50898,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "cotton",
+    "changed": "1"
   },
   "2256": {
     "id": 2256,
@@ -42807,7 +50925,12 @@ var items = {
     "price": 1,
     "personal": 1,
     "descr": "И вяжу, и связываю, и творю... Но могу и вытворять.",
-    "owner": "Марумья"
+    "owner": "Марумья",
+    "consumable": "none",
+    "buff_id": 698,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
   },
   "2257": {
     "id": 2257,
@@ -42834,6 +50957,9 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "material": "cotton",
+    "changed": "1"
   },
   "2258": {
     "id": 2258,
@@ -42848,6 +50974,8 @@ var items = {
     "descr": "Подарков много не бывает!",
     "validtime": 432000,
     "giveitem": 2257,
+    "consumable": "none",
+    "changed": "1"
   },
   "2259": {
     "id": 2259,
@@ -42862,6 +50990,8 @@ var items = {
     "descr": "Чудеса случаются! Вот это да!",
     "validtime": 432000,
     "giveitem": 2196,
+    "consumable": "none",
+    "changed": "1"
   },
   "2260": {
     "id": 2260,
@@ -42885,6 +51015,8 @@ var items = {
       "chance": 100,
       "reagent": 873
     },
+    "consumable": "none",
+    "changed": "1"
   },
   "2261": {
     "id": 2261,
@@ -42897,6 +51029,11 @@ var items = {
     "price": 100000,
     "descr": "Прочтение заклинания, записанного на этом свитке, позволит вам заново распределить таланты. Дает на два очка талантов больше, чем нужно. Эффект от использования нескольких свитков подряд не аккумулируется. При взятии нового уровня эффект пропадает.",
     "instruction": "Двойной клик: прочитать заклинание!",
+    "personal": 1,
+    "consumable": "droptalentplustwo",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2262": {
     "id": 2262,
@@ -42911,7 +51048,12 @@ var items = {
     "image": "basik3",
     "price": 1,
     "becomepersonal": 1,
-    "descr": "Приносят удачу! Прогуливаясь в этих вьетнамках по окрестностям города, рано или поздно встретишь волшебного бревня. Волшебные бревни всегда носят с собой немало Лаббитов.",
+    "descr": "Приносят удачу! Прогуливаясь в этих вьетнамках по окрестностям города, рано или поздно встретишь волшебного бревня. Волшебные бревни всегда носят с собой около пяти Лаббитов.",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
   },
   "2263": {
     "id": 2263,
@@ -42941,6 +51083,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2264": {
     "id": 2264,
@@ -42963,7 +51107,11 @@ var items = {
     "price": 3000000,
     "personal": 1,
     "descr": "Life, Immortality, Eternity!",
-    "owner": "Zoooz"
+    "owner": "Zoooz",
+    "consumable": "none",
+    "uniq": 1,
+    "material": "metal",
+    "changed": "1"
   },
   "2265": {
     "id": 2265,
@@ -42977,6 +51125,9 @@ var items = {
     "personal": 1,
     "descr": "А вы думали, что это новогодняя елочка? Мы же все понимаем, что это на самом деле такое, но написать не можем.",
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "organic",
+    "changed": "1"
   },
   "2266": {
     "id": 2266,
@@ -42998,6 +51149,10 @@ var items = {
       }
     },
     "hidden": 1,
+    "consumable": "useitemonotheritem",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2267": {
     "id": 2267,
@@ -43032,6 +51187,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2268": {
     "id": 2268,
@@ -43047,6 +51204,9 @@ var items = {
     "descr": "Билет на Мартовскую Лотерею. Розыгрыш состоится 7 марта в 21:00 МСК.<br>Разыгрываются 22 предмета:<br>Уникальное оружие или щит Эпического качества! Тип, вид и параметры вы выберете сами!<br>Уникальная Аватара.<br>Уникальный Вечный подарок с вашим дизайном<br>3 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>3 Золотых слитка номиналом в 1000 золотых.<br>10 Премиум Эликсиров на неделю.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "validtime": 2592000,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2269": {
     "id": 2269,
@@ -43072,6 +51232,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2270": {
     "id": 2270,
@@ -43085,6 +51247,9 @@ var items = {
     "personal": 1,
     "descr": "У каждого сокровища должно быть свое место!",
     "validtime": 259200,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2271": {
     "id": 2271,
@@ -43098,6 +51263,9 @@ var items = {
     "personal": 1,
     "descr": "Трудно найти, легко потерять и невозможно открыть.",
     "validtime": 604800,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2272": {
     "id": 2272,
@@ -43110,6 +51278,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2273": {
     "id": 2273,
@@ -43122,6 +51293,9 @@ var items = {
     "price": 1,
     "personal": 1,
     "validtime": 1209600,
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
   },
   "2274": {
     "id": 2274,
@@ -43135,7 +51309,10 @@ var items = {
     "personal": 1,
     "descr": "Вжух! И нет Пандемии!",
     "validtime": -1,
-    "owner": "Мерк"
+    "owner": "Мерк",
+    "consumable": "none",
+    "material": "glass",
+    "changed": "1"
   },
   "2275": {
     "id": 2275,
@@ -43149,18 +51326,22 @@ var items = {
     "maxdur": 1000,
     "minhit": 197,
     "maxhit": 220,
-    "defence": 51,
+    "defence": 61,
     "stamina": 24,
     "reqparagon": 75,
     "crit": 14,
     "mastery": 160,
     "resilience": 440,
-    "image": "wpn_1hand_blunt_1",
+    "image": "mace_merc",
     "price": 100000,
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Вашу мать, я попросту не знаю, кого выбрать!",
-    "owner": "Мерк"
+    "owner": "Мерк",
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2276": {
     "id": 2276,
@@ -43186,6 +51367,11 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "С вероятностью 5% полностью блокирует физический урон по владельцу.",
+    "consumable": "none",
+    "buff_id": 832,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2277": {
     "id": 2277,
@@ -43199,6 +51385,11 @@ var items = {
     "personal": 1,
     "descr": "Чёрная земля, белые цветы, что на мой вопрос ответишь ты?",
     "quest": 1,
+    "dropfrom": ["adsf:331"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2278": {
     "id": 2278,
@@ -43221,6 +51412,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2279": {
     "id": 2279,
@@ -43245,6 +51438,10 @@ var items = {
     "price": 40000,
     "personal": 1,
     "becomepersonal": 1,
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2280": {
     "id": 2280,
@@ -43260,6 +51457,9 @@ var items = {
     "instruction": "Двойной клик: приручить питомца.",
     "bottleparams": 29,
     "hidden": 1,
+    "consumable": "caresspet",
+    "material": "organic",
+    "changed": "1"
   },
   "2281": {
     "id": 2281,
@@ -43279,7 +51479,6 @@ var items = {
           "1673x1": 5,
           "552x1": 5,
           "1690x1": 5,
-          "1690x1": 5,
           "879x1": 5,
           "697x1": 5,
           "1138x1": 5,
@@ -43292,6 +51491,8 @@ var items = {
         }
       }
     },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2282": {
     "id": 2282,
@@ -43305,6 +51506,10 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Можно надеть в слот для тотема и зачаровать. Не дает новых способностей и не ломается.",
+    "consumable": "none",
+    "material": "wood",
+    "changed": 1,
+    "indacache": "1"
   },
   "2283": {
     "id": 2283,
@@ -43320,6 +51525,11 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "Главное - не подскользнуться рядом с этим.",
+    "dropfrom": ["adsf:40"],
+    "consumable": "none",
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
   },
   "2284": {
     "id": 2284,
@@ -43337,6 +51547,11 @@ var items = {
     "personal": 1,
     "becomepersonal": 1,
     "descr": "С ним вы всегда как будто на рыбном рынке!",
+    "dropfrom": ["adsf:319"],
+    "consumable": "none",
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
   },
   "2285": {
     "id": 2285,
@@ -43350,6 +51565,8 @@ var items = {
     "personal": 1,
     "descr": "Обладатель данного предмета может получить любого питомца по своему выбору (кроме уникальных персональных питомцев), написав на почту игры.",
     "instruction": "Пишите на info@lostmagic.ru",
+    "consumable": "none",
+    "changed": "1"
   },
   "2286": {
     "id": 2286,
@@ -43387,7 +51604,9 @@ var items = {
           "1104x3": 2
         }
       }
-    }, //,\n    {\n      "id": ([0-9]+),
+    },
+    "consumable": "openchest",
+    "changed": "1"
   },
   "2287": {
     "id": 2287,
@@ -43873,7 +52092,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:350"]
   },
   "2295": {
     "id": 2295,
@@ -43905,7 +52125,7 @@ var items = {
     "price": 0,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Maid in U.S.I. Срок годности 5 суток.\nВдвое ускоряет передвижение по локациям\nМгновенно восстанавливает здоровье после боя\nВдвое снижает время до повторного прохождения ежедневных заданий <font color=\"#FF0000\">(не действует на праздничные задания)</font>\n150% золота в боях\n150% Очков Арканы и Арены\n200% Стигм и Аним Сумрака\n200% Осколков Магии в боях\n<font color=\"#FF0000\">Заменяет эффект Эликсира Пришельца!</font>",
+    "descr": "Maid in U.S.I. Срок годности 5 суток.<br>Вдвое ускоряет передвижение по локациям<br>Мгновенно восстанавливает здоровье после боя<br>Вдвое снижает время до повторного прохождения ежедневных заданий <font color=\"#FF0000\">(не действует на праздничные задания)</font><br>150% золота в боях<br>150% Очков Арканы и Арены<br>200% Стигм и Аним Сумрака<br>200% Осколков Магии в боях<br><font color=\"#FF0000\">Заменяет эффект Эликсира Пришельца!</font>",
     "instruction": "Двойной клик: выпить.",
     "consumable": "useeffect",
     "battleeffect": 0,
@@ -44087,7 +52307,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет лотереи в честь седьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2017 в 21-00.\nРазыгрываются 28 призов: \n1х Уникальный фон персонажа по заказу победителя \n2х Уникальный предмет-безделушка легендарного качества\n3х Бесконечный сундук Лицензионных настоев здоровья\n4х Любой цвет текста в чате на выбор\n5х Любой конструктор на выбор\n6х Любой предмет из магазина на выбор\n7х Любой питомец (кроме уникальных) на выбор\n\nВсе участники лотереи (по желанию) получат уникальное достижение (0).",
+    "descr": "Билет лотереи в честь седьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2017 в 21-00.<br>Разыгрываются 28 призов: <br>1х Уникальный фон персонажа по заказу победителя <br>2х Уникальный предмет-безделушка легендарного качества<br>3х Бесконечный сундук Лицензионных настоев здоровья<br>4х Любой цвет текста в чате на выбор<br>5х Любой конструктор на выбор<br>6х Любой предмет из магазина на выбор<br>7х Любой питомец (кроме уникальных) на выбор<br><br>Все участники лотереи (по желанию) получат уникальное достижение (0).",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -44143,7 +52363,7 @@ var items = {
     "price": 200000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Внутри содержится билет лотереи в честь седьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2017 в 21-00.\nРазыгрываются 28 призов: \n1х Уникальный фон персонажа по заказу победителя \n2х Уникальный предмет-безделушка легендарного качества\n3х Бесконечный сундук Лицензионных настоев здоровья\n4х Любой цвет текста в чате на выбор\n5х Любой конструктор на выбор\n6х Любой предмет из магазина на выбор\n7х Любой питомец (кроме уникальных) на выбор\n\nВсе участники лотереи (по желанию) получат уникальное достижение (0).",
+    "descr": "Внутри содержится билет лотереи в честь седьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2017 в 21-00.<br>Разыгрываются 28 призов: <br>1х Уникальный фон персонажа по заказу победителя <br>2х Уникальный предмет-безделушка легендарного качества<br>3х Бесконечный сундук Лицензионных настоев здоровья<br>4х Любой цвет текста в чате на выбор<br>5х Любой конструктор на выбор<br>6х Любой предмет из магазина на выбор<br>7х Любой питомец (кроме уникальных) на выбор<br><br>Все участники лотереи (по желанию) получат уникальное достижение (0).",
     "instruction": "Двойной клик: вскрыть конверт и получить билет.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -44205,7 +52425,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет праздничной лотереи в честь семилетия проекта!\nРазыгрываются:\n1х Ужин с Мерком\n2х Упоминания вашего имени в css форума\n3х Скриншота домика Админов изнутри\n4х Протеза ноги одноногой Триши\n5х Рун сброса кд склепа\n6х Свитков нападения на Думфа\n7х Уменьшений размера рюкзака до 12\n\nРозыгрыш состоится когда рак на горе свистнет!",
+    "descr": "Билет праздничной лотереи в честь семилетия проекта!<br>Разыгрываются:<br>1х Ужин с Мерком<br>2х Упоминания вашего имени в css форума<br>3х Скриншота домика Админов изнутри<br>4х Протеза ноги одноногой Триши<br>5х Рун сброса кд склепа<br>6х Свитков нападения на Думфа<br>7х Уменьшений размера рюкзака до 12<br><br>Розыгрыш состоится когда рак на горе свистнет!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -44629,9 +52849,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "targettypes": [
-        "twohandedweapon"
-      ],
+      "targettypes": ["twohandedweapon"],
       "todo": {
         "sharp": 50,
         "unsharp": 50
@@ -44686,7 +52904,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Коробка содержит 5 чар из числа тех, которые с равной вероятностью накладываются или разрушаются. Полный список:\nЧары урона\nЧары мастерства\nЧары устойчивости\nЧары защиты\nЧары ловкости\nШипы силы\nЧары выносливости\nЧары храбрости\nЧары доблести\nЧары хитрости\nЧары Становления\nДар Элегия\nБлаго Элегия\nНить силы\nНить защиты\nЧары непреодолимой преграды\nЧары мертвой головы\nЧары разрушителя\nЧары медитации\nЧары Параметров Тотема\nЧары горного великана",
+    "descr": "Коробка содержит 5 чар из числа тех, которые с равной вероятностью накладываются или разрушаются. Полный список:<br>Чары урона<br>Чары мастерства<br>Чары устойчивости<br>Чары защиты<br>Чары ловкости<br>Шипы силы<br>Чары выносливости<br>Чары храбрости<br>Чары доблести<br>Чары хитрости<br>Чары Становления<br>Дар Элегия<br>Благо Элегия<br>Нить силы<br>Нить защиты<br>Чары непреодолимой преграды<br>Чары мертвой головы<br>Чары разрушителя<br>Чары медитации<br>Чары Параметров Тотема<br>Чары горного великана",
     "instruction": "Двойной клик: вскрыть коробку.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -44736,7 +52954,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:350"]
   },
   "2309": {
     "id": 2309,
@@ -44792,7 +53011,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:345", "adsf:346"]
   },
   "2310": {
     "id": 2310,
@@ -44848,7 +53068,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:345", "adsf:346"]
   },
   "2311": {
     "id": 2311,
@@ -45114,9 +53335,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "targettypes": [
-        "lweapon"
-      ],
+      "targettypes": ["lweapon"],
       "todo": {
         "sharp": 50,
         "unsharp": 50
@@ -45172,7 +53391,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Лотерея из предновогодних подарков! Розыгрыш состоится 31 декабря 2017 в 21:00. Разыгрываются: \nТри предмета из конструктора по выбору\nТри предмета из магазина по выбору\nПять золотых слитков\nЗа каждый билет номер которого кратен сотне вы гарантированно получите 25 Лаббитов на счет!",
+    "descr": "Лотерея из предновогодних подарков! Розыгрыш состоится 31 декабря 2017 в 21:00. Разыгрываются: <br>Три предмета из конструктора по выбору<br>Три предмета из магазина по выбору<br>Пять золотых слитков<br>За каждый билет номер которого кратен сотне вы гарантированно получите 25 Лаббитов на счет!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -45470,7 +53689,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет дает право на участие в Новогодней Премиум Лотерее в честь нового 2017 года. Розыгрыш состоится 7 января 2018 в 21:00 по МСК.\nВ лотерее будут разыграны:\n1 Право на Уникальную легендарную безделушку, изготовленную в течение недели;\n1 Вечный тотем из имеющихся в игре на выбор;\n1 \"Телепорт\", изготовленный для локации по выбору игрока из числа доступных ему;\n1 Гемма легендарного качества;\n3 Конструкторских предмета;\n5 Предметов из Магазина;\n5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах;\n10 Премиум Эликсиров на 30 дней;\nКаждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
+    "descr": "Билет дает право на участие в Новогодней Премиум Лотерее в честь нового 2017 года. Розыгрыш состоится 7 января 2018 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на Уникальную легендарную безделушку, изготовленную в течение недели;<br>1 Вечный тотем из имеющихся в игре на выбор;<br>1 \"Телепорт\", изготовленный для локации по выбору игрока из числа доступных ему;<br>1 Гемма легендарного качества;<br>3 Конструкторских предмета;<br>5 Предметов из Магазина;<br>5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах;<br>10 Премиум Эликсиров на 30 дней;<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -45526,7 +53745,7 @@ var items = {
     "price": 0,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Внтури:\nБилет Легендарной премиум лотереи\nМогущественное новогоднее оружие и предметы экипировки\nСладкий подъелочник\nКроме того с вероятностью 1 из 5 может попасться до трех предметов:\nУникальный праздничный питомец, дающий бафф\nУникальная праздничная гемма\nПраво на конструкторский предмет на три дня",
+    "descr": "Внтури:<br>Билет Легендарной премиум лотереи<br>Могущественное новогоднее оружие и предметы экипировки<br>Сладкий подъелочник<br>Кроме того с вероятностью 1 из 5 может попасться до трех предметов:<br>Уникальный праздничный питомец, дающий бафф<br>Уникальная праздничная гемма<br>Право на конструкторский предмет на три дня",
     "instruction": "Двойной клик: открыть.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -45657,7 +53876,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Можно подарить другу или даже самому себе! Содержимое подарка:\nБилет Легендарной премиум лотереи\nМогущественное новогоднее оружие и предметы экипировки\nСладкий подъелочник\nКроме того с вероятностью 1 из 5 может попасться до трех предметов:\nУникальный праздничный питомец, дающий бафф\nУникальная праздничная гемма\nПраво на конструкторский предмет на три дня",
+    "descr": "Можно подарить другу или даже самому себе! Содержимое подарка:<br>Билет Легендарной премиум лотереи<br>Могущественное новогоднее оружие и предметы экипировки<br>Сладкий подъелочник<br>Кроме того с вероятностью 1 из 5 может попасться до трех предметов:<br>Уникальный праздничный питомец, дающий бафф<br>Уникальная праздничная гемма<br>Право на конструкторский предмет на три дня",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -45737,7 +53956,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:348"]
   },
   "2326": {
     "id": 2326,
@@ -45793,7 +54013,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:348"]
   },
   "2327": {
     "id": 2327,
@@ -45849,7 +54070,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:348"]
   },
   "2328": {
     "id": 2328,
@@ -45905,7 +54127,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:348"]
   },
   "2329": {
     "id": 2329,
@@ -45961,7 +54184,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:348"]
   },
   "2330": {
     "id": 2330,
@@ -46137,7 +54361,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "locations": "7",
+      "locations": 7,
       "attackmob": "{\"348x1\":100}"
     },
     "use_after": 0,
@@ -46154,7 +54378,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:348"]
   },
   "2333": {
     "id": 2333,
@@ -46210,7 +54435,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:348"]
   },
   "2334": {
     "id": 2334,
@@ -47841,7 +56067,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет на Мартовскую Лотерею. Розыгрыш состоится 26 марта в 23:00 МСК.\nРазыгрываются ТРИДЦАТЬ призов:\nУникальное оружие или щит Эпического качества! Тип, вид и параметры вы выберете сами!\nУникальная безделушка эпического качества.\nУникальный Вечный подарок с вашим дизайном.\n3 Любых предмета из конструктора.\n3 Любых предмета из Магазина.\n3 Набора кладоискателя.\n3 коробки с лицензионными настоями на выбор.\n5 Золотых слитков номиналом в 1000 золотых.\n10 Премиум Эликсиров на неделю.",
+    "descr": "Билет на Мартовскую Лотерею. Розыгрыш состоится 26 марта в 23:00 МСК.<br>Разыгрываются ТРИДЦАТЬ призов:<br>Уникальное оружие или щит Эпического качества! Тип, вид и параметры вы выберете сами!<br>Уникальная безделушка эпического качества.<br>Уникальный Вечный подарок с вашим дизайном.<br>3 Любых предмета из конструктора.<br>3 Любых предмета из Магазина.<br>3 Набора кладоискателя.<br>3 коробки с лицензионными настоями на выбор.<br>5 Золотых слитков номиналом в 1000 золотых.<br>10 Премиум Эликсиров на неделю.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "consumable": "none",
     "battleeffect": 0,
@@ -47897,7 +56123,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "В каждом сундучке билет Мартовской Лотереи с главным призом - оружием эпического качества!\nДополнительно содержит что-то из списка:\nВолшебное сверло.\nКоробка с потусторонними чарами (случайные ангельские или дьявольские чары).\nКоробки с уникальными чарами (почти любые случайные редкие или эпические чары).\nЯщик Тотемиста (случайный тотем и три набора для ремонта тотема).\nТри ящика Джереми с инструментами и геммами.\n15 лицензионных настоев.",
+    "descr": "В каждом сундучке билет Мартовской Лотереи с главным призом - оружием эпического качества!<br>Дополнительно содержит что-то из списка:<br>Волшебное сверло.<br>Коробка с потусторонними чарами (случайные ангельские или дьявольские чары).<br>Коробки с уникальными чарами (почти любые случайные редкие или эпические чары).<br>Ящик Тотемиста (случайный тотем и три набора для ремонта тотема).<br>Три ящика Джереми с инструментами и геммами.<br>15 лицензионных настоев.",
     "instruction": "Двойной клик: вскрыть сундук.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -47972,7 +56198,7 @@ var items = {
     "price": 5000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Ты мне дороже, чем премиум на 48 часов!<br>\nВечный подарок",
+    "descr": "Ты мне дороже, чем премиум на 48 часов!<br><br>Вечный подарок",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -48028,7 +56254,7 @@ var items = {
     "price": 5000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Это как Энциклопедия Юных Сурков, только для взрослых.<br>\nВечный подарок",
+    "descr": "Это как Энциклопедия Юных Сурков, только для взрослых.<br><br>Вечный подарок",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -48503,15 +56729,13 @@ var items = {
         "value": "2"
       }],
       "effects": [{
-          "type": "changeparam",
-          "fullkey": "extrabackground",
-          "value": "22"
-        },
-        {
-          "type": "system",
-          "text": "Красота!"
-        }
-      ],
+        "type": "changeparam",
+        "fullkey": "extrabackground",
+        "value": "22"
+      }, {
+        "type": "system",
+        "text": "Красота!"
+      }],
       "misc": {
         "locationstatus": 1
       }
@@ -48578,15 +56802,13 @@ var items = {
         "value": "2"
       }],
       "effects": [{
-          "type": "changeparam",
-          "fullkey": "extrabackground",
-          "value": "23"
-        },
-        {
-          "type": "system",
-          "text": "Красота!"
-        }
-      ],
+        "type": "changeparam",
+        "fullkey": "extrabackground",
+        "value": "23"
+      }, {
+        "type": "system",
+        "text": "Красота!"
+      }],
       "misc": {
         "locationstatus": 1
       }
@@ -48653,15 +56875,13 @@ var items = {
         "value": "2"
       }],
       "effects": [{
-          "type": "changeparam",
-          "fullkey": "extrabackground",
-          "value": "24"
-        },
-        {
-          "type": "system",
-          "text": "Красота!"
-        }
-      ],
+        "type": "changeparam",
+        "fullkey": "extrabackground",
+        "value": "24"
+      }, {
+        "type": "system",
+        "text": "Красота!"
+      }],
       "misc": {
         "locationstatus": 1
       }
@@ -48712,7 +56932,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "В каждом сундучке содержится один из трех уникальных эпических фонов для окна персонажа: станция Мир, мельница или ночной клуб.\nКартинку можно передать другому персонажу или продать на аукционе!",
+    "descr": "В каждом сундучке содержится один из трех уникальных эпических фонов для окна персонажа: станция Мир, мельница или ночной клуб.<br>Картинку можно передать другому персонажу или продать на аукционе!",
     "instruction": "Двойной клик: вскрыть сундук.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -48744,7 +56964,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:350"]
   },
   "2377": {
     "id": 2377,
@@ -48762,16 +56983,16 @@ var items = {
     "defence": 80,
     "strength": 0,
     "agility": 0,
-    "stamina": 68,
+    "stamina": 62,
     "reqlevel": 20,
     "reqparagon": 75,
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 0,
+    "dodge": 20,
     "crit": 12,
     "mastery": 109,
-    "resilience": 131,
+    "resilience": 100,
     "image": "heart_trinket2",
     "price": 5000000,
     "personal": 1,
@@ -48790,7 +57011,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 0,
+    "buff_id": 749,
     "material": "glass",
     "validtime": 0,
     "giveitem": 0,
@@ -48818,16 +57039,16 @@ var items = {
     "defence": 80,
     "strength": 0,
     "agility": 0,
-    "stamina": 68,
+    "stamina": 62,
     "reqlevel": 20,
     "reqparagon": 75,
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 0,
+    "dodge": 20,
     "crit": 12,
     "mastery": 109,
-    "resilience": 131,
+    "resilience": 100,
     "image": "heart_trinket1",
     "price": 5000000,
     "personal": 1,
@@ -48846,7 +57067,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 0,
+    "buff_id": 619,
     "material": "glass",
     "validtime": 0,
     "giveitem": 0,
@@ -48874,16 +57095,16 @@ var items = {
     "defence": 80,
     "strength": 0,
     "agility": 0,
-    "stamina": 68,
+    "stamina": 77,
     "reqlevel": 20,
     "reqparagon": 75,
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 0,
+    "dodge": 16,
     "crit": 12,
     "mastery": 109,
-    "resilience": 131,
+    "resilience": 100,
     "image": "heart_neck",
     "price": 5000000,
     "personal": 1,
@@ -48902,7 +57123,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 0,
+    "buff_id": 879,
     "material": "glass",
     "validtime": 0,
     "giveitem": 0,
@@ -48930,16 +57151,16 @@ var items = {
     "defence": 80,
     "strength": 0,
     "agility": 0,
-    "stamina": 68,
+    "stamina": 62,
     "reqlevel": 20,
     "reqparagon": 75,
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 0,
+    "dodge": 20,
     "crit": 12,
     "mastery": 109,
-    "resilience": 131,
+    "resilience": 100,
     "image": "heart_ring",
     "price": 5000000,
     "personal": 1,
@@ -48958,7 +57179,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 0,
+    "buff_id": 846,
     "material": "glass",
     "validtime": 0,
     "giveitem": 0,
@@ -49040,7 +57261,7 @@ var items = {
     "minhit": 300,
     "maxhit": 800,
     "defence": 600,
-    "strength": 200,
+    "strength": 222,
     "agility": 400,
     "stamina": 330,
     "reqlevel": 20,
@@ -49048,8 +57269,8 @@ var items = {
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 15,
-    "crit": 20,
+    "dodge": 20,
+    "crit": 15,
     "mastery": 200,
     "resilience": 1400,
     "image": "verd",
@@ -49070,7 +57291,7 @@ var items = {
     "uniq": 0,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 840,
+    "buff_id": 847,
     "material": "glass",
     "validtime": 0,
     "giveitem": 0,
@@ -49095,8 +57316,8 @@ var items = {
     "maxdur": 0,
     "minhit": 0,
     "maxhit": 0,
-    "defence": 52,
-    "strength": 50,
+    "defence": 50,
+    "strength": 33,
     "agility": 0,
     "stamina": 50,
     "reqlevel": 20,
@@ -49104,10 +57325,10 @@ var items = {
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 11,
+    "dodge": 20,
     "crit": 0,
     "mastery": 60,
-    "resilience": 200,
+    "resilience": 100,
     "image": "fifth_heart",
     "price": 5000000,
     "personal": 1,
@@ -49126,7 +57347,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 557,
+    "buff_id": 878,
     "material": "glass",
     "validtime": 0,
     "giveitem": 0,
@@ -49352,15 +57573,13 @@ var items = {
         "value": "2"
       }],
       "effects": [{
-          "type": "changeparam",
-          "fullkey": "extrabackground",
-          "value": "20"
-        },
-        {
-          "type": "system",
-          "text": "Красота!"
-        }
-      ],
+        "type": "changeparam",
+        "fullkey": "extrabackground",
+        "value": "20"
+      }, {
+        "type": "system",
+        "text": "Красота!"
+      }],
       "misc": {
         "locationstatus": 1
       }
@@ -49411,7 +57630,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет Майской лотереи. Розыгрыш состоится 22 мая в 21:00 МСК.\nРазыгрываются:\nУникальный фон для персонажа, нарисованный по вашему описанию и только для вас!\nВечный тотем бесконечной прочности на основе любого из существующих в игре.\nУникальная аватара персонажа, нарисованная по вашему заказу.\nУникальный цвет чата для вашего персонажа.\nПять призов любой предмет из магазина на выбор.\nДесять призов по 50 Неолаббитов.\nДвадцать призов по 20 Неолаббитов.",
+    "descr": "Билет Майской лотереи. Розыгрыш состоится 22 мая в 21:00 МСК.<br>Разыгрываются:<br>Уникальный фон для персонажа, нарисованный по вашему описанию и только для вас!<br>Вечный тотем бесконечной прочности на основе любого из существующих в игре.<br>Уникальная аватара персонажа, нарисованная по вашему заказу.<br>Уникальный цвет чата для вашего персонажа.<br>Пять призов любой предмет из магазина на выбор.<br>Десять призов по 50 Неолаббитов.<br>Двадцать призов по 20 Неолаббитов.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "consumable": "none",
     "battleeffect": 0,
@@ -49467,7 +57686,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "В каждом сундучке билет Майской Лотереи!\nСреди призов - уникальный фон, вечный тотем и множество крутых штук!\nКроме того в сундучке может попасться:\n10 Жизненных Леденцов.\nВолшебное сверло.\nКоробка с потусторонними чарами.\nКоробки с уникальными чарами.\n2 ящика Джереми с инструментами и геммами.\n15 лицензионных настоев.",
+    "descr": "В каждом сундучке билет Майской Лотереи!<br>Среди призов - уникальный фон, вечный тотем и множество крутых штук!<br>Кроме того в сундучке может попасться:<br>10 Жизненных Леденцов.<br>Волшебное сверло.<br>Коробка с потусторонними чарами.<br>Коробки с уникальными чарами.<br>2 ящика Джереми с инструментами и геммами.<br>15 лицензионных настоев.<br>",
     "instruction": "Двойной клик: вскрыть сундук.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -49654,7 +57873,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Можно обменять на уникальную аватарку для своего персонажа.",
+    "descr": "Можно обменять на уникальную аватарку для своего персонажа. ",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -49726,15 +57945,13 @@ var items = {
         "value": "2"
       }],
       "effects": [{
-          "type": "changeparam",
-          "fullkey": "extrabackground",
-          "value": "25"
-        },
-        {
-          "type": "system",
-          "text": "Красота!"
-        }
-      ],
+        "type": "changeparam",
+        "fullkey": "extrabackground",
+        "value": "25"
+      }, {
+        "type": "system",
+        "text": "Красота!"
+      }],
       "misc": {
         "locationstatus": 1
       }
@@ -50224,18 +58441,18 @@ var items = {
     "level": 20,
     "maxdur": 667,
     "minhit": 100,
-    "maxhit": 476,
-    "defence": 0,
+    "maxhit": 424,
+    "defence": 664,
     "strength": 512,
     "agility": 750,
-    "stamina": 564,
+    "stamina": 520,
     "reqlevel": 20,
     "reqparagon": 75,
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 0,
-    "crit": 15,
+    "dodge": 20,
+    "crit": 20,
     "mastery": 22,
     "resilience": 1410,
     "image": "lh_green",
@@ -50308,12 +58525,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "targettypes": [
-        "weapon",
-        "lweapon",
-        "rweapon",
-        "twohandedweapon"
-      ],
+      "targettypes": ["weapon", "lweapon", "rweapon", "twohandedweapon"],
       "todo": {
         "sharp": 50,
         "unsharp": 50
@@ -50785,7 +58997,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:349"]
   },
   "2412": {
     "id": 2412,
@@ -51445,7 +59658,7 @@ var items = {
     "price": 5000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "С пожеланиями киберспортивных успехов!\nВечный подарок",
+    "descr": "С пожеланиями киберспортивных успехов!<br>Вечный подарок",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -51501,7 +59714,7 @@ var items = {
     "price": 5000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "На случай, если они когда-нибудь врежут в свою дверь замок.\nВечный подарок",
+    "descr": "На случай, если они когда-нибудь врежут в свою дверь замок.<br>Вечный подарок",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -51949,7 +60162,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.\nЕсли тираж составит более 1200 билетов, будут разыграны дополнительные призы:\n1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня\n1х Аватар персонажа отрисованный на выбор победителя\n1х Эпическое оружие созданное по заказу победителя\nРазыгрываются следующие призы: \n1х Легендарное оружие с дополнительным баффом на выбор из существующих того же уровня\n1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня\n1х Уникальный фон персонажа по заказу победителя\n1х Уникальный новый облик (скин) для любого существующего пета\n1х Бесконечный сундук Лицензионных настоев здоровья\n1х Бесконечный сундук Лицензионных настоев защиты\n1х Бесконечный сундук Лицензионных настоев силы\n1х Бесконечный сундук Лицензионных настоев ярости\n5х Любой конструктор на выбор\n6х Любой предмет из магазина на выбор\n7х Любой питомец (кроме уникальных) на выбор\nВсе участники лотереи (по желанию) получат уникальное достижение (0).",
+    "descr": "Билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.<br>Если тираж составит более 1200 билетов, будут разыграны дополнительные призы:<br>1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня<br>1х Аватар персонажа отрисованный на выбор победителя<br>1х Эпическое оружие созданное по заказу победителя<br>Разыгрываются следующие призы: <br>1х Легендарное оружие с дополнительным баффом на выбор из существующих того же уровня<br>1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня<br>1х Уникальный фон персонажа по заказу победителя<br>1х Уникальный новый облик (скин) для любого существующего пета<br>1х Бесконечный сундук Лицензионных настоев здоровья<br>1х Бесконечный сундук Лицензионных настоев защиты<br>1х Бесконечный сундук Лицензионных настоев силы<br>1х Бесконечный сундук Лицензионных настоев ярости<br>5х Любой конструктор на выбор<br>6х Любой предмет из магазина на выбор<br>7х Любой питомец (кроме уникальных) на выбор<br>Все участники лотереи (по желанию) получат уникальное достижение (0).",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -52005,7 +60218,7 @@ var items = {
     "price": 200000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Внутри содержится билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.\nЕсли тираж составит более 1200 билетов, будут разыграны дополнительные призы:\n1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня\n1х Аватар персонажа отрисованный на выбор победителя\n1х Эпическое оружие созданное по заказу победителя\nРазыгрываются следующие призы: \n1х Легендарное оружие с дополнительным баффом на выбор из существующих того же уровня\n1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня\n1х Уникальный фон персонажа по заказу победителя\n1х Уникальный новый облик (скин) для любого существующего пета\n1х Бесконечный сундук Лицензионных настоев здоровья\n1х Бесконечный сундук Лицензионных настоев защиты\n1х Бесконечный сундук Лицензионных настоев силы\n1х Бесконечный сундук Лицензионных настоев ярости\n5х Любой конструктор на выбор\n6х Любой предмет из магазина на выбор\n7х Любой питомец (кроме уникальных) на выбор\nВсе участники лотереи (по желанию) получат уникальное достижение (0).",
+    "descr": "Внутри содержится билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.<br>Если тираж составит более 1200 билетов, будут разыграны дополнительные призы:<br>1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня<br>1х Аватар персонажа отрисованный на выбор победителя<br>1х Эпическое оружие созданное по заказу победителя<br>Разыгрываются следующие призы: <br>1х Легендарное оружие с дополнительным баффом на выбор из существующих того же уровня<br>1х Легендарная безделушка с дополнительным баффом на выбор из существующих того же уровня<br>1х Уникальный фон персонажа по заказу победителя<br>1х Уникальный новый облик (скин) для любого существующего пета<br>1х Бесконечный сундук Лицензионных настоев здоровья<br>1х Бесконечный сундук Лицензионных настоев защиты<br>1х Бесконечный сундук Лицензионных настоев силы<br>1х Бесконечный сундук Лицензионных настоев ярости<br>5х Любой конструктор на выбор<br>6х Любой предмет из магазина на выбор<br>7х Любой питомец (кроме уникальных) на выбор<br>Все участники лотереи (по желанию) получат уникальное достижение (0).",
     "instruction": "Двойной клик: вскрыть конверт и получить билет.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -52067,7 +60280,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.\n\nРазыгрываются следующие призы: \n1х Уникальное оружие эпического качества\n1х Уникальный предмет-безделушка эпического качества\n1х Бесконечный сундук Лицензионных настоев защиты\n3х Любой конструктор на выбор\n5х Любой предмет из магазина на выбор\n15х Премиум эликсир на месяц",
+    "descr": "Билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.<br><br>Разыгрываются следующие призы: <br>1х Уникальное оружие эпического качества<br>1х Уникальный предмет-безделушка эпического качества<br>1х Бесконечный сундук Лицензионных настоев защиты<br>3х Любой конструктор на выбор<br>5х Любой предмет из магазина на выбор<br>15х Премиум эликсир на месяц",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -52123,7 +60336,7 @@ var items = {
     "price": 200000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Внутри содержится билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.\n\nРазыгрываются следующие призы: \n1х Уникальное оружие эпического качества\n1х Уникальный предмет-безделушка эпического качества\n1х Бесконечный сундук Лицензионных настоев защиты\n3х Любой конструктор на выбор\n5х Любой предмет из магазина на выбор\n15х Премиум эликсир на месяц",
+    "descr": "Внутри содержится билет лотереи в честь восьмой годовщины мира Утраченной Магии! Розыгрыш состоится 19 августа 2018 в 21-00.<br><br>Разыгрываются следующие призы: <br>1х Уникальное оружие эпического качества<br>1х Уникальный предмет-безделушка эпического качества<br>1х Бесконечный сундук Лицензионных настоев защиты<br>3х Любой конструктор на выбор<br>5х Любой предмет из магазина на выбор<br>15х Премиум эликсир на месяц",
     "instruction": "Двойной клик: вскрыть конверт и получить билет.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -52209,7 +60422,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:350"]
   },
   "2437": {
     "id": 2437,
@@ -52242,7 +60456,7 @@ var items = {
     "personal": 1,
     "becomepersonal": 0,
     "descr": "На этом листке записано древнее заклинание на ныне забытом и утраченном языке Лукэтлогов. Вне всякого сомнения, если громко прочитать текст на людном месте, все лукэтлоги в округе бросятся на вас.",
-    "instruction": "Двойной клик: использовать.",
+    "instruction": "Двойной клик: использовать. ",
     "consumable": "attackmob",
     "battleeffect": 0,
     "target_me": 0,
@@ -52251,7 +60465,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "locations": "7",
+      "locations": 7,
       "attackmob": "{\"350x3\":25,\"350x5\":25,\"350x7\":25,\"350x9\":25}"
     },
     "use_after": 0,
@@ -52835,7 +61049,7 @@ var items = {
     "personal": 1,
     "becomepersonal": 0,
     "descr": "На этом листке записано древнее заклинание на ныне забытом и утраченном языке Лукэтлогов. Вне всякого сомнения, если громко прочитать текст на людном месте, все лукэтлоги в округе бросятся на вас. С равной вероятностью призывает 5, 7 или 9 зверей, а с небольшой - 15!",
-    "instruction": "Двойной клик: использовать.",
+    "instruction": "Двойной клик: использовать. ",
     "consumable": "attackmob",
     "battleeffect": 0,
     "target_me": 0,
@@ -52844,7 +61058,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "locations": "7",
+      "locations": 7,
       "attackmob": "{\"350x15\":10,\"350x5\":30,\"350x7\":30,\"350x9\":30}"
     },
     "use_after": 0,
@@ -52894,7 +61108,7 @@ var items = {
     "personal": 1,
     "becomepersonal": 0,
     "descr": "На этом листке записано древнее заклинание на ныне забытом и утраченном языке Лукэтлогов. Вне всякого сомнения, если громко прочитать текст на людном месте, все лукэтлоги в округе бросятся на вас. С равной вероятностью призывает 5, 7 или 9 зверей, а с небольшой - 15!",
-    "instruction": "Двойной клик: использовать.",
+    "instruction": "Двойной клик: использовать. ",
     "consumable": "attackmob",
     "battleeffect": 0,
     "target_me": 0,
@@ -52903,8 +61117,10 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "locations": "7",
-      "attackmob": "{\"350x99\":100}"
+      "locations": 7,
+      "attackmob": {
+        "350x99": 100
+      }
     },
     "use_after": 0,
     "uniq": 0,
@@ -53975,7 +62191,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 1
+    "trash": 1,
+    "dropfrom": ["adsf:351", "adsf:352", "adsf:353", "adsf:354"]
   },
   "2466": {
     "id": 2466,
@@ -54031,7 +62248,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 1
+    "trash": 1,
+    "dropfrom": ["adsf:351", "adsf:352", "adsf:353", "adsf:354"]
   },
   "2467": {
     "id": 2467,
@@ -54087,7 +62305,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:351", "adsf:352", "adsf:353"]
   },
   "2468": {
     "id": 2468,
@@ -54143,7 +62362,8 @@ var items = {
     "changed": 1,
     "indacache": 1,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:354"]
   },
   "2469": {
     "id": 2469,
@@ -54189,7 +62409,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 867,
+    "buff_id": 900,
     "material": "cotton",
     "validtime": 0,
     "giveitem": 0,
@@ -54245,7 +62465,7 @@ var items = {
     "uniq": 0,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 619,
+    "buff_id": 907,
     "material": "metal",
     "validtime": 0,
     "giveitem": 0,
@@ -54986,15 +63206,13 @@ var items = {
         "value": "2"
       }],
       "effects": [{
-          "type": "changeparam",
-          "fullkey": "extrabackground",
-          "value": "26"
-        },
-        {
-          "type": "system",
-          "text": "Красота!"
-        }
-      ],
+        "type": "changeparam",
+        "fullkey": "extrabackground",
+        "value": "26"
+      }, {
+        "type": "system",
+        "text": "Красота!"
+      }],
       "misc": {
         "locationstatus": 1
       }
@@ -55018,7 +63236,7 @@ var items = {
   "2484": {
     "id": 2484,
     "categ_id": 13,
-    "name": "Унтра",
+    "name": "Рейгаль",
     "adminname": "Унтра нек Devilyaka",
     "maxcnt": 1,
     "type": "neck",
@@ -55041,7 +63259,7 @@ var items = {
     "crit": 2,
     "mastery": 0,
     "resilience": 160,
-    "image": "snakesnowPic",
+    "image": "devil_neck",
     "price": 6660000,
     "personal": 1,
     "becomepersonal": 0,
@@ -55193,7 +63411,7 @@ var items = {
   "2487": {
     "id": 2487,
     "categ_id": 23,
-    "name": "Ожерелье Bleidd прототип",
+    "name": "Локализованный баг",
     "adminname": "Ожерелье Bleidd прототип",
     "maxcnt": 1,
     "type": "neck",
@@ -55220,7 +63438,7 @@ var items = {
     "price": 4000000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "",
+    "descr": "Баги - маленькие, но очень сильные и злобные существа. Питают особую страсть к разрушению хороших идей",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -55234,7 +63452,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 0,
+    "buff_id": 320,
     "material": "ring",
     "validtime": 0,
     "giveitem": 0,
@@ -55276,7 +63494,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Лотерея из предновогодних подарков! Розыгрыш состоится 31 декабря 2018 в 21:00. Разыгрываются: \nОдно уникальное эпическое оружие (статы по калькулятору эпиков, вид любого существующего оружия)\nТри предмета из конструктора\nТри предмета из магазина\nСемь кошелей, содержащих по 50 Неолаббитов\nДесять золотых слитков",
+    "descr": "Лотерея из предновогодних подарков! Розыгрыш состоится 31 декабря 2018 в 21:00. Разыгрываются: <br>Одно уникальное эпическое оружие (статы по калькулятору эпиков, вид любого существующего оружия)<br>Три предмета из конструктора<br>Три предмета из магазина<br>Семь кошелей, содержащих по 50 Неолаббитов<br>Десять золотых слитков",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -55332,7 +63550,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет дает право на участие в Новогодней Премиум Лотерее в честь нового 2019 года. Розыгрыш состоится 8 января 2019 в 21:00 по МСК.\nВ лотерее будут разыграны:\n1 Право на легендарное оружие, изготовленное в течение недели\n1 Право на Уникальную легендарную АУРУ, изготовленную в течение недели\n1 Вечный тотем из имеющихся в игре на выбор\n3 Геммы легендарного качества\n3 Конструкторских предмета\n5 Предметов из Магазина\n5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах\n7 Кошелей, содержащих по 50 Неолаббитов\n10 Премиум Эликсиров на 30 дней;\nКаждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
+    "descr": "Билет дает право на участие в Новогодней Премиум Лотерее в честь нового 2019 года. Розыгрыш состоится 8 января 2019 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на легендарное оружие, изготовленное в течение недели<br>1 Право на Уникальную легендарную АУРУ, изготовленную в течение недели<br>1 Вечный тотем из имеющихся в игре на выбор<br>3 Геммы легендарного качества<br>3 Конструкторских предмета<br>5 Предметов из Магазина<br>5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах<br>7 Кошелей, содержащих по 50 Неолаббитов<br>10 Премиум Эликсиров на 30 дней;<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -55388,7 +63606,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет бесплатной как сыр в мышеловке праздничной лотереи в честь нового 2019 года!\nРазыгрываются:\n1х Завтрак с Ботом в Макдаке\n2х Обещания ввести новый склеп к определенной дате\n3х Права писать Лео в приват в любое время\n4х Результата МРТ Десяти Крыс\n5х Телепортов с ЦП на ПП\n6х Фотографий Элтона в молодости\n7х Ночных горшков Париса\n\nРозыгрыш состоится когда вырастут розы повсюду голубые как яйца дрозда!",
+    "descr": "Билет бесплатной как сыр в мышеловке праздничной лотереи в честь нового 2019 года!<br>Разыгрываются:<br>1х Завтрак с Ботом в Макдаке<br>2х Обещания ввести новый склеп к определенной дате<br>3х Права писать Лео в приват в любое время<br>4х Результата МРТ Десяти Крыс<br>5х Телепортов с ЦП на ПП<br>6х Фотографий Элтона в молодости<br>7х Ночных горшков Париса<br><br>Розыгрыш состоится когда вырастут розы повсюду голубые как яйца дрозда!",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
     "consumable": "none",
     "battleeffect": 0,
@@ -55444,7 +63662,7 @@ var items = {
     "price": 200000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Внутри содержится билет, который  дает право на участие в Новогодней Премиум Лотерее в честь нового 2019 года. Розыгрыш состоится 7 января 2019 в 21:00 по МСК.\nВ лотерее будут разыграны:\n1 Право на легендарное оружие, изготовленное в течение недели\n1 Право на Уникальную легендарную ауру, изготовленную в течение недели\n1 Вечный тотем из имеющихся в игре на выбор\n3 Геммы легендарного качества\n3 Конструкторских предмета\n5 Предметов из Магазина\n5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах\n7 Кошелей, содержащих по 50 Неолаббитов\n10 Премиум Эликсиров на 30 дней;\nКаждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
+    "descr": "Внутри содержится билет, который  дает право на участие в Новогодней Премиум Лотерее в честь нового 2019 года. Розыгрыш состоится 7 января 2019 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>1 Право на легендарное оружие, изготовленное в течение недели<br>1 Право на Уникальную легендарную ауру, изготовленную в течение недели<br>1 Вечный тотем из имеющихся в игре на выбор<br>3 Геммы легендарного качества<br>3 Конструкторских предмета<br>5 Предметов из Магазина<br>5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах<br>7 Кошелей, содержащих по 50 Неолаббитов<br>10 Премиум Эликсиров на 30 дней;<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
     "instruction": "Двойной клик: вскрыть конверт и получить билет.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -55552,7 +63770,7 @@ var items = {
   "2493": {
     "id": 2493,
     "categ_id": 23,
-    "name": "Премиум новогодний подарок 2019",
+    "name": "брак",
     "adminname": "Премиум новогодний подарок 2019 (именно подарок)",
     "maxcnt": 1,
     "type": "present",
@@ -55579,7 +63797,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "ХО-ХО-ХО! При распаковке дает Новогодний премиум набор с лотереей и кучей офигительных штук!",
+    "descr": "При распаковке дает супер премиум подарок с билетом легендарной лотереи и случайным редким кольцом стихий, а также всем, что и в подарке для игрока от КОТа!",
     "instruction": "",
     "consumable": "none",
     "battleeffect": 0,
@@ -55596,7 +63814,7 @@ var items = {
     "buff_id": 0,
     "material": "",
     "validtime": 432000,
-    "giveitem": 2494,
+    "giveitem": 2556,
     "newyear": 0,
     "charges": 0,
     "cooldown": 0,
@@ -55635,7 +63853,7 @@ var items = {
     "price": 0,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Внутри:\nБилет Новогодней Премиум лотереи\nМаскарадный костюм могущества Шаркспира\nДетский Тыкатель Монстров\nВзрослый Тыкатель Монстров\nБоевая елочная игрушка\nНовогодний тотем 2019\nСладкий подъелочник\n\nДополнительно могут попасться (если повезет хоть все) следующие предметы:\nНовогодний питомец, дающий бафф (20%)\nУникальная праздничная гемма (20%)\nПраво на конструкторский предмет на три дня (20%)\nКоробка с чарами Героев (20%)\nФерментированная руна культа (3%)",
+    "descr": "Внутри:<br>Билет Новогодней Премиум лотереи<br>Маскарадный костюм могущества Шаркспира<br>Детский Тыкатель Монстров<br>Взрослый Тыкатель Монстров<br>Боевая елочная игрушка<br>Новогодний тотем 2019<br>Сладкий подъелочник<br><br>Дополнительно могут попасться (если повезет хоть все) следующие предметы:<br>Новогодний питомец, дающий бафф (20%)<br>Уникальная праздничная гемма (20%)<br>Право на конструкторский предмет на три дня (20%)<br>Коробка с чарами Героев (20%)<br>Ферментированная руна культа (3%)",
     "instruction": "Двойной клик: открыть.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -55681,7 +63899,7 @@ var items = {
   "2495": {
     "id": 2495,
     "categ_id": 33,
-    "name": "Новогодняя Гемма 2019",
+    "name": "Новогодняя Гемма",
     "adminname": "Новогодняя Гемма 2019",
     "maxcnt": 10,
     "type": "socket",
@@ -55741,7 +63959,7 @@ var items = {
   "2496": {
     "id": 2496,
     "categ_id": 23,
-    "name": "Новогодний тотем 2019",
+    "name": "Новогодний тотем",
     "adminname": "Новогодний тотем 2019",
     "maxcnt": 1,
     "type": "totem",
@@ -55824,7 +64042,7 @@ var items = {
     "price": 0,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Внутри:\nМаскарадный костюм могущества Шаркспира\nДетский Тыкатель Монстров\nВзрослый Тыкатель Монстров\nБоевая елочная игрушка\nНовогодний тотем 2019\nСладкий подъелочник\n\nДополнительно могут попасться (если повезет хоть все) следующие предметы:\nНовогодний питомец, дающий бафф (20%)\nУникальная праздничная гемма (20%)\nПраво на конструкторский предмет на три дня (20%)\nКоробка с чарами Героев (20%)",
+    "descr": "Внутри:<br>Маскарадный костюм могущества Шаркспира<br>Детский Тыкатель Монстров<br>Взрослый Тыкатель Монстров<br>Боевая елочная игрушка<br>Новогодний тотем 2019<br>Сладкий подъелочник<br><br>Дополнительно могут попасться (если повезет хоть все) следующие предметы:<br>Новогодний питомец, дающий бафф (20%)<br>Уникальная праздничная гемма (20%)<br>Право на конструкторский предмет на три дня (20%)<br>Коробка с чарами Героев (20%)",
     "instruction": "Двойной клик: открыть.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -55925,7 +64143,7 @@ var items = {
   "2499": {
     "id": 2499,
     "categ_id": 14,
-    "name": "Трикси",
+    "name": "Визерион",
     "adminname": "Трикси кольцо Devilyaka",
     "maxcnt": 1,
     "type": "ring",
@@ -55948,7 +64166,7 @@ var items = {
     "crit": 4,
     "mastery": 0,
     "resilience": 220,
-    "image": "fairy_pet",
+    "image": "devil_ring",
     "price": 6660000,
     "personal": 1,
     "becomepersonal": 0,
@@ -55966,7 +64184,7 @@ var items = {
     "uniq": 1,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 619,
+    "buff_id": 842,
     "material": "metal",
     "validtime": 0,
     "giveitem": 0,
@@ -56032,7 +64250,8 @@ var items = {
     "changed": 1,
     "indacache": 0,
     "monitoring": 0,
-    "trash": 0
+    "trash": 0,
+    "dropfrom": ["adsf:357"]
   },
   "2501": {
     "id": 2501,
@@ -56065,7 +64284,7 @@ var items = {
     "personal": 1,
     "becomepersonal": 0,
     "descr": "На этом листке записано древнее заклинание на ныне забытом и утраченном языке Лукэтлогов. Вне всякого сомнения, если громко прочитать текст на людном месте, даже самый трусливый и беззащитный Лукэтлог выйдет из своего укрытия и доверчиво подставит вам свое пузико.",
-    "instruction": "Двойной клик: использовать.",
+    "instruction": "Двойной клик: использовать. ",
     "consumable": "attackmob",
     "battleeffect": 0,
     "target_me": 0,
@@ -56074,8 +64293,11 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "locations": "7",
-      "attackmob": "{\"355x2\":50,\"355x3\":50}"
+      "locations": 222,
+      "attackmob": {
+        "355x2": 50,
+        "355x3": 50
+      }
     },
     "use_after": 0,
     "uniq": 0,
@@ -56096,7 +64318,7 @@ var items = {
   "2502": {
     "id": 2502,
     "categ_id": 23,
-    "name": "НДПНГ 19",
+    "name": "НДПНГ",
     "adminname": "НДПНГ 19",
     "maxcnt": 10,
     "type": "sunduk",
@@ -56125,7 +64347,7 @@ var items = {
     "becomepersonal": 0,
     "descr": "Самое необходимое оборудование для активного участника встречи нового 2019 года!",
     "instruction": "Двойной клик: вскрыть коробку.",
-    "consumable": "openchest",
+    "consumable": "none",
     "battleeffect": 0,
     "target_me": 0,
     "target_opp": 0,
@@ -56158,7 +64380,7 @@ var items = {
   "2503": {
     "id": 2503,
     "categ_id": 23,
-    "name": "Волшебная палочка 2019 тип З",
+    "name": "Волшебная палочка тип З",
     "adminname": "Волшебная палочка 2019 тип З",
     "maxcnt": 100,
     "type": "other",
@@ -56195,9 +64417,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "targettypes": [
-        "head"
-      ],
+      "targettypes": ["head"],
       "todo": {
         "sharp": 75,
         "unsharp": 25
@@ -56225,7 +64445,7 @@ var items = {
   "2504": {
     "id": 2504,
     "categ_id": 23,
-    "name": "Волшебная палочка 2019 тип Л",
+    "name": "Волшебная палочка тип Л",
     "adminname": "Волшебная палочка 2019 тип Л",
     "maxcnt": 100,
     "type": "other",
@@ -56262,9 +64482,7 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "targettypes": [
-        "chest"
-      ],
+      "targettypes": ["chest"],
       "todo": {
         "sharp": 75,
         "unsharp": 25
@@ -56320,7 +64538,7 @@ var items = {
     "personal": 1,
     "becomepersonal": 0,
     "descr": "На этом листке записано древнее заклинание на ныне забытом и утраченном языке Лукэтлогов. Вне всякого сомнения, если громко прочитать текст на людном месте, даже самый трусливый и беззащитный Лукэтлог выйдет из своего укрытия и доверчиво подставит вам свое пузико.",
-    "instruction": "Двойной клик: использовать.",
+    "instruction": "Двойной клик: использовать. ",
     "consumable": "attackmob",
     "battleeffect": 0,
     "target_me": 0,
@@ -56329,8 +64547,11 @@ var items = {
     "target_oppgroup": 0,
     "target_mob": 0,
     "bottleparams": {
-      "locations": "7",
-      "attackmob": "{\"355x12\":50,\"355x13\":50}"
+      "locations": 7,
+      "attackmob": {
+        "355x12": 50,
+        "355x13": 50
+      }
     },
     "use_after": 0,
     "uniq": 0,
@@ -56440,7 +64661,7 @@ var items = {
     "price": 0,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Муркуа па!\nВнутри гарантированно находятся:\n2 премиума на 4 часа, мистические часы, 10 лиц здоровья, 3 шоколадных печенья.\nКроме того, могут попасться:\nНДПНГ 19 - 30%,\nКоробка с чарами героев - 20%,\nПремиум на месяц - 10%,\nКоробка с 50 Неолаббитов - 5%.",
+    "descr": "Муркуа па!<br>Внутри гарантированно находятся:<br>2 премиума на 4 часа, мистические часы, 10 лиц здоровья, 3 шоколадных печенья.<br>Кроме того, могут попасться:<br>Листок 2020 - 30%,<br>Коробка с чарами героев - 20%,<br>Премиум на месяц - 10%,<br>Коробка с 50 Неолаббитов - 5%.",
     "instruction": "Двойной клик: открыть.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -56459,7 +64680,8 @@ var items = {
           "2502x1": 30,
           "2169x1": 20,
           "1106x1": 10,
-          "2506x1": 5
+          "2506x1": 5,
+          "2616x1": 30
         }
       }
     },
@@ -57110,18 +65332,18 @@ var items = {
     "rarity": "legend",
     "level": 20,
     "maxdur": 500,
-    "minhit": 130,
-    "maxhit": 363,
-    "defence": 140,
-    "strength": 30,
-    "agility": 0,
-    "stamina": 125,
+    "minhit": 40,
+    "maxhit": 70,
+    "defence": 156,
+    "strength": 34,
+    "agility": 140,
+    "stamina": 132,
     "reqlevel": 20,
     "reqparagon": 75,
     "reqstrength": 0,
     "reqagility": 0,
     "reqstamina": 0,
-    "dodge": 10,
+    "dodge": 20,
     "crit": 10,
     "mastery": 0,
     "resilience": 330,
@@ -57143,7 +65365,7 @@ var items = {
     "uniq": 0,
     "quest": 0,
     "ability_id": 0,
-    "buff_id": 846,
+    "buff_id": 900,
     "material": "metal",
     "validtime": 0,
     "giveitem": 0,
@@ -57220,7 +65442,7 @@ var items = {
     "type": "socket",
     "premium_type": "none",
     "rarity": "epic",
-    "level": 1,
+    "level": 99,
     "maxdur": 0,
     "minhit": 0,
     "maxhit": 0,
@@ -57301,7 +65523,7 @@ var items = {
     "price": 1000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "Билет Мартовской Лотереи 2019. Розыгрыш состоится 20 марта в 21:00 МСК.\nРазыгрываются:\nУникальный фон персонажа, нарисованный специально для вас!\nУникальный Вечный подарок с вашим дизайном.\nНеограниченный доступ к лицензионным настоям одного типа на выбор (Симулякр).\nВечный тотем на основе имеющихся в игре.\n3 Коробки по 500 Неолаббитов.\n3 Любых предмета из конструктора.\n3 Любых предмета экипировки из Магазина.\n5 Золотых слитков номиналом в 1000 золотых.\n10 Премиум Эликсиров на месяц.",
+    "descr": "Билет Мартовской Лотереи 2019. Розыгрыш состоится 20 марта в 21:00 МСК.<br>Разыгрываются:<br>Уникальный фон персонажа, нарисованный специально для вас!<br>Уникальный Вечный подарок с вашим дизайном.<br>Неограниченный доступ к лицензионным настоям одного типа на выбор (Симулякр).<br>Вечный тотем на основе имеющихся в игре.<br>3 Коробки по 500 Неолаббитов.<br>3 Любых предмета из конструктора.<br>3 Любых предмета экипировки из Магазина.<br>5 Золотых слитков номиналом в 1000 золотых.<br>10 Премиум Эликсиров на месяц.",
     "instruction": "Сохранить до объявления результатов, которые будут опубликованы в новостях.",
     "consumable": "none",
     "battleeffect": 0,
@@ -57357,7 +65579,7 @@ var items = {
     "price": 10000,
     "personal": 1,
     "becomepersonal": 0,
-    "descr": "В каждом сундучке билет Мартовской Лотереи!\nДополнительно содержит что-то из списка:\nВолшебное сверло.\nКоробка с потусторонними чарами (случайные ангельские или дьявольские чары).\nКоробки с уникальными чарами (почти любые случайные редкие или эпические чары).\nЯщик Тотемиста (случайный тотем и три набора для ремонта тотема).\nТри ящика Джереми с инструментами и геммами.\n15 лицензионных настоев.",
+    "descr": "В каждом сундучке билет Мартовской Лотереи!<br>Дополнительно содержит что-то из списка:<br>Волшебное сверло.<br>Коробка с потусторонними чарами (случайные ангельские или дьявольские чары).<br>Коробки с уникальными чарами (почти любые случайные редкие или эпические чары).<br>Ящик Тотемиста (случайный тотем и три набора для ремонта тотема).<br>Три ящика Джереми с инструментами и геммами.<br>15 лицензионных настоев.",
     "instruction": "Двойной клик: вскрыть сундук.",
     "consumable": "openchest",
     "battleeffect": 0,
@@ -57401,5 +65623,2898 @@ var items = {
     "indacache": 0,
     "monitoring": 0,
     "trash": 0
+  },
+  "2524": {
+    "id": 2524,
+    "categ_id": 23,
+    "name": "Легендарная Детская Аура Лезвий",
+    "maxcnt": 1,
+    "type": "rune",
+    "rarity": "legend",
+    "level": 8,
+    "maxdur": 100,
+    "reqlevel": 8,
+    "image": "aurablade1",
+    "price": 1,
+    "becomepersonal": 1,
+    "descr": "Наносит урон кровотечением и уменьшает эффекты кровотечения на владельце.",
+    "consumable": "none",
+    "buff_id": 485,
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2525": {
+    "id": 2525,
+    "categ_id": 23,
+    "name": "Аура Адреналина",
+    "maxcnt": 1,
+    "type": "rune",
+    "rarity": "rare",
+    "level": 13,
+    "maxdur": 100,
+    "defence": 5000,
+    "stamina": 1000,
+    "reqlevel": 13,
+    "mastery": 10000,
+    "image": "auraearth2",
+    "price": 1,
+    "becomepersonal": 1,
+    "descr": "Обладатель данной ауры совсем не дружит с головой, жить ему надоело, экстрима захотелось, ума нет считай калека, зацепер мамкин посмотрите на него, обколются своим шалфеем и давай в перископ стримить.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2526": {
+    "id": 2526,
+    "categ_id": 22,
+    "name": "Склянка запасного огня",
+    "maxcnt": 1000,
+    "type": "bottle",
+    "rarity": "rare",
+    "reqlevel": 5,
+    "image": "r_herm_bottle",
+    "price": 1,
+    "descr": "Выпейте, если совсем не дружите с головой, жить надоело, экстрима захотелось, ума нет считай калека, зацепер мамкин посмотрите на него, обколются своим шалфеем и давай в перископ стримить. При создании копии подземелья под действием данного эффекта будет установлен параметр ХАРДМОД.",
+    "instruction": "Двойной клик: выпить. Действует 1 минуту.",
+    "consumable": "useeffect",
+    "bottleparams": {
+      "effects": [{
+        "type": "buff",
+        "value": "869"
+      }]
+    },
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2527": {
+    "id": 2527,
+    "categ_id": 23,
+    "name": "Хардмод Вахтанг",
+    "maxcnt": 100,
+    "type": "other",
+    "rarity": "epic",
+    "image": "rubber_duck",
+    "price": 1,
+    "personal": 1,
+    "descr": "Безумство храбрых — вот мудрость жизни!",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2528": {
+    "id": 2528,
+    "categ_id": 23,
+    "name": "Право на Эпический ювелирный предмет",
+    "maxcnt": 1,
+    "type": "other",
+    "rarity": "epic",
+    "image": "arcana_warlock_buff",
+    "price": 10000,
+    "descr": "Можно обменять на уникальный предмет эпического качества по выбору обладателя (ожерелье, кольцо или безделушку) плюс выбрать один из предлагаемых баффов сверх того.",
+    "instruction": "1. Купить. 2. Написать на почту проекта о своем выборе. 3. Стать обладателем уникального эпика!",
+    "consumable": "none",
+    "quest": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2529": {
+    "id": 2529,
+    "categ_id": 15,
+    "name": "Хардмод Вахтанг",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 104,
+    "stamina": 59,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 10,
+    "resilience": 220,
+    "image": "rubber_duck",
+    "price": 1222098,
+    "personal": 1,
+    "descr": "Безумство храбрых — вот мудрость жизни!",
+    "consumable": "none",
+    "buff_id": 842,
+    "material": "organic",
+    "changed": "1"
+  },
+  "2530": {
+    "id": 2530,
+    "categ_id": 23,
+    "name": "Право на эпический щит",
+    "maxcnt": 1,
+    "type": "other",
+    "rarity": "epic",
+    "image": "shield08",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Можно обменять на уникальный щит эпического качества с характеристиками и внешним видом по выбору покупателя, БЕЗ дополнительного баффа.",
+    "instruction": "1. Купить. 2. Написать на почту проекта о своем выборе. 3. Стать обладателем уникального эпика!",
+    "consumable": "none",
+    "quest": 1,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2531": {
+    "id": 2531,
+    "categ_id": 15,
+    "name": "Дрогон",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 104,
+    "stamina": 59,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 10,
+    "resilience": 220,
+    "image": "devil_trinket",
+    "price": 6660000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 845,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2532": {
+    "id": 2532,
+    "categ_id": 15,
+    "name": "Уроборос",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 104,
+    "stamina": 53,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 9,
+    "crit": 4,
+    "resilience": 220,
+    "image": "uro_trinket",
+    "price": 80000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 846,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2533": {
+    "id": 2533,
+    "categ_id": 15,
+    "name": "Уроборос",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 100,
+    "stamina": 68,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 5,
+    "crit": 5,
+    "resilience": 220,
+    "image": "uro_ring",
+    "price": 880000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 877,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2534": {
+    "id": 2534,
+    "categ_id": 15,
+    "name": "Уроборос",
+    "maxcnt": 1,
+    "type": "neck",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 76,
+    "stamina": 85,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 6,
+    "crit": 6,
+    "resilience": 160,
+    "image": "uro_neck",
+    "price": 8880000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 876,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2535": {
+    "id": 2535,
+    "categ_id": 23,
+    "name": "Яйцо с редчайшим питомцем",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "epic",
+    "image": "eggwithpet",
+    "price": 1000,
+    "personal": 1,
+    "descr": "Содержит одного из 12 самых редких питомцев в игре! С равной вероятностью при распаковке может попасться Огненный Волк, Бронебро, Метеорит, Волшебная Шляпа, Славный Олли, ZoIЧ, Лошадкаа, Болотник, Локализованный Баг, Личный Лаг, Ягуар, Мини-апдейт.",
+    "instruction": "Двойной клик: разбить яйцо.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "1939x1": 10,
+          "1845x1": 10,
+          "1222x1": 10,
+          "1225x1": 10,
+          "1995x1": 10,
+          "1654x1": 10,
+          "1624x1": 10,
+          "1489x1": 10,
+          "1818x1": 10,
+          "1820x1": 10,
+          "990x1": 10,
+          "1819x1": 10
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2536": {
+    "id": 2536,
+    "categ_id": 23,
+    "name": "Праздничный сундучок",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "epic",
+    "image": "goldgift",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Сундучок с подарками в честь очередного ДР Leo содержит кучу отборных достижений современной алхимии. Кроме того, в одном из 10 сундучков может попасться Яйцо с редчайшим питомцем.",
+    "instruction": "Двойной клик: вскрыть сундук.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "565x5": 100,
+          "601x3": 100,
+          "1492x1": 100,
+          "2151x2": 100,
+          "2152x2": 100,
+          "817x5": 100,
+          "2535x1": 10
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2537": {
+    "id": 2537,
+    "categ_id": 23,
+    "name": "Приданное Чака",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "epic",
+    "image": "goldgift",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Сундучок с подарками в честь бракосочетания Чака =)",
+    "instruction": "Двойной клик: вскрыть сундук.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "565x1": 100,
+          "601x1": 100,
+          "1492x1": 100,
+          "2151x1": 100,
+          "2152x1": 100,
+          "817x1": 100,
+          "2535x1": 10
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2538": {
+    "id": 2538,
+    "categ_id": 14,
+    "name": "Пылающее Обсидиановое Кольцо",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 72,
+    "maxhit": 73,
+    "defence": 28,
+    "stamina": 88,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "resilience": 220,
+    "image": "obs_ring_red",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 30% вашего физического урона в урон огнем.",
+    "consumable": "none",
+    "buff_id": 881,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2539": {
+    "id": 2539,
+    "categ_id": 14,
+    "name": "Термическая Аномалия",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 30,
+    "stamina": 88,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 12,
+    "mastery": 95,
+    "resilience": 220,
+    "image": "obs_ring_blue",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 30% вашего физического урона в урон льдом.",
+    "consumable": "none",
+    "buff_id": 886,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2540": {
+    "id": 2540,
+    "categ_id": 14,
+    "name": "Кольцо Силы Земли",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 72,
+    "maxhit": 73,
+    "defence": 28,
+    "stamina": 88,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "resilience": 220,
+    "image": "obs_ring_green",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 30% вашего физического урона в урон землей.",
+    "consumable": "none",
+    "buff_id": 887,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2541": {
+    "id": 2541,
+    "categ_id": 14,
+    "name": "Малое Пылающее Обсидиановое Кольцо",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "uncommon",
+    "level": 5,
+    "minhit": 2,
+    "maxhit": 3,
+    "defence": 2,
+    "stamina": 8,
+    "reqlevel": 5,
+    "resilience": 20,
+    "image": "obs_ring_red",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 20% вашего физического урона в урон огнем.",
+    "consumable": "none",
+    "buff_id": 888,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2542": {
+    "id": 2542,
+    "categ_id": 14,
+    "name": "БРАК",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "uncommon",
+    "level": 5,
+    "defence": 3,
+    "stamina": 8,
+    "reqlevel": 5,
+    "crit": 2,
+    "mastery": 5,
+    "resilience": 20,
+    "image": "obs_ring_blue",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 20% вашего физического урона в урон льдом.",
+    "consumable": "none",
+    "buff_id": 886,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2543": {
+    "id": 2543,
+    "categ_id": 14,
+    "name": "Малая Термическая Аномалия",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "uncommon",
+    "level": 5,
+    "defence": 3,
+    "stamina": 8,
+    "reqlevel": 5,
+    "crit": 2,
+    "mastery": 5,
+    "resilience": 20,
+    "image": "obs_ring_blue",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 20% вашего физического урона в урон льдом.",
+    "consumable": "none",
+    "buff_id": 889,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2544": {
+    "id": 2544,
+    "categ_id": 14,
+    "name": "Малое Кольцо Силы Земли",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "uncommon",
+    "level": 5,
+    "minhit": 2,
+    "maxhit": 3,
+    "defence": 8,
+    "stamina": 8,
+    "reqlevel": 5,
+    "resilience": 20,
+    "image": "obs_ring_green",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 20% вашего физического урона в урон землей.",
+    "consumable": "none",
+    "buff_id": 890,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2545": {
+    "id": 2545,
+    "categ_id": 18,
+    "name": "Петиция 9000",
+    "maxcnt": 100,
+    "type": "other",
+    "rarity": "rare",
+    "image": "sheet3",
+    "price": 1,
+    "personal": 1,
+    "instruction": "Двойной клик: прочитать. ",
+    "consumable": "attackmob",
+    "bottleparams": {
+      "locations": 7,
+      "attackmob": {
+        "360x3": 20,
+        "361x3": 20,
+        "362x3": 20,
+        "360x4,361x4,362x4,363x1,364x1": 20,
+        "360x2,361x2,362x2": 50,
+        "360x3,361x3,362x3": 50,
+        "360x1,361x1,362x1": 20
+      }
+    },
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2546": {
+    "id": 2546,
+    "categ_id": 23,
+    "name": "Малая Сфера Стихий",
+    "maxcnt": 1000,
+    "type": "other",
+    "rarity": "uncommon",
+    "image": "elem_sphere",
+    "price": 1,
+    "descr": "Содержит в себе крошечную часть мощи Стихий. Не путать с ситхами. Хотя как хотите. В любом случае, отнесите этот предмет Конфлуксиону, он разберется.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
+  },
+  "2547": {
+    "id": 2547,
+    "categ_id": 23,
+    "name": "Лотерея в честь девятилетия игры",
+    "maxcnt": 100,
+    "type": "lottery",
+    "rarity": "rare",
+    "level": 1,
+    "image": "lott2018_1",
+    "price": 1000,
+    "personal": 1,
+    "descr": "Билет лотереи в честь девятой годовщины мира Утраченной Магии! Розыгрыш состоится 31 августа 2019 в 21-00.<br>Разыгрываются следующие призы: <br>1х Большая Сфера Стихий (ингредиент для получения эпического ювелирного изделия)<br>3х Любой конструктор на выбор<br>5х Любой предмет экипировки из магазина на выбор<br>7х Любой питомец (кроме уникальных) на выбор<br>9х Кошелек с 1000 Золота.",
+    "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
+    "consumable": "none",
+    "material": "cotton",
+    "validtime": 2592000,
+    "changed": "1"
+  },
+  "2548": {
+    "id": 2548,
+    "categ_id": 23,
+    "name": "Подарок в честь 9-го ДР игры",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "epic",
+    "image": "present2018_1",
+    "personal": 1,
+    "descr": "Каждому игроку полагается такой подарок! Но в вашем все самое лучшее!",
+    "instruction": "Двойной клик: открыть.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2545x5": 100,
+          "2547x1": 100,
+          "2449x1": 100,
+          "2152x2": 100,
+          "2151x3": 100,
+          "2263x2": 100,
+          "2549x1": 100,
+          "2131x1": 100,
+          "475x5": 100,
+          "2551x1": 10,
+          "2550x1": 100
+        }
+      },
+      "loot": {
+        "default": {
+          "2541": 33,
+          "2543": 33,
+          "2544": 34
+        }
+      }
+    },
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2549": {
+    "id": 2549,
+    "categ_id": 23,
+    "name": "Праздничный Знак 9",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "uncommon",
+    "image": "9_straight",
+    "price": 1,
+    "personal": 1,
+    "descr": "Ура, праздник!",
+    "consumable": "none",
+    "material": "metal",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2550": {
+    "id": 2550,
+    "categ_id": 23,
+    "name": "Коробка со Стихийными Настоями",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "uncommon",
+    "image": "copper_box",
+    "price": 1000,
+    "personal": 1,
+    "descr": "Внутри находятся <br>12 Стихийных настоев.",
+    "instruction": "Двойной клик: открыть.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2559x4": 100,
+          "2560x4": 100,
+          "2561x4": 100
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2551": {
+    "id": 2551,
+    "categ_id": 23,
+    "name": "Яркий Праздничный Знак 9",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "rare",
+    "image": "9_lgbt",
+    "price": 1,
+    "personal": 1,
+    "descr": "Ура, праздник!",
+    "consumable": "none",
+    "material": "metal",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2552": {
+    "id": 2552,
+    "categ_id": 14,
+    "name": "Редкое Малое Пылающее Обсидиановое Кольцо",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "rare",
+    "level": 5,
+    "minhit": 2,
+    "maxhit": 3,
+    "defence": 2,
+    "stamina": 8,
+    "reqlevel": 5,
+    "resilience": 20,
+    "image": "obs_ring_red",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 30% вашего физического урона в урон огнем.",
+    "consumable": "none",
+    "buff_id": 881,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2553": {
+    "id": 2553,
+    "categ_id": 14,
+    "name": "Редкая Малая Термическая Аномалия",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "rare",
+    "level": 5,
+    "defence": 3,
+    "stamina": 8,
+    "reqlevel": 5,
+    "crit": 2,
+    "mastery": 5,
+    "resilience": 20,
+    "image": "obs_ring_blue",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 30% вашего физического урона в урон льдом.",
+    "consumable": "none",
+    "buff_id": 886,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2554": {
+    "id": 2554,
+    "categ_id": 14,
+    "name": "Редкое Малое Кольцо Силы Земли",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "rare",
+    "level": 5,
+    "minhit": 2,
+    "maxhit": 3,
+    "defence": 8,
+    "stamina": 8,
+    "reqlevel": 5,
+    "resilience": 20,
+    "image": "obs_ring_green",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 30% вашего физического урона в урон землей.",
+    "consumable": "none",
+    "buff_id": 887,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2555": {
+    "id": 2555,
+    "categ_id": 23,
+    "name": "Легендарная Лотерея в честь девятилетия игры",
+    "maxcnt": 100,
+    "type": "lottery",
+    "rarity": "legend",
+    "level": 1,
+    "image": "lott2018_2",
+    "price": 1000,
+    "personal": 1,
+    "descr": "Билет лотереи в честь девятой годовщины мира Утраченной Магии! Розыгрыш состоится 31 августа 2019 в 21-00.<br>Разыгрываются следующие призы: <br>1х Легендарное оружие на выбор победителя. Бафф можно будет выбрать из существующих легендарных или предложить свой<br>2х Симулякр любых доступных в продаже настоев<br>3х Большая Сфера Стихий (ингредиент для получения эпического ювелирного изделия)<br>5х Любой конструктор на выбор<br>Каждый билет с номером, кратным 20, также выиграет 10 Лаббитов!",
+    "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
+    "consumable": "none",
+    "material": "cotton",
+    "validtime": 2592000,
+    "changed": "1"
+  },
+  "2556": {
+    "id": 2556,
+    "categ_id": 23,
+    "name": "Премиум Подарок в честь 9-го ДР игры",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "legend",
+    "image": "present2018_2",
+    "personal": 1,
+    "descr": "А вот такое не всем подряд дарят!",
+    "instruction": "Двойной клик: открыть.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2545x5": 100,
+          "2555x1": 100,
+          "2152x2": 100,
+          "2151x3": 100,
+          "2549x1": 100,
+          "475x5": 100,
+          "2551x1": 10,
+          "2550x1": 100
+        }
+      },
+      "loot": {
+        "default": {
+          "2552": 33,
+          "2553": 33,
+          "2554": 34
+        }
+      }
+    },
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2557": {
+    "id": 2557,
+    "categ_id": 23,
+    "name": "Премиум Подарок в честь 9-го ДР игры",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "legend",
+    "image": "present2018_2",
+    "price": 1000,
+    "personal": 1,
+    "descr": "При распаковке дает супер премиум подарок с билетом легендарной лотереи и случайным редким кольцом стихий, а также расходниками как в подарке для игрока от КОТа!",
+    "consumable": "none",
+    "validtime": 432000,
+    "giveitem": 2556,
+    "changed": "1"
+  },
+  "2558": {
+    "id": 2558,
+    "categ_id": 23,
+    "name": "Коробка со Стихийными Настоями ТЕСТ",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "uncommon",
+    "image": "copper_box",
+    "price": 1000,
+    "personal": 1,
+    "descr": "Внутри находятся <br>12 Стихийных настоев.",
+    "instruction": "Двойной клик: открыть.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2559x4": 100,
+          "2560x4": 100,
+          "2561x4": 100
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2559": {
+    "id": 2559,
+    "categ_id": 20,
+    "name": "Настой адепта огня",
+    "maxcnt": 100,
+    "type": "bottle",
+    "rarity": "rare",
+    "level": 10,
+    "reqlevel": 10,
+    "image": "fire_potion",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Преобразует 30% вашего урона в урон огнем и дает защиту от огня на этот размен ударами.",
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "bottleparams": {
+      "type": "fire",
+      "cooldown": 10,
+      "strictreqs": [{
+        "param": "level",
+        "type": ">",
+        "value": "6"
+      }],
+      "effects": [{
+        "type": "buff",
+        "value": "891"
+      }]
+    },
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2560": {
+    "id": 2560,
+    "categ_id": 20,
+    "name": "Настой адепта льда",
+    "maxcnt": 100,
+    "type": "bottle",
+    "rarity": "rare",
+    "level": 10,
+    "reqlevel": 10,
+    "image": "ice_potion",
+    "price": 100,
+    "personal": 1,
+    "descr": "Преобразует 30% вашего урона в урон льдом и дает защиту от льда на этот размен ударами.",
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "bottleparams": {
+      "type": "ice",
+      "cooldown": 10,
+      "strictreqs": [{
+        "param": "level",
+        "type": ">",
+        "value": "6"
+      }],
+      "effects": [{
+        "type": "buff",
+        "value": "892"
+      }]
+    },
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2561": {
+    "id": 2561,
+    "categ_id": 20,
+    "name": "Настой адепта земли",
+    "maxcnt": 100,
+    "type": "bottle",
+    "rarity": "rare",
+    "level": 10,
+    "reqlevel": 10,
+    "image": "earth_potion",
+    "price": 100,
+    "personal": 1,
+    "descr": "Преобразует 30% вашего урона в урон землей и дает защиту от земли на этот размен ударами.",
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "bottleparams": {
+      "type": "earth",
+      "cooldown": 10,
+      "strictreqs": [{
+        "param": "level",
+        "type": ">",
+        "value": "6"
+      }],
+      "effects": [{
+        "type": "buff",
+        "value": "893"
+      }]
+    },
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2562": {
+    "id": 2562,
+    "categ_id": 23,
+    "name": "Средняя Сфера Стихий",
+    "maxcnt": 1000,
+    "type": "other",
+    "rarity": "rare",
+    "image": "elem_sphere",
+    "price": 1,
+    "personal": 1,
+    "descr": "Содержит в себе часть мощи Стихий.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
+  },
+  "2563": {
+    "id": 2563,
+    "categ_id": 23,
+    "name": "Конверт с билетом Лотереи в честь ДР 2019",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "legend",
+    "image": "letter",
+    "price": 200000,
+    "personal": 1,
+    "instruction": "Двойной клик: вскрыть конверт и получить билет.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "2555": 100
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2564": {
+    "id": 2564,
+    "categ_id": 14,
+    "name": "Редкое Малое Кольцо Бури Стихий",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "rare",
+    "level": 5,
+    "minhit": 2,
+    "maxhit": 3,
+    "defence": 2,
+    "stamina": 8,
+    "reqlevel": 5,
+    "resilience": 20,
+    "image": "random_elem_ring",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Может превратить часть вашего урона в урон одной или несколькими стихиями.",
+    "consumable": "none",
+    "buff_id": 894,
+    "material": "ring",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2565": {
+    "id": 2565,
+    "categ_id": 23,
+    "name": "Редкое Малое Кольцо Бури Стихий",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "rare",
+    "image": "random_elem_ring",
+    "price": 1000,
+    "personal": 1,
+    "descr": "С праздником! Спасибо что играешь =)",
+    "consumable": "none",
+    "validtime": 432000,
+    "giveitem": 2564,
+    "changed": "1"
+  },
+  "2566": {
+    "id": 2566,
+    "categ_id": 14,
+    "name": "МЕГА Кольцо Бури Стихий",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "legend",
+    "level": 5,
+    "minhit": 2,
+    "maxhit": 3,
+    "defence": 2,
+    "stamina": 8,
+    "reqlevel": 5,
+    "resilience": 20,
+    "image": "random_elem_ring",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Может превратить часть вашего урона в урон одной или несколькими стихиями.",
+    "consumable": "none",
+    "buff_id": 895,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2567": {
+    "id": 2567,
+    "categ_id": 23,
+    "name": "Малая Аура Пламени",
+    "maxcnt": 1,
+    "type": "rune",
+    "rarity": "rare",
+    "level": 7,
+    "maxdur": 100,
+    "strength": 3,
+    "agility": 3,
+    "stamina": 3,
+    "reqlevel": 7,
+    "image": "aurafire2",
+    "price": 1,
+    "personal": 1,
+    "descr": "При нанесении или получении урона наносит сопернику от 1 до 125 единиц урона огнем. Поглощает 50% урона льдом. Аура нестабильна и разрушается через 3 дня.",
+    "consumable": "none",
+    "buff_id": 398,
+    "material": "cotton",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2568": {
+    "id": 2568,
+    "categ_id": 23,
+    "name": "Малая Аура Холода",
+    "maxcnt": 1,
+    "type": "rune",
+    "rarity": "rare",
+    "level": 7,
+    "maxdur": 100,
+    "strength": 3,
+    "agility": 3,
+    "stamina": 3,
+    "reqlevel": 7,
+    "image": "auraice2",
+    "price": 1,
+    "personal": 1,
+    "descr": "При получении урона наносит сопернику 75 единиц урона льдом. Поглощает 50% урона огнем. Аура нестабильна и разрушается через 3 дня.",
+    "consumable": "none",
+    "buff_id": 399,
+    "material": "cotton",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2569": {
+    "id": 2569,
+    "categ_id": 23,
+    "name": "Малая Аура Камня",
+    "maxcnt": 1,
+    "type": "rune",
+    "rarity": "rare",
+    "level": 7,
+    "maxdur": 100,
+    "strength": 3,
+    "agility": 3,
+    "stamina": 3,
+    "reqlevel": 7,
+    "image": "auraearth2",
+    "price": 1,
+    "personal": 1,
+    "descr": "Каждый ход наносит сопернику 60 единиц урона землей. Поглощает 50% урона воздухом. Аура нестабильна и разрушается через 3 дня.",
+    "consumable": "none",
+    "buff_id": 400,
+    "material": "cotton",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2570": {
+    "id": 2570,
+    "categ_id": 23,
+    "name": "Малая Аура Бури",
+    "maxcnt": 1,
+    "type": "rune",
+    "rarity": "rare",
+    "level": 7,
+    "maxdur": 100,
+    "strength": 3,
+    "agility": 3,
+    "stamina": 3,
+    "reqlevel": 7,
+    "image": "auraair2",
+    "price": 1,
+    "personal": 1,
+    "descr": "При попадании по сопернику наносит 75 единиц урона воздухом. Поглощает 50% урона землей. Аура нестабильна и разрушается через 3 дня.",
+    "consumable": "none",
+    "buff_id": 401,
+    "material": "cotton",
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2571": {
+    "id": 2571,
+    "categ_id": 31,
+    "name": "Пояс охотника за Стихиями",
+    "type": "belt",
+    "rarity": "epic",
+    "level": 10,
+    "maxdur": 250,
+    "defence": 2,
+    "stamina": 2,
+    "reqlevel": 10,
+    "image": "belt_fat",
+    "price": 80000,
+    "becomepersonal": 1,
+    "descr": "Содержит 8 ячеек, в которые помещается до 160 банок или других полезных в бою вещей. Уменьшает время восстановления всех стихийных эликсиров на 3 хода.",
+    "consumable": "none",
+    "bottleparams": {
+      "slots": 8,
+      "maxcnt": 20,
+      "cooldowns": {
+        "fire": -3,
+        "ice": -3,
+        "earth": -3
+      }
+    },
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2572": {
+    "id": 2572,
+    "categ_id": 14,
+    "name": "Кольцо Властелина Стихий",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 44,
+    "maxhit": 88,
+    "defence": 46,
+    "stamina": 77,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 4,
+    "resilience": 220,
+    "image": "random_elem_ring",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "instruction": "Эпический бафф: 20% вашего физического урона вместо этого могут нанестись уроном одной или несколькими стихиями, с вероятностью 35% для каждой стихии.",
+    "consumable": "none",
+    "buff_id": 894,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2573": {
+    "id": 2573,
+    "categ_id": 14,
+    "name": "Кольцо Мастера Стихий",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 21,
+    "maxhit": 31,
+    "defence": 41,
+    "stamina": 56,
+    "reqlevel": 20,
+    "crit": 3,
+    "resilience": 140,
+    "image": "random_elem_ring",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Может превратить часть вашего урона в урон одной или несколькими стихиями.",
+    "consumable": "none",
+    "buff_id": 894,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2574": {
+    "id": 2574,
+    "categ_id": 14,
+    "name": "Кольцо Адепта Стихий",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 7,
+    "minhit": 11,
+    "maxhit": 21,
+    "defence": 15,
+    "stamina": 30,
+    "reqlevel": 7,
+    "crit": 2,
+    "resilience": 50,
+    "image": "random_elem_ring",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Может превратить часть вашего урона в урон одной или несколькими стихиями.",
+    "consumable": "none",
+    "buff_id": 894,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2575": {
+    "id": 2575,
+    "categ_id": 23,
+    "name": "Большая Сфера Стихий",
+    "maxcnt": 1000,
+    "type": "other",
+    "rarity": "epic",
+    "image": "elem_sphere",
+    "price": 1,
+    "personal": 1,
+    "descr": "Средоточие мощи Стихий. Эту сферу можно обменять на эпическое ювелирное изделие у Конфлуксиона на Центральной Площади в неделю стихий.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
+  },
+  "2576": {
+    "id": 2576,
+    "categ_id": 4,
+    "name": "Лега Ckacka прототип",
+    "maxcnt": 1,
+    "type": "lweapon",
+    "rarity": "legend",
+    "level": 20,
+    "maxdur": 390,
+    "minhit": 200,
+    "maxhit": 500,
+    "defence": 588,
+    "strength": 171,
+    "agility": 171,
+    "stamina": 500,
+    "reqlevel": 20,
+    "reqparagon": 60,
+    "dodge": 20,
+    "crit": 20,
+    "resilience": 1250,
+    "image": "dragon_tooth",
+    "price": 3900000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 863,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2577": {
+    "id": 2577,
+    "categ_id": 23,
+    "name": "Возмездие Стихий",
+    "maxcnt": 1,
+    "type": "rune",
+    "rarity": "epic",
+    "level": 20,
+    "maxdur": 100,
+    "strength": 7,
+    "agility": 7,
+    "stamina": 7,
+    "reqlevel": 20,
+    "mastery": 120,
+    "resilience": 120,
+    "image": "elem_aura",
+    "price": 1,
+    "personal": 1,
+    "descr": "В начале каждого боя дарует владельцу могущественную поддержку одной из четырех стихий.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2578": {
+    "id": 2578,
+    "categ_id": 15,
+    "name": "Талисман Конфлуксиона",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 80,
+    "stamina": 68,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 12,
+    "mastery": 109,
+    "resilience": 131,
+    "image": "epic_trinket1",
+    "price": 5000000,
+    "personal": 1,
+    "instruction": "Эпический бафф: повышает урон и защиту от стихий, кровотечения и яда на 25%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 749,
+    "material": "glass",
+    "changed": "1"
+  },
+  "2579": {
+    "id": 2579,
+    "categ_id": 15,
+    "name": "Головоломка Огня",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 104,
+    "stamina": 53,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 9,
+    "crit": 4,
+    "resilience": 220,
+    "image": "epic_trinket2",
+    "price": 80000,
+    "personal": 1,
+    "instruction": "Эпический бафф: с небольшой вероятностью наносит огромный урон огнём.",
+    "consumable": "none",
+    "buff_id": 877,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2580": {
+    "id": 2580,
+    "categ_id": 14,
+    "name": -274,
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 72,
+    "maxhit": 73,
+    "defence": 28,
+    "stamina": 88,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "resilience": 220,
+    "image": "epic_ring1",
+    "price": 5000000,
+    "personal": 1,
+    "becomepersonal": 1,
+    "instruction": "Эпический бафф: каждый ход наносит сопернику 20 единиц урона землей и возвращает 30% полученного урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 846,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2581": {
+    "id": 2581,
+    "categ_id": 14,
+    "name": "Дар Горного Короля",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 100,
+    "stamina": 88,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 5,
+    "resilience": 220,
+    "image": "epic_ring2",
+    "price": 5000000,
+    "personal": 1,
+    "instruction": "Эпический бафф: снижает время восстановления способностей в бою и дает 50% зашиты от яда.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 845,
+    "material": "glass",
+    "changed": "1"
+  },
+  "2582": {
+    "id": 2582,
+    "categ_id": 15,
+    "name": "Подвеска Заблуждений",
+    "maxcnt": 1,
+    "type": "neck",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 76,
+    "stamina": 85,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 6,
+    "crit": 6,
+    "resilience": 160,
+    "image": "epic_neck1",
+    "price": 8880000,
+    "personal": 1,
+    "instruction": "Эпический бафф: накапливает 2 заряда силы каждый размен ударами, но не более 5.",
+    "consumable": "none",
+    "buff_id": 879,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2583": {
+    "id": 2583,
+    "categ_id": 13,
+    "name": "Пылающее ожерелье",
+    "maxcnt": 1,
+    "type": "neck",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 10,
+    "maxhit": 20,
+    "defence": 62,
+    "strength": 26,
+    "agility": 18,
+    "stamina": 45,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 4,
+    "crit": 6,
+    "mastery": 68,
+    "resilience": 120,
+    "image": "epic_neck2",
+    "price": 3000000,
+    "personal": 1,
+    "instruction": "Эпический бафф: с вероятностью 15% увеличивает КД всех способностей оппонента на 1.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 873,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2584": {
+    "id": 2584,
+    "categ_id": 14,
+    "name": "Малое Пылающее Обсидиановое Кольцо",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "uncommon",
+    "level": 5,
+    "minhit": 2,
+    "maxhit": 3,
+    "defence": 2,
+    "stamina": 8,
+    "reqlevel": 5,
+    "resilience": 20,
+    "image": "obs_ring_red",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Превращает 20% вашего физического урона в урон огнем.",
+    "consumable": "none",
+    "buff_id": 888,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2585": {
+    "id": 2585,
+    "categ_id": 5,
+    "name": "Щит Acuk прототип",
+    "maxcnt": 1,
+    "type": "shield",
+    "rarity": "legend",
+    "level": 20,
+    "maxdur": 1000,
+    "defence": 1325,
+    "stamina": 851,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 20,
+    "resilience": 1325,
+    "image": "cogwheel_shield_2",
+    "price": 7700000,
+    "personal": 1,
+    "descr": "купи себе алмазное перо и сам тут пиши что хочешь если этот текст не нравится (с) Leo",
+    "consumable": "none",
+    "buff_id": 847,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2586": {
+    "id": 2586,
+    "categ_id": 9,
+    "name": "Слоупок",
+    "maxcnt": 1,
+    "type": "gloves",
+    "rarity": "legend",
+    "level": 20,
+    "maxdur": 800,
+    "minhit": 1,
+    "maxhit": 1000,
+    "reqlevel": 20,
+    "image": "alive_slowpoke",
+    "price": 1,
+    "personal": 1,
+    "descr": "Чудо инженерной мысли.",
+    "consumable": "none",
+    "buff_id": 895,
+    "material": "organic",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2587": {
+    "id": 2587,
+    "categ_id": 14,
+    "name": "Кольцо Властелина Стихий lite",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 21,
+    "maxhit": 42,
+    "defence": 43,
+    "stamina": 52,
+    "reqlevel": 20,
+    "crit": 3,
+    "resilience": 111,
+    "image": "random_elem_ring",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "instruction": "Эпический бафф: 20% вашего физического урона вместо этого могут нанестись уроном одной или несколькими стихиями, с вероятностью 35% для каждой стихии.",
+    "consumable": "none",
+    "buff_id": 894,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2588": {
+    "id": 2588,
+    "categ_id": 15,
+    "name": "Подвеска Заблуждений lite",
+    "maxcnt": 1,
+    "type": "neck",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 48,
+    "stamina": 68,
+    "reqlevel": 20,
+    "dodge": 3,
+    "crit": 3,
+    "resilience": 90,
+    "image": "epic_neck1",
+    "price": 8880000,
+    "personal": 1,
+    "instruction": "Эпический бафф: накапливает 2 заряда терпения каждый размен ударами, но не более 5.",
+    "consumable": "none",
+    "buff_id": 879,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2589": {
+    "id": 2589,
+    "categ_id": 14,
+    "name": "Дар Горного Короля lite",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 64,
+    "stamina": 56,
+    "reqlevel": 20,
+    "crit": 5,
+    "resilience": 86,
+    "image": "epic_ring2",
+    "price": 5000000,
+    "personal": 1,
+    "instruction": "Эпический бафф: снижает время восстановления способностей в бою и дает 50% зашиты от яда.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 845,
+    "material": "glass",
+    "changed": "1"
+  },
+  "2590": {
+    "id": 2590,
+    "categ_id": 14,
+    "name": "-274 lite",
+    "maxcnt": 1,
+    "type": "ring",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 60,
+    "maxhit": 61,
+    "defence": 27,
+    "stamina": 56,
+    "reqlevel": 20,
+    "resilience": 86,
+    "image": "epic_ring1",
+    "price": 5000000,
+    "personal": 1,
+    "becomepersonal": 1,
+    "instruction": "Эпический бафф: каждый ход наносит сопернику 20 единиц урона землей и возвращает 30% полученного урона.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 846,
+    "material": "ring",
+    "changed": "1"
+  },
+  "2591": {
+    "id": 2591,
+    "categ_id": 15,
+    "name": "Головоломка Огня lite",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 58,
+    "stamina": 56,
+    "reqlevel": 20,
+    "dodge": 4,
+    "crit": 3,
+    "resilience": 86,
+    "image": "epic_trinket2",
+    "price": 80000,
+    "personal": 1,
+    "instruction": "Эпический бафф: с небольшой вероятностью наносит огромный урон огнём.",
+    "consumable": "none",
+    "buff_id": 877,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2592": {
+    "id": 2592,
+    "categ_id": 15,
+    "name": "Талисман Конфлуксиона lite",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 58,
+    "stamina": 56,
+    "reqlevel": 20,
+    "crit": 5,
+    "mastery": 61,
+    "resilience": 86,
+    "image": "epic_trinket1",
+    "price": 5000000,
+    "personal": 1,
+    "instruction": "Эпический бафф: повышает урон и защиту от стихий, кровотечения и яда на 25%.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 749,
+    "material": "glass",
+    "changed": "1"
+  },
+  "2593": {
+    "id": 2593,
+    "categ_id": 13,
+    "name": "Пылающее ожерелье lite",
+    "maxcnt": 1,
+    "type": "neck",
+    "rarity": "epic",
+    "level": 20,
+    "minhit": 10,
+    "maxhit": 18,
+    "defence": 40,
+    "strength": 19,
+    "agility": 12,
+    "stamina": 38,
+    "reqlevel": 20,
+    "dodge": 1,
+    "crit": 2,
+    "mastery": 47,
+    "resilience": 99,
+    "image": "epic_neck2",
+    "price": 3000000,
+    "personal": 1,
+    "instruction": "Эпический бафф: с вероятностью 15% увеличивает КД всех способностей оппонента на 1.",
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 873,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2594": {
+    "id": 2594,
+    "categ_id": 25,
+    "name": "Расширяющая жидкость",
+    "maxcnt": 10,
+    "type": "other",
+    "rarity": "epic",
+    "image": "pirate_heal",
+    "price": 100000,
+    "personal": 1,
+    "descr": "Позволяет держать в голове на одну боевую способность больше. НАВЕЧНО!",
+    "instruction": "Двойной клик: выпить и получить слот. Сработает, только если у вас в журнале способностей еще есть место для дополнительного слота (обычно эффект доступен дважды для персонажа).",
+    "consumable": "addextraslot",
+    "material": "cotton",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2595": {
+    "id": 2595,
+    "categ_id": 23,
+    "name": "Загадочный ящик",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "rare",
+    "image": "puzzle_box",
+    "personal": 1,
+    "descr": "Возможное содержимое: Расширяющая жидкость (3%), Акула 3.0 (3%), 15 стихийных тоников (13%), 15 лицензионных настоев (11%)",
+    "instruction": "Двойной клик: сорвать крышку и добраться до содержимого.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "2594x1": 3,
+          "2596x1": 3,
+          "2559x15": 13,
+          "2560x15": 13,
+          "2561x15": 13,
+          "600x15": 11,
+          "601x15": 11,
+          "566x15": 11,
+          "565x15": 11,
+          "475x15": 11
+        }
+      }
+    },
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2596": {
+    "id": 2596,
+    "categ_id": 3,
+    "name": "Меч Акула 3.0",
+    "maxcnt": 1,
+    "type": "weapon",
+    "rarity": "rare",
+    "level": 17,
+    "maxdur": 175,
+    "minhit": 18,
+    "maxhit": 138,
+    "defence": -5,
+    "agility": 8,
+    "reqlevel": 17,
+    "reqagility": 37,
+    "image": "shark_blade",
+    "price": 45000,
+    "becomepersonal": 1,
+    "descr": "Тут уж либо справка, либо Акула 3.0",
+    "consumable": "none",
+    "bottleparams": {
+      "socket": {
+        "0": 80,
+        "1": 19,
+        "2": 1,
+        "3": 0
+      }
+    },
+    "material": "metal",
+    "changed": "1"
+  },
+  "2597": {
+    "id": 2597,
+    "categ_id": 13,
+    "name": "Символ Зла 2.0",
+    "maxcnt": 1,
+    "type": "neck",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 75,
+    "stamina": 131,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 5,
+    "image": "ghost_sigil",
+    "price": 3000000,
+    "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 845,
+    "material": "metal",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2598": {
+    "id": 2598,
+    "categ_id": 15,
+    "name": "Парадокс",
+    "maxcnt": 1,
+    "type": "trinket",
+    "rarity": "epic",
+    "level": 20,
+    "defence": 104,
+    "stamina": 88,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "crit": 5,
+    "resilience": 175,
+    "image": "catshr_pet_icon",
+    "price": 3000000,
+    "personal": 1,
+    "consumable": "none",
+    "uniq": 1,
+    "buff_id": 894,
+    "material": "glass",
+    "changed": "1"
+  },
+  "2599": {
+    "id": 2599,
+    "categ_id": 23,
+    "name": "Набор Чароискателя",
+    "maxcnt": 1,
+    "type": "other",
+    "rarity": "epic",
+    "image": "enchant_01",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Может быть использован, чтобы добыть Ангельские Чары Урона. Повторно можно использовать не ранее, чем через 45 часов. Срок жизни предмета - 10 дней.",
+    "instruction": "Двойной клик: добыть Ангельские Чары Урона.",
+    "consumable": "printangel",
+    "validtime": 864000,
+    "charges": 5,
+    "cooldown": 45,
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2600": {
+    "id": 2600,
+    "categ_id": 18,
+    "name": "Свиток призыва скелета",
+    "maxcnt": 100,
+    "type": "other",
+    "rarity": "uncommon",
+    "image": "page_for_skeleton",
+    "price": 1,
+    "personal": 1,
+    "descr": "Скелеты - древнейшие обитатели мира (id=2). Кроме того, они же - его истинные хозяева. Не верите? Скелет прямо сейчас внутри вас! Учтите, что призванный скелет может попытаться атаковать вас! Срабатывает только на ЦП.",
+    "instruction": "Двойной клик: прочитать. ",
+    "consumable": "attackmob",
+    "bottleparams": {
+      "locations": 7,
+      "attackmob": {
+        "2x1": 100
+      }
+    },
+    "changed": "1"
+  },
+  "2601": {
+    "id": 2601,
+    "categ_id": 22,
+    "name": "Конфета «Право на эпик»",
+    "maxcnt": 1000,
+    "type": "other",
+    "rarity": "rare",
+    "image": "arcana_warlock_buff",
+    "price": 200,
+    "personal": 1,
+    "descr": "Моментально восстанавливает 25% здоровья в бою. Не дает эффекта неустойчивости.",
+    "instruction": "Поместите в пояс и лизните в бою.",
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "bottleparams": {
+      "type": "nyhp",
+      "cooldown": 3,
+      "effects": [{
+        "type": "buff",
+        "value": "908"
+      }, {
+        "param": "candieseaten",
+        "type": "+",
+        "value": "1"
+      }]
+    },
+    "material": "glass",
+    "changed": 1,
+    "indacache": 1,
+    "monitoring": "1"
+  },
+  "2602": {
+    "id": 2602,
+    "categ_id": 23,
+    "name": "Упакованный случайный предмет экипировки из магазина",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "epic",
+    "level": 1,
+    "reqlevel": 1,
+    "image": "mystery_box_1",
+    "personal": 1,
+    "descr": "Внутри находится какой-то предмет экипировки из числа тех, что продаются в магазине. Вероятность любого предмета одинакова.",
+    "instruction": "Двойной клик - открыть сундук.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "1058x1": 20,
+          "1423x1": 20,
+          "171x1": 20,
+          "145x1": 20,
+          "58x1": 20,
+          "160x1": 20,
+          "268x1": 20,
+          "161x1": 20,
+          "283x1": 20,
+          "179x1": 20,
+          "1507x1": 20,
+          "580x1": 20,
+          "232x1": 20,
+          "831x1": 20,
+          "328x1": 20,
+          "322x1": 20,
+          "372x1": 20,
+          "756x1": 20,
+          "408x1": 20,
+          "485x1": 20,
+          "1083x1": 20,
+          "449x1": 20,
+          "1084x1": 20,
+          "581x1": 20,
+          "1085x1": 20,
+          "1513x1": 20,
+          "545x1": 20,
+          "1266x1": 20,
+          "1007x1": 20,
+          "542x1": 20,
+          "972x1": 20,
+          "607x1": 20,
+          "1043x1": 20,
+          "608x1": 20,
+          "689x1": 20,
+          "1119x1": 20,
+          "1338x1": 20,
+          "1443x1": 20,
+          "1279x1": 20,
+          "946x1": 20,
+          "1306x1": 20,
+          "1163x1": 20,
+          "1354x1": 20,
+          "1512x1": 20,
+          "1663x1": 20,
+          "1374x1": 20,
+          "2228x1": 20,
+          "1415x1": 20,
+          "2227x1": 20,
+          "1642x1": 20,
+          "46x1": 20,
+          "55x1": 20,
+          "144x1": 20,
+          "401x1": 20,
+          "402x1": 20
+        }
+      }
+    },
+    "material": "wood",
+    "changed": "1"
+  },
+  "2603": {
+    "id": 2603,
+    "categ_id": 23,
+    "name": "Лотерея Черной Пятницы",
+    "maxcnt": 100,
+    "type": "lottery",
+    "rarity": "legend",
+    "level": 1,
+    "image": "lott2018_2",
+    "price": 1000,
+    "personal": 1,
+    "descr": "Билет лотереи Черной Пятницы. Розыгрыш состоится 01.12 в 21-00.<br>Разыгрываются:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>Уникальный фон для персонажа - вам или в подарок<br>3х Конструктор на выбор<br>5х предмет из магазина на выбор",
+    "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
+    "consumable": "none",
+    "material": "cotton",
+    "validtime": 2592000,
+    "changed": "1"
+  },
+  "2604": {
+    "id": 2604,
+    "categ_id": 23,
+    "name": "Сундук Черной Пятницы",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "legend",
+    "image": "pally_lockbox",
+    "price": 1000,
+    "personal": 1,
+    "descr": "Сундук черной пятницы доступен в продаже только до 23:59 30 ноября.<br>Содержит:<br>1. Один случайный предмет экипировки из магазина (с равной вероятностью). <br>2. Акула 3.0.<br>3. Право на трехдневный конструктор.<br>4. Билет лотереи Черной Пятницы. Розыгрыш состоится 01.12 в 21-00.<br>--<br>Разыгрываются:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>Уникальный фон для персонажа - вам или в подарок<br>3х Конструктор на выбор<br>5х предмет из магазина на выбор",
+    "instruction": "Двойной клик: открыть.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2602x1": 100,
+          "2596x1": 100,
+          "2101x1": 100,
+          "2603x1": 100
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2605": {
+    "id": 2605,
+    "categ_id": 5,
+    "name": "Щит Вердаско прототип",
+    "maxcnt": 1,
+    "type": "shield",
+    "rarity": "legend",
+    "level": 20,
+    "maxdur": 1000,
+    "defence": 1325,
+    "stamina": 873,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 20,
+    "resilience": 1300,
+    "image": "eclipse_shield",
+    "price": 7700000,
+    "personal": 1,
+    "descr": "из всех легендарок для нас важнейшей является щит (с) Leo",
+    "consumable": "none",
+    "buff_id": 863,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2606": {
+    "id": 2606,
+    "categ_id": 23,
+    "name": "Билет Новогодней Премиум Лотереи 2020",
+    "maxcnt": 100,
+    "type": "lottery",
+    "rarity": "legend",
+    "level": 1,
+    "image": "ticket2018_2",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Билет дает право на участие в Новогодней Премиум Лотерее в честь нового 2020 года. Розыгрыш состоится 8 января 2020 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>3 Конструкторских предмета<br>5 Предметов экипировки из Магазина<br>5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах<br>7 Кошелей, содержащих по 50 Неолаббитов<br>10 Премиум Эликсиров на 30 дней;<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
+    "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
+    "consumable": "none",
+    "material": "cotton",
+    "validtime": 2592000,
+    "changed": "1"
+  },
+  "2607": {
+    "id": 2607,
+    "categ_id": 23,
+    "name": "Конверт с билетом Новогодней Лотереи 2020",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "legend",
+    "image": "letter",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Внутри содержится билет, который  дает право на участие в Новогодней Премиум Лотерее в честь нового 2020 года. Розыгрыш состоится 8 января 2020 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>3 Конструкторских предмета<br>5 Предметов экипировки из Магазина<br>5 Золотых кошелей, содержащих эквивалент 1000 руб. в Золотых Лаббитах<br>7 Кошелей, содержащих по 50 Неолаббитов<br>10 Премиум Эликсиров на 30 дней;<br>Каждый билет, номер которого заканчивается на 00, получает дополнительный приз - 25 лаббитов на счет персонажа!",
+    "instruction": "Двойной клик: вскрыть конверт и получить билет.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "2606": 100
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2608": {
+    "id": 2608,
+    "categ_id": 23,
+    "name": "Премиум новогодний набор 2020",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "legend",
+    "image": "present2018_2",
+    "personal": 1,
+    "descr": "Внутри:<br>Билет Новогодней Премиум лотереи<br>Маскарадный костюм могущества Шаркспира<br>Детский Тыкатель Монстров<br>Взрослый Тыкатель Монстров<br>Боевая елочная игрушка<br>Новогодний тотем<br>Сладкий подъелочник<br><br>Дополнительно могут попасться (если повезет хоть все) следующие предметы:<br>Новогодний питомец, дающий бафф (20%)<br>Уникальная праздничная гемма (20%)<br>Право на конструкторский предмет на три дня (20%)<br>Коробка с чарами Героев (20%)<br>Ферментированная руна культа (3%)",
+    "instruction": "Двойной клик: открыть.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2606x1": 100,
+          "2319x1": 20,
+          "2239x1": 100,
+          "2496x1": 100,
+          "2109x1": 100,
+          "2110x1": 100,
+          "2111x1": 100,
+          "2101x1": 20,
+          "2088x1": 100,
+          "2495x1": 20,
+          "2468x1": 3,
+          "2169x1": 20
+        }
+      }
+    },
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2609": {
+    "id": 2609,
+    "categ_id": 23,
+    "name": "Подъелочный подарок 2020",
+    "maxcnt": 1,
+    "type": "sunduk",
+    "rarity": "rare",
+    "image": "ny_socks",
+    "personal": 1,
+    "descr": "Содержит замечательные новогодние приятности.",
+    "instruction": "Двойной клик: открыть.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "404x1": 20,
+          "2182x3": 100,
+          "497x1": 100,
+          "2088x1": 100,
+          "2490x1": 30,
+          "2101x1": 10,
+          "2422x1": 100,
+          "2098x3": 100,
+          "639x1": 100,
+          "2610x5": 100
+        }
+      }
+    },
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2610": {
+    "id": 2610,
+    "categ_id": 20,
+    "name": "Праздничный Настой адепта льда",
+    "maxcnt": 100,
+    "type": "bottle",
+    "rarity": "rare",
+    "level": 10,
+    "reqlevel": 10,
+    "image": "icebreaker",
+    "price": 100,
+    "personal": 1,
+    "descr": "Преобразует 30% вашего урона в урон льдом и дает защиту от льда на этот размен ударами.",
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "bottleparams": {
+      "type": "ice",
+      "cooldown": 10,
+      "strictreqs": [{
+        "param": "level",
+        "type": ">",
+        "value": "6"
+      }],
+      "effects": [{
+        "type": "buff",
+        "value": "892"
+      }]
+    },
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2611": {
+    "id": 2611,
+    "categ_id": 8,
+    "name": "Нагрудник Баньши",
+    "maxcnt": 1,
+    "type": "chest",
+    "rarity": "legend",
+    "level": 20,
+    "maxdur": 600,
+    "defence": 286,
+    "stamina": 232,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 20,
+    "mastery": 255,
+    "resilience": 255,
+    "image": "chest_vest",
+    "price": 6000000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 911,
+    "changed": "1"
+  },
+  "2612": {
+    "id": 2612,
+    "categ_id": 23,
+    "name": "Сувенирная чеканная монета",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "rare",
+    "image": "icon_coin",
+    "price": 1,
+    "personal": 1,
+    "descr": "Коту заплатите чеканной монетой, уоооу!",
+    "consumable": "none",
+    "material": "metal",
+    "validtime": 2419200,
+    "changed": "1"
+  },
+  "2613": {
+    "id": 2613,
+    "categ_id": 23,
+    "name": "Белая крыса",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "epic",
+    "image": "mouse",
+    "price": 1,
+    "personal": 1,
+    "descr": "Никогда не дарите животных! Но в ЛМ можно, это же просто игра. Или нет. Как знать...",
+    "consumable": "none",
+    "material": "metal",
+    "validtime": 2419200,
+    "changed": "1"
+  },
+  "2614": {
+    "id": 2614,
+    "categ_id": 23,
+    "name": "Дождик",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "uncommon",
+    "image": "rain",
+    "price": 1,
+    "personal": 1,
+    "descr": "Можно повесить на ёлку или покормить кота.",
+    "consumable": "none",
+    "material": "metal",
+    "validtime": 2419200,
+    "changed": "1"
+  },
+  "2615": {
+    "id": 2615,
+    "categ_id": 24,
+    "name": "Чеканная монета",
+    "maxcnt": 1000,
+    "type": "other",
+    "rarity": "uncommon",
+    "image": "icon_coin",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Коту заплатите чеканной монетой, уоооу.",
+    "instruction": "Можно обменять на праздничные товары у КОТа на ЦП.",
+    "consumable": "none",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2616": {
+    "id": 2616,
+    "categ_id": 18,
+    "name": "Листок 2020",
+    "maxcnt": 100,
+    "type": "other",
+    "rarity": "rare",
+    "image": "prediction_sheet3",
+    "price": 1,
+    "personal": 1,
+    "descr": "На этом листке записано древнее заклинание на ныне забытом и утраченном языке Лукэтлогов. Вне всякого сомнения, если громко прочитать текст на людном месте, даже самый трусливый и беззащитный Лукэтлог выйдет из своего укрытия и доверчиво подставит вам свое пузико. Главный вопрос - кто составит ему компанию...",
+    "instruction": "Двойной клик: использовать. ",
+    "consumable": "attackmob",
+    "bottleparams": {
+      "locations": 7,
+      "attackmob": {
+        "63x3,362x1,348x2,367x1,365x3": 100
+      }
+    },
+    "validtime": 259200,
+    "changed": "1"
+  },
+  "2617": {
+    "id": 2617,
+    "categ_id": 23,
+    "name": "НДПНГ 2020",
+    "maxcnt": 10,
+    "type": "sunduk",
+    "rarity": "uncommon",
+    "level": 3,
+    "image": "package",
+    "personal": 1,
+    "descr": "Содержит 10 Листов 2020.",
+    "instruction": "Двойной клик: вскрыть коробку.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "2616x10": 100
+        }
+      }
+    },
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2618": {
+    "id": 2618,
+    "categ_id": 23,
+    "name": "Набор для праздника",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "epic",
+    "image": "diamond_box",
+    "price": 1,
+    "personal": 1,
+    "descr": "Все, что нужно, чтобы успешно влиться в атмосферу встречи Нового Года 2020 на Центральной Площади:<br>10 Листов призыва<br>Новогодний костюм<br>10 Праздничных настоев льда<br>Дополнительно с вероятностью 1 к 10 может попасться передаваемый новогодний фон.",
+    "instruction": "Двойной клик: вскрыть сундук.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2617x1": 100,
+          "2335x1": 100,
+          "2610x10": 100,
+          "2619x1": 10
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2619": {
+    "id": 2619,
+    "categ_id": 23,
+    "name": "Новогоднее настроение",
+    "maxcnt": 1,
+    "type": "other",
+    "rarity": "rare",
+    "image": "ny_background",
+    "price": 2014,
+    "descr": "При использовании изменит фон персонажа на новогодний. К сожалению, сохранение фонов все еще не готово. Зато это передаваемая версия, и когда-нибудь же сохранение заработает!",
+    "instruction": "Двойной клик - поменять фон персонажа на новогодний.",
+    "consumable": "useeffect",
+    "bottleparams": {
+      "reqs": [{
+        "param": "level",
+        "type": ">=",
+        "value": "2"
+      }],
+      "effects": [{
+        "type": "changeparam",
+        "fullkey": "extrabackground",
+        "value": "3"
+      }, {
+        "type": "system",
+        "text": "C Новым Годом!"
+      }],
+      "misc": {
+        "locationstatus": 1
+      }
+    },
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2620": {
+    "id": 2620,
+    "categ_id": 23,
+    "name": "Набор для праздника",
+    "maxcnt": 1,
+    "type": "present",
+    "rarity": "epic",
+    "image": "diamond_box",
+    "price": 1,
+    "personal": 1,
+    "descr": "УРА!",
+    "consumable": "none",
+    "validtime": 432000,
+    "giveitem": 2618,
+    "changed": "1"
+  },
+  "2621": {
+    "id": 2621,
+    "categ_id": 8,
+    "name": "Нагрудник Даниэлла",
+    "maxcnt": 1,
+    "type": "chest",
+    "rarity": "legend",
+    "level": 20,
+    "maxdur": 600,
+    "defence": 286,
+    "stamina": 312,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "mastery": 255,
+    "resilience": 255,
+    "image": "kroeger",
+    "price": 6000000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 911,
+    "changed": "1"
+  },
+  "2622": {
+    "id": 2622,
+    "categ_id": 23,
+    "name": "Билет февральской лотереи",
+    "maxcnt": 100,
+    "type": "lottery",
+    "rarity": "legend",
+    "level": 1,
+    "image": "bilet",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Билет дает право на участие в февральской Лотерее 2020 года. Розыгрыш состоится 29 февраля 2020 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>3 Конструкторских предмета<br>5 Предметов экипировки из Магазина<br>7 Кошелей, содержащих по 50 Неолаббитов<br>10 Премиум Эликсиров на 30 дней",
+    "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
+    "consumable": "none",
+    "material": "cotton",
+    "validtime": 2592000,
+    "changed": "1"
+  },
+  "2623": {
+    "id": 2623,
+    "categ_id": 23,
+    "name": "Конверт с билетом февральской лотереи",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "legend",
+    "image": "letter",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Внутри содержится билет, который  дает право на участие в февральской Лотерее 2020 года. Розыгрыш состоится 29 февраля 2020 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>3 Конструкторских предмета<br>5 Предметов экипировки из Магазина<br>7 Кошелей, содержащих по 50 Неолаббитов<br>10 Премиум Эликсиров на 30 дней",
+    "instruction": "Двойной клик: вскрыть конверт и получить билет.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "2622": 100
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2624": {
+    "id": 2624,
+    "categ_id": 8,
+    "name": "Куртка Вердаско",
+    "maxcnt": 1,
+    "type": "chest",
+    "rarity": "legend",
+    "level": 20,
+    "maxdur": 400,
+    "defence": 127,
+    "strength": 127,
+    "agility": 127,
+    "stamina": 127,
+    "reqlevel": 20,
+    "reqparagon": 75,
+    "dodge": 20,
+    "mastery": 249,
+    "resilience": 249,
+    "image": "oscomina",
+    "price": 4000000,
+    "personal": 1,
+    "consumable": "none",
+    "buff_id": 911,
+    "changed": "1"
+  },
+  "2625": {
+    "id": 2625,
+    "categ_id": 23,
+    "name": "Мешок Лаббитов",
+    "maxcnt": 1,
+    "type": "other",
+    "rarity": "epic",
+    "image": "moneysack",
+    "price": 1,
+    "personal": 1,
+    "instruction": "Двойной клик: пополнить свой счет на 10 лаббитов.",
+    "consumable": "exchange10",
+    "material": "ring",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2626": {
+    "id": 2626,
+    "categ_id": 7,
+    "name": "Бумажный пакет COVID19",
+    "maxcnt": 1,
+    "type": "head",
+    "rarity": "uncommon",
+    "level": 3,
+    "defence": 6,
+    "agility": 6,
+    "stamina": 6,
+    "reqlevel": 3,
+    "image": "paket",
+    "price": 1,
+    "personal": 1,
+    "descr": "На 30% уменьшает повреждения от комет, цунами, магических катастроф и пандемий.",
+    "instruction": "Надеть на голову, лечь на землю.",
+    "consumable": "none",
+    "material": "metal",
+    "changed": "1"
+  },
+  "2627": {
+    "id": 2627,
+    "categ_id": 20,
+    "name": "Симулякр настоя адепта огня",
+    "maxcnt": 100,
+    "type": "other",
+    "rarity": "epic",
+    "level": 20,
+    "reqlevel": 20,
+    "image": "fire_potion",
+    "price": 100,
+    "personal": 1,
+    "descr": "Дает право на получение настоев адепта огня из королевских запасов в неограниченном количестве.",
+    "consumable": "none",
+    "battleeffect": 1,
+    "target_me": 1,
+    "target_mygroup": 1,
+    "material": "glass",
+    "changed": 1,
+    "indacache": "1"
+  },
+  "2628": {
+    "id": 2628,
+    "categ_id": 23,
+    "name": "100 Лицензионных настоев адепта огня",
+    "maxcnt": 10,
+    "type": "sunduk",
+    "rarity": "rare",
+    "level": 1,
+    "image": "box_type2_orange",
+    "price": 1,
+    "personal": 1,
+    "becomepersonal": 1,
+    "descr": "Внутри находятся 100 Лицензионных настоев адепта огня, хоть на боку коробки и нарисованы настои силы. Сорян!",
+    "instruction": "Двойной клик: открыть коробку.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "randloot": {
+        "default": {
+          "2559x100": 100
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2629": {
+    "id": 2629,
+    "categ_id": 35,
+    "name": "Филигранное сверло",
+    "maxcnt": 100,
+    "type": "holemaker",
+    "rarity": "epic",
+    "level": 5,
+    "image": "sverlo3",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Гарантированно добавляет одно гнездо для геммы в предмете, в котором сейчас не более трех гнезд.",
+    "consumable": "none",
+    "bottleparams": {
+      "chance": 100,
+      "reagent": 871
+    },
+    "changed": "1"
+  },
+  "2630": {
+    "id": 2630,
+    "categ_id": 4,
+    "name": "Лучшая игла Братства",
+    "maxcnt": 1,
+    "type": "lweapon",
+    "rarity": "epic",
+    "level": 20,
+    "maxdur": 350,
+    "minhit": 61,
+    "maxhit": 95,
+    "defence": 2,
+    "strength": 6,
+    "agility": 27,
+    "stamina": 6,
+    "reqlevel": 20,
+    "reqparagon": 15,
+    "reqagility": 30,
+    "dodge": 7,
+    "crit": 7,
+    "mastery": 103,
+    "resilience": 137,
+    "image": "curved_needle_2",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Наносит дополнительный урон ядом.",
+    "consumable": "none",
+    "buff_id": 915,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2631": {
+    "id": 2631,
+    "categ_id": 5,
+    "name": "Лучший щит Братства",
+    "maxcnt": 1,
+    "type": "shield",
+    "rarity": "epic",
+    "level": 20,
+    "maxdur": 400,
+    "minhit": 9,
+    "maxhit": 40,
+    "defence": 84,
+    "strength": 25,
+    "stamina": 15,
+    "reqlevel": 20,
+    "reqparagon": 15,
+    "reqstamina": 30,
+    "crit": 4,
+    "mastery": 100,
+    "resilience": 164,
+    "image": "swordguard_shield_2",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Наносит дополнительный урон ядом.",
+    "consumable": "none",
+    "buff_id": 915,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2632": {
+    "id": 2632,
+    "categ_id": 2,
+    "name": "Лучший клеймор Братства",
+    "maxcnt": 1,
+    "type": "twohandedweapon",
+    "rarity": "epic",
+    "level": 20,
+    "maxdur": 350,
+    "minhit": 126,
+    "maxhit": 158,
+    "defence": 5,
+    "strength": 26,
+    "agility": 4,
+    "stamina": 10,
+    "reqlevel": 20,
+    "reqparagon": 15,
+    "reqstrength": 34,
+    "crit": 7,
+    "mastery": 128,
+    "resilience": 128,
+    "image": "saw_sword_2",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Наносит дополнительный урон ядом.",
+    "consumable": "none",
+    "buff_id": 915,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2633": {
+    "id": 2633,
+    "categ_id": 4,
+    "name": "Лучшая игла Ордена",
+    "maxcnt": 1,
+    "type": "lweapon",
+    "rarity": "epic",
+    "level": 20,
+    "maxdur": 350,
+    "minhit": 61,
+    "maxhit": 95,
+    "defence": 2,
+    "strength": 6,
+    "agility": 27,
+    "stamina": 6,
+    "reqlevel": 20,
+    "reqparagon": 15,
+    "reqagility": 30,
+    "dodge": 7,
+    "crit": 7,
+    "mastery": 103,
+    "resilience": 137,
+    "image": "voltneedle_2",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Наносит дополнительный урон ядом.",
+    "consumable": "none",
+    "buff_id": 915,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2634": {
+    "id": 2634,
+    "categ_id": 5,
+    "name": "Лучший щит Ордена",
+    "maxcnt": 1,
+    "type": "shield",
+    "rarity": "epic",
+    "level": 20,
+    "maxdur": 400,
+    "minhit": 9,
+    "maxhit": 40,
+    "defence": 84,
+    "strength": 25,
+    "stamina": 15,
+    "reqlevel": 20,
+    "reqparagon": 15,
+    "reqstamina": 30,
+    "crit": 4,
+    "mastery": 100,
+    "resilience": 164,
+    "image": "cogwheel_shield_2",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Наносит дополнительный урон ядом.",
+    "consumable": "none",
+    "buff_id": 915,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2635": {
+    "id": 2635,
+    "categ_id": 2,
+    "name": "Лучший хопеш Ордена",
+    "maxcnt": 1,
+    "type": "twohandedweapon",
+    "rarity": "epic",
+    "level": 20,
+    "maxdur": 350,
+    "minhit": 126,
+    "maxhit": 158,
+    "defence": 5,
+    "strength": 26,
+    "agility": 4,
+    "stamina": 10,
+    "reqlevel": 20,
+    "reqparagon": 15,
+    "reqstrength": 34,
+    "crit": 7,
+    "mastery": 128,
+    "resilience": 128,
+    "image": "cogwheel_harvester_2",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Наносит дополнительный урон ядом.",
+    "consumable": "none",
+    "buff_id": 915,
+    "material": "metal",
+    "changed": "1"
+  },
+  "2636": {
+    "id": 2636,
+    "categ_id": 23,
+    "name": "Респиратор",
+    "maxcnt": 100,
+    "type": "other",
+    "rarity": "rare",
+    "image": "respirator",
+    "price": 1,
+    "personal": 1,
+    "descr": "Добыт с босса во время событий весны 2020.",
+    "consumable": "none",
+    "material": "cotton",
+    "changed": "1"
+  },
+  "2637": {
+    "id": 2637,
+    "categ_id": 23,
+    "name": "Забытые Сокровища",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "rare",
+    "level": 1,
+    "reqlevel": 1,
+    "image": "chantbox",
+    "price": 4000,
+    "personal": 1,
+    "descr": "Внутри с равной вероятностью может попасться: один из четырех настоев-токсинов, неолаббит, золотой лаббит, ящик с инструментами, бумажный пакет covid 19, гемма частица счастья, гемма светоч добродетели.<br>Вдобавок к этому может попасться премиум на неделю.",
+    "instruction": "Двойной клик: открыть сундук.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "1499x1": 10,
+          "1500x1": 10,
+          "1501x1": 10,
+          "1502x1": 10,
+          "2353x1": 10,
+          "247x1": 10,
+          "986x1": 10,
+          "2626x1": 10,
+          "1692x1": 10,
+          "997x1": 10
+        }
+      },
+      "randloot": {
+        "default": {
+          "1105x1": 5
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2638": {
+    "id": 2638,
+    "categ_id": 23,
+    "name": "Забытые Сокровища тест стаков",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "rare",
+    "level": 1,
+    "reqlevel": 1,
+    "image": "chantbox",
+    "price": 4000,
+    "personal": 1,
+    "descr": "Внутри с равной вероятностью может попасться: один из четырех настоев-токсинов, неолаббит, золотой лаббит, ящик с инструментами, бумажный пакет covid 19, гемма частица счастья, гемма светоч добродетели.<br>Вдобавок к этому может попасться премиум на неделю.",
+    "instruction": "Двойной клик: открыть сундук.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "1499x1": 10,
+          "1500x1": 10,
+          "1501x1": 10,
+          "1502x1": 10,
+          "2353x1": 10,
+          "247x1": 10,
+          "986x1": 10,
+          "2626x1": 10,
+          "1692x1": 10,
+          "997x1": 10
+        }
+      },
+      "randloot": {
+        "default": {
+          "1105x1": 5
+        }
+      }
+    },
+    "changed": "1"
+  },
+  "2639": {
+    "id": 2639,
+    "categ_id": 11,
+    "name": "Лапы Ягуара Мерк Edition",
+    "maxcnt": 1,
+    "type": "boots",
+    "rarity": "rare",
+    "level": 20,
+    "maxdur": 450,
+    "defence": 42,
+    "strength": 24,
+    "agility": 27,
+    "stamina": 23,
+    "reqlevel": 20,
+    "reqparagon": 30,
+    "mastery": 150,
+    "resilience": 150,
+    "image": "aztek_boots_misty_pink",
+    "price": 100000,
+    "consumable": "none",
+    "uniq": 1,
+    "validtime": 86400,
+    "changed": "1"
+  },
+  "2640": {
+    "id": 2640,
+    "categ_id": 23,
+    "name": "Билет апрельской лотереи",
+    "maxcnt": 100,
+    "type": "lottery",
+    "rarity": "legend",
+    "level": 1,
+    "image": "bilet1",
+    "price": 10000,
+    "personal": 1,
+    "descr": "Билет дает право на участие в апрельской Лотерее 2020 года. Розыгрыш состоится 25 апреля 2020 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>3 Эпические Геммы нового образца<br>5 Филигранных сверел<br>7 подарочных ящиков со 100 шоколадного печенья внутри",
+    "instruction": "Сохранить до объявления результатов, которые будут опубликованы в специальном разделе на форуме.",
+    "consumable": "none",
+    "material": "cotton",
+    "validtime": 2592000,
+    "changed": "1"
+  },
+  "2641": {
+    "id": 2641,
+    "categ_id": 23,
+    "name": "Конверт с билетом апрельской лотереи",
+    "maxcnt": 100,
+    "type": "sunduk",
+    "rarity": "legend",
+    "image": "letter",
+    "price": 200000,
+    "personal": 1,
+    "descr": "Внутри содержится билет, который дает право на участие в апрельской Лотерее 2020 года. Розыгрыш состоится 25 апреля 2020 в 21:00 по МСК.<br>В лотерее будут разыграны:<br>На выбор: сапоги, нагрудник или головной убор легендарного качества. Бафф на усмотрение администрации =)<br>Симулякр любого из четырех лицензионных настоев на выбор<br>Симулякр любого из трех стихийных настоев на выбор<br>3 Эпические Геммы нового образца<br>5 Филигранных сверел<br>7 подарочных ящиков со 100 шоколадного печенья внутри",
+    "instruction": "Двойной клик: вскрыть конверт и получить билет.",
+    "consumable": "openchest",
+    "bottleparams": {
+      "loot": {
+        "default": {
+          "2640": 100
+        }
+      }
+    },
+    "changed": "1"
   }
-};
+}

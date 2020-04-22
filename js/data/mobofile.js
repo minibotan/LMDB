@@ -17350,7 +17350,7 @@ mobs = {
       "startrage": 0,
       "level": 20,
       "avatar": 64,
-      "doll": "mob_human_male",
+      "doll": "mob_human_male_cock",
       "minhit": 1200,
       "maxhit": 1400,
       "dodge": 0,
