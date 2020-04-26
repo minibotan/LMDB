@@ -67454,7 +67454,7 @@ var items = {
     "id": 2598,
     "categ_id": 15,
     "name": "Парадокс",
-    "owner": "Bleidd",
+    "owner": "Баньши",
     "maxcnt": 1,
     "type": "trinket",
     "rarity": "epic",
